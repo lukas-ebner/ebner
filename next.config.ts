@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ['image/avif', 'image/webp'],
+    // Externe Domains bei Bedarf:
+    // remotePatterns: [{ protocol: 'https', hostname: 'example.com', pathname: '/**' }],
   },
 }
 

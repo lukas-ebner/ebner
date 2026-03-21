@@ -15,9 +15,9 @@ export function FullImageSlide({ image }: FullImageSlideProps) {
     >
       <ImageWithFallback
         src={image.src}
-        alt={image.alt}
+        alt={image.alt ?? ''}
         fill
-        className="object-cover"
+        className="object-cover object-center"
         sizes="100vw"
         label="Full-Bleed"
       />

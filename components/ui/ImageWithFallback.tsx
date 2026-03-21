@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import type { CSSProperties } from 'react'
 import { useState } from 'react'
 
 interface ImageWithFallbackProps {
@@ -11,6 +12,8 @@ interface ImageWithFallbackProps {
   sizes?: string
   priority?: boolean
   label?: string
+  /** Wird an `next/image` durchgereicht (z. B. Opacity für Hintergrundbilder). */
+  style?: CSSProperties
 }
 
 export function ImageWithFallback({
@@ -21,6 +24,7 @@ export function ImageWithFallback({
   sizes,
   priority,
   label,
+  style,
 }: ImageWithFallbackProps) {
   const [failed, setFailed] = useState(false)
 
@@ -48,6 +52,7 @@ export function ImageWithFallback({
       className={className}
       sizes={sizes}
       priority={priority}
+      style={style}
       onError={() => setFailed(true)}
     />
   )

@@ -26,17 +26,16 @@ export function HeroSlide({
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-surface-dark">
       <div className="absolute inset-0">
-        <div className="absolute inset-0" style={{ opacity }}>
-          <ImageWithFallback
-            src={image.src}
-            alt={image.alt}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-            label="Hero-Bild"
-          />
-        </div>
+        <ImageWithFallback
+          src={image.src}
+          alt={image.alt ?? ''}
+          fill
+          className="object-cover object-top"
+          sizes="100vw"
+          priority
+          style={{ opacity }}
+          label="Hero-Bild"
+        />
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface-dark via-surface-dark/60 to-transparent"
           aria-hidden

@@ -32,13 +32,13 @@ export function SplitSlide({
   )
 
   const imageBlock = (
-    <div className="relative min-h-[280px] overflow-hidden lg:min-h-0">
+    <div className="relative h-[300px] w-full overflow-hidden rounded-lg md:h-[400px] lg:h-[500px]">
       <ImageWithFallback
         src={image.src}
-        alt={image.alt}
+        alt={image.alt ?? ''}
         fill
-        className="object-cover lg:rounded-card"
-        sizes="(min-width: 1024px) 50vw, 100vw"
+        className="object-cover object-center"
+        sizes="(max-width: 768px) 100vw, 50vw"
         label="Slide-Bild"
       />
     </div>
