@@ -6,6 +6,7 @@ import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 
 interface StatementSlideProps {
   headline: string
+  /** `orange`: dunkler Hintergrund + orange Akzentlinie (kein Vollflächen-Orange) */
   variant?: 'dark' | 'orange'
   backgroundImage?: { src: string; alt: string }
 }
@@ -17,16 +18,13 @@ export function StatementSlide({
 }: StatementSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
-
-  const bg =
-    variant === 'orange'
-      ? 'bg-brand text-white'
-      : 'bg-surface-dark text-text-light'
-  const headlineClass =
-    variant === 'orange' ? 'text-white' : 'text-text-light'
+  const showAccentLine = variant === 'orange'
 
   return (
-    <div ref={ref} className={`relative overflow-hidden py-section-mobile lg:py-section-desktop ${bg}`}>
+    <div
+      ref={ref}
+      className="relative overflow-hidden bg-surface-dark py-section-mobile lg:py-section-desktop text-text-light"
+    >
       {backgroundImage ? (
         <div className="pointer-events-none absolute inset-0 opacity-20">
           <ImageWithFallback
@@ -45,7 +43,10 @@ export function StatementSlide({
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.55, ease: 'easeOut' }}
       >
-        <h2 className={`text-center font-display text-h1 font-bold ${headlineClass}`}>
+        {showAccentLine ? (
+          <div className="mx-auto mb-8 h-[2px] w-16 bg-brand" aria-hidden />
+        ) : null}
+        <h2 className="text-center font-display text-h1 font-normal leading-tight text-text-light">
           {headline}
         </h2>
       </motion.div>

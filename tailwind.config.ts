@@ -47,8 +47,8 @@ const config: Config = {
         label: ['13px', { lineHeight: '1', letterSpacing: '0.08em' }],
       },
       spacing: {
-        'section-mobile': '64px',
-        'section-desktop': '96px',
+        'section-mobile': '80px',
+        'section-desktop': '128px',
         hero: '128px',
       },
       borderRadius: {

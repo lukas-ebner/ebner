@@ -73,14 +73,14 @@ export function Navigation() {
             <Image
               src="/images/logo/ebner-logo.svg"
               alt="Lukas Ebner"
-              width={140}
-              height={32}
-              sizes="140px"
+              width={120}
+              height={28}
+              sizes="120px"
               style={{ width: 'auto', height: 'auto' }}
               className={
                 onDarkSurface
-                  ? 'h-8 max-w-[140px] brightness-0 invert'
-                  : 'h-8 max-w-[140px]'
+                  ? 'h-6 max-w-[120px] brightness-0 invert'
+                  : 'h-6 max-w-[120px]'
               }
               priority
             />
@@ -94,14 +94,19 @@ export function Navigation() {
             >
               <button
                 type="button"
-                className={`inline-flex items-center font-mono text-label uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                className={`inline-flex items-center font-mono text-label font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
               >
                 Leistungen
-                <ChevronDown size={14} className="ml-1 inline shrink-0" aria-hidden />
+                <ChevronDown
+                  size={14}
+                  strokeWidth={1.5}
+                  className="ml-1 inline shrink-0"
+                  aria-hidden
+                />
               </button>
               {servicesOpen ? (
                 <div className="absolute left-0 top-full z-50 mt-2 w-[min(100vw-2rem,420px)] rounded-card border border-border bg-white p-4 text-text-primary shadow-lg">
@@ -112,7 +117,7 @@ export function Navigation() {
                           href={s.href}
                           className="block rounded-lg px-3 py-2 hover:bg-surface-cool"
                         >
-                          <span className="font-display text-h3 font-semibold">{s.title}</span>
+                          <span className="font-display text-h3 font-normal">{s.title}</span>
                           <span className="mt-1 block font-body text-sm text-text-muted">
                             {s.desc}
                           </span>
@@ -128,7 +133,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-label uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                className={`font-mono text-label font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
               >
@@ -147,7 +152,11 @@ export function Navigation() {
             onClick={() => setMenuOpen((o) => !o)}
           >
             <span className="sr-only">Menü</span>
-            {menuOpen ? <X size={24} aria-hidden /> : <Menu size={24} aria-hidden />}
+            {menuOpen ? (
+              <X size={24} strokeWidth={1.5} aria-hidden />
+            ) : (
+              <Menu size={24} strokeWidth={1.5} aria-hidden />
+            )}
           </button>
         </div>
       </header>
@@ -166,7 +175,7 @@ export function Navigation() {
               <li key={s.href}>
                 <Link
                   href={s.href}
-                  className="block font-display text-h3 font-semibold"
+                  className="block font-display text-h3 font-normal"
                   onClick={() => setMenuOpen(false)}
                 >
                   {s.title}
@@ -179,7 +188,7 @@ export function Navigation() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="font-mono text-label uppercase tracking-wide"
+                  className="font-mono text-label font-normal uppercase tracking-wide"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}

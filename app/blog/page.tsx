@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-section-desktop">
-      <h1 className="font-display text-h1 font-bold text-text-primary">Blog</h1>
+      <h1 className="font-display text-h1 font-normal text-text-primary">Blog</h1>
       <p className="mt-4 font-body text-body text-text-muted">
         Die Blog-Übersicht folgt. Hier entstehen später Artikel zu KI, Führung und Skalierung.
       </p>

@@ -14,7 +14,7 @@ export function Pill({ children, className = '', variant = 'default' }: PillProp
 
   return (
     <span
-      className={`inline-flex items-center rounded-pill px-3 py-1 font-mono text-pill uppercase tracking-widest ${styles} ${className}`}
+      className={`inline-flex items-center rounded-pill px-3 py-1 font-mono text-pill font-normal uppercase tracking-widest ${styles} ${className}`}
     >
       {children}
     </span>

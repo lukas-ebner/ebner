@@ -29,11 +29,11 @@ export function Footer() {
             <Image
               src="/images/logo/ebner-logo.svg"
               alt="Lukas Ebner"
-              width={140}
-              height={32}
-              sizes="140px"
+              width={120}
+              height={28}
+              sizes="120px"
               style={{ width: 'auto', height: 'auto' }}
-              className="h-8 max-w-[140px] brightness-0 invert"
+              className="h-6 max-w-[120px] brightness-0 invert"
             />
           </Link>
           <p className="mt-4 font-body text-sm text-text-muted">
@@ -47,7 +47,7 @@ export function Footer() {
               className="text-text-muted transition-colors hover:text-brand"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-5 w-5" strokeWidth={1.5} />
             </a>
             <a
               href="https://github.com/lukas-ebner"
@@ -56,7 +56,7 @@ export function Footer() {
               className="text-text-muted transition-colors hover:text-brand"
               aria-label="GitHub"
             >
-              <Github className="h-5 w-5" />
+              <Github className="h-5 w-5" strokeWidth={1.5} />
             </a>
           </div>
         </div>

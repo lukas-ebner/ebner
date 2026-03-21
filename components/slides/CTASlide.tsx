@@ -34,10 +34,10 @@ export function CTASlide({ headline, subtext, cta, image }: CTASlideProps) {
       </div>
 
       <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-6 pb-section-desktop pt-28 text-center sm:pt-32">
-        <h2 className="font-display text-h2 font-bold text-text-light">{headline}</h2>
+        <h2 className="font-display text-h2 font-normal text-text-light">{headline}</h2>
         <p className="mt-4 max-w-xl font-body text-body text-text-light/70">{subtext}</p>
         <div className="mt-10">
-          <Button href={cta.url} variant="primary" className="px-10 py-5 text-lg">
+          <Button href={cta.url} variant="primary">
             {cta.text}
           </Button>
         </div>

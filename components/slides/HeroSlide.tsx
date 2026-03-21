@@ -54,9 +54,9 @@ export function HeroSlide({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <h1 className="font-display text-h1 font-bold text-text-light">{headline}</h1>
+          <h1 className="font-display text-h1 font-normal text-text-light">{headline}</h1>
           <p
-            className={`mt-6 font-body text-body text-text-light/80 ${isLeft ? 'max-w-xl' : 'mx-auto max-w-xl'}`}
+            className={`mt-6 font-body text-lg text-text-light/80 lg:text-xl ${isLeft ? 'max-w-xl' : 'mx-auto max-w-xl'}`}
           >
             {subtext}
           </p>

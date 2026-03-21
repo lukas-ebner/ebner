@@ -20,7 +20,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-section-desktop">
-      <h1 className="font-display text-h1 font-bold capitalize text-text-primary">
+      <h1 className="font-display text-h1 font-normal capitalize text-text-primary">
         {slug.replace(/-/g, ' ')}
       </h1>
       <p className="mt-4 font-body text-body text-text-muted">

@@ -19,8 +19,8 @@ export function SplitSlide({
 }: SplitSlideProps) {
   const textBlock = (
     <div className="flex flex-col justify-center p-12 lg:p-24">
-      <h2 className="font-display text-h2 font-bold text-text-primary">{headline}</h2>
-      <p className="mt-4 font-body text-body text-text-primary">{body}</p>
+      <h2 className="font-display text-h2 font-normal text-text-primary">{headline}</h2>
+      <p className="mt-4 font-body text-body leading-relaxed text-text-dimmed">{body}</p>
       {cta ? (
         <div className="mt-8">
           <Button href={cta.url} variant="outline">

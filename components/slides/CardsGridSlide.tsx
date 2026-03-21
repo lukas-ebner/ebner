@@ -67,13 +67,13 @@ export function CardsGridSlide({
     : 'bg-white rounded-card p-8 shadow-sm transition-all duration-200 hover:scale-[1.01] hover:shadow-lg'
 
   const titleClass = isDark ? 'text-text-light' : 'text-text-primary'
-  const bodyClass = 'text-text-muted'
+  const bodyClass = isDark ? 'text-text-muted' : 'text-text-dimmed'
 
   return (
     <div className={`py-section-mobile lg:py-section-desktop ${sectionBg}`}>
       <div className="mx-auto max-w-6xl px-6">
         <h2
-          className={`text-center font-display text-h2 font-bold ${headlineClass}`}
+          className={`text-center font-display text-h2 font-normal ${headlineClass}`}
         >
           {headline}
         </h2>
@@ -98,14 +98,18 @@ export function CardsGridSlide({
               <motion.li key={`${card.title}-${i}`} variants={cardVariants}>
                 <div className={cardShell}>
                   {Icon ? (
-                    <Icon className="mb-4 h-10 w-10 text-brand" aria-hidden />
+                    <Icon
+                      className="mb-4 h-6 w-6 text-brand"
+                      strokeWidth={1.5}
+                      aria-hidden
+                    />
                   ) : null}
                   {card.pill ? (
                     <div className="mb-3">
                       <Pill variant={isDark ? 'dark' : 'default'}>{card.pill}</Pill>
                     </div>
                   ) : null}
-                  <h3 className={`font-display text-h3 font-bold ${titleClass}`}>
+                  <h3 className={`font-display text-h3 font-semibold ${titleClass}`}>
                     {card.title}
                   </h3>
                   <p className={`mt-2 font-body text-body ${bodyClass}`}>{card.body}</p>
@@ -119,7 +123,11 @@ export function CardsGridSlide({
                           className="inline-flex items-center gap-1 font-mono text-label uppercase tracking-wide text-brand hover:underline"
                         >
                           {card.cta.text}
-                          <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+                          <ArrowRight
+                            className="h-4 w-4 shrink-0"
+                            strokeWidth={1.5}
+                            aria-hidden
+                          />
                         </a>
                       ) : (
                         <Link
@@ -127,7 +135,11 @@ export function CardsGridSlide({
                           className="inline-flex items-center gap-1 font-mono text-label uppercase tracking-wide text-brand hover:underline"
                         >
                           {card.cta.text}
-                          <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+                          <ArrowRight
+                            className="h-4 w-4 shrink-0"
+                            strokeWidth={1.5}
+                            aria-hidden
+                          />
                         </Link>
                       )}
                     </div>

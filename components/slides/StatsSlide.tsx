@@ -26,7 +26,7 @@ function StatCell({ value, label }: StatItem) {
   return (
     <div ref={ref} className="text-center">
       <p className="font-display text-stat font-bold text-text-light">{display}</p>
-      <p className="mt-2 font-mono text-pill uppercase tracking-widest text-text-muted">
+      <p className="mt-3 font-mono text-pill uppercase tracking-widest text-text-muted">
         {label}
       </p>
     </div>
