@@ -1,0 +1,155 @@
+meta:
+  title: "Lukas Ebner – Vom Macher zum Unternehmer"
+  description: "Unternehmensberatung für KMU: KI-Strategie, GF-Coaching, Agentur-Skalierung, Vibe Coding. 15+ Jahre als Geschäftsführer, Exit 2022, 1.000+ Projekte."
+  og_image: /images/og/homepage.jpg
+
+slides:
+  # ── 1. HERO ──────────────────────────────────────────
+  - template: hero-dark
+    headline: "Vom Macher zum Unternehmer."
+    subtext: "Du hast dein Unternehmen aufgebaut. Jetzt baust du es um – damit es ohne dich läuft."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/kontakt"
+    image:
+      src: /images/slides/lukas-hero.jpg
+      alt: "Lukas Ebner"
+      opacity: 0.45
+    align: center
+
+  # ── 2. STATS ─────────────────────────────────────────
+  - template: stats-dark
+    stats:
+      - { value: "15+", label: "Jahre als Geschäftsführer" }
+      - { value: "1.000+", label: "Projekte verantwortet" }
+      - { value: "50", label: "Mitarbeiter beim Exit" }
+      - { value: "6", label: "Unternehmen gebaut oder beraten" }
+
+  # ── 3. STATEMENT ─────────────────────────────────────
+  - template: statement
+    variant: orange
+    headline: "Bei fünf Leuten spürst du den Laden. Bei fünfzehn nicht mehr."
+
+  # ── 4. SELF-SEGMENTATION ─────────────────────────────
+  - template: cards-grid
+    headline: "Wo stehst du gerade?"
+    cards:
+      - icon: building-2
+        title: "Ich bin Geschäftsführer"
+        body: "Dein Unternehmen wächst, aber du steckst im Tagesgeschäft fest. Du willst Strukturen, die ohne dich funktionieren."
+        cta:
+          text: "GF-Coaching"
+          url: "/geschaeftsfuehrer-coaching"
+      - icon: layers
+        title: "Ich leite eine Agentur"
+        body: "Jedes Projekt fühlt sich an wie das erste. Du willst wiederholbare Prozesse, bessere Margen, weniger Chaos."
+        cta:
+          text: "Agentur skalieren"
+          url: "/agentur-skalieren"
+      - icon: bot
+        title: "Ich will KI einsetzen"
+        body: "Alle reden von KI, aber keiner sagt dir, wo es sich für dein Business wirklich lohnt. Ohne Buzzword-Bingo."
+        cta:
+          text: "KI & Automation"
+          url: "/ki-automatisierung"
+
+  # ── 5. SPLIT: KI & Automation ────────────────────────
+  - template: split
+    direction: left
+    headline: "KI einführen – ohne Bullshit-Bingo."
+    body: "Die meisten KI-Projekte scheitern nicht an der Technik, sondern an der Frage: Wo anfangen? Ich identifiziere die drei Hebel, die bei dir sofort wirken – und baue sie mit dir um."
+    cta:
+      text: "Mehr erfahren"
+      url: "/ki-automatisierung"
+    image:
+      src: /images/slides/ki-automation.jpg
+      alt: "KI & Automation Beratung"
+
+  # ── 6. SPLIT: GF-Coaching ───────────────────────────
+  - template: split
+    direction: right
+    headline: "Führen statt machen."
+    body: "Als GF bist du Feuerlöscher, Vertriebler und Stratege gleichzeitig. Das skaliert nicht. Ich helfe dir, vom Macher zum Unternehmer zu werden – mit klaren Strukturen, nicht mit Motivationssprüchen."
+    cta:
+      text: "Mehr erfahren"
+      url: "/geschaeftsfuehrer-coaching"
+    image:
+      src: /images/slides/gf-coaching.jpg
+      alt: "Geschäftsführer-Coaching"
+
+  # ── 7. SPLIT: Agentur-Skalierung ────────────────────
+  - template: split
+    direction: left
+    headline: "Vom Projektgeschäft zum System."
+    body: "Ich habe 12 Jahre eine Agentur mit 50 Leuten geführt und 2022 verkauft. Die Fehler, die du gerade machst, kenne ich alle – und die Abkürzungen auch."
+    cta:
+      text: "Mehr erfahren"
+      url: "/agentur-skalieren"
+    image:
+      src: /images/slides/agentur-skalierung.jpg
+      alt: "Agentur skalieren"
+
+  # ── 8. FULL IMAGE (Pause) ───────────────────────────
+  - template: full-image
+    image:
+      src: /images/slides/lukas-fullimage.jpg
+      alt: "Lukas Ebner"
+      height: 65vh
+
+  # ── 9. VENTURES ──────────────────────────────────────
+  - template: cards-grid
+    variant: dark
+    headline: "Was ich baue."
+    subtext: "Ich berate nicht nur – ich baue selbst. Jedes dieser Projekte ist ein Domino, das ich angestoßen habe."
+    cards:
+      - icon: timer
+        pill: "GRÜNDER & CEO"
+        title: "Leadtime"
+        body: "PSA-Software für Agenturen und Dienstleister. Das Tool, das ich mir als Agentur-GF selbst gewünscht hätte."
+        cta:
+          text: "leadtime.app"
+          url: "https://leadtime.app"
+      - icon: graduation-cap
+        pill: "CO-FOUNDER"
+        title: "Fracto"
+        body: "AI-Schulungsplattform für MedTech. Klinikpersonal lernt Gerätebedienung per AI Voice Bot statt Präsenzschulung."
+        cta:
+          text: "fracto.de"
+          url: "https://fracto.de"
+      - icon: zap
+        pill: "BEIRAT & BETEILIGUNG"
+        title: "Kraftwerk"
+        body: "SaaS-Plattform für die Energiewirtschaft. Microsoft-basiert, KI-optimiert, von einem VC skaliert."
+        cta:
+          text: "kraftwerk.io"
+          url: "https://kraftwerk.io"
+      - icon: rocket
+        pill: "EXIT 2022"
+        title: "eins+null"
+        body: "Mein erstes Unternehmen. 2010 gegründet, auf 50 Mitarbeiter aufgebaut, 2022 verkauft. Der Zyklus, den ich meinen Kunden beibringe."
+        cta:
+          text: "Die Geschichte"
+          url: "/projekte"
+
+  # ── 10. STATEMENT ────────────────────────────────────
+  - template: statement
+    variant: dark
+    headline: "Jedes Projekt beginnt mit einem Domino."
+
+  # ── 11. BLOG TEASER ─────────────────────────────────
+  # (wird aktiviert sobald Blog-Artikel existieren)
+  # - template: blog-teaser
+  #   headline: "Aktuelles"
+  #   count: 3
+
+  # ── 12. CTA ──────────────────────────────────────────
+  - template: cta-dark
+    headline: "Lass uns reden."
+    subtext: "30 Minuten, kein Pitch. Nur ehrliches Sparring darüber, wo dein Unternehmen gerade steht – und was der nächste Hebel wäre."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/kontakt"
+    image:
+      src: /images/slides/cta-bg.jpg
+      alt: ""
+      opacity: 0.35
