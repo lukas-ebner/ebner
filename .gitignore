@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local image pool (not in repo, only on dev machine)
+/public/images/fotos/
+/public/images/paintings/
+/public/images/teams/
+
+# cursor briefings (local only)
+CURSOR-BRIEFING-*.md
