@@ -3,28 +3,24 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronDown, Menu, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { startTransition, useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const services = [
   {
-    href: '/geschaeftsfuehrer-coaching',
-    title: 'GF-Coaching',
-    desc: 'Vom Macher zum Unternehmer.',
+    href: '/operations',
+    title: 'Operations & Führung',
+    desc: 'Strategie, Prozesse, Team – vom Macher zum Unternehmer.',
   },
   {
-    href: '/agentur-skalieren',
-    title: 'Agentur skalieren',
-    desc: 'Prozesse, Margen, Team – systematisch skalieren.',
+    href: '/digitalisierung',
+    title: 'Systeme & Automatisierung',
+    desc: 'Eine Infrastruktur, die mitdenkt – statt 15 Tools.',
   },
   {
-    href: '/ki-automatisierung',
-    title: 'KI & Automatisierung',
-    desc: 'KI einführen – wo es sich wirklich lohnt.',
-  },
-  {
-    href: '/vibe-coding-beratung',
-    title: 'Vibe Coding',
-    desc: 'AI-First Produkte und Prototypen bauen.',
+    href: '/ki-readiness',
+    title: 'KI-Readiness',
+    desc: 'Von der Idee zum Prototyp. In Tagen, nicht Monaten.',
   },
 ]
 
@@ -36,9 +32,18 @@ const navItems = [
 ]
 
 export function Navigation() {
+  const pathname = usePathname()
+  const isHomepage = pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+
+  useEffect(() => {
+    startTransition(() => {
+      setServicesOpen(false)
+      setMenuOpen(false)
+    })
+  }, [pathname])
 
   useEffect(() => {
     function onScroll() {
@@ -58,10 +63,11 @@ export function Navigation() {
     }
   }, [menuOpen])
 
-  const onDarkSurface = !scrolled
-  const shell = scrolled
-    ? 'border-b border-border bg-white/95 text-text-primary shadow-sm backdrop-blur'
-    : 'border-b border-transparent bg-transparent text-text-light'
+  const onDarkSurface = isHomepage && !scrolled
+  const shell =
+    scrolled || !isHomepage
+      ? 'border-b border-border bg-white/95 text-text-primary shadow-sm backdrop-blur'
+      : 'border-b border-transparent bg-transparent text-text-light'
 
   return (
     <>
@@ -109,13 +115,15 @@ export function Navigation() {
                 />
               </button>
               {servicesOpen ? (
-                <div className="absolute left-0 top-full z-50 mt-2 w-[min(100vw-2rem,420px)] rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
+                <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
+                <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
                   <ul className="grid gap-1">
                     {services.map((s) => (
                       <li key={s.href}>
                         <Link
                           href={s.href}
                           className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
+                          onClick={() => setServicesOpen(false)}
                         >
                           <span className="font-medium text-text-light">{s.title}</span>
                           <span className="mt-1 block text-xs text-text-light/50">{s.desc}</span>
@@ -123,6 +131,7 @@ export function Navigation() {
                       </li>
                     ))}
                   </ul>
+                </div>
                 </div>
               ) : null}
             </div>

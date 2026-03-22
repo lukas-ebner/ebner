@@ -9,6 +9,7 @@ import { CTASlide } from '@/components/slides/CTASlide'
 import { FullImageSlide } from '@/components/slides/FullImageSlide'
 import { CardsGridSlide } from '@/components/slides/CardsGridSlide'
 import { HeroSplitSlide } from '@/components/slides/HeroSplitSlide'
+import { StepsSlide } from '@/components/slides/StepsSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
@@ -21,6 +22,7 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
   'cta-dark': CTASlide as unknown as React.ComponentType<Record<string, unknown>>,
   'full-image': FullImageSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'cards-grid': CardsGridSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  steps: StepsSlide as unknown as React.ComponentType<Record<string, unknown>>,
 }
 
 export function PageBuilder({ slides }: { slides: SlideConfig[] }) {

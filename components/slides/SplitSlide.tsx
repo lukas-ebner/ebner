@@ -17,10 +17,21 @@ export function SplitSlide({
   cta,
   image,
 }: SplitSlideProps) {
+  const paragraphs = body.split(/\n\n+/).filter((p) => p.trim().length > 0)
+
   const textBlock = (
     <div className="flex flex-col justify-center p-12 lg:p-24">
       <h2 className="font-display text-h2 font-normal text-text-primary">{headline}</h2>
-      <p className="mt-4 font-body text-body leading-relaxed text-text-dimmed">{body}</p>
+      <div className="mt-4 space-y-4">
+        {paragraphs.map((paragraph, i) => (
+          <p
+            key={i}
+            className="font-body text-body leading-relaxed text-text-dimmed"
+          >
+            {paragraph.trim()}
+          </p>
+        ))}
+      </div>
       {cta ? (
         <div className="mt-8">
           <Button href={cta.url} variant="outline">

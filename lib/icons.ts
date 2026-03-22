@@ -1,12 +1,16 @@
 import {
   type LucideIcon,
   ArrowRight,
+  BarChart3,
   Bot,
   Building2,
   Calendar,
   Check,
   ChevronDown,
+  Compass,
+  Database,
   ExternalLink,
+  GitBranch,
   Github,
   GraduationCap,
   Layers,
@@ -14,13 +18,28 @@ import {
   Mail,
   MapPin,
   Menu,
+  MessageCircle,
   Phone,
   Rocket,
+  Scan,
+  Search,
+  Settings,
+  Shield,
+  Sparkles,
+  Target,
   Timer,
+  TrendingUp,
+  Users,
+  Workflow,
+  Wrench,
   X,
   Zap,
 } from 'lucide-react'
 
+/**
+ * Icon-Namen wie in YAML (kebab-case oder kurze Namen) → Lucide-Komponente.
+ * Erweitern, sobald neue Slides weitere Icons referenzieren.
+ */
 export const iconMap: Record<string, LucideIcon> = {
   'building-2': Building2,
   layers: Layers,
@@ -41,6 +60,21 @@ export const iconMap: Record<string, LucideIcon> = {
   linkedin: Linkedin,
   github: Github,
   calendar: Calendar,
+  search: Search,
+  wrench: Wrench,
+  'message-circle': MessageCircle,
+  target: Target,
+  settings: Settings,
+  users: Users,
+  'trending-up': TrendingUp,
+  compass: Compass,
+  'bar-chart-3': BarChart3,
+  'git-branch': GitBranch,
+  workflow: Workflow,
+  database: Database,
+  sparkles: Sparkles,
+  scan: Scan,
+  shield: Shield,
 }
 
 export function getIcon(name: string): LucideIcon | null {
