@@ -12,13 +12,14 @@ slides:
       text: "Gespräch vereinbaren"
       url: "/kontakt"
     image:
-      src: /images/slides/lukas-hero.jpg
+      src: /images/slides/lukas-hero_landscape.jpg
       alt: "Lukas Ebner"
-      opacity: 0.4
+      opacity: 0.7
+      position: center
     align: left
 
   # ── 2. STATS ─────────────────────────────────────────
-  - template: stats-dark
+  - template: stats
     stats:
       - { value: "15+", label: "Jahre als Geschäftsführer" }
       - { value: "50", label: "Mitarbeiter beim Exit" }
@@ -28,7 +29,7 @@ slides:
   # ── 3. STATEMENT ─────────────────────────────────────
   - template: statement
     variant: dark
-    headline: "Mit dem Erfolg ändert sich die Rolle. Plötzlich kannst du nicht mehr alles selbst machen – und merkst, dass dir niemand beigebracht hat, wie Führung wirklich geht."
+    headline: "Was als inspirierender Lebensentwurf begonnen hat, ist irgendwann zu einem harten Job geworden – mit dem schwierigsten Chef der Welt: dir selbst."
 
   # ── 4. SELF-SEGMENTATION ─────────────────────────────
   - template: cards-grid
@@ -42,7 +43,7 @@ slides:
           url: "/geschaeftsfuehrer-coaching"
       - icon: layers
         title: "Du skalierst eine Agentur"
-        body: "Jedes Projekt fühlt sich an wie das erste. Du brauchst wiederholbare Prozesse, verlässliche Planung und bessere Margen."
+        body: "Improvisation ist zum Dauerzustand geworden. Der Lagerbestand an halbfertigen Projekten ist unsichtbar, die Planung wird jeden Tag von der Wirklichkeit eingeholt. Du brauchst ein System."
         cta:
           text: "Agentur skalieren"
           url: "/agentur-skalieren"
@@ -57,18 +58,18 @@ slides:
   - template: split
     direction: left
     headline: "Die Ochsentour kennt jeder. Die Abkürzung nicht."
-    body: "Du hast dein Unternehmen als Fachkraft gestartet – Programmierung, Design, Beratung. Irgendwann hattest du Mitarbeiter, und alles wurde komplizierter. Delegieren, Systeme bauen, Strategie entwickeln – das lernt man nicht im Studium und nicht auf Konferenzen. Man lernt es von jemandem, der es selbst durchgemacht hat."
+    body: "Du hast als Fachkraft angefangen – Programmierung, Design, Beratung. Irgendwann hattest du Mitarbeiter, und plötzlich war dein Unternehmen nichts weiter als eine professionellere Variante von Freelancing. Nur mit Büro, Gehältern und doppelt so viel Stress. Alle erwarten, dass du in Führung gehst – aber du hättest selbst so viele Fragen."
     image:
-      src: /images/slides/problem.jpg
-      alt: ""
+      src: /images/slides/ochsentour.png
+      alt: "Illustration: Irrgarten – Metapher für die Ochsentour"
 
   # ── 6. SPLIT: Der Ansatz ────────────────────────────
   - template: split
     direction: right
     headline: "Kein Framework. Ein Sparringspartner."
-    body: "Ich verkaufe keine Methodik und keine Zertifizierung. Ich setze mich mit dir hin, höre zu, stelle unbequeme Fragen und sage dir, was ich an deiner Stelle tun würde. Manchmal ist das ein Transformationsprojekt mit klarem Deliverable. Oft ist es ein laufendes Sparring – wie ein Beirat, nur ehrlicher."
+    body: "Ich musste mir irgendwann eingestehen, dass ich aufhören muss, in meinem Unternehmen zu arbeiten – und anfangen muss, an meinem Unternehmen zu arbeiten. Diesen Shift habe ich durchgemacht. MBA, hunderte Bücher, jede Menge teure Fehler. Heute setze ich mich mit dir hin und sage dir, was ich an deiner Stelle tun würde."
     image:
-      src: /images/slides/sparring.jpg
+      src: /images/slides/sparring.png
       alt: ""
 
   # ── 7. SPLIT: Woran wir arbeiten ───────────────────
@@ -80,15 +81,15 @@ slides:
       text: "Themen ansehen"
       url: "/geschaeftsfuehrer-coaching"
     image:
-      src: /images/slides/ebit.jpg
+      src: /images/slides/ebit.png
       alt: ""
 
   # ── 8. FULL IMAGE ───────────────────────────────────
   - template: full-image
     image:
-      src: /images/slides/lukas-fullimage.jpg
+      src: /images/slides/lukas-bar.jpg
       alt: "Lukas Ebner"
-      height: 60vh
+      height: 45vh
 
   # ── 9. VENTURES ──────────────────────────────────────
   - template: cards-grid
@@ -113,14 +114,14 @@ slides:
       - icon: zap
         pill: "BEIRAT"
         title: "Kraftwerk"
-        body: "SaaS für die Energiewirtschaft. Mein erstes Unternehmen eins+null wurde 2022 hier eingegliedert."
+        body: "Drittgrößtes Software-Unternehmen der deutschen Energiewirtschaft. Mein erstes Unternehmen eins+null wurde 2022 hier eingegliedert."
         cta:
           text: "kraftwerk.io"
           url: "https://kraftwerk.io"
       - icon: rocket
         pill: "EXIT 2022"
         title: "eins+null"
-        body: "2010 gegründet, 50 Mitarbeiter, siebenstelliger Exit. Der Zyklus, den ich meinen Kunden beibringe."
+        body: "2010 gegründet, von 300K auf fast 4 Mio Umsatz, 50 Mitarbeiter, siebenstelliger Exit an Private Equity."
         cta:
           text: "Die Geschichte"
           url: "/projekte"
@@ -138,6 +139,6 @@ slides:
       text: "Termin vereinbaren"
       url: "/kontakt"
     image:
-      src: /images/slides/cta-bg.jpg
+      src: /images/slides/cta-bg.png
       alt: ""
       opacity: 0.3
