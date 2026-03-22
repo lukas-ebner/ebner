@@ -7,19 +7,19 @@ import { useEffect, useState } from 'react'
 
 const services = [
   {
-    href: '/ki-automatisierung',
-    title: 'KI & Automation',
-    desc: 'KI einführen – wo es sich wirklich lohnt.',
-  },
-  {
     href: '/geschaeftsfuehrer-coaching',
     title: 'GF-Coaching',
     desc: 'Vom Macher zum Unternehmer.',
   },
   {
     href: '/agentur-skalieren',
-    title: 'Agentur-Skalierung',
+    title: 'Agentur skalieren',
     desc: 'Prozesse, Margen, Team – systematisch skalieren.',
+  },
+  {
+    href: '/ki-automatisierung',
+    title: 'KI & Automatisierung',
+    desc: 'KI einführen – wo es sich wirklich lohnt.',
   },
   {
     href: '/vibe-coding-beratung',
@@ -68,7 +68,7 @@ export function Navigation() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${shell}`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="flex w-full items-center justify-between px-8 py-4 lg:px-12">
           <Link href="/" className="relative z-10 flex items-center gap-2">
             <Image
               src="/images/logo/ebner-logo.svg"
@@ -109,18 +109,16 @@ export function Navigation() {
                 />
               </button>
               {servicesOpen ? (
-                <div className="absolute left-0 top-full z-50 mt-2 w-[min(100vw-2rem,420px)] rounded-card border border-border bg-white p-4 text-text-primary shadow-lg">
-                  <ul className="grid gap-3">
+                <div className="absolute left-0 top-full z-50 mt-2 w-[min(100vw-2rem,420px)] rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
+                  <ul className="grid gap-1">
                     {services.map((s) => (
                       <li key={s.href}>
                         <Link
                           href={s.href}
-                          className="block rounded-lg px-3 py-2 hover:bg-surface-cool"
+                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
                         >
-                          <span className="font-display text-h3 font-normal">{s.title}</span>
-                          <span className="mt-1 block font-body text-sm text-text-muted">
-                            {s.desc}
-                          </span>
+                          <span className="font-medium text-text-light">{s.title}</span>
+                          <span className="mt-1 block text-xs text-text-light/50">{s.desc}</span>
                         </Link>
                       </li>
                     ))}

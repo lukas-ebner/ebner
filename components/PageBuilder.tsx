@@ -8,11 +8,14 @@ import { SplitSlide } from '@/components/slides/SplitSlide'
 import { CTASlide } from '@/components/slides/CTASlide'
 import { FullImageSlide } from '@/components/slides/FullImageSlide'
 import { CardsGridSlide } from '@/components/slides/CardsGridSlide'
+import { HeroSplitSlide } from '@/components/slides/HeroSplitSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
   'hero-dark': HeroSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'hero-split': HeroSplitSlide as unknown as React.ComponentType<Record<string, unknown>>,
   statement: StatementSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  stats: StatsSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'stats-dark': StatsSlide as unknown as React.ComponentType<Record<string, unknown>>,
   split: SplitSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'cta-dark': CTASlide as unknown as React.ComponentType<Record<string, unknown>>,

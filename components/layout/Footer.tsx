@@ -5,9 +5,9 @@ import { Github, Linkedin } from 'lucide-react'
 const footerLinkClass = 'font-body text-sm text-text-muted transition-colors hover:text-brand'
 
 const leistungen = [
-  { href: '/ki-automatisierung', label: 'KI & Automation' },
   { href: '/geschaeftsfuehrer-coaching', label: 'GF-Coaching' },
-  { href: '/agentur-skalieren', label: 'Agentur-Skalierung' },
+  { href: '/agentur-skalieren', label: 'Agentur skalieren' },
+  { href: '/ki-automatisierung', label: 'KI & Automatisierung' },
   { href: '/vibe-coding-beratung', label: 'Vibe Coding' },
 ]
 

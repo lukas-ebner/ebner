@@ -63,8 +63,8 @@ export function CardsGridSlide({
       : 'md:grid-cols-2 lg:grid-cols-3'
 
   const cardShell = isDark
-    ? 'bg-surface-dark border border-border-dark rounded-card p-8 transition-all duration-200 hover:border-brand/50'
-    : 'bg-white rounded-card p-8 shadow-sm transition-all duration-200 hover:scale-[1.01] hover:shadow-lg'
+    ? 'h-full flex-col rounded-2xl border border-white/5 bg-white/[0.02] p-8 transition-all duration-200 hover:border-brand/50'
+    : 'h-full flex-col rounded-card bg-white p-8 shadow-sm transition-all duration-200 hover:scale-[1.01] hover:shadow-lg'
 
   const titleClass = isDark ? 'text-text-light' : 'text-text-primary'
   const bodyClass = isDark ? 'text-text-muted' : 'text-text-dimmed'
@@ -86,7 +86,7 @@ export function CardsGridSlide({
         ) : null}
 
         <motion.ul
-          className={`mt-12 grid grid-cols-1 gap-6 ${gridCols}`}
+          className={`mt-12 grid grid-cols-1 items-stretch gap-6 ${gridCols}`}
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
@@ -95,8 +95,12 @@ export function CardsGridSlide({
           {cards.map((card, i) => {
             const Icon = card.icon ? getIcon(card.icon) : null
             return (
-              <motion.li key={`${card.title}-${i}`} variants={cardVariants}>
-                <div className={cardShell}>
+              <motion.li
+                key={`${card.title}-${i}`}
+                className="h-full"
+                variants={cardVariants}
+              >
+                <div className={`flex h-full flex-col ${cardShell}`}>
                   {Icon ? (
                     <Icon
                       className="mb-4 h-6 w-6 text-brand"
@@ -112,9 +116,13 @@ export function CardsGridSlide({
                   <h3 className={`font-display text-h3 font-semibold ${titleClass}`}>
                     {card.title}
                   </h3>
-                  <p className={`mt-2 font-body text-body ${bodyClass}`}>{card.body}</p>
+                  <p
+                    className={`mt-3 flex-1 font-body text-body leading-relaxed ${bodyClass}`}
+                  >
+                    {card.body}
+                  </p>
                   {card.cta ? (
-                    <div className="mt-4">
+                    <div className="mt-6 shrink-0">
                       {isExternalUrl(card.cta.url) ? (
                         <a
                           href={card.cta.url}
