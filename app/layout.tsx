@@ -3,10 +3,16 @@ import './globals.css'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 
+const faviconSvg = '/images/logo/ebner-square-icon-orange.svg'
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),
   title: 'Lukas Ebner',
   description: 'Unternehmensberatung für KMU',
+  icons: {
+    icon: [{ url: faviconSvg, type: 'image/svg+xml' }],
+    apple: faviconSvg,
+  },
 }
 
 export default function RootLayout({
