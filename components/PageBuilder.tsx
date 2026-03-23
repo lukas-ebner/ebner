@@ -10,6 +10,28 @@ import { FullImageSlide } from '@/components/slides/FullImageSlide'
 import { CardsGridSlide } from '@/components/slides/CardsGridSlide'
 import { HeroSplitSlide } from '@/components/slides/HeroSplitSlide'
 import { StepsSlide } from '@/components/slides/StepsSlide'
+import { ImageOverlaySlide } from '@/components/slides/ImageOverlaySlide'
+import { QuoteSlide } from '@/components/slides/QuoteSlide'
+import { FeatureListSlide } from '@/components/slides/FeatureListSlide'
+import { ParallaxImageSlide } from '@/components/slides/ParallaxImageSlide'
+import { StatsOverlaySlide } from '@/components/slides/StatsOverlaySlide'
+import { TimelineSlide } from '@/components/slides/TimelineSlide'
+import { PhotoGallerySlide } from '@/components/slides/PhotoGallerySlide'
+import { ContactFormSlide } from '@/components/slides/ContactFormSlide'
+import { TextBlockSlide } from '@/components/slides/TextBlockSlide'
+import { ProblemSlide } from '@/components/slides/ProblemSlide'
+import { CredibilitySlide } from '@/components/slides/CredibilitySlide'
+import { IconCirclesSlide } from '@/components/slides/IconCirclesSlide'
+import { NumberedFeaturesSlide } from '@/components/slides/NumberedFeaturesSlide'
+import { PricingTableSlide } from '@/components/slides/PricingTableSlide'
+import { PricingTeaserSlide } from '@/components/slides/PricingTeaserSlide'
+import { FAQSlide } from '@/components/slides/FAQSlide'
+import { QualificationSlide } from '@/components/slides/QualificationSlide'
+import { ApplicationFormSlide } from '@/components/slides/ApplicationFormSlide'
+import { LegalSlide } from '@/components/slides/LegalSlide'
+import { TextImageSlide } from '@/components/slides/TextImageSlide'
+import { ToolCloudSlide } from '@/components/slides/ToolCloudSlide'
+import { SymptomsGridSlide } from '@/components/slides/SymptomsGridSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
@@ -23,6 +45,28 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
   'full-image': FullImageSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'cards-grid': CardsGridSlide as unknown as React.ComponentType<Record<string, unknown>>,
   steps: StepsSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'image-overlay': ImageOverlaySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  quote: QuoteSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'feature-list': FeatureListSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'parallax-image': ParallaxImageSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'stats-overlay': StatsOverlaySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  timeline: TimelineSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'photo-gallery': PhotoGallerySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'contact-form': ContactFormSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'text-block': TextBlockSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  problem: ProblemSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  credibility: CredibilitySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'icon-circles': IconCirclesSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'numbered-features': NumberedFeaturesSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'pricing-table': PricingTableSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'pricing-teaser': PricingTeaserSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  faq: FAQSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  qualification: QualificationSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'application-form': ApplicationFormSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  legal: LegalSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'text-image': TextImageSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'tool-cloud': ToolCloudSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'symptoms-grid': SymptomsGridSlide as unknown as React.ComponentType<Record<string, unknown>>,
 }
 
 export function PageBuilder({ slides }: { slides: SlideConfig[] }) {

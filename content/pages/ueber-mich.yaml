@@ -1,0 +1,201 @@
+meta:
+  title: "Über mich – Lukas Ebner"
+  description: "Gründer, Builder, Systemdenker. 15 Jahre Geschäftsführer, 1.000+ Projekte, ein Exit – und immer noch am Bauen."
+  og_image: /images/og/ueber-mich.jpg
+
+slides:
+  # ── 1. HERO (fullwidth image-overlay) ──────────────────
+  - template: image-overlay
+    headline: "Ich baue Systeme, die bleiben."
+    body: "Gründer, Builder, Systemdenker. Seit über 15 Jahren baue ich Unternehmen und die Software, die sie am Laufen hält."
+    cta:
+      text: "Kontakt aufnehmen"
+      url: "/kontakt"
+    image:
+      src: /images/slides/lukas-bar.jpg
+      alt: "Lukas Ebner"
+      opacity: 0.7
+    height: "100vh"
+    align: left
+    valign: center
+    gradient: left
+
+  # ── 2. STATEMENT: Typo-Breaker ────────────────────────
+  - template: statement
+    headline: "Das Produkt ist selten das Problem. Das System dahinter ist es."
+    variant: dark
+
+  # ── 3. TEXT-BLOCK: Meine Geschichte (ohne Foto) ───────
+  - template: text-block
+    headline: "Von der Garage zum Exit."
+    body: "2009 habe ich mit 22 eine Softwarefirma gegründet. Kein VC, kein Netzwerk, keine Ahnung von Unternehmensführung. Nur Code und den Willen, dass es funktioniert.\n\n13 Jahre später: über 1.000 Projekte geliefert, ein System gebaut das skaliert, und ein Exit im 7-stelligen Bereich. Bootstrapped. Ohne Hype.\n\nWas ich in dieser Zeit gelernt habe: Wie du lieferst, planst, abrechnest, kommunizierst – das entscheidet, ob du wächst oder dich im Kreis drehst."
+    variant: light
+
+  # ── 4. IMAGE-OVERLAY: Fullwidth mit Foto ──────────────
+  - template: image-overlay
+    align: right
+    valign: center
+    gradient: right
+    height: "75vh"
+    headline: "How do you scale"
+    body: "Der rote Faden? Ich baue Systeme, die bleiben. Für Teams, die zu viel Arbeit und zu wenig Struktur haben."
+    image:
+      src: /images/fotos/DSC00263.jpg
+      alt: "Lukas Ebner Portrait"
+      opacity: 0.9
+
+  # ── 5. STATEMENT: Typo-Breaker ────────────────────────
+  - template: statement
+    headline: "Bootstrapped. Ohne Hype. Dafür mit System."
+    variant: orange
+
+  # ── 6. CARDS-GRID: Aktuelle Projekte ──────────────────
+  - template: cards-grid
+    headline: "Woran ich gerade baue."
+    subtext: "Drei Rollen, ein gemeinsamer Nenner: Unternehmen systematisch besser machen."
+    cardVariant: image
+    cards:
+      - title: "Leadtime"
+        body: "Project Delivery Platform für Software-Dienstleister. Ein System statt zehn Tools – gebaut aus 15 Jahren Projektgeschäft."
+        image:
+          src: /images/fotos/IMG_8231-2.jpg
+          alt: "Lukas im Büro nachdenklich"
+        cta:
+          text: "Mehr erfahren"
+          url: "https://leadtime.app"
+      - title: "Fracto"
+        body: "AI-gestützte Schulungsplattform für MedTech. Damit Klinikpersonal Geräte versteht, bevor es sie bedient."
+        image:
+          src: /images/fotos/DSC00170.jpg
+          alt: "Lukas Portrait professionell"
+        cta:
+          text: "Mehr erfahren"
+          url: "https://fracto.de"
+      - title: "Wachstumscoach"
+        body: "Organisationsberatung für Gründer, die ihr Unternehmen von der Werkstatt zur Fabrik entwickeln wollen."
+        image:
+          src: /images/fotos/DSC00109.jpg
+          alt: "Lukas Portrait nahbar"
+        cta:
+          text: "Mehr erfahren"
+          url: "/operations"
+
+  # ── 7. PARALLAX: Visueller Break ─────────────────────
+  - template: parallax-image
+    height: "45vh"
+    image:
+      src: /images/fotos/IMG_8267-2.jpg
+      alt: "Lukas in modernem Korridor"
+
+  # ── 8. TIMELINE: Berufliche Laufbahn ─────────────────
+  - template: timeline
+    headline: "Berufliche Laufbahn"
+    entries:
+      - period: "2026 – heute"
+        role: "Co-Founder & CTO"
+        org: "Fracto"
+        url: "https://fracto.de"
+        description: "AI-gestützte Schulungsplattform für die MedTech-Industrie. White-Label-Plattform mit AI Voice Bot für Produktschulungen medizintechnischer Geräte."
+      - period: "2023 – heute"
+        role: "Founder & Geschäftsführer"
+        org: "Leadtime"
+        url: "https://leadtime.app"
+        description: "Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Ressourcenmanagement, Controlling, CRM und Rechnungsstellung in einem System."
+      - period: "2023 – heute"
+        role: "Geschäftsführer"
+        org: "Wachstumscoach GmbH"
+        url: "https://lukasebner.de"
+        description: "Systemische Organisationsberatung und Einzelcoachings für Unternehmer. Solide Prozesse, gute Führung, mehr Profit."
+      - period: "2009 – 2022"
+        role: "Geschäftsführer & Gründer"
+        org: "eins+null GmbH & Co. KG"
+        url: "https://einsundnull.de"
+        description: "Software-Unternehmen für die Energiewirtschaft. 13 Jahre bootstrapped geführt, über 1.000 Projekte für Stadtwerke und Energieversorger, 50 Mitarbeiter aufgebaut, 2022 im 7-stelligen Bereich verkauft."
+
+  # ── 9. SPLIT: Familie ────────────────────────────────
+  - template: split
+    direction: left
+    headline: "Regensburg. Bayern. Zuhause."
+    body: "Ich lebe mit meiner Familie in Regensburg. Zwischen den Meetings und Commits gibt es auch ein Leben jenseits von Bildschirmen – meistens draußen, meistens mit Kind.\n\nIch glaube, dass gute Arbeit ein gutes Leben ermöglichen soll, nicht ersetzen. Deshalb baue ich Systeme, die funktionieren, ohne dass jemand sein Leben dafür opfern muss."
+    image:
+      src: /images/fotos/IMG_8308-2.jpg
+      alt: "Lukas mit Kind im Regen – passende Regenjacken"
+
+  # ── 10. TIMELINE: Ausbildung ─────────────────────────
+  - template: timeline
+    headline: "Ausbildung"
+    entries:
+      - period: "2012 – 2014"
+        role: "MBA – Unternehmensgründung & -führung"
+        org: "Technische Hochschule Deggendorf"
+        url: "https://www.th-deg.de"
+        grade: "1,4"
+        description: "Master of Business Administration mit Schwerpunkt Entrepreneurship, parallel zur Geschäftsführung bei eins+null."
+      - period: "2005 – 2011"
+        role: "Dipl. Informationswirt – Multimedia & Kommunikation"
+        org: "Hochschule Ansbach"
+        url: "https://www.hs-ansbach.de"
+        grade: "1,8"
+        description: "Studium an der Schnittstelle von IT, Medien und Wirtschaft."
+      - period: "1999 – 2002"
+        role: "Mediengestalter für Digital- und Printmedien"
+        org: "Creativ Concept Werbeagentur"
+        description: "Klassische Ausbildung in Grafikdesign, Typografie und Printproduktion. Das handwerkliche Fundament."
+
+  # ── 11. FEATURE-LIST: Zertifikate ────────────────────
+  - template: feature-list
+    headline: "Zertifikate & Weiterbildung"
+    columns: 2
+    items:
+      - icon: award
+        title: "Organisationsberater & Change Manager"
+        body: "ICO Institut für Coaching & Organisationsberatung · 2025"
+      - icon: award
+        title: "Systemisches Coaching kompakt"
+        body: "ICO Institut für Coaching & Organisationsberatung · 2025"
+      - icon: award
+        title: "Human Skills & Leadership"
+        body: "Technische Hochschule Deggendorf · 2017"
+      - icon: shield
+        title: "IT-Sicherheitsbeauftragter ISO 27001"
+        body: "TÜV NORD GROUP · 2016"
+
+  # ── 12. PHOTO GALLERY ────────────────────────────────
+  - template: photo-gallery
+    photos:
+      - src: /images/fotos/IMG_8274-2.jpg
+        alt: "Lukas am Fenster"
+      - src: /images/fotos/DSC00104.jpg
+        alt: "Portrait Profil"
+      - src: /images/fotos/IMG_8249-2.jpg
+        alt: "Am Schreibtisch"
+      - src: /images/fotos/IMG_8256-2.jpg
+        alt: "An der Steinmauer"
+      - src: /images/fotos/DSC00321.jpg
+        alt: "Plasmaball"
+      - src: /images/fotos/IMG_8263-2.jpg
+        alt: "Im Industriekorridor"
+      - src: /images/fotos/IMG_8247-2.jpg
+        alt: "Am Fenster nachdenklich"
+      - src: /images/fotos/L1030038.jpg
+        alt: "Im Home Office"
+      - src: /images/fotos/IMG_8305-2.jpg
+        alt: "Am Strand"
+      - src: /images/fotos/IMG_3953_jpg.jpg
+        alt: "Im Schnee"
+      - src: /images/fotos/DSC00270.jpg
+        alt: "Nachdenklich in B&W"
+      - src: /images/fotos/IMG_8250-2.jpg
+        alt: "Im Büro stehend"
+
+  # ── 13. CTA ──────────────────────────────────────────
+  - template: cta-dark
+    headline: "Lass uns reden."
+    subtext: "Ob Projekt, Sparring oder einfach Austausch – ich freue mich über eine Nachricht."
+    cta:
+      text: "Kontakt aufnehmen"
+      url: "/kontakt"
+    image:
+      src: /images/slides/cta-bg.png
+      alt: ""
+      opacity: 0.3

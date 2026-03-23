@@ -42,6 +42,11 @@
   font-display: swap;
 }
 
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Display', sans-serif;
   color: #191819;

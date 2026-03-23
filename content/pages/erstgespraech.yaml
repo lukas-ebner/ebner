@@ -1,0 +1,105 @@
+meta:
+  title: "Erstgespräch – Lukas Ebner"
+  description: "Passt eine Zusammenarbeit? In 30 Minuten klären wir, wo dein größter Hebel liegt – und ob ich der Richtige bin, dir dabei zu helfen."
+  og_image: /images/og/erstgespraech.jpg
+
+slides:
+  # ── 1. HERO: Framing umkehren ─────────────────────────
+  - template: hero-dark
+    headline: "Passt eine Zusammenarbeit? Finden wir's raus."
+    subtext: "30 Minuten. Kein Pitch, kein Verkaufsgespräch. Wir klären, wo bei dir gerade der größte Hebel liegt – und ob eine Zusammenarbeit Sinn macht. Danach weißt du, ob es passt. Und ich auch."
+    cta:
+      text: "Direkt zum Formular"
+      url: "#bewerbung"
+    image:
+      src: /images/fotos/DSC00695-2.jpg
+      alt: ""
+      opacity: 0.3
+
+  # ── 2. QUALIFICATION: Grün/Rot-Checks ─────────────────
+  - template: qualification
+    headline: "Ist das richtig für dich?"
+    body: "Ich arbeite nicht mit jedem. Nicht aus Arroganz – sondern weil gute Ergebnisse nur entstehen, wenn die Ausgangslage stimmt."
+    qualifiesLabel: "Passt gut"
+    disqualifiesLabel: "Passt nicht"
+    qualifies:
+      - text: "Du führst ein Unternehmen mit 5–100 Mitarbeitern."
+      - text: "Du bist bereit, Dinge zu verändern – auch wenn es unbequem wird."
+      - text: "Du kannst 2.000–4.000 € monatlich in Beratung investieren."
+    disqualifies:
+      - text: "Du suchst jemanden, der dir sagt, was du hören willst."
+      - text: "Du erwartest Ergebnisse ohne eigenes Engagement."
+      - text: "Du brauchst erst in 6 Monaten Hilfe – dann melde dich in 5."
+
+  # ── 3. APPLICATION FORM ────────────────────────────────
+  - template: application-form
+    id: bewerbung
+    headline: "Erzähl mir von deinem Unternehmen."
+    body: "Keine langen Formulare. Sieben kurze Fragen, damit ich mich vorbereiten kann – und unser Gespräch von Anfang an Substanz hat."
+    submitLabel: "Erstgespräch anfragen"
+    successHeadline: "Danke. Ich melde mich."
+    successBody: "Innerhalb von 24 Stunden bekommst du von mir einen Terminvorschlag für unser Erstgespräch. Kein Pitch – ein echtes Gespräch."
+    fields:
+      - name: name
+        label: "Dein Name"
+        type: text
+        required: true
+        placeholder: "Vor- und Nachname"
+      - name: company
+        label: "Unternehmen & Website"
+        type: text
+        required: true
+        placeholder: "Firmenname – domain.de"
+      - name: employees
+        label: "Wie viele Mitarbeiter habt ihr?"
+        type: select
+        required: true
+        options:
+          - "Unter 5"
+          - "5–15"
+          - "15–40"
+          - "40–100"
+          - "Über 100"
+      - name: challenge
+        label: "Was ist gerade deine größte Herausforderung?"
+        type: textarea
+        required: true
+        placeholder: "In 2–3 Sätzen. Was hält dich nachts wach?"
+      - name: tried
+        label: "Was hast du bisher versucht?"
+        type: textarea
+        required: false
+        placeholder: "Berater, Coachings, Eigenversuche – was hat (nicht) funktioniert?"
+      - name: timeline
+        label: "Wann willst du starten?"
+        type: select
+        required: true
+        options:
+          - "So schnell wie möglich"
+          - "In den nächsten 4 Wochen"
+          - "In 1–3 Monaten"
+          - "Erst mal orientieren"
+      - name: source
+        label: "Wie bist du auf mich aufmerksam geworden?"
+        type: text
+        required: false
+        placeholder: "Empfehlung, LinkedIn, Google …"
+
+  # ── 4. FAQ ─────────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was passiert im Erstgespräch?"
+        answer: "30 Minuten, kein Pitch. Wir klären, wo dein größter Hebel liegt, was du bisher versucht hast – und ob eine Zusammenarbeit Sinn macht. Danach bekommst du ein konkretes Angebot."
+      - question: "Muss ich mich vorbereiten?"
+        answer: "Nein. Deine Antworten aus dem Formular reichen mir. Je ehrlicher du dort antwortest, desto besser kann ich mich vorbereiten – und desto schneller kommen wir zum Punkt."
+      - question: "Was kostet die Zusammenarbeit?"
+        answer: "Mein Stundensatz liegt bei 125 €. Die meisten Kunden starten mit einem 3-monatigen Setup-Projekt zwischen 4.750 € und 9.500 €, je nach Teamgröße. Alle Details findest du auf der Preise-Seite."
+      - question: "Muss ich mich langfristig binden?"
+        answer: "Nein. Das Setup-Projekt läuft über 3 Monate. Danach ist die laufende Begleitung monatlich kündbar. Kein Abo, kein Lock-in."
+      - question: "Arbeitest du vor Ort oder remote?"
+        answer: "Beides. Workshops und Diagnose-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
+      - question: "Gibt es eine Förderung?"
+        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50 % der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."

@@ -1,0 +1,36 @@
+meta:
+  title: "Kontakt – Lukas Ebner"
+  description: "Schreib mir – für ein Erstgespräch, Sparring oder wenn du einfach eine Frage hast. Ich melde mich innerhalb von 24 Stunden."
+  og_image: /images/og/kontakt.jpg
+
+slides:
+  # ── 1. SPLIT: Persönliche Begrüßung ───────────────────
+  - template: split
+    direction: right
+    variant: dark
+    headline: "Ich freu mich, von dir zu hören."
+    body: "Ob du ein konkretes Projekt im Kopf hast, ein Sparring brauchst oder einfach eine Frage – schreib mir. Kein Vertriebsteam, kein Chatbot. Du schreibst mir direkt.\n\nIch melde mich in der Regel innerhalb von 24 Stunden. Wenn es schneller gehen soll: ruf einfach an."
+    image:
+      src: /images/fotos/IMG_8273-2.jpg
+      alt: "Lukas Ebner – bereit für ein Gespräch"
+
+  # ── 2. CONTACT-FORM ────────────────────────────────────
+  - template: contact-form
+    headline: "Schreib mir."
+    subtext: "Erzähl mir kurz, worum es geht – ich melde mich bei dir."
+    email: "info@lukasebner.de"
+    phone: "+49 941 463 900 42"
+    address: "Regensburg, Bayern"
+    socials:
+      - label: "LinkedIn"
+        url: "https://linkedin.com/in/lukas-ebner"
+      - label: "Leadtime"
+        url: "https://leadtime.app"
+      - label: "Fracto"
+        url: "https://fracto.de"
+
+  # ── 3. QUOTE ───────────────────────────────────────────
+  - template: quote
+    quote: "Die besten Geschäftsbeziehungen beginnen mit einem ehrlichen Gespräch, nicht mit einem Pitch Deck."
+    attribution: "— Lukas Ebner"
+    variant: light

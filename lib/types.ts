@@ -24,4 +24,5 @@ export interface ImageConfig {
   alt: string
   opacity?: number
   height?: string
+  position?: string
 }

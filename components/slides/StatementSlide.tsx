@@ -9,12 +9,15 @@ interface StatementSlideProps {
   /** `orange`: dunkler Hintergrund + orange Akzentlinie (kein Vollflächen-Orange) */
   variant?: 'dark' | 'orange'
   backgroundImage?: { src: string; alt: string }
+  /** `large`: sehr große Headline (Pitch-Deck) */
+  size?: 'normal' | 'large'
 }
 
 export function StatementSlide({
   headline,
   variant = 'dark',
   backgroundImage,
+  size = 'normal',
 }: StatementSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
@@ -46,7 +49,11 @@ export function StatementSlide({
         {showAccentLine ? (
           <div className="mx-auto mb-8 h-[2px] w-16 bg-brand" aria-hidden />
         ) : null}
-        <h2 className="text-center font-display text-h1 font-normal leading-tight text-text-light">
+        <h2
+          className={`text-center font-display font-normal leading-tight text-text-light ${
+            size === 'large' ? 'text-stat' : 'text-h1'
+          }`}
+        >
           {headline}
         </h2>
       </motion.div>

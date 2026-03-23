@@ -1,0 +1,96 @@
+meta:
+  title: "Preise & Leistungen – Lukas Ebner"
+  description: "Transparente Preise für Beratung, Sparring und Begleitung. Stundensatz, Setup-Pakete und laufende Betreuung – individuell nach Unternehmensgröße."
+  og_image: /images/og/preise.jpg
+
+slides:
+  # ── 1. HERO ──────────────────────────────────────────
+  - template: hero-split
+    pill: "Preise"
+    headline: "Was es kostet. Und was du dafür bekommst."
+    subtext: "Keine versteckten Kosten, keine Überraschungen. Ein Stundensatz, transparente Pakete – zugeschnitten auf die Größe und Komplexität deines Unternehmens."
+    cta:
+      text: "Erstgespräch vereinbaren"
+      url: "/erstgespraech"
+    image:
+      src: /images/paintings/Leadtime_impressionist_oil_painting_someone_is_holding_an_old_4b66c5dd-942e-492a-a933-7e407d71e2ff_3.png
+      alt: "Stoppuhr – transparente Preise"
+
+  # ── 2. TEXT + IMAGE: Wie ich arbeite ────────────────
+  - template: text-image
+    headline: "Wie ich arbeite."
+    body: "Ich rechne nach Stunden ab – transparent und nachvollziehbar. Je nach Unternehmensgröße ergibt sich ein unterschiedlicher Beratungsbedarf. Die Tabelle unten zeigt Richtwerte. Im Erstgespräch entwickeln wir gemeinsam einen Plan, der zu deiner Situation passt.\n\nDas typische Engagement ist ein 3-Monats-Setup: In den ersten beiden Monaten arbeiten wir intensiv an Analyse, Strategie und den ersten Umsetzungen. Ab Monat 3 wechseln wir in eine laufende Begleitung mit weniger Stunden – monatlich kündbar."
+    imagePosition: right
+    image:
+      src: /images/fotos/DSC00695-2.jpg
+      alt: "Lukas Ebner – Beratungsgespräch"
+
+  # ── 3. PRICING TABLE ─────────────────────────────────
+  - template: pricing-table
+    headline: "Stundensatz & Richtwerte."
+    body: "Alle Preise netto. Der konkrete Umfang ergibt sich aus deiner Situation – die Tabelle zeigt Erfahrungswerte als Orientierung."
+    hourlyRate: "125 €"
+    tiers:
+      - label: "S"
+        employees: "5–15 Mitarbeiter"
+        setup:
+          hoursWeek: "~4h"
+          hoursMonth: "~16h"
+          price: "2.000 €"
+        ongoing:
+          hoursMonth: "~6h"
+          price: "750 €"
+        package3m: "4.750 €"
+      - label: "M"
+        employees: "15–40 Mitarbeiter"
+        setup:
+          hoursWeek: "~6h"
+          hoursMonth: "~24h"
+          price: "3.000 €"
+        ongoing:
+          hoursMonth: "~8h"
+          price: "1.000 €"
+        package3m: "7.000 €"
+      - label: "L"
+        employees: "40–100 Mitarbeiter"
+        setup:
+          hoursWeek: "~8h"
+          hoursMonth: "~32h"
+          price: "4.000 €"
+        ongoing:
+          hoursMonth: "~12h"
+          price: "1.500 €"
+        package3m: "9.500 €"
+    footnote: "Das sind Richtwerte, keine starren Pakete. Jedes Unternehmen ist anders. Im Erstgespräch entwickeln wir einen bedarfsgerechten Plan, der sich an diesem Modell orientiert – aber immer an deine konkrete Situation angepasst ist."
+    bafa: "Viele KMUs können über die BAFA-Förderung 'Unternehmensberatungen für KMU' bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich gerne bei der Antragstellung."
+    cta:
+      label: "Erstgespräch vereinbaren"
+      href: "/erstgespraech"
+
+  # ── 4. TEXT + IMAGE: Was im Setup passiert ───────────
+  - template: text-image
+    headline: "Was im Setup passiert."
+    body: "In der Setup-Phase (Monat 1–2) arbeiten wir typischerweise mit wöchentlichen Workshops. Je nach Unternehmensgröße sind das 2–4 Stunden pro Termin, plus Vor- und Nachbereitung sowie asynchrone Verfügbarkeit zwischen den Terminen.\n\nWir starten mit einer Diagnose: Wie funktioniert dein Unternehmen wirklich? Wo sind die Engpässe? Dann entwickeln wir konkrete Lösungen – Prozesse, Führungsstruktur, Kennzahlen – und beginnen direkt mit der Umsetzung.\n\nAb Monat 3 wechseln wir in den Sparring-Modus: kürzere, regelmäßige Sessions, in denen wir strategische Fragen durcharbeiten und die Umsetzung begleiten. Monatlich kündbar."
+    imagePosition: right
+    image:
+      src: /images/fotos/IMG_8265-2.jpg
+      alt: "Lukas Ebner – Workshop"
+
+  # ── 5. FAQ ──────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was passiert im Erstgespräch?"
+        answer: "30 Minuten, kein Pitch. Wir klären, wo dein größter Hebel liegt, was du bisher versucht hast – und ob eine Zusammenarbeit Sinn macht. Danach bekommst du ein konkretes Angebot."
+      - question: "Wie läuft das Setup-Projekt ab?"
+        answer: "In den ersten zwei Monaten arbeiten wir intensiv: wöchentliche Workshops, Analyse deiner Prozesse, Entwicklung konkreter Lösungen. Ab Monat 3 wechseln wir ins laufende Sparring mit weniger Stunden."
+      - question: "Muss ich mich langfristig binden?"
+        answer: "Nein. Das Setup-Projekt läuft über 3 Monate. Danach ist die laufende Begleitung monatlich kündbar. Kein Abo, kein Lock-in."
+      - question: "Arbeitest du vor Ort oder remote?"
+        answer: "Beides. Workshops und Diagnose-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
+      - question: "Was, wenn ich ein kleineres Budget habe?"
+        answer: "Dann passen wir den Umfang an. Weniger Stunden pro Woche, fokussiert auf den einen Hebel, der gerade am meisten bringt. Lieber klein starten und sehen, ob es funktioniert."
+      - question: "Gibt es eine Förderung?"
+        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50 % der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."

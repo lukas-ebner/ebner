@@ -5,10 +5,9 @@ import { Github, Linkedin } from 'lucide-react'
 const footerLinkClass = 'font-body text-sm text-text-muted transition-colors hover:text-brand'
 
 const leistungen = [
-  { href: '/geschaeftsfuehrer-coaching', label: 'GF-Coaching' },
-  { href: '/agentur-skalieren', label: 'Agentur skalieren' },
-  { href: '/ki-automatisierung', label: 'KI & Automatisierung' },
-  { href: '/vibe-coding-beratung', label: 'Vibe Coding' },
+  { href: '/operations', label: 'Operations & Führung' },
+  { href: '/digitalisierung', label: 'Systeme & Automatisierung' },
+  { href: '/ki-readiness', label: 'KI-Readiness' },
 ]
 
 const mehr = [
@@ -95,11 +94,19 @@ export function Footer() {
           <p className="mb-4 font-mono text-pill uppercase tracking-widest text-text-muted">
             Kontakt
           </p>
-          <p className="font-body text-sm text-text-muted">Lukas Ebner</p>
-          <p className="mt-1 font-body text-sm text-text-muted">Regensburg</p>
+          <p className="font-body text-sm text-text-muted">Wachstumscoach GmbH</p>
+          <p className="mt-1 font-body text-sm text-text-muted">Yorckstraße 22</p>
+          <p className="font-body text-sm text-text-muted">93049 Regensburg</p>
+          <a
+            href="tel:+499414639098​0"
+            className="mt-3 inline-block font-body text-sm text-text-muted transition-colors hover:text-brand"
+          >
+            +49 941 463 909 80
+          </a>
+          <br />
           <a
             href="mailto:hi@lukasebner.de"
-            className="mt-3 inline-block font-body text-sm text-text-muted transition-colors hover:text-brand"
+            className="mt-1 inline-block font-body text-sm text-text-muted transition-colors hover:text-brand"
           >
             hi@lukasebner.de
           </a>

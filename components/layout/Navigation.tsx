@@ -27,9 +27,11 @@ const services = [
 const navItems = [
   { href: '/projekte', label: 'Projekte' },
   { href: '/ueber-mich', label: 'Über mich' },
+  { href: '/preise', label: 'Preise' },
   { href: '/blog', label: 'Blog' },
-  { href: '/kontakt', label: 'Kontakt' },
 ]
+
+const ctaButton = { href: '/erstgespraech', label: 'Erstgespräch buchen' }
 
 export function Navigation() {
   const pathname = usePathname()
@@ -63,30 +65,31 @@ export function Navigation() {
     }
   }, [menuOpen])
 
-  const onDarkSurface = isHomepage && !scrolled
-  const shell =
-    scrolled || !isHomepage
-      ? 'border-b border-border bg-white/95 text-text-primary shadow-sm backdrop-blur'
-      : 'border-b border-transparent bg-transparent text-text-light'
+  const darkHeroPages = ['/', '/operations', '/digitalisierung', '/ki-readiness', '/ueber-mich', '/preise', '/erstgespraech']
+  const hasDarkHero = darkHeroPages.includes(pathname)
+  const onDarkSurface = hasDarkHero && !scrolled
+  const shell = scrolled || !hasDarkHero
+    ? 'bg-white/95 text-text-primary shadow-[0_2px_16px_rgba(0,0,0,0.12)] backdrop-blur'
+    : 'bg-transparent text-text-light'
 
   return (
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${shell}`}
       >
-        <div className="flex w-full items-center justify-between px-8 py-4 lg:px-12">
+        <div className="flex h-20 w-full items-center justify-between px-8 lg:px-12">
           <Link href="/" className="relative z-10 flex items-center gap-2">
             <Image
               src="/images/logo/ebner-logo.svg"
               alt="Lukas Ebner"
-              width={120}
-              height={28}
-              sizes="120px"
+              width={150}
+              height={36}
+              sizes="150px"
               style={{ width: 'auto', height: 'auto' }}
               className={
                 onDarkSurface
-                  ? 'h-6 max-w-[120px] brightness-0 invert'
-                  : 'h-6 max-w-[120px]'
+                  ? 'h-8 max-w-[150px] brightness-0 invert'
+                  : 'h-8 max-w-[150px]'
               }
               priority
             />
@@ -100,7 +103,7 @@ export function Navigation() {
             >
               <button
                 type="button"
-                className={`inline-flex items-center font-mono text-label font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                className={`inline-flex items-center font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
                 aria-expanded={servicesOpen}
@@ -140,13 +143,20 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-label font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                className={`font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
+
+            <Link
+              href={ctaButton.href}
+              className="ml-2 rounded-full bg-brand px-5 py-2.5 font-mono text-sm font-normal uppercase tracking-wide text-white transition-opacity hover:opacity-90"
+            >
+              {ctaButton.label}
+            </Link>
           </nav>
 
           <button

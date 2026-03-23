@@ -3,7 +3,7 @@ import './globals.css'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 
-const faviconSvg = '/images/logo/ebner-square-icon-orange.svg'
+const faviconSvg = '/images/favicon.svg'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),

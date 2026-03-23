@@ -1,12 +1,14 @@
 import {
   type LucideIcon,
   ArrowRight,
+  Award,
   BarChart3,
   Bot,
   Building2,
   Calendar,
   Check,
   ChevronDown,
+  CircleDot,
   Compass,
   Database,
   ExternalLink,
@@ -75,6 +77,8 @@ export const iconMap: Record<string, LucideIcon> = {
   sparkles: Sparkles,
   scan: Scan,
   shield: Shield,
+  award: Award,
+  'circle-dot': CircleDot,
 }
 
 export function getIcon(name: string): LucideIcon | null {

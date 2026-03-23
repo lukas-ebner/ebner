@@ -17,7 +17,7 @@ export function FullImageSlide({ image }: FullImageSlideProps) {
         src={image.src}
         alt={image.alt ?? ''}
         fill
-        className="object-cover object-center"
+        className="object-cover object-[center_25%]"
         sizes="100vw"
         label="Full-Bleed"
       />

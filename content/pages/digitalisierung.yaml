@@ -1,0 +1,188 @@
+meta:
+  title: "Systeme & Automatisierung – Lukas Ebner"
+  description: "Eine Infrastruktur, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten. Tool-Audit, Systemkonsolidierung und Automatisierung."
+  og_image: /images/og/digitalisierung.jpg
+
+slides:
+  # ── 1. HERO-SPLIT ──────────────────────────────────────
+  - template: hero-split
+    pill: "Systeme & Automatisierung"
+    headline: "Eine Infrastruktur, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten."
+    subtext: "Tool-Audit, Systemkonsolidierung und Automatisierung für Unternehmen, die ihre digitale Infrastruktur von Flickenteppich auf Maschinenraum umstellen wollen."
+    cta:
+      text: "Gespräch vereinbaren"
+      url: "/erstgespraech"
+    image:
+      src: /images/paintings/Leadtime_A_huge_warehouse_filled_with_documents_and_file_fold_4d49df4b-98bf-4a1f-acd9-726193e2c169_3.png
+      alt: "Riesiges Dokumenten-Warehouse – im Datenchaos versunken"
+
+  # ── 2. PROBLEM INTRO (nur Headline + Body) ────────────
+  - template: problem
+    headline: "Zwar jede Menge Tools. Trotzdem kein Überblick."
+    body: "Du merkst es an den Excel-Sheets, die sich widersprechen. An den Meetings, in denen ihr Zahlen diskutiert, die niemand vertraut. An der Zeiterfassung, die keiner pflegt – weil sie in einem anderen Tool liegt als die Projekte.\n\nDas ist kein Technologie-Problem. Das ist ein Architektur-Problem. Und es kostet dich jeden Tag bares Geld."
+    symptoms: []
+
+  # ── 3. TOOL-CLOUD (interaktiv, direkt unter dem Text) ─
+  - template: tool-cloud
+    variant: light
+    cloudImage: "/images/wolke/240_F_601735870_twMX9hrPPPvBdQCB9c5ALqLiQVAi92o9 1.svg"
+    tools:
+      - src: "/images/wolke/Rectangle 4239.svg"
+      - src: "/images/wolke/Rectangle 4240.svg"
+      - src: "/images/wolke/Rectangle 4241.svg"
+      - src: "/images/wolke/Rectangle 4242.svg"
+      - src: "/images/wolke/Rectangle 4243.svg"
+      - src: "/images/wolke/Rectangle 4244.svg"
+      - src: "/images/wolke/Rectangle 4245.svg"
+      - src: "/images/wolke/Rectangle 4246.svg"
+      - src: "/images/wolke/Rectangle 4247.svg"
+      - src: "/images/wolke/Rectangle 4248.svg"
+      - src: "/images/wolke/Rectangle 4249.svg"
+      - src: "/images/wolke/Rectangle 4250.svg"
+      - src: "/images/wolke/Rectangle 4251.svg"
+    people:
+      - image: "/images/wolke/Ellipse 17.svg"
+        quote: "Du hast bei deinem Projektplan nicht berücksichtigt, dass ich jetzt drei Wochen Urlaub habe."
+      - image: "/images/wolke/Ellipse 18.svg"
+        quote: "Der Kunde behauptet, Ihr hättet die Anforderung so besprochen. Was stimmt jetzt?"
+      - image: "/images/wolke/Ellipse 19.svg"
+        quote: "Ich habe oft einfach keinen Überblick über die Gesamtsituation."
+      - image: "/images/wolke/Ellipse 20.svg"
+        quote: "Wir haben zehn Tools. Aber für Rechnungen muss ich doch wieder Excel rumwühlen."
+      - image: "/images/wolke/Ellipse 21.svg"
+        quote: "Momentan ertrinken wir in Arbeit. Aber ist das im Herbst auch noch so? Sollen wir recruiten oder lieber nicht?"
+      - image: "/images/wolke/Ellipse 22.svg"
+        quote: "Wir wissen eigentlich erst mit dem Jahresabschluss, ob ein Jahr gut war."
+
+  # ── 4. SYMPTOMS GRID (2×2, text-only) ────────────────
+  - template: symptoms-grid
+    symptoms:
+      - pill: "Symptom 1"
+        icon: repeat
+        headline: "Daten pflegen statt arbeiten."
+        body: "Dein Team verbringt Stunden damit, Informationen zwischen Tools hin und her zu kopieren. Zeiterfassung hier, Projektplanung dort, Controlling in Excel.\n\nDas ist keine Arbeit. Das ist Datenpflege. Und sie frisst genau die Kapazität, die du für echte Wertschöpfung brauchst."
+      - pill: "Symptom 2"
+        icon: bar-chart-3
+        headline: "Keine Zahl stimmt."
+        body: "Du fragst nach der Projektmarge und bekommst drei verschiedene Antworten – je nachdem, wen du fragst und welches Sheet gerade aktuell ist.\n\nOhne eine einzige Quelle der Wahrheit steuerst du blind. Und jede Entscheidung basiert auf einem Bauchgefühl statt auf Fakten."
+      - pill: "Symptom 3"
+        icon: layers
+        headline: "Jedes neue Tool macht es schlimmer."
+        body: "Für jedes Problem wurde ein neues Tool gekauft. Toggl für Zeit, Asana für Projekte, Pipedrive für Sales, Harvest für Rechnungen.\n\nAber nichts davon ist verbunden. Jedes Tool hat seine eigene Wahrheit. Und du hast jetzt 15 Inseln statt eines Systems."
+      - pill: "Symptom 4"
+        icon: clock
+        headline: "Reports brauchen Tage."
+        body: "Monatsabschluss: Zwei Tage Excel-Arbeit. Quartals-Review: Eine Woche Vorbereitung. Projektauswertung: Gar nicht erst.\n\nWenn du Zahlen brauchst, die aktuell und verlässlich sind, sollte das Sekunden dauern – nicht Tage."
+
+  # ── 5. CREDIBILITY (teal-dark) ────────────────────────
+  - template: credibility
+    bg: "#0D4F54"
+    headline: "Ich kenne das. Weil ich das Tool dafür gebaut habe."
+    body: "15 Jahre lang habe ich ein Unternehmen aufgebaut – von null auf 50 Mitarbeiter und 4 Mio Umsatz. Ich habe jedes PSA-Tool am Markt ausprobiert. Keins hat gepasst.\n\nAlso haben wir unser eigenes gebaut: Leadtime. Ein ERP für Digitalunternehmen. Heute nutzen es dutzende Agenturen. Ich weiß nicht nur, wie Systeme funktionieren sollten – ich habe eines gebaut."
+    proofs:
+      - text: "15 Jahre Geschäftsführer einer Digitalagentur"
+      - text: "Leadtime als ERP-Produkt entwickelt und am Markt etabliert"
+      - text: "Dutzende Agenturen erfolgreich auf ein zentrales System migriert"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+    secondaryCta:
+      label: "Leadtime kennenlernen"
+      href: "https://leadtime.app"
+      external: true
+    slideshow:
+      - src: /images/leadtime/slide-projects.png
+        alt: "Leadtime – Projektübersicht"
+      - src: /images/leadtime/slide-timetracking.png
+        alt: "Leadtime – Zeiterfassung"
+      - src: /images/leadtime/slide-pipeline.png
+        alt: "Leadtime – Sales Pipeline"
+      - src: /images/leadtime/slide-analytics.png
+        alt: "Leadtime – Analytics Dashboard"
+      - src: /images/leadtime/slide-billing.png
+        alt: "Leadtime – Rechnungsstellung"
+      - src: /images/leadtime/slide-tasks.png
+        alt: "Leadtime – Task Management"
+
+  # ── 6. NUMBERED FEATURES: Woran wir arbeiten ─────────
+  - template: numbered-features
+    headline: "Woran wir arbeiten."
+    body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
+    features:
+      - headline: "Tool-Audit & Prozessanalyse."
+        body: "Welche Tools nutzt ihr wirklich? Welche Daten werden doppelt gepflegt? Wo gehen Informationen verloren?\n\nIch schaue mir nicht nur die Tools an, sondern die Arbeitsabläufe dahinter – und finde die Stellen, an denen ihr jeden Tag Zeit und Geld verbrennt."
+        image:
+          src: /images/fotos/DSC00263.jpg
+          alt: "Tool-Audit am Whiteboard"
+      - headline: "Systemarchitektur & Konsolidierung."
+        body: "Wir entwerfen die Ziel-Architektur: Welches System wird die zentrale Datenquelle? Was wird angebunden, was abgeschafft?\n\nWeniger ist hier immer mehr. Drei verbundene Tools schlagen fünfzehn isolierte."
+        image:
+          src: /images/fotos/DSC00270.jpg
+          alt: "Systemarchitektur entwerfen"
+      - headline: "Automatisierung & Workflows."
+        body: "Zeiterfassung → Controlling → Rechnungsstellung. Reports, die sich selbst schreiben. Daten, die einmal eingegeben werden und überall verfügbar sind.\n\nAlles, was regelbasiert ist, läuft automatisch. Dein Team arbeitet – das System rechnet."
+        image:
+          src: /images/fotos/DSC00277.jpg
+          alt: "Workflow-Automatisierung"
+      - headline: "Migration & Enablement."
+        body: "Daten sauber migrieren, ohne Verluste. Dein Team schulen, damit es das System lebt – nicht nur kennt.\n\nDokumentation, Übergabe und eine Übergangsphase, in der ich erreichbar bin, falls etwas klemmt."
+        image:
+          src: /images/fotos/DSC00321.jpg
+          alt: "Team-Schulung und Enablement"
+
+  # ── 7. ICON CIRCLES: Drei Phasen (dark) ──────────────
+  - template: icon-circles
+    headline: "Drei Hebel. In dieser Reihenfolge."
+    subtext: "Kein 200-Seiten-Konzept. Drei klare Phasen."
+    items:
+      - icon: search
+        title: "Analyse"
+        body: "Ich schaue mir an, wie eure Tool-Landschaft wirklich funktioniert – nicht wie sie im Organigramm aussieht. Welche Daten fließen wo? Wo wird doppelt gepflegt? Wo verliert ihr Marge, ohne es zu merken?"
+      - icon: wrench
+        title: "System bauen"
+        body: "Wir konsolidieren eure Tools auf eine zentrale Architektur. Klare Datenflüsse, automatisierte Workflows, ein System als Single Source of Truth. Pragmatisch, so dass euer Team es auch lebt."
+      - icon: message-circle
+        title: "Laufendes Sparring"
+        body: "Wenn das System steht, wechseln wir ins Sparring. Optimierung, neue Anforderungen, Skalierung. Ich bleibe als technischer Sparringspartner an Bord – so lange es Sinn macht."
+
+  # ── 8. PRICING TEASER (fullscreen) ────────────────────
+  - template: pricing-teaser
+    headline: "Transparent. Ab 125 €/h."
+    body: "Kein Pauschalpreis. Ein klarer Stundensatz und ein bedarfsgerechter Plan – je nach Unternehmensgröße."
+    hourlyRate: "125 €"
+    tiers:
+      - label: "S"
+        employees: "5–15 Mitarbeiter"
+        price: "4.750 €"
+        suffix: "3-Monats-Setup"
+      - label: "M"
+        employees: "15–40 Mitarbeiter"
+        price: "7.000 €"
+        suffix: "3-Monats-Setup"
+      - label: "L"
+        employees: "40–100 Mitarbeiter"
+        price: "9.500 €"
+        suffix: "3-Monats-Setup"
+    footnote: "Richtwerte. Im Erstgespräch entwickeln wir einen individuellen Plan."
+    cta:
+      label: "Alle Preise & Details"
+      href: "/preise"
+
+  # ── 9. FAQ (light, 2-spaltig) ─────────────────────────
+  - template: faq
+    headline: "Häufige Fragen."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was passiert im Erstgespräch?"
+        answer: "30 Minuten, kein Pitch. Wir klären, wie eure aktuelle Tool-Landschaft aussieht, wo der größte Schmerzpunkt liegt – und ob eine Zusammenarbeit Sinn macht."
+      - question: "Muss ich Leadtime nutzen?"
+        answer: "Nein. Wenn Leadtime zu eurer Situation passt, fließt es in die Empfehlung ein. Muss es aber nicht. Ich bin Tool-agnostisch und empfehle, was für euch am besten funktioniert."
+      - question: "Wie lange dauert so ein Projekt?"
+        answer: "Das Setup dauert typischerweise 2–3 Monate: Analyse, Architektur, Implementierung und Übergabe. Danach wechseln wir ins laufende Sparring mit weniger Stunden."
+      - question: "Was, wenn wir schon ein Tool haben, das wir behalten wollen?"
+        answer: "Kein Problem. Nicht jedes Tool muss weg. Manchmal ist die richtige Antwort eine Anbindung oder Integration statt eines Wechsels. Wir schauen, was Sinn macht."
+      - question: "Arbeitest du vor Ort oder remote?"
+        answer: "Beides. Workshops und Analyse-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
+      - question: "Gibt es eine Förderung?"
+        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."

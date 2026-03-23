@@ -9,7 +9,8 @@ interface HeroSplitSlideProps {
   headline: string
   subtext: string
   cta: CtaConfig
-  image: ImageConfig
+  image?: ImageConfig
+  video?: string
   pill?: string
 }
 
@@ -18,12 +19,13 @@ export function HeroSplitSlide({
   subtext,
   cta,
   image,
+  video,
   pill,
 }: HeroSplitSlideProps) {
   return (
-    <div className="grid min-h-[70vh] grid-cols-1 items-stretch pt-20 lg:grid-cols-2 lg:pt-24">
+    <div className="grid min-h-screen grid-cols-1 items-stretch bg-surface-dark lg:grid-cols-2">
       <motion.div
-        className="order-2 flex flex-col justify-center bg-surface-dark px-8 py-12 lg:order-none lg:px-12 lg:py-24"
+        className="order-2 flex flex-col justify-center px-8 py-12 lg:order-none lg:px-12 lg:py-24 lg:pt-24"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -46,16 +48,27 @@ export function HeroSplitSlide({
         </div>
       </motion.div>
 
-      <div className="relative order-1 h-[40vh] w-full overflow-hidden lg:order-none lg:h-full lg:min-h-[70vh]">
-        <ImageWithFallback
-          src={image.src}
-          alt={image.alt ?? ''}
-          fill
-          className="object-cover object-center"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority
-          label="Hero-Bild"
-        />
+      <div className="relative order-1 h-[50vh] w-full overflow-hidden lg:order-none lg:h-full lg:min-h-screen">
+        {video ? (
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        ) : image ? (
+          <ImageWithFallback
+            src={image.src}
+            alt={image.alt ?? ''}
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            priority
+            label="Hero-Bild"
+          />
+        ) : null}
       </div>
     </div>
   )

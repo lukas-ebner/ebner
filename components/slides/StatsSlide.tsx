@@ -12,9 +12,10 @@ interface StatItem {
 
 interface StatsSlideProps {
   stats: StatItem[]
+  variant?: 'dark' | 'light'
 }
 
-function StatCell({ value, label }: StatItem) {
+function StatCell({ value, label, dark = true }: StatItem & { dark?: boolean }) {
   const ref = useRef(null)
   const enabled = useInView(ref, { once: true, margin: '-40px' })
   const target = parseStatTarget(value)
@@ -25,20 +26,21 @@ function StatCell({ value, label }: StatItem) {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="font-display text-stat font-bold text-text-light">{display}</p>
-      <p className="mt-3 font-mono text-pill uppercase tracking-widest text-text-muted">
+      <p className={`font-display text-stat font-bold ${dark ? 'text-text-light' : 'text-text-primary'}`}>{display}</p>
+      <p className={`mt-3 font-mono text-pill uppercase tracking-widest ${dark ? 'text-text-muted' : 'text-text-dimmed'}`}>
         {label}
       </p>
     </div>
   )
 }
 
-export function StatsSlide({ stats }: StatsSlideProps) {
+export function StatsSlide({ stats, variant }: StatsSlideProps) {
+  const dark = variant === 'dark'
   return (
-    <div className="bg-surface-dark py-section-mobile lg:py-section-desktop">
+    <div className={`py-section-mobile lg:py-section-desktop ${dark ? 'bg-surface-dark' : 'bg-surface-light'}`}>
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 lg:grid-cols-4">
         {stats.map((stat) => (
-          <StatCell key={`${stat.label}-${stat.value}`} {...stat} />
+          <StatCell key={`${stat.label}-${stat.value}`} {...stat} dark={dark} />
         ))}
       </div>
     </div>
