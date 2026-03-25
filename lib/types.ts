@@ -7,6 +7,7 @@ export interface PageMeta {
   title: string
   description: string
   og_image?: string
+  accent?: string
 }
 
 export interface PageConfig {
@@ -25,4 +26,5 @@ export interface ImageConfig {
   opacity?: number
   height?: string
   position?: string
+  mobilePosition?: string
 }

@@ -11,8 +11,9 @@ interface ImageWithFallbackProps {
   className?: string
   sizes?: string
   priority?: boolean
+  quality?: number
   label?: string
-  /** Wird an `next/image` durchgereicht (z. B. Opacity für Hintergrundbilder). */
+  /** Wird an `next/image` durchgereicht (z. B. Opacity für Hintergrundbilder). */
   style?: CSSProperties
 }
 
@@ -23,6 +24,7 @@ export function ImageWithFallback({
   className,
   sizes,
   priority,
+  quality,
   label,
   style,
 }: ImageWithFallbackProps) {
@@ -52,6 +54,7 @@ export function ImageWithFallback({
       className={className}
       sizes={sizes}
       priority={priority}
+      quality={quality}
       style={style}
       onError={() => setFailed(true)}
     />

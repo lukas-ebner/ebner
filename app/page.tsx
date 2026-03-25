@@ -14,6 +14,6 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function HomePage() {
-  const { slides } = loadPage('homepage')
-  return <PageBuilder slides={slides} />
+  const page = loadPage('homepage')
+  return <PageBuilder slides={page.slides} accent={page.meta.accent} />
 }

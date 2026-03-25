@@ -19,13 +19,13 @@ const services = [
   },
   {
     href: '/ki-readiness',
-    title: 'KI-Readiness',
+    title: 'KI-Readiness & Prototyping',
     desc: 'Von der Idee zum Prototyp. In Tagen, nicht Monaten.',
   },
 ]
 
 const navItems = [
-  { href: '/projekte', label: 'Projekte' },
+  { href: '/projekte', label: 'Beteiligungen' },
   { href: '/ueber-mich', label: 'Über mich' },
   { href: '/preise', label: 'Preise' },
   { href: '/blog', label: 'Blog' },
@@ -65,7 +65,7 @@ export function Navigation() {
     }
   }, [menuOpen])
 
-  const darkHeroPages = ['/', '/operations', '/digitalisierung', '/ki-readiness', '/ueber-mich', '/preise', '/erstgespraech']
+  const darkHeroPages = ['/', '/operations', '/digitalisierung', '/ki-readiness', '/ueber-mich', '/preise', '/erstgespraech', '/projekte']
   const hasDarkHero = darkHeroPages.includes(pathname)
   const onDarkSurface = hasDarkHero && !scrolled
   const shell = scrolled || !hasDarkHero

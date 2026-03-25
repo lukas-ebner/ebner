@@ -4,7 +4,7 @@ meta:
   og_image: /images/og/ueber-mich.jpg
 
 slides:
-  # ── 1. HERO (fullwidth image-overlay) ──────────────────
+  # ── 1. HERO ─────────────────────────────────────────
   - template: image-overlay
     headline: "Ich baue Systeme, die bleiben."
     body: "Gründer, Builder, Systemdenker. Seit über 15 Jahren baue ich Unternehmen und die Software, die sie am Laufen hält."
@@ -20,182 +20,160 @@ slides:
     valign: center
     gradient: left
 
-  # ── 2. STATEMENT: Typo-Breaker ────────────────────────
-  - template: statement
-    headline: "Das Produkt ist selten das Problem. Das System dahinter ist es."
-    variant: dark
-
-  # ── 3. TEXT-BLOCK: Meine Geschichte (ohne Foto) ───────
-  - template: text-block
-    headline: "Von der Garage zum Exit."
-    body: "2009 habe ich mit 22 eine Softwarefirma gegründet. Kein VC, kein Netzwerk, keine Ahnung von Unternehmensführung. Nur Code und den Willen, dass es funktioniert.\n\n13 Jahre später: über 1.000 Projekte geliefert, ein System gebaut das skaliert, und ein Exit im 7-stelligen Bereich. Bootstrapped. Ohne Hype.\n\nWas ich in dieser Zeit gelernt habe: Wie du lieferst, planst, abrechnest, kommunizierst – das entscheidet, ob du wächst oder dich im Kreis drehst."
-    variant: light
-
-  # ── 4. IMAGE-OVERLAY: Fullwidth mit Foto ──────────────
-  - template: image-overlay
-    align: right
-    valign: center
-    gradient: right
-    height: "75vh"
-    headline: "How do you scale"
-    body: "Der rote Faden? Ich baue Systeme, die bleiben. Für Teams, die zu viel Arbeit und zu wenig Struktur haben."
-    image:
-      src: /images/fotos/DSC00263.jpg
-      alt: "Lukas Ebner Portrait"
-      opacity: 0.9
-
-  # ── 5. STATEMENT: Typo-Breaker ────────────────────────
-  - template: statement
-    headline: "Bootstrapped. Ohne Hype. Dafür mit System."
-    variant: orange
-
-  # ── 6. CARDS-GRID: Aktuelle Projekte ──────────────────
-  - template: cards-grid
-    headline: "Woran ich gerade baue."
-    subtext: "Drei Rollen, ein gemeinsamer Nenner: Unternehmen systematisch besser machen."
-    cardVariant: image
-    cards:
-      - title: "Leadtime"
-        body: "Project Delivery Platform für Software-Dienstleister. Ein System statt zehn Tools – gebaut aus 15 Jahren Projektgeschäft."
-        image:
-          src: /images/fotos/IMG_8231-2.jpg
-          alt: "Lukas im Büro nachdenklich"
-        cta:
-          text: "Mehr erfahren"
-          url: "https://leadtime.app"
-      - title: "Fracto"
-        body: "AI-gestützte Schulungsplattform für MedTech. Damit Klinikpersonal Geräte versteht, bevor es sie bedient."
-        image:
-          src: /images/fotos/DSC00170.jpg
-          alt: "Lukas Portrait professionell"
-        cta:
-          text: "Mehr erfahren"
-          url: "https://fracto.de"
-      - title: "Wachstumscoach"
-        body: "Organisationsberatung für Gründer, die ihr Unternehmen von der Werkstatt zur Fabrik entwickeln wollen."
-        image:
-          src: /images/fotos/DSC00109.jpg
-          alt: "Lukas Portrait nahbar"
-        cta:
-          text: "Mehr erfahren"
-          url: "/operations"
-
-  # ── 7. PARALLAX: Visueller Break ─────────────────────
-  - template: parallax-image
-    height: "45vh"
-    image:
-      src: /images/fotos/IMG_8267-2.jpg
-      alt: "Lukas in modernem Korridor"
-
-  # ── 8. TIMELINE: Berufliche Laufbahn ─────────────────
+  # ── 2. TIMELINE ─────────────────────────────────────
   - template: timeline
-    headline: "Berufliche Laufbahn"
-    entries:
-      - period: "2026 – heute"
-        role: "Co-Founder & CTO"
-        org: "Fracto"
-        url: "https://fracto.de"
-        description: "AI-gestützte Schulungsplattform für die MedTech-Industrie. White-Label-Plattform mit AI Voice Bot für Produktschulungen medizintechnischer Geräte."
-      - period: "2023 – heute"
-        role: "Founder & Geschäftsführer"
-        org: "Leadtime"
-        url: "https://leadtime.app"
-        description: "Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Ressourcenmanagement, Controlling, CRM und Rechnungsstellung in einem System."
-      - period: "2023 – heute"
-        role: "Geschäftsführer"
-        org: "Wachstumscoach GmbH"
-        url: "https://lukasebner.de"
-        description: "Systemische Organisationsberatung und Einzelcoachings für Unternehmer. Solide Prozesse, gute Führung, mehr Profit."
-      - period: "2009 – 2022"
-        role: "Geschäftsführer & Gründer"
-        org: "eins+null GmbH & Co. KG"
-        url: "https://einsundnull.de"
-        description: "Software-Unternehmen für die Energiewirtschaft. 13 Jahre bootstrapped geführt, über 1.000 Projekte für Stadtwerke und Energieversorger, 50 Mitarbeiter aufgebaut, 2022 im 7-stelligen Bereich verkauft."
-
-  # ── 9. SPLIT: Familie ────────────────────────────────
-  - template: split
-    direction: left
-    headline: "Regensburg. Bayern. Zuhause."
-    body: "Ich lebe mit meiner Familie in Regensburg. Zwischen den Meetings und Commits gibt es auch ein Leben jenseits von Bildschirmen – meistens draußen, meistens mit Kind.\n\nIch glaube, dass gute Arbeit ein gutes Leben ermöglichen soll, nicht ersetzen. Deshalb baue ich Systeme, die funktionieren, ohne dass jemand sein Leben dafür opfern muss."
-    image:
-      src: /images/fotos/IMG_8308-2.jpg
-      alt: "Lukas mit Kind im Regen – passende Regenjacken"
-
-  # ── 10. TIMELINE: Ausbildung ─────────────────────────
-  - template: timeline
-    headline: "Ausbildung"
-    entries:
-      - period: "2012 – 2014"
-        role: "MBA – Unternehmensgründung & -führung"
-        org: "Technische Hochschule Deggendorf"
-        url: "https://www.th-deg.de"
-        grade: "1,4"
-        description: "Master of Business Administration mit Schwerpunkt Entrepreneurship, parallel zur Geschäftsführung bei eins+null."
-      - period: "2005 – 2011"
-        role: "Dipl. Informationswirt – Multimedia & Kommunikation"
-        org: "Hochschule Ansbach"
-        url: "https://www.hs-ansbach.de"
-        grade: "1,8"
-        description: "Studium an der Schnittstelle von IT, Medien und Wirtschaft."
-      - period: "1999 – 2002"
-        role: "Mediengestalter für Digital- und Printmedien"
-        org: "Creativ Concept Werbeagentur"
-        description: "Klassische Ausbildung in Grafikdesign, Typografie und Printproduktion. Das handwerkliche Fundament."
-
-  # ── 11. FEATURE-LIST: Zertifikate ────────────────────
-  - template: feature-list
-    headline: "Zertifikate & Weiterbildung"
-    columns: 2
-    items:
-      - icon: award
-        title: "Organisationsberater & Change Manager"
-        body: "ICO Institut für Coaching & Organisationsberatung · 2025"
-      - icon: award
-        title: "Systemisches Coaching kompakt"
-        body: "ICO Institut für Coaching & Organisationsberatung · 2025"
-      - icon: award
-        title: "Human Skills & Leadership"
-        body: "Technische Hochschule Deggendorf · 2017"
-      - icon: shield
-        title: "IT-Sicherheitsbeauftragter ISO 27001"
-        body: "TÜV NORD GROUP · 2016"
-
-  # ── 12. PHOTO GALLERY ────────────────────────────────
-  - template: photo-gallery
-    photos:
-      - src: /images/fotos/IMG_8274-2.jpg
-        alt: "Lukas am Fenster"
+    headline: "Mein Weg."
+    parallaxImages:
       - src: /images/fotos/DSC00104.jpg
-        alt: "Portrait Profil"
+        alt: "Portrait"
+      - src: /images/projects/einsnull/einsnull.jpg
+        alt: "eins+null"
       - src: /images/fotos/IMG_8249-2.jpg
         alt: "Am Schreibtisch"
+      - src: /images/fotos/DSC00270.jpg
+        alt: "Nachdenklich"
+      - src: /images/projects/leadtime/DSC02102.jpg
+        alt: "Leadtime"
+      - src: /images/fotos/L1030038.jpg
+        alt: "Home Office"
       - src: /images/fotos/IMG_8256-2.jpg
         alt: "An der Steinmauer"
-      - src: /images/fotos/DSC00321.jpg
-        alt: "Plasmaball"
-      - src: /images/fotos/IMG_8263-2.jpg
-        alt: "Im Industriekorridor"
-      - src: /images/fotos/IMG_8247-2.jpg
-        alt: "Am Fenster nachdenklich"
-      - src: /images/fotos/L1030038.jpg
-        alt: "Im Home Office"
+    entries:
+      - period: "2026 – heute"
+        role: "Fracto – KI-Plattform für Softwareunternehmen"
+        org: "Co-Founder & CTO"
+        url: "https://fracto.de"
+        description: "Zusammen mit Laurin Gerdes gegründet – wir haben uns im Silicon-Valley-Programm der TH Deggendorf kennengelernt. Ich verantworte Operations, Technik und den Organisationsaufbau. Laurin macht Vertrieb. Das Ziel: eine Plattform, die Software-Dienstleister bei der täglichen Arbeit mit KI unterstützt."
+      - period: "2023 – heute"
+        role: "Leadtime – die Software, die aus der Praxis kam"
+        org: "Founder & Geschäftsführer"
+        url: "https://leadtime.app"
+        description: "CONNEX war ein internes Tool, das ich bei eins+null entwickelt habe, um die Agentur skalierbar zu machen. Leadtime ist die konsequente Weiterentwicklung – diesmal als eigenständiges SaaS-Produkt: Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System."
+      - period: "2023 – heute"
+        role: "Wachstumscoach – Beratung für Geschäftsführer"
+        org: "Geschäftsführer, Wachstumscoach GmbH"
+        url: "https://lukasebner.de"
+        description: "Systemische Organisationsberatung und Coaching für Geschäftsführer von IT- und Software-Unternehmen. Ich helfe dabei, interne Abläufe zu professionalisieren – Operations, Prozesse, Digitalisierung. Alles, womit man ein System schneller und belastbarer macht. Kein Theoriewissen – sondern 13 Jahre eigene Erfahrung als Geschäftsführer."
+      - period: "2012 – 2014"
+        role: "MBA in Unternehmensgründung & -führung"
+        org: "Technische Hochschule Deggendorf"
+        url: "https://www.th-deg.de"
+        grade: "1,3"
+        description: "Berufsbegleitend neben der Geschäftsführung bei eins+null. Zwei Jahre lang abends und am Wochenende. In einer Seminararbeit über Controlling entstand die Idee für CONNEX – das Tool, aus dem später Leadtime werden sollte. Ein Studium, das direkt in ein Produkt gemündet hat."
+      - period: "2009 – 2022"
+        role: "eins+null – 13 Jahre Agentur, 1.000+ Projekte, ein Exit"
+        org: "Geschäftsführer & Gründer"
+        url: "https://einsundnull.de"
+        description: "Zusammen mit Michael Zuber im Wohnzimmer gegründet. Was als Freelancer-Duo begann, haben wir bootstrapped auf 4 Mio. Umsatz und 50 Mitarbeiter skaliert. Über 1.000 Projekte für die Energiewirtschaft – Webportale, Apps, digitale Vertriebsplattformen. 2022 im 7-stelligen Bereich verkauft."
+      - period: "2005 – 2009"
+        role: "Nebenbei: Freelance-Webentwicklung während des Studiums"
+        org: "Freiberuflich, u. a. für Goldgas"
+        description: "Parallel zum Studium an der Hochschule Ansbach habe ich als freiberuflicher Webentwickler gearbeitet – und damit mein Studium komplett selbst finanziert. Der entscheidende Auftrag kam über die Hochschulzeitschrift: Goldgas, ein Energie-Startup, das eine Website brauchte. Daraus wurde ein Portal, dann das Goldgas Cockpit – eine vollständige Vertriebsplattform. Dieser Auftrag war der Grundstein für die Gründung von eins+null."
+      - period: "2005 – 2010"
+        role: "Studium: Multimedia & Kommunikation"
+        org: "Hochschule Ansbach"
+        url: "https://www.hs-ansbach.de"
+        grade: "1,7"
+        description: "Fünf Jahre Multimedia & Kommunikation mit Schwerpunkt IT. Hier habe ich zum ersten Mal richtig programmieren gelernt – Perl, PHP, Java. Und hier ist der Unternehmer in mir entstanden: Statt Werkstudentenjobs habe ich von Tag eins als Freelancer gearbeitet und angefangen, eigene Projekte umzusetzen."
+      - period: "2002 – 2005"
+        role: "Freiberuflicher Mediengestalter"
+        org: "Verschiedene Agenturen & Verlage"
+        description: "Direkt nach der Ausbildung selbstständig gemacht. Webentwicklung, Printdesign, Logogestaltung – alles was reinkam. Gutes Geld für Anfang 20, aber irgendwann hat der Kopf mehr gewollt als die Hände liefern konnten. Also: Studium."
+      - period: "1999 – 2002"
+        role: "Ausbildung zum Mediengestalter"
+        org: "Creativ Concept Werbeagentur, Regensburg"
+        description: "Drei Jahre Grafikdesign, Typografie und Printproduktion. Das handwerkliche Fundament für alles, was danach kam. Aber schon während der Ausbildung war klar: Das Web ist interessanter als Papier."
+      - period: "1998 – 1999"
+        role: "Grundwehrdienst"
+        org: "Bundeswehr, Bad Reichenhall"
+        description: ""
+
+  # ── 3. STORY: Der beste Beruf ───────────────────────
+  - template: parallax-story
+    image:
+      src: /images/fotos/DSC00263.jpg
+      alt: "Lukas Ebner"
+    signature: /images/signature-new.svg
+    sections:
+      - headline: "Der beste Beruf."
+        body: "Unternehmertum ist pure Kreativität: Es ist deine Kernaufgabe, etwas zu erschaffen – aus dem Nichts. Eine Idee, ein Produkt, eine Strategie, ein Team, ein System, das Wert erzeugt. Und dann hältst du es am Laufen, während sich alles um dich herum verändert. Stressig? Ja, auch. Aber es ist der gute Stress – der, den man sich selbst ausgesucht hat. Zumindest meistens."
+      - type: quote
+        quote: "Meine Arbeit fühlt sich an wie ein faszinierendes Hobby – eine riesige Spielzeugeisenbahn im Keller – bei der es immer noch was zu pflegen und dranzubauen gibt."
+      - body: "Ich habe mit Anfang 20 angefangen, als Freelancer Websites zu bauen. Und ich empfehle jedem, dem das Schicksal oder die Umstände die Gelegenheit geben, ein Leben als Angestellter hinter sich zu lassen: schnell und beherzt zugreifen. Denn der Moment, in dem man seine erste Rechnung ausdruckt, auf eigenem Briefpapier – der ist unvergesslich. Nichts motiviert so, wie sich auf die eigenen Ressourcen und Skills zu besinnen und echte Verantwortung zu übernehmen. Für alles."
+      - body: "Was mich an Unternehmertum fasziniert, ist die schiere Bandbreite. An einem Tag verhandelst du einen Vertrag. Am nächsten debuggst du eine API. Dann sitzt du mit jemandem, der kurz davor ist hinzuschmeißen, und versuchst herauszufinden, was wirklich los ist. Und abends liest du ein Buch über Systemtheorie, weil du das Gefühl hast, dass da eine Idee drin steckt, die dein ganzes Unternehmen weiterbringt. Diese Abwechslung – dieses projektbasierte Arbeiten, wo kein Jahr wie das andere ist – das ist kein Nebeneffekt. Das ist der Kern."
+      - type: quote
+        quote: "Es ist der beste Beruf. Fordernd. Belohnend."
+      - body: "Jedes Projekt hinterlässt etwas. Eine Website, die noch läuft. Ein Tool, das ein Problem gelöst hat. Ein Team, das zusammengewachsen ist. Nach über 15 Jahren habe ich in meinem Kopf so etwas wie ein Verzeichnis – für jedes Jahr die Dinge, mit denen ich mich beschäftigt habe, was ich lernen musste, um sie umzusetzen, was am Ende dabei rauskam. Manchmal hatte ich richtig Erfolg damit. Manchmal nicht. Aber es bleibt immer was übrig. Das kann dir ein normaler Beruf nicht geben."
+      - body: "Man wird als Unternehmer nicht fertig. Nie. Es gibt immer eine neue Technologie, die alles verändert. Ein neues Buch, das deine Perspektive verschiebt. Feedback von jemandem, das dich zwingt, dich selbst ehrlich zu betrachten. Und es gibt die eigene Entwicklung – die Erkenntnis, dass du vor fünf Jahren Entscheidungen getroffen hast, die du heute anders treffen würdest. Nicht weil sie falsch waren, sondern weil du es einfach noch nicht anders machen konntest – weil ein Teil des Puzzles noch gefehlt hatte."
+      - body: "Ich habe ein Unternehmen 13 Jahre lang aufgebaut und dann verkauft. Ich habe drei weitere gegründet. Ich arbeite fast jede Nacht – nicht weil ich muss, sondern weil ich um Mitternacht dieselbe Energie spüre wie um neun Uhr morgens. Für die meisten Menschen klingt das ungesund. Ist es aber nicht. Es ist pures Wachstum. Es ist der Zustand, in dem Arbeit aufhört, Arbeit zu sein."
+      - type: quote
+        quote: "Es ist pure Kreativität, pure Selbstentwicklung. Und es gibt dir das, was du als Mensch brauchst: eine Biografie."
+      - body: "Was ich mir wirklich wünsche – für jeden, der sich auf diese Reise begibt – ist, dass er irgendwann in diese Zone kommt. Wo die Grenze zwischen Beruf und Berufung verschwindet. Wo du morgens nicht aufstehst, weil du musst, sondern weil du es kaum erwarten kannst. Das ist kein Privileg weniger Auserwählter. Das ist eine Frage der Entscheidung – und der Bereitschaft, den Preis dafür zu zahlen."
+
+  # ── 4. ZERTIFIKATE ──────────────────────────────────
+  - template: certificates
+    headline: "Zertifikate & Weiterbildung"
+    items:
+      - title: "Silicon Valley Entrepreneurship Program"
+        org: "Technische Hochschule Deggendorf"
+        year: "2025"
+        logo: /images/zertifikate/silicon-valley.svg
+      - title: "Organisationsberater & Change Manager"
+        org: "ICO Institut für Coaching & Organisationsberatung"
+        year: "2025"
+        logo: /images/zertifikate/ico.svg
+      - title: "Systemisches Coaching kompakt"
+        org: "ICO Institut für Coaching & Organisationsberatung"
+        year: "2025"
+        logo: /images/zertifikate/ico.svg
+      - title: "Human Skills & Leadership"
+        org: "Technische Hochschule Deggendorf"
+        year: "2017"
+        logo: /images/zertifikate/thdeggendorf.svg
+      - title: "IT-Sicherheitsbeauftragter ISO 27001"
+        org: "TÜV NORD GROUP"
+        year: "2016"
+        logo: /images/zertifikate/tuvlogo.svg
+
+  # ── 5. PERSÖNLICH ───────────────────────────────────
+  - template: photo-gallery
+    headline: "Abseits der Arbeit."
+    bg: "#ffffff"
+    subtext: "Ich lebe mit meiner Frau Lucrezia und meinem Sohn Noah in Regensburg. Lucrezia habe ich 2018 in Rumänien kennengelernt – bei einem Besuch meines Entwicklerteams. Während Covid haben wir uns entschieden zusammenzuziehen, und Noah ist ein typisches Covid-Baby. 60 % meines Lebens gehört der Arbeit, 40 % der Familie. Ehrlich gesagt. Ansonsten: besessen von Kameras und Fotografie, fasziniert von AI, und ich reise gerne – seit dem Kind halt anders als vorher."
+    lightbox: true
+    photos:
+      - src: /images/fotos/IMG_8308-2.jpg
+        alt: "Mit Noah im Regen"
+      - src: /images/fotos/DSC00104.jpg
+        alt: "Portrait"
       - src: /images/fotos/IMG_8305-2.jpg
         alt: "Am Strand"
       - src: /images/fotos/IMG_3953_jpg.jpg
         alt: "Im Schnee"
-      - src: /images/fotos/DSC00270.jpg
-        alt: "Nachdenklich in B&W"
-      - src: /images/fotos/IMG_8250-2.jpg
-        alt: "Im Büro stehend"
+      - src: /images/fotos/DSC00321.jpg
+        alt: "Plasmaball"
+      - src: /images/fotos/L1030038.jpg
+        alt: "Im Home Office"
+      - src: /images/fotos/IMG_8274-2.jpg
+        alt: "Am Fenster"
+      - src: /images/fotos/DSC00263.jpg
+        alt: "Unterwegs"
+      - src: /images/fotos/IMG_8263-2.jpg
+        alt: "Im Industriekorridor"
 
-  # ── 13. CTA ──────────────────────────────────────────
-  - template: cta-dark
-    headline: "Lass uns reden."
-    subtext: "Ob Projekt, Sparring oder einfach Austausch – ich freue mich über eine Nachricht."
-    cta:
-      text: "Kontakt aufnehmen"
-      url: "/kontakt"
-    image:
-      src: /images/slides/cta-bg.png
-      alt: ""
-      opacity: 0.3
+  # ── 6. FAQ ──────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen"
+    bg: "#E6EEEF"
+    variant: light
+    items:
+      - question: "Was genau machst du als Berater?"
+        answer: "Ich helfe Geschäftsführern von IT- und Software-Unternehmen, ihre Organisation zu professionalisieren. Das heißt: bessere Prozesse, klarere Strukturen, smartere Tools. Ich komme aus der Praxis – 13 Jahre eigene Firma, 50 Mitarbeiter, über 1.000 Projekte. Ich weiß, wo es klemmt."
+      - question: "Für wen ist dein Coaching gedacht?"
+        answer: "Für Geschäftsführer und Gründer, die das Gefühl haben, dass ihr Unternehmen schneller wachsen könnte, wenn die internen Abläufe besser funktionieren würden. Typischerweise Unternehmen zwischen 5 und 50 Mitarbeitern."
+      - question: "Was ist Leadtime?"
+        answer: "Leadtime ist eine Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Entstanden aus einem internen Tool, das ich über 8 Jahre in meiner eigenen Firma entwickelt habe."
+      - question: "Arbeitest du remote oder vor Ort?"
+        answer: "Beides. Ich bin in Regensburg ansässig, arbeite aber viel remote. Für Workshops und intensive Phasen komme ich auch gerne vor Ort. Das klären wir im Erstgespräch."
+      - question: "Wie kann ich dich am besten erreichen?"
+        answer: "Am einfachsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du auch direkt einen Termin buchen."

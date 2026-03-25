@@ -4,7 +4,7 @@ meta:
   og_image: /images/og/homepage.jpg
 
 slides:
-  # ── 1. HERO ──────────────────────────────────────────
+  # ── 1. HERO + STATS ─────────────────────────────────
   - template: hero-dark
     headline: "Ich habe ein Unternehmen auf 50 Leute aufgebaut und verkauft. Jetzt helfe ich dir, dasselbe zu tun."
     subtext: "Beratung für Geschäftsführer, die nicht mehr alles selbst machen wollen."
@@ -15,130 +15,68 @@ slides:
       src: /images/slides/lukas-hero_landscape.jpg
       alt: "Lukas Ebner"
       opacity: 0.95
-      position: center
     align: left
-
-  # ── 2. STATS ─────────────────────────────────────────
-  - template: stats
     stats:
       - { value: "15+", label: "Jahre als Geschäftsführer" }
       - { value: "50", label: "Mitarbeiter beim Exit" }
       - { value: "7", label: "stelliger Exit 2022" }
       - { value: "1.000+", label: "Projekte verantwortet" }
 
-  # ── 3. STATEMENT ─────────────────────────────────────
+  # ── 2. QUIZ (interaktiv) ─────────────────────────────
+  - template: freiheitstest
+    headline: "Bremst dich dein eigenes Unternehmen?"
+    buttonText: "Finde heraus, wo du stehst"
+
+  # ── 4. DAS SYSTEM (Dreieck-Grafik) ─────────────────
+  # TODO: Eigene Komponente "TriangleSystemSlide" bauen
+  # Platzhalter: Statement mit übergreifender Value Proposition
   - template: statement
-    variant: dark
-    headline: "Was als inspirierender Lebensentwurf begonnen hat, ist irgendwann zu einem harten Job geworden – mit dem schwierigsten Chef der Welt: dir selbst."
+    headline: "Führung × Systeme × KI — erst zusammen entsteht ein Unternehmen, das ohne dich funktioniert."
+    variant: orange
+    size: large
 
-  # ── 4. SELF-SEGMENTATION ─────────────────────────────
-  - template: cards-grid
-    headline: "Wo stehst du?"
-    cards:
-      - icon: building-2
-        title: "Du führst ein Unternehmen"
-        body: "Dein Business läuft, aber du steckst im Tagesgeschäft. Du willst Systeme, die ohne dich funktionieren – und eine Strategie, die den Unternehmenswert steigert."
-        cta:
-          text: "GF-Coaching"
-          url: "/geschaeftsfuehrer-coaching"
-      - icon: layers
-        title: "Du skalierst eine Agentur"
-        body: "Improvisation ist zum Dauerzustand geworden. Der Lagerbestand an halbfertigen Projekten ist unsichtbar, die Planung wird jeden Tag von der Wirklichkeit eingeholt. Du brauchst ein System."
-        cta:
-          text: "Agentur skalieren"
-          url: "/agentur-skalieren"
-      - icon: bot
-        title: "Du willst KI richtig einsetzen"
-        body: "Nicht das nächste ChatGPT-Seminar. Sondern jemand, der mit dir identifiziert, wo KI in deinem Business wirklich den Unterschied macht."
-        cta:
-          text: "KI-Beratung"
-          url: "/ki-automatisierung"
-
-  # ── 5. SPLIT: Das Problem ───────────────────────────
-  - template: split
-    direction: left
-    headline: "Die Ochsentour kennt jeder. Die Abkürzung nicht."
-    body: "Du hast als Fachkraft angefangen – Programmierung, Design, Beratung. Irgendwann hattest du Mitarbeiter, und plötzlich war dein Unternehmen nichts weiter als eine professionellere Variante von Freelancing. Nur mit Büro, Gehältern und doppelt so viel Stress. Alle erwarten, dass du in Führung gehst – aber du hättest selbst so viele Fragen."
-    image:
-      src: /images/slides/ochsentour.png
-      alt: "Illustration: Irrgarten – Metapher für die Ochsentour"
-
-  # ── 6. SPLIT: Der Ansatz ────────────────────────────
-  - template: split
-    direction: right
-    headline: "Kein Framework. Ein Sparringspartner."
-    body: "Ich musste mir irgendwann eingestehen, dass ich aufhören muss, in meinem Unternehmen zu arbeiten – und anfangen muss, an meinem Unternehmen zu arbeiten. Diesen Shift habe ich durchgemacht. MBA, hunderte Bücher, jede Menge teure Fehler. Heute setze ich mich mit dir hin und sage dir, was ich an deiner Stelle tun würde."
-    image:
-      src: /images/slides/sparring.png
-      alt: ""
-
-  # ── 7. SPLIT: Woran wir arbeiten ───────────────────
-  - template: split
-    direction: left
-    headline: "EBIT verbessern. Unternehmenswert steigern."
-    body: "Das ist das Ziel hinter allem, was wir tun. Ob wir an deiner Positionierung arbeiten, deine Prozesse digitalisieren, dein Führungs-Framework aufbauen oder deine Pricing-Strategie schärfen – am Ende geht es um messbare Ergebnisse. Nicht um Coaching-Sprech."
-    cta:
-      text: "Themen ansehen"
-      url: "/geschaeftsfuehrer-coaching"
-    image:
-      src: /images/slides/ebit.png
-      alt: ""
-
-  # ── 8. FULL IMAGE ───────────────────────────────────
-  - template: full-image
-    image:
-      src: /images/slides/lukas-bar.jpg
-      alt: "Lukas Ebner"
-      height: 45vh
-
-  # ── 9. VENTURES ──────────────────────────────────────
-  - template: cards-grid
-    variant: dark
-    headline: "Ich berate nicht nur. Ich baue selbst."
-    subtext: "Jedes dieser Projekte ist Haut im Spiel. Wer selbst Unternehmen baut, berät anders als jemand, der es nur aus Büchern kennt."
-    cards:
-      - icon: timer
-        pill: "GRÜNDER & CEO"
-        title: "Leadtime"
-        body: "PSA-Software für Agenturen. Das Tool, das ich mir als Agentur-GF 10 Jahre lang gewünscht hätte."
-        cta:
-          text: "leadtime.app"
-          url: "https://leadtime.app"
-      - icon: graduation-cap
-        pill: "CO-FOUNDER"
-        title: "Fracto"
-        body: "KI-Schulungsplattform für MedTech. Klinikpersonal lernt per AI Voice Bot statt in tagelangen Präsenzschulungen."
-        cta:
-          text: "fracto.de"
-          url: "https://fracto.de"
-      - icon: zap
-        pill: "BEIRAT"
-        title: "Kraftwerk"
-        body: "Drittgrößtes Software-Unternehmen der deutschen Energiewirtschaft. Mein erstes Unternehmen eins+null wurde 2022 hier eingegliedert."
-        cta:
-          text: "kraftwerk.io"
-          url: "https://kraftwerk.io"
-      - icon: rocket
-        pill: "EXIT 2022"
-        title: "eins+null"
-        body: "2010 gegründet, von 300K auf fast 4 Mio Umsatz, 50 Mitarbeiter, siebenstelliger Exit an Private Equity."
-        cta:
-          text: "Die Geschichte"
-          url: "/projekte"
-
-  # ── 10. STATEMENT ────────────────────────────────────
+  # ── 5. PFEILER 1: Operations & Führung ─────────────
   - template: statement
+    headline: "Bevor du irgendetwas automatisierst — funktioniert dein Laden überhaupt ohne dich?"
     variant: dark
-    headline: "Jemand, den man um Rat fragen kann – der diese Ochsentour schon hinter sich hat."
+    size: large
 
-  # ── 11. CTA ──────────────────────────────────────────
-  - template: cta-dark
-    headline: "Lass uns reden."
-    subtext: "30 Minuten. Kein Pitch, kein Verkaufsgespräch. Nur ein ehrliches Sparring darüber, was bei dir gerade der größte Hebel wäre."
-    cta:
-      text: "Termin vereinbaren"
-      url: "/kontakt"
-    image:
-      src: /images/slides/cta-bg.png
-      alt: ""
-      opacity: 0.3
+  # ── 6. PFEILER 2: Systeme & Automatisierung ────────
+  - template: statement
+    headline: "Du brauchst kein neues Tool. Du brauchst Überblick."
+    variant: dark
+    size: large
+
+  # ── 7. PFEILER 3: KI-Readiness & Prototyping ──────
+  - template: statement
+    headline: "KI ist kein Feature. Es ist ein Kulturwandel."
+    variant: dark
+    size: large
+
+  # ── 8. BLOG-TEASER ─────────────────────────────────
+  - template: blog-teaser
+    headline: "Aktuell im Blog"
+    post:
+      title: "Warum die meisten Geschäftsführer zu lange im Tagesgeschäft bleiben"
+      excerpt: "Es gibt einen Punkt, an dem du aufhören musst, in deinem Unternehmen zu arbeiten – und anfangen musst, daran zu arbeiten. Die meisten verpassen diesen Punkt um Jahre. Hier ist, woran du ihn erkennst."
+      date: "März 2026"
+      category: "Führung & Wachstum"
+      image: /images/fotos/DSC00263.jpg
+      url: "/blog"
+
+  # ── 9. FAQ ─────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen"
+    bg: "#E6EEEF"
+    variant: light
+    items:
+      - question: "Was genau machst du als Berater?"
+        answer: "Ich helfe Geschäftsführern von IT- und Software-Unternehmen, ihre Organisation zu professionalisieren. Das heißt: bessere Prozesse, klarere Strukturen, smartere Tools. Ich komme aus der Praxis – 13 Jahre eigene Firma, 50 Mitarbeiter, über 1.000 Projekte. Ich weiß, wo es klemmt."
+      - question: "Für wen ist dein Coaching gedacht?"
+        answer: "Für Geschäftsführer und Gründer, die das Gefühl haben, dass ihr Unternehmen schneller wachsen könnte, wenn die internen Abläufe besser funktionieren würden. Typischerweise Unternehmen zwischen 5 und 50 Mitarbeitern."
+      - question: "Was ist Leadtime?"
+        answer: "Leadtime ist eine Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Entstanden aus einem internen Tool, das ich über 8 Jahre in meiner eigenen Firma entwickelt habe."
+      - question: "Arbeitest du remote oder vor Ort?"
+        answer: "Beides. Ich bin in Regensburg ansässig, arbeite aber viel remote. Für Workshops und intensive Phasen komme ich auch gerne vor Ort. Das klären wir im Erstgespräch."
+      - question: "Wie kann ich dich am besten erreichen?"
+        answer: "Am einfachsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du auch direkt einen Termin buchen."

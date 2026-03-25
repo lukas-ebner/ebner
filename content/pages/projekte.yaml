@@ -1,0 +1,213 @@
+meta:
+  title: "Beteiligungen – Lukas Ebner"
+  description: "Leadtime, Fracto, Kraftwerk, 1&0: Die Unternehmen, an denen ich beteiligt bin und war. Haut im Spiel statt Theorie."
+  og_image: /images/og/projekte.jpg
+
+slides:
+  # ── 1. HERO mit Projekt-Navigation ──────────────────
+  - template: projects-hero
+    headline: "Haut im Spiel."
+    subtext: "Ich berate nicht nur – ich baue, investiere und führe selbst. Vier Unternehmen, an denen ich beteiligt bin oder war."
+    image:
+      src: /images/fotos/DSC00277.jpg
+      alt: "Lukas Ebner"
+    projects:
+      - id: leadtime
+        label: Leadtime
+        color: "#F44900"
+      - id: fracto
+        label: Fracto
+        color: "#38BDF8"
+      - id: kraftwerk
+        label: Kraftwerk
+        color: "#88C20F"
+      - id: einsnull
+        label: "1&0"
+        color: "#1ABC9C"
+
+  # ── LEADTIME: Titel-Slide ──────────────────────────
+  - template: project-section
+    id: leadtime
+    color: "#1a0a00"
+    logo: /images/projects/leadtime/leadtime-logo.svg
+    role: "Gründer & CEO"
+    headline: "Ein System statt zehn Tools."
+    body: "Die All-in-One Project Delivery Platform für IT-Dienstleister und Agenturen. Projektmanagement, Zeiterfassung, Abrechnung und CRM – gebaut aus 15 Jahren eigener Erfahrung im Projektgeschäft."
+    image:
+      src: /images/projects/leadtime/DSC02102.jpg
+      alt: "Lukas Ebner – Leadtime"
+    layout: hero
+
+  # ── LEADTIME: Detail-Slide ─────────────────────────
+  - template: project-detail
+    color: "#F44900"
+    logo: /images/projects/leadtime/leadtime-logo.svg
+    headline: "Aus dem eigenen Schmerz geboren."
+    body: "13 Jahre lang hab ich eine Software-Firma geführt. Anspruchsvolle Kunden, komplexes Onboarding, ständig zu viele Projekte parallel. Jedes PM-Tool am Markt ausprobiert – Asana, Monday, Notion. Keins konnte, was ich brauchte: Pipeline, Zeiterfassung, Forecasting und Abrechnung in einem, ohne Excel-Workarounds und Systembrüche.\n\nAlso hab ich Leadtime gebaut. Ein ganzheitliches ERP für Unternehmen im digitalen Projektgeschäft. Bootstrapped, profitabel, und ich nutze es jeden Tag selbst."
+    details:
+      - label: "Meine Rolle"
+        text: "Gründer, CEO und Lead Developer. Design, Architektur, Entwicklung – alles aus einer Hand."
+      - label: "Seit wann"
+        text: "2023 gestartet. Bootstrapped, kein Venture Capital."
+      - label: "Für wen"
+        text: "IT-Dienstleister und Agenturen, die von der Werkstatt zur Fabrik wollen. Teams, die schneller liefern und profitabler arbeiten müssen."
+    stats:
+      - value: "50%"
+        label: "Schnellere Projektlaufzeiten"
+      - value: "75%"
+        label: "Schneller zum Pflichtenheft"
+      - value: "30%"
+        label: "Mehr fakturierbare Stunden"
+    slideshow:
+      - src: /images/leadtime/slide-projects.png
+        alt: "Leadtime – Projektübersicht"
+      - src: /images/leadtime/slide-timetracking.png
+        alt: "Leadtime – Zeiterfassung"
+      - src: /images/leadtime/slide-pipeline.png
+        alt: "Leadtime – Sales Pipeline"
+      - src: /images/leadtime/slide-analytics.png
+        alt: "Leadtime – Analytics Dashboard"
+      - src: /images/leadtime/slide-billing.png
+        alt: "Leadtime – Rechnungsstellung"
+      - src: /images/leadtime/slide-tasks.png
+        alt: "Leadtime – Task Management"
+    context: "Leadtime zeigt, was ich unter 'digitaler Transformation' verstehe: kein Berater-Slide-Deck, sondern ein funktionierendes Produkt, das ein echtes Problem löst. Diesen Ansatz bringe ich auch in Kundenprojekte."
+    link:
+      url: "https://leadtime.app"
+      label: "leadtime.app besuchen"
+
+  # ── FRACTO: Titel-Slide ─────────────────────────────
+  - template: project-section
+    id: fracto
+    color: "#0C4A6E"
+    logo: /images/projects/fracto/fracto-logo.svg
+    role: "Co-Founder & CTO"
+    headline: "Training should never be healthcare's weakest link."
+    body: "AI-gestützte Schulungsplattform für die MedTech-Industrie. Fracto produziert und hostet Produktschulungen für medizintechnische Geräte – als White-Label-Plattform mit AI Voice Bot."
+    image:
+      src: /images/projects/fracto/DSC04514.jpg
+      alt: "Lukas Ebner und Laurin Gerdes – Fracto"
+    layout: hero
+
+  # ── FRACTO: Detail-Slide ────────────────────────────
+  - template: project-detail
+    color: "#38BDF8"
+    logo: /images/projects/fracto/fracto-logo.svg
+    headline: "Von der Gerätedokumentation zur messbaren klinischen Kompetenz."
+    body: "Klinikpersonal muss medizintechnische Geräte sicher bedienen – aber klassische Präsenzschulungen skalieren nicht. Fracto verwandelt Produktdokumentation in fertige E-Learning-Kurse, in Minuten statt Monaten.\n\nDazu ein AI Voice Bot, der direkt am Gerät per QR-Code technische Fragen beantwortet. White-Label, DSGVO-konform, mehrsprachig."
+    details:
+      - label: "Meine Rolle"
+        text: "Ich bin Co-Founder und baue die Plattform. Laurin Gerdes (CEO) öffnet die Türen in der MedTech-Industrie, ich baue was dahinter steht – Backend, AI-Infrastruktur, Plattform-Architektur."
+      - label: "Seit wann"
+        text: "2021 gegründet. Erster Enterprise-Kunde (Mindray) seit 2024."
+      - label: "Tech-Stack"
+        text: "Next.js, Supabase, OpenAI, eigene RAG-Pipeline für Gerätedokumentation, LTI 1.3 & SCORM-kompatibel."
+    stats:
+      - value: "<800ms"
+        label: "AI Voice Bot Antwortzeit"
+      - value: "30 Min"
+        label: "Kursstruktur statt 6–12 Wochen"
+    screenshot:
+      src: /images/projects/fracto/fracto-devices-new.png
+      alt: "Fracto Plattform"
+    context: "Fracto ist das Paradebeispiel dafür, was passiert, wenn ein erfahrener Builder mit AI-Tools arbeitet: Zwei Leute bauen ein Produkt, für das eine Agentur ein 10-köpfiges Team bräuchte. Genau diese Arbeitsweise bringe ich in jede KI-Beratung mit."
+    link:
+      url: "https://fracto.de"
+      label: "fracto.de besuchen"
+
+  # ── KRAFTWERK: Titel-Slide ──────────────────────────
+  - template: project-section
+    id: kraftwerk
+    color: "#1a1a1a"
+    logo: /images/projects/kraftwerk/kraftwerk_logo.svg
+    role: "Gesellschafter & Beirat"
+    headline: "Die Plattform für die Versorgungswirtschaft."
+    body: "Kraftwerk Software vereint sechs Technologieunternehmen – darunter die eins+null. 350+ Experten, 500+ Kunden, 200+ Ladestromanbieter. Das Betriebssystem der Energiewende."
+    image:
+      src: /images/projects/kraftwerk/kraftwerk-messe.png
+      alt: "Kraftwerk Software – E-world 2026"
+    layout: hero
+
+  # ── KRAFTWERK: Detail-Slide (dunkel + Video) ───────
+  - template: project-detail
+    color: "#88C20F"
+    dark: true
+    logo: /images/projects/kraftwerk/kraftwerk_logo.svg
+    headline: "Vom Gründer zum Beirat und Gesellschafter."
+    body: "Nach dem Exit der eins+null bin ich als Gesellschafter auf dem Cap-Table der Kraftwerk Holding geblieben. Parallel sitze ich im Beirat – einem dreiköpfigen Gremium, das die Geschäftsführung strategisch berät, Weisungen erteilen kann und bei zustimmungspflichtigen Geschäften mitentscheidet.\n\nKeine operative Rolle, aber strategischer Einfluss: Ich sehe, wie Übernahmen integriert werden, wie aus sechs Unternehmen eine Plattform wird und wie die Versorgungswirtschaft sich digital transformiert."
+    details:
+      - label: "Beirat"
+        text: "Eines von fünf Mitgliedern im Beirat. Strategische Beratung der Geschäftsführung, Weisungsrecht, Zustimmungsvorbehalt bei wesentlichen Geschäften."
+      - label: "Gesellschafter"
+        text: "Am Cap-Table der Kraftwerk Holding beteiligt. Beim erwarteten Wiederverkauf erneut beteiligt."
+      - label: "Was Kraftwerk macht"
+        text: "Kaufmännische, strategische und technische Prozesse der Versorgungswirtschaft in einer Plattform – von Abrechnung über Asset Management bis E-Mobilität. Microsoft Business Central, KI-optimiert."
+    stats:
+      - value: "350+"
+        label: "Experten"
+      - value: "500+"
+        label: "Kunden europaweit"
+      - value: "6"
+        label: "Technologieunternehmen"
+    video:
+      src: /videos/kraftwerkIntro_small.mp4
+    context: "Als Beirat sehe ich, wie Übernahmen, Integration und Skalierung von der anderen Seite funktionieren. Das hilft mir, Geschäftsführer zu beraten, die selbst vor ähnlichen Entscheidungen stehen – ob Exit, Übernahme oder Plattform-Strategie."
+    link:
+      url: "https://kraftwerk.io"
+      label: "kraftwerk.io besuchen"
+
+  # ── 1&0: Titel-Slide ───────────────────────────────
+  - template: project-section
+    id: einsnull
+    color: "#0D5C4A"
+    logo: /images/projects/einsnull/eun-logo.svg
+    role: "Gründer & Geschäftsführer (2009–2022)"
+    headline: "Die amtliche Vertriebsplattform für die deutsche Energiewirtschaft."
+    body: "SaaS-Plattform für den Energievertrieb. 13 Jahre bootstrapped aufgebaut, 50 Mitarbeiter, über 1.000 Projekte für Stadtwerke und Energieversorger. 2022 verkauft."
+    image:
+      src: /images/projects/einsnull/einsnull.jpg
+      alt: "eins+null Team – Software for Utilities"
+    layout: hero
+
+  # ── 1&0: Detail-Slide ─────────────────────────────
+  - template: project-detail
+    color: "#1ABC9C"
+    logo: /images/projects/einsnull/eun-logo.svg
+    headline: "Die einzige ganzheitliche Lösung für den Energievertrieb."
+    body: "Stadtwerke und Energieversorger kämpfen mit zerklüfteten IT-Landschaften: Energie-CRM hier, Kundenportal dort, dazwischen Excel und manuelle Prozesse. JOULES hat das alles in einer Plattform vereint – Tarifvertrieb, Vergleichsportal-Anbindung, Kundenportal, Außendienst-Tools.\n\nModular aufgebaut, sodass ein kleines Stadtwerk mit Direktvertrieb starten und schrittweise Online-Kanäle erschließen konnte. Über 45 betreute Systeme, 90.000+ gelöste Tickets, 99,9% Uptime."
+    details:
+      - label: "Meine Rolle"
+        text: "Gründer und Geschäftsführer. Von der ersten Codezeile bis zur Due Diligence – 13 Jahre lang jede Entscheidung verantwortet."
+      - label: "Zeitraum"
+        text: "2009–2022. 13 Jahre Aufbau, Skalierung und Exit an die Kraftwerk Holding."
+      - label: "Produkt"
+        text: "JOULES – SaaS für Marketing- und Sales-Prozesse im Tarif- und Individualkundenvertrieb. White-Label, modular, skalierbar."
+    stats:
+      - value: "1.000+"
+        label: "Projekte für EVUs"
+      - value: "50"
+        label: "Mitarbeiter beim Exit"
+      - value: "45+"
+        label: "Betreute Systeme"
+    screenshot:
+      src: /images/projects/einsnull/joules_dashboard.png
+      alt: "JOULES Dashboard"
+    context: "13 Jahre Bootstrapping, Skalierung und Exit – jede Empfehlung, die ich heute gebe, kommt aus dieser Erfahrung. Ich hab nicht nur beraten, ich hab es selbst gemacht. Das ist der Unterschied."
+    link:
+      url: "https://einsundnull.de"
+      label: "einsundnull.de besuchen"
+
+  # ── FAQ ──────────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen"
+    bg: "#E6EEEF"
+    variant: light
+    items:
+      - question: "Bist du an allen Unternehmen noch beteiligt?"
+        answer: "An Leadtime und Fracto bin ich aktiv beteiligt und operativ tätig. Bei Kraftwerk bin ich im Beirat. eins+null habe ich 2022 verkauft – dort bin ich nicht mehr involviert."
+      - question: "Kann man dich als Berater für externe Projekte buchen?"
+        answer: "Ja, über die Wachstumscoach GmbH. Mein Fokus liegt auf Geschäftsführer-Coaching und Operations-Beratung für IT- und Software-Unternehmen."
+      - question: "Investierst du auch in andere Unternehmen?"
+        answer: "Aktuell nur in meine eigenen Projekte. Ich bin kein klassischer Investor, sondern ein operativer Gründer. Wenn ich investiere, dann mit Haut im Spiel – nicht als stiller Teilhaber."
+      - question: "Was war der Hintergrund des Exits bei eins+null?"
+        answer: "Nach 13 Jahren war es Zeit für etwas Neues. Das Unternehmen war profitabel und gut aufgestellt. Der Verkauf an Kraftwerk war die richtige Entscheidung – für das Team, die Kunden und für mich."

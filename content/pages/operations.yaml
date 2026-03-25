@@ -2,6 +2,7 @@ meta:
   title: "Operations & Führung – Lukas Ebner"
   description: "Dein Unternehmen soll laufen – nicht an dir hängen. Strategisches Sparring für Geschäftsführer, die aufhören wollen, der Engpass zu sein."
   og_image: /images/og/operations.jpg
+  accent: "#F44900"
 
 slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────

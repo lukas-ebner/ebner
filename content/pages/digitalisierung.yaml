@@ -2,6 +2,7 @@ meta:
   title: "Systeme & Automatisierung – Lukas Ebner"
   description: "Eine Infrastruktur, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten. Tool-Audit, Systemkonsolidierung und Automatisierung."
   og_image: /images/og/digitalisierung.jpg
+  accent: "#0D5054"
 
 slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────

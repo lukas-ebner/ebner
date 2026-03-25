@@ -37,6 +37,9 @@ slides:
     headline: "Erzähl mir von deinem Unternehmen."
     body: "Keine langen Formulare. Sieben kurze Fragen, damit ich mich vorbereiten kann – und unser Gespräch von Anfang an Substanz hat."
     submitLabel: "Erstgespräch anfragen"
+    showActionCode: true
+    actionCodeLabel: "Aktionscode"
+    actionCodePlaceholder: "Aus deinem Strategiepapier – falls vorhanden"
     successHeadline: "Danke. Ich melde mich."
     successBody: "Innerhalb von 24 Stunden bekommst du von mir einen Terminvorschlag für unser Erstgespräch. Kein Pitch – ein echtes Gespräch."
     fields:

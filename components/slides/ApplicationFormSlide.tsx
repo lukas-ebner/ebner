@@ -12,6 +12,13 @@ interface FormField {
   options?: string[]
 }
 
+interface ActionCodeState {
+  status: 'idle' | 'checking' | 'valid' | 'invalid' | 'expired' | 'redeemed'
+  message?: string
+  company?: string
+  daysLeft?: number
+}
+
 interface ApplicationFormSlideProps {
   id?: string
   headline: string
@@ -22,6 +29,9 @@ interface ApplicationFormSlideProps {
   successBody?: string
   recipientEmail?: string
   variant?: 'light' | 'dark'
+  showActionCode?: boolean
+  actionCodeLabel?: string
+  actionCodePlaceholder?: string
 }
 
 export function ApplicationFormSlide({
@@ -34,30 +44,91 @@ export function ApplicationFormSlide({
   successBody = 'Ich melde mich innerhalb von 24 Stunden mit einem Terminvorschlag.',
   recipientEmail = 'lukas@lukasebner.de',
   variant = 'dark',
+  showActionCode = false,
+  actionCodeLabel = 'Aktionscode',
+  actionCodePlaceholder = 'z.B. FRACTO-A3F2B1',
 }: ApplicationFormSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
+  const [actionCode, setActionCode] = useState('')
+  const [codeState, setCodeState] = useState<ActionCodeState>({ status: 'idle' })
+  const codeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const isDark = variant === 'dark'
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  // Debounced code validation
+  function handleCodeChange(value: string) {
+    setActionCode(value)
+    const trimmed = value.trim().toUpperCase()
+
+    if (codeTimeoutRef.current) clearTimeout(codeTimeoutRef.current)
+
+    if (trimmed.length < 4) {
+      setCodeState({ status: 'idle' })
+      return
+    }
+
+    setCodeState({ status: 'checking' })
+    codeTimeoutRef.current = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/action-codes?code=${encodeURIComponent(trimmed)}`)
+        const data = await res.json()
+        if (data.valid) {
+          setCodeState({
+            status: 'valid',
+            message: `Aktionscode gültig – Workshop für 500 € statt 1.000 € (noch ${data.daysLeft} Tage gültig)`,
+            company: data.company,
+            daysLeft: data.daysLeft,
+          })
+        } else if (data.expired) {
+          setCodeState({ status: 'expired', message: data.error })
+        } else if (data.redeemed) {
+          setCodeState({ status: 'redeemed', message: data.error })
+        } else {
+          setCodeState({ status: 'invalid', message: data.error })
+        }
+      } catch {
+        setCodeState({ status: 'idle' })
+      }
+    }, 600)
+  }
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setSending(true)
     const form = e.currentTarget
-    const data = new FormData(form)
+    const formData = new FormData(form)
 
     // Build mailto body
     const lines: string[] = []
     fields.forEach((field) => {
-      const value = data.get(field.name)
+      const value = formData.get(field.name)
       if (value) {
         lines.push(`${field.label}: ${value}`)
       }
     })
 
+    // Add action code info if valid
+    const trimmedCode = actionCode.trim().toUpperCase()
+    if (trimmedCode && codeState.status === 'valid') {
+      lines.push(`\nAktionscode: ${trimmedCode}`)
+      lines.push('Angebot: Strategy Workshop 500 € (statt 1.000 €)')
+
+      // Redeem the code
+      try {
+        await fetch('/api/action-codes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'redeem', code: trimmedCode }),
+        })
+      } catch {
+        // Non-blocking – code redemption is best-effort
+      }
+    }
+
     const subject = encodeURIComponent(
-      `Erstgespräch – ${data.get('company') || data.get('name') || 'Neue Anfrage'}`
+      `Erstgespräch – ${formData.get('company') || formData.get('name') || 'Neue Anfrage'}`
     )
     const mailBody = encodeURIComponent(lines.join('\n\n'))
     window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${mailBody}`
@@ -214,6 +285,54 @@ export function ApplicationFormSlide({
                   )}
                 </div>
               ))}
+
+              {/* ── Action Code Field (optional) ── */}
+              {showActionCode && (
+                <div>
+                  <label
+                    htmlFor="field-action-code"
+                    className={`mb-2 block font-mono text-xs uppercase tracking-widest ${
+                      isDark ? 'text-text-light/40' : 'text-text-muted'
+                    }`}
+                  >
+                    {actionCodeLabel}
+                  </label>
+                  <input
+                    type="text"
+                    id="field-action-code"
+                    value={actionCode}
+                    onChange={(e) => handleCodeChange(e.target.value)}
+                    placeholder={actionCodePlaceholder}
+                    className={`w-full border-0 border-b-2 bg-transparent px-0 py-3 font-mono text-lg uppercase tracking-wider outline-none transition-colors placeholder:opacity-30 placeholder:normal-case placeholder:tracking-normal ${
+                      isDark
+                        ? 'border-white/10 text-text-light placeholder:text-text-light focus:border-white/30'
+                        : 'border-text-primary/10 text-text-primary placeholder:text-text-primary focus:border-text-primary/30'
+                    } ${
+                      codeState.status === 'valid'
+                        ? 'border-emerald-500/50'
+                        : codeState.status === 'invalid' || codeState.status === 'expired' || codeState.status === 'redeemed'
+                          ? 'border-red-500/50'
+                          : ''
+                    }`}
+                  />
+                  {/* Status message */}
+                  {codeState.status === 'checking' && (
+                    <p className={`mt-2 text-sm ${isDark ? 'text-text-light/40' : 'text-text-muted'}`}>
+                      Wird geprüft…
+                    </p>
+                  )}
+                  {codeState.status === 'valid' && (
+                    <p className="mt-2 text-sm text-emerald-500">
+                      {codeState.message}
+                    </p>
+                  )}
+                  {(codeState.status === 'invalid' || codeState.status === 'expired' || codeState.status === 'redeemed') && (
+                    <p className="mt-2 text-sm text-red-400">
+                      {codeState.message}
+                    </p>
+                  )}
+                </div>
+              )}
 
               <div className="pt-4">
                 <button

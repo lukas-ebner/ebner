@@ -47,3 +47,6 @@ next-env.d.ts
 
 # cursor briefings (local only)
 CURSOR-BRIEFING-*.md
+
+# local next build backups
+/.next-old*/

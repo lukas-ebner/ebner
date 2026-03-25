@@ -30,6 +30,7 @@ slides:
     headline: "Stundensatz & Richtwerte."
     body: "Alle Preise netto. Der konkrete Umfang ergibt sich aus deiner Situation – die Tabelle zeigt Erfahrungswerte als Orientierung."
     hourlyRate: "125 €"
+    prototypingTab: true
     tiers:
       - label: "S"
         employees: "5–15 Mitarbeiter"

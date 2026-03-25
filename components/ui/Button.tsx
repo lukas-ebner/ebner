@@ -5,14 +5,20 @@ type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'link'
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-brand text-white hover:bg-brand/90 rounded-md px-6 py-3 text-sm tracking-wide font-display font-normal transition-colors',
+    'text-white rounded-md px-6 py-3 text-sm tracking-wide font-display font-normal transition-colors',
   secondary:
     'bg-surface-dark text-text-light hover:bg-surface-dark/90 rounded-md px-6 py-3 text-sm font-display font-normal transition-colors',
   ghost:
     'rounded-button px-6 py-3 font-display text-text-primary hover:bg-black/5 transition-colors',
   outline:
     'rounded-md border-2 border-border-dark px-6 py-3 text-sm font-display font-normal text-text-primary hover:bg-surface-cool transition-colors',
-  link: 'font-display font-normal text-brand underline-offset-4 hover:underline',
+  link: 'font-display font-normal underline-offset-4 hover:underline',
+}
+
+/* All buttons use brand orange – no page-accent override */
+const accentStyles: Partial<Record<ButtonVariant, React.CSSProperties>> = {
+  primary: { backgroundColor: '#F44900' },
+  link: { color: '#F44900' },
 }
 
 interface ButtonProps {
@@ -34,17 +40,18 @@ export function Button({
 }: ButtonProps) {
   const base = variantClasses[variant]
   const combined = `${base} inline-flex items-center justify-center ${variant === 'link' || variant === 'ghost' ? 'text-body' : ''} ${className}`
+  const style = accentStyles[variant]
 
   if (href) {
     return (
-      <Link href={href} className={combined}>
+      <Link href={href} className={combined} style={style}>
         {children}
       </Link>
     )
   }
 
   return (
-    <button type={type} className={combined} onClick={onClick}>
+    <button type={type} className={combined} style={style} onClick={onClick}>
       {children}
     </button>
   )

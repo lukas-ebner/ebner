@@ -1,12 +1,13 @@
 meta:
-  title: "KI-Readiness – Lukas Ebner"
-  description: "Von der Idee zum Prototyp. In Tagen, nicht Monaten. KI-Strategie, Workflow-Automatisierung und Rapid Prototyping."
+  title: "KI-Readiness & Prototyping – Lukas Ebner"
+  description: "Von der Idee zum Prototyp. In Tagen, nicht Monaten. KI-Beratung, Rapid Prototyping und Refactoring für Unternehmen."
   og_image: /images/og/ki-readiness.jpg
+  accent: "#1B1464"
 
 slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────
   - template: hero-split
-    pill: "KI-Readiness"
+    pill: "KI-Readiness & Prototyping"
     headline: "Von der Idee zum Prototyp. In Tagen, nicht Monaten."
     subtext: "KI-Strategie, Workflow-Automatisierung und Rapid Prototyping für Unternehmen, die aufhören wollen zu warten – und anfangen wollen zu bauen."
     cta:
@@ -36,88 +37,73 @@ slides:
         headline: "Dein Team soll 10× liefern. Nicht 10% mehr."
         body: "Du willst nicht noch ein KI-Seminar. Du willst, dass Support-Tickets sich selbst lösen, Reports sich selbst bauen und Entwickler doppelt so viel Code shippen.\n\nWir bauen die Workflows, die das möglich machen – und bringen die Entwickler mit, die sie betreiben."
 
-  # ── 4. IMAGE-OVERLAY (TEAL): Mein Ansatz ──────────────
-  - template: image-overlay
+  # ── 4. CREDIBILITY (Deep Indigo): Mein Ansatz ─────────
+  - template: credibility
+    bg: "#1B1464"
     headline: "Ich benutze KI nicht. Ich baue damit."
-    body: "Leadtime, mein SaaS-Produkt, nutzt KI im Kern. Mein Content-Marketing läuft über KI-Agenten, die ich selbst gebaut habe. Diese Website ist mit KI-Unterstützung entstanden.\n\nDas ist keine Theorie. Ich lebe jeden Tag, was ich dir anbiete."
-    variant: teal
-    gradient: full
-    align: left
-    image:
-      src: /images/paintings/Leadtime_abstract_impressionist_oil_painting_A_software_team__5697ae5d-8666-4c0b-bec8-8c5d5472bb53_2.png
-      alt: "Team um leuchtende Kristallkugel"
-      opacity: 0.35
-
-  # ── 5. CARDS-GRID: Drei Schichten ──────────────────────
-  - template: cards-grid
-    headline: "KI-Readiness hat drei Schichten."
-    subtext: "Die meisten bleiben bei Schicht 1 stecken."
-    cards:
-      - icon: sparkles
-        title: "Schicht 1: KI im Alltag"
-        body: "Dein Team nutzt KI als persönlichen Assistenten – für E-Mails, Recherche, Texte, Zusammenfassungen. Klingt trivial, spart aber 5–10 Stunden pro Woche pro Person."
-      - icon: workflow
-        title: "Schicht 2: KI in den Prozessen"
-        body: "KI wird Teil deiner Wertschöpfungskette: Angebote, die sich selbst kalkulieren. Support-Tickets, die automatisch kategorisiert werden. Reports, die sich selbst bauen."
-      - icon: rocket
-        title: "Schicht 3: KI als Produkt"
-        body: "Du baust mit KI neue Produkte, Features oder Services für deine Kunden. Prototypen in Tagen statt Monaten. Validieren, iterieren, launchen."
-
-  # ── 6. FEATURE-LIST: Deliverables ──────────────────────
-  - template: feature-list
-    headline: "Was wir konkret bauen"
-    subtext: "Keine PowerPoint-Strategie. Funktionierende Systeme."
-    columns: 2
-    items:
-      - icon: scan
-        title: "KI-Audit"
-        body: "In 2–3 Sessions analysieren wir deine Wertschöpfungskette und identifizieren die 3–5 Stellen mit dem größten KI-Hebel."
-      - icon: workflow
-        title: "Workflow-Automatisierung"
-        body: "Wiederkehrende Aufgaben, die dein Team Zeit kosten: Angebote, Reports, E-Mails, Datenaufbereitung. Wir automatisieren was automatisierbar ist."
-      - icon: bot
-        title: "KI-Agenten"
-        body: "Nicht nur Chatbots. Autonome Agenten, die mehrstufige Aufgaben erledigen – von Recherche über Aufbereitung bis Ausführung."
-      - icon: graduation-cap
-        title: "Team-Enablement"
-        body: "Maßgeschneiderte Prompts und Workflows für dein Team. Kein Seminar, sondern Werkzeuge die sofort funktionieren."
-      - icon: rocket
-        title: "Rapid Prototyping"
-        body: "Du hast eine Produktidee? Wir bauen einen funktionierenden Prototyp – mit KI-Agenten und modernem Tech-Stack. In Tagen, nicht Monaten."
-      - icon: shield
-        title: "Governance & Sicherheit"
-        body: "Welche Daten dürfen in welche Modelle? Wo liegen die Risiken? Ein pragmatisches Framework, das KI ermöglicht ohne Compliance-Probleme."
-
-  # ── 7. PARALLAX: Visueller Break ──────────────────────
-  - template: parallax-image
-    height: "50vh"
-    image:
-      src: /images/paintings/Leadtime_abstract_impressionist_oil_painting_a_steam_train_ac_4d78e5b6-548d-475e-be91-d4c9465be583_0.png
-      alt: "Dampflok bei Nacht – unstoppable momentum"
-
-  # ── 8. STATEMENT (LARGE): Provokation ─────────────────
-  - template: statement
-    variant: dark
-    size: large
-    headline: "Die Kosten, ein digitales Produkt zu bauen, sind um den Faktor 10 gefallen. Die meisten haben es noch nicht gemerkt."
-
-  # ── 9. SPLIT: Pricing ──────────────────────────────────
-  - template: split
-    direction: right
-    headline: "Was es kostet"
-    body: "KI-Audit (Schicht 1 + 2): Ab 3.000 €. Du bekommst eine Analyse, einen priorisierten Maßnahmenplan und die ersten funktionierenden Workflows.\n\nImplementierung & Agenten: Projektbasiert, typischerweise 5.000–20.000 € je nach Umfang.\n\nRapid Prototyping / Co-Building (Schicht 3): Ab 10.000 € für einen funktionierenden MVP.\n\nLaufende KI-Begleitung: Ab 2.000 €/Monat."
-    image:
-      src: /images/paintings/Leadtime_httpss.mj.runKE_olqB1sjU_impressionist_oil_painting__64ce814c-492e-4c67-ae22-c7b1f408dc47_3.png
-      alt: "Person klettert durch Wolken – Aufstieg und Ambition"
-
-  # ── 10. CTA ────────────────────────────────────────────
-  - template: cta-dark
-    headline: "30 Minuten. Kein Pitch."
-    subtext: "Lass uns in einem kurzen Gespräch klären, wo KI bei dir den größten Hebel hat – und ob jetzt der richtige Zeitpunkt ist."
+    body: "Ich bin kein KI-Enthusiast, der dir ChatGPT-Tricks zeigt. Ich bin Geschäftsführer, Entwickler und Builder – mit 15 Jahren Erfahrung in der Softwareentwicklung und einem Partner, der als Senior Engineer dafür sorgt, dass nichts wackelt.\n\nStas Persianenko und ich arbeiten seit über 12 Jahren zusammen. Ich baue die schnellen Prototypen, er macht den Code produktionsreif. Zusammen sorgen wir dafür, dass KI-Einsatz nicht beim Experiment endet – sondern skalierbar, wartbar und zukunftssicher in Produktion läuft."
+    proofs:
+      - text: "Fracto: AI-gestützte Schulungsplattform für MedTech – KI im Produktkern"
+      - text: "Leadtime: KI-Agenten in Projektmanagement, Forecasting und Automatisierung verbaut"
+      - text: "15 Jahre Softwareunternehmen geführt – 50 Mitarbeiter beim Exit"
     cta:
-      text: "Termin vereinbaren"
-      url: "/kontakt"
-    image:
-      src: /images/slides/cta-bg.png
-      alt: ""
-      opacity: 0.3
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+    portraits:
+      - src: /images/lukas.png
+        alt: "Lukas Ebner"
+        label: "Bringt die Ideen."
+      - src: /images/stas.png
+        alt: "Stas Persianenko"
+        label: "Macht den Code wartbar."
+    chat:
+      enabled: true
+      ctaHref: "/erstgespraech"
+
+  # ── 5. NUMBERED FEATURES: Woran wir arbeiten ──────────
+  - template: numbered-features
+    headline: "Woran wir arbeiten."
+    body: "Drei Leistungsbereiche – je nachdem, wo dein größter Hebel liegt."
+    features:
+      - headline: "KI-Beratung & Readiness."
+        body: "Wir analysieren deine Wertschöpfungskette, identifizieren die Stellen mit dem größten KI-Hebel und entwickeln einen konkreten Fahrplan. Von der Tool-Auswahl über Governance bis zum Kulturwandel – damit dein Team KI selbstständig und sicher einsetzt.\n\nAbrechnung auf Stundenbasis. Typisches Engagement: 3-Monats-Setup mit laufendem Sparring."
+        image:
+          src: /images/ki-szenario/KI-szenario-1.png
+          alt: "KI-Beratung"
+      - headline: "Rapid Prototyping & Co-Building."
+        body: "Du hast eine Produktidee, ein internes Tool oder ein Feature im Kopf? Wir bauen einen funktionierenden Prototyp – in Tagen, nicht Monaten. Webseiten, Web-Apps, MVPs, Automatisierungen.\n\nIch baue den ersten Wurf, Stas macht ihn produktionsreif. Tagessatz-basiert, transparent kalkulierbar."
+        image:
+          src: /images/ki-szenario/KI-szenario-3.png
+          alt: "Rapid Prototyping"
+      - headline: "Refactoring & Hardening."
+        body: "Du hast vibe-gecodet oder einen Prototyp, der funktioniert – aber nicht hält. Keine Tests, keine Architektur, kein Plan für Skalierung. Wir machen aus dem Schnellschuss eine tragfähige Codebasis.\n\nCode-Review, Architektur-Refactoring, Test-Coverage, CI/CD. Tagessatz-basiert."
+        image:
+          src: /images/ki-szenario/KI-szenario-2.png
+          alt: "Refactoring"
+
+  # ── 8. PRICING CALCULATOR ─────────────────────────────
+  - template: pricing-calculator
+    headline: "10x schneller. Zum Bruchteil."
+    body: "Schieb den Regler und sieh, was KI-gestützte Entwicklung möglich macht – und was es dich bei einer klassischen Agentur kosten würde."
+    cta:
+      label: "Erstgespräch vereinbaren"
+      href: "/erstgespraech"
+
+  # ── 10. FAQ ───────────────────────────────────────────
+  - template: faq
+    headline: "Häufige Fragen."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was passiert im Erstgespräch?"
+        answer: "30 Minuten, kein Pitch. Wir klären, wo KI bei dir den größten Hebel hat, was du bisher ausprobiert hast – und ob eine Zusammenarbeit Sinn macht."
+      - question: "Brauche ich eigene Entwickler?"
+        answer: "Für KI-Beratung und Readiness: nein. Für Prototyping und Refactoring übernehmen Lukas und Stas die technische Umsetzung – du brauchst kein eigenes Dev-Team."
+      - question: "Wie lange dauert ein KI-Audit?"
+        answer: "2–3 Wochen. Am Ende hast du einen priorisierten Maßnahmenplan und die ersten funktionierenden Workflows. Kein 200-Seiten-Dokument, sondern Ergebnisse."
+      - question: "Was unterscheidet euch von einer KI-Agentur?"
+        answer: "Wir sind keine Agentur. Wir sind zwei Unternehmer, die seit 12 Jahren zusammen Software bauen. Ich bringe die Geschäftsperspektive, Stas die technische Architektur. Du bekommst keine Junior-Berater, sondern direkte Zusammenarbeit mit den Leuten, die es bauen."
+      - question: "Arbeitet ihr mit bestimmten KI-Modellen?"
+        answer: "Wir sind modellagnostisch. OpenAI, Anthropic, Open-Source – wir nutzen, was für deinen Use Case am besten funktioniert. Kein Vendor Lock-in."
+      - question: "Gibt es eine Förderung?"
+        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."

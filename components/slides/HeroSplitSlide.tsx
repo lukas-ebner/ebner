@@ -31,7 +31,10 @@ export function HeroSplitSlide({
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         {pill ? (
-          <span className="mb-4 inline-block w-fit rounded-full border border-text-light/20 px-3 py-1 font-mono text-xs font-normal uppercase tracking-widest text-text-light/60">
+          <span
+            className="mb-4 inline-block w-fit rounded-full px-3 py-1 font-mono text-xs font-normal uppercase tracking-widest text-white/90"
+            style={{ backgroundColor: 'color-mix(in srgb, #F44900 30%, transparent)' }}
+          >
             {pill}
           </span>
         ) : null}

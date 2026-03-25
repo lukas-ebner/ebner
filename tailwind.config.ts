@@ -36,6 +36,7 @@ const config: Config = {
         display: ['Degular Display', 'sans-serif'],
         body: ['Inter Display', 'sans-serif'],
         mono: ['Roboto Mono', 'monospace'],
+        handwritten: ['RealBookPen', 'cursive'],
       },
       fontSize: {
         stat: ['clamp(48px, 8vw, 96px)', { lineHeight: '1.0' }],

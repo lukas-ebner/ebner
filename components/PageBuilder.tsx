@@ -32,6 +32,17 @@ import { LegalSlide } from '@/components/slides/LegalSlide'
 import { TextImageSlide } from '@/components/slides/TextImageSlide'
 import { ToolCloudSlide } from '@/components/slides/ToolCloudSlide'
 import { SymptomsGridSlide } from '@/components/slides/SymptomsGridSlide'
+import { KiReadinessChatSlide } from '@/components/slides/KiReadinessChatSlide'
+import { PricingCalculatorSlide } from '@/components/slides/PricingCalculatorSlide'
+import { ProjectNavSlide } from '@/components/slides/ProjectNavSlide'
+import { ProjectSectionSlide } from '@/components/slides/ProjectSectionSlide'
+import { ProjectsHeroSlide } from '@/components/slides/ProjectsHeroSlide'
+import { ProjectDetailSlide } from '@/components/slides/ProjectDetailSlide'
+import { ParallaxStorySlide } from '@/components/slides/ParallaxStorySlide'
+import { CertificatesSlide } from '@/components/slides/CertificatesSlide'
+import { BlogTeaserSlide } from '@/components/slides/BlogTeaserSlide'
+import { ProfileSummarySlide } from '@/components/slides/ProfileSummarySlide'
+import { FreiheitstestSlide } from '@/components/slides/FreiheitstestSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
@@ -67,11 +78,22 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
   'text-image': TextImageSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'tool-cloud': ToolCloudSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'symptoms-grid': SymptomsGridSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'pricing-calculator': PricingCalculatorSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'ki-readiness-chat': KiReadinessChatSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'project-nav': ProjectNavSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'project-section': ProjectSectionSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'projects-hero': ProjectsHeroSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'project-detail': ProjectDetailSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'parallax-story': ParallaxStorySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  certificates: CertificatesSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'blog-teaser': BlogTeaserSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'profile-summary': ProfileSummarySlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'freiheitstest': FreiheitstestSlide as unknown as React.ComponentType<Record<string, unknown>>,
 }
 
-export function PageBuilder({ slides }: { slides: SlideConfig[] }) {
+export function PageBuilder({ slides, accent }: { slides: SlideConfig[]; accent?: string }) {
   return (
-    <main>
+    <main style={accent ? { '--accent': accent } as React.CSSProperties : undefined}>
       {slides.map((slide, i) => {
         const Component = SLIDE_REGISTRY[slide.template]
         if (!Component) {

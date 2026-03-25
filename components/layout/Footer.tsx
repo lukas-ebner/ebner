@@ -7,11 +7,11 @@ const footerLinkClass = 'font-body text-sm text-text-muted transition-colors hov
 const leistungen = [
   { href: '/operations', label: 'Operations & Führung' },
   { href: '/digitalisierung', label: 'Systeme & Automatisierung' },
-  { href: '/ki-readiness', label: 'KI-Readiness' },
+  { href: '/ki-readiness', label: 'KI-Readiness & Prototyping' },
 ]
 
 const mehr = [
-  { href: '/projekte', label: 'Projekte' },
+  { href: '/projekte', label: 'Beteiligungen' },
   { href: '/ueber-mich', label: 'Über mich' },
   { href: '/blog', label: 'Blog' },
   { href: '/ressourcen', label: 'Ressourcen' },
