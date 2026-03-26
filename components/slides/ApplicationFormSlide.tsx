@@ -23,6 +23,7 @@ interface ApplicationFormSlideProps {
   id?: string
   headline: string
   body?: string
+  bg?: string
   fields: FormField[]
   submitLabel?: string
   successHeadline?: string
@@ -38,6 +39,7 @@ export function ApplicationFormSlide({
   id,
   headline,
   body,
+  bg,
   fields,
   submitLabel = 'Absenden',
   successHeadline = 'Danke.',
@@ -56,6 +58,7 @@ export function ApplicationFormSlide({
   const [codeState, setCodeState] = useState<ActionCodeState>({ status: 'idle' })
   const codeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const isDark = variant === 'dark'
+  const hasBg = !!bg
 
   // Debounced code validation
   function handleCodeChange(value: string) {
@@ -104,7 +107,15 @@ export function ApplicationFormSlide({
     const name = (formData.get('name') as string) || ''
     const email = (formData.get('email') as string) || ''
     const company = (formData.get('company') as string) || ''
-    const message = (formData.get('message') as string) || ''
+
+    // Collect all other fields into a structured message
+    const extraParts: string[] = []
+    fields.forEach((field) => {
+      if (['name', 'email', 'company'].includes(field.name)) return
+      const val = formData.get(field.name) as string
+      if (val?.trim()) extraParts.push(`${field.label}: ${val}`)
+    })
+    const message = extraParts.join('\n')
 
     // Redeem action code if valid
     const trimmedCode = actionCode.trim().toUpperCase()
@@ -163,6 +174,7 @@ export function ApplicationFormSlide({
       id={id}
       ref={ref}
       className={isDark ? 'bg-surface-dark' : 'bg-white'}
+      style={bg ? { backgroundColor: bg } : undefined}
     >
       <div className="mx-auto max-w-[1600px] px-8 py-32 lg:px-20 lg:py-48">
         {/* ── Section header ── */}
@@ -182,7 +194,7 @@ export function ApplicationFormSlide({
           {body && (
             <p
               className={`mt-6 max-w-[600px] font-body text-lg leading-relaxed lg:text-xl ${
-                isDark ? 'text-text-light/60' : 'text-text-secondary'
+                hasBg ? 'text-white/90' : isDark ? 'text-text-light/60' : 'text-text-secondary'
               }`}
             >
               {body}
@@ -200,19 +212,19 @@ export function ApplicationFormSlide({
           {submitted ? (
             <div className="py-16">
               <div
-                className={`flex h-5 w-5 items-center justify-center rounded-full ${
-                  isDark ? 'bg-emerald-500/20' : 'bg-emerald-100'
+                className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${
+                  hasBg ? 'border-white' : isDark ? 'border-white' : 'border-text-primary'
                 }`}
               >
                 <svg
-                  width="14"
-                  height="14"
+                  width="28"
+                  height="28"
                   viewBox="0 0 14 14"
                   fill="none"
                 >
                   <path
                     d="M2.5 7.5L5.5 10.5L11.5 3.5"
-                    stroke={isDark ? '#34D399' : '#059669'}
+                    stroke={hasBg ? '#ffffff' : isDark ? '#ffffff' : '#1a1a1a'}
                     strokeWidth="1.8"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -220,15 +232,15 @@ export function ApplicationFormSlide({
                 </svg>
               </div>
               <h3
-                className={`mt-6 font-display text-[2rem] font-normal leading-tight md:text-[2.5rem] ${
-                  isDark ? 'text-text-light' : 'text-text-primary'
+                className={`mt-8 font-display text-[2rem] font-normal leading-tight md:text-[2.5rem] ${
+                  hasBg ? 'text-white' : isDark ? 'text-text-light' : 'text-text-primary'
                 }`}
               >
                 {successHeadline}
               </h3>
               <p
                 className={`mt-4 max-w-[480px] font-body text-lg leading-relaxed ${
-                  isDark ? 'text-text-light/60' : 'text-text-secondary'
+                  hasBg ? 'text-white/80' : isDark ? 'text-text-light/60' : 'text-text-secondary'
                 }`}
               >
                 {successBody}
@@ -241,7 +253,7 @@ export function ApplicationFormSlide({
                   <label
                     htmlFor={`field-${field.name}`}
                     className={`mb-2 block font-mono text-xs uppercase tracking-widest ${
-                      isDark ? 'text-text-light/40' : 'text-text-muted'
+                      hasBg ? 'text-white/80' : isDark ? 'text-text-light/40' : 'text-text-muted'
                     }`}
                   >
                     {field.label}
@@ -257,10 +269,12 @@ export function ApplicationFormSlide({
                       rows={4}
                       required={field.required}
                       placeholder={field.placeholder}
-                      className={`w-full resize-none border-0 border-b-2 bg-transparent px-0 py-3 font-body text-lg outline-none transition-colors placeholder:opacity-30 ${
-                        isDark
-                          ? 'border-white/10 text-text-light placeholder:text-text-light focus:border-white/30'
-                          : 'border-text-primary/10 text-text-primary placeholder:text-text-primary focus:border-text-primary/30'
+                      className={`w-full resize-none border-0 border-b-2 bg-transparent px-0 py-3 font-body text-lg outline-none transition-colors ${
+                        hasBg
+                          ? 'border-white/30 text-white placeholder:text-white/50 focus:border-white/60'
+                          : isDark
+                            ? 'border-white/10 text-text-light placeholder:text-text-light placeholder:opacity-30 focus:border-white/30'
+                            : 'border-text-primary/10 text-text-primary placeholder:text-text-primary placeholder:opacity-30 focus:border-text-primary/30'
                       }`}
                     />
                   ) : field.type === 'select' && field.options ? (
@@ -269,19 +283,21 @@ export function ApplicationFormSlide({
                       name={field.name}
                       required={field.required}
                       className={`w-full border-0 border-b-2 bg-transparent px-0 py-3 font-body text-lg outline-none transition-colors ${
-                        isDark
-                          ? 'border-white/10 text-text-light focus:border-white/30'
-                          : 'border-text-primary/10 text-text-primary focus:border-text-primary/30'
+                        hasBg
+                          ? 'border-white/30 text-white focus:border-white/60'
+                          : isDark
+                            ? 'border-white/10 text-text-light focus:border-white/30'
+                            : 'border-text-primary/10 text-text-primary focus:border-text-primary/30'
                       }`}
                     >
-                      <option value="" className="bg-surface-dark text-text-light">
+                      <option value="" className={hasBg ? 'bg-[#F44900] text-white' : 'bg-surface-dark text-text-light'}>
                         {field.placeholder || 'Bitte wählen'}
                       </option>
                       {field.options.map((opt, j) => (
                         <option
                           key={j}
                           value={opt}
-                          className="bg-surface-dark text-text-light"
+                          className={hasBg ? 'bg-[#F44900] text-white' : 'bg-surface-dark text-text-light'}
                         >
                           {opt}
                         </option>
@@ -294,10 +310,12 @@ export function ApplicationFormSlide({
                       name={field.name}
                       required={field.required}
                       placeholder={field.placeholder}
-                      className={`w-full border-0 border-b-2 bg-transparent px-0 py-3 font-body text-lg outline-none transition-colors placeholder:opacity-30 ${
-                        isDark
-                          ? 'border-white/10 text-text-light placeholder:text-text-light focus:border-white/30'
-                          : 'border-text-primary/10 text-text-primary placeholder:text-text-primary focus:border-text-primary/30'
+                      className={`w-full border-0 border-b-2 bg-transparent px-0 py-3 font-body text-lg outline-none transition-colors ${
+                        hasBg
+                          ? 'border-white/30 text-white placeholder:text-white/50 focus:border-white/60'
+                          : isDark
+                            ? 'border-white/10 text-text-light placeholder:text-text-light placeholder:opacity-30 focus:border-white/30'
+                            : 'border-text-primary/10 text-text-primary placeholder:text-text-primary placeholder:opacity-30 focus:border-text-primary/30'
                       }`}
                     />
                   )}
@@ -310,7 +328,7 @@ export function ApplicationFormSlide({
                   <label
                     htmlFor="field-action-code"
                     className={`mb-2 block font-mono text-xs uppercase tracking-widest ${
-                      isDark ? 'text-text-light/40' : 'text-text-muted'
+                      hasBg ? 'text-white/80' : isDark ? 'text-text-light/40' : 'text-text-muted'
                     }`}
                   >
                     {actionCodeLabel}
@@ -356,7 +374,9 @@ export function ApplicationFormSlide({
                 <button
                   type="submit"
                   disabled={sending}
-                  className="inline-flex rounded-full bg-brand px-10 py-4 font-mono text-sm uppercase tracking-wide text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+                  className={`inline-flex rounded-full px-10 py-4 font-mono text-sm uppercase tracking-wide transition-opacity hover:opacity-90 disabled:opacity-50 ${
+                    bg ? 'bg-white text-text-primary' : 'bg-brand text-white'
+                  }`}
                 >
                   {sending ? 'Wird gesendet…' : submitLabel}
                 </button>

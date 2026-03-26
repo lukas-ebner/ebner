@@ -34,6 +34,7 @@ slides:
   # ── 3. APPLICATION FORM ────────────────────────────────
   - template: application-form
     id: bewerbung
+    bg: "#F44900"
     headline: "Erzähl mir von deinem Unternehmen."
     body: "Keine langen Formulare. Sieben kurze Fragen, damit ich mich vorbereiten kann – und unser Gespräch von Anfang an Substanz hat."
     submitLabel: "Erstgespräch anfragen"
@@ -48,6 +49,11 @@ slides:
         type: text
         required: true
         placeholder: "Vor- und Nachname"
+      - name: email
+        label: "Deine E-Mail"
+        type: email
+        required: true
+        placeholder: "name@unternehmen.de"
       - name: company
         label: "Unternehmen & Website"
         type: text

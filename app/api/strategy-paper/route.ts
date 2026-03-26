@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { spawn, execSync } from 'child_process'
+import { spawn } from 'child_process'
+import { writeFile } from 'fs/promises'
 import path from 'path'
-import { createLead } from '@/lib/leadtime'
 
 /**
  * POST /api/strategy-paper
@@ -40,18 +40,6 @@ interface RequestBody {
   quiz: QuizData
 }
 
-// Resolve python3 path once at startup
-let python3Path = 'python3'
-try {
-  python3Path = execSync('which python3', { encoding: 'utf-8' }).trim()
-} catch {
-  try {
-    python3Path = execSync('which python', { encoding: 'utf-8' }).trim()
-  } catch {
-    console.warn('[strategy-paper] No python3 found in PATH')
-  }
-}
-
 export async function POST(req: NextRequest) {
   try {
     const body: RequestBody = await req.json()
@@ -72,59 +60,47 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    // Run pipeline in background (fire-and-forget)
-    const pipelineScript = path.join(process.cwd(), 'lib', 'strategy-pipeline.py')
+    // Write input to temp file (avoids CLI arg escaping issues)
     const inputJson = JSON.stringify({ email, quiz })
+    const dataDir = path.join(process.cwd(), 'data')
+    const tmpFile = path.join(dataDir, `pipeline-input-${Date.now()}.json`)
+    await writeFile(tmpFile, inputJson, 'utf-8')
 
-    console.log(`[strategy-pipeline] Starting: ${python3Path} ${pipelineScript}`)
-    console.log(`[strategy-pipeline] CWD: ${process.cwd()}`)
-    console.log(`[strategy-pipeline] Email: ${email}, Score: ${quiz.score}`)
+    // Run pipeline in background via shell (most reliable cross-platform)
+    const pipelineScript = path.join(process.cwd(), 'lib', 'strategy-pipeline.py')
+    const logFile = path.join(dataDir, `pipeline-${Date.now()}.log`)
 
-    const child = spawn(python3Path, [pipelineScript, inputJson], {
-      cwd: process.cwd(),
-      env: {
-        ...process.env,
-        // Ensure PATH includes common python locations (macOS)
-        PATH: `${process.env.PATH || ''}:/usr/local/bin:/opt/homebrew/bin:/usr/bin`,
-      },
-      stdio: ['ignore', 'pipe', 'pipe'],
-      detached: true,
-    })
+    console.log(`[strategy-pipeline] Starting pipeline for ${email}`)
+    console.log(`[strategy-pipeline] Input: ${tmpFile}`)
+    console.log(`[strategy-pipeline] Log: ${logFile}`)
+
+    // Use Homebrew Python (has fpdf2 installed) – fallback to generic python3
+    // bash -lc loads user's shell profile for PATH + env vars
+    const pythonCmd = [
+      'PYTHON="$(/opt/homebrew/bin/python3 -c \'import fpdf\' 2>/dev/null && echo /opt/homebrew/bin/python3 || echo python3)"',
+      `"$PYTHON" "${pipelineScript}" "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
+      `echo "EXIT: $?" >> "${logFile}"`,
+      `rm -f "${tmpFile}"`,
+    ].join('; ')
+
+    const child = spawn(
+      'bash',
+      ['-lc', pythonCmd],
+      {
+        cwd: process.cwd(),
+        stdio: 'ignore',
+        detached: true,
+      }
+    )
 
     child.on('error', (err) => {
       console.error(`[strategy-pipeline] SPAWN ERROR: ${err.message}`)
     })
 
-    // Log output for debugging (non-blocking)
-    child.stdout?.on('data', (data: Buffer) => {
-      console.log(`[strategy-pipeline] ${data.toString().trim()}`)
-    })
-    child.stderr?.on('data', (data: Buffer) => {
-      console.error(`[strategy-pipeline:err] ${data.toString().trim()}`)
-    })
-    child.on('close', (code: number | null) => {
-      if (code === 0) {
-        console.log(`[strategy-pipeline] Pipeline completed successfully`)
-      } else {
-        console.error(`[strategy-pipeline] Pipeline FAILED with exit code ${code}`)
-      }
-    })
-
-    // Detach so it continues if the HTTP connection closes
     child.unref()
 
-    // Create lead in Leadtime CRM (fire-and-forget)
-    const pillarLabels: Record<string, string> = {
-      operations: 'Operations & Führung',
-      systeme: 'Systeme & Automatisierung',
-      ki: 'KI-Readiness',
-    }
-    createLead({
-      email,
-      source: 'freiheitstest',
-      quizScore: quiz.score,
-      quizTopPillars: quiz.top_pillars?.map((p: string) => pillarLabels[p] || p),
-    }).catch((err) => console.error('[strategy-paper] Lead creation failed:', err))
+    // Leadtime CRM lead creation happens inside the Python pipeline
+    // (after research, so enriched company data is available)
 
     return NextResponse.json({
       status: 'processing',

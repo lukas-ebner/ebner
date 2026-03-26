@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createLead } from '@/lib/leadtime'
+import { spawn } from 'child_process'
+import { writeFile } from 'fs/promises'
+import path from 'path'
 
 /**
  * POST /api/contact
  *
  * Handles Erstgespräch form submissions:
  * 1. Sends notification email via Resend
- * 2. Creates lead in Leadtime CRM
+ * 2. Spawns enrichment pipeline (Research → Leadtime CRM)
  *
  * Body: { name, email, company, message?, actionCode? }
  */
@@ -42,7 +44,7 @@ export async function POST(req: NextRequest) {
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>E-Mail:</strong> ${email}</p>
           <p><strong>Unternehmen:</strong> ${company}</p>
-          ${message ? `<p><strong>Nachricht:</strong> ${message}</p>` : ''}
+          ${message ? `<p><strong>Details:</strong></p><p style="white-space: pre-line;">${message}</p>` : ''}
           ${actionCode ? `<p><strong>Aktionscode:</strong> ${actionCode}</p>` : ''}
         </div>`,
       }
@@ -57,19 +59,8 @@ export async function POST(req: NextRequest) {
       }).catch((err) => console.error('[contact] Email notification failed:', err))
     }
 
-    // 2. Redeem action code if provided
-    if (actionCode?.trim()) {
-      // This is handled client-side already, but double-check server-side
-    }
-
-    // 3. Create lead in Leadtime CRM
-    createLead({
-      email,
-      name,
-      company,
-      source: 'erstgespraech',
-      message: message || undefined,
-    }).catch((err) => console.error('[contact] Lead creation failed:', err))
+    // 2. Spawn enrichment pipeline in background (Research → Leadtime CRM)
+    spawnEnrichPipeline(email, 'erstgespraech', { name, company, message, actionCode })
 
     return NextResponse.json({ success: true })
   } catch (error) {
@@ -79,4 +70,42 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     )
   }
+}
+
+/**
+ * Fire-and-forget: Spawns the Python enrichment pipeline as a background process.
+ */
+function spawnEnrichPipeline(email: string, source: string, formData?: Record<string, string | undefined>) {
+  const pipelineScript = path.join(process.cwd(), 'lib', 'strategy-pipeline.py')
+  const dataDir = path.join(process.cwd(), 'data')
+  const logFile = path.join(dataDir, `enrich-${Date.now()}.log`)
+  const inputJson = JSON.stringify({ email, source, formData })
+
+  console.log(`[contact] Spawning enrich pipeline for ${email} (log: ${logFile})`)
+
+  const tmpFile = path.join(dataDir, `enrich-input-${Date.now()}.json`)
+  writeFile(tmpFile, inputJson, 'utf-8')
+    .then(() => {
+      const pythonCmd = [
+        'PYTHON="$(/opt/homebrew/bin/python3 -c \'import fpdf\' 2>/dev/null && echo /opt/homebrew/bin/python3 || echo python3)"',
+        `"$PYTHON" "${pipelineScript}" --enrich "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
+        `echo "EXIT: $?" >> "${logFile}"`,
+        `rm -f "${tmpFile}"`,
+      ].join('; ')
+
+      const child = spawn('bash', ['-lc', pythonCmd], {
+        cwd: process.cwd(),
+        stdio: 'ignore',
+        detached: true,
+      })
+
+      child.on('error', (err) => {
+        console.error(`[contact] Enrich pipeline spawn error: ${err.message}`)
+      })
+
+      child.unref()
+    })
+    .catch((err) => {
+      console.error(`[contact] Failed to write enrich input: ${err}`)
+    })
 }

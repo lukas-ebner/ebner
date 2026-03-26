@@ -208,7 +208,9 @@ const SOURCE_LABELS: Record<LeadSource, string> = {
  * This function is fire-and-forget safe – all errors are caught and logged.
  */
 export async function createLead(data: LeadData): Promise<void> {
-  if (!LEADTIME_TOKEN) {
+  // Re-read token at call time (in case server was started before .env.local had it)
+  const token = process.env.LEADTIME_API_TOKEN || LEADTIME_TOKEN
+  if (!token) {
     console.warn('[leadtime] LEADTIME_API_TOKEN not set – skipping lead creation')
     return
   }
@@ -219,12 +221,15 @@ export async function createLead(data: LeadData): Promise<void> {
     const sourceLabel = SOURCE_LABELS[data.source]
     const now = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
 
+    console.log(`[leadtime] Processing lead: email=${data.email}, source=${data.source}, hasCompany=${hasCompany}, isFreemail=${isFreemail}`)
+
     if (hasCompany) {
       await createFullLead(data, sourceLabel, now)
     } else if (!isFreemail) {
       // Try to use email domain as company name
       const domain = data.email.split('@')[1]
       const domainCompany = domain.replace(/\.(de|com|net|org|io|at|ch|eu)$/i, '')
+      console.log(`[leadtime] Deriving company from domain: ${domainCompany}`)
       await createFullLead({ ...data, company: domainCompany }, sourceLabel, now)
     } else {
       // Only email, no company derivable → ticket
@@ -234,6 +239,7 @@ export async function createLead(data: LeadData): Promise<void> {
     console.log(`[leadtime] Lead created for ${data.email} (source: ${data.source})`)
   } catch (error) {
     console.error('[leadtime] Lead creation failed:', error)
+    throw error // Re-throw so caller can see it
   }
 }
 

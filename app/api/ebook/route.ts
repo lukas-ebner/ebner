@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createLead } from '@/lib/leadtime'
+import { spawn } from 'child_process'
+import { writeFile } from 'fs/promises'
+import path from 'path'
 
 /**
  * POST /api/ebook
  *
  * Sends the "Cost of Chaos" ebook PDF to the given email address via Resend.
+ * Then spawns the enrichment pipeline in the background (Research → Leadtime CRM).
  *
  * Body: { email: string }
  */
@@ -94,10 +97,8 @@ export async function POST(req: NextRequest) {
     const result = await res.json()
     console.log(`[ebook] Email sent to ${email} (Resend ID: ${result.id})`)
 
-    // Create lead in Leadtime CRM (fire-and-forget)
-    createLead({ email, source: 'ebook' }).catch((err) =>
-      console.error('[ebook] Lead creation failed:', err)
-    )
+    // Spawn enrichment pipeline in background (Research → Leadtime CRM)
+    spawnEnrichPipeline(email, 'ebook')
 
     return NextResponse.json({
       status: 'sent',
@@ -110,4 +111,44 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     )
   }
+}
+
+/**
+ * Fire-and-forget: Spawns the Python enrichment pipeline as a background process.
+ * Crawls the company website, enriches data, creates Leadtime CRM lead.
+ */
+function spawnEnrichPipeline(email: string, source: string) {
+  const pipelineScript = path.join(process.cwd(), 'lib', 'strategy-pipeline.py')
+  const dataDir = path.join(process.cwd(), 'data')
+  const logFile = path.join(dataDir, `enrich-${Date.now()}.log`)
+  const inputJson = JSON.stringify({ email, source })
+
+  console.log(`[ebook] Spawning enrich pipeline for ${email} (log: ${logFile})`)
+
+  // Write input to temp file
+  const tmpFile = path.join(dataDir, `enrich-input-${Date.now()}.json`)
+  writeFile(tmpFile, inputJson, 'utf-8')
+    .then(() => {
+      const pythonCmd = [
+        'PYTHON="$(/opt/homebrew/bin/python3 -c \'import fpdf\' 2>/dev/null && echo /opt/homebrew/bin/python3 || echo python3)"',
+        `"$PYTHON" "${pipelineScript}" --enrich "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
+        `echo "EXIT: $?" >> "${logFile}"`,
+        `rm -f "${tmpFile}"`,
+      ].join('; ')
+
+      const child = spawn('bash', ['-lc', pythonCmd], {
+        cwd: process.cwd(),
+        stdio: 'ignore',
+        detached: true,
+      })
+
+      child.on('error', (err) => {
+        console.error(`[ebook] Enrich pipeline spawn error: ${err.message}`)
+      })
+
+      child.unref()
+    })
+    .catch((err) => {
+      console.error(`[ebook] Failed to write enrich input: ${err}`)
+    })
 }

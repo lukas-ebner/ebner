@@ -304,6 +304,23 @@ export function FreiheitstestSlide({
           pillarScores[p.key] = p.pct
         }
 
+        // Map answers from {questionId: scoreValue} to pipeline format
+        const pillarPrefixes: Record<string, string> = { operations: 'ops', systeme: 'sys', ki: 'ki' }
+        const pillarCounters: Record<string, number> = { ops: 0, sys: 0, ki: 0 }
+        const mappedAnswers: Record<string, { q: string; a: number; label: string }> = {}
+        for (const q of QUESTIONS) {
+          const val = answers[q.id]
+          if (val === undefined) continue
+          const prefix = pillarPrefixes[q.pillar]
+          pillarCounters[prefix] = (pillarCounters[prefix] || 0) + 1
+          const key = `${prefix}_${pillarCounters[prefix]}`
+          mappedAnswers[key] = {
+            q: q.statement,
+            a: val,
+            label: SCALE_LABELS[val] || '',
+          }
+        }
+
         const res = await fetch('/api/strategy-paper', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -311,7 +328,7 @@ export function FreiheitstestSlide({
             email,
             quiz: {
               score: result?.score ?? 0,
-              answers,
+              answers: mappedAnswers,
               pillar_scores: pillarScores,
               top_pillars: (result?.topPillars ?? []).map((p) => p.key),
             },
@@ -597,7 +614,7 @@ export function FreiheitstestSlide({
                         src="/images/ebook/ebook-desk.jpg"
                         alt="Dein persönliches Strategie-Paper"
                         fill
-                        className="object-cover object-[center_30%]"
+                        className="object-cover object-[center_75%]"
                       />
                     </div>
 
@@ -678,7 +695,7 @@ export function FreiheitstestSlide({
 
             {/* Scroll-Indikator */}
             <motion.div
-              className="mt-10"
+              className="mt-32"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.5 }}
