@@ -1,6 +1,6 @@
 meta:
-  title: "Systeme & Automatisierung – Lukas Ebner"
-  description: "Eine Infrastruktur, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten. Tool-Audit, Systemkonsolidierung und Automatisierung."
+  title: "Digitale Transformation Mittelstand – Lukas Ebner"
+  description: "Tool Audit, digitale Transformation und Automatisierung für Mittelständler. Statt 15 Tools: eine Infrastruktur."
   og_image: /images/og/digitalisierung.jpg
   accent: "#0D5054"
 
@@ -8,8 +8,8 @@ slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────
   - template: hero-split
     pill: "Systeme & Automatisierung"
-    headline: "Eine Infrastruktur, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten."
-    subtext: "Tool-Audit, Systemkonsolidierung und Automatisierung für Unternehmen, die ihre digitale Infrastruktur von Flickenteppich auf Maschinenraum umstellen wollen."
+    headline: "Eine digitale Transformation, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten."
+    subtext: "Tool Audit, Systemkonsolidierung und Automatisierung von Geschäftsprozessen für Unternehmen, die ihre digitale Infrastruktur professionalisieren wollen."
     cta:
       text: "Gespräch vereinbaren"
       url: "/erstgespraech"
@@ -78,8 +78,8 @@ slides:
   # ── 5. CREDIBILITY (teal-dark) ────────────────────────
   - template: credibility
     bg: "#0D4F54"
-    headline: "Ich kenne das. Weil ich das Tool dafür gebaut habe."
-    body: "15 Jahre lang habe ich ein Unternehmen aufgebaut – von null auf 50 Mitarbeiter und 4 Mio Umsatz. Ich habe jedes PSA-Tool am Markt ausprobiert. Keins hat gepasst.\n\nAlso haben wir unser eigenes gebaut: Leadtime. Ein ERP für Digitalunternehmen. Heute nutzen es dutzende Agenturen. Ich weiß nicht nur, wie Systeme funktionieren sollten – ich habe eines gebaut."
+    headline: "Ich kenne das. Weil ich das ERP für Agenturen gebaut habe."
+    body: "15 Jahre lang habe ich ein Unternehmen aufgebaut – von null auf 50 Mitarbeiter und 4 Mio Umsatz. Ich habe jedes Projektmanagement Software am Markt für Agenturen ausprobiert. Keins hat gepasst.\n\nAlso haben wir unser eigenes gebaut: Leadtime. Ein ERP für Digitalunternehmen und Agenturen. Heute nutzen es dutzende Agenturen erfolgreich. Ich weiß nicht nur, wie digitale Transformation funktionieren sollte – ich habe ein Produkt gebaut, das sie ermöglicht."
     proofs:
       - text: "15 Jahre Geschäftsführer einer Digitalagentur"
       - text: "Leadtime als ERP-Produkt entwickelt und am Markt etabliert"
@@ -110,18 +110,18 @@ slides:
     headline: "Woran wir arbeiten."
     body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
     features:
-      - headline: "Tool-Audit & Prozessanalyse."
-        body: "Welche Tools nutzt ihr wirklich? Welche Daten werden doppelt gepflegt? Wo gehen Informationen verloren?\n\nIch schaue mir nicht nur die Tools an, sondern die Arbeitsabläufe dahinter – und finde die Stellen, an denen ihr jeden Tag Zeit und Geld verbrennt."
+      - headline: "Tool Audit & Prozessanalyse."
+        body: "Welche Tools nutzt ihr wirklich? Welche Daten werden doppelt gepflegt? Wo gehen Informationen verloren? Für Agenturen ist das besonders kritisch – [Zeiterfassung](/blog/zeiterfassung-agentur), Projektmanagement, Rechnungsstellung müssen zusammenspielen.\n\nIch schaue mir nicht nur die Tools an, sondern die Arbeitsabläufe dahinter – und finde die Stellen, an denen ihr jeden Tag Zeit und Geld verbrennt."
         image:
           src: /images/fotos/DSC00263.jpg
           alt: "Tool-Audit am Whiteboard"
       - headline: "Systemarchitektur & Konsolidierung."
-        body: "Wir entwerfen die Ziel-Architektur: Welches System wird die zentrale Datenquelle? Was wird angebunden, was abgeschafft?\n\nWeniger ist hier immer mehr. Drei verbundene Tools schlagen fünfzehn isolierte."
+        body: "Wir entwerfen die Ziel-Architektur: Welches System wird die zentrale Datenquelle? Was wird angebunden, was abgeschafft?\n\nWeniger ist hier immer mehr. Drei verbundene Tools schlagen fünfzehn isolierte. Das ist genau das Thema von [ERP für Agenturen](/blog/erp-fuer-agenturen) – eine durchdachte Systemarchitektur statt Wildwuchs."
         image:
           src: /images/fotos/DSC00270.jpg
           alt: "Systemarchitektur entwerfen"
-      - headline: "Automatisierung & Workflows."
-        body: "Zeiterfassung → Controlling → Rechnungsstellung. Reports, die sich selbst schreiben. Daten, die einmal eingegeben werden und überall verfügbar sind.\n\nAlles, was regelbasiert ist, läuft automatisch. Dein Team arbeitet – das System rechnet."
+      - headline: "Automatisierung von Geschäftsprozessen & Workflows."
+        body: "Zeiterfassung → [Controlling](/blog/controlling-fuer-agenturen) → Rechnungsstellung – insbesondere die Leadtime für Agenturen ist massiv. Reports, die sich selbst schreiben. Daten, die einmal eingegeben werden und überall verfügbar sind.\n\nAlles, was regelbasiert ist, läuft automatisch. Dein Team arbeitet – das System rechnet. Das spart Zeit und senkt Kosten auf ganzer Linie."
         image:
           src: /images/fotos/DSC00277.jpg
           alt: "Workflow-Automatisierung"

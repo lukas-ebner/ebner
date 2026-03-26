@@ -1,6 +1,7 @@
 meta:
   title: "Impressum – Lukas Ebner"
   description: "Impressum der Website lukasebner.de – Wachstumscoach GmbH, Regensburg."
+  noSnap: true
 
 slides:
   - template: legal

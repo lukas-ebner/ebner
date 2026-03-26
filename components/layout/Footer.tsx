@@ -21,7 +21,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-surface-dark py-16 text-text-light">
+    <footer className="snap-start bg-surface-dark py-16 text-text-light">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href="/" className="inline-block">

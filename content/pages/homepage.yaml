@@ -1,13 +1,13 @@
 meta:
-  title: "Lukas Ebner – Unternehmer, Berater, Builder"
-  description: "15 Jahre als Geschäftsführer, Exit 2022, SaaS-Gründer. Beratung für Geschäftsführer, Agenturen und KMU – KI-Strategie, Skalierung, Führung."
+  title: "Unternehmensberater Regensburg – Lukas Ebner"
+  description: "Unternehmensberatung für Geschäftsführer in Regensburg. Skalierung, Prozessoptimierung, KI-Strategie für KMU und Agenturen."
   og_image: /images/og/homepage.jpg
 
 slides:
   # ── 1. HERO + STATS ─────────────────────────────────
   - template: hero-dark
-    headline: "Ich habe ein Unternehmen auf 50 Leute aufgebaut und verkauft. Jetzt helfe ich dir, dasselbe zu tun."
-    subtext: "Beratung für Geschäftsführer, die nicht mehr alles selbst machen wollen."
+    headline: "Dein Unternehmen soll laufen. Nicht an dir hängen."
+    subtext: "Strategische IT-Beratung für Geschäftsführer, die aufhören wollen, ihr Unternehmen zu betreiben statt es zu führen."
     cta:
       text: "Gespräch vereinbaren"
       url: "/kontakt"
@@ -17,52 +17,127 @@ slides:
       opacity: 0.95
     align: left
     stats:
+      - { value: "25+", label: "Jahre in Agenturen & SaaS" }
+      - { value: "5", label: "Unternehmen aufgebaut" }
       - { value: "15+", label: "Jahre als Geschäftsführer" }
-      - { value: "50", label: "Mitarbeiter beim Exit" }
-      - { value: "7", label: "stelliger Exit 2022" }
-      - { value: "1.000+", label: "Projekte verantwortet" }
+      - { value: "7", label: "stelliger Exit" }
+      - { value: "500+", label: "Projekte verantwortet" }
 
   # ── 2. QUIZ (interaktiv) ─────────────────────────────
   - template: freiheitstest
     headline: "Bremst dich dein eigenes Unternehmen?"
     buttonText: "Finde heraus, wo du stehst"
 
-  # ── 4. DAS SYSTEM (Dreieck-Grafik) ─────────────────
-  # TODO: Eigene Komponente "TriangleSystemSlide" bauen
-  # Platzhalter: Statement mit übergreifender Value Proposition
-  - template: statement
-    headline: "Führung × Systeme × KI — erst zusammen entsteht ein Unternehmen, das ohne dich funktioniert."
-    variant: orange
-    size: large
+  # ── 4. DAS SYSTEM (Drei-Kreise-Infografik) ─────────
+  - template: three-pillars
+    headline: "Du weißt jetzt, wo du stehst. So arbeiten wir daran."
+    subtext: "Dein Freiheitsgrad hat dir gezeigt, wo dein Unternehmen dich noch bindet. Ich arbeite mit dir an genau diesen Stellschrauben — nicht nacheinander, sondern verzahnt."
 
-  # ── 5. PFEILER 1: Operations & Führung ─────────────
-  - template: statement
-    headline: "Bevor du irgendetwas automatisierst — funktioniert dein Laden überhaupt ohne dich?"
-    variant: dark
-    size: large
+  # ── 5. PFEILER 1: Operations & Führung (ORANGE) ────
+  - template: pillar-detail
+    pill: "Das Fundament"
+    headline: "Diagnose → System → Sparring. In drei Phasen zum Unternehmen, das ohne dich läuft."
+    body: "Jedes Unternehmen kommt an den Punkt, an dem der Gründer zum Engpass wird. Sonntagabend am Laptop, Meetings in denen nur du entscheidest, mehr Mitarbeiter aber nicht weniger Arbeit.\n\nWir starten mit einer ehrlichen Diagnose: Wie läuft dein Unternehmen wirklich — nicht wie es auf dem Organigramm aussieht. Dann bauen wir Prozesse, Rollen und Führungsstrukturen, die skalieren. Und danach bleibe ich als Sparringspartner — wie ein Beirat, nur ehrlicher."
+    points:
+      - "Strategie, die dein Team versteht und nach der es handelt"
+      - "Prozesse, die laufen wenn du zwei Wochen nicht da bist"
+      - "Führungsstruktur, die aus Einzelkämpfern ein Team macht"
+      - "Transparenz über EBIT, Projektmargen und Unternehmenswert"
+    bg: "#F44900"
+    direction: right
+    steps:
+      - icon: search
+        title: "Diagnose"
+        body: "Wie läuft dein Unternehmen wirklich? Wo bleiben Dinge hängen, wo verlierst du Marge?"
+      - icon: wrench
+        title: "System bauen"
+        body: "Prozesse, Rollen, Führungsstruktur, Kennzahlen. Pragmatisch, nicht verkopft."
+      - icon: message-circle
+        title: "Laufendes Sparring"
+        body: "Regelmäßige Sessions für strategische Fragen. Wie ein Beirat, nur ehrlicher."
+    cta:
+      text: "Mehr zu Operations"
+      url: "/operations"
 
-  # ── 6. PFEILER 2: Systeme & Automatisierung ────────
-  - template: statement
-    headline: "Du brauchst kein neues Tool. Du brauchst Überblick."
-    variant: dark
-    size: large
-
-  # ── 7. PFEILER 3: KI-Readiness & Prototyping ──────
-  - template: statement
-    headline: "KI ist kein Feature. Es ist ein Kulturwandel."
-    variant: dark
-    size: large
-
-  # ── 8. BLOG-TEASER ─────────────────────────────────
+  # ── 5b. BLOG-TEASER ────────────────────────────────
   - template: blog-teaser
     headline: "Aktuell im Blog"
     post:
-      title: "Warum die meisten Geschäftsführer zu lange im Tagesgeschäft bleiben"
-      excerpt: "Es gibt einen Punkt, an dem du aufhören musst, in deinem Unternehmen zu arbeiten – und anfangen musst, daran zu arbeiten. Die meisten verpassen diesen Punkt um Jahre. Hier ist, woran du ihn erkennst."
-      date: "März 2026"
-      category: "Führung & Wachstum"
+      title: "Raus aus dem Tagesgeschäft — 7 Schritte für Geschäftsführer die endlich führen wollen"
+      excerpt: "Der Teufelskreis zwischen Tagesgeschäft und Strategie. 7 konkrete Schritte, die dich aus dem operativen Hamsterrad befreien — von Sofortmaßnahmen bis zur neuen Rolle als Geschäftsführer."
+      date: "April 2026"
+      category: "Operations & Führung"
       image: /images/fotos/DSC00263.jpg
-      url: "/blog"
+      url: "/blog/raus-aus-dem-tagesgeschaeft"
+
+  # ── 6. PFEILER 2: Systeme & Automatisierung (TEAL) ─
+  - template: pillar-detail
+    pill: "Die Infrastruktur"
+    headline: "Zwar jede Menge Tools. Trotzdem kein Überblick. Das ändern wir."
+    body: "Excel-Sheets die sich widersprechen, Meetings in denen ihr Zahlen diskutiert denen niemand vertraut, Zeiterfassung in einem anderen Tool als die Projekte. Das ist kein Technologie-Problem — das ist ein Architektur-Problem.\n\nWir machen einen Tool-Audit, entwerfen eure Ziel-Architektur und konsolidieren auf ein zentrales System. Drei verbundene Tools schlagen fünfzehn isolierte. Alles was regelbasiert ist, läuft automatisch — dein Team arbeitet, das System rechnet."
+    points:
+      - "Tool-Audit: Welche Daten werden doppelt gepflegt, wo geht Information verloren?"
+      - "Systemarchitektur: Eine zentrale Datenquelle statt 15 Inseln"
+      - "Automatisierung: Zeiterfassung → Controlling → Rechnungsstellung in einem Fluss"
+      - "Migration & Enablement: Sauber umziehen, Team schulen, Übergangsphase"
+    bg: "#0D4F54"
+    direction: left
+    tools:
+      - src: "/images/wolke/Rectangle 4239.svg"
+      - src: "/images/wolke/Rectangle 4240.svg"
+      - src: "/images/wolke/Rectangle 4241.svg"
+      - src: "/images/wolke/Rectangle 4242.svg"
+      - src: "/images/wolke/Rectangle 4243.svg"
+      - src: "/images/wolke/Rectangle 4244.svg"
+      - src: "/images/wolke/Rectangle 4245.svg"
+      - src: "/images/wolke/Rectangle 4246.svg"
+      - src: "/images/wolke/Rectangle 4247.svg"
+      - src: "/images/wolke/Rectangle 4248.svg"
+      - src: "/images/wolke/Rectangle 4249.svg"
+      - src: "/images/wolke/Rectangle 4250.svg"
+      - src: "/images/wolke/Rectangle 4251.svg"
+    cta:
+      text: "Mehr zu Systemen"
+      url: "/digitalisierung"
+
+  # ── 6b. EBOOK LEADMAGNET ───────────────────────────
+  - template: ebook-leadmagnet
+    headline: "Kostenloser Report: The Cost of Chaos"
+    subtext: "10 Fehler, die deine Marge auffressen — und wie du sie abstellst. Basierend auf 15 Jahren Erfahrung mit Software-Dienstleistern."
+    ebookTitle: "The Cost of Chaos in Professional Services"
+    ebookSubtitle: "10 Failures That Drain Your Margins"
+    points:
+      - "Warum volle Auslastung nicht gleich Profitabilität ist"
+      - "Die 10 häufigsten Margenkiller in Agenturen und IT-Dienstleistern"
+      - "Konkrete Maßnahmen, die du sofort umsetzen kannst"
+    coverImage: /images/ebook/ebook-title.png
+    authorImage: /images/ebook/lukas-ebook.jpg
+    bg: "#FFFFFF"
+
+  # ── 7. PFEILER 3: KI-Readiness & Prototyping (INDIGO)
+  - template: pillar-detail
+    pill: "Der Beschleuniger"
+    headline: "Von der Idee zum Prototyp. In Tagen, nicht Monaten."
+    body: "Alle reden über KI. Aber zwischen ChatGPT ausprobieren und KI systematisch einsetzen liegt eine Welt. Deine Entwicklungskosten explodieren? Du hast vibe-gecodet und es muss jetzt halten? Du willst aus der Idee raus, rein in den Prototyp?\n\nIch baue den ersten Wurf, mein Partner Stas macht den Code produktionsreif. Zusammen: KI-Strategie, Rapid Prototyping, Refactoring. Keine Junior-Berater — direkte Zusammenarbeit mit den Leuten die es bauen."
+    points:
+      - "KI-Beratung: Wo bringt KI bei euch den größten Hebel? Fahrplan statt Buzzwords"
+      - "Rapid Prototyping: Funktionierender Build in Tagen, nicht Quartalen"
+      - "Refactoring & Hardening: Aus dem Schnellschuss eine tragfähige Codebasis machen"
+      - "10× schneller zum Bruchteil klassischer Agenturkosten"
+    bg: "#1B1564"
+    direction: right
+    pipeline:
+      - icon: sparkles
+        label: "Idee"
+      - icon: compass
+        label: "Strategie"
+      - icon: rocket
+        label: "Prototyp"
+      - icon: shield
+        label: "Production"
+    cta:
+      text: "Mehr zu KI-Readiness"
+      url: "/ki-readiness"
 
   # ── 9. FAQ ─────────────────────────────────────────
   - template: faq
@@ -70,13 +145,25 @@ slides:
     bg: "#E6EEEF"
     variant: light
     items:
-      - question: "Was genau machst du als Berater?"
-        answer: "Ich helfe Geschäftsführern von IT- und Software-Unternehmen, ihre Organisation zu professionalisieren. Das heißt: bessere Prozesse, klarere Strukturen, smartere Tools. Ich komme aus der Praxis – 13 Jahre eigene Firma, 50 Mitarbeiter, über 1.000 Projekte. Ich weiß, wo es klemmt."
-      - question: "Für wen ist dein Coaching gedacht?"
-        answer: "Für Geschäftsführer und Gründer, die das Gefühl haben, dass ihr Unternehmen schneller wachsen könnte, wenn die internen Abläufe besser funktionieren würden. Typischerweise Unternehmen zwischen 5 und 50 Mitarbeitern."
-      - question: "Was ist Leadtime?"
-        answer: "Leadtime ist eine Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Entstanden aus einem internen Tool, das ich über 8 Jahre in meiner eigenen Firma entwickelt habe."
+      - question: "Was genau machst du als Unternehmensberater?"
+        answer: "Ich helfe Geschäftsführern und Gründern von Dienstleistungsunternehmen, sich aus dem operativen Tagesgeschäft zu lösen. Das heißt konkret: Prozessoptimierung, Führungsstrukturen aufbauen, Systeme konsolidieren und KI-Strategie entwickeln. Ich komme nicht aus der Theorie – ich habe 15 Jahre lang selbst ein Unternehmen mit 50 Mitarbeitern geführt, über 500 Projekte verantwortet und einen 7-stelligen Exit gemacht. Ich weiß, wo es in wachsenden Dienstleistern klemmt."
+      - question: "Für wen ist die Beratung gedacht?"
+        answer: "Für Geschäftsführer und Gründer von wissensbasierten Dienstleistern – Agenturen, IT-Unternehmen, Beratungen, Ingenieurbüros, Architekturbüros, Kanzleien oder andere Professional-Services-Firmen. Typischerweise zwischen 5 und 50 Mitarbeitern. Der gemeinsame Nenner: Du verkaufst Kopfarbeit, dein Unternehmen hängt zu stark an dir, und du willst das ändern."
+      - question: "Was unterscheidet dich von anderen Unternehmensberatern?"
+        answer: "Ich bin kein klassischer Berater, der PowerPoints liefert und dann verschwindet. Ich habe selbst ein Unternehmen skaliert, einen Exit gemacht und baue parallel ein SaaS-Produkt. Mein Ansatz ist umsetzungsorientiert: Diagnose, Systemaufbau und dann laufendes Sparring als Geschäftsführer-Coach. Ich arbeite nur mit Dienstleistern, weil ich genau diese Branche kenne – von Projektmargen über Ressourcenplanung bis zum Controlling."
+      - question: "Wie läuft eine Zusammenarbeit ab?"
+        answer: "Wir starten mit einem kostenlosen Erstgespräch, in dem wir deine Situation analysieren. Danach folgt eine Diagnosephase, in der ich eure Prozesse, Systeme und Führungsstrukturen unter die Lupe nehme. Daraus entsteht ein konkreter Fahrplan. Die eigentliche Beratung läuft dann als Kombination aus Workshops, Systemaufbau und regelmäßigem Sparring – je nach Bedarf über 3 bis 12 Monate."
       - question: "Arbeitest du remote oder vor Ort?"
-        answer: "Beides. Ich bin in Regensburg ansässig, arbeite aber viel remote. Für Workshops und intensive Phasen komme ich auch gerne vor Ort. Das klären wir im Erstgespräch."
+        answer: "Beides. Ich bin in Regensburg ansässig und arbeite viel mit Unternehmen aus der Region Regensburg, Ostbayern und ganz Bayern. Für Workshops und intensive Phasen komme ich vor Ort, das laufende Sparring machen wir remote. Grundsätzlich funktioniert die Zusammenarbeit auch komplett remote – ich arbeite genauso mit Kunden in Hamburg oder Wien."
+      - question: "Was kostet die Unternehmensberatung?"
+        answer: "Mein Stundensatz liegt bei 125 €. Für eine strukturierte Zusammenarbeit biete ich 3-Monats-Pakete zwischen 4.750 € und 9.500 € an – je nach Umfang und Intensität. Wichtig: Über die BAFA-Förderung kannst du dir 50 bis 80 Prozent der Beratungskosten erstatten lassen. Das heißt, eine professionelle Unternehmensberatung kostet dich unter Umständen weniger als ein Freelancer-Tag."
+      - question: "Was ist die BAFA-Förderung für Unternehmensberatung?"
+        answer: "Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) fördert professionelle Unternehmensberatung für KMU mit 50 bis 80 Prozent der Kosten. Ich bin als BAFA-Berater zugelassen, das heißt: du bekommst eine hochwertige Strategieberatung und zahlst nur einen Bruchteil selbst. Den Antrag begleite ich mit – das ist kein bürokratisches Monster."
+      - question: "Was genau meinst du mit KI-Beratung?"
+        answer: "Ich helfe dir, KI konkret in deinem Unternehmen einzusetzen – nicht als Buzzword, sondern als echten Hebel. Das reicht von der KI-Strategie über die Identifikation konkreter Use Cases bis zum funktionierenden Prototypen. Typische Einsatzfelder: Angebotserstellung automatisieren, Support mit KI beschleunigen, Reporting automatisieren oder interne Wissensdatenbanken aufbauen. Wir bauen Prototypen in Tagen, nicht Monaten."
+      - question: "Was ist Leadtime?"
+        answer: "Leadtime ist eine Project-Delivery-Plattform, die ich selbst entwickle – entstanden aus 8 Jahren eigener Agenturarbeit. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Speziell gebaut für Dienstleister, die ihr Tool-Chaos durch eine zentrale Plattform ersetzen wollen. Leadtime ist kein Pflichtbestandteil meiner Beratung, aber oft die Antwort auf die Systemfrage."
+      - question: "Kann ich auch nur ein Sparring buchen, ohne volles Beratungspaket?"
+        answer: "Ja. Viele Geschäftsführer nutzen mich als externen Sparringpartner – regelmäßig oder bei Bedarf. Das funktioniert als monatliches Sparring-Abo oder als einzelne Sessions. Manchmal reicht ein erfahrener Blick von außen, um die richtige Entscheidung zu treffen."
       - question: "Wie kann ich dich am besten erreichen?"
-        answer: "Am einfachsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du auch direkt einen Termin buchen."
+        answer: "Am schnellsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du direkt einen Termin buchen – kostenlos, 30 Minuten, kein Pitch."

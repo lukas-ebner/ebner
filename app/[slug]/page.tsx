@@ -41,5 +41,5 @@ export default async function DynamicPage({ params }: PageProps) {
     notFound()
   }
 
-  return <PageBuilder slides={page.slides} accent={page.meta.accent} />
+  return <PageBuilder slides={page.slides} accent={page.meta.accent} noSnap={page.meta.noSnap} />
 }

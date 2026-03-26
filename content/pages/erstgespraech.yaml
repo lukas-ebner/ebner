@@ -1,6 +1,6 @@
 meta:
-  title: "Erstgespräch – Lukas Ebner"
-  description: "Passt eine Zusammenarbeit? In 30 Minuten klären wir, wo dein größter Hebel liegt – und ob ich der Richtige bin, dir dabei zu helfen."
+  title: "Erstgespräch Unternehmensberatung – Lukas Ebner"
+  description: "Kostenfreies Erstgespräch zur Unternehmensberatung. In 30 Minuten klären wir, ob eine Zusammenarbeit Sinn macht."
   og_image: /images/og/erstgespraech.jpg
 
 slides:
@@ -23,9 +23,9 @@ slides:
     qualifiesLabel: "Passt gut"
     disqualifiesLabel: "Passt nicht"
     qualifies:
-      - text: "Du führst ein Unternehmen mit 5–100 Mitarbeitern."
-      - text: "Du bist bereit, Dinge zu verändern – auch wenn es unbequem wird."
-      - text: "Du kannst 2.000–4.000 € monatlich in Beratung investieren."
+      - text: "Du führst ein Unternehmen mit 5–100 Mitarbeitern in Regensburg oder deutschlandweit."
+      - text: "Du bist bereit, Dinge zu verändern – auch wenn es unbequem wird – und suchst einen Sparring Partner Geschäftsführer."
+      - text: "Du kannst 2.000–4.000 € monatlich in Unternehmensberatung und Coaching investieren."
     disqualifies:
       - text: "Du suchst jemanden, der dir sagt, was du hören willst."
       - text: "Du erwartest Ergebnisse ohne eigenes Engagement."

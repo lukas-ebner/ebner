@@ -1,0 +1,9 @@
+{
+  "name": "ebner-blog-engine",
+  "version": "0.1.0",
+  "description": "Full blog pipeline for lukasebner.de: keyword research, Perplexity deep research, article writing with SEO optimization, anti-AI detection, NanoBanana image generation, publishing, and LinkedIn promotion handoff.",
+  "author": {
+    "name": "Lukas Ebner"
+  },
+  "keywords": ["blog", "seo", "content", "ki", "perplexity", "nanobanana"]
+}

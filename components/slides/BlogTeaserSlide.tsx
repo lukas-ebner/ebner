@@ -2,7 +2,8 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import Image from 'next/image'
+import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
+import { Button } from '@/components/ui/Button'
 
 interface BlogTeaserSlideProps {
   headline?: string
@@ -16,6 +17,7 @@ interface BlogTeaserSlideProps {
   }
   variant?: 'light' | 'dark'
   bg?: string
+  direction?: 'left' | 'right'
 }
 
 export function BlogTeaserSlide({
@@ -23,87 +25,150 @@ export function BlogTeaserSlide({
   post,
   variant = 'light',
   bg,
+  direction = 'right',
 }: BlogTeaserSlideProps) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-60px' })
-  const isDark = variant === 'dark'
+  const isInView = useInView(ref, { once: true, margin: '-80px' })
+
+  const useLightText = bg
+    ? (() => {
+        const h = bg.replace('#', '')
+        if (h.length < 6) return false
+        const r = parseInt(h.slice(0, 2), 16)
+        const g = parseInt(h.slice(2, 4), 16)
+        const b = parseInt(h.slice(4, 6), 16)
+        return (r * 299 + g * 587 + b * 114) / 1000 < 150
+      })()
+    : variant === 'dark'
 
   const bgClass = bg
     ? ''
-    : isDark
+    : variant === 'dark'
       ? 'bg-surface-dark'
       : 'bg-white'
+
+  const imageOnRight = direction === 'right'
 
   return (
     <div
       ref={ref}
-      className={`py-section-mobile lg:py-section-desktop ${bgClass}`}
+      className={`${bgClass} relative min-h-screen overflow-hidden`}
       style={bg ? { backgroundColor: bg } : undefined}
     >
-      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+      {/* ── Image: absolute, full height, flush to edge ── */}
+      {post.image && (
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className={`hidden lg:block absolute top-0 bottom-0 w-[48%] ${
+            imageOnRight ? 'right-0' : 'left-0'
+          }`}
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.15 }}
         >
-          {/* Section label */}
-          <span className={`font-mono text-[11px] uppercase tracking-[0.2em] ${isDark ? 'text-text-light/40' : 'text-text-dimmed'}`}>
-            {headline}
-          </span>
-
-          {/* Card */}
-          <a
-            href={post.url}
-            className={`mt-4 block group rounded-2xl overflow-hidden border transition-shadow hover:shadow-xl ${
-              isDark ? 'border-white/10 bg-white/5' : 'border-border bg-surface-light'
-            }`}
-          >
-            <div className="grid md:grid-cols-5 gap-0">
-              {/* Image */}
-              {post.image && (
-                <div className="relative md:col-span-2 aspect-[16/10] md:aspect-auto">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 40vw"
-                  />
-                </div>
-              )}
-
-              {/* Content */}
-              <div className={`${post.image ? 'md:col-span-3' : 'md:col-span-5'} flex flex-col justify-center p-6 lg:p-10`}>
-                {post.category && (
-                  <span className="mb-2 inline-block self-start rounded-full bg-brand/10 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-brand">
-                    {post.category}
-                  </span>
-                )}
-                <h3 className={`font-display text-[1.5rem] lg:text-[1.8rem] font-bold leading-tight ${
-                  isDark ? 'text-text-light' : 'text-text-primary'
-                }`}>
-                  {post.title}
-                </h3>
-                <p className={`mt-3 font-body text-[0.95rem] leading-relaxed line-clamp-3 ${
-                  isDark ? 'text-text-light/60' : 'text-text-dimmed'
-                }`}>
-                  {post.excerpt}
-                </p>
-                <div className="mt-5 flex items-center gap-3">
-                  <span className="font-body text-sm font-medium text-brand group-hover:underline">
-                    Weiterlesen →
-                  </span>
-                  {post.date && (
-                    <span className={`font-mono text-xs ${isDark ? 'text-text-light/30' : 'text-text-dimmed/60'}`}>
-                      {post.date}
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-          </a>
+          <ImageWithFallback
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="50vw"
+            label={post.title}
+          />
         </motion.div>
+      )}
+
+      {/* ── Content layer ── */}
+      <div className="relative z-10 flex min-h-screen flex-col justify-center py-section-mobile lg:py-section-desktop">
+        <div className="mx-auto w-full max-w-[1800px] px-8 lg:px-16">
+          <motion.div
+            className={`${post.image ? (imageOnRight ? 'lg:w-[48%] lg:pr-12' : 'lg:w-[48%] lg:ml-auto lg:pl-12') : 'max-w-[780px]'}`}
+            initial={{ opacity: 0, y: 32 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
+            {/* Pill + Category */}
+            <div className="mb-6 flex items-center gap-3">
+              <div
+                className="inline-block rounded-full border px-4 py-1.5 font-mono text-xs uppercase tracking-widest"
+                style={{
+                  borderColor: useLightText ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.15)',
+                  color: useLightText ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.4)',
+                }}
+              >
+                {headline}
+              </div>
+              {post.category && (
+                <span
+                  className="font-mono text-[11px] uppercase tracking-wider"
+                  style={{ color: useLightText ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.3)' }}
+                >
+                  — {post.category}
+                </span>
+              )}
+            </div>
+
+            {/* Title */}
+            <h2
+              className={`max-w-[700px] font-display text-[2rem] font-normal leading-[1.1] md:text-[2.8rem] lg:text-[3.2rem] ${
+                useLightText ? 'text-white' : 'text-text-primary'
+              }`}
+            >
+              {post.title}
+            </h2>
+
+            {/* Excerpt */}
+            <div className="mt-6 max-w-[620px] space-y-4">
+              <p
+                className={`font-body text-lg leading-relaxed ${
+                  useLightText ? 'text-white/70' : 'text-text-secondary'
+                }`}
+              >
+                {post.excerpt}
+              </p>
+            </div>
+
+            {/* Date */}
+            {post.date && (
+              <p
+                className={`mt-4 font-mono text-xs ${
+                  useLightText ? 'text-white/30' : 'text-text-dimmed/60'
+                }`}
+              >
+                {post.date}
+              </p>
+            )}
+
+            {/* CTA */}
+            <div className="mt-10">
+              <Button
+                href={post.url}
+                variant="outline"
+                className={useLightText ? '!border-white/30 !text-white hover:!bg-white/10' : ''}
+              >
+                Weiterlesen
+              </Button>
+            </div>
+          </motion.div>
+        </div>
       </div>
+
+      {/* ── Mobile image (below text) ── */}
+      {post.image && (
+        <motion.div
+          className="relative lg:hidden aspect-[4/3] w-full"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.7 }}
+        >
+          <ImageWithFallback
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            label={post.title}
+          />
+        </motion.div>
+      )}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 meta:
-  title: "Operations & Führung – Lukas Ebner"
-  description: "Dein Unternehmen soll laufen – nicht an dir hängen. Strategisches Sparring für Geschäftsführer, die aufhören wollen, der Engpass zu sein."
+  title: "Unternehmen skalieren & Prozessoptimierung – Lukas Ebner"
+  description: "Dein Unternehmen soll laufen – nicht an dir hängen. Sparring für Geschäftsführer, die Engpässe auflösen wollen."
   og_image: /images/og/operations.jpg
   accent: "#F44900"
 
@@ -20,7 +20,7 @@ slides:
   # ── 2. PROBLEM-BEREICH (thefutur-Style) ───────────────
   - template: problem
     headline: "Jedes Unternehmen kommt an den Punkt, an dem der Gründer zum Engpass wird."
-    body: "Du merkst es an kleinen Dingen. An den Sonntagabenden am Laptop. An den Meetings, in denen nur du entscheidest. An dem Gefühl, dass mehr Mitarbeiter nicht weniger Arbeit bedeuten.\n\nDas ist kein persönliches Versagen. Das ist ein Muster. Und es hat einen Namen: Du arbeitest in deinem Unternehmen – statt daran."
+    body: "Du merkst es an kleinen Dingen. An den Sonntagabenden am Laptop. An den Meetings, in denen nur du entscheidest. An dem Gefühl, dass mehr Mitarbeiter nicht weniger Arbeit bedeuten.\n\nDas ist kein persönliches Versagen. Das ist ein Muster. Und es hat einen Namen: Du arbeitest in deinem Unternehmen – statt es zu skalieren. Der Geschäftsführer wird zum Engpass – und die Prozessoptimierung kann kein KMU-Wachstum ersetzen."
     symptoms:
       - pill: "Symptom 1"
         headline: "Ohne dich läuft nichts."
@@ -29,8 +29,8 @@ slides:
           src: /images/fotos/DSC00263.jpg
           alt: "Geschäftsführer allein am Schreibtisch"
       - pill: "Symptom 2"
-        headline: "Krank werden? Geht nicht."
-        body: "Letzte Grippe: durchgearbeitet. Letzter Urlaub: Laptop dabei. Letzter freier Kopf: keine Ahnung.\n\nDas ist kein Einsatz. Das ist ein Warnsignal. Wenn du nicht mal krank werden kannst, hast du kein Business – du hast einen Job."
+        headline: "Selbstständig, aber nicht raus aus dem Tagesgeschäft."
+        body: "Letzte Grippe: durchgearbeitet. Letzter Urlaub: Laptop dabei. Letzter freier Kopf: keine Ahnung.\n\nDas ist kein Einsatz. Das ist ein Warnsignal. Wenn du nicht mal krank werden kannst, hast du kein Business – du hast einen Job. Delegation lernen ist nicht optional, sondern überlebenswichtig."
         image:
           src: /images/fotos/DSC00321.jpg
           alt: "Laptop am Küchentisch – nie wirklich frei"
@@ -41,8 +41,8 @@ slides:
           src: /images/fotos/DSC00270.jpg
           alt: "Spät abends im Büro – Hamsterrad"
       - pill: "Symptom 4"
-        headline: "Mehr Mitarbeiter. Mehr Arbeit."
-        body: "Mitarbeiter #5 eingestellt: Mehr Arbeit. Mitarbeiter #10 eingestellt: Noch mehr Arbeit. Mitarbeiter #15 eingestellt: Burnout.\n\nJede Einstellung sollte dich entlasten. Aber du erklärst jetzt nur mehr Leuten mehr Dinge. Wachstum ohne System funktioniert nicht."
+        headline: "Mehr Mitarbeiter. Mehr Arbeit. Schlechte Mitarbeiterführung."
+        body: "Mitarbeiter #5 eingestellt: Mehr Arbeit. Mitarbeiter #10 eingestellt: Noch mehr Arbeit. Mitarbeiter #15 eingestellt: Burnout.\n\nJede Einstellung sollte dich entlasten. Aber du erklärst jetzt nur mehr Leuten mehr Dinge. Gute Mitarbeiterführung für Geschäftsführer ist erlernbar – aber ohne System funktioniert Wachstum nicht."
         image:
           src: /images/fotos/DSC00277.jpg
           alt: "Team-Meeting – mehr Leute, mehr Chaos"
@@ -68,22 +68,22 @@ slides:
     body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
     features:
       - headline: "Strategie, die trägt."
-        body: "Die meisten Unternehmen haben keine tragfähige Strategie. Ob das Unternehmen wächst oder stagniert, wird dem Zufall überlassen.\n\nWir entwickeln eine Strategie, die dein Team versteht, an die es glaubt und nach der es handelt."
+        body: "Die meisten Unternehmen haben keine tragfähige Strategie. Ob das Unternehmen wächst oder stagniert, wird dem Zufall überlassen.\n\nWir entwickeln eine Strategie, die dein Team versteht, an die es glaubt und nach der es handelt. Das ist die Grundlage für [Unternehmen skalieren](/blog/unternehmen-skalieren) – ohne Strategie sind Prozesse nur Blabla."
         image:
           src: /images/fotos/DSC00263.jpg
           alt: "Strategie-Workshop"
       - headline: "Prozesse, die funktionieren."
-        body: "Klar definiert, dokumentiert, nicht zu verkopft. Dein Unternehmen soll auch laufen, wenn du zwei Wochen nicht da bist.\n\nWir bauen Abläufe, die dein Team entlasten statt es zu beschäftigen."
+        body: "Klar definiert, dokumentiert, nicht zu verkopft. Dein Unternehmen soll auch laufen, wenn du zwei Wochen nicht da bist.\n\nWir bauen Abläufe, die dein Team entlasten statt es zu beschäftigen. [Prozessoptimierung im KMU](/blog/prozessoptimierung-kmu) ist oft der erste praktische Schritt, um raus aus dem Tagesgeschäft zu kommen."
         image:
           src: /images/fotos/DSC00270.jpg
           alt: "Prozesse dokumentieren"
       - headline: "Führung, die skaliert."
-        body: "Ein Führungs-Framework für den Alltag: Wie du delegierst, Feedback gibst, Performance misst – und deine besten Leute hältst.\n\nWir machen aus Einzelkämpfern ein Führungsteam."
+        body: "Ein Führungs-Framework für den Alltag: Wie du delegierst, Feedback gibst, Performance misst – und deine besten Leute hältst.\n\nWir machen aus Einzelkämpfern ein Führungsteam. [Führungskräfteentwicklung im KMU](/blog/fuehrungskraefteentwicklung-kmu) ist nicht optional – das ist der entscheidende Punkt beim Wachstum."
         image:
           src: /images/fotos/DSC00277.jpg
           alt: "Team-Meeting"
       - headline: "Zahlen, die stimmen."
-        body: "Welche Projekte verdienen Geld, welche verbrennen es? Ohne echte Zahlen steuerst du blind.\n\nWir schaffen Transparenz über EBIT, Projektmargen und Unternehmenswert."
+        body: "Welche Projekte verdienen Geld, welche verbrennen es? Ohne echte Zahlen steuerst du blind.\n\nWir schaffen Transparenz über EBIT, Projektmargen und Unternehmenswert. Das ist die Grundlage für [Unternehmenswert steigern](/blog/unternehmenswert-steigern) und für erfolgreiches [Sparring für deinen Exit](/blog/exit-strategie)."
         image:
           src: /images/fotos/DSC00321.jpg
           alt: "Finanzanalyse"
@@ -101,7 +101,7 @@ slides:
         body: "Wir definieren Prozesse, Rollen und Verantwortlichkeiten. Pragmatisch, so dass dein Team es auch lebt. Führungsstruktur, Kennzahlen, Meeting-Rhythmen, Entscheidungsprozesse."
       - icon: message-circle
         title: "Laufendes Sparring"
-        body: "Wenn die Grundstruktur steht, wechseln wir ins Sparring. Regelmäßige Sessions, in denen wir strategische Fragen durcharbeiten. Wie ein Beirat, nur ehrlicher und operativer."
+        body: "Wenn die Grundstruktur steht, wechseln wir ins Sparring als dein Sparring Partner Geschäftsführer. Regelmäßige Sessions, in denen wir strategische Fragen durcharbeiten. Wie ein Beirat, nur ehrlicher und operativer."
 
   # ── 6. PRICING TEASER (fullscreen) ────────────────────
   - template: pricing-teaser

@@ -106,7 +106,7 @@ export function HeroSlide({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
           >
-            <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
+            <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 lg:grid-cols-5 lg:gap-8">
               {stats.map((stat) => (
                 <HeroStat key={`${stat.label}-${stat.value}`} {...stat} />
               ))}

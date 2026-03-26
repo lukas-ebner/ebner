@@ -50,3 +50,6 @@ CURSOR-BRIEFING-*.md
 
 # local next build backups
 /.next-old*/
+
+# python
+**/__pycache__/

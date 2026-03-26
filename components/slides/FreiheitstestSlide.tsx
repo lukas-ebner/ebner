@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useInView } from 'framer-motion'
 import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { ChevronRight, ArrowRight, Check, Mail } from 'lucide-react'
+import { useQuiz } from '@/components/QuizContext'
 
 /* ─── Farben ──────────────────────────────────────────────────── */
 const BG = '#1B2A4A'
@@ -245,6 +246,7 @@ export function FreiheitstestSlide({
 }: FreiheitstestSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
+  const { setQuizCompleted } = useQuiz()
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'calculating' | 'result'>('intro')
   const [currentQ, setCurrentQ] = useState(0)
   const [answers, setAnswers] = useState<Record<number, number>>({})
@@ -271,12 +273,13 @@ export function FreiheitstestSlide({
           // Letzte Frage → Auswerten
           const r = getResults(newAnswers)
           setResult(r)
+          setQuizCompleted(true)
           setPhase('calculating')
           setTimeout(() => setPhase('result'), 2800)
         }
       }, 400)
     },
-    [question, currentQ, answers],
+    [question, currentQ, answers, setQuizCompleted],
   )
 
   const handleBack = useCallback(() => {
@@ -286,14 +289,46 @@ export function FreiheitstestSlide({
     }
   }, [currentQ])
 
+  const [emailLoading, setEmailLoading] = useState(false)
+
   const handleEmailSubmit = useCallback(
-    (e: React.FormEvent) => {
+    async (e: React.FormEvent) => {
       e.preventDefault()
-      if (!email.trim()) return
-      console.log('Lead captured:', { email, answers, result })
+      if (!email.trim() || emailLoading) return
+
+      setEmailLoading(true)
+      try {
+        // Build pillar_scores from pillarRanking array
+        const pillarScores: Record<string, number> = { operations: 0, systeme: 0, ki: 0 }
+        for (const p of result?.pillarRanking ?? []) {
+          pillarScores[p.key] = p.pct
+        }
+
+        const res = await fetch('/api/strategy-paper', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            quiz: {
+              score: result?.score ?? 0,
+              answers,
+              pillar_scores: pillarScores,
+              top_pillars: (result?.topPillars ?? []).map((p) => p.key),
+            },
+          }),
+        })
+
+        if (!res.ok) {
+          console.error('Strategy paper request failed:', res.status)
+        }
+      } catch (err) {
+        console.error('Strategy paper request error:', err)
+      }
+
       setEmailSent(true)
+      setEmailLoading(false)
     },
-    [email, answers, result],
+    [email, emailLoading, answers, result],
   )
 
   const slideVariants = {
@@ -309,50 +344,70 @@ export function FreiheitstestSlide({
         {phase === 'intro' && (
           <motion.div
             key="intro"
-            className="flex min-h-screen flex-col items-center justify-center px-6 py-24"
+            className="flex min-h-screen flex-col px-6"
             exit={{ opacity: 0, y: -30, transition: { duration: 0.4 } }}
           >
-            {/* Zeile 1 */}
-            <motion.span
-              className="block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
-            >
-              Du hast gegründet, um frei zu&nbsp;sein.
-            </motion.span>
+            {/* Text + Button – pushed lower */}
+            <div className="flex flex-1 flex-col items-center justify-end pb-8">
+              {/* Zeile 1 */}
+              <motion.span
+                className="block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
+                initial={{ opacity: 0, y: 40 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+              >
+                Du hast gegründet, um frei zu&nbsp;sein.
+              </motion.span>
 
-            {/* Zeile 2 */}
-            <motion.span
-              className="mt-2 block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white/60 sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
+              {/* Zeile 2 */}
+              <motion.span
+                className="mt-2 block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white/60 sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+              >
+                Und? Fühlst du dich&nbsp;frei?
+              </motion.span>
+
+              {/* Subtext */}
+              <motion.p
+                className="mx-auto mt-8 max-w-lg text-center text-xl text-white/40 md:text-2xl"
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+                transition={{ delay: 0.9, duration: 0.6 }}
+              >
+                9 Aussagen. 2 Minuten. Ein ehrliches Bild.
+              </motion.p>
+
+              {/* Button */}
+              <motion.button
+                onClick={() => setPhase('quiz')}
+                className="mt-10 flex items-center gap-2 rounded-full bg-brand px-8 py-4 font-display text-lg font-medium text-white transition-transform hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 1.3, ease: 'easeOut' }}
+              >
+                {buttonText}
+                <ChevronRight className="h-5 w-5" />
+              </motion.button>
+            </div>
+
+            {/* Lukas Image – centered, flush to bottom edge */}
+            <motion.div
+              className="flex shrink-0 justify-center"
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+              animate={isInView ? { opacity: 0.35, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 1.6, ease: 'easeOut' }}
             >
-              Aber fühlst du dich denn&nbsp;frei?
-            </motion.span>
-
-            {/* Subtext */}
-            <motion.p
-              className="mx-auto mt-8 max-w-lg text-center text-xl text-white/40 md:text-2xl"
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.9, duration: 0.6 }}
-            >
-              9 Aussagen. 2 Minuten. Ein ehrliches Bild.
-            </motion.p>
-
-            {/* Button */}
-            <motion.button
-              onClick={() => setPhase('quiz')}
-              className="mt-10 flex items-center gap-2 rounded-full bg-brand px-8 py-4 font-display text-lg font-medium text-white transition-transform hover:scale-105"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 1.3, ease: 'easeOut' }}
-            >
-              {buttonText}
-              <ChevronRight className="h-5 w-5" />
-            </motion.button>
+              <Image
+                src="/images/lukas-question.png"
+                alt="Lukas Ebner"
+                width={500}
+                height={600}
+                className="w-[300px] object-contain md:w-[400px] lg:w-[480px]"
+                priority={false}
+              />
+            </motion.div>
           </motion.div>
         )}
 
@@ -536,29 +591,14 @@ export function FreiheitstestSlide({
               {!emailSent ? (
                 <div className="overflow-hidden bg-white shadow-2xl shadow-black/20">
                   <div className="flex flex-col md:flex-row">
-                    {/* Dokument-Vorschau */}
-                    <div className="flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-8 md:w-2/5">
-                      <div className="relative">
-                        <div className="h-44 w-32 border border-gray-200 bg-white shadow-lg md:h-52 md:w-36">
-                          <div className="border-b border-gray-100 px-3 py-2.5">
-                            <div className="mb-1.5 h-2 w-14 bg-brand/70" />
-                            <div className="h-1 w-20 bg-gray-200" />
-                          </div>
-                          <div className="space-y-1.5 px-3 py-2.5">
-                            <div className="h-1 w-full bg-gray-100" />
-                            <div className="h-1 w-4/5 bg-gray-100" />
-                            <div className="h-1 w-full bg-gray-100" />
-                            <div className="h-1 w-3/5 bg-gray-100" />
-                            <div className="mt-3 h-8 w-full bg-brand/10" />
-                            <div className="h-1 w-full bg-gray-100" />
-                            <div className="h-1 w-4/5 bg-gray-100" />
-                            <div className="h-1 w-full bg-gray-100" />
-                          </div>
-                        </div>
-                        <div className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-brand text-xs font-bold text-white shadow-md">
-                          PDF
-                        </div>
-                      </div>
+                    {/* Ebook-Vorschau */}
+                    <div className="relative hidden md:block md:w-2/5">
+                      <Image
+                        src="/images/ebook/ebook-desk.jpg"
+                        alt="Dein persönliches Strategie-Paper"
+                        fill
+                        className="object-cover object-[center_30%]"
+                      />
                     </div>
 
                     {/* Text + Form */}
@@ -583,10 +623,11 @@ export function FreiheitstestSlide({
                         />
                         <button
                           type="submit"
-                          className="flex items-center gap-1.5 bg-brand px-6 py-3 text-sm font-medium text-white shadow-md shadow-brand/20 transition-transform hover:scale-105"
+                          disabled={emailLoading}
+                          className="flex items-center gap-1.5 bg-brand px-6 py-3 text-sm font-medium text-white shadow-md shadow-brand/20 transition-transform hover:scale-105 disabled:opacity-60"
                         >
-                          Anfordern
-                          <ArrowRight className="h-3.5 w-3.5" />
+                          {emailLoading ? 'Wird erstellt…' : 'Anfordern'}
+                          {!emailLoading && <ArrowRight className="h-3.5 w-3.5" />}
                         </button>
                       </form>
                     </div>

@@ -43,7 +43,12 @@ import { CertificatesSlide } from '@/components/slides/CertificatesSlide'
 import { BlogTeaserSlide } from '@/components/slides/BlogTeaserSlide'
 import { ProfileSummarySlide } from '@/components/slides/ProfileSummarySlide'
 import { FreiheitstestSlide } from '@/components/slides/FreiheitstestSlide'
+import { ThreePillarsSlide } from '@/components/slides/ThreePillarsSlide'
+import { PillarDetailSlide } from '@/components/slides/PillarDetailSlide'
+import { EbookLeadmagnetSlide } from '@/components/slides/EbookLeadmagnetSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
+import { QuizProvider } from '@/components/QuizContext'
+import { NoSnap } from '@/components/NoSnap'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
   'hero-dark': HeroSlide as unknown as React.ComponentType<Record<string, unknown>>,
@@ -89,25 +94,31 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
   'blog-teaser': BlogTeaserSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'profile-summary': ProfileSummarySlide as unknown as React.ComponentType<Record<string, unknown>>,
   'freiheitstest': FreiheitstestSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'three-pillars': ThreePillarsSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'pillar-detail': PillarDetailSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'ebook-leadmagnet': EbookLeadmagnetSlide as unknown as React.ComponentType<Record<string, unknown>>,
 }
 
-export function PageBuilder({ slides, accent }: { slides: SlideConfig[]; accent?: string }) {
+export function PageBuilder({ slides, accent, noSnap }: { slides: SlideConfig[]; accent?: string; noSnap?: boolean }) {
   return (
-    <main style={accent ? { '--accent': accent } as React.CSSProperties : undefined}>
-      {slides.map((slide, i) => {
-        const Component = SLIDE_REGISTRY[slide.template]
-        if (!Component) {
-          console.warn(`Unknown slide template: ${slide.template}`)
-          return null
-        }
-        const props = { ...slide } as Record<string, unknown>
-        delete props.template
-        return (
-          <SlideContainer key={i} index={i}>
-            <Component {...props} />
-          </SlideContainer>
-        )
-      })}
-    </main>
+    <QuizProvider>
+      <main style={accent ? { '--accent': accent } as React.CSSProperties : undefined}>
+        {noSnap && <NoSnap />}
+        {slides.map((slide, i) => {
+          const Component = SLIDE_REGISTRY[slide.template]
+          if (!Component) {
+            console.warn(`Unknown slide template: ${slide.template}`)
+            return null
+          }
+          const props = { ...slide } as Record<string, unknown>
+          delete props.template
+          return (
+            <SlideContainer key={i} index={i}>
+              <Component {...props} />
+            </SlideContainer>
+          )
+        })}
+      </main>
+    </QuizProvider>
   )
 }

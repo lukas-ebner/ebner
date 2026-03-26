@@ -100,22 +100,15 @@ export function ApplicationFormSlide({
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    // Build mailto body
-    const lines: string[] = []
-    fields.forEach((field) => {
-      const value = formData.get(field.name)
-      if (value) {
-        lines.push(`${field.label}: ${value}`)
-      }
-    })
+    // Collect form values
+    const name = (formData.get('name') as string) || ''
+    const email = (formData.get('email') as string) || ''
+    const company = (formData.get('company') as string) || ''
+    const message = (formData.get('message') as string) || ''
 
-    // Add action code info if valid
+    // Redeem action code if valid
     const trimmedCode = actionCode.trim().toUpperCase()
     if (trimmedCode && codeState.status === 'valid') {
-      lines.push(`\nAktionscode: ${trimmedCode}`)
-      lines.push('Angebot: Strategy Workshop 500 € (statt 1.000 €)')
-
-      // Redeem the code
       try {
         await fetch('/api/action-codes', {
           method: 'POST',
@@ -127,17 +120,42 @@ export function ApplicationFormSlide({
       }
     }
 
-    const subject = encodeURIComponent(
-      `Erstgespräch – ${formData.get('company') || formData.get('name') || 'Neue Anfrage'}`
-    )
-    const mailBody = encodeURIComponent(lines.join('\n\n'))
-    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${mailBody}`
+    try {
+      // Submit via API (sends email + creates CRM lead)
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          company,
+          message,
+          actionCode: trimmedCode || undefined,
+        }),
+      })
 
-    // Show success after brief delay
-    setTimeout(() => {
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data.error || 'Fehler beim Senden')
+      }
+
       setSubmitted(true)
+    } catch (err) {
+      // Fallback to mailto if API fails
+      console.error('Contact API failed, falling back to mailto:', err)
+      const lines: string[] = []
+      fields.forEach((field) => {
+        const value = formData.get(field.name)
+        if (value) lines.push(`${field.label}: ${value}`)
+      })
+      if (trimmedCode) lines.push(`\nAktionscode: ${trimmedCode}`)
+      const subject = encodeURIComponent(`Erstgespräch – ${company || name || 'Neue Anfrage'}`)
+      const mailBody = encodeURIComponent(lines.join('\n\n'))
+      window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${mailBody}`
+      setSubmitted(true)
+    } finally {
       setSending(false)
-    }, 500)
+    }
   }
 
   return (

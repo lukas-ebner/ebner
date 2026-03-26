@@ -1,6 +1,6 @@
 meta:
-  title: "Preise & Leistungen – Lukas Ebner"
-  description: "Transparente Preise für Beratung, Sparring und Begleitung. Stundensatz, Setup-Pakete und laufende Betreuung – individuell nach Unternehmensgröße."
+  title: "Preise Unternehmensberatung Regensburg – Lukas Ebner"
+  description: "Transparente Preise für Unternehmensberatung, Sparring und Begleitung in Regensburg. Mit BAFA-Förderung."
   og_image: /images/og/preise.jpg
 
 slides:
@@ -63,7 +63,7 @@ slides:
           price: "1.500 €"
         package3m: "9.500 €"
     footnote: "Das sind Richtwerte, keine starren Pakete. Jedes Unternehmen ist anders. Im Erstgespräch entwickeln wir einen bedarfsgerechten Plan, der sich an diesem Modell orientiert – aber immer an deine konkrete Situation angepasst ist."
-    bafa: "Viele KMUs können über die BAFA-Förderung 'Unternehmensberatungen für KMU' bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich gerne bei der Antragstellung."
+    bafa: "Viele KMUs können über die BAFA Förderung Unternehmensberatung bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Unternehmensberatung Kosten bezuschussen lassen. Ich unterstütze dich gerne bei der BAFA-Antragstellung für deine Unternehmensberatung."
     cta:
       label: "Erstgespräch vereinbaren"
       href: "/erstgespraech"

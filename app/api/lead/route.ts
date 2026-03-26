@@ -1,0 +1,37 @@
+import { NextRequest, NextResponse } from 'next/server'
+import { createLead, type LeadSource } from '@/lib/leadtime'
+
+/**
+ * POST /api/lead
+ *
+ * Centralized lead capture endpoint.
+ * Creates organization + person + project in Leadtime,
+ * or falls back to a ticket if no company can be determined.
+ *
+ * Body: { email, name?, company?, position?, source, message?, quizScore?, quizTopPillars? }
+ */
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json()
+    const { email, name, company, position, source, message, quizScore, quizTopPillars } = body
+
+    if (!email || !source) {
+      return NextResponse.json({ error: 'email and source are required' }, { status: 400 })
+    }
+
+    const validSources: LeadSource[] = ['ebook', 'freiheitstest', 'erstgespraech']
+    if (!validSources.includes(source)) {
+      return NextResponse.json({ error: 'Invalid source' }, { status: 400 })
+    }
+
+    // Fire-and-forget: don't block the response on CRM creation
+    createLead({ email, name, company, position, source, message, quizScore, quizTopPillars }).catch((err) =>
+      console.error('[lead] Background lead creation failed:', err)
+    )
+
+    return NextResponse.json({ status: 'ok' })
+  } catch (error) {
+    console.error('[lead] Error:', error)
+    return NextResponse.json({ error: 'Internal error' }, { status: 500 })
+  }
+}

@@ -1,6 +1,6 @@
 meta:
-  title: "KI-Readiness & Prototyping – Lukas Ebner"
-  description: "Von der Idee zum Prototyp. In Tagen, nicht Monaten. KI-Beratung, Rapid Prototyping und Refactoring für Unternehmen."
+  title: "KI-Beratung für Mittelstand – Lukas Ebner"
+  description: "KI Strategie für KMU von Idee zum Prototyp in Tagen. Rapid Prototyping, MVP-Entwicklung und KI für Agenturen."
   og_image: /images/og/ki-readiness.jpg
   accent: "#1B1464"
 
@@ -9,7 +9,7 @@ slides:
   - template: hero-split
     pill: "KI-Readiness & Prototyping"
     headline: "Von der Idee zum Prototyp. In Tagen, nicht Monaten."
-    subtext: "KI-Strategie, Workflow-Automatisierung und Rapid Prototyping für Unternehmen, die aufhören wollen zu warten – und anfangen wollen zu bauen."
+    subtext: "KI Beratung und KI Strategie mit Rapid Prototyping, MVP Entwicklung für Unternehmen – besonders KI für Agenturen – die aufhören wollen zu warten."
     cta:
       text: "Gespräch vereinbaren"
       url: "/kontakt"
@@ -17,8 +17,8 @@ slides:
 
   # ── 2. PERSONA-SZENARIEN (Headline + 2×2 Grid) ────────
   - template: symptoms-grid
-    headline: "Alle reden über KI. Du willst sie einsetzen."
-    body: "Aber zwischen 'ChatGPT ausprobieren' und 'KI systematisch nutzen' liegt eine Welt. Die Frage ist nicht ob, sondern wie – und mit wem."
+    headline: "Alle reden über KI. Du willst sie systematisch einsetzen."
+    body: "Aber zwischen 'ChatGPT ausprobieren' und 'KI systematisch nutzen' liegt eine Welt. Die Frage ist nicht ob KI Consulting helfen kann, sondern wie – und mit wem. Besonders für KI Agentur und KI Consulting im Mittelstand."
     symptoms:
       - pill: "Szenario 1"
         image: /images/ki-szenario/KI-szenario-1.png
@@ -26,12 +26,12 @@ slides:
         body: "Outsourcing hat die Burn-Rate nur verlagert, nicht gesenkt. Jedes Feature dauert Wochen und kostet fünfstellig.\n\nMit der richtigen KI-Infrastruktur baut dein bestehendes Team in Tagen, wofür du heute Monate einplanst."
       - pill: "Szenario 2"
         image: /images/ki-szenario/KI-szenario-2.png
-        headline: "Du hast vibe-gecodet. Jetzt muss es halten."
+        headline: "Du hast vibe coding betrieben. Jetzt muss es halten."
         body: "Der Prototyp steht, aber das Repository ist fragil. Keine Tests, keine Architektur, kein Plan für Skalierung.\n\nWir machen aus dem Schnellschuss eine tragfähige Codebasis – bevor der technische Schuldenstand das Projekt killt."
       - pill: "Szenario 3"
         image: /images/ki-szenario/KI-szenario-3.png
-        headline: "Du willst aus der Idee raus – rein in den Prototyp."
-        body: "Du hast eine Produktidee, ein internes Tool oder ein neues Feature im Kopf. Aber zwischen Idee und erstem funktionierendem Build liegt ein Graben.\n\nWir überbrücken ihn. In Tagen, nicht Quartalen."
+        headline: "Du willst MVP Entwicklung und Rapid Prototyping."
+        body: "Du hast eine Produktidee, ein internes Tool oder ein neues Feature im Kopf. Aber zwischen Idee und erstem funktionierendem Build liegt ein Graben.\n\nWir überbrücken ihn mit Rapid Prototyping und MVP-Entwicklung. In Tagen, nicht Quartalen."
       - pill: "Szenario 4"
         image: /images/ki-szenario/KI-szenario-4.png
         headline: "Dein Team soll 10× liefern. Nicht 10% mehr."
@@ -40,8 +40,8 @@ slides:
   # ── 4. CREDIBILITY (Deep Indigo): Mein Ansatz ─────────
   - template: credibility
     bg: "#1B1464"
-    headline: "Ich benutze KI nicht. Ich baue damit."
-    body: "Ich bin kein KI-Enthusiast, der dir ChatGPT-Tricks zeigt. Ich bin Geschäftsführer, Entwickler und Builder – mit 15 Jahren Erfahrung in der Softwareentwicklung und einem Partner, der als Senior Engineer dafür sorgt, dass nichts wackelt.\n\nStas Persianenko und ich arbeiten seit über 12 Jahren zusammen. Ich baue die schnellen Prototypen, er macht den Code produktionsreif. Zusammen sorgen wir dafür, dass KI-Einsatz nicht beim Experiment endet – sondern skalierbar, wartbar und zukunftssicher in Produktion läuft."
+    headline: "Ich benutze KI nicht. Ich baue damit und biete KI Consulting."
+    body: "Ich bin kein KI-Enthusiast, der dir ChatGPT-Tricks zeigt. Ich bin Geschäftsführer, Entwickler und Builder – mit 15 Jahren Erfahrung in der Softwareentwicklung und einem Partner, der als Senior Engineer dafür sorgt, dass nichts wackelt.\n\nStas Persianenko und ich arbeiten seit über 12 Jahren zusammen. Ich baue die schnellen Prototypen, er macht den Code produktionsreif. Zusammen sorgen wir dafür, dass KI-Einsatz und KI Agentur-Services nicht beim Experiment enden – sondern skalierbar, wartbar und zukunftssicher in Produktion laufen."
     proofs:
       - text: "Fracto: AI-gestützte Schulungsplattform für MedTech – KI im Produktkern"
       - text: "Leadtime: KI-Agenten in Projektmanagement, Forecasting und Automatisierung verbaut"
@@ -65,18 +65,18 @@ slides:
     headline: "Woran wir arbeiten."
     body: "Drei Leistungsbereiche – je nachdem, wo dein größter Hebel liegt."
     features:
-      - headline: "KI-Beratung & Readiness."
-        body: "Wir analysieren deine Wertschöpfungskette, identifizieren die Stellen mit dem größten KI-Hebel und entwickeln einen konkreten Fahrplan. Von der Tool-Auswahl über Governance bis zum Kulturwandel – damit dein Team KI selbstständig und sicher einsetzt.\n\nAbrechnung auf Stundenbasis. Typisches Engagement: 3-Monats-Setup mit laufendem Sparring."
+      - headline: "KI Beratung & KI-Readiness für Agenturen und KMU."
+        body: "Wir analysieren deine Wertschöpfungskette, identifizieren die Stellen mit dem größten KI-Hebel und entwickeln einen konkreten Fahrplan. Von der Tool-Auswahl über Governance bis zum Kulturwandel – damit dein Team künstliche Intelligenz selbstständig und sicher einsetzt.\n\nAbrechnung auf Stundenbasis. Typisches Engagement: 3-Monats-Setup mit laufendem Sparring. Mehr Hintergrund: [KI-Beratung für den Mittelstand](/blog/ki-beratung-mittelstand)."
         image:
           src: /images/ki-szenario/KI-szenario-1.png
           alt: "KI-Beratung"
-      - headline: "Rapid Prototyping & Co-Building."
-        body: "Du hast eine Produktidee, ein internes Tool oder ein Feature im Kopf? Wir bauen einen funktionierenden Prototyp – in Tagen, nicht Monaten. Webseiten, Web-Apps, MVPs, Automatisierungen.\n\nIch baue den ersten Wurf, Stas macht ihn produktionsreif. Tagessatz-basiert, transparent kalkulierbar."
+      - headline: "Rapid Prototyping, MVP-Entwicklung & Co-Building."
+        body: "Du hast eine Produktidee, ein internes Tool oder ein Feature im Kopf? Wir bauen einen funktionierenden Prototyp – in Tagen, nicht Monaten. Webseiten, Web-Apps, MVPs, Automatisierungen mit KI für Agenturen und Softwareunternehmen.\n\nIch baue den ersten Wurf, Stas macht ihn produktionsreif. Tagessatz-basiert, transparent kalkulierbar. Das ist genau das Thema von [MVP-Entwicklung](/blog/mvp-entwicklung) – schnell testen, schnell lernen, schnell skalieren."
         image:
           src: /images/ki-szenario/KI-szenario-3.png
           alt: "Rapid Prototyping"
       - headline: "Refactoring & Hardening."
-        body: "Du hast vibe-gecodet oder einen Prototyp, der funktioniert – aber nicht hält. Keine Tests, keine Architektur, kein Plan für Skalierung. Wir machen aus dem Schnellschuss eine tragfähige Codebasis.\n\nCode-Review, Architektur-Refactoring, Test-Coverage, CI/CD. Tagessatz-basiert."
+        body: "Du hast [vibe-gecodet](/blog/vibe-coding) oder einen Prototyp, der funktioniert – aber nicht hält. Keine Tests, keine Architektur, kein Plan für Skalierung. Wir machen aus dem Schnellschuss eine tragfähige Codebasis.\n\nCode-Review, Architektur-Refactoring, Test-Coverage, CI/CD. Tagessatz-basiert."
         image:
           src: /images/ki-szenario/KI-szenario-2.png
           alt: "Refactoring"
