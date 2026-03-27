@@ -10,6 +10,7 @@ interface ContactFormSlideProps {
   phone?: string
   address?: string
   socials?: { label: string; url: string }[]
+  slideIndex?: number
 }
 
 export function ContactFormSlide({
@@ -19,6 +20,7 @@ export function ContactFormSlide({
   phone,
   address,
   socials,
+  slideIndex = 1,
 }: ContactFormSlideProps) {
   const [submitted, setSubmitted] = useState(false)
 
@@ -27,9 +29,15 @@ export function ContactFormSlide({
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-8 lg:grid-cols-[1fr_1.2fr] lg:gap-16 lg:px-16">
         {/* Left: Contact info */}
         <div>
-          <h2 className="font-display text-h2 font-normal text-text-primary">
-            {headline}
-          </h2>
+          {slideIndex === 0 ? (
+            <h1 className="font-display text-h2 font-normal text-text-primary">
+              {headline}
+            </h1>
+          ) : (
+            <h2 className="font-display text-h2 font-normal text-text-primary">
+              {headline}
+            </h2>
+          )}
           {subtext ? (
             <p className="mt-4 font-body text-body leading-relaxed text-text-dimmed">
               {subtext}

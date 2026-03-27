@@ -16,6 +16,7 @@ interface ImageOverlaySlideProps {
   gradient?: 'bottom' | 'left' | 'right' | 'full'
   variant?: 'dark' | 'teal'
   pill?: string
+  slideIndex?: number
 }
 
 function bodyParagraphs(body?: string): string[] {
@@ -34,6 +35,7 @@ export function ImageOverlaySlide({
   gradient = 'bottom',
   variant = 'dark',
   pill,
+  slideIndex = 1,
 }: ImageOverlaySlideProps) {
   const opacity = image.opacity ?? 0.4
   const isTeal = variant === 'teal'
@@ -99,15 +101,27 @@ export function ImageOverlaySlide({
               {pill}
             </motion.span>
           ) : null}
-          <motion.h2
-            className="font-display text-h1 font-normal text-text-light"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-          >
-            {headline}
-          </motion.h2>
+          {slideIndex === 0 ? (
+            <motion.h1
+              className="font-display text-h1 font-normal text-text-light"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
+              {headline}
+            </motion.h1>
+          ) : (
+            <motion.h2
+              className="font-display text-h1 font-normal text-text-light"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
+              {headline}
+            </motion.h2>
+          )}
           {paragraphs.length > 0 ? (
             <motion.div
               className={`mt-6 space-y-4 ${align === 'center' ? 'mx-auto max-w-2xl' : 'max-w-xl'}`}

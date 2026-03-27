@@ -21,9 +21,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title: page.meta.title,
       description: page.meta.description,
-      openGraph: page.meta.og_image
-        ? { images: [{ url: page.meta.og_image }] }
-        : undefined,
+      openGraph: {
+        type: 'website',
+        url: `https://lukasebner.de/${slug}`,
+        title: page.meta.title,
+        description: page.meta.description,
+        ...(page.meta.og_image ? { images: [{ url: page.meta.og_image }] } : {}),
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: page.meta.title,
+        description: page.meta.description,
+      },
     }
   } catch {
     return {}

@@ -6,7 +6,18 @@ import { NoSnap } from '@/components/NoSnap'
 export const metadata: Metadata = {
   title: 'Blog – Lukas Ebner',
   description:
-    'Artikel zu Führung, Skalierung, Systeme, KI und Exit — praxisnah, ohne Buzzwords.',
+    'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+  openGraph: {
+    type: 'website',
+    url: 'https://lukasebner.de/blog',
+    title: 'Blog – Lukas Ebner',
+    description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog – Lukas Ebner',
+    description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+  },
 }
 
 export default function BlogIndexPage() {

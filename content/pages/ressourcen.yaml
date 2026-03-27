@@ -1,0 +1,15 @@
+meta:
+  title: "Ressourcen – Lukas Ebner"
+  description: "Kostenlose Ressourcen, Tools und Guides für Unternehmer und Geschäftsführer"
+
+slides:
+  - template: hero-dark
+    headline: "Kostenlose Ressourcen für dein Unternehmen"
+    body: "Praktische Tools, Guides und Downloads, die ich selbst nutze. Kein Bullshit, keine aufgeblasenen eBooks."
+
+  - template: cards-grid
+    headline: "Was du bekommst"
+    cards:
+      - title: "Coming Soon"
+        body: "Wir arbeiten gerade daran, hochwertige Ressourcen zusammenzustellen. Bleib dran."
+        icon: "📚"

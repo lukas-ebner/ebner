@@ -15,6 +15,19 @@ const nextConfig: NextConfig = {
     // Externe Domains bei Bedarf:
     // remotePatterns: [{ protocol: 'https', hostname: 'example.com', pathname: '/**' }],
   },
+  redirects: async () => [
+    {
+      source: '/:path*',
+      has: [
+        {
+          type: 'host',
+          value: 'www.lukasebner.de',
+        },
+      ],
+      destination: 'https://lukasebner.de/:path*',
+      permanent: true,
+    },
+  ],
 }
 
 export default nextConfig

@@ -1,7 +1,7 @@
 ---
 title: "Unternehmen skalieren — Der Praxisguide für Geschäftsführer von 5 auf 50 Mitarbeiter"
 slug: unternehmen-skalieren
-description: "Was Skalierung wirklich bedeutet, warum die meisten Geschäftsführer der Engpass ihres eigenen Unternehmens sind, und wie ich meine Agentur von 5 auf 50 Mitarbeiter skaliert habe."
+description: "Skalierung bedeutet mehr Output ohne proportional mehr Input. Wie Geschäftsführer zum Engpass werden und wie Sie das ändern."
 keyword: "unternehmen skalieren"
 nebenkeywords: ["firma skalieren", "wie kann ich mein unternehmen effektiv skalieren", "skalieren unternehmen"]
 category: operations

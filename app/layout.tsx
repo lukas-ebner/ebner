@@ -14,6 +14,17 @@ export const metadata: Metadata = {
     icon: [{ url: faviconSvg, type: 'image/svg+xml' }],
     apple: faviconSvg,
   },
+  openGraph: {
+    type: 'website',
+    url: 'https://lukasebner.de',
+    title: 'Lukas Ebner',
+    description: 'Unternehmensberatung für KMU',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lukas Ebner',
+    description: 'Unternehmensberatung für KMU',
+  },
 }
 
 export default function RootLayout({

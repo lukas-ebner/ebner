@@ -13,6 +13,7 @@ interface SplitSlideProps {
   size?: 'balanced' | 'image-heavy'
   pill?: string
   fullHeight?: boolean
+  slideIndex?: number
 }
 
 export function SplitSlide({
@@ -26,6 +27,7 @@ export function SplitSlide({
   size = 'balanced',
   pill,
   fullHeight = false,
+  slideIndex = 1,
 }: SplitSlideProps) {
   const isDark = variant === 'dark'
   const paragraphs = body.split(/\n\n+/).filter((p) => p.trim().length > 0)
@@ -62,7 +64,11 @@ export function SplitSlide({
           {pill}
         </span>
       ) : null}
-      <h2 className={`font-display text-h2 font-normal ${headlineClass}`}>{headline}</h2>
+      {slideIndex === 0 ? (
+        <h1 className={`font-display text-h2 font-normal ${headlineClass}`}>{headline}</h1>
+      ) : (
+        <h2 className={`font-display text-h2 font-normal ${headlineClass}`}>{headline}</h2>
+      )}
       <div className="mt-4 space-y-4">
         {paragraphs.map((paragraph, i) => (
           <p

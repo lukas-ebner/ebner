@@ -11,6 +11,7 @@ interface Person {
 
 interface Tool {
   src: string
+  alt?: string
 }
 
 interface ToolCloudSlideProps {
@@ -192,7 +193,7 @@ export function ToolCloudSlide({
                   },
                 }}
               >
-                <img src={tool.src} alt="" className="h-full w-full" />
+                <img src={tool.src} alt={tool.alt || `Tool icon`} className="h-full w-full" />
               </motion.div>
             )
           })}
@@ -341,7 +342,7 @@ export function ToolCloudSlide({
                     },
                   }}
                 >
-                  <img src={tool.src} alt="" className="h-full w-full" />
+                  <img src={tool.src} alt={tool.alt || `Tool icon`} className="h-full w-full" />
                 </motion.div>
               )
             })}

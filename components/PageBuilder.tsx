@@ -110,7 +110,7 @@ export function PageBuilder({ slides, accent, noSnap }: { slides: SlideConfig[];
             console.warn(`Unknown slide template: ${slide.template}`)
             return null
           }
-          const props = { ...slide } as Record<string, unknown>
+          const props = { ...slide, slideIndex: i } as Record<string, unknown>
           delete props.template
           return (
             <SlideContainer key={i} index={i}>
