@@ -167,7 +167,7 @@ def deep_research(domain: str) -> str:
         ("LINKEDIN_PEOPLE", f"site:linkedin.com/in \"{company}\" OR \"{domain}\" Geschäftsführer OR CEO OR Gründer", "search", 10),
         ("KUNUNU", f"\"{company}\" OR \"{domain}\" kununu Mitarbeiter", "search", 3),
         ("NEWS", f"\"{company}\" \"{domain}\"", "news", 5),
-        ("HANDELSREGISTER", f"\"{company}\" handelsregister OR gründung OR gesellschafter", "search", 3),
+        ("HANDELSREGISTER", f"site:{domain} OR \"{company}\" \"{domain}\" handelsregister OR impressum", "search", 3),
     ]
     for label, query, stype, num in external:
         log(f"  → {label}")
@@ -204,6 +204,9 @@ ABSOLUTE REGEL – KEINE HALLUZINATIONEN:
 - Unbelegbare Felder KOMPLETT WEGLASSEN
 - ERFINDE NIEMALS Namen, Zahlen, Kunden, Technologien
 - Im Zweifel: WEGLASSEN
+- company_name: AUSSCHLIESSLICH aus den "## CRAWLED: {domain}"-Abschnitten entnehmen.
+  Externe Quellen (LinkedIn, Handelsregister, News) können andere Firmen mit ähnlichem Namen enthalten – diese IGNORIEREN.
+  Wenn der Firmenname auf der gecrawlten Website nicht eindeutig steht: null setzen.
 """
 
 STYLE = """
@@ -253,23 +256,24 @@ def resolve_contact_name(email: str, research: str = None):
     else:
         return None
 
+    full_name = f"{candidate_first} {candidate_last}" if candidate_last else candidate_first
+
     # If we have research data, try to verify the name appears there
     if research and candidate_first:
-        # Search for the name in research to confirm it's a real person
-        if candidate_last and candidate_last.lower() in research.lower():
-            return candidate_first
-        if candidate_first.lower() in research.lower():
-            return candidate_first
-        # Name not found in research – might still be the person,
-        # but we only return it if the local part has a clear name pattern
+        research_lower = research.lower()
+        if candidate_last and candidate_last.lower() in research_lower:
+            return full_name
+        if candidate_first.lower() in research_lower:
+            return full_name
+        # Name not found in research – still return if clear vorname.nachname pattern
         if candidate_last and len(candidate_first) > 2 and len(candidate_last) > 2:
-            return candidate_first
+            return full_name
 
     # Without research, only return if clearly a name pattern (vorname.nachname)
     if not research and candidate_last and len(candidate_first) > 2 and len(candidate_last) > 2:
-        return candidate_first
+        return full_name
 
-    return None
+    return candidate_first if candidate_first and len(candidate_first) > 2 else None
 
 
 def generate_structured_paper(email: str, quiz: dict, domain: str = None, research: str = None, chat_context: str = None) -> dict:
@@ -301,6 +305,7 @@ Setze contact_name auf null.
 ## RECHERCHE-DATEN ZUM UNTERNEHMEN
 Domain: {domain}
 Email: {email}
+WICHTIG: Der Firmenname (company_name) MUSS exakt so lauten wie er auf den gecrawlten Seiten der Domain "{domain}" steht (Abschnitte "## CRAWLED: ..."). Externe Suchergebnisse (LinkedIn, Handelsregister, News) können andere Firmen enthalten – für den company_name AUSSCHLIESSLICH die gecrawlten Seiten verwenden.
 {contact_instruction}
 {research}
 """
