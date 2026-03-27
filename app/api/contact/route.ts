@@ -87,13 +87,12 @@ function spawnEnrichPipeline(email: string, source: string, formData?: Record<st
   writeFile(tmpFile, inputJson, 'utf-8')
     .then(() => {
       const pythonCmd = [
-        'PYTHON="$(/opt/homebrew/bin/python3 -c \'import fpdf\' 2>/dev/null && echo /opt/homebrew/bin/python3 || echo python3)"',
-        `"$PYTHON" "${pipelineScript}" --enrich "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
+        `python3 "${pipelineScript}" --enrich "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
         `echo "EXIT: $?" >> "${logFile}"`,
         `rm -f "${tmpFile}"`,
       ].join('; ')
 
-      const child = spawn('bash', ['-lc', pythonCmd], {
+      const child = spawn('sh', ['-c', pythonCmd], {
         cwd: process.cwd(),
         stdio: 'ignore',
         detached: true,
