@@ -5,7 +5,14 @@ meta:
 slides:
   - template: hero-dark
     headline: "Kostenlose Ressourcen für dein Unternehmen"
-    body: "Praktische Tools, Guides und Downloads, die ich selbst nutze. Kein Bullshit, keine aufgeblasenen eBooks."
+    subtext: "Praktische Tools, Guides und Downloads, die ich selbst nutze. Kein Bullshit, keine aufgeblasenen eBooks."
+    image:
+      src: /images/slides/lukas-hero_landscape.jpg
+      alt: Lukas Ebner
+      opacity: 0.35
+    cta:
+      text: Freiheitstest machen
+      url: /#freiheitstest
 
   - template: cards-grid
     headline: "Was du bekommst"
