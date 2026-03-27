@@ -21,7 +21,7 @@ export default function HomePage() {
   const posts = listPublishedPosts()
   if (posts.length > 0) {
     const latest = posts[0] // already sorted by date desc
-    page.slides = page.slides.map((slide: Record<string, unknown>) => {
+    page.slides = page.slides.map((slide) => {
       if (slide.template === 'blog-teaser') {
         return {
           ...slide,
