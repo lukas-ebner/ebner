@@ -75,18 +75,15 @@ export async function POST(req: NextRequest) {
     console.log(`[strategy-pipeline] Input: ${tmpFile}`)
     console.log(`[strategy-pipeline] Log: ${logFile}`)
 
-    // Use Homebrew Python (has fpdf2 installed) – fallback to generic python3
-    // bash -lc loads user's shell profile for PATH + env vars
     const pythonCmd = [
-      'PYTHON="$(/opt/homebrew/bin/python3 -c \'import fpdf\' 2>/dev/null && echo /opt/homebrew/bin/python3 || echo python3)"',
-      `"$PYTHON" "${pipelineScript}" "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
+      `python3 "${pipelineScript}" "$(cat "${tmpFile}")" > "${logFile}" 2>&1`,
       `echo "EXIT: $?" >> "${logFile}"`,
       `rm -f "${tmpFile}"`,
     ].join('; ')
 
     const child = spawn(
-      'bash',
-      ['-lc', pythonCmd],
+      'sh',
+      ['-c', pythonCmd],
       {
         cwd: process.cwd(),
         stdio: 'ignore',
