@@ -272,7 +272,7 @@ def resolve_contact_name(email: str, research: str = None):
     return None
 
 
-def generate_structured_paper(email: str, quiz: dict, domain: str = None, research: str = None) -> dict:
+def generate_structured_paper(email: str, quiz: dict, domain: str = None, research: str = None, chat_context: str = None) -> dict:
     """Generate paper as structured JSON via Claude Sonnet."""
     quiz_text = build_quiz_summary(quiz)
     is_company = domain is not None and research is not None
@@ -329,6 +329,13 @@ Pillar-Scores: Operations {quiz['pillar_scores']['operations']}%, Systeme {quiz[
 Einzelantworten:
 {quiz_text}
 
+{f"""## CHAT-KONTEXT (KI-Readiness-Beratungsgespräch)
+Der Nutzer hat ein interaktives Beratungsgespräch auf der Website geführt. Die folgenden Aussagen kommen direkt vom Nutzer und sind besonders wertvoll für die Analyse:
+
+{chat_context}
+
+WICHTIG: Nutze diese Chat-Informationen als PRIMÄRQUELLE für die Analyse. Sie enthalten oft konkretere Details als der Quiz allein (Branche, Pain Points, Tech-Stack, Ziele).
+""" if chat_context else ""}
 ## OUTPUT FORMAT – EXAKT DIESES JSON-SCHEMA
 
 Antworte mit EXAKT diesem JSON (keine Markdown-Codeblöcke, kein Text drumherum):
@@ -868,7 +875,7 @@ def log(msg: str):
     print(msg, flush=True)
 
 
-def run_pipeline(email: str, quiz: dict, send_email: bool = True) -> dict:
+def run_pipeline(email: str, quiz: dict, send_email: bool = True, chat_context: str = None) -> dict:
     """
     Full pipeline: Research → Analysis → PDF → Code → Email
 
@@ -897,7 +904,7 @@ def run_pipeline(email: str, quiz: dict, send_email: bool = True) -> dict:
 
     # ── Step 2: AI Analysis ──
     log("── STEP 2: AI Analysis (Claude Sonnet) ──")
-    paper_data = generate_structured_paper(email, quiz, domain, research)
+    paper_data = generate_structured_paper(email, quiz, domain, research, chat_context)
     company_name = paper_data.get("company_name") or ""
     log(f"  ✓ Analysis complete (company: {company_name or 'n/a'})\n")
 
@@ -1223,9 +1230,13 @@ if __name__ == "__main__":
         print(json.dumps(result, indent=2))
 
     elif len(sys.argv) > 1 and sys.argv[1].startswith("{"):
-        # JSON input: {"email": "...", "quiz": {...}}
+        # JSON input: {"email": "...", "quiz": {...}, "chat_context": "..."}
         input_data = json.loads(sys.argv[1])
-        result = run_pipeline(input_data["email"], input_data["quiz"])
+        result = run_pipeline(
+            input_data["email"],
+            input_data["quiz"],
+            chat_context=input_data.get("chat_context")
+        )
         print(json.dumps(result, indent=2))
 
     else:

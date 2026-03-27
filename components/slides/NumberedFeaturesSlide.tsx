@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
+import { InlineMarkdown } from '@/components/ui/InlineMarkdown'
 import type { ImageConfig } from '@/lib/types'
 
 interface Feature {
@@ -52,7 +53,7 @@ export function NumberedFeaturesSlide({
                 key={i}
                 className="font-body text-lg leading-relaxed text-text-secondary lg:text-xl"
               >
-                {p}
+                <InlineMarkdown text={p} />
               </p>
             ))}
           </div>
@@ -103,7 +104,7 @@ function FeatureBlock({
               key={i}
               className="font-body text-base leading-relaxed text-text-secondary lg:text-lg"
             >
-              {p}
+              <InlineMarkdown text={p} />
             </p>
           ))}
         </div>

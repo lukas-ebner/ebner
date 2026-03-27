@@ -10,7 +10,7 @@ slides:
     subtext: "Strategische IT-Beratung für Geschäftsführer, die aufhören wollen, ihr Unternehmen zu betreiben statt es zu führen."
     cta:
       text: "Gespräch vereinbaren"
-      url: "/kontakt"
+      url: "/erstgespraech"
     image:
       src: /images/slides/lukas-hero_landscape.jpg
       alt: "Lukas Ebner"
@@ -20,7 +20,7 @@ slides:
       - { value: "25+", label: "Jahre in Agenturen & SaaS" }
       - { value: "5", label: "Unternehmen aufgebaut" }
       - { value: "15+", label: "Jahre als Geschäftsführer" }
-      - { value: "7", label: "stelliger Exit" }
+      - { value: "7", label: "stelliger Exit", hideMobile: true }
       - { value: "500+", label: "Projekte verantwortet" }
 
   # ── 2. QUIZ (interaktiv) ─────────────────────────────
@@ -31,13 +31,13 @@ slides:
   # ── 4. DAS SYSTEM (Drei-Kreise-Infografik) ─────────
   - template: three-pillars
     headline: "Du weißt jetzt, wo du stehst. So arbeiten wir daran."
-    subtext: "Dein Freiheitsgrad hat dir gezeigt, wo dein Unternehmen dich noch bindet. Ich arbeite mit dir an genau diesen Stellschrauben — nicht nacheinander, sondern verzahnt."
+    subtext: "Dein Freiheitsgrad hat dir gezeigt, wo dein Unternehmen dich noch bindet. Ich arbeite mit dir an genau diesen Stellschrauben — parallel, weil sie zusammenhängen."
 
   # ── 5. PFEILER 1: Operations & Führung (ORANGE) ────
   - template: pillar-detail
     pill: "Das Fundament"
     headline: "Diagnose → System → Sparring. In drei Phasen zum Unternehmen, das ohne dich läuft."
-    body: "Jedes Unternehmen kommt an den Punkt, an dem der Gründer zum Engpass wird. Sonntagabend am Laptop, Meetings in denen nur du entscheidest, mehr Mitarbeiter aber nicht weniger Arbeit.\n\nWir starten mit einer ehrlichen Diagnose: Wie läuft dein Unternehmen wirklich — nicht wie es auf dem Organigramm aussieht. Dann bauen wir Prozesse, Rollen und Führungsstrukturen, die skalieren. Und danach bleibe ich als Sparringspartner — wie ein Beirat, nur ehrlicher."
+    body: "Irgendwann wird der Gründer zum Engpass. Sonntagabend am Laptop, Meetings in denen nur du entscheidest, mehr Mitarbeiter aber trotzdem nicht weniger Arbeit.\n\nWir fangen mit einer ehrlichen Diagnose an: Wie läuft dein Unternehmen wirklich — jenseits vom Organigramm. Dann bauen wir Prozesse, Rollen und Führungsstrukturen, die auch ohne dich funktionieren. Und danach bleibe ich als Sparringspartner — wie ein Beirat, nur ehrlicher."
     points:
       - "Strategie, die dein Team versteht und nach der es handelt"
       - "Prozesse, die laufen wenn du zwei Wochen nicht da bist"
@@ -145,25 +145,23 @@ slides:
     bg: "#E6EEEF"
     variant: light
     items:
-      - question: "Was genau machst du als Unternehmensberater?"
-        answer: "Ich helfe Geschäftsführern und Gründern von Dienstleistungsunternehmen, sich aus dem operativen Tagesgeschäft zu lösen. Das heißt konkret: Prozessoptimierung, Führungsstrukturen aufbauen, Systeme konsolidieren und KI-Strategie entwickeln. Ich komme nicht aus der Theorie – ich habe 15 Jahre lang selbst ein Unternehmen mit 50 Mitarbeitern geführt, über 500 Projekte verantwortet und einen 7-stelligen Exit gemacht. Ich weiß, wo es in wachsenden Dienstleistern klemmt."
-      - question: "Für wen ist die Beratung gedacht?"
-        answer: "Für Geschäftsführer und Gründer von wissensbasierten Dienstleistern – Agenturen, IT-Unternehmen, Beratungen, Ingenieurbüros, Architekturbüros, Kanzleien oder andere Professional-Services-Firmen. Typischerweise zwischen 5 und 50 Mitarbeitern. Der gemeinsame Nenner: Du verkaufst Kopfarbeit, dein Unternehmen hängt zu stark an dir, und du willst das ändern."
-      - question: "Was unterscheidet dich von anderen Unternehmensberatern?"
-        answer: "Ich bin kein klassischer Berater, der PowerPoints liefert und dann verschwindet. Ich habe selbst ein Unternehmen skaliert, einen Exit gemacht und baue parallel ein SaaS-Produkt. Mein Ansatz ist umsetzungsorientiert: Diagnose, Systemaufbau und dann laufendes Sparring als Geschäftsführer-Coach. Ich arbeite nur mit Dienstleistern, weil ich genau diese Branche kenne – von Projektmargen über Ressourcenplanung bis zum Controlling."
-      - question: "Wie läuft eine Zusammenarbeit ab?"
-        answer: "Wir starten mit einem kostenlosen Erstgespräch, in dem wir deine Situation analysieren. Danach folgt eine Diagnosephase, in der ich eure Prozesse, Systeme und Führungsstrukturen unter die Lupe nehme. Daraus entsteht ein konkreter Fahrplan. Die eigentliche Beratung läuft dann als Kombination aus Workshops, Systemaufbau und regelmäßigem Sparring – je nach Bedarf über 3 bis 12 Monate."
-      - question: "Arbeitest du remote oder vor Ort?"
-        answer: "Beides. Ich bin in Regensburg ansässig und arbeite viel mit Unternehmen aus der Region Regensburg, Ostbayern und ganz Bayern. Für Workshops und intensive Phasen komme ich vor Ort, das laufende Sparring machen wir remote. Grundsätzlich funktioniert die Zusammenarbeit auch komplett remote – ich arbeite genauso mit Kunden in Hamburg oder Wien."
-      - question: "Was kostet die Unternehmensberatung?"
-        answer: "Mein Stundensatz liegt bei 125 €. Für eine strukturierte Zusammenarbeit biete ich 3-Monats-Pakete zwischen 4.750 € und 9.500 € an – je nach Umfang und Intensität. Wichtig: Über die BAFA-Förderung kannst du dir 50 bis 80 Prozent der Beratungskosten erstatten lassen. Das heißt, eine professionelle Unternehmensberatung kostet dich unter Umständen weniger als ein Freelancer-Tag."
-      - question: "Was ist die BAFA-Förderung für Unternehmensberatung?"
-        answer: "Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) fördert professionelle Unternehmensberatung für KMU mit 50 bis 80 Prozent der Kosten. Ich bin als BAFA-Berater zugelassen, das heißt: du bekommst eine hochwertige Strategieberatung und zahlst nur einen Bruchteil selbst. Den Antrag begleite ich mit – das ist kein bürokratisches Monster."
-      - question: "Was genau meinst du mit KI-Beratung?"
-        answer: "Ich helfe dir, KI konkret in deinem Unternehmen einzusetzen – nicht als Buzzword, sondern als echten Hebel. Das reicht von der KI-Strategie über die Identifikation konkreter Use Cases bis zum funktionierenden Prototypen. Typische Einsatzfelder: Angebotserstellung automatisieren, Support mit KI beschleunigen, Reporting automatisieren oder interne Wissensdatenbanken aufbauen. Wir bauen Prototypen in Tagen, nicht Monaten."
-      - question: "Was ist Leadtime?"
-        answer: "Leadtime ist eine Project-Delivery-Plattform, die ich selbst entwickle – entstanden aus 8 Jahren eigener Agenturarbeit. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Speziell gebaut für Dienstleister, die ihr Tool-Chaos durch eine zentrale Plattform ersetzen wollen. Leadtime ist kein Pflichtbestandteil meiner Beratung, aber oft die Antwort auf die Systemfrage."
-      - question: "Kann ich auch nur ein Sparring buchen, ohne volles Beratungspaket?"
-        answer: "Ja. Viele Geschäftsführer nutzen mich als externen Sparringpartner – regelmäßig oder bei Bedarf. Das funktioniert als monatliches Sparring-Abo oder als einzelne Sessions. Manchmal reicht ein erfahrener Blick von außen, um die richtige Entscheidung zu treffen."
-      - question: "Wie kann ich dich am besten erreichen?"
-        answer: "Am schnellsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du direkt einen Termin buchen – kostenlos, 30 Minuten, kein Pitch."
+      - question: "Was machst du denn konkret?"
+        answer: "Ich arbeite mit Gründern und Geschäftsführern, die ihre Unternehmen vom eigenen Nacken bekommen wollen. Drei Dinge: Prozesse, Systeme, KI. Mach ich selbst seit 15 Jahren – hatte eine Agentur mit 50 Leuten, kenne den Schmerz."
+      - question: "Für wen passt das?"
+        answer: "Dienstleister hauptsächlich. Agenturen, IT-Buden, Beratungen, Rechtsanwälte – alles wo dein Kopf der kostbarste Rohstoff ist. Irgendwo zwischen 5 und 50 Mitarbeitern. Wenn dein Unternehmen mehr an dir klebt als an den Prozessen, dann bin ich richtig."
+      - question: "Warum sollte ich ausgerechnet zu dir kommen?"
+        answer: "Weil ich nicht mit PowerPoints heimgehe. Ich hab selbst skaliert, bin rausgegangen, baue jetzt Leadtime und helfe dir parallel. Ich weiß, wie Agenturen und IT-Firmen ticken – wo die Marge verloren geht, wo Projekte aus dem Ruder laufen, wie du aus der Tagesarbeit rauskommst. Das ist keine Theorie für mich."
+      - question: "Wie funktioniert das konkret?"
+        answer: "Gratis Erstgespräch, 30 Minuten, kein Pitch. Du erzählst was läuft oder eben nicht, ich frag wo die Probleme sind. Danach gibts eine richtige Diagnose, dann bauen wir das System auf. Mit Workshops, regelmäßigen Sessions. So 3 bis 12 Monate, je nachdem was gemacht werden muss."
+      - question: "Remote oder vor Ort?"
+        answer: "Mix. Für große Workshops komm ich nach Regensburg zu dir. Die wöchentlichen Sessionen machen wir online. Aber auch wenn du in Hamburg sitzt – komplett remote geht genauso."
+      - question: "Was kostet mich das?"
+        answer: "Paket-Modell: zwischen 4.750 und 9.500 Euro für drei Monate, je nachdem ob es intensiv wird. Mit BAFA-Förderung zahlt sich das fast selbst – schau auf die Preise-Seite."
+      - question: "BAFA-Förderung – wie läuft das?"
+        answer: "Ja, bis zu 50–80 %. Ich bin zugelassen, mache die Anträge nicht kompliziert. Infos auf der Preise-Seite."
+      - question: "Du sprichst viel von KI – was heißt das konkret?"
+        answer: "Nicht die Standard-ChatGPT-Spielerei. Wo bringt KI euch wirklich was? Angebote schneller schreiben? Support 3x schneller machen? Reporting automatisieren? Das bauen wir dann als Prototyp – in Tagen, nicht Monaten. Keine Junior-Leute, ich mache das selbst oder mit meinem Developer."
+      - question: "Was ist Leadtime – brauche ich das?"
+        answer: "Mein Tool für Dienstleister. Projekt, Zeit, Controlling, CRM, Rechnung – alles in einem System statt in fünf verschiedenen. Nicht zwingend, aber oft die Antwort auf die Frage wie man Operations-Chaos löst."
+      - question: "Kann ich auch nur gelegentlich mit dir sparren?"
+        answer: "Ja, machen viele. Dann brauchst nicht ein volles Paket, sondern monatlich zwei Sessions zum Blödsinn von außen absprechen. Für manche reicht das völlig aus."

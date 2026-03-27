@@ -52,7 +52,7 @@ export function BlogTeaserSlide({
   return (
     <div
       ref={ref}
-      className={`${bgClass} relative min-h-screen overflow-hidden`}
+      className={`${bgClass} relative lg:min-h-screen overflow-hidden`}
       style={bg ? { backgroundColor: bg } : undefined}
     >
       {/* ── Image: absolute, full height, flush to edge ── */}
@@ -76,8 +76,27 @@ export function BlogTeaserSlide({
         </motion.div>
       )}
 
+      {/* ── Mobile image (above text) ── */}
+      {post.image && (
+        <motion.div
+          className="relative lg:hidden aspect-[16/9] w-full"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.7 }}
+        >
+          <ImageWithFallback
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            label={post.title}
+          />
+        </motion.div>
+      )}
+
       {/* ── Content layer ── */}
-      <div className="relative z-10 flex min-h-screen flex-col justify-center py-section-mobile lg:py-section-desktop">
+      <div className="relative z-10 flex lg:min-h-screen flex-col justify-center py-10 lg:py-section-desktop">
         <div className="mx-auto w-full max-w-[1800px] px-8 lg:px-16">
           <motion.div
             className={`${post.image ? (imageOnRight ? 'lg:w-[48%] lg:pr-12' : 'lg:w-[48%] lg:ml-auto lg:pl-12') : 'max-w-[780px]'}`}
@@ -151,24 +170,6 @@ export function BlogTeaserSlide({
         </div>
       </div>
 
-      {/* ── Mobile image (below text) ── */}
-      {post.image && (
-        <motion.div
-          className="relative lg:hidden aspect-[4/3] w-full"
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.7 }}
-        >
-          <ImageWithFallback
-            src={post.image}
-            alt={post.title}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            label={post.title}
-          />
-        </motion.div>
-      )}
     </div>
   )
 }

@@ -10,7 +10,7 @@ slides:
     body: "Gründer, Builder, Systemdenker. Seit über 15 Jahren baue ich Unternehmen und die Software, die sie am Laufen hält."
     cta:
       text: "Kontakt aufnehmen"
-      url: "/kontakt"
+      url: "/erstgespraech"
     image:
       src: /images/slides/lukas-bar.jpg
       alt: "Lukas Ebner"
@@ -24,65 +24,63 @@ slides:
   - template: timeline
     headline: "Mein Weg."
     parallaxImages:
-      - src: /images/fotos/DSC00104.jpg
-        alt: "Portrait"
-      - src: /images/projects/einsnull/einsnull.jpg
-        alt: "eins+null"
-      - src: /images/fotos/IMG_8249-2.jpg
-        alt: "Am Schreibtisch"
-      - src: /images/fotos/DSC00270.jpg
-        alt: "Nachdenklich"
-      - src: /images/projects/leadtime/DSC02102.jpg
-        alt: "Leadtime"
-      - src: /images/fotos/L1030038.jpg
-        alt: "Home Office"
-      - src: /images/fotos/IMG_8256-2.jpg
-        alt: "An der Steinmauer"
+      - src: /images/timeline/6.jpg
+        alt: "Timeline"
+      - src: /images/timeline/5.jpg
+        alt: "Timeline"
+      - src: /images/timeline/4.jpg
+        alt: "Timeline"
+      - src: /images/timeline/3.jpg
+        alt: "Timeline"
+      - src: /images/timeline/2.jpg
+        alt: "Timeline"
+      - src: /images/timeline/1.jpg
+        alt: "Timeline"
     entries:
       - period: "2026 – heute"
-        role: "Fracto – KI-Plattform für Softwareunternehmen"
-        org: "Co-Founder & CTO"
+        role: "Jedes Gerät erklärt sich selbst."
+        org: "Co-Founder & CTO, Fracto"
         url: "https://fracto.de"
-        description: "Zusammen mit Laurin Gerdes gegründet – wir haben uns im Silicon-Valley-Programm der TH Deggendorf kennengelernt. Ich verantworte Operations, Technik und den Organisationsaufbau. Laurin macht Vertrieb. Das Ziel: eine Plattform, die Software-Dienstleister bei der täglichen Arbeit mit KI unterstützt."
+        description: "Laurin und ich haben uns im Silicon-Valley-Programm kennengelernt. Er öffnet Türen in der MedTech-Industrie, ich baue, was dahinter steht. Fracto verwandelt Produktdokumentation in fertige Schulungen – in Minuten statt Monaten. Dazu ein AI Voice Bot, der direkt am Gerät per QR-Code technische Fragen beantwortet. Zwei Leute, ein Produkt, das normalerweise ein 10-köpfiges Team bräuchte."
       - period: "2023 – heute"
-        role: "Leadtime – die Software, die aus der Praxis kam"
-        org: "Founder & Geschäftsführer"
+        role: "Ein System statt zehn Tools."
+        org: "Founder & Geschäftsführer, Leadtime"
         url: "https://leadtime.app"
-        description: "CONNEX war ein internes Tool, das ich bei eins+null entwickelt habe, um die Agentur skalierbar zu machen. Leadtime ist die konsequente Weiterentwicklung – diesmal als eigenständiges SaaS-Produkt: Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System."
+        description: "Bei eins+null habe ich jahrelang nach dem perfekten PM-Tool gesucht. Asana, Monday, Notion – keins konnte, was ich brauchte. Also habe ich es selbst gebaut. Erst als internes Tool namens CONNEX, dann als eigenständiges SaaS: Leadtime. Projektmanagement, Zeiterfassung, Abrechnung, CRM – alles in einem System, gebaut aus 15 Jahren Erfahrung im Projektgeschäft. Bootstrapped und profitabel."
       - period: "2023 – heute"
-        role: "Unternehmensberater & Coach für Skalierung und Exit-Strategie"
+        role: "Beraten, was ich selbst gebaut habe."
         org: "Geschäftsführer, Wachstumscoach GmbH"
         url: "https://lukasebner.de"
-        description: "Unternehmensberatung aus Regensburg für Geschäftsführer, die ihr Unternehmen skalieren oder zur Unternehmensnachfolge und Exit vorbereiten wollen. Ich helfe dabei, interne Abläufe zu professionalisieren – Operations, Prozesse, Digitalisierung. Alles, womit man ein System schneller und belastbarer macht. Kein Theoriewissen – sondern 13 Jahre eigene Erfahrung und einen Exit in der Tasche."
+        description: "Nach dem Exit war klar: Ich will das, was ich in 13 Jahren gelernt habe, weitergeben. Nicht als Theoretiker mit Slide-Deck, sondern als jemand, der dieselben Probleme selbst gelöst hat. Ich arbeite mit Geschäftsführern, die ihr Unternehmen skalieren oder zum Exit vorbereiten wollen. Operations, Prozesse, Führung – alles, was ein Unternehmen schneller und belastbarer macht."
       - period: "2012 – 2014"
-        role: "MBA in Unternehmensgründung & -führung"
+        role: "MBA neben der Geschäftsführung."
         org: "Technische Hochschule Deggendorf"
         url: "https://www.th-deg.de"
         grade: "1,3"
-        description: "Berufsbegleitend neben der Geschäftsführung bei eins+null. Zwei Jahre lang abends und am Wochenende. In einer Seminararbeit über Controlling entstand die Idee für CONNEX – das Tool, aus dem später Leadtime werden sollte. Ein Studium, das direkt in ein Produkt gemündet hat."
+        description: "Zwei Jahre lang abends und am Wochenende, parallel zur Geschäftsführung bei eins+null. In einer Seminararbeit über Controlling entstand die Idee für CONNEX – das interne Tool, aus dem Jahre später Leadtime werden sollte. Eines der wenigen Studien, die direkt in ein Produkt gemündet haben."
       - period: "2009 – 2022"
-        role: "eins+null – 13 Jahre Agentur, Unternehmen von 0 auf 50 Leute skaliert"
-        org: "Geschäftsführer & Gründer"
+        role: "Vom Wohnzimmer zum 7-stelligen Exit."
+        org: "Geschäftsführer & Gründer, eins+null"
         url: "https://einsundnull.de"
-        description: "Zusammen mit Michael Zuber im Wohnzimmer gegründet. Was als Freelancer-Duo begann, haben wir bootstrapped auf 4 Mio. Umsatz und 50 Mitarbeiter skaliert – eine echte Unternehmensnachfolge-Story. Über 1.000 Projekte für die Energiewirtschaft – Webportale, Apps, digitale Vertriebsplattformen. 2022 im 7-stelligen Bereich als Exit verkauft."
+        description: "Michael Zuber und ich haben eins+null im Wohnzimmer gegründet. Was als Freelancer-Duo begann, haben wir bootstrapped auf 4 Mio. Umsatz und 50 Mitarbeiter skaliert. Über 1.000 Projekte für die Energiewirtschaft – Webportale, Apps, Vertriebsplattformen. 13 Jahre lang jede Entscheidung verantwortet: Vertrieb, Führung, Technik, Prozesse. 2022 an die Kraftwerk Holding verkauft."
       - period: "2005 – 2009"
-        role: "Nebenbei: Freelance-Webentwicklung während des Studiums"
+        role: "Der Auftrag, der alles verändert hat."
         org: "Freiberuflich, u. a. für Goldgas"
-        description: "Parallel zum Studium an der Hochschule Ansbach habe ich als freiberuflicher Webentwickler gearbeitet – und damit mein Studium komplett selbst finanziert. Der entscheidende Auftrag kam über die Hochschulzeitschrift: Goldgas, ein Energie-Startup, das eine Website brauchte. Daraus wurde ein Portal, dann das Goldgas Cockpit – eine vollständige Vertriebsplattform. Dieser Auftrag war der Grundstein für die Gründung von eins+null."
+        description: "Neben dem Studium habe ich als Freelancer gearbeitet und damit das Studium komplett selbst finanziert. Über eine Anzeige in der Hochschulzeitschrift kam der entscheidende Auftrag: Goldgas, ein Energie-Startup, brauchte eine Website. Daraus wurde ein Portal, dann eine vollständige Vertriebsplattform. Dieser Auftrag war der Grundstein für die Gründung von eins+null – und damit für alles, was danach kam."
       - period: "2005 – 2010"
-        role: "Studium: Multimedia & Kommunikation"
+        role: "Programmieren gelernt. Unternehmer geworden."
         org: "Hochschule Ansbach"
         url: "https://www.hs-ansbach.de"
         grade: "1,7"
-        description: "Fünf Jahre Multimedia & Kommunikation mit Schwerpunkt IT. Hier habe ich zum ersten Mal richtig programmieren gelernt – Perl, PHP, Java. Und hier ist der Unternehmer in mir entstanden: Statt Werkstudentenjobs habe ich von Tag eins als Freelancer gearbeitet und angefangen, eigene Projekte umzusetzen."
+        description: "Fünf Jahre Multimedia & Kommunikation mit Schwerpunkt IT. Perl, PHP, Java – hier habe ich zum ersten Mal richtig Code geschrieben. Aber wichtiger als der Abschluss war die Erkenntnis: Ich will keine Werkstudentenjobs. Ich will eigene Projekte. Ab Tag eins habe ich als Freelancer gearbeitet, und ab da gab es kein Zurück mehr."
       - period: "2002 – 2005"
-        role: "Freiberuflicher Mediengestalter"
+        role: "Selbstständig mit Anfang 20."
         org: "Verschiedene Agenturen & Verlage"
-        description: "Direkt nach der Ausbildung selbstständig gemacht. Webentwicklung, Printdesign, Logogestaltung – alles was reinkam. Gutes Geld für Anfang 20, aber irgendwann hat der Kopf mehr gewollt als die Hände liefern konnten. Also: Studium."
+        description: "Direkt nach der Ausbildung habe ich mich selbstständig gemacht. Webentwicklung, Printdesign, Logos – alles, was reinkam. Gutes Geld für Anfang 20. Aber irgendwann hat der Kopf mehr gewollt, als die Hände liefern konnten. Also: Studium."
       - period: "1999 – 2002"
-        role: "Ausbildung zum Mediengestalter"
+        role: "Das handwerkliche Fundament."
         org: "Creativ Concept Werbeagentur, Regensburg"
-        description: "Drei Jahre Grafikdesign, Typografie und Printproduktion. Das handwerkliche Fundament für alles, was danach kam. Aber schon während der Ausbildung war klar: Das Web ist interessanter als Papier."
+        description: "Drei Jahre Ausbildung zum Mediengestalter. Grafikdesign, Typografie, Printproduktion. Das Fundament für alles, was danach kam – auch wenn schon während der Ausbildung klar war: Das Web ist interessanter als Papier."
       - period: "1998 – 1999"
         role: "Grundwehrdienst"
         org: "Bundeswehr, Bad Reichenhall"
@@ -95,7 +93,7 @@ slides:
       alt: "Lukas Ebner"
     signature: /images/signature-new.svg
     sections:
-      - headline: "Der beste Beruf."
+      - headline: "Für mich der beste Beruf."
         body: "Unternehmertum ist pure Kreativität: Es ist deine Kernaufgabe, etwas zu erschaffen – aus dem Nichts. Eine Idee, ein Produkt, eine Strategie, ein Team, ein System, das Wert erzeugt. Und dann hältst du es am Laufen, während sich alles um dich herum verändert. Stressig? Ja, auch. Aber es ist der gute Stress – der, den man sich selbst ausgesucht hat. Zumindest meistens."
       - type: quote
         quote: "Meine Arbeit fühlt sich an wie ein faszinierendes Hobby – eine riesige Spielzeugeisenbahn im Keller – bei der es immer noch was zu pflegen und dranzubauen gibt."
@@ -137,29 +135,12 @@ slides:
 
   # ── 5. PERSÖNLICH ───────────────────────────────────
   - template: photo-gallery
-    headline: "Abseits der Arbeit."
+    headline: "Wenn ich nicht arbeite."
     bg: "#ffffff"
-    subtext: "Ich lebe mit meiner Frau Lucrezia und meinem Sohn Noah in Regensburg. Lucrezia habe ich 2018 in Rumänien kennengelernt – bei einem Besuch meines Entwicklerteams. Während Covid haben wir uns entschieden zusammenzuziehen, und Noah ist ein typisches Covid-Baby. 60 % meines Lebens gehört der Arbeit, 40 % der Familie. Ehrlich gesagt. Ansonsten: besessen von Kameras und Fotografie, fasziniert von AI, und ich reise gerne – seit dem Kind halt anders als vorher."
+    subtext: "Ich lebe mit meiner Frau Lucretia und meinem Sohn Noah in Regensburg. Lucretia habe ich 2018 in Cluj-Napoca kennengelernt – bei einem Besuch meines Entwicklerteams. Was als Geschäftsreise anfing, wurde ziemlich schnell ziemlich privat. Während Covid haben wir uns entschieden zusammenzuziehen. Ehrlich gesagt gehören 60 % meines Lebens der Arbeit und 40 % der Familie. Manchmal verschwimmt die Grenze – und das ist ok so. Abseits von Bildschirmen bin ich besessen von Kameras und Fotografie. Die meisten Bilder hier habe ich selbst geschossen. Ich fotografiere, unterwegs, auf Reisen oder einfach im Alltag, weil es mich zwingt, etwas langsamer zu machen, genauer hinzuschauen."
     lightbox: true
-    photos:
-      - src: /images/fotos/IMG_8308-2.jpg
-        alt: "Mit Noah im Regen"
-      - src: /images/fotos/DSC00104.jpg
-        alt: "Portrait"
-      - src: /images/fotos/IMG_8305-2.jpg
-        alt: "Am Strand"
-      - src: /images/fotos/IMG_3953_jpg.jpg
-        alt: "Im Schnee"
-      - src: /images/fotos/DSC00321.jpg
-        alt: "Plasmaball"
-      - src: /images/fotos/L1030038.jpg
-        alt: "Im Home Office"
-      - src: /images/fotos/IMG_8274-2.jpg
-        alt: "Am Fenster"
-      - src: /images/fotos/DSC00263.jpg
-        alt: "Unterwegs"
-      - src: /images/fotos/IMG_8263-2.jpg
-        alt: "Im Industriekorridor"
+    randomDir: "/images/privat"
+    randomCount: 8
 
   # ── 6. FAQ ──────────────────────────────────────────
   - template: faq
@@ -167,13 +148,41 @@ slides:
     bg: "#E6EEEF"
     variant: light
     items:
-      - question: "Was genau machst du als Berater?"
-        answer: "Ich helfe Geschäftsführern von IT- und Software-Unternehmen, ihre Organisation zu professionalisieren. Das heißt: bessere Prozesse, klarere Strukturen, smartere Tools. Ich komme aus der Praxis – 13 Jahre eigene Firma, 50 Mitarbeiter, über 1.000 Projekte. Ich weiß, wo es klemmt."
-      - question: "Für wen ist dein Coaching gedacht?"
-        answer: "Für Geschäftsführer und Gründer, die das Gefühl haben, dass ihr Unternehmen schneller wachsen könnte, wenn die internen Abläufe besser funktionieren würden. Typischerweise Unternehmen zwischen 5 und 50 Mitarbeitern."
+      - question: "Wer ist Lukas Ebner und was macht er beruflich?"
+        answer: "Gründer, Berater, Systemdenker – und immer noch am Bauen. Vier Unternehmen gegründet: eins+null (13 Jahre, 7-stelliger Exit), Leadtime (PM-SaaS), Fracto (AI für MedTech). Jetzt begleite ich andere Gründer beim Skalieren und Exit-Vorbereitung."
+
+      - question: "Was genau macht Lukas Ebner als Unternehmensberater?"
+        answer: "Ich arbeite mit IT-Gründern und Geschäftsführern an drei großen Themen: Wie skaliere ich meine Organisation, ohne den Boden unter den Füßen zu verlieren? Wie baue ich Prozesse, die auch ohne mich funktionieren? Und wie bereite ich mein Unternehmen auf einen guten Exit vor? Der Unterschied: Meine Antworten kommen aus 13 Jahren aktiver Geschäftsführung, nicht aus dem Lehrbuch."
+
+      - question: "Für wen ist das Geschäftsführer-Coaching gedacht?"
+        answer: "Für die Gründer und GFs, deren Unternehmen schneller wächst als ihre Prozesse – und die gemerkt haben, dass das auf Dauer schmerzhaft wird. Die Zielgruppe: 5 bis 100 Mitarbeiter, Tech-Branche, deutschsprachig, und bereit, an den echten Problemen zu arbeiten."
+
+      - question: "Welche Erfahrung bringt Lukas Ebner als Berater mit?"
+        answer: "MBA (Note 1,3), zertifizierter Coach und Organisationsberater, IT-Sicherheitsbeauftragter ISO 27001. Parallel dazu noch zwei aktive Unternehmen, die ich nicht delegieren kann: Leadtime und Fracto. Wenn ich rate, dann weiß ich, wovon ich rede."
+
       - question: "Was ist Leadtime?"
-        answer: "Leadtime ist eine Project Delivery Platform für Software-Dienstleister. Projektmanagement, Zeiterfassung, Controlling, CRM und Rechnungsstellung in einem System. Entstanden aus einem internen Tool, das ich über 8 Jahre in meiner eigenen Firma entwickelt habe."
-      - question: "Arbeitest du remote oder vor Ort?"
-        answer: "Beides. Ich bin in Regensburg ansässig, arbeite aber viel remote. Für Workshops und intensive Phasen komme ich auch gerne vor Ort. Das klären wir im Erstgespräch."
-      - question: "Wie kann ich dich am besten erreichen?"
-        answer: "Am einfachsten über das Kontaktformular oder direkt per Mail an hi@lukasebner.de. Für ein unverbindliches Erstgespräch kannst du auch direkt einen Termin buchen."
+        answer: "Ein PM-Tool, das ich selbst bräuchte. Entstand über 8 Jahre als internes System bei eins+null, irgendwann wurde aus CONNEX ein eigenständiges Produkt. Projektmanagement, Zeiterfassung, CRM, Abrechnung – alles zusammen, keine Excel-Lösungen. Selbst profitabel, selbst im Einsatz."
+
+      - question: "Was ist Fracto?"
+        answer: "Dokumentation wird zu Schulung. MedTech-Geräte erklären sich selbst via QR-Code und AI. Mit Laurin gegründet im Silicon Valley Programm."
+
+      - question: "Was war eins+null und warum wurde das Unternehmen verkauft?"
+        answer: "Im Wohnzimmer gegründet (2009), auf 4 Mio. Umsatz und 50 Mitarbeiter skaliert, über 1.000 Projekte für Energieversorger. 2022 verkauft – nicht weil es schlecht lief, sondern weil nach 13 Jahren klar war: Das Unternehmen ist gelernt. Die nächste Phase braucht einen anderen Owner."
+
+      - question: "Arbeitet Lukas Ebner remote oder vor Ort in Regensburg?"
+        answer: "Büro in Regensburg, arbeite aber deutschlandweit. Mix aus vor Ort und remote – je nachdem, was gerade dran ist. Intensive Workshops vor Ort, laufendes Coaching per Video."
+
+      - question: "Was kostet eine Zusammenarbeit mit Lukas Ebner?"
+        answer: "125 €/h. Pakete ab 4.750 €. Alles Weitere auf der Preise-Seite."
+
+      - question: "Welche Zertifizierungen hat Lukas Ebner?"
+        answer: "MBA Unternehmensgründung und -führung (TH Deggendorf, 1,3), Organisationsberater & Change Manager (ICO), systemischer Coach (ICO), IT-Sicherheitsbeauftragter ISO 27001 (TÜV NORD), Silicon Valley Entrepreneurship Program, Multimedia & Kommunikation (Hochschule Ansbach, 1,7)."
+
+      - question: "Wie kann ich ein Erstgespräch mit Lukas Ebner buchen?"
+        answer: "Über /erstgespraech. Kurzes Formular, 24h später ein Termin. 30 Minuten, kostenlos, kein Verkauf – nur ehrliche Klarheit, ob es passt."
+
+      - question: "Ist eine Beratung über BAFA möglich?"
+        answer: "Ja. Details auf der Preise-Seite."
+
+      - question: "In welchen Branchen berät Lukas Ebner?"
+        answer: "Tech, SaaS, IT-Services, MedTech, Agenturen – im Kern überall da, wo schnell skaliert werden muss und die Prozesse mitwachsen müssen. Die meisten Kunden kommen aus Deutschland und Österreich, 5 bis 100 Mitarbeiter."

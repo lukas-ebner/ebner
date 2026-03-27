@@ -12,81 +12,65 @@ slides:
     subtext: "Du bist Geschäftsführer, nicht Feuerwehrmann. Ich helfe dir, aufzuhören der Engpass zu sein – und anzufangen, dein Unternehmen zu führen statt es zu betreiben."
     cta:
       text: "Gespräch vereinbaren"
-      url: "/kontakt"
+      url: "/erstgespraech"
     image:
       src: /images/paintings/Leadtime_A_very_stressed_out_octopus_in_a_suit_in_an_office_c_d1bbb691-ca1e-4755-98a3-1239d2ef540e_3.png
       alt: "Octopus im Anzug jongliert Telefone – der überlastete Geschäftsführer"
 
-  # ── 2. PROBLEM-BEREICH (thefutur-Style) ───────────────
-  - template: problem
+  # ── 2. SYMPTOME (2×2 Grid wie ki-readiness) ───────────────
+  - template: symptoms-grid
+    imageStyle: panorama
     headline: "Jedes Unternehmen kommt an den Punkt, an dem der Gründer zum Engpass wird."
-    body: "Du merkst es an kleinen Dingen. An den Sonntagabenden am Laptop. An den Meetings, in denen nur du entscheidest. An dem Gefühl, dass mehr Mitarbeiter nicht weniger Arbeit bedeuten.\n\nDas ist kein persönliches Versagen. Das ist ein Muster. Und es hat einen Namen: Du arbeitest in deinem Unternehmen – statt es zu skalieren. Der Geschäftsführer wird zum Engpass – und die Prozessoptimierung kann kein KMU-Wachstum ersetzen."
+    body: "Du merkst es an kleinen Dingen. Sonntagabend am Laptop. Meetings, in denen nur du entscheidest. Das Gefühl, dass mehr Mitarbeiter nicht weniger Arbeit bedeuten.\n\nKein persönliches Versagen — ein Muster, das fast jeder Gründer durchläuft. Du arbeitest in deinem Unternehmen, statt es zu skalieren."
     symptoms:
       - pill: "Symptom 1"
+        image: /images/operations/symptome-1.png
         headline: "Ohne dich läuft nichts."
         body: "Du bist der Engpass. Nicht weil du schlecht bist. Sondern weil alles durch dich muss.\n\n'Ohne mich läuft nichts' klingt nach Wichtigkeit. Ist aber eine Falle. Je wichtiger du bist, desto weniger skaliert dein Business."
-        image:
-          src: /images/fotos/DSC00263.jpg
-          alt: "Geschäftsführer allein am Schreibtisch"
       - pill: "Symptom 2"
+        image: /images/operations/symptome-2.png
         headline: "Selbstständig, aber nicht raus aus dem Tagesgeschäft."
-        body: "Letzte Grippe: durchgearbeitet. Letzter Urlaub: Laptop dabei. Letzter freier Kopf: keine Ahnung.\n\nDas ist kein Einsatz. Das ist ein Warnsignal. Wenn du nicht mal krank werden kannst, hast du kein Business – du hast einen Job. Delegation lernen ist nicht optional, sondern überlebenswichtig."
-        image:
-          src: /images/fotos/DSC00321.jpg
-          alt: "Laptop am Küchentisch – nie wirklich frei"
+        body: "Letzte Grippe: durchgearbeitet. Letzter Urlaub: Laptop dabei. Letzter freier Kopf: keine Ahnung.\n\nDas ist kein Einsatz. Das ist ein Warnsignal. Wenn du nicht mal krank werden kannst, hast du kein Business – du hast einen Job."
       - pill: "Symptom 3"
+        image: /images/operations/symptome-3.png
         headline: "60 Stunden. Null Wachstum."
         body: "60-Stunden-Wochen. Keine Wochenenden. Ständig am Limit. Und der Umsatz? Stagniert.\n\nDas Hamsterrad dreht sich schneller. Du rennst schneller. Aber du kommst nicht vom Fleck. Das ist kein Fleiß-Problem. Das ist ein System-Problem."
-        image:
-          src: /images/fotos/DSC00270.jpg
-          alt: "Spät abends im Büro – Hamsterrad"
       - pill: "Symptom 4"
-        headline: "Mehr Mitarbeiter. Mehr Arbeit. Schlechte Mitarbeiterführung."
-        body: "Mitarbeiter #5 eingestellt: Mehr Arbeit. Mitarbeiter #10 eingestellt: Noch mehr Arbeit. Mitarbeiter #15 eingestellt: Burnout.\n\nJede Einstellung sollte dich entlasten. Aber du erklärst jetzt nur mehr Leuten mehr Dinge. Gute Mitarbeiterführung für Geschäftsführer ist erlernbar – aber ohne System funktioniert Wachstum nicht."
-        image:
-          src: /images/fotos/DSC00277.jpg
-          alt: "Team-Meeting – mehr Leute, mehr Chaos"
+        image: /images/operations/symptome-4.png
+        headline: "Mehr Mitarbeiter. Mehr Arbeit."
+        body: "Mitarbeiter #5 eingestellt: Mehr Arbeit. Mitarbeiter #10 eingestellt: Noch mehr Arbeit. Mitarbeiter #15 eingestellt: Burnout.\n\nJede Einstellung sollte dich entlasten. Aber du erklärst jetzt nur mehr Leuten mehr Dinge. Ohne System funktioniert Wachstum nicht."
 
   # ── 3. CREDIBILITY (thefutur-Style, orange Fullscreen) ─
   - template: credibility
     headline: "Ich kenne das. Weil es mir genauso ging."
-    body: "15 Jahre lang habe ich ein Unternehmen aufgebaut – von null auf 50 Mitarbeiter und 4 Mio Umsatz. Ich kenne jede Phase, jeden Engpass und jede schlaflose Nacht.\n\nIch bin kein Berater, der Frameworks erklärt. Ich bin jemand, der das alles selbst durchgemacht hat – und dir zeigt, was funktioniert."
+    body: "13 Jahre Geschäftsführung, von null auf 50 Mitarbeiter und 4 Mio Umsatz. Jede Phase durchgemacht – vom ersten Mitarbeiter bis zum Exit. Jeder Engpass, jede schlaflose Nacht.\n\nIch erkläre dir keine Frameworks aus dem Lehrbuch. Ich zeige dir, was bei mir funktioniert hat – und was nicht."
     proofs:
       - text: "15 Jahre Geschäftsführer einer Digitalagentur"
       - text: "Von 0 auf 50 Mitarbeiter skaliert"
       - text: "7-stelliger Exit nach erfolgreichem Unternehmensverkauf"
     cta:
       label: "Gespräch vereinbaren"
-      href: "/kontakt"
+      href: "/erstgespraech"
     image:
       src: /images/test3-a.png
       alt: "Lukas Ebner – Freisteller"
 
-  # ── 4. NUMBERED FEATURES: Woran wir arbeiten ─────────
-  - template: numbered-features
-    headline: "Woran wir arbeiten."
-    body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
-    features:
+  # ── 4. PARALLAX STORY: Woran wir arbeiten ────────────
+  - template: parallax-story
+    image:
+      src: /images/operations/lukas-meeting-bw.jpg
+      alt: "Lukas Ebner im Meeting"
+    sections:
+      - headline: "Woran wir arbeiten."
+        body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
       - headline: "Strategie, die trägt."
         body: "Die meisten Unternehmen haben keine tragfähige Strategie. Ob das Unternehmen wächst oder stagniert, wird dem Zufall überlassen.\n\nWir entwickeln eine Strategie, die dein Team versteht, an die es glaubt und nach der es handelt. Das ist die Grundlage für [Unternehmen skalieren](/blog/unternehmen-skalieren) – ohne Strategie sind Prozesse nur Blabla."
-        image:
-          src: /images/fotos/DSC00263.jpg
-          alt: "Strategie-Workshop"
       - headline: "Prozesse, die funktionieren."
         body: "Klar definiert, dokumentiert, nicht zu verkopft. Dein Unternehmen soll auch laufen, wenn du zwei Wochen nicht da bist.\n\nWir bauen Abläufe, die dein Team entlasten statt es zu beschäftigen. [Prozessoptimierung im KMU](/blog/prozessoptimierung-kmu) ist oft der erste praktische Schritt, um raus aus dem Tagesgeschäft zu kommen."
-        image:
-          src: /images/fotos/DSC00270.jpg
-          alt: "Prozesse dokumentieren"
       - headline: "Führung, die skaliert."
         body: "Ein Führungs-Framework für den Alltag: Wie du delegierst, Feedback gibst, Performance misst – und deine besten Leute hältst.\n\nWir machen aus Einzelkämpfern ein Führungsteam. [Führungskräfteentwicklung im KMU](/blog/fuehrungskraefteentwicklung-kmu) ist nicht optional – das ist der entscheidende Punkt beim Wachstum."
-        image:
-          src: /images/fotos/DSC00277.jpg
-          alt: "Team-Meeting"
       - headline: "Zahlen, die stimmen."
         body: "Welche Projekte verdienen Geld, welche verbrennen es? Ohne echte Zahlen steuerst du blind.\n\nWir schaffen Transparenz über EBIT, Projektmargen und Unternehmenswert. Das ist die Grundlage für [Unternehmenswert steigern](/blog/unternehmenswert-steigern) und für erfolgreiches [Sparring für deinen Exit](/blog/exit-strategie)."
-        image:
-          src: /images/fotos/DSC00321.jpg
-          alt: "Finanzanalyse"
 
   # ── 5. ICON CIRCLES: Drei Hebel (dark) ────────────────
   - template: icon-circles
@@ -133,14 +117,24 @@ slides:
     bg: "#E6EEEF"
     items:
       - question: "Was passiert im Erstgespräch?"
-        answer: "30 Minuten, kein Pitch. Wir klären, wo dein größter Hebel liegt, was du bisher versucht hast – und ob eine Zusammenarbeit Sinn macht. Danach bekommst du ein konkretes Angebot."
+        answer: "Kurz und knackig: 30 Minuten, ich stelle Fragen statt zu reden, du kriegst ne ehrliche Antwort, ob's passt."
+      - question: "Für wen ist die Beratung gedacht?"
+        answer: "KMU-Geschäftsführer von 5 bis 100 Köpfen. IT, Agenturen, SaaS, Handwerk. Kurz: Du brauchst Unternehmen skalieren, statt ständig jeden Quark selbst zu entscheiden. Wenn du merkst, dass dein Unternehmen nicht wächst, weil du der Engpass bist – genau dann passt's."
+      - question: "Was genau macht ein Sparring Partner für Geschäftsführer?"
+        answer: "Ich bin nicht der Berater mit 150-Seiten-Report. Ich bin jemand, der selbst 15 Jahre Geschäftsführer war und weiß, wie's läuft. Regelmäßig zusammen: strategische Entscheidungen durcharbeiten, operative Hebel finden, Team-Themen klären. Ehrlich, pragmatisch, fokussiert auf dein Business."
+      - question: "Wie komme ich als Selbstständiger raus aus dem Tagesgeschäft?"
+        answer: "Erste Wahrheit: Du kommst nicht raus, wenn jede Entscheidung durch dich muss. Zweite Wahrheit: Das Problem ist nicht dein Team, sondern fehlende Prozesse und Delegation. Wir bauen ein System, bei dem Dinge auch ohne dich erledigt werden – wirklich, nicht nur auf dem Papier. Ziel: zwei Wochen Urlaub ohne Laptop-Stress."
+      - question: "Was bringt Prozessoptimierung im KMU konkret?"
+        answer: "Ehrlich? Ohne Prozesse ist jeder Mitarbeiter ein Wildwest-Cowboy. Das kostet dich Geld, Zeit und Nerven. Bei [Prozessoptimierung KMU](/blog/prozessoptimierung-kmu) geht's darum, die 20 Prozesse rauszufiltern, die 80 Prozent deiner Probleme verursachen – und die dann einfach und wiederholbar zu machen. Deine Marge steigt, dein Kopf wird freier, dein Team verlässt sich aufeinander statt auf dich."
       - question: "Wie läuft das Setup-Projekt ab?"
-        answer: "In den ersten zwei Monaten arbeiten wir intensiv: wöchentliche Workshops, Analyse deiner Prozesse, Entwicklung konkreter Lösungen. Ab Monat 3 wechseln wir ins laufende Sparring mit weniger Stunden."
+        answer: "Monat 1: Diagnose – wie funktioniert dein Unternehmen wirklich? Monat 2–3: Systeme bauen, implementieren, testen. Dann: wöchentliche Workshops, wir bauen Prozesse, Rollen, Kennzahlen. Ab Monat 4 Sparring statt Vollgas – weniger Stunden, du steuerst allein. Fertig."
       - question: "Muss ich mich langfristig binden?"
-        answer: "Nein. Das Setup-Projekt läuft über 3 Monate. Danach ist die laufende Begleitung monatlich kündbar. Kein Abo, kein Lock-in."
+        answer: "Nein. Das Setup-Projekt ist 3 Monate, danach monatlich kündbar. Punkt. Die meisten bleiben im Sparring, weil sie den Spiegel brauchen – freiwillig, nicht gezwungen."
+      - question: "Kann die Beratung auch bei einem Unternehmensverkauf helfen?"
+        answer: "Absolut. Ein Unternehmen, das ohne dich funktioniert, ist zehnmal wertvoller. Wir arbeiten an den harten Faktoren: Prozesse, Führungsteam, Zahlen, Strategie. Das Ergebnis: Du könntest morgen verkaufen – oder einfach nur entspannter leben. Beides gut."
       - question: "Arbeitest du vor Ort oder remote?"
-        answer: "Beides. Workshops und Diagnose-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
-      - question: "Was, wenn ich ein kleineres Budget habe?"
-        answer: "Dann passen wir den Umfang an. Weniger Stunden pro Woche, fokussiert auf den einen Hebel, der gerade am meisten bringt. Lieber klein starten und sehen, ob es funktioniert."
-      - question: "Gibt es eine Förderung?"
-        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."
+        answer: "Vor-Ort-Diagnose, Remote-Sparring. Bei Workshops bin ich lieber physisch da – man sieht Sachen, die im Video nie auffallen. Der laufende Austausch funktioniert top remote, die meisten sitzen in Bayern/Österreich, aber ich arbeite bundesweit."
+      - question: "Was kostet die Zusammenarbeit?"
+        answer: "125 €/h, Setup je nach Größe von 4.750 bis 9.500 Euro über drei Monate. Kleineres Budget? Kleinere Pakete, gleich fokussiert. Im Gespräch schneiden wir's auf deine Situation zu."
+      - question: "Gibt es eine BAFA-Förderung für Unternehmensberatung?"
+        answer: "Ja. 50 % in den alten, bis 80 % in den neuen Bundesländern. Ich mach den Antrag mit – kein Extrahonorar."

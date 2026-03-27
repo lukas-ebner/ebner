@@ -8,8 +8,8 @@ slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────
   - template: hero-split
     pill: "Systeme & Automatisierung"
-    headline: "Eine digitale Transformation, die mitdenkt – statt 15 Tools, die gegeneinander arbeiten."
-    subtext: "Tool Audit, Systemkonsolidierung und Automatisierung von Geschäftsprozessen für Unternehmen, die ihre digitale Infrastruktur professionalisieren wollen."
+    headline: "Dein Tech-Stack kostet dich mehr, als er bringt."
+    subtext: "Gute Prozesse brauchen das richtige System. Wir konsolidieren deine Tools, automatisieren Routinen und schaffen eine Single Source of Truth – damit du steuerst statt suchst."
     cta:
       text: "Gespräch vereinbaren"
       url: "/erstgespraech"
@@ -19,8 +19,8 @@ slides:
 
   # ── 2. PROBLEM INTRO (nur Headline + Body) ────────────
   - template: problem
-    headline: "Zwar jede Menge Tools. Trotzdem kein Überblick."
-    body: "Du merkst es an den Excel-Sheets, die sich widersprechen. An den Meetings, in denen ihr Zahlen diskutiert, die niemand vertraut. An der Zeiterfassung, die keiner pflegt – weil sie in einem anderen Tool liegt als die Projekte.\n\nDas ist kein Technologie-Problem. Das ist ein Architektur-Problem. Und es kostet dich jeden Tag bares Geld."
+    headline: "Jedes Tool löst ein Problem. Aber keines löst das eigentliche."
+    body: "Du hast ein CRM, ein PM-Tool, eine Zeiterfassung, ein Wiki und fünf Excel-Sheets dazwischen. Jedes wurde mit guter Absicht eingeführt. Aber zusammen erzeugen sie das Gegenteil von Überblick: Datensilos, Doppelarbeit und ein Geschäftsführer, der trotzdem in jedem Meeting nach den echten Zahlen fragt.\n\nDas ist kein Technologie-Problem. Das ist ein Architektur-Problem. Und es kostet dich jeden Tag bares Geld."
     symptoms: []
 
   # ── 3. TOOL-CLOUD (interaktiv, direkt unter dem Text) ─
@@ -79,7 +79,7 @@ slides:
   - template: credibility
     bg: "#0D4F54"
     headline: "Ich kenne das. Weil ich das ERP für Agenturen gebaut habe."
-    body: "15 Jahre lang habe ich ein Unternehmen aufgebaut – von null auf 50 Mitarbeiter und 4 Mio Umsatz. Ich habe jedes Projektmanagement Software am Markt für Agenturen ausprobiert. Keins hat gepasst.\n\nAlso haben wir unser eigenes gebaut: Leadtime. Ein ERP für Digitalunternehmen und Agenturen. Heute nutzen es dutzende Agenturen erfolgreich. Ich weiß nicht nur, wie digitale Transformation funktionieren sollte – ich habe ein Produkt gebaut, das sie ermöglicht."
+    body: "Ich hab jedes Projektmanagement-Tool am Markt ausprobiert – Asana, Monday, Notion, Harvest. Keins konnte, was eine Agentur mit 50 Leuten wirklich braucht. Also hab ich Leadtime gebaut: ein ERP für Unternehmen im Projektgeschäft. Dutzende Agenturen arbeiten heute damit.\n\nWenn ich sage, ich verstehe eure Tool-Probleme – dann meine ich das wörtlich. Ich hab sie selbst gehabt, und ich hab die Lösung dafür programmiert."
     proofs:
       - text: "15 Jahre Geschäftsführer einer Digitalagentur"
       - text: "Leadtime als ERP-Produkt entwickelt und am Markt etabliert"
@@ -105,51 +105,42 @@ slides:
       - src: /images/leadtime/slide-tasks.png
         alt: "Leadtime – Task Management"
 
-  # ── 6. NUMBERED FEATURES: Woran wir arbeiten ─────────
-  - template: numbered-features
-    headline: "Woran wir arbeiten."
-    body: "Je nachdem, wo dein größter Hebel liegt. Kein starres Programm – wir arbeiten an dem, was den Unterschied macht."
-    features:
+  # ── 6. PARALLAX STORY: Woran wir arbeiten ────────────
+  - template: parallax-story
+    image:
+      src: /images/systeme/lukas-flowchart.jpg
+      alt: "Lukas Ebner vor einem Flowchart"
+    sections:
+      - headline: "Woran wir arbeiten."
+        body: "Drei Bereiche, die zusammenhängen. Wir starten dort, wo es am meisten brennt."
       - headline: "Tool Audit & Prozessanalyse."
         body: "Welche Tools nutzt ihr wirklich? Welche Daten werden doppelt gepflegt? Wo gehen Informationen verloren? Für Agenturen ist das besonders kritisch – [Zeiterfassung](/blog/zeiterfassung-agentur), Projektmanagement, Rechnungsstellung müssen zusammenspielen.\n\nIch schaue mir nicht nur die Tools an, sondern die Arbeitsabläufe dahinter – und finde die Stellen, an denen ihr jeden Tag Zeit und Geld verbrennt."
-        image:
-          src: /images/fotos/DSC00263.jpg
-          alt: "Tool-Audit am Whiteboard"
       - headline: "Systemarchitektur & Konsolidierung."
         body: "Wir entwerfen die Ziel-Architektur: Welches System wird die zentrale Datenquelle? Was wird angebunden, was abgeschafft?\n\nWeniger ist hier immer mehr. Drei verbundene Tools schlagen fünfzehn isolierte. Das ist genau das Thema von [ERP für Agenturen](/blog/erp-fuer-agenturen) – eine durchdachte Systemarchitektur statt Wildwuchs."
-        image:
-          src: /images/fotos/DSC00270.jpg
-          alt: "Systemarchitektur entwerfen"
-      - headline: "Automatisierung von Geschäftsprozessen & Workflows."
-        body: "Zeiterfassung → [Controlling](/blog/controlling-fuer-agenturen) → Rechnungsstellung – insbesondere die Leadtime für Agenturen ist massiv. Reports, die sich selbst schreiben. Daten, die einmal eingegeben werden und überall verfügbar sind.\n\nAlles, was regelbasiert ist, läuft automatisch. Dein Team arbeitet – das System rechnet. Das spart Zeit und senkt Kosten auf ganzer Linie."
-        image:
-          src: /images/fotos/DSC00277.jpg
-          alt: "Workflow-Automatisierung"
+      - headline: "Automatisierung & Workflows."
+        body: "Zeiterfassung → [Controlling](/blog/controlling-fuer-agenturen) → Rechnungsstellung – die Kette muss durchgängig sein. Reports, die sich selbst schreiben. Daten, die einmal eingegeben werden und überall verfügbar sind.\n\nAlles, was regelbasiert ist, läuft automatisch. Dein Team arbeitet – das System rechnet."
       - headline: "Migration & Enablement."
         body: "Daten sauber migrieren, ohne Verluste. Dein Team schulen, damit es das System lebt – nicht nur kennt.\n\nDokumentation, Übergabe und eine Übergangsphase, in der ich erreichbar bin, falls etwas klemmt."
-        image:
-          src: /images/fotos/DSC00321.jpg
-          alt: "Team-Schulung und Enablement"
 
   # ── 7. ICON CIRCLES: Drei Phasen (dark) ──────────────
   - template: icon-circles
-    headline: "Drei Hebel. In dieser Reihenfolge."
-    subtext: "Kein 200-Seiten-Konzept. Drei klare Phasen."
+    headline: "Drei Phasen. Klar getaktet."
+    subtext: "Kein Endlos-Projekt. Analyse, Umbau, Begleitung."
     items:
       - icon: search
         title: "Analyse"
         body: "Ich schaue mir an, wie eure Tool-Landschaft wirklich funktioniert – nicht wie sie im Organigramm aussieht. Welche Daten fließen wo? Wo wird doppelt gepflegt? Wo verliert ihr Marge, ohne es zu merken?"
       - icon: wrench
         title: "System bauen"
-        body: "Wir konsolidieren eure Tools auf eine zentrale Architektur. Klare Datenflüsse, automatisierte Workflows, ein System als Single Source of Truth. Pragmatisch, so dass euer Team es auch lebt."
+        body: "Wir konsolidieren eure Tools auf eine zentrale Architektur. Klare Datenflüsse, automatisierte Workflows, ein System als Single Source of Truth – aufgebaut so, dass euer Team es tatsächlich nutzt."
       - icon: message-circle
         title: "Laufendes Sparring"
         body: "Wenn das System steht, wechseln wir ins Sparring. Optimierung, neue Anforderungen, Skalierung. Ich bleibe als technischer Sparringspartner an Bord – so lange es Sinn macht."
 
   # ── 8. PRICING TEASER (fullscreen) ────────────────────
   - template: pricing-teaser
-    headline: "Transparent. Ab 125 €/h."
-    body: "Kein Pauschalpreis. Ein klarer Stundensatz und ein bedarfsgerechter Plan – je nach Unternehmensgröße."
+    headline: "Klare Preise. Ab 125 €/h."
+    body: "Stundensatz, keine Tagessätze. Pakete je nach Unternehmensgröße – alles transparent kalkulierbar."
     hourlyRate: "125 €"
     tiers:
       - label: "S"
@@ -164,7 +155,7 @@ slides:
         employees: "40–100 Mitarbeiter"
         price: "9.500 €"
         suffix: "3-Monats-Setup"
-    footnote: "Richtwerte. Im Erstgespräch entwickeln wir einen individuellen Plan."
+    footnote: "Orientierungswerte. Den konkreten Umfang klären wir im Erstgespräch."
     cta:
       label: "Alle Preise & Details"
       href: "/preise"
@@ -176,14 +167,26 @@ slides:
     bg: "#E6EEEF"
     items:
       - question: "Was passiert im Erstgespräch?"
-        answer: "30 Minuten, kein Pitch. Wir klären, wie eure aktuelle Tool-Landschaft aussieht, wo der größte Schmerzpunkt liegt – und ob eine Zusammenarbeit Sinn macht."
+        answer: "Du erzählst mir, welche Tools ihr nutzt und wo es hakt. Ich sage dir, ob ein [Tool Audit](/blog/tool-audit) Sinn macht und wo der erste Hebel liegt. 30 Minuten, gratis."
+      - question: "Was genau ist ein Tool Audit?"
+        answer: "Ich schaue mir an, wie eure Infrastruktur wirklich läuft – nicht wie sie auf dem Papier aussieht. Wo fließen Daten doppelt? Welche Informationen gehen verloren? Welche [Tools](/blog/tool-audit) sind Ballast? Das Ergebnis: eine klare Übersicht eurer digitalen Architektur und der konkrete erste Schritt."
+      - question: "Brauchen wir ein ERP-System oder reichen einzelne Tools?"
+        answer: "Kommt drauf an. Unter 10 Mitarbeitern genügt meist eine Kombination aus 3–4 sauber integrierten Tools. Danach wird's kritisch: Datensilos entstehen, widersprüchliche Zahlen, Reporting-Chaos. Ein ERP wie Leadtime – vor allem für Agenturen – fasst Projektmanagement, [Zeiterfassung](/blog/zeiterfassung-agentur), Controlling und Rechnungsstellung zusammen. Echte Frage: Habt ihr eine [Single Source of Truth](/blog/single-source-of-truth) oder nicht?"
       - question: "Muss ich Leadtime nutzen?"
-        answer: "Nein. Wenn Leadtime zu eurer Situation passt, fließt es in die Empfehlung ein. Muss es aber nicht. Ich bin Tool-agnostisch und empfehle, was für euch am besten funktioniert."
+        answer: "Nein, klar nicht. Manchmal ist ein anderes System die bessere Antwort. Manchmal brauchst du nur deine bestehenden Tools besser verbunden. Mein Job ist, dir eine funktionierende Architektur zu bauen – nicht ein Produkt zu verkaufen."
+      - question: "Was, wenn wir schon Tools haben, die wir behalten wollen?"
+        answer: "Dann behalten wir sie. Der Punkt ist nicht, alles wegzuwerfen, sondern herauszufinden, was echten Wert bringt und was nur noch da ist, weil es immer da war. Eine straffe, verbundene Architektur schlägt immer einen Flickenteppich."
+      - question: "Wie läuft die digitale Transformation im Mittelstand konkret ab?"
+        answer: "Drei Phasen. Phase 1: Ich analysiere, wie eure Tools wirklich genutzt werden, wo der Datenchaos entsteht. Phase 2: Wir entwerfen die Ziel-Architektur – welches System wird Zentrale, was wird angebunden, was raus? Phase 3: Migration und Enablement. Nach 2–3 Monaten habt ihr ein System, das arbeitet. Nicht nur existiert."
       - question: "Wie lange dauert so ein Projekt?"
-        answer: "Das Setup dauert typischerweise 2–3 Monate: Analyse, Architektur, Implementierung und Übergabe. Danach wechseln wir ins laufende Sparring mit weniger Stunden."
-      - question: "Was, wenn wir schon ein Tool haben, das wir behalten wollen?"
-        answer: "Kein Problem. Nicht jedes Tool muss weg. Manchmal ist die richtige Antwort eine Anbindung oder Integration statt eines Wechsels. Wir schauen, was Sinn macht."
+        answer: "Das Basis-Setup ist meist 2–3 Monate. Wie lange genau hängt davon ab, wie viele Tools ihr habt und wie verstrickt eure Daten sind. Nach der Implementierung kann noch ein halbes Jahr Optimierung folgen – dann tauschen wir uns monatlich aus und tweaken nach. Die meisten merken den Effekt schon nach 4–6 Wochen, wenn die ersten Automatisierungen greifen."
+      - question: "Was bringt Automatisierung von Geschäftsprozessen im KMU?"
+        answer: "Zeit. Fehlerfreiheit. Nachdenken statt Datenpflege. Ein echtes Beispiel: Monatsabschluss. Vorher zwei Tage Excel-Frickelei, nachher ein Klick. Projekt-Reporting statt Wochenlange Vorbereitung – ein Dashboard, das live ist. Ihr unterschätzt, wie viel Stunden in stupider Datenmigration zwischen Tools verbrannt werden, die [Automatisierung](/blog/automatisierung) in Sekunden erledigt."
+      - question: "Was kostet die Zusammenarbeit?"
+        answer: "Je nach Größe: 4.750 € für 5–15 Leute, 7.000 € für 15–40, 9.500 € für 40–100. Drin: komplette Analyse, Architektur, Implementierung, Migration, Schulung. Budget zu knapp? Fangen wir mit einem fokussierten [Tool Audit](/blog/tool-audit) an – vielleicht fünf, sechs Stunden, dann sehen wir."
       - question: "Arbeitest du vor Ort oder remote?"
-        answer: "Beides. Workshops und Analyse-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
-      - question: "Gibt es eine Förderung?"
-        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50% (alte Bundesländer) bzw. 80% (neue Bundesländer) der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."
+        answer: "Vor Ort für Audit und Analyse – sehe dann, wie euer Team wirklich mit Tools umgeht. Remote für den Rest. Funktioniert genauso gut."
+      - question: "Gibt es eine BAFA-Förderung für Digitalisierungsberatung?"
+        answer: "Ja. Bis zu 50 % Zuschuss, in den neuen Bundesländern sogar 80 %. Digitalisierungsberatung fällt voll rein. Ich kümmere mich um den Papierkram – von Antrag bis Abrechnung."
+      - question: "Muss ich wirklich alles neu machen?"
+        answer: "Nein. Wir ersetzen nur, was kaputt ist. Oft sind eure bestehenden Tools völlig ok – sie sind nur nicht verbunden. Konsolidierung ist nicht das Gleiche wie Kahlschlag."

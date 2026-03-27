@@ -39,6 +39,7 @@ interface SymptomsGridSlideProps {
   headline?: string
   body?: string
   symptoms: Symptom[]
+  imageStyle?: 'circle' | 'panorama'
 }
 
 function bodyParagraphs(body: string): string[] {
@@ -52,6 +53,7 @@ export function SymptomsGridSlide({
   headline,
   body,
   symptoms,
+  imageStyle = 'circle',
 }: SymptomsGridSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
@@ -60,11 +62,11 @@ export function SymptomsGridSlide({
 
   return (
     <div ref={ref} className="bg-white">
-      <div className="mx-auto max-w-[1600px] px-8 py-32 lg:px-20 lg:py-48">
+      <div className="mx-auto max-w-[1600px] px-8 pb-32 pt-16 lg:px-20 lg:pb-48 lg:pt-24">
         {/* ── Optional Headline + Body ── */}
         {hasIntro && (
           <motion.div
-            className="mb-20 lg:mb-28"
+            className="mb-20 grid grid-cols-1 items-start gap-x-20 lg:mb-28 lg:grid-cols-2"
             initial={{ opacity: 0, y: 32 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -75,7 +77,7 @@ export function SymptomsGridSlide({
               </h2>
             )}
             {introParagraphs.length > 0 && (
-              <div className="mt-8 max-w-[640px] space-y-4">
+              <div className="mt-8 max-w-[640px] space-y-4 lg:mt-0">
                 {introParagraphs.map((p, i) => (
                   <p
                     key={i}
@@ -106,8 +108,19 @@ export function SymptomsGridSlide({
                   delay: 0.15 + i * 0.1,
                 }}
               >
-                {/* Photo circle (large) — takes priority over icon */}
-                {hasImage && (
+                {/* Image — panorama (2:1) or circle depending on imageStyle */}
+                {hasImage && imageStyle === 'panorama' && (
+                  <div className="relative mb-6 aspect-[2/1] w-full overflow-hidden rounded-lg">
+                    <Image
+                      src={symptom.image!}
+                      alt={symptom.headline}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                )}
+                {hasImage && imageStyle !== 'panorama' && (
                   <div className="relative mb-6 h-28 w-28 overflow-hidden rounded-full">
                     <Image
                       src={symptom.image!}

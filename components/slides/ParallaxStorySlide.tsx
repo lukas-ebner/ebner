@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import { InlineMarkdown } from '@/components/ui/InlineMarkdown'
 
 interface StoryBlock {
   type?: 'text' | 'quote'
@@ -35,7 +36,7 @@ export function ParallaxStorySlide({ image, sections, signature }: ParallaxStory
           style={{ y: bgY }}
         >
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-[center_20%]"
             style={{
               backgroundImage: `url(${image.src})`,
               top: '-15%',
@@ -90,7 +91,7 @@ export function ParallaxStorySlide({ image, sections, signature }: ParallaxStory
                   )}
                   {section.body && (
                     <p className={`font-body text-base leading-relaxed text-white/80 lg:text-lg ${section.headline ? 'mt-4' : ''}`}>
-                      {section.body}
+                      <InlineMarkdown text={section.body} />
                     </p>
                   )}
                 </motion.div>

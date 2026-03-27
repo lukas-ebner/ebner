@@ -12,6 +12,7 @@ interface ProjectTab {
 }
 
 interface ProjectsHeroSlideProps {
+  pill?: string
   headline: string
   subtext: string
   image?: ImageConfig
@@ -26,6 +27,7 @@ const DEFAULT_PROJECTS: ProjectTab[] = [
 ]
 
 export function ProjectsHeroSlide({
+  pill = 'Projekte',
   headline,
   subtext,
   image,
@@ -65,53 +67,86 @@ export function ProjectsHeroSlide({
   }
 
   return (
-    <div className="relative grid min-h-screen grid-cols-1 items-stretch bg-surface-dark lg:grid-cols-2">
-      {/* Text side */}
+    <div className="relative flex min-h-screen items-center justify-center bg-surface-dark overflow-hidden">
+      {/* Background image */}
+      {image && (
+        <div className="absolute inset-x-0 top-0 h-[55%] md:h-full md:bottom-0">
+          <ImageWithFallback
+            src={image.src}
+            alt={image.alt || ''}
+            fill
+            className="object-cover object-[70%_30%] md:object-center"
+            style={{ opacity: image.opacity ?? 0.25 }}
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface-dark to-transparent md:hidden" />
+        </div>
+      )}
+
+      {/* Lighter gradient overlay — keeps text readable without killing the image */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(to bottom, rgba(15,15,15,0.5) 0%, rgba(15,15,15,0.2) 40%, rgba(15,15,15,0.55) 100%)',
+        }}
+      />
+
       <motion.div
-        className="order-2 flex flex-col justify-center px-8 py-12 lg:order-none lg:px-12 lg:py-24"
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className="relative z-10 flex flex-col items-center px-6 py-24 text-center lg:py-32"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
       >
+        {/* Pill */}
         <span
-          className="mb-4 inline-block w-fit rounded-full px-3 py-1 font-mono text-xs font-normal uppercase tracking-widest text-white/90"
+          className="mb-8 inline-block rounded-full px-5 py-2 font-mono text-pill font-normal uppercase tracking-widest text-white/90"
           style={{ backgroundColor: 'color-mix(in srgb, #F44900 30%, transparent)' }}
         >
-          Projekte
+          {pill}
         </span>
 
-        <h1 className="font-display text-h2 font-normal text-text-light lg:text-h1">
+        {/* Headline */}
+        <h1 className="font-display text-h1 font-normal text-text-light lg:text-stat">
           {headline}
         </h1>
-        <p className="mt-6 max-w-lg font-body text-lg leading-relaxed text-text-light/70">
-          {subtext}
-        </p>
 
-        {/* Project nav – replaces CTA */}
-        <div className="mt-10 flex flex-wrap gap-2">
+        {/* Subtext */}
+        <div className="mt-8 max-w-2xl space-y-4 font-body text-body leading-relaxed text-text-light/70">
+          {subtext
+            .split(/\n\n+/)
+            .filter(Boolean)
+            .map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+        </div>
+
+        {/* Project nav — prominent buttons with colored borders */}
+        <div className="mt-14 flex flex-wrap justify-center gap-3">
           {items.map((p) => {
             const isActive = activeId === p.id
             return (
               <button
                 key={p.id}
                 onClick={() => scrollTo(p.id)}
-                className={`relative shrink-0 rounded-full px-5 py-2.5 font-mono text-xs uppercase tracking-wider transition-all ${
-                  isActive
-                    ? 'text-white'
-                    : 'text-text-light/40 hover:text-text-light/70'
-                }`}
+                className="relative shrink-0 rounded-full px-7 py-3 font-mono text-label uppercase tracking-wider transition-all text-white/90 hover:text-white"
+                style={{
+                  border: `1.5px solid ${isActive ? p.color : `${p.color}60`}`,
+                  backgroundColor: isActive ? `${p.color}30` : `${p.color}15`,
+                }}
               >
                 {isActive && (
                   <motion.div
                     layoutId="hero-project-tab"
-                    className="absolute inset-0 rounded-full border border-white/20"
-                    style={{ backgroundColor: `${p.color}25` }}
+                    className="absolute inset-0 rounded-full"
+                    style={{ backgroundColor: `${p.color}20`, boxShadow: `0 0 20px ${p.color}30` }}
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
                 )}
-                <span className="relative z-10 flex items-center gap-2">
+                <span className="relative z-10 flex items-center gap-2.5">
                   <span
-                    className="inline-block h-2 w-2 rounded-full"
+                    className="inline-block h-2.5 w-2.5 rounded-full"
                     style={{ backgroundColor: p.color }}
                   />
                   {p.label}
@@ -122,19 +157,25 @@ export function ProjectsHeroSlide({
         </div>
       </motion.div>
 
-      {/* Image side */}
-      <div className="relative order-1 min-h-[300px] lg:order-none lg:min-h-0">
-        {image && (
-          <ImageWithFallback
-            src={image.src}
-            alt={image.alt || ''}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            priority
-          />
-        )}
-      </div>
+      {/* Scroll indicator — bottom center, more visible */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.8 }}
+      >
+        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/50">
+          Scroll
+        </span>
+        <motion.div
+          className="h-10 w-px"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(244,73,0,0.6), transparent)',
+          }}
+          animate={{ scaleY: [1, 0.4, 1] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        />
+      </motion.div>
     </div>
   )
 }

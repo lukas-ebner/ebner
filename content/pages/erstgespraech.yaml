@@ -12,9 +12,9 @@ slides:
       text: "Direkt zum Formular"
       url: "#bewerbung"
     image:
-      src: /images/fotos/DSC00695-2.jpg
+      src: /images/lukas-meetingraum.jpg
       alt: ""
-      opacity: 0.3
+      opacity: 0.5
 
   # ── 2. QUALIFICATION: Grün/Rot-Checks ─────────────────
   - template: qualification
@@ -100,15 +100,38 @@ slides:
     variant: light
     bg: "#E6EEEF"
     items:
-      - question: "Was passiert im Erstgespräch?"
-        answer: "30 Minuten, kein Pitch. Wir klären, wo dein größter Hebel liegt, was du bisher versucht hast – und ob eine Zusammenarbeit Sinn macht. Danach bekommst du ein konkretes Angebot."
-      - question: "Muss ich mich vorbereiten?"
-        answer: "Nein. Deine Antworten aus dem Formular reichen mir. Je ehrlicher du dort antwortest, desto besser kann ich mich vorbereiten – und desto schneller kommen wir zum Punkt."
-      - question: "Was kostet die Zusammenarbeit?"
-        answer: "Mein Stundensatz liegt bei 125 €. Die meisten Kunden starten mit einem 3-monatigen Setup-Projekt zwischen 4.750 € und 9.500 €, je nach Teamgröße. Alle Details findest du auf der Preise-Seite."
+      - question: "Was passiert im kostenlosen Erstgespräch?"
+        answer: "30 Minuten, in denen wir uns gegenseitig abchecken. Du erzählst mir, wie es in deinem Unternehmen aussieht – wo du gerade stehst, was dich unter Druck setzt. Ich stelle dir die Fragen, auf die es ankommt. Am Ende: Ich gebe dir eine ehrliche erste Diagnose mit einer Priorisierung, wo tatsächlich der größte Hebel liegt für dein Business. Du weißt dann, ob ich jemand bin, mit dem du arbeiten willst – und ich weiß, ob ich dir helfen kann."
+
+      - question: "Muss ich mich auf das Erstgespräch vorbereiten?"
+        answer: "Nö. Deine Formulardaten sind meine Vorbereitung."
+
+      - question: "Warum muss ich ein Formular ausfüllen?"
+        answer: "Damit wir nicht mit Basics anfangen. Die sieben Fragen machen den Unterschied zwischen einem oberflächlichen Schwatz und einem Gespräch, das dir tatsächlich weiterbringt. 5 Minuten Aufwand für etwas, das echte Substanz schafft – das ist ein faires Tauschverhältnis."
+
+      - question: "Was kostet die Unternehmensberatung?"
+        answer: "125 € netto die Stunde. Das klassische Einstiegsprojekt: 3 Monate, strukturierte Begleitung, je nach Firmengröße zwischen 4.750 und 9.500 €. Danach optional monatlich kündbar. Zu den Details und zur BAFA-Förderung schau auf die Preise-Seite – da ist alles aufgeschlüsselt."
+
+      - question: "Für wen ist die Beratung geeignet?"
+        answer: "Geschäftsführer und Inhaber von Unternehmen zwischen 5 und 100 Leuten. Branche egal, aber Schwerpunkt: Tech, SaaS, Dienstleistung, Mittelstand. Du brauchst Wachstum mit Struktur, oder Struktur vor dem nächsten Wachstum. Oder beides. Und du musst bereit sein, echte Dinge zu verändern – nicht nur zu reden."
+
       - question: "Muss ich mich langfristig binden?"
-        answer: "Nein. Das Setup-Projekt läuft über 3 Monate. Danach ist die laufende Begleitung monatlich kündbar. Kein Abo, kein Lock-in."
-      - question: "Arbeitest du vor Ort oder remote?"
-        answer: "Beides. Workshops und Diagnose-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
-      - question: "Gibt es eine Förderung?"
-        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50 % der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."
+        answer: "Das Setup-Projekt ist zeitlich definiert: 3 Monate, dann vorbei. Danach kannst du jeden Monat kündigen. Wenn du danach merkst, dass du es alleine schaffst – großartig. Ich behalte gerne niemanden, der mich nicht braucht."
+
+      - question: "Findet die Beratung vor Ort in Regensburg oder remote statt?"
+        answer: "Diagnose, Workshops und intensive Kickoffs gerne vor Ort – das macht oft mehr Sinn als eine Videoschleife. Das laufende Sparring funktioniert perfekt remote. Zwischen den Terminen bin ich asynchron da: Slack, E-Mail, kurze Videoschnipsel wenn nötig. Im Erstgespräch klären wir, was für deine Situation das beste Setup ist."
+
+      - question: "Gibt es eine BAFA-Förderung für die Beratung?"
+        answer: "Ja. Bis zu 50 % alte Bundesländer, bis zu 80 % neue. Ich bin gelistet und kümmere mich um den Antrag."
+
+      - question: "Wie schnell bekomme ich einen Termin?"
+        answer: "Kurze Antwort: meistens in 24 Stunden. Ich bekomme deine Bewerbung, lese sie mir durch, checke meinen Kalender und schreib dir einen konkreten Vorschlag. Manchmal dauert's ein, zwei Tage länger – aber ich prioritäre Erstgespräche, weil der Moment, in dem Menschen Hilfe suchen, meistens der richtige ist."
+
+      - question: "Was, wenn die Zusammenarbeit nicht passt?"
+        answer: "Dann sage ich dir das klar. Das Ganze ist keine Verkaufsveranstaltung. Es geht darum zu sehen: Passen wir zusammen, oder passt jemand anders besser? Wenn ich glaube, dass ich dir nicht helfen kann – oder dass jemand anders deutlich besser fit ist – sag ich's. Lieber kein Projekt als ein falsches."
+
+      - question: "Was unterscheidet dich von anderen Unternehmensberatern?"
+        answer: "Ich rede nicht über Theorie. Vier gegründete Unternehmen, alles selbst gebaut und durchgestanden – die meisten Rückschläge, die ich erzähle, sind meine eigenen. Du arbeitest mit mir, nicht mit einem Junior. Und mein Fokus ist klein bis mittelständisch, nicht Konzerne – ich kenne deine Probleme aus erster Hand."
+
+      - question: "Kann ich auch nur eine einzelne Beratungsstunde buchen?"
+        answer: "Ja. Aber probier erst das Erstgespräch. Kostenlos, unverbindlich, 30 Minuten – und wir klären dann zusammen: Reicht eine Stunde oder brauchst du Kontinuität? Für Ad-hoc-Fragen funktioniert Einzelstunden. Für echte Veränderung nicht."

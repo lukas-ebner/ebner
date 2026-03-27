@@ -145,6 +145,7 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
   const [finished, setFinished] = useState(false)
   const [isTyping, setIsTyping] = useState(false)
   const [introComplete, setIntroComplete] = useState(false)
+  const [paperSent, setPaperSent] = useState(false)
 
   // ASCII art intro animation
   // Slower animation (12ms per char) and logo stays visible
@@ -206,6 +207,7 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
         const updated = [...newMessages, { role: 'assistant' as const, content: data.reply }]
         setMessages(updated)
         if (data.reply.includes('/10')) setFinished(true)
+        if (data.pipelineTriggered) setPaperSent(true)
       }
     } catch {
       setMessages([
@@ -241,7 +243,7 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
           </pre>
           {asciiDone && (
             <p className="mt-4 font-mono text-xs tracking-wide text-white/40 lg:text-sm">
-              Mach den KI-Readiness-Check hier
+              Erzähl uns, was dich beschäftigt
               {!introComplete && <span className="ml-1 animate-pulse">_</span>}
             </p>
           )}
@@ -303,7 +305,7 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={started ? 'Deine Antwort…' : 'KI-Readiness-Check starten…'}
+            placeholder={started ? 'Deine Antwort…' : 'Gespräch starten…'}
             onFocus={() => { if (!started) sendMessage('') }}
             disabled={isLoading || isTyping}
             className="flex-1 bg-transparent font-mono text-base text-white placeholder-white/30 outline-none disabled:opacity-50"
@@ -318,13 +320,18 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
             </button>
           )}
         </form>
-      ) : introComplete && finished ? (
+      ) : introComplete && (finished || paperSent) ? (
         <div className="shrink-0 pt-4 text-center">
+          {paperSent && (
+            <p className="mb-3 font-mono text-xs text-white/50">
+              ✓ Dein Strategie-Paper wird erstellt und per E-Mail zugestellt.
+            </p>
+          )}
           <a
             href={ctaHref}
             className="inline-block rounded-full bg-white px-6 py-2.5 font-mono text-xs font-semibold uppercase tracking-wide text-text-primary transition-transform hover:scale-105"
           >
-            Ergebnis besprechen
+            {paperSent ? 'Ergebnis persönlich besprechen' : 'Ergebnis besprechen'}
           </a>
         </div>
       ) : null}
@@ -504,8 +511,22 @@ export function CredibilitySlide({
           </motion.div>
         )}
 
+        {/* ── Right Column: Chat only (no portraits, no slideshow) ── */}
+        {!hasSlideshow && !hasPortraits && hasChat && (
+          <motion.div
+            className="relative flex flex-col items-stretch justify-center px-6 py-20 lg:px-12 lg:py-32"
+            initial={{ opacity: 0, x: 40 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
+          >
+            <div className="flex h-[60vh] w-full flex-col rounded-xl bg-black/40 px-6 py-5 backdrop-blur-sm lg:h-[70vh]">
+              <PortraitChat ctaHref={chat?.ctaHref} isInView={isInView} />
+            </div>
+          </motion.div>
+        )}
+
         {/* ── Right Column: Single Image (non-slideshow, non-portraits) ── */}
-        {!hasSlideshow && !hasPortraits && image && (
+        {!hasSlideshow && !hasPortraits && !hasChat && image && (
           <motion.div
             className="relative flex items-center justify-center overflow-hidden lg:items-center lg:justify-end"
             initial={{ opacity: 0, x: 40 }}
@@ -575,11 +596,11 @@ export function CredibilitySlide({
 
       {/* Mobile slideshow */}
       {hasSlideshow && (
-        <div className="relative h-[50vh] w-full lg:hidden">
+        <div className="relative -mt-16 h-[45vh] w-full lg:hidden overflow-hidden">
           {slideshow!.map((slide, i) => (
             <motion.div
               key={i}
-              className="absolute inset-0"
+              className="absolute inset-0 p-4 pt-0"
               animate={{ opacity: i === activeSlide ? 1 : 0 }}
               transition={{ duration: 1, ease: 'easeInOut' }}
             >
@@ -587,27 +608,12 @@ export function CredibilitySlide({
                 src={slide.src}
                 alt={slide.alt ?? ''}
                 fill
-                className="object-cover object-left-top"
+                className="object-contain object-top"
                 sizes="100vw"
                 label={`Leadtime ${i + 1}`}
               />
             </motion.div>
           ))}
-          {slideCount > 1 && (
-            <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-              {slideshow!.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveSlide(i)}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === activeSlide
-                      ? 'w-8 bg-white'
-                      : 'w-3 bg-white/40 hover:bg-white/60'
-                  }`}
-                />
-              ))}
-            </div>
-          )}
         </div>
       )}
     </section>

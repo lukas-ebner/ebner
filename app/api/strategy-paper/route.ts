@@ -38,12 +38,13 @@ interface QuizData {
 interface RequestBody {
   email: string
   quiz: QuizData
+  chat_context?: string
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body: RequestBody = await req.json()
-    const { email, quiz } = body
+    const { email, quiz, chat_context } = body
 
     if (!email || !quiz || quiz.score === undefined || !quiz.pillar_scores) {
       return NextResponse.json(
@@ -61,7 +62,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Write input to temp file (avoids CLI arg escaping issues)
-    const inputJson = JSON.stringify({ email, quiz })
+    const inputJson = JSON.stringify({ email, quiz, ...(chat_context ? { chat_context } : {}) })
     const dataDir = path.join(process.cwd(), 'data')
     const tmpFile = path.join(dataDir, `pipeline-input-${Date.now()}.json`)
     await writeFile(tmpFile, inputJson, 'utf-8')

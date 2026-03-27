@@ -364,8 +364,8 @@ export function FreiheitstestSlide({
             className="flex min-h-screen flex-col px-6"
             exit={{ opacity: 0, y: -30, transition: { duration: 0.4 } }}
           >
-            {/* Text + Button – pushed lower */}
-            <div className="flex flex-1 flex-col items-center justify-end pb-8">
+            {/* Text + Button – centered on mobile, pushed lower on desktop */}
+            <div className="flex flex-1 flex-col items-center justify-center pb-4 md:justify-end md:pb-8">
               {/* Zeile 1 */}
               <motion.span
                 className="block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
@@ -421,7 +421,7 @@ export function FreiheitstestSlide({
                 alt="Lukas Ebner"
                 width={500}
                 height={600}
-                className="w-[300px] object-contain md:w-[400px] lg:w-[480px]"
+                className="w-[340px] object-contain md:w-[400px] lg:w-[480px]"
                 priority={false}
               />
             </motion.div>
@@ -673,7 +673,7 @@ export function FreiheitstestSlide({
               transition={{ delay: 0.9, duration: 0.4 }}
             >
               <a
-                href="/kontakt"
+                href="/erstgespraech"
                 className="text-sm text-white/50 underline-offset-4 transition-colors hover:text-white hover:underline"
               >
                 Oder direkt ein Erstgespräch vereinbaren →

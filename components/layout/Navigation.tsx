@@ -213,6 +213,17 @@ export function Navigation() {
               </li>
             ))}
           </ul>
+
+          {/* CTA Button */}
+          <div className="mt-auto pt-8">
+            <Link
+              href="/erstgespraech"
+              className="block w-full rounded-full bg-brand px-8 py-4 text-center font-mono text-label font-medium uppercase tracking-wider text-white transition-transform hover:scale-[1.02]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Erstgespräch buchen
+            </Link>
+          </div>
         </div>
       ) : null}
     </>

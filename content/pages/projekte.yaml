@@ -6,11 +6,13 @@ meta:
 slides:
   # ── 1. HERO mit Projekt-Navigation ──────────────────
   - template: projects-hero
-    headline: "Haut im Spiel."
-    subtext: "Ich berate nicht nur – ich baue, investiere und führe selbst. Vier Unternehmen, an denen ich beteiligt bin oder war."
+    pill: "Beteiligungen"
+    headline: "Skin in the Game."
+    subtext: "Vier Unternehmen – gegründet, geführt, skaliert. Kein Berater-Tourismus. Jede Empfehlung, die ich gebe, kommt aus eigener operativer Erfahrung."
     image:
-      src: /images/fotos/DSC00277.jpg
+      src: /images/fotos/DSC00695-2.jpg
       alt: "Lukas Ebner"
+      opacity: 0.55
     projects:
       - id: leadtime
         label: Leadtime
@@ -82,7 +84,7 @@ slides:
     color: "#0C4A6E"
     logo: /images/projects/fracto/fracto-logo.svg
     role: "Co-Founder & CTO"
-    headline: "Training should never be healthcare's weakest link."
+    headline: "Produktschulung in Minuten – nicht Monaten."
     body: "AI-gestützte Schulungsplattform für die MedTech-Industrie. Fracto produziert und hostet Produktschulungen für medizintechnische Geräte – als White-Label-Plattform mit AI Voice Bot."
     image:
       src: /images/projects/fracto/DSC04514.jpg
@@ -203,11 +205,38 @@ slides:
     bg: "#E6EEEF"
     variant: light
     items:
-      - question: "Bist du an allen Unternehmen noch beteiligt?"
-        answer: "An Leadtime und Fracto bin ich aktiv beteiligt und operativ tätig. Bei Kraftwerk bin ich im Beirat. eins+null habe ich 2022 verkauft – dort bin ich nicht mehr involviert."
-      - question: "Kann man dich als Berater für externe Projekte buchen?"
-        answer: "Ja, über die Wachstumscoach GmbH. Mein Fokus liegt auf Geschäftsführer-Coaching und Operations-Beratung für IT- und Software-Unternehmen."
-      - question: "Investierst du auch in andere Unternehmen?"
-        answer: "Aktuell nur in meine eigenen Projekte. Ich bin kein klassischer Investor, sondern ein operativer Gründer. Wenn ich investiere, dann mit Haut im Spiel – nicht als stiller Teilhaber."
-      - question: "Was war der Hintergrund des Exits bei eins+null?"
-        answer: "Nach 13 Jahren war es Zeit für etwas Neues. Das Unternehmen war profitabel und gut aufgestellt. Der Verkauf an Kraftwerk war die richtige Entscheidung – für das Team, die Kunden und für mich."
+      - question: "An welchen Unternehmen ist Lukas Ebner aktuell beteiligt?"
+        answer: "Vier Stück. Leadtime, Fracto, Kraftwerk (Beirat und Cap-Table) und eins+null (2022 exit, über). Nur bei Leadtime und Fracto bin ich noch täglich am Hebel."
+
+      - question: "Was ist Leadtime und für wen ist die Plattform gedacht?"
+        answer: "Leadtime verbindet Projektmanagement, Zeiterfassung, Abrechnung und Sales-Pipeline für Agencies und IT-Dienstleister. Im Kern: Ein ganzheitliches ERP statt zehn separater Tools. Keine Excel-Workarounds, keine Systembrüche. Aus 15 Jahren eigenem PM-Schmerz entstanden. Finanziert sich selbst, kein VC-Geld, keine Wachstumsdruck-Geschichte."
+
+      - question: "Was macht Fracto und wie setzt die Plattform KI ein?"
+        answer: "Medizintechnik-Schulungen aus Produktdokumentation. Automatisch. Ein AI Voice Bot sitzt am Gerät – QR-Code scannen, Frage stellen, Antwort kriegen. Die Plattform ist White-Label, DSGVO-sauber, mehrsprachig. Wird von zwei Leuten gebaut. Das ist der echte AI-Hebel, kein Hype."
+
+      - question: "Was ist die Kraftwerk Software Holding und welche Rolle spielt Lukas Ebner dort?"
+        answer: "Kraftwerk bündelt sechs Softwareunternehmen – 350+ Köpfe, 500+ Kunden. Das Betriebssystem für Energieversorger, Stadtwerke, E-Mobility-Player. Nach dem eins+null-Exit bin ich stille Beteiligung geblieben und sitze im Beirat. Sehe von der Board-Seite aus, wie Übernahmen integriert und Plattformen aufgebaut werden."
+
+      - question: "Warum hat Lukas Ebner eins+null verkauft?"
+        answer: "13 Jahre Bootstrapping, dann war das Unternehmen stabil, profitabel, 50 Köpfe, über 1.000 Kundenprojekte. Die Energie war raus. Kraftwerk hat das Beste für alle gewesen – für das Team, die Kunden, für meine nächsten Projekte. Der echte Mehrwert war der Exit-Prozess selbst: ich habe gelernt, wie Valuation, Verhandlung, Due Diligence funktionieren. Das spielen lässt sich nicht simulieren."
+
+      - question: "Kann man Lukas Ebner als Unternehmensberater buchen?"
+        answer: "Ja. Wachstumscoach GmbH, IT-Fokus, 5–100 Mitarbeiter, Geschäftsführer-Coaching und Operations. Was ich anders mache: keine Folien, nur echte Probleme und echte Lösungen von jemandem, der's selbst gelöst hat."
+
+      - question: "Was unterscheidet einen Gründer-Berater von einer klassischen Unternehmensberatung?"
+        answer: "McKinsey schickt dir einen 24-Jährigen mit 50 Slides. Ich hab zwei laufende Unternehmen, einen fertigen Exit und keine Illusion über Märkte. Wenn ich dir etwas empfehle, bin ich bereit, es selbst umzusetzen. Das ist der entscheidende Unterschied. Keine theoretische Beratung von einem, der nie an der Rampe gestanden hat."
+
+      - question: "Was bedeutet Bootstrapping und warum ist das relevant für die Beratung?"
+        answer: "Selbst finanzieren, keine Investoren im Nacken. eins+null und Leadtime sind beide bootstrapped. Das zwingt dich zu echten Metriken: Umsatz ja oder nein? Burnrate ist Realität, keine Vanity Metric. Diese Disziplin fehlt in vielen Unternehmen. Geld sparen ist eine Fähigkeit, keine Sparmaßnahme. Ich trainiere das."
+
+      - question: "Investiert Lukas Ebner auch in externe Unternehmen?"
+        answer: "Nein."
+
+      - question: "Wie funktioniert der Einstieg in die Zusammenarbeit?"
+        answer: "Kostenfreies Erstgespräch, 30 Minuten. Ich frage dich aus, wo dein größtes Problem sitzt, ob wir zusammenpassen, und ob ich dir helfen kann. Danach starten die meisten mit einem dreimonatigen Projekt. Kein Pitch, kein Verkauf, ehrlich."
+
+      - question: "In welchen Branchen hat Lukas Ebner Erfahrung?"
+        answer: "SaaS, IT-Dienstleistung, Agenturen, MedTech, Versorgungswirtschaft. Also alles, was ich gegründet oder bei Kraftwerk als Beirat gesehen habe. Die Prinzipien sind portierbar – gute Prozesse, gute Daten, gute Leute. Das funktioniert überall."
+
+      - question: "Was kostet eine Unternehmensberatung bei Lukas Ebner?"
+        answer: "Details auf der Preise-Seite. Kurzfassung: 125 € die Stunde, 3-Monats-Projekte 4.750–9.500 € je nach Team und Problem."

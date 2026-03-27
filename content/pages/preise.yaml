@@ -16,19 +16,10 @@ slides:
       src: /images/paintings/Leadtime_impressionist_oil_painting_someone_is_holding_an_old_4b66c5dd-942e-492a-a933-7e407d71e2ff_3.png
       alt: "Stoppuhr – transparente Preise"
 
-  # ── 2. TEXT + IMAGE: Wie ich arbeite ────────────────
-  - template: text-image
-    headline: "Wie ich arbeite."
-    body: "Ich rechne nach Stunden ab – transparent und nachvollziehbar. Je nach Unternehmensgröße ergibt sich ein unterschiedlicher Beratungsbedarf. Die Tabelle unten zeigt Richtwerte. Im Erstgespräch entwickeln wir gemeinsam einen Plan, der zu deiner Situation passt.\n\nDas typische Engagement ist ein 3-Monats-Setup: In den ersten beiden Monaten arbeiten wir intensiv an Analyse, Strategie und den ersten Umsetzungen. Ab Monat 3 wechseln wir in eine laufende Begleitung mit weniger Stunden – monatlich kündbar."
-    imagePosition: right
-    image:
-      src: /images/fotos/DSC00695-2.jpg
-      alt: "Lukas Ebner – Beratungsgespräch"
-
-  # ── 3. PRICING TABLE ─────────────────────────────────
+  # ── 2. PRICING TABLE ─────────────────────────────────
   - template: pricing-table
     headline: "Stundensatz & Richtwerte."
-    body: "Alle Preise netto. Der konkrete Umfang ergibt sich aus deiner Situation – die Tabelle zeigt Erfahrungswerte als Orientierung."
+    body: "Ich rechne nach Stunden ab – transparent und nachvollziehbar. Alle Preise netto. Je nach Unternehmensgröße ergibt sich ein unterschiedlicher Beratungsbedarf. Die Tabelle zeigt Erfahrungswerte als Orientierung. Das typische Engagement ist ein 3-Monats-Setup: In den ersten beiden Monaten arbeiten wir intensiv an Analyse, Strategie und den ersten Umsetzungen. Ab Monat 3 wechseln wir in eine laufende Begleitung mit weniger Stunden – monatlich kündbar. Im Erstgespräch entwickeln wir gemeinsam einen Plan, der zu deiner Situation passt."
     hourlyRate: "125 €"
     prototypingTab: true
     tiers:
@@ -68,14 +59,16 @@ slides:
       label: "Erstgespräch vereinbaren"
       href: "/erstgespraech"
 
-  # ── 4. TEXT + IMAGE: Was im Setup passiert ───────────
+  # ── 3. TEXT + FREISTELLER: Was im Setup passiert ─────
   - template: text-image
     headline: "Was im Setup passiert."
     body: "In der Setup-Phase (Monat 1–2) arbeiten wir typischerweise mit wöchentlichen Workshops. Je nach Unternehmensgröße sind das 2–4 Stunden pro Termin, plus Vor- und Nachbereitung sowie asynchrone Verfügbarkeit zwischen den Terminen.\n\nWir starten mit einer Diagnose: Wie funktioniert dein Unternehmen wirklich? Wo sind die Engpässe? Dann entwickeln wir konkrete Lösungen – Prozesse, Führungsstruktur, Kennzahlen – und beginnen direkt mit der Umsetzung.\n\nAb Monat 3 wechseln wir in den Sparring-Modus: kürzere, regelmäßige Sessions, in denen wir strategische Fragen durcharbeiten und die Umsetzung begleiten. Monatlich kündbar."
     imagePosition: right
+    freisteller: true
+    compact: true
     image:
-      src: /images/fotos/IMG_8265-2.jpg
-      alt: "Lukas Ebner – Workshop"
+      src: /images/lukas-mit-brille.png
+      alt: "Lukas Ebner"
 
   # ── 5. FAQ ──────────────────────────────────────────
   - template: faq
@@ -83,15 +76,38 @@ slides:
     variant: light
     bg: "#E6EEEF"
     items:
-      - question: "Was passiert im Erstgespräch?"
-        answer: "30 Minuten, kein Pitch. Wir klären, wo dein größter Hebel liegt, was du bisher versucht hast – und ob eine Zusammenarbeit Sinn macht. Danach bekommst du ein konkretes Angebot."
-      - question: "Wie läuft das Setup-Projekt ab?"
-        answer: "In den ersten zwei Monaten arbeiten wir intensiv: wöchentliche Workshops, Analyse deiner Prozesse, Entwicklung konkreter Lösungen. Ab Monat 3 wechseln wir ins laufende Sparring mit weniger Stunden."
-      - question: "Muss ich mich langfristig binden?"
-        answer: "Nein. Das Setup-Projekt läuft über 3 Monate. Danach ist die laufende Begleitung monatlich kündbar. Kein Abo, kein Lock-in."
-      - question: "Arbeitest du vor Ort oder remote?"
-        answer: "Beides. Workshops und Diagnose-Termine mache ich gerne vor Ort. Laufendes Sparring funktioniert hervorragend remote – per Video-Call und asynchron über Slack oder E-Mail."
-      - question: "Was, wenn ich ein kleineres Budget habe?"
-        answer: "Dann passen wir den Umfang an. Weniger Stunden pro Woche, fokussiert auf den einen Hebel, der gerade am meisten bringt. Lieber klein starten und sehen, ob es funktioniert."
-      - question: "Gibt es eine Förderung?"
-        answer: "Ja. Viele KMUs können über die BAFA-Förderung bis zu 50 % der Beratungskosten bezuschussen lassen. Ich unterstütze dich bei der Antragstellung."
+      - question: "Was kostet eine Unternehmensberatung pro Stunde?"
+        answer: "125 € netto – das ist dein Satz, egal ob Workshop, Diagnose oder Sparring. Die großen Häuser rechnen dir 2.000–4.000 € Tagessatz in Rechnung und schicken dir noch Junior-Berater dazu, die das Projekt als Trainingsfeld nutzen. Bei mir sitzen dir 20 Jahre operative Erfahrung gegenüber, kein Makro-Lehrbuch-Wissen."
+
+      - question: "Was passiert im kostenlosen Erstgespräch?"
+        answer: "30 Minuten, unverbindlich, kein Pitch. Ich stelle dir blöde Fragen – wo tut's weh, was hast du schon probiert, wer sitzt mit dir im Steering Committee – und sage dir danach ehrlich, ob das zusammenpasst oder nicht. Wenn nicht, sag ich dir das auch."
+
+      - question: "Wie läuft das 3-Monats-Setup-Projekt ab?"
+        answer: "Monat 1–2: wöchentliche Workshops (2–4 Stunden je nach Größe), Diagnose, dann direkt in die Umsetzung. Nicht erst ein 100-seitiges Konzept, sondern messbare Dinge. Monat 3: Wir fahren die Intensität runter, wechseln in Sparring. Das Ziel ist nicht ein schönes Papier, sondern dass dein Unternehmen anders tickt."
+
+      - question: "Muss ich mich langfristig an eine Unternehmensberatung binden?"
+        answer: "Nein. Nach dem Setup kannst du mir monatlich per E-Mail kündigen. Fertig. Wenn die Zusammenarbeit gut ist, bleiben die Kunden trotzdem – weil der Wert offensichtlich ist."
+
+      - question: "Was unterscheidet dich von klassischen Unternehmensberatungen?"
+        answer: "Erstens: Ich bin selbst Unternehmer, keine Karriere-Consultant. Ich habe vier Firmen aufgebaut und das auch gründlich in die Wand gefahren. Zweitens: Du redest mit mir, nicht mit einem Junior, der auswendig gelernte Frameworks herunterleiert. Drittens: Ich kenne die echten Probleme von 5–100-Personen-Unternehmen, nicht von Konzernen. Ich weiß, wie eng das Geld sitzt, wie sehr die Geschäftsführer im Daily-Business stecken, warum Prozessarbeit gegen Widerstände läuft."
+
+      - question: "Für welche Unternehmen ist die Beratung geeignet?"
+        answer: "5 bis 100 Mitarbeiter, du willst wachsen und strukturieren statt zu zerfasern, und du bist bereit, unangenehmen Wahrheiten ins Auge zu schauen. Tech, SaaS, Dienstleistung, Produktion – Branche egal. Wenn du jemandem suchst, der dir sagt, dass alles super läuft und du nur noch optimieren musst – bin ich falsch besetzt."
+
+      - question: "Arbeitest du vor Ort in Regensburg oder auch remote?"
+        answer: "Ich komme für die erste Phase gerne vor Ort – das ist wichtig, um dein Team zu spüren und die Abläufe zu sehen. In Regensburg ohnehin, deutschlandweit nach Absprache. Das laufende Sparring läuft remote per Video, ich bin zwischen den Terminen über Slack oder E-Mail erreichbar."
+
+      - question: "Was, wenn ich ein kleineres Budget für Beratung habe?"
+        answer: "Dann verkleinern wir das Setup. Vier bis sechs Stunden im Monat, konzentriert auf den einen Hebel, der gerade passt. Besser klein anfangen und sehen, ob es taugt, als ein Paket zu zahlen, bei dem die Hälfte liegen bleibt."
+
+      - question: "Gibt es eine BAFA-Förderung für Unternehmensberatung?"
+        answer: "Ja – je nach Bundesland zwischen 50 und 80 % Zuschuss, maximal 1.500–2.500 € pro Vorhaben. Die Antragstellung ist lästig, aber die Förderung rechnet sich. Ich bin gelistet und unterstütze dich durch den ganzen Prozess, kein Extrahonorar dafür."
+
+      - question: "Wie schnell sehe ich Ergebnisse?"
+        answer: "Sofort und später gleichzeitig. Ein besseres Führungsmeeting, ein dokumentierter Kernprozess – das wirkt ab Woche eins. Strategische Neupositionen brauchen 6–8 Wochen, bis sie greifen. Wir arbeiten von Tag 1 an Umsetzung, nicht erst wochen lang Analysen. Nach vier bis sechs Wochen berichten fast alle Kunden von Bewegung – bei der eigenen Klarheit, in der Teamdynamik, in der Effizienz."
+
+      - question: "Welche Themen deckt die Beratung ab?"
+        answer: "Strategie, Führung, Prozesse – das ist mein Spielfeld. Konkret: Positionierung, Geschäftsmodell, Führungsstrukturen, Skalierung, KPIs, Digitalisierung, Change. Was ich nicht bin: Steuerberater, IT-Infrastruktur-Spezialist, Buchhaltungs-Consultant. Für alles andere, das mit strategischer und operativer Weiterentwicklung zu tun hat – ja."
+
+      - question: "Kann ich auch nur einzelne Beratungsstunden buchen?"
+        answer: "Punktuelle Fragen ja, Tickets ja. Aber echte Transformation braucht Serie. Deshalb starten die meisten mit dem 3-Monats-Setup – das ist der Zeitraum, in dem sich Dinge wirklich verändern, nicht nur oberflächlich bewegen."

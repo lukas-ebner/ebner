@@ -11,9 +11,10 @@ import type { CtaConfig, ImageConfig } from '@/lib/types'
 interface StatItem {
   value: string
   label: string
+  hideMobile?: boolean
 }
 
-function HeroStat({ value, label }: StatItem) {
+function HeroStat({ value, label, hideMobile }: StatItem) {
   const ref = useRef(null)
   const enabled = useInView(ref, { once: true, margin: '-20px' })
   const target = parseStatTarget(value)
@@ -21,7 +22,7 @@ function HeroStat({ value, label }: StatItem) {
   const display = target !== null ? formatStatDisplay(value, animated) : value
 
   return (
-    <div ref={ref} className="text-center">
+    <div ref={ref} className={`text-center ${hideMobile ? 'hidden md:block' : ''}`}>
       <p className="font-display text-[2rem] font-bold text-text-light md:text-[2.5rem] lg:text-[3rem]">
         {display}
       </p>
@@ -59,7 +60,7 @@ export function HeroSlide({
           src={image.src}
           alt={image.alt ?? ''}
           fill
-          className="object-cover object-[70%_center] lg:object-center"
+          className="object-cover object-[30%_30%] lg:object-center"
           sizes="100vw"
           priority
           style={{ opacity }}
@@ -77,7 +78,7 @@ export function HeroSlide({
         }`}
       >
         {/* Content */}
-        <div className={`flex flex-1 items-end pb-6 lg:items-center lg:pb-0 ${isLeft ? 'justify-start' : 'justify-center'}`}>
+        <div className={`flex flex-1 items-center pb-0 lg:items-center lg:pb-0 ${isLeft ? 'justify-start' : 'justify-center'}`}>
           <motion.div
             className={`max-w-3xl ${isLeft ? 'text-left' : 'mx-auto text-center'}`}
             initial={{ opacity: 0, y: 28 }}
