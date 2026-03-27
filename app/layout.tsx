@@ -3,6 +3,8 @@ import './globals.css'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import { ScrollRestoration } from '@/components/ScrollRestoration'
+import { Analytics, GtmNoScript } from '@/components/Analytics'
+import { CookieConsent } from '@/components/CookieConsent'
 
 const faviconSvg = '/images/favicon.svg'
 
@@ -37,11 +39,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className="h-full">
+      <head>
+        <Analytics />
+      </head>
       <body className="flex min-h-full flex-col">
+        <GtmNoScript />
         <ScrollRestoration />
         <Navigation />
         <div className="flex-1">{children}</div>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   )

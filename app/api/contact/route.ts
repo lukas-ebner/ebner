@@ -16,7 +16,7 @@ import path from 'path'
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
-    const { name, email, company, message, actionCode } = body
+    const { name, email, company, message, actionCode, utm } = body
 
     if (!name || !email || !company) {
       return NextResponse.json(
@@ -46,6 +46,7 @@ export async function POST(req: NextRequest) {
           <p><strong>Unternehmen:</strong> ${company}</p>
           ${message ? `<p><strong>Details:</strong></p><p style="white-space: pre-line;">${message}</p>` : ''}
           ${actionCode ? `<p><strong>Aktionscode:</strong> ${actionCode}</p>` : ''}
+          ${utm ? `<hr style="margin: 16px 0; border-color: #eee;"/><p style="font-size: 12px; color: #999;"><strong>Attribution:</strong> ${utm.utm_source || '–'} / ${utm.utm_medium || '–'} / ${utm.utm_campaign || '–'}${utm.gclid ? ` (gclid: ${utm.gclid})` : ''}</p>` : ''}
         </div>`,
       }
 
@@ -60,7 +61,16 @@ export async function POST(req: NextRequest) {
     }
 
     // 2. Spawn enrichment pipeline in background (Research → Leadtime CRM)
-    spawnEnrichPipeline(email, 'erstgespraech', { name, company, message, actionCode })
+    spawnEnrichPipeline(email, 'erstgespraech', {
+      name,
+      company,
+      message,
+      actionCode,
+      ...(utm?.utm_source ? { utm_source: utm.utm_source } : {}),
+      ...(utm?.utm_medium ? { utm_medium: utm.utm_medium } : {}),
+      ...(utm?.utm_campaign ? { utm_campaign: utm.utm_campaign } : {}),
+      ...(utm?.gclid ? { gclid: utm.gclid } : {}),
+    })
 
     return NextResponse.json({ success: true })
   } catch (error) {

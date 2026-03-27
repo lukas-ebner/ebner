@@ -35,16 +35,34 @@ slides:
         body: |
           Wenn Sie uns über das Kontaktformular Mitteilungen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
 
-      - heading: "6. Cookies"
+      - heading: "6. Cookies und Einwilligung"
         body: |
-          Diese Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die auf Ihrem Endgerät abgelegt werden. Ihr Browser gibt diese an uns zurück, wenn Sie unsere Website besuchen.
+          Diese Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die auf Ihrem Endgerät abgelegt werden. Beim ersten Besuch der Website werden Sie über einen Cookie-Banner gefragt, ob Sie der Verwendung von Analyse- und Marketing-Cookies zustimmen möchten.
 
-          Sie können in Ihren Browser-Einstellungen bestimmen, ob Sie Cookies akzeptieren möchten oder nicht.
+          Notwendige Cookies (z.B. zur Speicherung Ihrer Cookie-Einstellungen) werden ohne Einwilligung gesetzt. Analyse- und Marketing-Cookies werden nur nach Ihrer ausdrücklichen Zustimmung aktiviert. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den Cookie-Speicher Ihres Browsers löschen.
 
-      - heading: "7. SSL-Verschlüsselung"
+      - heading: "7. Google Tag Manager"
+        body: |
+          Diese Website verwendet den Google Tag Manager (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Der Google Tag Manager ist eine Lösung, mit der wir Website-Tags über eine Oberfläche verwalten können. Der Tag Manager selbst setzt keine Cookies und erfasst keine personenbezogenen Daten. Er löst lediglich andere Tags aus, die ihrerseits unter Umständen Daten erfassen. Der Google Tag Manager greift nicht auf diese Daten zu.
+
+      - heading: "8. Google Analytics 4"
+        body: |
+          Diese Website nutzt Google Analytics 4 (Google Ireland Limited) zur statistischen Auswertung der Websitenutzung. Google Analytics verwendet Cookies, die eine Analyse der Benutzung der Website ermöglichen. Die Nutzung erfolgt nur nach Ihrer Einwilligung über den Cookie-Banner (Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO).
+
+          Google Analytics 4 anonymisiert IP-Adressen standardmäßig. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Die Datenübermittlung in die USA erfolgt auf Grundlage der EU-Standardvertragsklauseln.
+
+          Sie können die Erfassung durch Google Analytics verhindern, indem Sie im Cookie-Banner „Nur notwendige" wählen oder die Cookies in Ihren Browsereinstellungen deaktivieren.
+
+      - heading: "9. Google Ads Conversion Tracking"
+        body: |
+          Diese Website verwendet Google Ads Conversion Tracking (Google Ireland Limited). Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, wird von Google Ads ein Cookie auf Ihrem Rechner gesetzt – sofern Sie dem über den Cookie-Banner zugestimmt haben. So kann Google und wir erkennen, dass jemand auf eine Anzeige geklickt und zu unserer Seite weitergeleitet wurde.
+
+          Die erhobenen Daten werden zur Erstellung von Conversion-Statistiken verwendet. Wir erfahren die Gesamtanzahl der Nutzer, die auf eine unserer Anzeigen geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Wir erhalten dabei keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+
+      - heading: "10. SSL-Verschlüsselung"
         body: |
           Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass in der Adresszeile des Browsers ein „s" an dem "http" angehängt ist und sich ein Schloss-Symbol in der Browserzeile befindet.
 
-      - heading: "8. Änderung dieser Datenschutzerklärung"
+      - heading: "11. Änderung dieser Datenschutzerklärung"
         body: |
           Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit unter Beachtung der geltenden Datenschutzgesetze zu ändern. Eine Benachrichtigung über Änderungen erfolgt auf dieser Seite.

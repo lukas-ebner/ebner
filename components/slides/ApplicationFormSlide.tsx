@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
+import { getUtmParams } from '@/lib/utm'
 
 interface FormField {
   name: string
@@ -132,6 +133,9 @@ export function ApplicationFormSlide({
     }
 
     try {
+      // Collect UTM attribution data
+      const utmData = getUtmParams()
+
       // Submit via API (sends email + creates CRM lead)
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -142,12 +146,25 @@ export function ApplicationFormSlide({
           company,
           message,
           actionCode: trimmedCode || undefined,
+          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
         }),
       })
 
       if (!res.ok) {
         const data = await res.json()
         throw new Error(data.error || 'Fehler beim Senden')
+      }
+
+      // Push conversion event to dataLayer for GTM
+      if (typeof window !== 'undefined') {
+        const w = window as unknown as { dataLayer?: unknown[] }
+        w.dataLayer = w.dataLayer || []
+        w.dataLayer.push({
+          event: 'erstgespraech_anfrage',
+          form_name: 'erstgespraech',
+          lead_source: (formData.get('source') as string) || 'direct',
+          ...(utmData.utm_campaign ? { utm_campaign: utmData.utm_campaign } : {}),
+        })
       }
 
       setSubmitted(true)
