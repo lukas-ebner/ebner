@@ -8,6 +8,9 @@ const faviconSvg = '/images/favicon.svg'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),
+  alternates: {
+    canonical: 'https://lukasebner.de',
+  },
   title: 'Lukas Ebner',
   description: 'Unternehmensberatung für KMU',
   icons: {

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Blog – Lukas Ebner',
   description:
     'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+  alternates: {
+    canonical: 'https://lukasebner.de/blog',
+  },
   openGraph: {
     type: 'website',
     url: 'https://lukasebner.de/blog',

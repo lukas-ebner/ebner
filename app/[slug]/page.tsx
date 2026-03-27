@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title: page.meta.title,
       description: page.meta.description,
+      alternates: {
+        canonical: `https://lukasebner.de/${slug}`,
+      },
       openGraph: {
         type: 'website',
         url: `https://lukasebner.de/${slug}`,

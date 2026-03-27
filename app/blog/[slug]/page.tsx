@@ -22,6 +22,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: `${post.meta.title} – Lukas Ebner`,
       description: post.meta.description,
       keywords: [post.meta.keyword, ...(post.meta.nebenkeywords ?? [])].join(', '),
+      alternates: {
+        canonical: `https://lukasebner.de/blog/${slug}`,
+      },
       openGraph: {
         type: 'article',
         url: `https://lukasebner.de/blog/${slug}`,
