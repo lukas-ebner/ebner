@@ -368,7 +368,7 @@ export function FreiheitstestSlide({
             <div className="flex flex-1 flex-col items-center justify-center pb-4 md:justify-end md:pb-8">
               {/* Zeile 1 */}
               <motion.span
-                className="block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
+                className="block text-center font-display text-[1.8rem] font-normal leading-[1.15] text-white sm:text-[3rem] md:text-[4rem] lg:whitespace-nowrap lg:text-[5rem]"
                 initial={{ opacity: 0, y: 40 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
@@ -378,7 +378,7 @@ export function FreiheitstestSlide({
 
               {/* Zeile 2 */}
               <motion.span
-                className="mt-2 block whitespace-nowrap text-center font-display text-[2.2rem] font-normal leading-[1.1] text-white/60 sm:text-[3rem] md:text-[4rem] lg:text-[5rem]"
+                className="mt-2 block text-center font-display text-[1.8rem] font-normal leading-[1.15] text-white/60 sm:text-[3rem] md:text-[4rem] lg:whitespace-nowrap lg:text-[5rem]"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}

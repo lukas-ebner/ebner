@@ -60,7 +60,7 @@ export function HeroSlide({
           src={image.src}
           alt={image.alt ?? ''}
           fill
-          className="object-cover object-[30%_30%] lg:object-center"
+          className="object-cover object-[65%_15%] lg:object-[center_20%]"
           sizes="100vw"
           priority
           style={{ opacity }}
