@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Deploy to Coolify
 
 on:
   push:
@@ -6,20 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: npm
-
-      - name: Install and build
+      - name: Trigger Coolify deploy
+        env:
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_API_TOKEN }}
         run: |
-          npm ci
-          npm run build
-
-      - name: Docker build
-        run: docker build -t ebner-site .
+          response=$(curl -s -X POST https://coolify.fracto.live/api/v1/deploy \
+            -H "Authorization: Bearer ${COOLIFY_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '{"uuid": "r14lf1fiek8jne0b1yle1b6h", "force": false}')
+          echo "$response"
+          echo "$response" | grep -q "deployment_uuid" && echo "Deploy queued" || (echo "Deploy failed" && exit 1)
