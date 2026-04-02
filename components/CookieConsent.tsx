@@ -8,18 +8,25 @@ const CONSENT_KEY = 'ebner_cookie_consent'
 
 /**
  * Updates Google Consent Mode v2 based on the user's cookie choice.
+ * Uses the global gtag() function defined by Analytics component,
+ * falls back to direct dataLayer push with the standard arguments pattern.
  */
 function updateGoogleConsent(choice: 'all' | 'necessary') {
   if (typeof window === 'undefined') return
 
+  // Use the global gtag if available (set by Analytics.tsx inline script),
+  // otherwise create a standard-compliant fallback
   const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void }
   w.dataLayer = w.dataLayer || []
-  function gtag(...args: unknown[]) {
-    w.dataLayer!.push(args)
+  if (typeof w.gtag !== 'function') {
+    w.gtag = function () {
+      // eslint-disable-next-line prefer-rest-params
+      w.dataLayer!.push(arguments)
+    }
   }
 
   if (choice === 'all') {
-    gtag('consent', 'update', {
+    w.gtag('consent', 'update', {
       analytics_storage: 'granted',
       ad_storage: 'granted',
       ad_user_data: 'granted',
