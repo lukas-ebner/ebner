@@ -7,7 +7,7 @@ import { Analytics, GtmNoScript } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
 
 const faviconSvg = '/images/favicon.svg'
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { listBlogPosts, CATEGORY_LABELS, CATEGORY_COLORS } from '@/lib/blog'
 import { NoSnap } from '@/components/NoSnap'
 
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 export const metadata: Metadata = {
   title: 'Blog – Lukas Ebner',

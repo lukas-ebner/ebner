@@ -6,7 +6,7 @@ import { loadBlogPost, listBlogSlugs, CATEGORY_COLORS } from '@/lib/blog'
 import { NoSnap } from '@/components/NoSnap'
 import { BlogContent } from '@/components/BlogContent'
 
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -32,14 +32,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: `https://lukasebner.de/blog/${slug}`,
         title: `${post.meta.title} – Lukas Ebner`,
         description: post.meta.description,
-        images: [{ url: post.meta.image || defaultOgImage }],
+        images: [{ url: defaultOgImage }],
         publishedTime: post.meta.date,
       },
       twitter: {
         card: 'summary_large_image',
         title: `${post.meta.title} – Lukas Ebner`,
         description: post.meta.description,
-        images: [post.meta.image || defaultOgImage],
+        images: [defaultOgImage],
       },
     }
   } catch {

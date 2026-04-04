@@ -3,7 +3,7 @@ import { PageBuilder } from '@/components/PageBuilder'
 import { loadPage } from '@/lib/page-builder'
 import { listPublishedPosts, CATEGORY_LABELS } from '@/lib/blog'
 
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = loadPage('homepage')
@@ -18,13 +18,13 @@ export async function generateMetadata(): Promise<Metadata> {
       url: 'https://lukasebner.de',
       title: page.meta.title,
       description: page.meta.description,
-      images: [{ url: page.meta.og_image || defaultOgImage }],
+      images: [{ url: defaultOgImage }],
     },
     twitter: {
       card: 'summary_large_image',
       title: page.meta.title,
       description: page.meta.description,
-      images: [page.meta.og_image || defaultOgImage],
+      images: [defaultOgImage],
     },
   }
 }
