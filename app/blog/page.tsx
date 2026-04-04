@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { listBlogPosts, CATEGORY_LABELS, CATEGORY_COLORS } from '@/lib/blog'
 import { NoSnap } from '@/components/NoSnap'
 
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+
 export const metadata: Metadata = {
   title: 'Blog – Lukas Ebner',
   description:
@@ -15,11 +17,13 @@ export const metadata: Metadata = {
     url: 'https://lukasebner.de/blog',
     title: 'Blog – Lukas Ebner',
     description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+    images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blog – Lukas Ebner',
     description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
+    images: [defaultOgImage],
   },
 }
 

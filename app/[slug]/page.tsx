@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import { PageBuilder } from '@/components/PageBuilder'
 import { listPageSlugs, loadPage } from '@/lib/page-builder'
 
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
+
 interface PageProps {
   params: Promise<{ slug: string }>
 }
@@ -29,12 +31,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: `https://lukasebner.de/${slug}`,
         title: page.meta.title,
         description: page.meta.description,
-        ...(page.meta.og_image ? { images: [{ url: page.meta.og_image }] } : {}),
+        images: [{ url: page.meta.og_image || defaultOgImage }],
       },
       twitter: {
         card: 'summary_large_image',
         title: page.meta.title,
         description: page.meta.description,
+        images: [page.meta.og_image || defaultOgImage],
       },
     }
   } catch {

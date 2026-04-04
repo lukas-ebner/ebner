@@ -7,6 +7,7 @@ import { Analytics, GtmNoScript } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
 
 const faviconSvg = '/images/favicon.svg'
+const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),
@@ -24,11 +25,13 @@ export const metadata: Metadata = {
     url: 'https://lukasebner.de',
     title: 'Lukas Ebner',
     description: 'Unternehmensberatung für KMU',
+    images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lukas Ebner',
     description: 'Unternehmensberatung für KMU',
+    images: [defaultOgImage],
   },
 }
 
