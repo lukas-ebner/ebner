@@ -17,6 +17,7 @@ interface TimelineEntry {
 interface ParallaxImage {
   src: string
   alt?: string
+  side?: 'left' | 'right'
 }
 
 interface TimelineSlideProps {
@@ -146,11 +147,11 @@ export function TimelineSlide({
     offset: ['start end', 'end start'],
   })
 
-  // Distribute images alternating left/right with varied x offsets
+  // Use explicit side from content if present; otherwise alternate by index.
   const xOffsets = [20, 60, 10, 40, 30, 50]  // varied distances from edge
   const imagePositions = (parallaxImages || []).map((img, i) => ({
     ...img,
-    side: (i % 2 === 0 ? 'left' : 'right') as 'left' | 'right',
+    side: img.side || ((i % 2 === 0 ? 'left' : 'right') as 'left' | 'right'),
     topPercent: 5 + i * (85 / Math.max((parallaxImages || []).length, 1)),
     xOffset: xOffsets[i % xOffsets.length],
     speed: 0.25 + (i % 3) * 0.12,  // varied speeds

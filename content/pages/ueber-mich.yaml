@@ -26,16 +26,25 @@ slides:
     parallaxImages:
       - src: /images/timeline/6.jpg
         alt: "Timeline"
+        side: left
       - src: /images/timeline/5.jpg
         alt: "Timeline"
+        side: right
       - src: /images/timeline/4.jpg
         alt: "Timeline"
+        side: left
       - src: /images/timeline/3.jpg
         alt: "Timeline"
+        side: right
+      - src: /images/timeline/2-b.png
+        alt: "Timeline"
+        side: left
       - src: /images/timeline/2.jpg
         alt: "Timeline"
+        side: right
       - src: /images/timeline/1.jpg
         alt: "Timeline"
+        side: left
     entries:
       - period: "2026 – heute"
         role: "Jedes Gerät erklärt sich selbst."
