@@ -1,0 +1,108 @@
+meta:
+  title: "48h GPT-Audit fuer Ops-Teams | Leadtime"
+  description: "Schneller GPT-Audit fuer Operations-Teams: Discovery Call buchen oder auf die Audit-Waitlist setzen lassen."
+  noSnap: true
+
+slides:
+  - template: hero-dark
+    headline: "48h GPT-Audit fuer dein Ops-Team."
+    subtext: "In zwei Tagen identifizieren wir die 3 groessten Automationshebel, liefern einen priorisierten Prompt-Plan und klare naechste Schritte."
+    cta:
+      text: "Discovery Call starten"
+      url: "/erstgespraech?utm_campaign=gpt_audit_experiment&utm_medium=landing&utm_source=lukasebner.de&utm_content=hero_discovery_call"
+    image:
+      src: /images/operations/lukas-meeting-bw.jpg
+      alt: "Operations Workshop"
+      opacity: 0.45
+
+  - template: problem
+    headline: "Wo der Alltag typischerweise haengt."
+    body: "Viele Teams testen KI punktuell, aber ohne klares Betriebsmodell. Genau dort setzen wir an: mit konkreten Workflows statt Demo-Folien."
+    symptoms:
+      - pill: "Symptom 01"
+        headline: "Prompt-Chaos statt wiederholbarer Prozesse"
+        body: "Wissen steckt in Einzelpersonen und Chat-Verlaeufen. Das Team hat keinen stabilen Prompt-Standard fuer wiederkehrende Aufgaben."
+        image:
+          src: /images/operations/symptome-1.png
+          alt: "Unstrukturierte Prozesse"
+      - pill: "Symptom 02"
+        headline: "Zu viele Tools, zu wenig Output"
+        body: "Es gibt viele KI-Experimente, aber keine Priorisierung nach Impact. Ergebnis: hoher Aufwand, niedriger Geschaeftswert."
+        image:
+          src: /images/operations/symptome-3.png
+          alt: "Tool-Overload"
+
+  - template: text-block
+    variant: light
+    align: left
+    pill: "Offer"
+    headline: "Was du nach 48 Stunden in der Hand hast."
+    body: "Eine priorisierte Hebelliste fuer dein Team mit Aufwand/Nutzen-Bewertung.\n\nEin Prompt-Pack fuer die 3 wichtigsten Workflows.\n\nEine konkrete Umsetzungssequenz fuer die naechsten 14 Tage."
+
+  - template: cta-dark
+    headline: "Route 1: Discovery Call"
+    subtext: "Wenn du kurzfristig entscheiden willst, buche direkt ein Erstgespraech."
+    cta:
+      text: "Discovery Call buchen"
+      url: "/erstgespraech?utm_campaign=gpt_audit_experiment&utm_medium=landing&utm_source=lukasebner.de&utm_content=route_discovery_call"
+    image:
+      src: /images/slides/lukas-bar.jpg
+      alt: "Discovery Call"
+      opacity: 0.4
+
+  - template: cta-dark
+    headline: "Route 2: Audit Waitlist"
+    subtext: "Wenn der Start in 1-4 Wochen liegt, sichere dir den naechsten Slot auf der Waitlist."
+    cta:
+      text: "Zur Audit Waitlist"
+      url: "#audit-waitlist"
+    image:
+      src: /images/slides/cta-bg.png
+      alt: "Audit Waitlist"
+      opacity: 0.45
+
+  - template: application-form
+    id: audit-waitlist
+    bg: "#F44900"
+    headline: "Audit Waitlist"
+    body: "Kurzes Formular, damit wir den passenden Slot und Fokus vorbereiten koennen."
+    submitLabel: "Auf Waitlist setzen"
+    successHeadline: "Du bist auf der Waitlist."
+    successBody: "Wir melden uns mit einem konkreten Slot-Vorschlag."
+    trackingSurface: "gpt_audit_waitlist_form"
+    trackingPathVariant: "enterprise"
+    fields:
+      - name: name
+        label: "Name"
+        type: text
+        required: true
+        placeholder: "Vor- und Nachname"
+      - name: email
+        label: "E-Mail"
+        type: email
+        required: true
+        placeholder: "name@unternehmen.de"
+      - name: company
+        label: "Unternehmen"
+        type: text
+        required: true
+        placeholder: "Firmenname"
+      - name: timeline
+        label: "Gewuenschter Start"
+        type: select
+        required: true
+        options:
+          - "Sofort"
+          - "In 1-2 Wochen"
+          - "In 3-4 Wochen"
+          - "Spaeter"
+      - name: challenge
+        label: "Top-Herausforderung"
+        type: textarea
+        required: true
+        placeholder: "Welche Ops-Prozesse sollen zuerst optimiert werden?"
+      - name: source
+        label: "Quelle"
+        type: text
+        required: false
+        placeholder: "gpt_audit_landing"

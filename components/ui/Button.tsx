@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
+import { isDualPathSelectionHref, trackLeadtimeEvent } from '@/lib/leadtime-tracking'
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'link'
 
@@ -30,6 +31,12 @@ interface ButtonProps {
   onClick?: () => void
 }
 
+function getButtonText(children: ReactNode): string {
+  if (typeof children === 'string') return children
+  if (typeof children === 'number') return String(children)
+  return 'cta'
+}
+
 export function Button({
   href,
   children,
@@ -44,7 +51,33 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={combined} style={style}>
+      <Link
+        href={href}
+        className={combined}
+        style={style}
+        onClick={() => {
+          trackLeadtimeEvent('lt_cta_clicked', {
+            cta_text: getButtonText(children),
+            click_target: href,
+          }, { href })
+
+          if (isDualPathSelectionHref(href)) {
+            trackLeadtimeEvent(
+              'lt_path_selected',
+              { selected_href: href },
+              { href }
+            )
+          }
+          if (href.includes('/erstgespraech')) {
+            trackLeadtimeEvent(
+              'lt_trial_started',
+              { trial_entry_href: href },
+              { pathVariant: 'enterprise' }
+            )
+          }
+          onClick?.()
+        }}
+      >
         {children}
       </Link>
     )

@@ -1,8 +1,9 @@
 'use client'
 
 import { motion, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { getUtmParams } from '@/lib/utm'
+import { type LeadtimePathVariant, trackLeadtimeEvent } from '@/lib/leadtime-tracking'
 
 interface FormField {
   name: string
@@ -34,6 +35,8 @@ interface ApplicationFormSlideProps {
   showActionCode?: boolean
   actionCodeLabel?: string
   actionCodePlaceholder?: string
+  trackingSurface?: string
+  trackingPathVariant?: LeadtimePathVariant
 }
 
 export function ApplicationFormSlide({
@@ -50,6 +53,8 @@ export function ApplicationFormSlide({
   showActionCode = false,
   actionCodeLabel = 'Aktionscode',
   actionCodePlaceholder = 'z.B. FRACTO-A3F2B1',
+  trackingSurface = 'erstgespraech_form',
+  trackingPathVariant = 'enterprise',
 }: ApplicationFormSlideProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-80px' })
@@ -58,8 +63,31 @@ export function ApplicationFormSlide({
   const [actionCode, setActionCode] = useState('')
   const [codeState, setCodeState] = useState<ActionCodeState>({ status: 'idle' })
   const codeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const signupStartedRef = useRef(false)
+  const paidSignalTrackedRef = useRef(false)
   const isDark = variant === 'dark'
   const hasBg = !!bg
+
+  useEffect(() => {
+    return () => {
+      if (!signupStartedRef.current || paidSignalTrackedRef.current || submitted) return
+      trackLeadtimeEvent(
+        'lt_payment_abandoned',
+        { abandonment_step: 'before_payment', signup_surface: trackingSurface },
+        { pathVariant: trackingPathVariant }
+      )
+    }
+  }, [submitted, trackingPathVariant, trackingSurface])
+
+  function trackSignupStartedOnce() {
+    if (signupStartedRef.current) return
+    signupStartedRef.current = true
+    trackLeadtimeEvent(
+      'lt_signup_started',
+      { signup_surface: trackingSurface },
+      { pathVariant: trackingPathVariant }
+    )
+  }
 
   // Debounced code validation
   function handleCodeChange(value: string) {
@@ -101,6 +129,7 @@ export function ApplicationFormSlide({
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setSending(true)
+    trackSignupStartedOnce()
     const form = e.currentTarget
     const formData = new FormData(form)
 
@@ -122,11 +151,19 @@ export function ApplicationFormSlide({
     const trimmedCode = actionCode.trim().toUpperCase()
     if (trimmedCode && codeState.status === 'valid') {
       try {
-        await fetch('/api/action-codes', {
+        const codeRes = await fetch('/api/action-codes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ action: 'redeem', code: trimmedCode }),
         })
+        if (codeRes.ok) {
+          paidSignalTrackedRef.current = true
+          trackLeadtimeEvent(
+            'lt_paid_signal_detected',
+            { paid_signal_type: 'action_code_redeemed' },
+            { pathVariant: trackingPathVariant }
+          )
+        }
       } catch {
         // Non-blocking – code redemption is best-effort
       }
@@ -167,6 +204,23 @@ export function ApplicationFormSlide({
         })
       }
 
+      trackLeadtimeEvent(
+        'lt_signup_completed',
+        {
+          signup_surface: trackingSurface,
+          lead_source: (formData.get('source') as string) || 'direct',
+        },
+        { pathVariant: trackingPathVariant }
+      )
+      trackLeadtimeEvent(
+        'lt_demo_requested',
+        {
+          request_surface: trackingSurface,
+          lead_source: (formData.get('source') as string) || 'direct',
+        },
+        { pathVariant: trackingPathVariant }
+      )
+
       setSubmitted(true)
     } catch (err) {
       // Fallback to mailto if API fails
@@ -180,6 +234,15 @@ export function ApplicationFormSlide({
       const subject = encodeURIComponent(`Erstgespräch – ${company || name || 'Neue Anfrage'}`)
       const mailBody = encodeURIComponent(lines.join('\n\n'))
       window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${mailBody}`
+      trackLeadtimeEvent(
+        'lt_demo_requested',
+        {
+          request_surface: trackingSurface,
+          request_mode: 'mailto_fallback',
+          lead_source: (formData.get('source') as string) || 'direct',
+        },
+        { pathVariant: trackingPathVariant }
+      )
       setSubmitted(true)
     } finally {
       setSending(false)
@@ -264,7 +327,7 @@ export function ApplicationFormSlide({
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} onFocusCapture={trackSignupStartedOnce} className="space-y-8">
               {fields.map((field, i) => (
                 <div key={i}>
                   <label
