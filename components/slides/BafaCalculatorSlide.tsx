@@ -43,14 +43,14 @@ export function BafaCalculatorSlide({
             <input
               type="range"
               min={1000}
-              max={50000}
+              max={15000}
               step={100}
               value={beratungskosten}
               onChange={(e) => setBeratungskosten(Number(e.target.value))}
               className="mt-6 w-full"
               aria-label="Beratungskosten"
             />
-            <p className="mt-2 text-sm text-white/70">1.000 € bis 50.000 €</p>
+            <p className="mt-2 text-sm text-white/70">1.000 € bis 15.000 €</p>
           </div>
 
           <div>
