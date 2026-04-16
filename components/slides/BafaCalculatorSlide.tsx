@@ -23,10 +23,11 @@ export function BafaCalculatorSlide({
 
   const calc = useMemo(() => {
     const quote = foerdersatz / 100
-    const zuschuss = beratungskosten * quote
-    const eigenanteil = beratungskosten - zuschuss
     const maxFoerderfaehig = 2800
-    return { zuschuss, eigenanteil, maxFoerderfaehig }
+    const foerderfaehigeKosten = Math.min(beratungskosten, maxFoerderfaehig)
+    const zuschuss = foerderfaehigeKosten * quote
+    const eigenanteil = beratungskosten - zuschuss
+    return { zuschuss, eigenanteil, maxFoerderfaehig, foerderfaehigeKosten }
   }, [beratungskosten, foerdersatz])
 
   return (
@@ -87,6 +88,11 @@ export function BafaCalculatorSlide({
         <p className="mt-6 text-sm text-white/80">
           Hinweis: Förderfähigkeit muss im Einzelfall geprüft werden. Aktuell maximal förderfähiger Beratungsbetrag: {eur(calc.maxFoerderfaehig)}.
         </p>
+        {beratungskosten > calc.maxFoerderfaehig && (
+          <p className="mt-2 text-sm text-yellow-200/90">
+            Hinweis: BAFA bezuschusst max. {eur(calc.maxFoerderfaehig)} der Beratungskosten. Mehrkosten {eur(beratungskosten - calc.maxFoerderfaehig)} tragt ihr selbst.
+          </p>
+        )}
 
         {cta && (
           <Link href={cta.href} className="mt-8 inline-block rounded-full bg-white px-8 py-4 font-mono text-sm uppercase tracking-wide text-[#1B1464]">
