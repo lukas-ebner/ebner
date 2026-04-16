@@ -4,6 +4,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState, useMemo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { InlineMarkdown } from '@/components/ui/InlineMarkdown'
 
 /* ── Prototyping Calculator Config ── */
 const DAY_RATE = 1000
@@ -521,7 +522,7 @@ export function PricingTableSlide({
               />
               <p className="font-body text-base leading-relaxed text-text-primary">
                 <span className="font-medium">Fördermöglichkeit:</span>{' '}
-                {bafa}
+                <InlineMarkdown text={bafa} />
               </p>
             </div>
           )}
