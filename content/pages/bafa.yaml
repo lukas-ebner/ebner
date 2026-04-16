@@ -67,7 +67,7 @@ Für den Einstieg: [BAFA-Förderung für Unternehmensberatung](/blog/bafa-foerde
       - headline: "Was euch das wirklich kostet (Beispiel)."
         body: "Beispiel: Beratungskosten 3.500 € brutto. Bei 80 % Zuschuss liegt euer Eigenanteil bei 700 €.
 Entscheidend ist nicht die Förderquote allein, sondern ob die Beratung danach spürbar bessere Entscheidungen, Prozesse und Ergebnisse liefert."
-  - template: pricing-calculator
+  - template: bafa-calculator
     headline: "Rechne den BAFA-Effekt auf euren Fall."
     body: "Schieb den Regler, vergleiche Eigenanteil mit Zuschuss und entscheide auf Basis von Zahlen, nicht Bauchgefühl."
     cta:

@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation'
 import type { SlideConfig } from '@/lib/types'
 import { HeroSlide } from '@/components/slides/HeroSlide'
 import { StatementSlide } from '@/components/slides/StatementSlide'
@@ -34,6 +36,7 @@ import { ToolCloudSlide } from '@/components/slides/ToolCloudSlide'
 import { SymptomsGridSlide } from '@/components/slides/SymptomsGridSlide'
 import { KiReadinessChatSlide } from '@/components/slides/KiReadinessChatSlide'
 import { PricingCalculatorSlide } from '@/components/slides/PricingCalculatorSlide'
+import { BafaCalculatorSlide } from '@/components/slides/BafaCalculatorSlide'
 import { ProjectNavSlide } from '@/components/slides/ProjectNavSlide'
 import { ProjectSectionSlide } from '@/components/slides/ProjectSectionSlide'
 import { ProjectsHeroSlide } from '@/components/slides/ProjectsHeroSlide'
@@ -49,6 +52,7 @@ import { EbookLeadmagnetSlide } from '@/components/slides/EbookLeadmagnetSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 import { QuizProvider } from '@/components/QuizContext'
 import { NoSnap } from '@/components/NoSnap'
+import { trackLeadtimeEvent } from '@/lib/leadtime-tracking'
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
   'hero-dark': HeroSlide as unknown as React.ComponentType<Record<string, unknown>>,
@@ -84,6 +88,7 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
   'tool-cloud': ToolCloudSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'symptoms-grid': SymptomsGridSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'pricing-calculator': PricingCalculatorSlide as unknown as React.ComponentType<Record<string, unknown>>,
+  'bafa-calculator': BafaCalculatorSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'ki-readiness-chat': KiReadinessChatSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'project-nav': ProjectNavSlide as unknown as React.ComponentType<Record<string, unknown>>,
   'project-section': ProjectSectionSlide as unknown as React.ComponentType<Record<string, unknown>>,
@@ -100,6 +105,19 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
 }
 
 export function PageBuilder({ slides, accent, noSnap }: { slides: SlideConfig[]; accent?: string; noSnap?: boolean }) {
+  const pathname = usePathname()
+  const paywallTrackedRef = useRef(false)
+
+  useEffect(() => {
+    if (pathname !== '/preise' || paywallTrackedRef.current) return
+    paywallTrackedRef.current = true
+    trackLeadtimeEvent(
+      'lt_paywall_impression',
+      { paywall_surface: 'preise_page' },
+      { pathVariant: 'self_serve' }
+    )
+  }, [pathname])
+
   return (
     <QuizProvider>
       <main style={accent ? { '--accent': accent } as React.CSSProperties : undefined}>
