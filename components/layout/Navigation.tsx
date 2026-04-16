@@ -22,6 +22,11 @@ const services = [
     title: 'KI-Readiness & Prototyping',
     desc: 'Von der Idee zum Prototyp. In Tagen, nicht Monaten.',
   },
+  {
+    href: '/bafa',
+    title: 'BAFA-Förderung',
+    desc: 'Bis 80 % Zuschuss auf Unternehmensberatung für KMU.',
+  },
 ]
 
 const navItems = [
