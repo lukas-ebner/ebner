@@ -1,0 +1,100 @@
+meta:
+  title: "BAFA-Förderung für Unternehmensberatung – Lukas Ebner"
+  description: "Bis zu 80 % Zuschuss für Beratung sichern. Klare BAFA-Einschätzung, ehrliche Umsetzung, kein Fördermittel-Theater."
+  og_image: /images/og/bafa.jpg
+  accent: "#F44900"
+slides:
+  - template: hero-split
+    pill: "BAFA-Förderung"
+    headline: "80 % Zuschuss für Beratung. Wenn der richtige Berater an deiner Seite ist."
+    subtext: "Du willst bessere Entscheidungen, klare Prozesse und mehr Marge, aber Budget bremst. Mit BAFA kann Beratung stark bezuschusst werden. Ich begleite dich von der Einschätzung bis zur Umsetzung, ohne Förder-Floskeln."
+    cta:
+      text: "BAFA-Check vereinbaren"
+      url: "/erstgespraech?topic=bafa"
+    image:
+      src: /images/bafa/bafa-hero.png
+      alt: "Geschäftsführer im Gespräch über BAFA-geförderte Beratung"
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Du brauchst keine nächste Theorie. Du brauchst einen Hebel, der sich rechnet."
+    body: "Viele Geschäftsführer wissen, dass etwas geändert werden muss, schieben es aber vor sich her. Nicht aus Faulheit. Sondern weil Zeit, Budget und Klarheit fehlen. Genau dort setzt BAFA-geförderte Beratung an."
+    symptoms:
+      - pill: "Szenario 1"
+        image: /images/bafa/bafa-szenario-1.png
+        headline: "Die Marge frisst sich Monat für Monat auf."
+        body: "Umsatz ist da, trotzdem bleibt zu wenig hängen. Zu viele Reibungsverluste, zu wenig Steuerung.
+Wir analysieren, wo Wert entsteht und wo Geld versickert, dann priorisieren wir die Maßnahmen mit dem größten Ergebnishebel."
+      - pill: "Szenario 2"
+        image: /images/bafa/bafa-szenario-2.png
+        headline: "Eigentlich bräuchtet ihr Beratung. Aber das Budget blockiert."
+        body: "Das Team ist am Limit, Entscheidungen werden vertagt, weil niemand noch ein großes Beratungsprojekt finanzieren will.
+Mit BAFA-Zuschuss sinkt die Einstiegshürde massiv, ohne dass du auf Substanz verzichten musst."
+      - pill: "Szenario 3"
+        image: /images/bafa/bafa-szenario-3.png
+        headline: "Früher lief es über Zuruf. Jetzt nicht mehr."
+        body: "Was bei 5 Leuten funktioniert hat, bricht bei 15 auseinander. Rollen sind unklar, Entscheidungen hängen, Übergaben kosten Zeit.
+Wir bauen ein belastbares Betriebsmodell, das nicht an dir als Geschäftsführer hängt."
+      - pill: "Szenario 4"
+        image: /images/bafa/bafa-szenario-4.png
+        headline: "Ihr redet seit Monaten über Veränderung. Passiert ist wenig."
+        body: "Es gibt Ideen, es gibt Meetings, aber kein sauberes Umsetzungsgerüst mit Verantwortlichkeiten und Takt.
+Wir gehen in die operative Umsetzung, mit klaren Prioritäten, klaren Zuständigkeiten und messbaren Ergebnissen."
+  - template: credibility
+    bg: "#1B1464"
+    headline: "Kein Fördermittel-Vertrieb. Unternehmerische Beratung mit BAFA-Hebel."
+    body: "Ich verspreche dir kein 'geschenktes Geld'. Ich sage dir, ob BAFA in deinem Fall sinnvoll ist, und wenn ja, wie ihr die Förderung sauber in echte Ergebnisarbeit übersetzt.
+Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung kommuniziere ich bewusst transparent und ohne Übertreibung."
+    proofs:
+      - text: "15 Jahre Unternehmerpraxis in digitalen Geschäftsmodellen"
+      - text: "Fokus auf Strategie, Prozesse, Führung und Umsetzungsfähigkeit"
+      - text: "Klarer Blick auf Wirtschaftlichkeit statt Berater-PowerPoint"
+    cta:
+      label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+    chat:
+      enabled: true
+      ctaHref: "/erstgespraech?topic=bafa"
+  - template: parallax-story
+    image:
+      src: /images/bafa/bafa-parallax.png
+      alt: "Workshop-Situation zur BAFA-geförderten Unternehmensberatung"
+    sections:
+      - headline: "Wann BAFA für dich Sinn macht."
+        body: "Wenn du konkrete Engpässe im Unternehmen hast und bereit bist, in der Beratung wirklich zu arbeiten, nicht nur zuzuhören. BAFA ist ein Zuschuss auf wirksame Beratung, kein Selbstzweck."
+      - headline: "Wie der Ablauf funktioniert."
+        body: "1) Erstgespräch und Förderfähigkeit grob einordnen. 2) Beratungsschwerpunkt sauber definieren. 3) Antrag und Umsetzung strukturiert begleiten. 4) Ergebnisse dokumentieren.
+Für den Einstieg: [BAFA-Förderung für Unternehmensberatung](/blog/bafa-foerderung-unternehmensberatung)."
+      - headline: "Was euch das wirklich kostet (Beispiel)."
+        body: "Beispiel: Beratungskosten 3.500 € brutto. Bei 80 % Zuschuss liegt euer Eigenanteil bei 700 €.
+Entscheidend ist nicht die Förderquote allein, sondern ob die Beratung danach spürbar bessere Entscheidungen, Prozesse und Ergebnisse liefert."
+  - template: pricing-calculator
+    headline: "Rechne den BAFA-Effekt auf euren Fall."
+    body: "Schieb den Regler, vergleiche Eigenanteil mit Zuschuss und entscheide auf Basis von Zahlen, nicht Bauchgefühl."
+    cta:
+      label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+  - template: faq
+    headline: "Häufige Fragen zur BAFA-Förderung."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was ist das BAFA-Programm für Unternehmensberatung?"
+        answer: "Das Programm heißt 'Förderung von Unternehmensberatungen für KMU'. Es bezuschusst externe Beratung für kleine und mittlere Unternehmen unter definierten Bedingungen."
+      - question: "Wie hoch ist die Förderung?"
+        answer: "Je nach Region sind Zuschüsse bis zu 80 % möglich. Maßgeblich sind die jeweils gültigen BAFA-Vorgaben."
+      - question: "Wie viele Anträge sind möglich?"
+        answer: "Bis 31.12.2026 sind laut Programmangaben bis zu 5 Anträge je Unternehmen möglich, maximal 2 pro Jahr."
+      - question: "Gibt es eine Obergrenze bei den förderfähigen Beratungskosten?"
+        answer: "Ja. Aktuell liegt der maximal förderfähige Beratungsbetrag bei 2.800 €."
+      - question: "Ist der BAFA-Antrag kompliziert?"
+        answer: "Er ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind. Genau dabei unterstütze ich strukturiert."
+      - question: "Wie schnell weiß ich, ob BAFA für uns passt?"
+        answer: "In einem kurzen Erstgespräch lässt sich meist schnell klären, ob Förderlogik, Beratungsziel und Unternehmenssituation zusammenpassen."
+      - question: "Kann ich BAFA nutzen, wenn wir mitten im Tagesgeschäft feststecken?"
+        answer: "Gerade dann ist es oft sinnvoll. Förderung hilft, die notwendige Beratung trotz knapper Budgets umzusetzen."
+      - question: "Was passiert, wenn BAFA in unserem Fall nicht passt?"
+        answer: "Dann sage ich das klar. Ziel ist eine sinnvolle Entscheidung für dein Unternehmen, nicht ein Antrag um jeden Preis."
+      - question: "Kann ich vor der offiziellen Listung schon mit BAFA-Claims werben?"
+        answer: "Nein. Solange die Listung in Prüfung ist, muss die Kommunikation transparent bleiben."
+      - question: "Wo finde ich mehr Hintergrund zur BAFA-Förderung?"
+        answer: "Hier: [BAFA-Förderung für Unternehmensberatung](/blog/bafa-foerderung-unternehmensberatung). Dort findest du Ablauf, Einordnung und Praxisfragen im Detail."
