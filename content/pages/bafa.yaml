@@ -1,51 +1,46 @@
 meta:
-  title: "BAFA-Förderung für Unternehmensberatung – Lukas Ebner"
-  description: "Bis zu 80 % Zuschuss für Beratung sichern. Klare BAFA-Einschätzung, ehrliche Umsetzung, kein Fördermittel-Theater."
+  title: "BAFA-Förderung Unternehmensberatung Regensburg – bis 80 % Zuschuss | Lukas Ebner"
+  description: "BAFA-Förderung für Unternehmensberatung in Regensburg und Ostbayern. Bis 80 % Zuschuss auf förderfähige Beratungskosten. Ehrliche Einschätzung, strukturierte Antragsbegleitung, Umsetzung mit Wirkung."
   og_image: /images/og/bafa.jpg
   accent: "#F44900"
 slides:
   - template: hero-split
-    pill: "BAFA-Förderung"
-    headline: "80 % Zuschuss für Beratung. Wenn der richtige Berater an deiner Seite ist."
-    subtext: "Du willst bessere Entscheidungen, klare Prozesse und mehr Marge, aber Budget bremst. Mit BAFA kann Beratung stark bezuschusst werden. Ich begleite dich von der Einschätzung bis zur Umsetzung, ohne Förder-Floskeln."
+    pill: "BAFA-Förderung Unternehmensberatung"
+    headline: "Bis 80 % Zuschuss auf deine Beratung. Wenn der richtige Berater daneben steht."
+    subtext: "Du willst bessere Entscheidungen, klare Prozesse und mehr Marge – aber das Budget bremst. Die BAFA-Förderung für Unternehmensberatung macht wirksame Beratung für KMU finanzierbar. Ich begleite dich von der Einschätzung bis zur Umsetzung – ohne Fördermittel-Floskeln."
     cta:
       text: "BAFA-Check vereinbaren"
       url: "/erstgespraech?topic=bafa"
     image:
       src: /images/bafa/bafa-hero.png
-      alt: "Geschäftsführer im Gespräch über BAFA-geförderte Beratung"
+      alt: "Lukas Ebner erklärt den Ablauf der BAFA-Förderung für Unternehmensberatung am Whiteboard"
   - template: symptoms-grid
     imageStyle: panorama
-    headline: "Du brauchst keine nächste Theorie. Du brauchst einen Hebel, der sich rechnet."
-    body: "Viele Geschäftsführer wissen, dass etwas geändert werden muss, schieben es aber vor sich her. Nicht aus Faulheit. Sondern weil Zeit, Budget und Klarheit fehlen. Genau dort setzt BAFA-geförderte Beratung an."
+    headline: "Kein weiterer Vortrag. Ein Hebel, der sich rechnet."
+    body: "Viele Geschäftsführer wissen, dass etwas geändert werden muss – und schieben es auf. Nicht aus Faulheit, sondern weil Zeit, Budget und Klarheit fehlen. Genau dort setzt BAFA-geförderte Unternehmensberatung an."
     symptoms:
       - pill: "Szenario 1"
         image: /images/bafa/bafa-szenario-1.png
-        headline: "Die Marge frisst sich Monat für Monat auf."
-        body: "Umsatz ist da, trotzdem bleibt zu wenig hängen. Zu viele Reibungsverluste, zu wenig Steuerung.
-Wir analysieren, wo Wert entsteht und wo Geld versickert, dann priorisieren wir die Maßnahmen mit dem größten Ergebnishebel."
+        headline: "Marge frisst sich Monat für Monat auf."
+        body: "Umsatz ist da, hängenbleiben tut wenig. Zu viele Reibungsverluste, zu wenig Steuerung. Wir analysieren, wo Wert entsteht und wo Geld versickert – und priorisieren die Maßnahmen mit dem größten Ergebnishebel."
       - pill: "Szenario 2"
         image: /images/bafa/bafa-szenario-2.png
-        headline: "Eigentlich bräuchtet ihr Beratung. Aber das Budget blockiert."
-        body: "Das Team ist am Limit, Entscheidungen werden vertagt, weil niemand noch ein großes Beratungsprojekt finanzieren will.
-Mit BAFA-Zuschuss sinkt die Einstiegshürde massiv, ohne dass du auf Substanz verzichten musst."
+        headline: "Beratung wäre nötig. Budget blockiert sie."
+        body: "Das Team ist am Limit, Entscheidungen werden vertagt – ein großes Beratungsprojekt will aktuell niemand finanzieren. Mit dem BAFA-Zuschuss sinkt die Einstiegshürde deutlich, ohne dass du auf Substanz verzichten musst."
       - pill: "Szenario 3"
         image: /images/bafa/bafa-szenario-3.png
-        headline: "Früher lief es über Zuruf. Jetzt nicht mehr."
-        body: "Was bei 5 Leuten funktioniert hat, bricht bei 15 auseinander. Rollen sind unklar, Entscheidungen hängen, Übergaben kosten Zeit.
-Wir bauen ein belastbares Betriebsmodell, das nicht an dir als Geschäftsführer hängt."
+        headline: "Früher lief es über Zuruf. Heute nicht mehr."
+        body: "Was bei 5 Leuten funktioniert hat, bricht bei 15 auseinander. Rollen sind unklar, Entscheidungen hängen, Übergaben kosten Zeit. Wir bauen ein belastbares Betriebsmodell, das nicht am Inhaber hängt."
       - pill: "Szenario 4"
         image: /images/bafa/bafa-szenario-4.png
-        headline: "Ihr redet seit Monaten über Veränderung. Passiert ist wenig."
-        body: "Es gibt Ideen, es gibt Meetings, aber kein sauberes Umsetzungsgerüst mit Verantwortlichkeiten und Takt.
-Wir gehen in die operative Umsetzung, mit klaren Prioritäten, klaren Zuständigkeiten und messbaren Ergebnissen."
+        headline: "Ihr redet über Veränderung. Passiert ist wenig."
+        body: "Es gibt Ideen und Meetings, aber kein sauberes Umsetzungsgerüst mit Verantwortlichkeiten und Takt. Wir gehen in die operative Umsetzung – mit klaren Prioritäten, Zuständigkeiten und messbaren Ergebnissen."
   - template: credibility
     bg: "#1B1464"
     headline: "Kein Fördermittel-Vertrieb. Unternehmerische Beratung mit BAFA-Hebel."
-    body: "Ich verspreche dir kein 'geschenktes Geld'. Ich sage dir, ob BAFA in deinem Fall sinnvoll ist, und wenn ja, wie ihr die Förderung sauber in echte Ergebnisarbeit übersetzt.
-Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung kommuniziere ich bewusst transparent und ohne Übertreibung."
+    body: "Ich verspreche dir kein „geschenktes Geld“. Ich sage dir, ob BAFA in deinem Fall sinnvoll ist – und wenn ja, wie ihr die Förderung in echte Ergebnisarbeit übersetzt. Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung kommuniziere ich bewusst transparent und ohne Übertreibung."
     proofs:
-      - text: "15 Jahre Unternehmerpraxis in digitalen Geschäftsmodellen"
+      - text: "15 Jahre Unternehmerpraxis in digitalen Geschäftsmodellen – Exit 2022"
       - text: "Fokus auf Strategie, Prozesse, Führung und Umsetzungsfähigkeit"
       - text: "Klarer Blick auf Wirtschaftlichkeit statt Berater-PowerPoint"
     cta:
@@ -53,6 +48,7 @@ Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung komm
       href: "/erstgespraech?topic=bafa"
     chat:
       enabled: true
+      topic: "bafa"
       ctaHref: "/erstgespraech?topic=bafa"
   - template: parallax-story
     image:
@@ -60,13 +56,11 @@ Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung komm
       alt: "Workshop-Situation zur BAFA-geförderten Unternehmensberatung"
     sections:
       - headline: "Wann BAFA für dich Sinn macht."
-        body: "Wenn du konkrete Engpässe im Unternehmen hast und bereit bist, in der Beratung wirklich zu arbeiten, nicht nur zuzuhören. BAFA ist ein Zuschuss auf wirksame Beratung, kein Selbstzweck."
-      - headline: "Wie der Ablauf funktioniert."
-        body: "1) Erstgespräch und Förderfähigkeit grob einordnen. 2) Beratungsschwerpunkt sauber definieren. 3) Antrag und Umsetzung strukturiert begleiten. 4) Ergebnisse dokumentieren.
-Für den Einstieg: [BAFA-Förderung für Unternehmensberatung](/blog/bafa-foerderung-unternehmensberatung)."
-      - headline: "Was euch das wirklich kostet (Beispiel)."
-        body: "Beispiel: Beratungskosten 3.500 € brutto. Bei 80 % Zuschuss liegt euer Eigenanteil bei 700 €.
-Entscheidend ist nicht die Förderquote allein, sondern ob die Beratung danach spürbar bessere Entscheidungen, Prozesse und Ergebnisse liefert."
+        body: "Wenn drei Punkte zusammenkommen, ist die BAFA-Förderung ein echter Hebel:\n\n- Dein Unternehmen ist ein KMU (bis 250 MA, bis 50 Mio € Umsatz)\n- Du hast einen konkreten Engpass – Prozesse, Strategie, Führung, Digitalisierung oder [KI-Readiness](/ki-readiness)\n- Du bist bereit, in der Beratung wirklich zu arbeiten – nicht nur zuzuhören\n\nBAFA ist ein Zuschuss auf wirksame Beratung, kein Selbstzweck."
+      - headline: "So läuft der BAFA-Antrag ab."
+        body: "Vier saubere Schritte, ohne Fördermittel-Theater:\n\n- **Erstgespräch** – Förderfähigkeit grob einordnen, Passung prüfen\n- **Beratungsschwerpunkt definieren** – was genau gefördert werden soll\n- **Antrag und Umsetzung** – strukturiert begleitet, Fristen eingehalten\n- **Ergebnisse dokumentieren** – sauberer Verwendungsnachweis\n\nMehr Hintergrund im Blog: [BAFA-Förderung für Unternehmensberatung](/blog/bafa-foerderung-unternehmensberatung)."
+      - headline: "Was euch das wirklich kostet."
+        body: "Rechenbeispiel bei 3.500 € Beratungskosten brutto und 80 % Förderquote:\n\n- **Förderfähig** (Obergrenze): 2.800 €\n- **Zuschuss** (80 %): 2.240 €\n- **Eigenanteil**: 1.260 €\n\nEntscheidend ist nicht die Förderquote allein, sondern ob die Beratung danach spürbar bessere Entscheidungen, Prozesse und Ergebnisse liefert. Kompletter Preisrahmen und Pakete: [Preise & BAFA-Förderung](/preise)."
   - template: bafa-calculator
     headline: "Rechne den BAFA-Effekt auf euren Fall."
     body: "Schieb den Regler, vergleiche Eigenanteil mit Zuschuss und entscheide auf Basis von Zahlen, nicht Bauchgefühl."
