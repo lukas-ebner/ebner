@@ -26,6 +26,7 @@ interface ChatConfig {
   enabled: boolean
   headline?: string
   ctaHref?: string
+  topic?: string
 }
 
 interface ChatMessage {
@@ -134,7 +135,7 @@ function useAsciiTypewriter(text: string, isVisible: boolean, charSpeed = 8) {
 }
 
 /* ── Inline Chat Widget – Terminal style ── */
-function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHref?: string; isInView?: boolean }) {
+function PortraitChat({ ctaHref = '/erstgespraech', isInView = false, topic = 'ki-readiness' }: { ctaHref?: string; isInView?: boolean; topic?: string }) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -199,6 +200,7 @@ function PortraitChat({ ctaHref = '/erstgespraech', isInView = false }: { ctaHre
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: newMessages.map((m) => ({ role: m.role, content: m.content })),
+          topic,
         }),
       })
       const data = await res.json()
@@ -477,7 +479,7 @@ export function CredibilitySlide({
                 className="absolute left-[3%] right-[3%] z-20 rounded-xl bg-black/40 px-5 py-4 backdrop-blur-sm"
                 style={{ top: '14vh', height: '34%' }}
               >
-                <PortraitChat ctaHref={chat?.ctaHref} isInView={isInView} />
+                <PortraitChat ctaHref={chat?.ctaHref} topic={chat?.topic} isInView={isInView} />
               </div>
             )}
 
@@ -520,7 +522,7 @@ export function CredibilitySlide({
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
           >
             <div className="flex h-[60vh] w-full flex-col rounded-xl bg-black/40 px-6 py-5 backdrop-blur-sm lg:h-[70vh]">
-              <PortraitChat ctaHref={chat?.ctaHref} isInView={isInView} />
+              <PortraitChat ctaHref={chat?.ctaHref} topic={chat?.topic} isInView={isInView} />
             </div>
           </motion.div>
         )}

@@ -53,6 +53,7 @@ Status aktuell: BAFA-Listung ist in Prüfung. Bis zur finalen Freischaltung komm
       href: "/erstgespraech?topic=bafa"
     chat:
       enabled: true
+      topic: "bafa"
       ctaHref: "/erstgespraech?topic=bafa"
   - template: parallax-story
     image:

@@ -14,6 +14,7 @@ interface KiReadinessChatSlideProps {
   subtext?: string
   bg?: string
   ctaHref?: string
+  topic?: string
 }
 
 export function KiReadinessChatSlide({
@@ -21,6 +22,7 @@ export function KiReadinessChatSlide({
   subtext = 'Finde es in 2 Minuten heraus. Unser KI-Assistent stellt dir 5 kurze Fragen – und gibt dir eine ehrliche Einschätzung.',
   bg = '#1B1464',
   ctaHref = '/erstgespraech',
+  topic = 'ki-readiness',
 }: KiReadinessChatSlideProps) {
   const sectionRef = useRef<HTMLElement>(null)
   const isInView = useInView(sectionRef, { once: true, margin: '-80px' })
@@ -67,6 +69,7 @@ export function KiReadinessChatSlide({
             role: m.role,
             content: m.content,
           })),
+          topic,
         }),
       })
 
