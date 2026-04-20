@@ -1,0 +1,86 @@
+meta:
+  title: "BAFA-Förderung Unternehmensberatung Regensburg – bis 80 % Zuschuss | Lukas Ebner"
+  description: "BAFA-Förderung für Unternehmensberatung in Regensburg und Ostbayern. Bis 80 % Zuschuss auf förderfähige Beratungskosten. Ehrliche Einschätzung, strukturierte Antragsbegleitung, Umsetzung mit Wirkung."
+  kicker: "BAFA-Förderung Unternehmensberatung"
+  subtitle: "Du willst bessere Entscheidungen, klare Prozesse und mehr Marge, aber das Budget bremst. Die BAFA-Förderung macht wirksame Beratung für KMU finanzierbar."
+  heroImage: "/images/bafa/bafa-hero.png"
+  heroAlt: "Lukas Ebner erklärt den Ablauf der BAFA-Förderung am Whiteboard"
+  og_image: "/images/og/bafa.jpg"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Themen"
+      href: "/themen"
+    - label: "BAFA"
+      href: "/themen/bafa"
+  ctas:
+    - label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+      variant: "primary"
+    - label: "Preise & BAFA"
+      href: "/preise"
+      variant: "secondary"
+
+sections:
+  - type: "prose"
+    heading: "Wann BAFA für euch ein echter Hebel ist"
+    content:
+      - "Viele Geschäftsführer schieben notwendige Veränderungen auf, nicht aus Faulheit, sondern weil Zeit, Budget und Klarheit fehlen. Genau dort setzt BAFA-geförderte Beratung an."
+    bullets:
+      - "Ihr seid KMU mit bis zu 250 Mitarbeitenden und bis zu 50 Mio € Umsatz."
+      - "Es gibt einen konkreten Engpass in Strategie, Prozessen, Führung oder Digitalisierung."
+      - "Ihr wollt Ergebnisse umsetzen, nicht nur Präsentationen konsumieren."
+
+  - type: "compare"
+    heading: "Was BAFA-geförderte Beratung unterscheidet"
+    leftTitle: "Ohne Förderhebel"
+    rightTitle: "Mit BAFA-Förderung"
+    rows:
+      - label: "Einstieg"
+        left: "Höhere Investitionshürde, Entscheidungen werden vertagt."
+        right: "Niedrigere Einstiegshürde bei gleicher Beratungsqualität."
+      - label: "Budget"
+        left: "Volle Kosten tragen, oft in kleinen Schritten statt klarer Umsetzung."
+        right: "Bis zu 80 % Zuschuss auf förderfähige Kosten."
+      - label: "Wirkung"
+        left: "Engpass bleibt oft länger bestehen."
+        right: "Beratung kann früher starten und schneller wirken."
+
+  - type: "figure"
+    image: "/images/bafa/bafa-szenario-2.png"
+    alt: "Mittelständisches Team im Strategie-Workshop"
+    caption: "Typischer Fall: Beratung ist nötig, Budget blockiert den Start."
+
+  - type: "crossref"
+    heading: "Ablauf in vier Schritten"
+    body: "Erstgespräch, Schwerpunkt definieren, Antrag + Umsetzung, Ergebnisse dokumentieren. Ohne Fördermittel-Theater, mit klaren Zuständigkeiten."
+    link:
+      label: "Hintergrund im Blog lesen"
+      href: "/blog/bafa-foerderung-unternehmensberatung"
+
+  - type: "bafa-calculator"
+    heading: "Rechne den BAFA-Effekt auf euren Fall"
+    body: "Vergleiche Zuschuss und Eigenanteil direkt auf Basis eurer Beratungskosten."
+    cta:
+      label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+
+  - type: "faq"
+    heading: "Häufige Fragen zur BAFA-Förderung"
+    items:
+      - question: "Wie hoch ist die Förderung?"
+        answer: "Je nach Region sind Zuschüsse bis zu 80 % möglich, auf den förderfähigen Anteil der Beratungskosten."
+      - question: "Ist der Antrag kompliziert?"
+        answer: "Er ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind. Genau dabei unterstütze ich strukturiert."
+      - question: "Was passiert, wenn BAFA nicht passt?"
+        answer: "Dann sage ich das klar. Ziel ist eine wirtschaftlich sinnvolle Entscheidung, nicht ein Antrag um jeden Preis."
+
+endCTA:
+  heading: "Wenn BAFA passt, spart ihr nicht nur Kosten, sondern Zeit bis zur Umsetzung"
+  body: "Im Erstgespräch klären wir in kurzer Zeit, ob Förderlogik, Beratungsziel und eure Situation sauber zusammenpassen."
+  primary:
+    label: "BAFA-Check starten"
+    href: "/erstgespraech?topic=bafa"
+  secondary:
+    label: "Zur Übersicht Themen"
+    href: "/themen"

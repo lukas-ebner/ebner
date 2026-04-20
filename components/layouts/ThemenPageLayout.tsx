@@ -1,0 +1,217 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import type { ThemenPage } from '@/lib/themen'
+import { BafaCalculatorSlide } from '@/components/slides/BafaCalculatorSlide'
+
+interface Props {
+  page: ThemenPage
+}
+
+function paragraphWithLinks(text: string, key: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^\)]+\))/g)
+  return (
+    <p key={key} className="text-lg leading-relaxed text-[#253043]">
+      {parts.map((part, idx) => {
+        const match = part.match(/^\[([^\]]+)\]\(([^\)]+)\)$/)
+        if (!match) return <span key={`${key}-${idx}`}>{part}</span>
+        return (
+          <Link key={`${key}-${idx}`} href={match[2]} className="text-brand underline decoration-brand/50 underline-offset-4 hover:decoration-brand">
+            {match[1]}
+          </Link>
+        )
+      })}
+    </p>
+  )
+}
+
+export function ThemenPageLayout({ page }: Props) {
+  return (
+    <main className="bg-[#F5F7FA] pt-28 text-[#101323]">
+      <article className="mx-auto w-full max-w-5xl px-6 pb-24 lg:px-8">
+        <nav className="mb-8 text-sm text-[#586070]" aria-label="Breadcrumb">
+          <ol className="flex flex-wrap items-center gap-2">
+            {(page.meta.breadcrumbs ?? [
+              { label: 'Start', href: '/' },
+              { label: 'Themen', href: '/themen' },
+            ]).map((crumb, idx, arr) => (
+              <li key={crumb.href} className="flex items-center gap-2">
+                <Link href={crumb.href} className="hover:text-[#1B1464]">
+                  {crumb.label}
+                </Link>
+                {idx < arr.length - 1 ? <span>/</span> : null}
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <section className="overflow-hidden rounded-[24px] border border-[#DDE3EA] bg-white">
+          <div className="grid gap-8 p-8 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">{page.meta.kicker}</p>
+              <h1 className="mt-4 font-display text-4xl leading-tight text-[#0F1328] lg:text-5xl">{page.meta.title}</h1>
+              <p className="mt-5 text-lg leading-relaxed text-[#334056]">{page.meta.subtitle}</p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                {(page.meta.ctas ?? []).map((cta) => (
+                  <Link
+                    key={`${cta.label}-${cta.href}`}
+                    href={cta.href}
+                    className={
+                      cta.variant === 'secondary'
+                        ? 'rounded-full border border-[#C6CED9] px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-[#1E2738] hover:border-[#1E2738]'
+                        : 'rounded-full bg-brand px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white hover:opacity-90'
+                    }
+                  >
+                    {cta.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {page.meta.heroImage ? (
+              <div className="relative min-h-[260px] overflow-hidden rounded-2xl bg-[#E9EEF3]">
+                <Image
+                  src={page.meta.heroImage}
+                  alt={page.meta.heroAlt ?? page.meta.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
+            ) : null}
+          </div>
+        </section>
+
+        <div className="mt-12 space-y-10">
+          {page.sections.map((section, index) => {
+            if (section.type === 'prose') {
+              return (
+                <section key={index} className="rounded-2xl border border-[#E0E6ED] bg-white p-7 lg:p-9">
+                  {section.heading ? (
+                    <h2 className="mb-5 font-display text-3xl text-[#111830]">
+                      {section.heading}
+                      <span className="mt-3 block h-[3px] w-16 bg-brand" />
+                    </h2>
+                  ) : null}
+                  <div className="space-y-4">
+                    {(section.content ?? []).map((paragraph, pIdx) => paragraphWithLinks(paragraph, `${index}-p-${pIdx}`))}
+                  </div>
+                  {section.bullets?.length ? (
+                    <ul className="mt-5 space-y-2 text-lg text-[#253043]">
+                      {section.bullets.map((item, itemIdx) => (
+                        <li key={itemIdx} className="flex gap-3">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {section.quote ? (
+                    <blockquote className="mt-6 border-l-4 border-brand pl-5 text-xl italic text-[#1F2940]">{section.quote}</blockquote>
+                  ) : null}
+                </section>
+              )
+            }
+
+            if (section.type === 'compare') {
+              return (
+                <section key={index} className="rounded-2xl border border-[#E0E6ED] bg-white p-7 lg:p-9">
+                  <h2 className="mb-6 font-display text-3xl text-[#111830]">{section.heading}</h2>
+                  <div className="overflow-hidden rounded-xl border border-[#DEE4EC]">
+                    <table className="w-full text-left">
+                      <thead className="bg-[#F2F5F9] text-sm uppercase tracking-wide text-[#4A5568]">
+                        <tr>
+                          <th className="p-4">Punkt</th>
+                          <th className="p-4">{section.leftTitle}</th>
+                          <th className="p-4">{section.rightTitle}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.rows.map((row, rIdx) => (
+                          <tr key={rIdx} className="border-t border-[#E8EDF3] align-top">
+                            <td className="p-4 font-semibold text-[#1B2235]">{row.label}</td>
+                            <td className="p-4 text-[#253043]">{row.left}</td>
+                            <td className="p-4 text-[#253043]">{row.right}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              )
+            }
+
+            if (section.type === 'figure') {
+              return (
+                <figure key={index} className="mx-auto w-[min(100%+2.5rem,calc(100%+2.5rem))] -translate-x-2 overflow-hidden rounded-2xl border border-[#DEE4EC] bg-white p-4 lg:-translate-x-5 lg:p-5">
+                  <div className="relative min-h-[220px] overflow-hidden rounded-xl bg-[#E8EEF4] lg:min-h-[360px]">
+                    <Image src={section.image} alt={section.alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 960px" />
+                  </div>
+                  {section.caption ? <figcaption className="mt-3 text-sm italic text-[#5A6678]">{section.caption}</figcaption> : null}
+                </figure>
+              )
+            }
+
+            if (section.type === 'crossref') {
+              return (
+                <section key={index} className="rounded-2xl border-l-4 border-brand bg-white p-7 lg:p-9">
+                  <h3 className="font-display text-2xl text-[#111830]">{section.heading}</h3>
+                  <p className="mt-3 text-lg leading-relaxed text-[#263246]">{section.body}</p>
+                  {section.link ? (
+                    <Link href={section.link.href} className="mt-4 inline-block font-mono text-xs uppercase tracking-wide text-brand hover:opacity-80">
+                      {section.link.label}
+                    </Link>
+                  ) : null}
+                </section>
+              )
+            }
+
+            if (section.type === 'faq') {
+              return (
+                <section key={index} className="rounded-2xl border border-[#E0E6ED] bg-white p-7 lg:p-9">
+                  <h2 className="mb-5 font-display text-3xl text-[#111830]">{section.heading ?? 'Häufige Fragen'}</h2>
+                  <div className="space-y-3">
+                    {section.items.map((item, itemIdx) => (
+                      <details key={itemIdx} className="group rounded-xl border border-[#E0E6ED] bg-[#FAFBFC] p-4">
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-medium text-[#172035]">
+                          <span>{item.question}</span>
+                          <span className="font-mono text-brand group-open:hidden">+</span>
+                          <span className="hidden font-mono text-brand group-open:inline">−</span>
+                        </summary>
+                        <p className="mt-3 leading-relaxed text-[#334056]">{item.answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )
+            }
+
+            if (section.type === 'bafa-calculator') {
+              return (
+                <div key={index} className="overflow-hidden rounded-2xl">
+                  <BafaCalculatorSlide headline={section.heading} body={section.body} cta={section.cta} />
+                </div>
+              )
+            }
+
+            return null
+          })}
+        </div>
+
+        <section className="mt-12 rounded-2xl bg-[#111833] p-8 text-white lg:p-10">
+          <h2 className="font-display text-3xl">{page.endCTA.heading}</h2>
+          <p className="mt-3 max-w-3xl text-lg text-white/80">{page.endCTA.body}</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href={page.endCTA.primary.href} className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white">
+              {page.endCTA.primary.label}
+            </Link>
+            {page.endCTA.secondary ? (
+              <Link href={page.endCTA.secondary.href} className="rounded-full border border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/90">
+                {page.endCTA.secondary.label}
+              </Link>
+            ) : null}
+          </div>
+        </section>
+      </article>
+    </main>
+  )
+}

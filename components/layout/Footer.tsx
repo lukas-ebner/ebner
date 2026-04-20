@@ -11,9 +11,10 @@ const leistungen = [
 ]
 
 const mehr = [
-  { href: '/projekte', label: 'Beteiligungen' },
-  { href: '/ueber-mich', label: 'Über mich' },
   { href: '/blog', label: 'Blog' },
+  { href: '/projekte', label: 'Beteiligungen' },
+  { href: '/themen', label: 'Themen' },
+  { href: '/ueber-mich', label: 'Über mich' },
   { href: '/ressourcen', label: 'Ressourcen' },
 ]
 

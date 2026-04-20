@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { listPageSlugs } from '@/lib/page-builder'
 import { listBlogSlugs } from '@/lib/blog'
+import { listThemenSlugs } from '@/lib/themen'
 
 const BASE = 'https://lukasebner.de'
 
@@ -16,14 +17,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  const migratedToThemen = new Set(['bafa', 'change-management-beratung'])
+
   const pages: MetadataRoute.Sitemap = listPageSlugs()
-    .filter((slug) => slug !== 'homepage')
+    .filter((slug) => slug !== 'homepage' && !migratedToThemen.has(slug))
     .map((slug) => ({
       url: `${BASE}/${slug}`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     }))
+
+  const themenIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE}/themen`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+  ]
+
+  const themenPages: MetadataRoute.Sitemap = listThemenSlugs().map((slug) => ({
+    url: `${BASE}/themen/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
 
   const blogIndex: MetadataRoute.Sitemap = [
     {
@@ -41,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...homepage, ...pages, ...blogIndex, ...blogPosts]
+  return [...homepage, ...pages, ...themenIndex, ...themenPages, ...blogIndex, ...blogPosts]
 }

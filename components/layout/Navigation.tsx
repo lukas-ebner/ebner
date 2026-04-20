@@ -23,17 +23,18 @@ const services = [
     desc: 'Von der Idee zum Prototyp. In Tagen, nicht Monaten.',
   },
   {
-    href: '/bafa',
+    href: '/themen/bafa',
     title: 'BAFA-Förderung',
     desc: 'Bis 80 % Zuschuss auf Unternehmensberatung für KMU.',
   },
 ]
 
 const navItems = [
+  { href: '/blog', label: 'Blog' },
   { href: '/projekte', label: 'Beteiligungen' },
+  { href: '/themen', label: 'Themen' },
   { href: '/ueber-mich', label: 'Über mich' },
   { href: '/preise', label: 'Preise' },
-  { href: '/blog', label: 'Blog' },
 ]
 
 const ctaButton = { href: '/erstgespraech', label: 'Erstgespräch buchen' }

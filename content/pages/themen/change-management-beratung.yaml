@@ -1,0 +1,86 @@
+meta:
+  title: "Change Management Beratung Regensburg für KMU | Lukas Ebner"
+  description: "Change Management Beratung für Mittelstand in Regensburg und Ostbayern. Umsetzung im Alltag statt Folien. BAFA-förderfähiger Einstieg bis 80 % möglich."
+  kicker: "Change Management Beratung"
+  subtitle: "Veränderung, die im Alltag hält. Nicht nur im Workshop. Für Unternehmen in Regensburg, Oberpfalz und Ostbayern."
+  heroImage: "/images/change/change-hero.png"
+  heroAlt: "Workshop zur Change Management Beratung mit Führungsteam"
+  og_image: "/images/og/change-management-beratung.jpg"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Themen"
+      href: "/themen"
+    - label: "Change Management"
+      href: "/themen/change-management-beratung"
+  ctas:
+    - label: "Erstgespräch vereinbaren"
+      href: "/erstgespraech?topic=change-management"
+      variant: "primary"
+    - label: "Preise ansehen"
+      href: "/preise"
+      variant: "secondary"
+
+sections:
+  - type: "prose"
+    heading: "Typische Change-Situationen im Mittelstand"
+    content:
+      - "Die meisten Veränderungsprojekte scheitern nicht an der Idee, sondern an der Umsetzung unter echtem Tagesdruck. Genau dort setzt meine Beratung an."
+    bullets:
+      - "Wachstum ist da, aber Rollen und Entscheidungen sind nicht nachgezogen."
+      - "Neue Führung oder Generationswechsel erzeugen Reibung statt Klarheit."
+      - "Digitalisierung läuft, aber operativer Nutzen bleibt aus."
+      - "Kick-off war stark, nach wenigen Wochen versandet das Projekt."
+
+  - type: "crossref"
+    heading: "Drei Phasen, die im Alltag funktionieren"
+    body: "1) Analyse der echten Engpässe, 2) Veränderungsdesign mit 30-60-90-Zielen, 3) Umsetzungssparring mit klaren Verantwortlichkeiten."
+    link:
+      label: "Operations & Führung ansehen"
+      href: "/operations"
+
+  - type: "figure"
+    image: "/images/change/change-szenario-4.png"
+    alt: "Führungsteam arbeitet an Umsetzungsplan"
+    caption: "Nicht nur Workshop-Impulse, sondern ein belastbarer Umsetzungsrhythmus."
+
+  - type: "compare"
+    heading: "Klassischer Change vs. operative Umsetzung"
+    leftTitle: "Folie-zentrierter Ansatz"
+    rightTitle: "Operativer Umsetzungsansatz"
+    rows:
+      - label: "Fokus"
+        left: "Kommunikation und Formate"
+        right: "Entscheidungen, Verantwortlichkeiten, Takt"
+      - label: "Steuerung"
+        left: "Viel Reporting, wenig Durchgriff"
+        right: "Wenige Kennzahlen, klare Nachsteuerung"
+      - label: "Ergebnis"
+        left: "Hohe Aktivität, niedrige Verbindlichkeit"
+        right: "Messbare Fortschritte im Tagesgeschäft"
+
+  - type: "prose"
+    heading: "BAFA-Einstieg für Change-Projekte"
+    content:
+      - "Beispiel bei 3.500 € Beratungskosten brutto und 80 % Förderquote: Förderfähiger Anteil 2.800 €, Zuschuss 2.240 €, Eigenanteil 1.260 €."
+      - "Entscheidend ist nicht die Förderquote allein, sondern ob euer Change danach nachweisbar stabiler läuft."
+
+  - type: "faq"
+    heading: "Häufige Fragen zur Change Management Beratung"
+    items:
+      - question: "Für welche Unternehmen ist das gedacht?"
+        answer: "Für KMU, die Wachstum, Übergabe, Reorganisation oder Digitalisierung sauber umsetzen wollen, ohne dass alles an der Geschäftsführung hängt."
+      - question: "Wie lange dauert eine typische Begleitung?"
+        answer: "Häufig starten wir mit einem fokussierten 8- bis 12-Wochen-Setup und gehen danach in ein Umsetzungssparring."
+      - question: "Wie messt ihr den Erfolg?"
+        answer: "Über wenige, klare Kennzahlen wie Entscheidungsdurchlaufzeit, Eskalationen pro Woche oder Nacharbeitsquote."
+
+endCTA:
+  heading: "Change darf nicht am Projektplan enden"
+  body: "Wenn ihr Veränderung wirklich im Alltag verankern wollt, braucht ihr klare Führungsroutinen, saubere Entscheidungslogik und Umsetzungsdisziplin."
+  primary:
+    label: "Erstgespräch für Change starten"
+    href: "/erstgespraech?topic=change-management"
+  secondary:
+    label: "Zur Übersicht Themen"
+    href: "/themen"
