@@ -1,0 +1,104 @@
+meta:
+  title: "Change Management Beratung Regensburg für KMU | Lukas Ebner"
+  description: "Change Management Beratung für Mittelstand in Regensburg und Ostbayern. Umsetzung im Alltag statt Folien. BAFA-förderfähiger Einstieg bis 80 % möglich."
+  og_image: /images/og/change-management-beratung.jpg
+  accent: "#F44900"
+
+slides:
+  - template: hero-split
+    pill: "Change Management Beratung"
+    headline: "Veränderung, die im Alltag hält. Nicht nur im Workshop." 
+    subtext: "Du willst ein Unternehmen, das Veränderungen sauber umsetzt, ohne im Tagesgeschäft zu kippen. Ich begleite dich von der Analyse bis zur Umsetzung vor Ort in Regensburg, Oberpfalz und Ostbayern."
+    cta:
+      text: "Erstgespräch vereinbaren"
+      url: "/erstgespraech?topic=change-management"
+    image:
+      src: /images/change/change-hero.png
+      alt: "Workshop zur Change Management Beratung mit Führungsteam"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Typische Change-Situationen im Mittelstand."
+    body: "Die meisten Veränderungsprojekte scheitern nicht an der Idee, sondern an der Umsetzung unter realem Druck. Genau dort setzt meine Change Management Beratung an."
+    symptoms:
+      - pill: "Szenario 1"
+        image: /images/change/change-szenario-1.png
+        headline: "Wachstum ist da. Die Organisation zieht nicht nach."
+        body: "Aufträge steigen, aber Entscheidungen hängen bei wenigen Personen. Zuständigkeiten sind unscharf, Übergaben dauern zu lange. Wir klären Rollen, Takt und Prioritäten so, dass Wachstum nicht im Chaos endet."
+      - pill: "Szenario 2"
+        image: /images/change/change-szenario-2.png
+        headline: "Generationswechsel oder neue Führungskraft erzeugt Reibung."
+        body: "Die neue Führung will Struktur, das Team hält an alten Routinen fest. Ich moderiere den Übergang mit klaren Verantwortlichkeiten und verbindlichen Arbeitsregeln statt Machtworten."
+      - pill: "Szenario 3"
+        image: /images/change/change-szenario-3.png
+        headline: "Digitalisierung ist gestartet, aber der Nutzen bleibt aus."
+        body: "Neue Tools sind eingeführt, doch der Alltag hat sich kaum verbessert. Wir koppeln Digitalisierung an konkrete Prozesse und Führungsroutinen, damit Veränderung messbar wirkt."
+      - pill: "Szenario 4"
+        image: /images/change/change-szenario-4.png
+        headline: "Change-Projekte starten stark und versanden nach Wochen."
+        body: "Es gibt Kick-off, Folien und gute Absicht, aber keinen Umsetzungsrhythmus. Wir bauen ein 30-60-90-Tage-Gerüst mit klaren Entscheidungen, messbaren Zwischenzielen und verbindlicher Nachsteuerung."
+
+  - template: credibility
+    bg: "#1B1464"
+    headline: "Kein Konzern-Change von der Seitenlinie. Unternehmerische Umsetzung aus der Praxis."
+    body: "Ich war 13 Jahre selbst Geschäftsführer bei eins+null, habe Teams aufgebaut, Engpässe gelöst und 2022 das Unternehmen verkauft. Ich berate nicht aus Theorie, sondern aus echter Umsetzungsverantwortung."
+    proofs:
+      - text: "13 Jahre Geschäftsführung in einem wachsenden Dienstleistungsunternehmen"
+      - text: "Exit 2022 nach Aufbau belastbarer Führungs- und Prozessstrukturen"
+      - text: "Fokus auf Mittelstand: klare Entscheidungen, kurze Wege, sichtbare Wirkung"
+      - text: "BAFA-förderfähiger Einstieg für viele KMU möglich"
+    cta:
+      label: "Erstgespräch vereinbaren"
+      href: "/erstgespraech?topic=change-management"
+    chat:
+      enabled: true
+      topic: "change-management"
+      ctaHref: "/erstgespraech?topic=change-management"
+
+  - template: parallax-story
+    image:
+      src: /images/change/change-parallax.png
+      alt: "Change Management Beratung mit Führungsteam in Regensburg"
+    sections:
+      - headline: "Wie wir Change im Mittelstand umsetzen."
+        body: "Drei Phasen, ein klarer Anspruch: Veränderung muss im Alltag funktionieren, nicht nur im Projektplan."
+      - headline: "1) Analyse: Was bremst euch wirklich?"
+        body: "Wir machen sichtbar, wo Entscheidungen hängen, welche Rollen kollidieren und welche Prozesse unnötig Reibung erzeugen. Ergebnis: ein klares Bild eurer Engpässe in [Operations & Führung](/operations)."
+      - headline: "2) Konzept: Was wird wie verändert?"
+        body: "Wir definieren ein umsetzbares Veränderungsdesign mit Prioritäten, Verantwortlichkeiten und messbaren 30-60-90-Zielen. Das umfasst Führungsarbeit, Prozesslogik und [Systeme & Automatisierung](/systeme)."
+      - headline: "3) Umsetzung: Wie bleibt das im Alltag stabil?"
+        body: "Wir begleiten die Umsetzung vor Ort und im Sparring: Entscheidungen klären, Widerstände bearbeiten, Routinen verankern. Bei Bedarf integrieren wir gezielt [KI-Readiness](/ki-readiness), wenn sie den Change beschleunigt statt verkompliziert."
+
+  - template: parallax-story
+    image:
+      src: /images/change/change-bafa.png
+      alt: "Rechenbeispiel BAFA-Förderung für Change Management Beratung"
+    sections:
+      - headline: "BAFA-Rechenbeispiel für den Einstieg."
+        body: "Beispiel bei 3.500 € Beratungskosten brutto und 80 % Förderquote:\n\n- **Förderfähiger Anteil**: 2.800 €\n- **Zuschuss (80 %)**: 2.240 €\n- **Eigenanteil**: 1.260 €\n\nEntscheidend ist nicht nur die Förderung, sondern ob der Change danach messbar besser läuft. Mehr Details zu Paketen: [Preise & BAFA](/preise)."
+
+  - template: faq
+    headline: "Häufige Fragen zur Change Management Beratung."
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Was bringt Change Management Beratung in einem KMU konkret?"
+        answer: "Sie macht Veränderung steuerbar: klare Rollen, saubere Entscheidungen, verbindliche Umsetzungsschritte. Ziel ist weniger Reibung und mehr Führungsfähigkeit im Alltag."
+      - question: "Für welche Unternehmen ist das gedacht?"
+        answer: "Für kleine und mittlere Unternehmen, die Wachstum, Übergabe, Reorganisation oder Digitalisierung sauber umsetzen wollen, ohne dass alles an der Geschäftsführung hängen bleibt."
+      - question: "Wie unterscheidet sich dein Ansatz von großen Beratungen?"
+        answer: "Ich arbeite operativ mit euch im Tagesgeschäft, nicht nur im Strategie-Workshop. Weniger Folien, mehr Umsetzungstakt, klare Verantwortlichkeiten und sichtbare Ergebnisse."
+      - question: "Arbeitest du nur in Regensburg?"
+        answer: "Schwerpunkt sind Regensburg, Oberpfalz und Ostbayern. Je nach Projekt begleite ich auch darüber hinaus, vor Ort plus Remote-Sparring."
+      - question: "Wie läuft ein Projektstart ab?"
+        answer: "Im Erstgespräch klären wir Zielbild und Engpass. Danach folgt eine kompakte Analysephase, aus der ein 30-60-90-Tage-Umsetzungsplan mit konkreten Verantwortlichkeiten entsteht."
+      - question: "Wie lange dauert eine typische Begleitung?"
+        answer: "Das hängt vom Umfang ab. Häufig starten wir mit einem klaren 8- bis 12-Wochen-Setup und gehen danach in ein fokussiertes Umsetzungssparring."
+      - question: "Wie messt ihr, ob der Change wirkt?"
+        answer: "Über wenige, klare Kennzahlen: zum Beispiel Eskalationen pro Woche, Entscheidungsdurchlaufzeit, Nacharbeitsquote und Führungszeitanteil statt Feuerwehreinsatz."
+      - question: "Ist Change Management Beratung BAFA-förderfähig?"
+        answer: "In vielen Fällen ja. Je nach Konstellation sind Zuschüsse bis 80 % möglich. Ich kläre mit dir im Erstgespräch, ob und wie das in deinem Fall passt."
+      - question: "Was kostet die Zusammenarbeit?"
+        answer: "Du bekommst einen transparenten Rahmen passend zu Unternehmensgröße und Zielbild. Einstieg und Förderlogik klären wir vorab, damit du auf Basis von Zahlen entscheidest."
+      - question: "Was, wenn wir schon mehrere Change-Anläufe hatten?"
+        answer: "Dann arbeiten wir nicht an der nächsten Kampagne, sondern an den strukturellen Ursachen: Entscheidungslogik, Führungsroutinen und Umsetzungsdisziplin. Genau dort liegt meist der Ansatzpunkt."
