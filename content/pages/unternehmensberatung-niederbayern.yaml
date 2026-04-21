@@ -1,0 +1,92 @@
+meta:
+  title: "Unternehmensberatung Niederbayern | Lukas Ebner"
+  description: "Unternehmensberatung für KMU in Niederbayern. Klare Führung, saubere Prozesse und messbare Umsetzung ohne Berater-Overhead."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: "Niederbayern"
+  MAIN_KEYWORD: "Unternehmensberatung"
+  LSI_KEYWORDS:
+    - "Unternehmensberatung Niederbayern"
+    - "Mittelstandsberatung Niederbayern"
+    - "Strategieberatung Niederbayern"
+    - "Unternehmensberatung Straubing"
+    - "Unternehmensberatung Landshut"
+
+slides:
+  - template: hero-split
+    pill: "Unternehmensberatung Niederbayern"
+    headline: "Unternehmensberatung in Niederbayern die wirkt, nicht glänzt."
+    subtext: "Inhabergeführte Betriebe in Niederbayern haben andere Engpässe als Konzerne. Führung, Übergaben, Skalierung ohne Chaos und eine Betriebslogik die ohne dich läuft. Das ist der Kern. Folien interessieren hier niemanden."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/unternehmensberatung-niederbayern-hero.jpg"
+      alt: "Unternehmer in Niederbayern im Beratungsgespräch"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Typische Engpässe in inhabergeführten Betrieben in Niederbayern"
+    body: "Niederbayerische KMU sind pragmatisch und regional verwurzelt. Unternehmensberatung Niederbayern wird gesucht, wenn das Wachstum an seine Grenzen stößt: Entscheidungen stauen sich, Führung hängt am Inhaber, und Umsetzung bleibt diffus."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Alles läuft über dich, auch wenn es nicht müsste."
+        body: "Entscheidungen, Eskalationen, Freigaben — ein Großteil landet trotzdem bei dir. Das zeigt, dass Führungslogik noch nicht in der Breite verankert ist."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Mit mehr Mitarbeitenden wurde es nicht einfacher."
+        body: "Mehr Team hätte mehr Kapazität bringen sollen. Stattdessen wuchsen Koordinationsaufwand, Missverständnisse und Sonderfälle schneller als der Output."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "Strategische Ziele werden nicht sauber umgesetzt."
+        body: "Die Richtung ist klar. Aber zwischen Entscheidung und Ergebnis gehen Verbindlichkeit, Prioritäten und Tempo verloren."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Fachkräftemangel belastet Führung und Abläufe zusätzlich."
+        body: "In Niederbayern ist Fachkräftedruck real. Wenn Betriebsabläufe dann noch zu viel Erklärung brauchen, verstärkt das den Verlust an Mitarbeitenden und Effizienz."
+
+  - template: credibility
+    headline: "Beratung die anpackt, nicht erklärt."
+    body: "Ich arbeite mit Unternehmerinnen und Unternehmern in Niederbayern an den Stellen, die wirklich zählen: Führungslogik, Abläufe, Entscheidungsstrukturen und Skalierbarkeit. Kein theoretisches Framework. Sondern Betrieb der sauberer läuft."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "Skalierung von 0 auf 50 Mitarbeitende"
+      - text: "Spezialisiert auf operative Führung und Wachstumsengpässe"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "Beratungsförderung in Bayern: Was für Niederbayerische KMU gilt."
+    body: "Über das BAFA-Programm und regionale Fördermöglichkeiten in Bayern können Beratungsleistungen für KMU bis zu 50 % gefördert werden. Ob das für deinen Betrieb passt, klären wir schnell. Wichtiger ist: Wo verlierst du gerade am meisten Steuerbarkeit?"
+    cta:
+      label: "BAFA-Check starten"
+      href: "/erstgespraech?topic=bafa"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zur Unternehmensberatung in Niederbayern"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Für welche Unternehmen in Niederbayern ist das sinnvoll?"
+        answer: "Vor allem für KMU zwischen 5 und 100 Mitarbeitenden, die gerade in einer Wachstumsphase stecken, Nachfolge vorbereiten oder merken, dass Führung und Betriebslogik nicht mehr mit dem Unternehmen mitwachsen."
+      - question: "Was unterscheidet diese Beratung von klassischen Unternehmensberatern?"
+        answer: "Ich komme nicht mit vorgefertigten Modellen. Ich schaue auf deinen konkreten Betrieb, identifiziere die zwei bis drei echten Engpässe und helfe dir, diese in klare Maßnahmen zu übersetzen. Kein Overhead, kein Berater-Theater."
+      - question: "Wie läuft ein Einstieg konkret ab?"
+        answer: "Erstgespräch kostenlos, ca. 30 Minuten. Danach klarer Fokus auf die zwei bis drei Stellschrauben, die in deinem Betrieb wirklich Wirkung entfalten. Umsetzung dann entweder eigenständig oder gemeinsam."
+      - question: "Gibt es Referenzen aus der Region?"
+        answer: "Ja. Auf Anfrage teile ich konkrete Erfahrungen aus ähnlichen Betrieben in Ostbayern und Niederbayern, natürlich anonymisiert."
+
+  - template: cta
+    headline: "Wenn dein Betrieb in Niederbayern klarer werden soll"
+    body: "Lass uns anschauen, wo Führung, Abläufe und Umsetzung bei dir gerade Reibung erzeugen, und welche konkreten Schritte das ändern. 30 Minuten Erstgespräch reichen für eine ehrliche Einschätzung."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Preise ansehen"
+      href: "/preise"

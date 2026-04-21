@@ -1,0 +1,92 @@
+meta:
+  title: "Prozessoptimierung Regensburg | Lukas Ebner"
+  description: "Prozessoptimierung für KMU in Regensburg. Weniger Reibung, klarere Abläufe und mehr operative Steuerbarkeit statt Dauer-Feuerwehr."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: "Regensburg"
+  MAIN_KEYWORD: "Prozessoptimierung"
+  LSI_KEYWORDS:
+    - "Prozessoptimierung Regensburg"
+    - "Abläufe verbessern Regensburg"
+    - "Digitalisierung Mittelstand Regensburg"
+    - "Effizienz steigern Regensburg"
+    - "Unternehmensprozesse Regensburg"
+
+slides:
+  - template: hero-split
+    pill: "Prozessoptimierung Regensburg"
+    headline: "Prozessoptimierung in Regensburg, wenn dein Betrieb zu viel Reibung produziert."
+    subtext: "Wenn zu viele Rückfragen, Schleifen und Eskalationen bei dir landen, liegt das selten am Einsatz des Teams. Meist sind Abläufe, Verantwortlichkeiten und Prioritäten nicht sauber gebaut. Genau da setze ich an."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/regensburg-prozessoptimierung-hero.jpg"
+      alt: "Unternehmer in Regensburg spricht über Prozessoptimierung"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Woran du merkst, dass Prozessoptimierung in Regensburg für dich gerade relevant ist"
+    body: "In vielen Regensburger KMU läuft operativ noch erstaunlich viel über Zuruf. Genau dann werden Themen wie Prozessoptimierung Regensburg, Abläufe verbessern Regensburg oder Digitalisierung Mittelstand Regensburg gesucht, weil Wachstum plötzlich mehr Reibung als Hebel erzeugt."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Zu viele Rückfragen landen bei dir."
+        body: "Das Team arbeitet, aber Entscheidungen, Freigaben und Prioritäten rutschen trotzdem immer wieder nach oben."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Übergaben kosten unnötig Tempo."
+        body: "Zwischen Vertrieb, Projekt, Backoffice oder Führung geht zu viel verloren, weil Prozesse nur halb definiert sind."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "Mehr Tools, aber nicht mehr Klarheit."
+        body: "Software ersetzt keine Betriebslogik. Wenn der Ablauf nicht sauber ist, digitalisierst du nur das Chaos."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Marge und Nerven gehen in Schleifen verloren."
+        body: "Zu viele Sonderfälle, Nacharbeit und Eskalationen fressen Zeit, die eigentlich in saubere Umsetzung gehen sollte."
+
+  - template: credibility
+    headline: "Keine Prozessfolie. Sondern ein Betrieb, der sauberer läuft."
+    body: "Ich schaue mit dir auf die Stellen, an denen Tempo verloren geht: Rollen, Übergaben, Entscheidungspunkte, Prioritäten. Ziel ist nicht ein hübsches Soll-Prozessbild, sondern ein Alltag mit weniger Reibung und mehr Steuerbarkeit."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "Skalierung von 0 auf 50 Mitarbeitende"
+      - text: "Fokus auf operative Führung, Prozesse und Systeme"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "Förderung kann helfen. Der Engpass bleibt trotzdem operativ."
+    body: "Rund um Regensburg gibt es Programme wie den Digitalbonus Bayern, die Prozess- und Digitalisierungsmaßnahmen fördern. Die eigentliche Frage ist aber: Wo verliert dein Betrieb gerade Tempo, Marge und Klarheit?"
+    cta:
+      label: "BAFA-Check"
+      href: "/erstgespraech?topic=bafa"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zu Prozessoptimierung in Regensburg"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Für welche Unternehmen in Regensburg ist das besonders sinnvoll?"
+        answer: "Vor allem für wachsende KMU, Dienstleister, Agenturen und projektgetriebene Teams, bei denen zu viele Rückfragen, Abstimmungen und Sonderfälle auf der Führungsebene hängen bleiben."
+      - question: "Geht es dabei nur um Software und Automatisierung?"
+        answer: "Nein. Erst kommt die Logik, dann das Tool. Wenn Rollen, Übergaben und Prioritäten nicht sauber sind, wird Digitalisierung meistens nur teurer."
+      - question: "Was verbessert sich durch Prozessoptimierung konkret?"
+        answer: "Typischerweise werden Entscheidungen schneller, Übergaben klarer, Nacharbeit geringer und Führung entlasteter."
+      - question: "Warum ist das in Regensburg gerade relevant?"
+        answer: "Weil viele Unternehmen hier zwischen Wachstum, Fachkräftedruck und zunehmender Digitalisierungsanforderung stehen. Genau in dieser Phase kippen Abläufe schnell von pragmatisch zu chaotisch."
+
+  - template: cta
+    headline: "Wenn dein Unternehmen in Regensburg nicht noch mehr Energie verlieren soll"
+    body: "Dann lass uns anschauen, an welchen Stellen Reibung entsteht und wie du daraus wieder einen Betrieb machst, der sauber läuft, ohne ständig an dir zu hängen."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Preise ansehen"
+      href: "/preise"

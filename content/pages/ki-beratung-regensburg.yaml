@@ -1,0 +1,92 @@
+meta:
+  title: "KI-Beratung Regensburg | Lukas Ebner"
+  description: "KI-Beratung für KMU in Regensburg. Keine KI-Hype-Shows, sondern echte Anwendungsfälle die deinen Betrieb entlasten."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: "Regensburg"
+  MAIN_KEYWORD: "KI-Beratung"
+  LSI_KEYWORDS:
+    - "KI-Beratung Regensburg"
+    - "Künstliche Intelligenz Beratung Regensburg"
+    - "KI im Mittelstand Regensburg"
+    - "Automatisierung Regensburg"
+    - "Digitalisierung Regensburg KI"
+
+slides:
+  - template: hero-split
+    pill: "KI-Beratung Regensburg"
+    headline: "KI-Beratung in Regensburg ohne Hype-Folien."
+    subtext: "KI ist kein Allheilmittel und kein Selbstläufer. Für Regensburger KMU zählt: Welche drei Prozesse kannst du mit KI wirklich entlasten? Genau das schauen wir uns an. Nicht mehr, nicht weniger."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/ki-beratung-regensburg-hero.jpg"
+      alt: "Unternehmer in Regensburg beim KI-Strategiegespräch"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Wann KI-Beratung in Regensburg gerade relevant wird"
+    body: "Viele Regensburger Betriebe spüren den Druck: KI-Beratung Regensburg, Automatisierung, Digitalisierung Mittelstand — überall tauchen die Themen auf. Das Problem: Zu viele Anbieter verkaufen Technologie statt Betriebsentlastung. Der Einstieg muss anders sein."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Dein Team verliert Zeit in Routinearbeit."
+        body: "Wiederkehrende Aufgaben, Recherchen, Zusammenfassungen, Vorlagen — vieles davon ließe sich mit KI deutlich beschleunigen. Noch passiert es manuell."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Du siehst KI-Potenzial, weißt aber nicht wo anfangen."
+        body: "Die Tool-Landschaft ist unübersichtlich. Ohne klaren Einstieg bleibt es bei Experimenten, die nichts ändern."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "KI-Projekte im Betrieb haben bisher nicht gezündet."
+        body: "Weil Technologie ohne Betriebslogik nichts verbessert. KI muss in echte Abläufe eingebaut werden, nicht daneben stehen."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Wettbewerber automatisieren, du hast noch keinen Plan."
+        body: "Der Druck steigt. Wer jetzt keinen pragmatischen KI-Fahrplan hat, verliert Schritt für Schritt operativen Vorsprung."
+
+  - template: credibility
+    headline: "KI-Beratung die im Betrieb ankommt, nicht im Boardroom."
+    body: "Ich schaue mit dir auf die drei bis fünf Stellen wo KI in deinem Betrieb wirklich etwas entlasten kann. Kein Pitch für neue Software. Keine abstrakten Roadmaps. Sondern konkrete Anwendungsfälle, die du morgen starten kannst."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "KI-Einsatz im eigenen Unternehmen seit 2022"
+      - text: "Fokus auf echte Betriebsentlastung, nicht KI-Theater"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "KI-Förderung in Bayern: Was für Regensburger Betriebe möglich ist."
+    body: "Der Digitalbonus Bayern und weitere Förderprogramme unterstützen KI-Einführungen im Mittelstand. Ob und was für deinen Betrieb passt, klären wir im Erstgespräch. Die eigentliche Frage bleibt: Welche KI-Anwendungsfälle erzeugen bei dir echten Hebel?"
+    cta:
+      label: "KI-Potenzial einschätzen"
+      href: "/erstgespraech?topic=ki"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zur KI-Beratung in Regensburg"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Für welche Betriebe in Regensburg ist KI-Beratung sinnvoll?"
+        answer: "Vor allem für KMU, Dienstleister und Agenturen, bei denen Routinearbeit, Recherchen, Kommunikation oder Dokumentation viel Zeit fressen. Produktionsbetriebe mit Qualitätsprüfung oder Logistik profitieren oft ähnlich."
+      - question: "Welche KI-Tools empfiehlst du konkret?"
+        answer: "Das hängt vom Anwendungsfall ab. Ich empfehle erst dann Tools, wenn klar ist, welchen Prozess wir entlasten wollen. Tool-First funktioniert fast nie."
+      - question: "Was kostet KI-Einführung in einem kleinen Betrieb?"
+        answer: "Einstiegsanwendungen kosten oft wenig: Ein paar hundert Euro Toolkosten und 10-20 Stunden Implementierungszeit. Der ROI zeigt sich schnell, wenn der Anwendungsfall stimmt."
+      - question: "Warum ist das in Regensburg gerade relevant?"
+        answer: "Weil der regionale Wettbewerb auch unter Regensburger KMU spürbar zunimmt. Wer Routinearbeit schneller und günstiger erledigt, hat mehr Ressourcen für Kundenpflege, Vertrieb und echte Führungsarbeit."
+
+  - template: cta
+    headline: "Wenn du in Regensburg wirklich verstehen willst, was KI für deinen Betrieb bringt"
+    body: "Dann lass uns 30 Minuten reden. Kein Pitch, keine Demo. Nur ein ehrlicher Blick auf deine Prozesse und drei konkrete KI-Ansätze, die bei deinem Betrieb wirklich Sinn machen."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Leistungen ansehen"
+      href: "/leistungen"

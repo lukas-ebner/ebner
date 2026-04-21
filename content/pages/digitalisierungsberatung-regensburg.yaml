@@ -1,0 +1,92 @@
+meta:
+  title: "Digitalisierungsberatung Regensburg | Lukas Ebner"
+  description: "Digitalisierungsberatung für KMU in Regensburg. Weniger Tool-Chaos, klarere Prioritäten und Digitalisierung, die im Alltag wirklich funktioniert."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: "Regensburg"
+  MAIN_KEYWORD: "Digitalisierungsberatung"
+  LSI_KEYWORDS:
+    - "Digitalisierungsberatung Regensburg"
+    - "KI-Beratung Regensburg"
+    - "Automatisierung Regensburg"
+    - "Digitale Transformation Regensburg"
+    - "Systeme Mittelstand Regensburg"
+
+slides:
+  - template: hero-split
+    pill: "Digitalisierungsberatung Regensburg"
+    headline: "Digitalisierungsberatung in Regensburg, wenn Tools gerade mehr Chaos als Wirkung erzeugen."
+    subtext: "Du brauchst keine weitere Demo und kein neues Buzzword. Du brauchst eine klare Logik dafür, welche Prozesse digitalisiert werden sollten, welche nicht und wie KI oder Automatisierung im Alltag wirklich etwas bringt."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/regensburg-digitalisierung-hero.jpg"
+      alt: "Geschäftsführer in Regensburg im Gespräch über Digitalisierung"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Woran du merkst, dass du eher Digitalisierungsberatung als noch ein Tool brauchst"
+    body: "In Regensburg ist das Thema spürbar präsent, von Förderprogrammen bis KI-Initiativen. Genau deshalb wächst in vielen Unternehmen der Druck, etwas zu machen. Die eigentliche Schwierigkeit liegt aber fast nie im Kaufen eines Tools, sondern in Priorisierung, Verantwortlichkeit und Umsetzung."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Ihr habt Tools, aber keinen sauberen Stack."
+        body: "Neue Systeme kommen dazu, alte bleiben bestehen und niemand würde behaupten, dass daraus eine klare Betriebslogik entstanden ist."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "KI wird getestet, aber nicht geführt."
+        body: "Prompts, Pilotprojekte und Einzelinitiativen gibt es. Eine belastbare Linie für Nutzen, Risiken und Verantwortlichkeiten fehlt oft."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "Digitalisierung frisst Aufmerksamkeit."
+        body: "Statt Entlastung entsteht zusätzlicher Abstimmungsaufwand, weil parallel zu viel angefangen und zu wenig sauber abgeschlossen wird."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Use Cases klingen gut, landen aber nicht im Betrieb."
+        body: "Dann fehlt meistens keine Idee, sondern eine Umsetzungsarchitektur mit klarer Priorisierung und einem realistischen Einstieg."
+
+  - template: credibility
+    headline: "Digitalisierung ohne Berater-Hype"
+    body: "Ich verbinde Strategie, Prozesse und Alltag. Das heißt: erst verstehen, wo der Betrieb heute Reibung erzeugt. Dann entscheiden, welche Systeme, Automatisierungen oder KI-Use-Cases wirklich sinnvoll sind. Nicht andersrum."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "Skalierung von 0 auf 50 Mitarbeitende"
+      - text: "Operativer Fokus auf Systeme, Führung und Umsetzung"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "Förderlogik mitdenken, aber nicht zum Selbstzweck machen"
+    body: "Rund um Regensburg ist das Thema 2026 stark sichtbar, etwa über Programme wie KI-Transfer Plus und den Digitalbonus. Förderfähigkeit ist nett. Entscheidend ist trotzdem, dass die Digitalisierung im Alltag trägt."
+    cta:
+      label: "BAFA-Check"
+      href: "/erstgespraech?topic=bafa"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zu Digitalisierungsberatung in Regensburg"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Für wen ist Digitalisierungsberatung in Regensburg sinnvoll?"
+        answer: "Für KMU, Dienstleister und wachsende Teams, die bereits Tools nutzen oder KI testen, aber noch keine klare Linie für Prozesse, Verantwortlichkeiten und Prioritäten haben."
+      - question: "Geht es bei dir eher um Strategie oder um Umsetzung?"
+        answer: "Beides, aber in der richtigen Reihenfolge. Erst wird der echte Engpass geklärt. Dann entsteht eine sinnvolle Reihenfolge für Systeme, Automatisierung und KI-Use-Cases."
+      - question: "Was ist der häufigste Fehler bei Digitalisierung?"
+        answer: "Zu früh in Tools oder KI springen, ohne vorher Betriebslogik, Entscheidungswege und Prozessverantwortung sauber zu klären. Dann digitalisiert man nur Unordnung."
+      - question: "Warum ist Regensburg hier ein spannender Standort?"
+        answer: "Weil die Region viel Mittelstand, Technologie und spürbare KI-Dynamik zusammenbringt. Genau das erhöht den Druck, schnell zu handeln, und damit auch das Risiko, ohne klare Logik zu investieren."
+
+  - template: cta
+    headline: "Wenn Digitalisierung in Regensburg endlich Wirkung statt Zusatzlast bringen soll"
+    body: "Dann lass uns klären, was in deinem Unternehmen wirklich sinnvoll ist, was nur nach Fortschritt aussieht und wie daraus ein umsetzbarer Plan wird."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Preise ansehen"
+      href: "/preise"
