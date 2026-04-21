@@ -1,0 +1,92 @@
+meta:
+  title: "Operations-Beratung für Agenturen | Lukas Ebner"
+  description: "Operations-Beratung für Agenturen und Dienstleister. Weniger Projektchaos, klarere Abläufe, mehr Marge ohne mehr Stunden."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: ""
+  MAIN_KEYWORD: "Operations-Beratung Agenturen"
+  LSI_KEYWORDS:
+    - "Operations-Beratung Agenturen"
+    - "Agentur skalieren"
+    - "Prozessoptimierung Agentur"
+    - "Agentur Profitabilität verbessern"
+    - "Agentur Systeme Strukturen"
+
+slides:
+  - template: hero-split
+    pill: "Operations-Beratung Agenturen"
+    headline: "Operations-Beratung für Agenturen die mehr Klarheit brauchen, nicht mehr Umsatz."
+    subtext: "Wenn deine Agentur wächst, aber Marge, Nerven und Steuerbarkeit gleichzeitig schlechter werden, ist das kein Wachstumsproblem. Es ist ein Operations-Problem. Genau da setze ich an."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/operations-beratung-agenturen-hero.jpg"
+      alt: "Agenturinhaber im Strategie-Workshop"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Woran du erkennst, dass deine Agentur ein Operations-Problem hat"
+    body: "Viele Agenturen suchen nach Agentur skalieren, Prozessoptimierung Agentur oder Agentur Marge verbessern — nicht weil sie zu wenig Kunden haben, sondern weil internes Chaos jeden Wachstumsschritt teurer macht als er sein müsste."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Projekte laufen aus dem Ruder, obwohl du alles siehst."
+        body: "Übergaben passieren informell, Scope schleicht sich aus, Nacharbeit frisst Marge. Nicht weil das Team schlechter wird, sondern weil Strukturen nicht skalieren."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Du bist gleichzeitig CEO, Projektleiter und Feuerwehr."
+        body: "Selbst wenn du nicht mehr operativ sein willst, landet alles trotzdem bei dir. Das zeigt, dass Verantwortung und Entscheidungskompetenz nicht sauber verteilt sind."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "Gute Leute bleiben nicht oder performen unter Potenzial."
+        body: "Wenn Führung unstrukturiert ist, frustrieren sich die Besten heraus. Struktur und Klarheit halten gute Mitarbeitende länger als Gehalt."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Mit jedem neuen Kunden steigt der Druck, nicht die Entlastung."
+        body: "Das ist das klarste Signal: Wachstum sollte Kapazität freisetzen, nicht verschieben. Wenn es das nicht tut, fehlt operative Infrastruktur."
+
+  - template: credibility
+    headline: "Für Agenturen, die skalieren wollen, ohne sich dabei zu zerstören."
+    body: "Ich war selbst Agenturinhaber. Ich kenne den Moment, wo mehr Kunden mehr Chaos bedeuten, statt mehr Ertrag. Die Lösung ist fast immer dieselbe: Führungslogik, Projektstruktur und Marge-Tracking sauber aufbauen, bevor der nächste Wachstumsschritt kommt."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "Eigene Agentur von 0 auf 50 Mitarbeitende skaliert"
+      - text: "Spezialisiert auf dienstleistungsintensive KMU und Agenturen"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "Förderung für Beratungsleistungen: Was für Agenturen gilt."
+    body: "BAFA-geförderte Unternehmensberatung ist auch für Agenturen möglich. Ob das für deinen konkreten Fall passt, klären wir kurz im Erstgespräch. Wichtiger ist erstmal: Welche drei Stellen in deiner Agentur fressen gerade am meisten Marge?"
+    cta:
+      label: "BAFA-Check"
+      href: "/erstgespraech?topic=bafa"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zur Operations-Beratung für Agenturen"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Ab welcher Größe macht Operations-Beratung für Agenturen Sinn?"
+        answer: "Meistens ab 5-8 Mitarbeitenden oder sobald du merkst, dass Wachstum mehr Probleme erzeugt als löst. Aber auch kleinere Agenturen profitieren, wenn Projektstruktur und Führungslogik früh aufgebaut werden."
+      - question: "Was ist der typische Einstieg?"
+        answer: "Zuerst schauen wir uns drei bis fünf konkrete Engpässe an: Projektsteuerung, Übergaben, Führungslogik, Marge-Tracking, Kapazitätsplanung. Dann priorisieren wir, wo zuerst angesetzt wird."
+      - question: "Wie unterscheidet sich das von klassischer Unternehmensberatung?"
+        answer: "Ich arbeite nicht mit Theoriemodellen, sondern mit deinem echten Betriebsalltag. Das bedeutet: konkrete Maßnahmen, klare Verantwortlichkeiten und Ergebnisse die du in vier bis acht Wochen merkst."
+      - question: "Kann ich auch als remote oder hybride Agentur profitieren?"
+        answer: "Ja, gerade dort. Remote-Agenturen kämpfen oft mehr mit unklaren Übergaben, Silo-Kommunikation und fehlender Führungsstruktur als klassische Vor-Ort-Teams."
+
+  - template: cta
+    headline: "Wenn deine Agentur mehr Struktur braucht, nicht mehr Kunden"
+    body: "Dann lass uns anschauen, wo deine Agentur gerade Marge, Zeit und Energie verliert, und welche drei Hebel das ändern. 30 Minuten reichen für eine ehrliche Einschätzung."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Leistungen ansehen"
+      href: "/leistungen"

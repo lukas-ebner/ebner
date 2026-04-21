@@ -1,0 +1,92 @@
+meta:
+  title: "Unternehmensberatung Regensburg | Lukas Ebner"
+  description: "Unternehmensberatung für KMU in Regensburg. Klare Prozesse, bessere Entscheidungen, messbare Umsetzung statt Berater-Blabla."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: "Regensburg"
+  MAIN_KEYWORD: "Unternehmensberatung"
+  LSI_KEYWORDS:
+    - "Unternehmensberatung Regensburg"
+    - "Strategieberatung Regensburg"
+    - "Digitalisierung Mittelstand Regensburg"
+    - "Prozessoptimierung Regensburg"
+    - "KI-Beratung Regensburg"
+
+slides:
+  - template: hero-split
+    pill: "Unternehmensberatung Regensburg"
+    headline: "Unternehmensberatung in Regensburg ohne Berater-Blabla."
+    subtext: "Du willst raus aus Feuerwehreinsätzen und rein in klare Führung. Ich helfe Unternehmen in Regensburg dabei, Prozesse sauber zu bauen, Entscheidungen zu beschleunigen und KI nur dort einzusetzen, wo sie im Alltag wirklich etwas bringt."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/regensburg-hero.jpg"
+      alt: "Unternehmer in Regensburg im Strategiegespräch"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Typische Engpässe bei Unternehmen in Regensburg"
+    body: "Regensburg ist stark in Mittelstand, Technologie und projektgetriebenen Unternehmen. Genau dort entstehen oft dieselben Probleme: zu viele Themen gleichzeitig, zu viele Entscheidungen beim Chef, zu wenig operative Klarheit. Unternehmensberatung Regensburg, Digitalisierung Mittelstand Regensburg und Prozessoptimierung Regensburg werden oft genau dann gesucht, wenn Wachstum mehr Last als Entlastung produziert."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Ohne dich bleibt zu viel liegen."
+        body: "Entscheidungen stauen sich, weil Rollen, Verantwortlichkeiten und Eskalationswege nicht sauber geklärt sind."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Mehr Team, aber nicht mehr Tempo."
+        body: "Neue Leute bringen nur dann Entlastung, wenn Übergaben, Prioritäten und Führungsrhythmen funktionieren."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "KI wird getestet, aber nicht geführt."
+        body: "Tools und Ideen sind da, aber niemand würde behaupten, dass daraus schon ein belastbares System geworden ist."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Zu viele Projekte, zu wenig Steuerbarkeit."
+        body: "Gerade in wachsenden Dienstleistungs- und Tech-Teams kippen Marge, Fokus und Verantwortung schneller, als man es sich eingesteht."
+
+  - template: credibility
+    headline: "Unternehmerische Beratung statt Standardfolie"
+    body: "Ich arbeite nicht mit generischen Konzepten, sondern mit deinem realen Alltag in Regensburg: Entscheidungen, Prozesse, Führungsroutinen, Umsetzung. Nicht Coaching-Theater, sondern operative Beratung mit Blick auf das, was im Unternehmen hängen bleibt."
+    proofs:
+      - text: "15 Jahre Geschäftsführer-Praxis"
+      - text: "Skalierung von 0 auf 50 Mitarbeitende"
+      - text: "Operativer Fokus auf Strategie, Prozesse und Führung"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: bafa-calculator
+    headline: "Förderfähigkeit direkt grob einordnen"
+    body: "Wenn BAFA passt, kann das helfen. Entscheidend bleibt trotzdem, dass die Arbeit im Betrieb spürbar etwas verändert, nicht nur auf dem Papier gut aussieht."
+    cta:
+      label: "BAFA-Check"
+      href: "/erstgespraech?topic=bafa"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zu Unternehmensberatung in Regensburg"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Für welche Unternehmen in Regensburg ist das sinnvoll?"
+        answer: "Vor allem für inhaber- oder geschäftsführergetriebene KMU, Agenturen, Dienstleister und wachsende Tech-Teams, bei denen operative Last, unklare Verantwortungen und zu viele Rückfragen Wachstum ausbremsen."
+      - question: "Warum ist das in Regensburg oft ein Thema?"
+        answer: "Weil Regensburg einen Mix aus starkem Mittelstand, Technologieunternehmen und projektgetriebenen Organisationen hat. Genau dort entstehen schnell Entscheidungsstau, Tool-Chaos und Führungsengpässe, wenn das Unternehmen schneller wächst als die Betriebslogik."
+      - question: "Wie startet die Zusammenarbeit konkret?"
+        answer: "Mit einem kurzen Erstgespräch. Danach wird klar, ob ein Strategie-Call, ein fokussierter Umsetzungssprint oder erstmal gar kein Projekt sinnvoll ist."
+      - question: "Wie wird Erfolg gemessen?"
+        answer: "Nicht über schöne Folien, sondern über operative Kennzahlen: weniger Eskalationen, schnellere Entscheidungen, stabilere Übergaben und mehr Luft auf Führungsebene."
+
+  - template: cta
+    headline: "Wenn du in Regensburg nicht noch mehr reden, sondern endlich sauber umsetzen willst"
+    body: "Dann lass uns anschauen, wo dein größter Hebel liegt und wie wir ihn in deinen Alltag übersetzen, ohne neues Berater-Chaos aufzubauen."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+    secondary:
+      label: "Preise ansehen"
+      href: "/preise"
