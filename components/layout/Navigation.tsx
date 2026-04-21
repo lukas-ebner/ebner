@@ -45,7 +45,6 @@ const themen = [
 const navItems = [
   { href: '/projekte', label: 'Beteiligungen' },
   { href: '/preise', label: 'Preise' },
-  { href: '/blog', label: 'Blog' },
   { href: '/ueber-mich', label: 'Über mich' },
 ]
 
@@ -53,16 +52,15 @@ const ctaButton = { href: '/erstgespraech', label: 'Erstgespräch buchen' }
 
 export function Navigation() {
   const pathname = usePathname()
-  const isHomepage = pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
-  const [themenOpen, setThemenOpen] = useState(false)
+  const [resourcesOpen, setResourcesOpen] = useState(false)
 
   useEffect(() => {
     startTransition(() => {
       setServicesOpen(false)
-      setThemenOpen(false)
+      setResourcesOpen(false)
       setMenuOpen(false)
     })
   }, [pathname])
@@ -85,7 +83,19 @@ export function Navigation() {
     }
   }, [menuOpen])
 
-  const darkHeroPages = ['/', '/operations', '/digitalisierung', '/ki-readiness', '/ueber-mich', '/preise', '/erstgespraech', '/projekte']
+  const darkHeroPages = [
+    '/',
+    '/operations',
+    '/digitalisierung',
+    '/ki-readiness',
+    '/ueber-mich',
+    '/preise',
+    '/erstgespraech',
+    '/projekte',
+    '/themen',
+    '/themen/bafa',
+    '/themen/change-management-beratung',
+  ]
   const hasDarkHero = darkHeroPages.includes(pathname)
   const onDarkSurface = hasDarkHero && !scrolled
   const shell = scrolled || !hasDarkHero
@@ -139,27 +149,27 @@ export function Navigation() {
               </button>
               {servicesOpen ? (
                 <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
-                <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
-                  <ul className="grid gap-1">
-                    {services.map((s) => (
-                      <li key={s.href}>
-                        <Link
-                          href={s.href}
-                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                          onClick={() => setServicesOpen(false)}
-                        >
-                          <span className="font-medium text-text-light">{s.title}</span>
-                          <span className="mt-1 block text-xs text-text-light/50">{s.desc}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
+                    <ul className="grid gap-1">
+                      {services.map((s) => (
+                        <li key={s.href}>
+                          <Link
+                            href={s.href}
+                            className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
+                            onClick={() => setServicesOpen(false)}
+                          >
+                            <span className="font-medium text-text-light">{s.title}</span>
+                            <span className="mt-1 block text-xs text-text-light/50">{s.desc}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ) : null}
             </div>
 
-            {navItems.map((item) => (
+            {navItems.slice(0, 2).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -173,18 +183,18 @@ export function Navigation() {
 
             <div
               className="relative"
-              onMouseEnter={() => setThemenOpen(true)}
-              onMouseLeave={() => setThemenOpen(false)}
+              onMouseEnter={() => setResourcesOpen(true)}
+              onMouseLeave={() => setResourcesOpen(false)}
             >
               <button
                 type="button"
                 className={`inline-flex items-center font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
-                aria-expanded={themenOpen}
+                aria-expanded={resourcesOpen}
                 aria-haspopup="true"
               >
-                Themen
+                Ressourcen
                 <ChevronDown
                   size={14}
                   strokeWidth={1.5}
@@ -192,37 +202,59 @@ export function Navigation() {
                   aria-hidden
                 />
               </button>
-              {themenOpen ? (
+              {resourcesOpen ? (
                 <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
                   <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
                     <ul className="grid gap-1">
                       <li>
                         <Link
-                          href="/themen"
+                          href="/blog"
                           className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                          onClick={() => setThemenOpen(false)}
+                          onClick={() => setResourcesOpen(false)}
                         >
-                          <span className="font-medium text-text-light">Alle Themen</span>
-                          <span className="mt-1 block text-xs text-text-light/50">Übersicht aller aktuellen und geplanten Themenseiten</span>
+                          <span className="font-medium text-text-light">Blog</span>
+                          <span className="mt-1 block text-xs text-text-light/50">Artikel, Einschätzungen und Umsetzungswissen</span>
                         </Link>
+                      </li>
+                      <li className="px-3 pt-3 pb-1">
+                        <span className="font-mono text-[10px] uppercase tracking-widest text-text-light/50">Themen</span>
                       </li>
                       {themen.map((t) => (
                         <li key={t.href}>
                           <Link
                             href={t.href}
                             className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                            onClick={() => setThemenOpen(false)}
+                            onClick={() => setResourcesOpen(false)}
                           >
                             <span className="font-medium text-text-light">{t.title}</span>
                             <span className="mt-1 block text-xs text-text-light/50">{t.desc}</span>
                           </Link>
                         </li>
                       ))}
+                      <li>
+                        <Link
+                          href="/themen"
+                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
+                          onClick={() => setResourcesOpen(false)}
+                        >
+                          <span className="font-medium text-text-light">Alle Themen</span>
+                          <span className="mt-1 block text-xs text-text-light/50">Übersicht aller aktuellen und geplanten Themenseiten</span>
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
               ) : null}
             </div>
+
+            <Link
+              href={navItems[2].href}
+              className={`font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                onDarkSurface ? 'text-text-light' : 'text-text-primary'
+              }`}
+            >
+              {navItems[2].label}
+            </Link>
 
             <Link
               href={ctaButton.href}
@@ -273,18 +305,36 @@ export function Navigation() {
               </li>
             ))}
           </ul>
-          <ul className="mt-8 space-y-6">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="font-mono text-label font-normal uppercase tracking-wide"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+
+          <p className="mt-8 font-mono text-label uppercase tracking-widest text-text-muted">Navigation</p>
+          <ul className="mt-4 space-y-6">
+            <li>
+              <Link
+                href="/projekte"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Beteiligungen
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/preise"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Preise
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Blog
+              </Link>
+            </li>
             <li>
               <Link
                 href="/themen"
@@ -294,9 +344,17 @@ export function Navigation() {
                 Themen
               </Link>
             </li>
+            <li>
+              <Link
+                href="/ueber-mich"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Über mich
+              </Link>
+            </li>
           </ul>
 
-          {/* CTA Button */}
           <div className="mt-auto pt-8">
             <Link
               href="/erstgespraech"
