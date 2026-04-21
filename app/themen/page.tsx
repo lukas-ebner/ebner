@@ -78,28 +78,27 @@ export default function ThemenIndexPage() {
     <main className="min-h-screen bg-white text-[#111323]">
       <NoSnap />
 
-      <section className="relative overflow-hidden bg-surface-dark pt-32 pb-24 lg:pt-40 lg:pb-28">
-        <div className="absolute inset-y-0 right-0 hidden w-[48%] bg-gradient-to-br from-[#2A2F55] via-[#4B2D42] to-[#7A3B2B] opacity-70 lg:block" />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">Ressourcen · Themen</p>
-            <h1 className="mt-5 font-display text-[2.4rem] leading-[1.05] text-white md:text-[3.1rem] lg:text-[3.8rem]">
-              Themen für Wachstum, Führung und Umsetzung im Mittelstand
-            </h1>
-            <p className="mt-6 max-w-[620px] font-body text-lg leading-relaxed text-white/75">
-              Keine Artikel-Liste, sondern kuratierte Einstiege für konkrete Herausforderungen, von Förderlogik bis Veränderungsumsetzung.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link href="/themen/bafa" className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white">
-                BAFA-Förderung ansehen
-              </Link>
-              <Link href="/erstgespraech" className="rounded-full border border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/90">
-                Erstgespräch
-              </Link>
-            </div>
-          </div>
-          <div className="hidden items-end lg:flex">
-            <div className="h-[320px] w-full rounded-2xl border border-white/15 bg-gradient-to-br from-white/10 via-transparent to-black/20" />
+      <section className="relative overflow-hidden bg-surface-dark pt-32 pb-20 lg:pt-40 lg:pb-24">
+        <div className="absolute inset-0 opacity-[0.18]" aria-hidden>
+          <div className="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-brand/40 via-[#7A3B2B] to-transparent blur-3xl" />
+          <div className="absolute -bottom-60 -left-40 h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-[#2A2F55] via-[#4B2D42] to-transparent blur-3xl" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
+          <p className="font-mono text-xs uppercase tracking-[0.18em] text-brand">Themen</p>
+          <h1 className="mt-5 max-w-[900px] font-display text-[2.4rem] leading-[1.05] text-white md:text-[3.1rem] lg:text-[3.8rem]">
+            Themen für Wachstum, Führung und Umsetzung im Mittelstand
+          </h1>
+          <p className="mt-6 max-w-[680px] font-body text-lg leading-relaxed text-white/75">
+            Keine Artikel-Liste, sondern kuratierte Einstiege für konkrete Herausforderungen —
+            von Förderlogik bis Veränderungsumsetzung.
+          </p>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <Link href="/themen/bafa" className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white transition-opacity hover:opacity-90">
+              BAFA-Förderung ansehen
+            </Link>
+            <Link href="/erstgespraech" className="rounded-full border border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/90 transition-colors hover:border-white/60">
+              Erstgespräch
+            </Link>
           </div>
         </div>
       </section>

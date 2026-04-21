@@ -11,12 +11,15 @@ interface BafaCalculatorSlideProps {
   headline?: string
   body?: string
   cta?: { label: string; href: string }
+  /** Standalone slide (full-screen). Wenn false: kompakter als eingebettete Section. */
+  fullScreen?: boolean
 }
 
 export function BafaCalculatorSlide({
   headline = 'Rechne den BAFA-Effekt auf euren Fall.',
   body,
   cta,
+  fullScreen = true,
 }: BafaCalculatorSlideProps) {
   const [beratungskosten, setBeratungskosten] = useState(3500)
   const [foerdersatz, setFoerdersatz] = useState(80)
@@ -31,10 +34,23 @@ export function BafaCalculatorSlide({
   }, [beratungskosten, foerdersatz])
 
   return (
-    <section className="flex min-h-screen flex-col justify-center" style={{ backgroundColor: 'var(--accent, #F44900)' }}>
-      <div className="mx-auto w-full max-w-6xl px-8 py-24 lg:px-12">
-        <h2 className="max-w-4xl font-display text-4xl leading-tight text-white lg:text-6xl">{headline}</h2>
-        {body && <p className="mt-6 max-w-3xl text-lg text-white/80 lg:text-xl">{body}</p>}
+    <section
+      className={`flex flex-col ${fullScreen ? 'min-h-screen justify-center' : ''}`}
+      style={{ backgroundColor: 'var(--accent, #F44900)' }}
+    >
+      <div
+        className={`mx-auto w-full ${
+          fullScreen ? 'max-w-6xl px-8 py-24 lg:px-12' : 'max-w-4xl px-8 py-14 lg:px-10 lg:py-16'
+        }`}
+      >
+        <h2
+          className={`max-w-4xl font-display leading-tight text-white ${
+            fullScreen ? 'text-4xl lg:text-6xl' : 'text-3xl lg:text-[2.5rem]'
+          }`}
+        >
+          {headline}
+        </h2>
+        {body && <p className={`mt-4 max-w-3xl text-white/80 ${fullScreen ? 'mt-6 text-lg lg:text-xl' : 'text-base lg:text-lg'}`}>{body}</p>}
 
         <div className="mt-12 grid gap-8 rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur lg:grid-cols-2 lg:p-10">
           <div>
