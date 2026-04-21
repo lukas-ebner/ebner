@@ -9,29 +9,41 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://lukasebner.de/themen' },
 }
 
-type TopicCard = {
-  href?: string
-  category: 'Förderung' | 'Organisation' | 'Strategie' | 'Region'
+type FeaturedTopic = {
+  href: string
+  kicker: string
   title: string
   description: string
-  active?: boolean
+  cta: string
+  gradient: string
 }
 
-const topicCards: TopicCard[] = [
+type ComingSoonTopic = {
+  title: string
+  category: 'Strategie' | 'Organisation' | 'Region'
+  description: string
+}
+
+const featuredTopics: FeaturedTopic[] = [
   {
     href: '/themen/bafa',
-    category: 'Förderung',
+    kicker: 'Förderung',
     title: 'BAFA-Förderung für Unternehmensberatung',
     description: 'Bis zu 80 % Zuschuss, klar eingeordnet und auf operative Umsetzung ausgerichtet.',
-    active: true,
+    cta: 'Zum Thema BAFA',
+    gradient: 'from-[#4A1E1E] via-[#7A2E1E] to-[#C25A1A]',
   },
   {
     href: '/themen/change-management-beratung',
-    category: 'Organisation',
+    kicker: 'Organisation',
     title: 'Change Management Beratung',
-    description: 'Veränderung im Mittelstand, die unter echtem Tagesdruck stabil bleibt.',
-    active: true,
+    description: 'Veränderung im Mittelstand, die unter echtem Tagesdruck stabil bleibt und wirklich greift.',
+    cta: 'Zum Thema Change',
+    gradient: 'from-[#1B2240] via-[#2C3F73] to-[#3A5D9C]',
   },
+]
+
+const comingSoonTopics: ComingSoonTopic[] = [
   {
     category: 'Strategie',
     title: 'Operations-Beratung im Mittelstand',
@@ -59,124 +71,106 @@ const topicCards: TopicCard[] = [
   },
 ]
 
-const regions = [
-  'Regensburg',
-  'Amberg',
-  'Cham',
-  'Straubing',
-  'Neumarkt i.d.OPf.',
-  'Schwandorf',
-  'Weiden i.d.OPf.',
-]
-
-const categoryColors: Record<TopicCard['category'], string> = {
-  Förderung: '#f54a01',
-  Organisation: '#5f3dc4',
-  Strategie: '#0f766e',
-  Region: '#1d4ed8',
-}
+const regions = ['Regensburg', 'Amberg', 'Cham', 'Straubing', 'Neumarkt i.d.OPf.', 'Schwandorf', 'Weiden i.d.OPf.']
 
 export default function ThemenIndexPage() {
   return (
-    <div className="min-h-screen bg-surface-light">
+    <main className="min-h-screen bg-white text-[#111323]">
       <NoSnap />
 
-      <div className="bg-surface-dark py-24 lg:py-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <h1 className="font-display text-[2.4rem] font-normal leading-[1.1] text-white md:text-[3.2rem] lg:text-[3.8rem]">
-            Themen
-          </h1>
-          <p className="mt-4 max-w-[700px] font-body text-lg leading-relaxed text-white/60">
-            Vertiefende Themenseiten für konkrete Fragen aus Förderung, Organisation, Strategie und regionaler
-            Unternehmensentwicklung.
-          </p>
+      <section className="relative overflow-hidden bg-surface-dark pt-32 pb-24 lg:pt-40 lg:pb-28">
+        <div className="absolute inset-y-0 right-0 hidden w-[48%] bg-gradient-to-br from-[#2A2F55] via-[#4B2D42] to-[#7A3B2B] opacity-70 lg:block" />
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">Ressourcen · Themen</p>
+            <h1 className="mt-5 font-display text-[2.4rem] leading-[1.05] text-white md:text-[3.1rem] lg:text-[3.8rem]">
+              Themen für Wachstum, Führung und Umsetzung im Mittelstand
+            </h1>
+            <p className="mt-6 max-w-[620px] font-body text-lg leading-relaxed text-white/75">
+              Keine Artikel-Liste, sondern kuratierte Einstiege für konkrete Herausforderungen, von Förderlogik bis Veränderungsumsetzung.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href="/themen/bafa" className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white">
+                BAFA-Förderung ansehen
+              </Link>
+              <Link href="/erstgespraech" className="rounded-full border border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/90">
+                Erstgespräch
+              </Link>
+            </div>
+          </div>
+          <div className="hidden items-end lg:flex">
+            <div className="h-[320px] w-full rounded-2xl border border-white/15 bg-gradient-to-br from-white/10 via-transparent to-black/20" />
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="border-b border-black/5 bg-white">
-        <div className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-6 py-4">
-          {['Alle', 'Förderung', 'Organisation', 'Strategie', 'Region'].map((pill) => (
-            <span
-              key={pill}
-              className="flex-shrink-0 cursor-default rounded-full border px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-text-secondary"
-              style={pill !== 'Alle' ? { borderColor: categoryColors[pill as TopicCard['category']] + '30', color: categoryColors[pill as TopicCard['category']] } : undefined}
-            >
-              {pill}
-            </span>
-          ))}
-        </div>
-      </div>
+      <section className="bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mb-8">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">Verfügbar</p>
+            <h2 className="mt-3 font-display text-3xl text-[#111830] lg:text-4xl">Aktuelle Themen</h2>
+          </div>
 
-      <div className="mx-auto max-w-5xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {topicCards.map((card) => {
-            const content = (
-              <>
-                <div className="relative h-44 w-full" style={{ backgroundColor: card.active ? categoryColors[card.category] + '12' : '#e2e8f0' }}>
-                  <span
-                    className="absolute left-4 top-4 rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white"
-                    style={{ backgroundColor: categoryColors[card.category] }}
-                  >
-                    {card.category}
-                  </span>
-                  {!card.active && (
-                    <span className="absolute right-4 top-4 rounded-full bg-slate-700 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white">
-                      Bald
-                    </span>
-                  )}
+          <div className="grid gap-6 lg:grid-cols-2">
+            {featuredTopics.map((topic) => (
+              <article key={topic.href} className="overflow-hidden rounded-2xl border border-[#E2E7EF] bg-white shadow-[0_12px_30px_rgba(16,19,35,0.08)]">
+                <div className={`h-44 bg-gradient-to-br ${topic.gradient}`} />
+                <div className="p-7 lg:p-8">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-brand">{topic.kicker}</p>
+                  <h3 className="mt-3 font-display text-[1.7rem] leading-tight text-[#111830]">{topic.title}</h3>
+                  <p className="mt-4 text-base leading-relaxed text-[#324056]">{topic.description}</p>
+                  <Link href={topic.href} className="mt-6 inline-block rounded-full bg-[#111833] px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white hover:bg-[#0B1024]">
+                    {topic.cta}
+                  </Link>
                 </div>
-
-                <div className="flex flex-1 flex-col p-5">
-                  <h2 className="font-display text-[1.15rem] font-normal leading-snug text-text-primary transition-colors group-hover:text-brand">
-                    {card.title}
-                  </h2>
-                  <p className="mt-2 line-clamp-3 flex-1 font-body text-sm leading-relaxed text-text-secondary">
-                    {card.description}
-                  </p>
-                  <div className="mt-4">
-                    <span className="font-mono text-xs text-text-muted">{card.active ? 'Verfügbar' : 'In Vorbereitung'}</span>
-                  </div>
-                </div>
-              </>
-            )
-
-            if (card.active && card.href) {
-              return (
-                <Link
-                  key={card.title}
-                  href={card.href}
-                  className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md"
-                >
-                  {content}
-                </Link>
-              )
-            }
-
-            return (
-              <article
-                key={card.title}
-                className="group flex flex-col overflow-hidden rounded-xl bg-white/90 shadow-sm"
-              >
-                {content}
               </article>
-            )
-          })}
+            ))}
+          </div>
         </div>
+      </section>
 
-        <section className="mt-12 border-t border-black/5 pt-10">
-          <h2 className="font-display text-2xl text-text-primary">Regionen im Fokus</h2>
-          <div className="mt-5 flex flex-wrap gap-2">
+      <section className="bg-[#F4F6FA] py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mb-8">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-[#6B7486]">In Vorbereitung</p>
+            <h2 className="mt-3 font-display text-3xl text-[#111830] lg:text-4xl">Nächste Themen</h2>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {comingSoonTopics.map((topic) => (
+              <article key={topic.title} className="rounded-2xl border border-[#D8DFE8] bg-white/80 p-5 opacity-90">
+                <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#6A7384]">{topic.category}</p>
+                <h3 className="mt-3 font-display text-[1.25rem] leading-snug text-[#1A2239]">{topic.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#4A566C]">{topic.description}</p>
+                <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-[#7C8697]">Bald verfügbar</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">Regionale Einstiege</p>
+            <h2 className="mt-3 font-display text-3xl text-[#111830] lg:text-4xl">Regensburg und Umland</h2>
+            <p className="mt-4 max-w-3xl text-lg leading-relaxed text-[#334056]">
+              Diese regionalen Seiten bauen wir als konkrete Einstiegspunkte für Unternehmen in der Oberpfalz und angrenzenden Regionen aus.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
             {regions.map((region) => (
               <span
                 key={region}
-                className="rounded-full border border-black/10 bg-white px-4 py-2 font-mono text-xs uppercase tracking-wide text-text-secondary"
+                className="rounded-full border border-[#D5DDE8] bg-[#F8FAFC] px-4 py-2 font-mono text-xs uppercase tracking-wide text-[#3A475F]"
               >
                 {region}
               </span>
             ))}
           </div>
-        </section>
-      </div>
-    </div>
+        </div>
+      </section>
+    </main>
   )
 }
