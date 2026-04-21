@@ -26,9 +26,9 @@ function paragraphWithLinks(text: string, key: string) {
 
 export function ThemenPageLayout({ page }: Props) {
   return (
-    <main className="bg-white pt-20 text-[#101323]">
+    <main className="bg-white text-[#101323]">
       <article className="w-full">
-        <section className="relative overflow-hidden bg-surface-dark py-20 lg:py-24">
+        <section className="relative overflow-hidden bg-surface-dark pt-32 pb-20 lg:pt-40 lg:pb-24">
           <div className="absolute inset-y-0 right-0 hidden w-[44%] bg-gradient-to-br from-[#25315B] via-[#3A2F55] to-[#6B3C30] opacity-75 lg:block" />
           <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
             <nav className="mb-8 text-sm text-white/65" aria-label="Breadcrumb">
