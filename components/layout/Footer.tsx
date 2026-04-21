@@ -16,7 +16,6 @@ const mehr = [
   { href: '/blog', label: 'Blog' },
   { href: '/themen', label: 'Themen' },
   { href: '/ueber-mich', label: 'Über mich' },
-  { href: '/ressourcen', label: 'Ressourcen' },
 ]
 
 export function Footer() {
