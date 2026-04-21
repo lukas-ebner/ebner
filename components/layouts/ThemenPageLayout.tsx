@@ -28,10 +28,23 @@ export function ThemenPageLayout({ page }: Props) {
   return (
     <main className="bg-white text-[#101323]">
       <article className="w-full">
-        <section className="relative overflow-hidden bg-surface-dark pt-32 pb-20 lg:pt-40 lg:pb-24">
-          <div className="absolute inset-y-0 right-0 hidden w-[44%] bg-gradient-to-br from-[#25315B] via-[#3A2F55] to-[#6B3C30] opacity-75 lg:block" />
-          <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
-            <nav className="mb-8 text-sm text-white/65" aria-label="Breadcrumb">
+        <section className="relative min-h-[560px] overflow-hidden bg-surface-dark pt-28 lg:min-h-[640px] lg:pt-32">
+          {page.meta.heroImage ? (
+            <div className="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
+              <Image
+                src={page.meta.heroImage}
+                alt={page.meta.heroAlt ?? page.meta.title}
+                fill
+                priority
+                className="object-cover"
+                sizes="50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-surface-dark via-surface-dark/40 to-transparent" />
+            </div>
+          ) : null}
+
+          <div className="relative mx-auto flex min-h-[480px] max-w-6xl flex-col justify-center px-6 pb-16 lg:min-h-[560px] lg:px-8 lg:pb-20">
+            <nav className="mb-6 text-sm text-white/65" aria-label="Breadcrumb">
               <ol className="flex flex-wrap items-center gap-2">
                 {(page.meta.breadcrumbs ?? [
                   { label: 'Start', href: '/' },
@@ -47,41 +60,39 @@ export function ThemenPageLayout({ page }: Props) {
               </ol>
             </nav>
 
-            <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">{page.meta.kicker}</p>
-                <h1 className="mt-4 font-display text-4xl leading-tight text-white lg:text-6xl">{page.meta.title}</h1>
-                <p className="mt-6 max-w-[680px] text-lg leading-relaxed text-white/80">{page.meta.subtitle}</p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {(page.meta.ctas ?? []).map((cta) => (
-                    <Link
-                      key={`${cta.label}-${cta.href}`}
-                      href={cta.href}
-                      className={
-                        cta.variant === 'secondary'
-                          ? 'rounded-full border border-white/30 px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white/90 hover:border-white/60'
-                          : 'rounded-full bg-brand px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white hover:opacity-90'
-                      }
-                    >
-                      {cta.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <div className="relative min-h-[260px] overflow-hidden rounded-2xl border border-white/10 bg-[#1A2240] lg:min-h-[340px]">
-                {page.meta.heroImage ? (
-                  <Image
-                    src={page.meta.heroImage}
-                    alt={page.meta.heroAlt ?? page.meta.title}
-                    fill
-                    className="object-cover opacity-80"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                  />
-                ) : null}
+            <div className="max-w-[640px]">
+              <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">{page.meta.kicker}</p>
+              <h1 className="mt-4 font-display text-4xl leading-[1.05] text-white lg:text-[3.75rem]">{page.meta.title}</h1>
+              <p className="mt-6 max-w-[560px] text-lg leading-relaxed text-white/80">{page.meta.subtitle}</p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                {(page.meta.ctas ?? []).map((cta) => (
+                  <Link
+                    key={`${cta.label}-${cta.href}`}
+                    href={cta.href}
+                    className={
+                      cta.variant === 'secondary'
+                        ? 'rounded-full border border-white/30 px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white/90 transition-colors hover:border-white/60'
+                        : 'rounded-full bg-brand px-5 py-2.5 font-mono text-xs uppercase tracking-wide text-white transition-opacity hover:opacity-90'
+                    }
+                  >
+                    {cta.label}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
+
+          {page.meta.heroImage ? (
+            <div className="relative h-[280px] w-full lg:hidden">
+              <Image
+                src={page.meta.heroImage}
+                alt={page.meta.heroAlt ?? page.meta.title}
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+          ) : null}
         </section>
 
         <div className="mx-auto mt-12 w-full max-w-6xl px-6 pb-24 lg:px-8">
