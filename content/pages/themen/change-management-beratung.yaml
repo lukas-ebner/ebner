@@ -59,11 +59,12 @@ sections:
         left: "Hohe Aktivität, niedrige Verbindlichkeit"
         right: "Messbare Fortschritte im Tagesgeschäft"
 
-  - type: "prose"
-    heading: "BAFA-Einstieg für Change-Projekte"
-    content:
-      - "Beispiel bei 3.500 € Beratungskosten brutto und 80 % Förderquote: Förderfähiger Anteil 2.800 €, Zuschuss 2.240 €, Eigenanteil 1.260 €."
-      - "Entscheidend ist nicht die Förderquote allein, sondern ob euer Change danach nachweisbar stabiler läuft."
+  - type: "crossref"
+    heading: "Förderung separat betrachten"
+    body: "Wenn ihr BAFA-Förderung prüfen wollt, macht das separat über die Themenseite zur Förderung. Für Change zählt zuerst, ob Umsetzung und Führungsrhythmus stabil werden."
+    link:
+      label: "Zur BAFA-Themenseite"
+      href: "/themen/bafa"
 
   - type: "faq"
     heading: "Häufige Fragen zur Change Management Beratung"

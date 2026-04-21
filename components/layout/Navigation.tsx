@@ -29,12 +29,24 @@ const services = [
   },
 ]
 
+const themen = [
+  {
+    href: '/themen/bafa',
+    title: 'BAFA-Förderung',
+    desc: 'Förderlogik, Ablauf und Umsetzung mit Fokus auf Wirkung.',
+  },
+  {
+    href: '/themen/change-management-beratung',
+    title: 'Change Management',
+    desc: 'Veränderung im Mittelstand, die auch im Alltag hält.',
+  },
+]
+
 const navItems = [
-  { href: '/blog', label: 'Blog' },
   { href: '/projekte', label: 'Beteiligungen' },
-  { href: '/themen', label: 'Themen' },
-  { href: '/ueber-mich', label: 'Über mich' },
   { href: '/preise', label: 'Preise' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/ueber-mich', label: 'Über mich' },
 ]
 
 const ctaButton = { href: '/erstgespraech', label: 'Erstgespräch buchen' }
@@ -45,10 +57,12 @@ export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [themenOpen, setThemenOpen] = useState(false)
 
   useEffect(() => {
     startTransition(() => {
       setServicesOpen(false)
+      setThemenOpen(false)
       setMenuOpen(false)
     })
   }, [pathname])
@@ -157,6 +171,59 @@ export function Navigation() {
               </Link>
             ))}
 
+            <div
+              className="relative"
+              onMouseEnter={() => setThemenOpen(true)}
+              onMouseLeave={() => setThemenOpen(false)}
+            >
+              <button
+                type="button"
+                className={`inline-flex items-center font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
+                  onDarkSurface ? 'text-text-light' : 'text-text-primary'
+                }`}
+                aria-expanded={themenOpen}
+                aria-haspopup="true"
+              >
+                Themen
+                <ChevronDown
+                  size={14}
+                  strokeWidth={1.5}
+                  className="ml-1 inline shrink-0"
+                  aria-hidden
+                />
+              </button>
+              {themenOpen ? (
+                <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
+                  <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
+                    <ul className="grid gap-1">
+                      <li>
+                        <Link
+                          href="/themen"
+                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
+                          onClick={() => setThemenOpen(false)}
+                        >
+                          <span className="font-medium text-text-light">Alle Themen</span>
+                          <span className="mt-1 block text-xs text-text-light/50">Übersicht aller aktuellen und geplanten Themenseiten</span>
+                        </Link>
+                      </li>
+                      {themen.map((t) => (
+                        <li key={t.href}>
+                          <Link
+                            href={t.href}
+                            className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
+                            onClick={() => setThemenOpen(false)}
+                          >
+                            <span className="font-medium text-text-light">{t.title}</span>
+                            <span className="mt-1 block text-xs text-text-light/50">{t.desc}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+
             <Link
               href={ctaButton.href}
               className="ml-2 rounded-full bg-brand px-5 py-2.5 font-mono text-sm font-normal uppercase tracking-wide text-white transition-opacity hover:opacity-90"
@@ -218,6 +285,15 @@ export function Navigation() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/themen"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Themen
+              </Link>
+            </li>
           </ul>
 
           {/* CTA Button */}
