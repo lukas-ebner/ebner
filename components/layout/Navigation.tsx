@@ -29,22 +29,11 @@ const services = [
   },
 ]
 
-const themen = [
-  {
-    href: '/themen/bafa',
-    title: 'BAFA-Förderung',
-    desc: 'Förderlogik, Ablauf und Umsetzung mit Fokus auf Wirkung.',
-  },
-  {
-    href: '/themen/change-management-beratung',
-    title: 'Change Management',
-    desc: 'Veränderung im Mittelstand, die auch im Alltag hält.',
-  },
-]
-
 const navItems = [
   { href: '/projekte', label: 'Beteiligungen' },
   { href: '/preise', label: 'Preise' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/themen', label: 'Themen' },
   { href: '/ueber-mich', label: 'Über mich' },
 ]
 
@@ -55,12 +44,10 @@ export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
-  const [resourcesOpen, setResourcesOpen] = useState(false)
 
   useEffect(() => {
     startTransition(() => {
       setServicesOpen(false)
-      setResourcesOpen(false)
       setMenuOpen(false)
     })
   }, [pathname])
@@ -169,7 +156,7 @@ export function Navigation() {
               ) : null}
             </div>
 
-            {navItems.slice(0, 2).map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -180,81 +167,6 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-
-            <div
-              className="relative"
-              onMouseEnter={() => setResourcesOpen(true)}
-              onMouseLeave={() => setResourcesOpen(false)}
-            >
-              <button
-                type="button"
-                className={`inline-flex items-center font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
-                  onDarkSurface ? 'text-text-light' : 'text-text-primary'
-                }`}
-                aria-expanded={resourcesOpen}
-                aria-haspopup="true"
-              >
-                Ressourcen
-                <ChevronDown
-                  size={14}
-                  strokeWidth={1.5}
-                  className="ml-1 inline shrink-0"
-                  aria-hidden
-                />
-              </button>
-              {resourcesOpen ? (
-                <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
-                  <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
-                    <ul className="grid gap-1">
-                      <li>
-                        <Link
-                          href="/blog"
-                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                          onClick={() => setResourcesOpen(false)}
-                        >
-                          <span className="font-medium text-text-light">Blog</span>
-                          <span className="mt-1 block text-xs text-text-light/50">Artikel, Einschätzungen und Umsetzungswissen</span>
-                        </Link>
-                      </li>
-                      <li className="px-3 pt-3 pb-1">
-                        <span className="font-mono text-[10px] uppercase tracking-widest text-text-light/50">Themen</span>
-                      </li>
-                      {themen.map((t) => (
-                        <li key={t.href}>
-                          <Link
-                            href={t.href}
-                            className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                            onClick={() => setResourcesOpen(false)}
-                          >
-                            <span className="font-medium text-text-light">{t.title}</span>
-                            <span className="mt-1 block text-xs text-text-light/50">{t.desc}</span>
-                          </Link>
-                        </li>
-                      ))}
-                      <li>
-                        <Link
-                          href="/themen"
-                          className="block rounded-md px-3 py-2.5 font-body text-sm text-text-light/80 transition-colors hover:bg-white/5 hover:text-text-light"
-                          onClick={() => setResourcesOpen(false)}
-                        >
-                          <span className="font-medium text-text-light">Alle Themen</span>
-                          <span className="mt-1 block text-xs text-text-light/50">Übersicht aller aktuellen und geplanten Themenseiten</span>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              ) : null}
-            </div>
-
-            <Link
-              href={navItems[2].href}
-              className={`font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
-                onDarkSurface ? 'text-text-light' : 'text-text-primary'
-              }`}
-            >
-              {navItems[2].label}
-            </Link>
 
             <Link
               href={ctaButton.href}
