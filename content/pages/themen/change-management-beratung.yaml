@@ -1,86 +1,84 @@
-meta:
-  title: "Change-Management-Beratung für wirksame Umsetzung"
-  description: "Change Management Beratung für mittelständische Unternehmen. Strukturierter Ansatz für Akzeptanz, Umsetzung und messbare Ergebnisse."
-  kicker: "Change Management Beratung"
-  subtitle: "Veränderung, die im Alltag hält. Nicht nur im Workshop. Für Unternehmen in Regensburg, Oberpfalz und Ostbayern."
-  heroImage: "/images/change/change-hero.png"
-  heroAlt: "Workshop zur Change Management Beratung mit Führungsteam"
-  og_image: "/images/og/change-management-beratung.jpg"
-  breadcrumbs:
-    - label: "Start"
-      href: "/"
-    - label: "Themen"
-      href: "/themen"
-    - label: "Change Management"
-      href: "/themen/change-management-beratung"
-  ctas:
-    - label: "Erstgespräch vereinbaren"
-      href: "/erstgespraech?topic=change-management"
-      variant: "primary"
-
-sections:
-  - type: "prose"
-    heading: "Typische Change-Situationen im Mittelstand"
-    content:
-      - "Die meisten Veränderungsprojekte scheitern nicht an der Idee, sondern an der Umsetzung unter echtem Tagesdruck. Genau dort setzt diese Beratung an."
-    bullets:
-      - "Wachstum ist da, aber Rollen und Entscheidungen sind nicht nachgezogen."
-      - "Neue Führung oder Generationswechsel erzeugen Reibung statt Klarheit."
-      - "Digitalisierung läuft, aber operativer Nutzen bleibt aus."
-      - "Kick-off war stark, nach wenigen Wochen versandet das Projekt."
-
-  - type: "crossref"
-    heading: "Drei Phasen, die im Alltag funktionieren"
-    body: "Erstens Analyse der echten Engpässe. Zweitens Veränderungsdesign mit klaren 30-60-90-Zielen. Drittens Umsetzungssparring mit sauberen Verantwortlichkeiten."
-    link:
-      label: "Operations & Führung ansehen"
-      href: "/operations"
-
-  - type: "figure"
-    image: "/images/change/change-schmuck.jpg"
-    alt: "Hand bewegt einen orangen Holzklotz in eine neue Position auf einer Holzfläche"
-    caption: "Veränderung ist kein Impuls, sondern ein Umsetzungsrhythmus im Alltag."
-
-  - type: "compare"
-    heading: "Folien-zentrierter Ansatz vs. operative Umsetzung"
-    leftTitle: "Klassischer Change-Ansatz"
-    rightTitle: "Operativer Umsetzungsansatz"
-    rows:
-      - label: "Fokus"
-        left: "Kommunikation und Formate"
-        right: "Entscheidungen, Verantwortlichkeiten, Takt"
-      - label: "Steuerung"
-        left: "Viel Reporting, wenig Durchgriff"
-        right: "Wenige Kennzahlen, klare Nachsteuerung"
-      - label: "Ergebnis"
-        left: "Hohe Aktivität, niedrige Verbindlichkeit"
-        right: "Messbare Fortschritte im Tagesgeschäft"
-
-  - type: "crossref"
-    heading: "Förderung separat betrachten"
-    body: "Wer BAFA-Förderung prüfen möchte, findet das über die Themenseite zur Förderung. Für Change zählt zuerst, ob Umsetzung und Führungsrhythmus stabil werden."
-    link:
-      label: "Zur BAFA-Themenseite"
-      href: "/themen/bafa"
-
-  - type: "faq"
-    heading: "Häufige Fragen zur Change Management Beratung"
-    items:
-      - question: "Für welche Unternehmen ist das gedacht?"
-        answer: "Für KMU, die Wachstum, Übergabe, Reorganisation oder Digitalisierung sauber umsetzen wollen, ohne dass der Veränderungsprozess an der Geschäftsführung hängt."
-      - question: "Wie lange dauert eine typische Begleitung?"
-        answer: "Häufig starten wir mit einem fokussierten acht- bis zwölf-Wochen-Setup und gehen danach in ein Umsetzungssparring."
-      - question: "Wie wird Erfolg gemessen?"
-        answer: "Über wenige, klare Kennzahlen wie Entscheidungsdurchlaufzeit, Eskalationen pro Woche oder Nacharbeitsquote."
-      - question: "Was unterscheidet das von klassischer Change-Beratung?"
-        answer: "Der Schwerpunkt liegt nicht auf Kommunikations- und Workshop-Formaten, sondern auf der Frage: Was muss in Führung, Entscheidungslogik und Tagesrhythmus konkret anders werden, damit Veränderung hält?"
-
-endCTA:
-  heading: "Change darf nicht am Projektplan enden"
-  body: "Wenn ihr Veränderung wirklich im Alltag verankern wollt, braucht ihr klare Führungsroutinen, saubere Entscheidungslogik und Umsetzungsdisziplin."
-  primary:
-    label: "Erstgespräch für Change starten"
-    href: "/erstgespraech?topic=change-management"
-  secondary:
-    label: "Zur Übersicht Themen"
-    href: "/themen"
+"meta":
+  "title": "Change-Management-Beratung für wirksame Umsetzung"
+  "description": "Change Management Beratung für mittelständische Unternehmen. Strukturierter Ansatz für Akzeptanz, Umsetzung\
+    \ und messbare Ergebnisse."
+  "kicker": "Change Management Beratung"
+  "subtitle": "Veränderung, die im Alltag hält. Nicht nur im Workshop. Für Unternehmen in Regensburg, Oberpfalz und Ostbayern."
+  "heroImage": "/images/change/change-hero.png"
+  "heroAlt": "Workshop zur Change Management Beratung mit Führungsteam"
+  "og_image": "/images/og/change-management-beratung.jpg"
+  "breadcrumbs":
+  - "label": "Start"
+    "href": "/"
+  - "label": "Change Management"
+    "href": "/themen/change-management-beratung"
+  "ctas":
+  - "label": "Erstgespräch vereinbaren"
+    "href": "/erstgespraech?topic=change-management"
+    "variant": "primary"
+"sections":
+- "type": "prose"
+  "heading": "Typische Change-Situationen im Mittelstand"
+  "content":
+  - "Die meisten Veränderungsprojekte scheitern nicht an der Idee, sondern an der Umsetzung unter echtem Tagesdruck. Genau\
+    \ dort setzt diese Beratung an."
+  "bullets":
+  - "Wachstum ist da, aber Rollen und Entscheidungen sind nicht nachgezogen."
+  - "Neue Führung oder Generationswechsel erzeugen Reibung statt Klarheit."
+  - "Digitalisierung läuft, aber operativer Nutzen bleibt aus."
+  - "Kick-off war stark, nach wenigen Wochen versandet das Projekt."
+- "type": "crossref"
+  "heading": "Drei Phasen, die im Alltag funktionieren"
+  "body": "Erstens Analyse der echten Engpässe. Zweitens Veränderungsdesign mit klaren 30-60-90-Zielen. Drittens Umsetzungssparring\
+    \ mit sauberen Verantwortlichkeiten."
+  "link":
+    "label": "Operations & Führung ansehen"
+    "href": "/operations"
+- "type": "figure"
+  "image": "/images/change/change-schmuck.jpg"
+  "alt": "Hand bewegt einen orangen Holzklotz in eine neue Position auf einer Holzfläche"
+  "caption": "Veränderung ist kein Impuls, sondern ein Umsetzungsrhythmus im Alltag."
+- "type": "compare"
+  "heading": "Folien-zentrierter Ansatz vs. operative Umsetzung"
+  "leftTitle": "Klassischer Change-Ansatz"
+  "rightTitle": "Operativer Umsetzungsansatz"
+  "rows":
+  - "label": "Fokus"
+    "left": "Kommunikation und Formate"
+    "right": "Entscheidungen, Verantwortlichkeiten, Takt"
+  - "label": "Steuerung"
+    "left": "Viel Reporting, wenig Durchgriff"
+    "right": "Wenige Kennzahlen, klare Nachsteuerung"
+  - "label": "Ergebnis"
+    "left": "Hohe Aktivität, niedrige Verbindlichkeit"
+    "right": "Messbare Fortschritte im Tagesgeschäft"
+- "type": "crossref"
+  "heading": "Förderung separat betrachten"
+  "body": "Wer BAFA-Förderung prüfen möchte, findet das über die Themenseite zur Förderung. Für Change zählt zuerst, ob Umsetzung\
+    \ und Führungsrhythmus stabil werden."
+  "link":
+    "label": "Zur BAFA-Themenseite"
+    "href": "/themen/bafa"
+- "type": "faq"
+  "heading": "Häufige Fragen zur Change Management Beratung"
+  "items":
+  - "question": "Für welche Unternehmen ist das gedacht?"
+    "answer": "Für KMU, die Wachstum, Übergabe, Reorganisation oder Digitalisierung sauber umsetzen wollen, ohne dass der\
+      \ Veränderungsprozess an der Geschäftsführung hängt."
+  - "question": "Wie lange dauert eine typische Begleitung?"
+    "answer": "Häufig starten wir mit einem fokussierten acht- bis zwölf-Wochen-Setup und gehen danach in ein Umsetzungssparring."
+  - "question": "Wie wird Erfolg gemessen?"
+    "answer": "Über wenige, klare Kennzahlen wie Entscheidungsdurchlaufzeit, Eskalationen pro Woche oder Nacharbeitsquote."
+  - "question": "Was unterscheidet das von klassischer Change-Beratung?"
+    "answer": "Der Schwerpunkt liegt nicht auf Kommunikations- und Workshop-Formaten, sondern auf der Frage: Was muss in Führung,\
+      \ Entscheidungslogik und Tagesrhythmus konkret anders werden, damit Veränderung hält?"
+"endCTA":
+  "heading": "Change darf nicht am Projektplan enden"
+  "body": "Wenn ihr Veränderung wirklich im Alltag verankern wollt, braucht ihr klare Führungsroutinen, saubere Entscheidungslogik\
+    \ und Umsetzungsdisziplin."
+  "primary":
+    "label": "Erstgespräch für Change starten"
+    "href": "/erstgespraech?topic=change-management"
+  "secondary":
+    "label": "Zur Übersicht Themen"
+    "href": "/themen"

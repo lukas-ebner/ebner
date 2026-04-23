@@ -12,8 +12,6 @@
   "breadcrumbs":
   - "label": "Start"
     "href": "/"
-  - "label": "Themen"
-    "href": "/themen"
   - "label": "KI-Beratung Regensburg"
     "href": "/ki-beratung-regensburg"
   "ctas":

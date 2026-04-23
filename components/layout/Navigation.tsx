@@ -26,11 +26,6 @@ const services = [
 
 const themen = [
   {
-    href: '/themen',
-    title: 'Alle Themen',
-    desc: 'Übersicht aller aktuellen und geplanten Themenseiten.',
-  },
-  {
     href: '/themen/bafa',
     title: 'BAFA-Förderung',
     desc: 'Förderlogik, Ablauf und Umsetzung mit Fokus auf Wirkung.',
@@ -131,7 +126,6 @@ export function Navigation() {
     '/preise',
     '/erstgespraech',
     '/projekte',
-    '/themen',
     '/themen/bafa',
     '/themen/change-management-beratung',
   ]
@@ -225,8 +219,8 @@ export function Navigation() {
               onMouseEnter={() => setThemenOpen(true)}
               onMouseLeave={() => setThemenOpen(false)}
             >
-              <Link
-                href="/themen"
+              <button
+                type="button"
                 className={`inline-flex items-center font-mono text-sm font-normal uppercase tracking-wide transition-opacity hover:opacity-80 ${
                   onDarkSurface ? 'text-text-light' : 'text-text-primary'
                 }`}
@@ -240,7 +234,7 @@ export function Navigation() {
                   className="ml-1 inline shrink-0"
                   aria-hidden
                 />
-              </Link>
+              </button>
               {themenOpen ? (
                 <div className="absolute left-0 top-full z-50 w-[min(100vw-2rem,420px)] pt-2">
                   <div className="rounded-lg border border-white/10 bg-surface-dark p-4 shadow-xl">
@@ -355,15 +349,9 @@ export function Navigation() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/themen"
-                className="font-mono text-label font-normal uppercase tracking-wide"
-                onClick={() => setMenuOpen(false)}
-              >
-                Themen
-              </Link>
+              <p className="font-mono text-label font-normal uppercase tracking-wide">Themen</p>
               <ul className="mt-3 space-y-2 border-l border-white/15 pl-4">
-                {themen.slice(1).map((t) => (
+                {themen.map((t) => (
                   <li key={t.href}>
                     <Link
                       href={t.href}
