@@ -47,9 +47,9 @@ sections:
         right: "Beratung kann früher starten und schneller wirken."
 
   - type: "figure"
-    image: "/images/bafa/bafa-szenario-2.png"
-    alt: "Mittelständisches Team im Strategie-Workshop"
-    caption: "Typischer Fall: Beratung ist nötig, Budget blockiert den Start."
+    image: "/images/bafa/bafa-schmuck.jpg"
+    alt: "BAFA-Antragsformular mit Taschenrechner auf einem Schreibtisch, ruhige Morgenatmosphäre"
+    caption: "Papierkram mit Wirkung — der Antrag ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind."
 
   - type: "crossref"
     heading: "Ablauf in vier Schritten"
