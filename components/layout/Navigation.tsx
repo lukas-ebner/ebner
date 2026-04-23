@@ -72,14 +72,14 @@ const themen = [
   },
 ]
 
-const navItems = [
+const navItemsBeforeThemen = [
+  { href: '/ueber-mich', label: 'Über mich' },
   { href: '/projekte', label: 'Beteiligungen' },
-  { href: '/preise', label: 'Preise' },
-  { href: '/blog', label: 'Blog' },
 ]
 
 const navItemsAfterThemen = [
-  { href: '/ueber-mich', label: 'Über mich' },
+  { href: '/preise', label: 'Preise' },
+  { href: '/blog', label: 'Blog' },
 ]
 
 const ctaButton = { href: '/erstgespraech', label: 'Erstgespräch buchen' }
@@ -202,7 +202,7 @@ export function Navigation() {
               ) : null}
             </div>
 
-            {navItems.map((item) => (
+            {navItemsBeforeThemen.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -323,29 +323,20 @@ export function Navigation() {
           <ul className="mt-4 space-y-6">
             <li>
               <Link
+                href="/ueber-mich"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Über mich
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/projekte"
                 className="font-mono text-label font-normal uppercase tracking-wide"
                 onClick={() => setMenuOpen(false)}
               >
                 Beteiligungen
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/preise"
-                className="font-mono text-label font-normal uppercase tracking-wide"
-                onClick={() => setMenuOpen(false)}
-              >
-                Preise
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className="font-mono text-label font-normal uppercase tracking-wide"
-                onClick={() => setMenuOpen(false)}
-              >
-                Blog
               </Link>
             </li>
             <li>
@@ -366,11 +357,20 @@ export function Navigation() {
             </li>
             <li>
               <Link
-                href="/ueber-mich"
+                href="/preise"
                 className="font-mono text-label font-normal uppercase tracking-wide"
                 onClick={() => setMenuOpen(false)}
               >
-                Über mich
+                Preise
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className="font-mono text-label font-normal uppercase tracking-wide"
+                onClick={() => setMenuOpen(false)}
+              >
+                Blog
               </Link>
             </li>
           </ul>
