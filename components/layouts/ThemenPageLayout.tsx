@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { ThemenPage } from '@/lib/themen'
 import { BafaCalculatorSlide } from '@/components/slides/BafaCalculatorSlide'
 import { FAQSlide } from '@/components/slides/FAQSlide'
+import { LeadmagnetTeaser } from '@/components/LeadmagnetTeaser'
 
 interface Props {
   page: ThemenPage
@@ -282,6 +283,11 @@ export function ThemenPageLayout({ page }: Props) {
             })}
           </div>
         </div>
+
+        {/* ── LEADMAGNET TEASER (vor FAQ, Middle-Funnel-Angebot) ─── */}
+        {page.meta.breadcrumbs?.some((c) => c.href === '/unverzichtbar') ? null : (
+          <LeadmagnetTeaser />
+        )}
 
         {/* ── FAQ (full-width, matches main site) ─────── */}
         {hasFaq && faqSection && faqSection.type === 'faq' ? (

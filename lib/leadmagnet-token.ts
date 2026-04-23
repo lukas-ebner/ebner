@@ -11,6 +11,22 @@
  */
 import crypto from 'crypto'
 
+/**
+ * Public-facing canonical site URL.
+ *
+ * Hardcoded to lukasebner.de because `req.url` / `req.headers.host` may
+ * contain the internal Docker container hostname when Next.js runs behind
+ * Coolify's reverse proxy (e.g. `6bf48e7445ff:3000`). Using the hostname
+ * from the request would break:
+ *   - confirm-mail links (user cannot open internal hostname from their inbox)
+ *   - download-mail links (same reason)
+ *   - Double-Opt-In redirect to /unverzichtbar/danke
+ *
+ * Override via env var `NEXT_PUBLIC_SITE_URL` if needed for staging.
+ */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, '') || 'https://lukasebner.de'
+
 const SECRET = process.env.LEADMAGNET_SECRET || process.env.NEXTAUTH_SECRET || ''
 
 export type TokenKind = 'confirm' | 'download'

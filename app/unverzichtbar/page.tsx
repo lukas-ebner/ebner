@@ -52,33 +52,17 @@ export default function UnverzichtbarPage() {
 
       {/* ── HERO ────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-surface-dark pt-28 lg:pt-32">
-        {/* Background image right half */}
-        <div className="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/leadmagnet/buch_transparent.png"
-              alt="(Un)verzichtbar – Buchmockup"
-              fill
-              priority
-              className="object-contain object-center"
-              sizes="50vw"
-            />
-          </div>
-        </div>
-
-        <div className="relative mx-auto grid min-h-[640px] max-w-6xl grid-cols-1 items-center gap-10 px-6 pb-16 lg:grid-cols-2 lg:px-8 lg:pb-24 lg:pt-8">
-          <div>
+        <div className="relative mx-auto grid min-h-[640px] max-w-6xl grid-cols-1 items-center gap-4 px-6 pb-16 lg:grid-cols-[1.1fr_1fr] lg:gap-6 lg:px-8 lg:pb-24 lg:pt-8">
+          <div className="lg:pr-4">
             <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">
               Der Unternehmer-Roman · Leadtime Publishing
             </p>
-            <h1 className="mt-5 font-display text-4xl leading-[1.05] text-white lg:text-[3.25rem]">
-              Wenn dein Business ständig an dir hängt, obwohl du es aufgebaut hast, damit es
-              irgendwann nicht mehr an dir hängt.
+            <h1 className="mt-5 font-display text-4xl leading-[1.02] text-white lg:text-[4rem]">
+              Du hast dein Business aufgebaut&#8202;—&#8202;jetzt hängt es an dir.
             </h1>
             <p className="mt-6 max-w-[520px] text-lg leading-relaxed text-white/80">
-              In 90 Tagen baut Thomas Maier seinen Maschinenbau-Mittelstand so um, dass er am Ende
-              nicht mehr der Engpass ist. Lies die Geschichte, an der du dein eigenes System
-              wiedererkennst.
+              90 Tage. Ein Geschäftsführer im Mittelstand. Ein Betrieb, der lernt, ohne seinen Chef
+              zu laufen. Lies die Geschichte, an der du dein eigenes System wiedererkennst.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -113,15 +97,15 @@ export default function UnverzichtbarPage() {
             </p>
           </div>
 
-          {/* Mobile hero image */}
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-[320px] lg:hidden">
+          {/* Hero image — inline in grid column, sits right next to headline */}
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-[360px] lg:max-w-none lg:h-[620px] lg:w-full">
             <Image
               src="/images/leadmagnet/buch_transparent.png"
               alt="(Un)verzichtbar – Buchmockup"
               fill
               priority
-              className="object-contain"
-              sizes="(max-width: 1024px) 320px, 0"
+              className="object-contain object-left"
+              sizes="(max-width: 1024px) 360px, 560px"
             />
           </div>
         </div>
