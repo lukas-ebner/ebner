@@ -40,6 +40,18 @@ export type ThemenSection =
       body?: string
       cta?: { label: string; href: string }
     }
+  | {
+      type: 'symptoms'
+      heading: string
+      body?: string
+      items: { pill?: string; image?: string; headline: string; body: string }[]
+    }
+  | {
+      type: 'credibility'
+      heading: string
+      body: string
+      proofs?: { text: string }[]
+    }
 
 export interface ThemenPage {
   meta: {
@@ -66,6 +78,10 @@ function themenDir() {
   return path.join(process.cwd(), 'content', 'pages', 'themen')
 }
 
+function pagesDir() {
+  return path.join(process.cwd(), 'content', 'pages')
+}
+
 export function listThemenSlugs(): string[] {
   const dir = themenDir()
   if (!fs.existsSync(dir)) return []
@@ -74,6 +90,28 @@ export function listThemenSlugs(): string[] {
 
 export function loadThemenPage(slug: string): ThemenPage {
   const filePath = path.join(themenDir(), `${slug}.yaml`)
+  const raw = fs.readFileSync(filePath, 'utf-8')
+  return yaml.load(raw) as ThemenPage
+}
+
+/**
+ * Detect if a root-level YAML (content/pages/{slug}.yaml) uses the ThemenPage schema
+ * (has `sections:` key) instead of the slide-based PageBuilder schema.
+ */
+export function isLandingPageThemenFormat(slug: string): boolean {
+  const filePath = path.join(pagesDir(), `${slug}.yaml`)
+  if (!fs.existsSync(filePath)) return false
+  const raw = fs.readFileSync(filePath, 'utf-8')
+  const doc = yaml.load(raw) as Record<string, unknown> | null
+  if (!doc || typeof doc !== 'object') return false
+  return Array.isArray((doc as { sections?: unknown }).sections)
+}
+
+/**
+ * Load a root-level landing page in ThemenPage format.
+ */
+export function loadLandingPageAsThemen(slug: string): ThemenPage {
+  const filePath = path.join(pagesDir(), `${slug}.yaml`)
   const raw = fs.readFileSync(filePath, 'utf-8')
   return yaml.load(raw) as ThemenPage
 }

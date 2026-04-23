@@ -1,82 +1,77 @@
-meta:
-  title: "Unternehmensberatung Ostbayern | Praxisnah & messbar"
-  description: "Unternehmensberatung in Ostbayern für Wachstum, Prozesse und Digitalisierung. Regional verankert, datengetrieben, umsetzbar."
-  og_image: "/images/og/geo-landingpage.jpg"
-  accent: "#F44900"
-
-variables:
-  GEO_CITY: "Ostbayern"
-  MAIN_KEYWORD: "Unternehmensberatung"
-  LSI_KEYWORDS:
-    - "Unternehmensberatung Ostbayern"
-    - "Unternehmensberatung Oberpfalz"
-    - "Unternehmensberater Amberg"
-    - "Mittelstandsberatung Ostbayern"
-    - "Strategieberatung Ostbayern"
-
-slides:
-  - template: hero-split
-    pill: "Unternehmensberatung Ostbayern"
-    headline: "Unternehmensberatung Ostbayern für nachhaltiges Wachstum"
-    subtext: "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: regionaler Mittelstand, Automobilzulieferer, Handwerk, wachsende Tech-Unternehmen. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel zu lange an einer Person."
-    cta:
-      text: "Erstgespräch buchen"
-      url: "/erstgespraech"
-    image:
-      src: "/images/geo/ostbayern-hero.jpg"
-      alt: "Unternehmer aus Ostbayern im Strategiegespräch"
-
-  - template: symptoms-grid
-    imageStyle: panorama
-    headline: "Typische Engpässe bei inhabergeführten Unternehmen in Ostbayern"
-    body: "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen, die nicht delegiert werden können. Mehr Team, aber nicht mehr Ruhe. Und eine Digitalisierung, die noch nicht wirklich ins System integriert ist."
-    symptoms:
-      - pill: "Engpass 1"
-        image: "/images/geo/symptom-1.jpg"
-        headline: "Der Betrieb läuft zu stark über eine Person."
-        body: "Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch, aber dauerhaft."
-      - pill: "Engpass 2"
-        image: "/images/geo/symptom-2.jpg"
-        headline: "Wachstum bringt mehr Koordinationsaufwand."
-        body: "Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter oder Auftrag neue Abstimmungsschleifen."
-      - pill: "Engpass 3"
-        image: "/images/geo/symptom-3.jpg"
-        headline: "Entscheidungen dauern länger als sie sollten."
-        body: "Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege, Verantwortlichkeiten und Prioritäten nicht klar geregelt sind."
-      - pill: "Engpass 4"
-        image: "/images/geo/symptom-4.jpg"
-        headline: "Digitalisierung läuft ohne sichtbaren Effekt."
-        body: "Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung unscharf bleiben, entsteht kein echter Betriebsvorteil."
-
-  - template: credibility
-    headline: "27 Jahre in der Region, nicht aus dem Lehrbuch"
-    body: "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut und übergeben, heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus der Außenperspektive. Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb konkret anders laufen muss."
-    proofs:
-      - text: "27 Jahre in Ostbayern verwurzelt"
-      - text: "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
-      - text: "MBA an der TH Deggendorf, operativer Fokus"
-    cta:
-      label: "Gespräch vereinbaren"
-      href: "/erstgespraech"
-
-  - template: faq
-    id: geo-faq
-    headline: "Häufige Fragen zu Unternehmensberatung in Ostbayern"
-    variant: light
-    bg: "#E6EEEF"
-    items:
-      - question: "Für welche Unternehmen in Ostbayern ist das sinnvoll?"
-        answer: "Für inhabergeführte KMU, Dienstleister, Handwerksbetriebe und wachsende Teams, bei denen operative Last, Führungsfragen oder Entscheidungsstau das Wachstum ausbremsen."
-      - question: "Gilt das auch für kleinere Standorte wie Cham oder Weiden?"
-        answer: "Ja. Der Standort spielt für die Art der Engpässe weniger eine Rolle als Betriebsgröße, Branche und Wachstumsphase. Ich arbeite remote und vor Ort in der Region."
-      - question: "Geht es um Strategie oder um Umsetzung?"
-        answer: "Beides, aber mit Vorrang für Umsetzung. Strategie ohne anschlussfähige Betriebslogik bleibt Folienpapier."
-      - question: "Wie ist der erste Schritt?"
-        answer: "Ein kurzes Erstgespräch, in dem wir ehrlich einordnen, ob und wo der eigentliche Engpass sitzt, und was sinnvollerweise als erstes angegangen wird."
-
-  - template: cta
-    headline: "Wenn du in Ostbayern ein Unternehmen führen willst, das nicht permanent an dir hängt"
-    body: "Dann lass uns anschauen, wo der eigentliche Engpass sitzt und wie daraus ein Betrieb wird, der führbarer, robuster und weniger von Einzelpersonen abhängig ist."
-    primary:
-      label: "Erstgespräch buchen"
-      href: "/erstgespraech"
+"meta":
+  "title": "Unternehmensberatung Ostbayern | Praxisnah & messbar"
+  "description": "Unternehmensberatung in Ostbayern für Wachstum, Prozesse und Digitalisierung. Regional verankert, datengetrieben,\
+    \ umsetzbar."
+  "kicker": "Unternehmensberatung Ostbayern"
+  "subtitle": "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: regionaler Mittelstand, Automobilzulieferer,\
+    \ Handwerk, wachsende Tech-Unternehmen. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel zu lange an einer Person."
+  "heroImage": "/images/geo/ostbayern-hero.jpg"
+  "heroAlt": "Unternehmer aus Ostbayern im Strategiegespräch"
+  "og_image": "/images/og/geo-landingpage.jpg"
+  "breadcrumbs":
+  - "label": "Start"
+    "href": "/"
+  - "label": "Themen"
+    "href": "/themen"
+  - "label": "Ostbayern"
+    "href": "/unternehmensberatung-ostbayern"
+  "ctas":
+  - "label": "Erstgespräch buchen"
+    "href": "/erstgespraech"
+    "variant": "primary"
+"sections":
+- "type": "symptoms"
+  "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Ostbayern"
+  "body": "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen,\
+    \ die nicht delegiert werden können. Mehr Team, aber nicht mehr Ruhe. Und eine Digitalisierung, die noch nicht wirklich\
+    \ ins System integriert ist."
+  "items":
+  - "pill": "Engpass 1"
+    "image": "/images/geo/symptom-1.jpg"
+    "headline": "Der Betrieb läuft zu stark über eine Person."
+    "body": "Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch, aber dauerhaft."
+  - "pill": "Engpass 2"
+    "image": "/images/geo/symptom-2.jpg"
+    "headline": "Wachstum bringt mehr Koordinationsaufwand."
+    "body": "Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter oder Auftrag neue Abstimmungsschleifen."
+  - "pill": "Engpass 3"
+    "image": "/images/geo/symptom-3.jpg"
+    "headline": "Entscheidungen dauern länger als sie sollten."
+    "body": "Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege, Verantwortlichkeiten und Prioritäten nicht\
+      \ klar geregelt sind."
+  - "pill": "Engpass 4"
+    "image": "/images/geo/symptom-4.jpg"
+    "headline": "Digitalisierung läuft ohne sichtbaren Effekt."
+    "body": "Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung unscharf bleiben, entsteht kein echter\
+      \ Betriebsvorteil."
+- "type": "credibility"
+  "heading": "27 Jahre in der Region, nicht aus dem Lehrbuch"
+  "body": "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut\
+    \ und übergeben, heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus\
+    \ der Außenperspektive. Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb\
+    \ konkret anders laufen muss."
+  "proofs":
+  - "text": "27 Jahre in Ostbayern verwurzelt"
+  - "text": "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
+  - "text": "MBA an der TH Deggendorf, operativer Fokus"
+- "type": "faq"
+  "heading": "Häufige Fragen zu Unternehmensberatung in Ostbayern"
+  "items":
+  - "question": "Für welche Unternehmen in Ostbayern ist das sinnvoll?"
+    "answer": "Für inhabergeführte KMU, Dienstleister, Handwerksbetriebe und wachsende Teams, bei denen operative Last, Führungsfragen\
+      \ oder Entscheidungsstau das Wachstum ausbremsen."
+  - "question": "Gilt das auch für kleinere Standorte wie Cham oder Weiden?"
+    "answer": "Ja. Der Standort spielt für die Art der Engpässe weniger eine Rolle als Betriebsgröße, Branche und Wachstumsphase.\
+      \ Ich arbeite remote und vor Ort in der Region."
+  - "question": "Geht es um Strategie oder um Umsetzung?"
+    "answer": "Beides, aber mit Vorrang für Umsetzung. Strategie ohne anschlussfähige Betriebslogik bleibt Folienpapier."
+  - "question": "Wie ist der erste Schritt?"
+    "answer": "Ein kurzes Erstgespräch, in dem wir ehrlich einordnen, ob und wo der eigentliche Engpass sitzt, und was sinnvollerweise\
+      \ als erstes angegangen wird."
+"endCTA":
+  "heading": "Wenn du in Ostbayern ein Unternehmen führen willst, das nicht permanent an dir hängt"
+  "body": "Dann lass uns anschauen, wo der eigentliche Engpass sitzt und wie daraus ein Betrieb wird, der führbarer, robuster\
+    \ und weniger von Einzelpersonen abhängig ist."
+  "primary":
+    "label": "Erstgespräch buchen"
+    "href": "/erstgespraech"

@@ -231,6 +231,67 @@ export function ThemenPageLayout({ page }: Props) {
                 )
               }
 
+              if (section.type === 'symptoms') {
+                return (
+                  <section key={index}>
+                    <SectionHeading>{section.heading}</SectionHeading>
+                    {section.body ? (
+                      <p className="mb-10 max-w-3xl text-lg leading-relaxed text-[#253043]">{section.body}</p>
+                    ) : null}
+                    <div className="grid gap-6 md:grid-cols-2">
+                      {section.items.map((item, idx) => (
+                        <article
+                          key={idx}
+                          className="overflow-hidden rounded-2xl border border-[#E0E6ED] bg-white"
+                        >
+                          {item.image ? (
+                            <div className="relative aspect-[16/9] w-full bg-[#E8EEF4]">
+                              <Image
+                                src={item.image}
+                                alt={item.headline}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 448px"
+                              />
+                            </div>
+                          ) : null}
+                          <div className="p-6">
+                            {item.pill ? (
+                              <p className="mb-3 inline-block rounded-full bg-brand/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-brand">
+                                {item.pill}
+                              </p>
+                            ) : null}
+                            <h3 className="font-display text-xl leading-tight text-[#111830]">{item.headline}</h3>
+                            <p className="mt-3 text-base leading-relaxed text-[#253043]">{item.body}</p>
+                          </div>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                )
+              }
+
+              if (section.type === 'credibility') {
+                return (
+                  <section key={index}>
+                    <SectionHeading>{section.heading}</SectionHeading>
+                    <p className="max-w-3xl text-lg leading-relaxed text-[#253043]">{section.body}</p>
+                    {section.proofs?.length ? (
+                      <ul className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+                        {section.proofs.map((p, pIdx) => (
+                          <li
+                            key={pIdx}
+                            className="rounded-xl border border-[#E0E6ED] bg-[#FAFBFC] px-5 py-4 text-sm leading-snug text-[#253043]"
+                          >
+                            {p.text}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </section>
+                )
+              }
+
               return null
             })}
           </div>
