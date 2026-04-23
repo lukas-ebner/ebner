@@ -1,6 +1,6 @@
 meta:
-  title: "Unternehmensberatung Ostbayern | Lukas Ebner"
-  description: "Unternehmensberatung für KMU in Ostbayern. Klare Führung, saubere Prozesse und messbare Umsetzung statt Berater-Nebel."
+  title: "Unternehmensberatung Ostbayern | Praxisnah & messbar"
+  description: "Unternehmensberatung in Ostbayern für Wachstum, Prozesse und Digitalisierung. Regional verankert, datengetrieben, umsetzbar."
   og_image: "/images/og/geo-landingpage.jpg"
   accent: "#F44900"
 
@@ -9,16 +9,16 @@ variables:
   MAIN_KEYWORD: "Unternehmensberatung"
   LSI_KEYWORDS:
     - "Unternehmensberatung Ostbayern"
+    - "Unternehmensberatung Oberpfalz"
+    - "Unternehmensberater Amberg"
     - "Mittelstandsberatung Ostbayern"
-    - "Unternehmensentwicklung Ostbayern"
     - "Strategieberatung Ostbayern"
-    - "Prozessoptimierung Ostbayern"
 
 slides:
   - template: hero-split
     pill: "Unternehmensberatung Ostbayern"
-    headline: "Unternehmensberatung in Ostbayern ohne Berater-Nebel."
-    subtext: "Wenn dein Unternehmen wächst, aber Führung, Entscheidungen und Umsetzung nicht sauber mitwachsen, brauchst du keine Theorieshow. Du brauchst Klarheit im Betrieb. Genau darum geht es hier."
+    headline: "Unternehmensberatung Ostbayern für nachhaltiges Wachstum"
+    subtext: "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: regionaler Mittelstand, Automobilzulieferer, Handwerk, wachsende Tech-Unternehmen. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel zu lange an einer Person."
     cta:
       text: "Erstgespräch buchen"
       url: "/erstgespraech"
@@ -28,43 +28,36 @@ slides:
 
   - template: symptoms-grid
     imageStyle: panorama
-    headline: "Typische Engpässe in inhabergeführten Unternehmen in Ostbayern"
-    body: "Ostbayern ist breit aufgestellt, von regionalen Dienstleistern bis zu produzierenden Mittelständlern. Genau in solchen Betrieben laufen Wachstum, Tagesgeschäft und Führungsalltag oft lange parallel, bis das Unternehmen plötzlich wieder stark an einzelnen Personen hängt."
+    headline: "Typische Engpässe bei inhabergeführten Unternehmen in Ostbayern"
+    body: "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen, die nicht delegiert werden können. Mehr Team, aber nicht mehr Ruhe. Und eine Digitalisierung, die noch nicht wirklich ins System integriert ist."
     symptoms:
-      - pill: "Symptom 1"
+      - pill: "Engpass 1"
         image: "/images/geo/symptom-1.jpg"
-        headline: "Der Betrieb läuft zu stark über den Inhaber."
-        body: "Entscheidungen, Eskalationen und Prioritäten landen zu oft ganz oben, obwohl das Team eigentlich längst größer ist."
-      - pill: "Symptom 2"
+        headline: "Der Betrieb läuft zu stark über eine Person."
+        body: "Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch, aber dauerhaft."
+      - pill: "Engpass 2"
         image: "/images/geo/symptom-2.jpg"
-        headline: "Wachstum bringt mehr Last als Entlastung."
-        body: "Neue Mitarbeitende, neue Kunden oder neue Projekte erhöhen den Druck, weil Führungslogik und Abläufe nicht sauber mitgewachsen sind."
-      - pill: "Symptom 3"
+        headline: "Wachstum bringt mehr Koordinationsaufwand."
+        body: "Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter oder Auftrag neue Abstimmungsschleifen."
+      - pill: "Engpass 3"
         image: "/images/geo/symptom-3.jpg"
-        headline: "Strategie bleibt im Alltag hängen."
-        body: "Es gibt Ziele, Ideen und Baustellen, aber zu wenig Verbindlichkeit in Umsetzung, Steuerung und Nachhalten."
-      - pill: "Symptom 4"
+        headline: "Entscheidungen dauern länger als sie sollten."
+        body: "Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege, Verantwortlichkeiten und Prioritäten nicht klar geregelt sind."
+      - pill: "Engpass 4"
         image: "/images/geo/symptom-4.jpg"
-        headline: "Veränderung wird teuer, weil sie zu diffus startet."
-        body: "Dann fehlt meistens nicht Motivation, sondern eine klare Reihenfolge für Führung, Prozesse, Systeme und Entscheidungen."
+        headline: "Digitalisierung läuft ohne sichtbaren Effekt."
+        body: "Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung unscharf bleiben, entsteht kein echter Betriebsvorteil."
 
   - template: credibility
-    headline: "Beratung für Unternehmer, nicht für Folien"
-    body: "Ich arbeite mit ostbayerischen KMU nicht an abstrakten Leitbildern, sondern an realem Führungsalltag, operativen Engpässen und den wenigen Stellschrauben, die im Betrieb wirklich Wirkung entfalten."
+    headline: "27 Jahre in der Region, nicht aus dem Lehrbuch"
+    body: "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut und übergeben, heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus der Außenperspektive. Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb konkret anders laufen muss."
     proofs:
-      - text: "15 Jahre Geschäftsführer-Praxis"
-      - text: "Skalierung von 0 auf 50 Mitarbeitende"
-      - text: "Fokus auf Führung, Prozesse, Systeme und Umsetzung"
+      - text: "27 Jahre in Ostbayern verwurzelt"
+      - text: "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
+      - text: "MBA an der TH Deggendorf, operativer Fokus"
     cta:
       label: "Gespräch vereinbaren"
       href: "/erstgespraech"
-
-  - template: bafa-calculator
-    headline: "Förderung ist nett. Steuerbarkeit ist wichtiger."
-    body: "Bayern unterstützt den Mittelstand breit bei Entwicklung und Digitalisierung. Für dein Unternehmen in Ostbayern ist aber zuerst die wichtigere Frage: Was muss sich im Führungs- und Betriebsalltag ändern, damit Wachstum nicht weiter an einzelnen Personen hängen bleibt?"
-    cta:
-      label: "BAFA-Check"
-      href: "/erstgespraech?topic=bafa"
 
   - template: faq
     id: geo-faq
@@ -73,20 +66,17 @@ slides:
     bg: "#E6EEEF"
     items:
       - question: "Für welche Unternehmen in Ostbayern ist das sinnvoll?"
-        answer: "Für inhabergeführte KMU, produzierende Betriebe, regionale Dienstleister und wachsende Unternehmen, bei denen Führung, Priorisierung und Umsetzung nicht mehr stabil mit dem Wachstum mithalten."
-      - question: "Was unterscheidet Unternehmensberatung in Ostbayern von einer reinen Strategie-Beratung?"
-        answer: "Hier geht es nicht nur um Richtung, sondern um Alltagstauglichkeit. Also um Entscheidungen, Verantwortlichkeiten, Führungsroutinen und die Frage, was im Betrieb nächste Woche tatsächlich anders laufen soll."
-      - question: "Ist das nur für Regensburg oder die ganze Region gedacht?"
-        answer: "Die Seite zielt bewusst breiter auf Ostbayern. Also auch auf Unternehmen aus der Oberpfalz und angrenzenden Regionen, die eine direkte, operative Unternehmer-Beratung suchen."
-      - question: "Woran merkt man, dass die Beratung etwas bringt?"
-        answer: "Wenn Führung weniger an Einzelpersonen klebt, Entscheidungen schneller werden, Prioritäten klarer sind und der Betrieb insgesamt berechenbarer läuft."
+        answer: "Für inhabergeführte KMU, Dienstleister, Handwerksbetriebe und wachsende Teams, bei denen operative Last, Führungsfragen oder Entscheidungsstau das Wachstum ausbremsen."
+      - question: "Gilt das auch für kleinere Standorte wie Cham oder Weiden?"
+        answer: "Ja. Der Standort spielt für die Art der Engpässe weniger eine Rolle als Betriebsgröße, Branche und Wachstumsphase. Ich arbeite remote und vor Ort in der Region."
+      - question: "Geht es um Strategie oder um Umsetzung?"
+        answer: "Beides, aber mit Vorrang für Umsetzung. Strategie ohne anschlussfähige Betriebslogik bleibt Folienpapier."
+      - question: "Wie ist der erste Schritt?"
+        answer: "Ein kurzes Erstgespräch, in dem wir ehrlich einordnen, ob und wo der eigentliche Engpass sitzt, und was sinnvollerweise als erstes angegangen wird."
 
   - template: cta
     headline: "Wenn du in Ostbayern ein Unternehmen führen willst, das nicht permanent an dir hängt"
-    body: "Dann lass uns anschauen, wo dein größter Hebel sitzt und wie daraus eine tragfähige Betriebslogik wird. Direkt, operativ und ohne Berater-Geschwurbel."
+    body: "Dann lass uns anschauen, wo der eigentliche Engpass sitzt und wie daraus ein Betrieb wird, der führbarer, robuster und weniger von Einzelpersonen abhängig ist."
     primary:
       label: "Erstgespräch buchen"
       href: "/erstgespraech"
-    secondary:
-      label: "Preise ansehen"
-      href: "/preise"
