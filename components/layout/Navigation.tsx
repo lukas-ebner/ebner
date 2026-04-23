@@ -45,6 +45,41 @@ const themen = [
     title: 'Change Management',
     desc: 'Veränderung im Mittelstand, die auch im Alltag hält.',
   },
+  {
+    href: '/unternehmensberatung-regensburg',
+    title: 'Unternehmensberatung Regensburg',
+    desc: 'Ordnung im Betrieb für KMU und Agenturen in Regensburg.',
+  },
+  {
+    href: '/unternehmensberatung-niederbayern',
+    title: 'Unternehmensberatung Niederbayern',
+    desc: 'Pragmatische Beratung für inhabergeführten Mittelstand.',
+  },
+  {
+    href: '/unternehmensberatung-ostbayern',
+    title: 'Unternehmensberatung Ostbayern',
+    desc: 'Regionale Verwurzelung, operative Klarheit.',
+  },
+  {
+    href: '/ki-beratung-regensburg',
+    title: 'KI-Beratung Regensburg',
+    desc: 'KI im Mittelstand ohne Hype-Folien.',
+  },
+  {
+    href: '/digitalisierungsberatung-regensburg',
+    title: 'Digitalisierungsberatung Regensburg',
+    desc: 'Weniger Tool-Chaos, mehr Klarheit im Alltag.',
+  },
+  {
+    href: '/prozessoptimierung-regensburg',
+    title: 'Prozessoptimierung Regensburg',
+    desc: 'Weniger Reibung, mehr operative Steuerbarkeit.',
+  },
+  {
+    href: '/operations-beratung-agenturen',
+    title: 'Operations-Beratung für Agenturen',
+    desc: 'Mehr Klarheit im Projektalltag statt mehr Umsatz.',
+  },
 ]
 
 const navItems = [
@@ -332,6 +367,19 @@ export function Navigation() {
               >
                 Themen
               </Link>
+              <ul className="mt-3 space-y-2 border-l border-white/15 pl-4">
+                {themen.slice(1).map((t) => (
+                  <li key={t.href}>
+                    <Link
+                      href={t.href}
+                      className="block font-body text-sm text-text-light/70"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {t.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
             <li>
               <Link
