@@ -21,42 +21,37 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Woran du merkst, dass dein Unternehmen in Regensburg an dir hängt"
-  "body": "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Klingt ordentlich.\
+  "content":
+  - "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Klingt ordentlich.\
     \ Gleichzeitig stagniert die Wirtschaftslage in der Region weiter. Genau in solchen Phasen kippt das Problem in vielen\
     \ Betrieben nach innen: nicht fehlende Bewegung im Markt, sondern zu viele Entscheidungen auf zu wenigen Schultern."
-  "items":
-  - "pill": "Engpass 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Zu viele Entscheidungen landen wieder bei dir."
-    "body": "Rollen sind formal verteilt, aber in der Praxis wartet das Team trotzdem auf dich. Nicht aus Bequemlichkeit,\
-      \ sondern weil Verantwortung und Eskalationswege nicht sauber genug gebaut sind."
-  - "pill": "Engpass 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "Mehr Team bringt mehr Abstimmung, aber nicht mehr Entlastung."
-    "body": "Wenn jeder neue Mitarbeiter neue Rückfragen produziert, wächst nicht dein Unternehmen. Es wächst nur die Komplexität,\
-      \ die bei dir zusammenläuft."
-  - "pill": "Engpass 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Digitalisierung und KI laufen nebenher."
-    "body": "In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer Plus mit Bewerbungsschluss\
-      \ am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse mitgebaut werden."
-  - "pill": "Engpass 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Du arbeitest viel, aber der Betrieb wird nicht robuster."
-    "body": "Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik, die Entscheidungen schneller macht, Übergaben\
-      \ stabilisiert und das Tagesgeschäft von deiner Person entkoppelt."
-- "type": "credibility"
+  "bullets":
+  - "Zu viele Entscheidungen landen wieder bei dir — Rollen sind formal verteilt, aber in der Praxis wartet das Team trotzdem\
+    \ auf dich. Nicht aus Bequemlichkeit, sondern weil Verantwortung und Eskalationswege nicht sauber genug gebaut sind."
+  - "Mehr Team bringt mehr Abstimmung, aber nicht mehr Entlastung — Wenn jeder neue Mitarbeiter neue Rückfragen produziert,\
+    \ wächst nicht dein Unternehmen. Es wächst nur die Komplexität, die bei dir zusammenläuft."
+  - "Digitalisierung und KI laufen nebenher — In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer\
+    \ Plus mit Bewerbungsschluss am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse\
+    \ mitgebaut werden."
+  - "Du arbeitest viel, aber der Betrieb wird nicht robuster — Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik,\
+    \ die Entscheidungen schneller macht, Übergaben stabilisiert und das Tagesgeschäft von deiner Person entkoppelt."
+- "type": "figure"
+  "image": "/images/geo/regensburg-schmuck.jpg"
+  "alt": "Arbeitssituation in einem Regensburger Mittelstandsbetrieb"
+  "caption": "Arbeit am eigentlichen Engpass, nicht am nächsten Tool."
+- "type": "prose"
   "heading": "Warum ich das in Regensburg anders angehe"
-  "body": "Ich kenne die Region nicht aus der Außensicht. Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Ausbildung\
+  "content":
+  - "Ich kenne die Region nicht aus der Außensicht. Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Ausbildung\
     \ war in Regensburg. Meine Firma habe ich hier gegründet, aufgebaut und später übergeben, heute ist sie Teil der Kraftwerk.\
     \ Dazu kommen der MBA an der TH Deggendorf und das Silicon-Valley-Programm mit Förderung aus Regensburg. Deshalb interessiert\
     \ mich weniger, wie Beratung klingt, und mehr, was im Betrieb am Montag anders laufen muss."
-  "proofs":
-  - "text": "27 Jahre Ostbayern, vom Teenager-Job bis zur Gründung"
-  - "text": "Eigene Firma in Regensburg aufgebaut und übergeben"
-  - "text": "MBA an der TH Deggendorf, kein Einflieger-Berater"
+  "bullets":
+  - "27 Jahre Ostbayern, vom Teenager-Job bis zur Gründung"
+  - "Eigene Firma in Regensburg aufgebaut und übergeben"
+  - "MBA an der TH Deggendorf, kein Einflieger-Berater"
 - "type": "faq"
   "heading": "Häufige Fragen zu Unternehmensberatung in Regensburg"
   "items":

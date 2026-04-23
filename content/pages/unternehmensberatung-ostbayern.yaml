@@ -20,40 +20,36 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Ostbayern"
-  "body": "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen,\
+  "content":
+  - "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen,\
     \ die nicht delegiert werden können. Mehr Team, aber nicht mehr Ruhe. Und eine Digitalisierung, die noch nicht wirklich\
     \ ins System integriert ist."
-  "items":
-  - "pill": "Engpass 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Der Betrieb läuft zu stark über eine Person."
-    "body": "Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch, aber dauerhaft."
-  - "pill": "Engpass 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "Wachstum bringt mehr Koordinationsaufwand."
-    "body": "Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter oder Auftrag neue Abstimmungsschleifen."
-  - "pill": "Engpass 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Entscheidungen dauern länger als sie sollten."
-    "body": "Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege, Verantwortlichkeiten und Prioritäten nicht\
-      \ klar geregelt sind."
-  - "pill": "Engpass 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Digitalisierung läuft ohne sichtbaren Effekt."
-    "body": "Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung unscharf bleiben, entsteht kein echter\
-      \ Betriebsvorteil."
-- "type": "credibility"
+  "bullets":
+  - "Der Betrieb läuft zu stark über eine Person — Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch,\
+    \ aber dauerhaft."
+  - "Wachstum bringt mehr Koordinationsaufwand — Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter\
+    \ oder Auftrag neue Abstimmungsschleifen."
+  - "Entscheidungen dauern länger als sie sollten — Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege,\
+    \ Verantwortlichkeiten und Prioritäten nicht klar geregelt sind."
+  - "Digitalisierung läuft ohne sichtbaren Effekt — Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung\
+    \ unscharf bleiben, entsteht kein echter Betriebsvorteil."
+- "type": "figure"
+  "image": "/images/geo/ostbayern-schmuck.jpg"
+  "alt": "Werkstatt in Ostbayern, traditioneller Handwerksbetrieb"
+  "caption": "Ostbayerischer Mittelstand steht solide. Engpass liegt meist in der Steuerbarkeit, nicht im Markt."
+- "type": "prose"
   "heading": "27 Jahre in der Region, nicht aus dem Lehrbuch"
-  "body": "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut\
-    \ und übergeben, heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus\
-    \ der Außenperspektive. Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb\
-    \ konkret anders laufen muss."
-  "proofs":
-  - "text": "27 Jahre in Ostbayern verwurzelt"
-  - "text": "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
-  - "text": "MBA an der TH Deggendorf, operativer Fokus"
+  "content":
+  - "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut und übergeben,\
+    \ heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus der Außenperspektive.\
+    \ Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb konkret anders laufen\
+    \ muss."
+  "bullets":
+  - "27 Jahre in Ostbayern verwurzelt"
+  - "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
+  - "MBA an der TH Deggendorf, operativer Fokus"
 - "type": "faq"
   "heading": "Häufige Fragen zu Unternehmensberatung in Ostbayern"
   "items":

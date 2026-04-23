@@ -20,37 +20,34 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Woran du merkst, dass Prozessoptimierung in Regensburg für dich gerade relevant ist"
-  "body": "In vielen Regensburger KMU läuft operativ noch erstaunlich viel über Zuruf. Das funktioniert bis zu einer bestimmten\
+  "content":
+  - "In vielen Regensburger KMU läuft operativ noch erstaunlich viel über Zuruf. Das funktioniert bis zu einer bestimmten\
     \ Größe. Sobald Teams wachsen oder Projekte komplexer werden, wird aus pragmatischer Flexibilität echte Reibung."
-  "items":
-  - "pill": "Symptom 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Zu viele Rückfragen landen bei dir."
-    "body": "Das Team arbeitet, aber Entscheidungen, Freigaben und Prioritäten rutschen trotzdem immer wieder nach oben."
-  - "pill": "Symptom 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "Übergaben kosten unnötig Tempo."
-    "body": "Zwischen Vertrieb, Projekt und Backoffice geht zu viel verloren, weil Prozesse nur halb definiert sind und Verantwortung\
-      \ unklar bleibt."
-  - "pill": "Symptom 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Neue Tools bringen nicht die erwartete Klarheit."
-    "body": "Software ersetzt keine Betriebslogik. Wenn der Ablauf nicht sauber ist, digitalisierst du nur das Chaos."
-  - "pill": "Symptom 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Marge und Nerven gehen in Schleifen verloren."
-    "body": "Zu viele Sonderfälle, Nacharbeit und Eskalationen fressen Zeit, die eigentlich in saubere Umsetzung gehen sollte."
-- "type": "credibility"
+  "bullets":
+  - "Zu viele Rückfragen landen bei dir — Das Team arbeitet, aber Entscheidungen, Freigaben und Prioritäten rutschen trotzdem\
+    \ immer wieder nach oben."
+  - "Übergaben kosten unnötig Tempo — Zwischen Vertrieb, Projekt und Backoffice geht zu viel verloren, weil Prozesse nur halb\
+    \ definiert sind und Verantwortung unklar bleibt."
+  - "Neue Tools bringen nicht die erwartete Klarheit — Software ersetzt keine Betriebslogik. Wenn der Ablauf nicht sauber\
+    \ ist, digitalisierst du nur das Chaos."
+  - "Marge und Nerven gehen in Schleifen verloren — Zu viele Sonderfälle, Nacharbeit und Eskalationen fressen Zeit, die eigentlich\
+    \ in saubere Umsetzung gehen sollte."
+- "type": "figure"
+  "image": "/images/geo/prozess-regensburg-schmuck.jpg"
+  "alt": "Prozess-Flow auf einem Whiteboard"
+  "caption": "Prozesse sichtbar machen ist der einfache Teil. Sie zu leben, der schwierige."
+- "type": "prose"
   "heading": "Keine Prozessfolie. Ein Betrieb, der sauberer läuft."
-  "body": "Ich schaue mit dir auf die Stellen, an denen Tempo verloren geht: Rollen, Übergaben, Entscheidungspunkte, Prioritäten.\
+  "content":
+  - "Ich schaue mit dir auf die Stellen, an denen Tempo verloren geht: Rollen, Übergaben, Entscheidungspunkte, Prioritäten.\
     \ Ziel ist nicht ein hübsches Soll-Prozessbild, sondern ein Alltag mit weniger Reibung und mehr Steuerbarkeit. Ich habe\
     \ das in meinen eigenen Betrieben so aufgebaut und dann beim Exit übergeben."
-  "proofs":
-  - "text": "15 Jahre operative Führung mit Prozessaufbau von null"
-  - "text": "Skalierung auf 50 Mitarbeitende mit sauberen Übergabestrukturen"
-  - "text": "MBA an der TH Deggendorf, Fokus auf operative Steuerbarkeit"
+  "bullets":
+  - "15 Jahre operative Führung mit Prozessaufbau von null"
+  - "Skalierung auf 50 Mitarbeitende mit sauberen Übergabestrukturen"
+  - "MBA an der TH Deggendorf, Fokus auf operative Steuerbarkeit"
 - "type": "faq"
   "heading": "Häufige Fragen zu Prozessoptimierung in Regensburg"
   "items":

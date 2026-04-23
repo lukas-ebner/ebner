@@ -21,41 +21,35 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Wann KI-Beratung in Regensburg gerade sinnvoll wird"
-  "body": "Die IHK Regensburg hat KI-Transfer Plus gerade neu ausgeschrieben, Bewerbungsschluss war Ende April 2026. Das zeigt:\
+  "content":
+  - "Die IHK Regensburg hat KI-Transfer Plus gerade neu ausgeschrieben, Bewerbungsschluss war Ende April 2026. Das zeigt:\
     \ Das Thema ist in der Region real präsent. Wer einen klaren ROI-orientierten Einstieg sucht statt eines 9-Monats-Programms,\
     \ braucht eine andere Gesprächsgrundlage."
-  "items":
-  - "pill": "Symptom 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Dein Team verliert Zeit in Routinearbeit."
-    "body": "Recherchen, Zusammenfassungen, Standardkommunikation, Vorlagenpflege. Vieles davon ließe sich mit KI beschleunigen.\
-      \ Noch passiert es manuell."
-  - "pill": "Symptom 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "KI-Experimente laufen, aber nichts wird skaliert."
-    "body": "ChatGPT wird einzeln genutzt, aber eine Linie für sinnvolle Anwendungsfälle, Verantwortlichkeiten und Qualitätssicherung\
-      \ fehlt."
-  - "pill": "Symptom 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Du weißt, dass KI hilft, aber nicht wo anfangen."
-    "body": "Die Tool-Landschaft ist unübersichtlich. Ohne klaren Einstieg bleiben es Versuche, die nicht in den Betrieb integriert\
-      \ werden."
-  - "pill": "Symptom 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "KI-Projekte haben bisher nicht gezündet."
-    "body": "Weil Technologie ohne klare Betriebslogik dahinter selten etwas verändert. KI muss in echte Abläufe eingebaut\
-      \ werden, nicht danebenstehen."
-- "type": "credibility"
+  "bullets":
+  - "Dein Team verliert Zeit in Routinearbeit — Recherchen, Zusammenfassungen, Standardkommunikation, Vorlagenpflege. Vieles\
+    \ davon ließe sich mit KI beschleunigen. Noch passiert es manuell."
+  - "KI-Experimente laufen, aber nichts wird skaliert — ChatGPT wird einzeln genutzt, aber eine Linie für sinnvolle Anwendungsfälle,\
+    \ Verantwortlichkeiten und Qualitätssicherung fehlt."
+  - "Du weißt, dass KI hilft, aber nicht wo anfangen — Die Tool-Landschaft ist unübersichtlich. Ohne klaren Einstieg bleiben\
+    \ es Versuche, die nicht in den Betrieb integriert werden."
+  - "KI-Projekte haben bisher nicht gezündet — Weil Technologie ohne klare Betriebslogik dahinter selten etwas verändert.\
+    \ KI muss in echte Abläufe eingebaut werden, nicht danebenstehen."
+- "type": "figure"
+  "image": "/images/geo/ki-regensburg-schmuck.jpg"
+  "alt": "Laptop mit Dashboard auf Holzschreibtisch"
+  "caption": "KI bringt im Betrieb nur Wirkung, wenn sie in bestehende Prozesse eingebettet ist."
+- "type": "prose"
   "heading": "KI-Beratung die im Betrieb ankommt"
-  "body": "Ich schaue mit dir auf die konkreten Stellen, wo KI in deinem Betrieb wirklich etwas entlasten kann. Kein Hype-Pitch,\
+  "content":
+  - "Ich schaue mit dir auf die konkreten Stellen, wo KI in deinem Betrieb wirklich etwas entlasten kann. Kein Hype-Pitch,\
     \ keine Technologie-Begeisterung als Selbstzweck. Ich habe KI in meinen eigenen Unternehmen seit 2022 eingesetzt und kenne\
     \ die Differenz zwischen dem, was in Demos gut klingt, und dem, was im Alltag trägt."
-  "proofs":
-  - "text": "Eigene KI-Implementierung seit 2022 in laufenden Betrieben"
-  - "text": "Fokus auf Use Cases mit echtem ROI, nicht auf Technologie-Faszination"
-  - "text": "Co-Founder Fracto, AI-Anwendung in MedTech"
+  "bullets":
+  - "Eigene KI-Implementierung seit 2022 in laufenden Betrieben"
+  - "Fokus auf Use Cases mit echtem ROI, nicht auf Technologie-Faszination"
+  - "Co-Founder Fracto, AI-Anwendung in MedTech"
 - "type": "faq"
   "heading": "Häufige Fragen zur KI-Beratung in Regensburg"
   "items":
