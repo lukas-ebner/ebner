@@ -180,7 +180,7 @@ async function ensureTag(tagName: string): Promise<string> {
 
 // ── Public API ──────────────────────────────────────────────────────────
 
-export type LeadSource = 'ebook' | 'freiheitstest' | 'erstgespraech'
+export type LeadSource = 'ebook' | 'freiheitstest' | 'erstgespraech' | 'unverzichtbar'
 
 export interface LeadData {
   email: string
@@ -197,6 +197,7 @@ const SOURCE_LABELS: Record<LeadSource, string> = {
   ebook: 'Ebook-Download',
   freiheitstest: 'Freiheitstest',
   erstgespraech: 'Erstgespräch-Anfrage',
+  unverzichtbar: '(Un)verzichtbar – Leadmagnet',
 }
 
 /**

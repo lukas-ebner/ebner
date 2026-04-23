@@ -128,6 +128,8 @@ export function Navigation() {
     '/projekte',
     '/themen/bafa',
     '/themen/change-management-beratung',
+    '/unverzichtbar',
+    '/unverzichtbar/danke',
   ]
   const hasDarkHero = darkHeroPages.includes(pathname)
   const onDarkSurface = hasDarkHero && !scrolled
