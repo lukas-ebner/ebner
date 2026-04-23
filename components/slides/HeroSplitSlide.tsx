@@ -23,9 +23,9 @@ export function HeroSplitSlide({
   pill,
 }: HeroSplitSlideProps) {
   return (
-    <div className="grid min-h-screen grid-cols-1 items-stretch bg-surface-dark lg:grid-cols-2">
+    <div className="grid min-h-[600px] grid-cols-1 items-stretch bg-surface-dark lg:min-h-[720px] lg:grid-cols-2">
       <motion.div
-        className="order-2 flex flex-col justify-center px-8 py-12 lg:order-none lg:px-12 lg:py-24 lg:pt-24"
+        className="order-2 flex flex-col justify-center px-8 py-12 lg:order-none lg:px-12 lg:py-20"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -51,7 +51,7 @@ export function HeroSplitSlide({
         </div>
       </motion.div>
 
-      <div className="relative order-1 h-[50vh] w-full overflow-hidden lg:order-none lg:h-full lg:min-h-screen">
+      <div className="relative order-1 h-[320px] w-full overflow-hidden lg:order-none lg:h-full lg:min-h-[720px]">
         {video ? (
           <video
             src={video}
