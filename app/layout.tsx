@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer'
 import { ScrollRestoration } from '@/components/ScrollRestoration'
 import { Analytics, GtmNoScript } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
+import { GlobalLeadmagnetTeaser } from '@/components/GlobalLeadmagnetTeaser'
 
 const faviconSvg = '/images/favicon.svg'
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
@@ -50,6 +51,7 @@ export default function RootLayout({
         <ScrollRestoration />
         <Navigation />
         <div className="flex-1">{children}</div>
+        <GlobalLeadmagnetTeaser />
         <Footer />
         <CookieConsent />
       </body>
