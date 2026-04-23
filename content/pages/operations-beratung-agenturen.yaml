@@ -12,8 +12,6 @@
   "breadcrumbs":
   - "label": "Start"
     "href": "/"
-  - "label": "Themen"
-    "href": "/themen"
   - "label": "Operations für Agenturen"
     "href": "/operations-beratung-agenturen"
   "ctas":

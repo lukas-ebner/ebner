@@ -67,7 +67,6 @@ export function ThemenPageLayout({ page }: Props) {
               <ol className="flex flex-wrap items-center gap-2">
                 {(page.meta.breadcrumbs ?? [
                   { label: 'Start', href: '/' },
-                  { label: 'Themen', href: '/themen' },
                 ]).map((crumb, idx, arr) => (
                   <li key={crumb.href} className="flex items-center gap-2">
                     <Link href={crumb.href} className="hover:text-white">
