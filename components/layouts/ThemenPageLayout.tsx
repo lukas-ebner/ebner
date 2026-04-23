@@ -294,26 +294,30 @@ export function ThemenPageLayout({ page }: Props) {
           />
         ) : null}
 
-        {/* ── END CTA ─────────────────────────────────── */}
-        <section className="bg-surface-dark py-20 text-white lg:py-24">
+        {/* ── END CTA (hell, mit klarer Trennung zum dunklen Footer) ── */}
+        <section className="bg-white py-20 lg:py-24">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <h2 className="font-display text-[2rem] leading-tight lg:text-[2.75rem]">{page.endCTA.heading}</h2>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">{page.endCTA.body}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href={page.endCTA.primary.href}
-                className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white transition-opacity hover:opacity-90"
-              >
-                {page.endCTA.primary.label}
-              </Link>
-              {page.endCTA.secondary ? (
+            <div className="rounded-2xl border border-[#E0E6ED] bg-[#F6F7FA] p-8 lg:p-12">
+              <h2 className="font-display text-[2rem] leading-tight text-[#111830] lg:text-[2.75rem]">
+                {page.endCTA.heading}
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[#334056]">{page.endCTA.body}</p>
+              <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href={page.endCTA.secondary.href}
-                  className="rounded-full border border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/90 transition-colors hover:border-white/60"
+                  href={page.endCTA.primary.href}
+                  className="rounded-full bg-brand px-6 py-3 font-mono text-xs uppercase tracking-wide text-white transition-opacity hover:opacity-90"
                 >
-                  {page.endCTA.secondary.label}
+                  {page.endCTA.primary.label}
                 </Link>
-              ) : null}
+                {page.endCTA.secondary ? (
+                  <Link
+                    href={page.endCTA.secondary.href}
+                    className="rounded-full border border-[#1B2235]/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-[#1B2235] transition-colors hover:border-[#1B2235]/60"
+                  >
+                    {page.endCTA.secondary.label}
+                  </Link>
+                ) : null}
+              </div>
             </div>
           </div>
         </section>
