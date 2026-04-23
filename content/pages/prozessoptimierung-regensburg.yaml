@@ -1,10 +1,13 @@
 "meta":
   "title": "Prozessoptimierung Regensburg | Effizienz messbar steigern"
-  "description": "Prozessoptimierung für Unternehmen in Regensburg. Engpässe reduzieren, Durchlaufzeiten senken und Team-Output\
-    \ erhöhen."
+  "description": "Prozessoptimierung für Unternehmen in Regensburg: Engpässe reduzieren, Durchlaufzeiten senken, Team-Output\
+    \ erhöhen und Führung spürbar entlasten."
   "kicker": "Prozessoptimierung Regensburg"
-  "subtitle": "Wenn zu viele Rückfragen, Schleifen und Eskalationen bei dir landen, liegt das selten am Einsatz des Teams.\
-    \ Meistens sind Abläufe, Verantwortlichkeiten und Prioritäten nicht sauber gebaut. Genau da setze ich an."
+  "subtitle": "Es gibt einen Punkt beim Wachstum, an dem das, was vorher als Pragmatismus lief, zur Bremse wird. Nicht dramatisch.\
+    \ Einfach teurer. Zu viele Rückfragen landen wieder bei dir. Übergaben klappen nicht mehr zuverlässig. Neue Mitarbeiter\
+    \ bringen mehr Abstimmungsbedarf als Entlastung. Wenn du das kennst, ist das kein Motivationsproblem. Es ist ein Betriebslogikproblem.\
+    \ Genau da beginnt sinnvolle Prozessoptimierung, und genau das habe ich in meinem eigenen Unternehmen dreizehn Jahre lang\
+    \ selbst durchlebt."
   "heroImage": "/images/geo/regensburg-prozessoptimierung-hero.jpg"
   "heroAlt": "Unternehmer in Regensburg spricht über Prozessoptimierung"
   "og_image": "/images/og/geo-landingpage.jpg"
@@ -21,51 +24,84 @@
     "variant": "primary"
 "sections":
 - "type": "prose"
-  "heading": "Woran du merkst, dass Prozessoptimierung in Regensburg für dich gerade relevant ist"
+  "heading": "Woran du merkst, dass Prozessoptimierung in Regensburg für dich jetzt relevant ist"
   "content":
-  - "In vielen Regensburger KMU läuft operativ noch erstaunlich viel über Zuruf. Das funktioniert bis zu einer bestimmten\
-    \ Größe. Sobald Teams wachsen oder Projekte komplexer werden, wird aus pragmatischer Flexibilität echte Reibung."
+  - "Die Creditreform meldete für Frühjahr 2026 einen Geschäftsklimaindex von 5,3 Punkten, den höchsten Stand seit vier Jahren.\
+    \ Patrik-Ludwig Hantzsch, Leiter der Creditreform Wirtschaftsforschung, warnt jedoch: Ohne Strukturreformen und belastbare\
+    \ Betriebslogik bleibt die Erholung fragil, so sein Originalzitat aus der Studie von April 2026. Für Regensburger Unternehmen\
+    \ heißt das konkret: Externe Signale verbessern sich. Interne Prozesse lösen sich trotzdem nicht von selbst. Wer jetzt\
+    \ durch bessere Stimmung mehr Aufträge bekommt, aber Abläufe, Übergaben und Verantwortlichkeiten nicht mitskaliert, dreht\
+    \ das Wachstum in Reibung um und verliert operative Stabilität."
   "bullets":
-  - "Zu viele Rückfragen landen bei dir — Das Team arbeitet, aber Entscheidungen, Freigaben und Prioritäten rutschen trotzdem\
-    \ immer wieder nach oben."
-  - "Übergaben kosten unnötig Tempo — Zwischen Vertrieb, Projekt und Backoffice geht zu viel verloren, weil Prozesse nur halb\
-    \ definiert sind und Verantwortung unklar bleibt."
-  - "Neue Tools bringen nicht die erwartete Klarheit — Software ersetzt keine Betriebslogik. Wenn der Ablauf nicht sauber\
-    \ ist, digitalisierst du nur das Chaos."
-  - "Marge und Nerven gehen in Schleifen verloren — Zu viele Sonderfälle, Nacharbeit und Eskalationen fressen Zeit, die eigentlich\
-    \ in saubere Umsetzung gehen sollte."
+  - "Zu viele Rückfragen landen bei dir — Das Team arbeitet, aber Entscheidungen, Freigaben und Sonderfälle rutschen trotzdem\
+    \ immer wieder nach oben. Nicht aus Bequemlichkeit, sondern weil Verantwortlichkeiten, Eskalationswege und Entscheidungsgrenzen\
+    \ nicht klar genug geregelt sind."
+  - "Übergaben kosten unnötig Tempo — Zwischen Vertrieb, Projekt und Backoffice geht zu viel verloren. Informationen werden\
+    \ doppelt erfasst. Absprachen zerfallen beim nächsten Wechsel. Jede Übergabe braucht Klärungsgespräche, die überflüssig\
+    \ wären, wenn der Prozess einmal sauber wäre."
+  - "Neue Tools bringen nicht die erhoffte Klarheit — Du hast in Software investiert, aber der Betriebsalltag läuft trotzdem\
+    \ noch auf Zuruf. Software ersetzt keine Entscheidung darüber, wer was wann entscheidet. Wenn Abläufe vor der Digitalisierung\
+    \ unscharf waren, sind sie danach digital unscharf."
+  - "Marge und Nerven gehen in Schleifen verloren — Zu viele Sonderfälle, zu viel Nacharbeit, zu viele Eskalationen. Das fühlt\
+    \ sich nach Ausnahmezustand an, ist aber längst Normalzustand geworden. Wer jetzt wächst, ohne das zu adressieren, skaliert\
+    \ nur die Reibung mit."
 - "type": "figure"
   "image": "/images/geo/prozess-regensburg-schmuck.jpg"
   "alt": "Prozess-Flow auf einem Whiteboard"
   "caption": "Prozesse sichtbar machen ist der einfache Teil. Sie zu leben, der schwierige."
 - "type": "prose"
-  "heading": "Keine Prozessfolie. Ein Betrieb, der sauberer läuft."
+  "heading": "Warum ich das in Regensburg anders angehe"
   "content":
-  - "Ich schaue mit dir auf die Stellen, an denen Tempo verloren geht: Rollen, Übergaben, Entscheidungspunkte, Prioritäten.\
-    \ Ziel ist nicht ein hübsches Soll-Prozessbild, sondern ein Alltag mit weniger Reibung und mehr Steuerbarkeit. Ich habe\
-    \ das in meinen eigenen Betrieben so aufgebaut und dann beim Exit übergeben."
+  - "Ich habe Eins+Null in Regensburg gegründet, von zwei auf fünfzig Mitarbeitende skaliert und 2022 an die Kraftwerk Holding\
+    \ verkauft. In dreizehn Jahren habe ich jede Prozess-Bruchstelle selbst durchlebt. Was bei fünf Leuten noch als Pragmatismus\
+    \ läuft, bricht bei zwanzig. Was bei zwanzig trägt, trägt bei fünfzig nicht mehr automatisch. Diese Skalierungs-Erfahrung\
+    \ ist das, was operative Prozessberatung von Methoden-Workshops unterscheidet. Seit 2025 bin ich zusätzlich zertifizierter\
+    \ ICO Organisationsberater und Change Manager, was den methodischen Rahmen absichert und eine strukturierte Vorgehensweise\
+    \ sicherstellt. Und mit 1000+ abgeschlossenen Projekten in der Energiewirtschaft kenne ich Prozessgerüst für Dienstleistungsunternehmen\
+    \ nicht aus einer Fallstudie, sondern aus dem Alltag einer wachsenden Digitalagentur, die ich selbst aufgebaut, geführt\
+    \ und erfolgreich übergeben habe."
   "bullets":
-  - "15 Jahre operative Führung mit Prozessaufbau von null"
-  - "Skalierung auf 50 Mitarbeitende mit sauberen Übergabestrukturen"
-  - "MBA an der TH Deggendorf, Fokus auf operative Steuerbarkeit"
+  - "Eins+Null von 2 auf 50 MA skaliert, 13 Jahre operative Führung in Regensburg"
+  - "1000+ Projekte in der Energiewirtschaft, Prozesslogik aus dem echten Dienstleistungsalltag"
+  - "ICO Organisationsberater + Change Manager, zertifiziert 2025, methodisch fundiert"
+  - "Skalierungs-Erfahrung von 2 auf 50 MA, 13 Jahre in Regensburg gegründet und geführt"
 - "type": "faq"
   "heading": "Häufige Fragen zu Prozessoptimierung in Regensburg"
   "items":
   - "question": "Für welche Unternehmen in Regensburg ist das besonders sinnvoll?"
     "answer": "Für wachsende KMU, Dienstleister, Agenturen und projektgetriebene Teams, bei denen zu viele Rückfragen, Abstimmungen\
-      \ und Sonderfälle auf der Führungsebene hängen bleiben."
+      \ und Sonderfälle auf der Führungsebene hängen bleiben und das Wachstum mehr Last als Entlastung bringt."
   - "question": "Geht es dabei nur um Software und Automatisierung?"
-    "answer": "Nein. Erst kommt die Logik, dann das Tool. Wenn Rollen, Übergaben und Prioritäten nicht sauber sind, wird Digitalisierung\
-      \ nur teurer."
+    "answer": "Nein. Erst kommt die Logik, dann das Tool. Wenn Rollen, Übergaben und Entscheidungswege nicht sauber sind,\
+      \ wird Software nur digital teurer. Prozessoptimierung beginnt immer bei der Betriebslogik, nicht beim Tool-Auswahlprozess."
   - "question": "Was verbessert sich durch Prozessoptimierung konkret?"
-    "answer": "Typischerweise werden Entscheidungen schneller, Übergaben klarer, Nacharbeit geringer und Führung spürbar entlasteter."
+    "answer": "Entscheidungen werden schneller, Übergaben klarer, Nacharbeit geringer und Führung spürbar entlasteter. Neue\
+      \ Mitarbeitende werden produktiver, weil Abläufe dokumentiert und erklärt sind. Und Digitalisierung entlastet tatsächlich,\
+      \ weil sie auf saubere Betriebslogik trifft statt auf Unordnung."
+  - "question": "Was ist der Unterschied zu klassischer Prozessberatung?"
+    "answer": "Ich arbeite nicht mit Lean-Projekten oder BPMN-Modellierungs-Workshops. Im Zentrum steht immer die Frage: Welche\
+      \ zwei bis drei Stellen erzeugen gerade am meisten Reibung, und wie baut man das so um, dass es im Alltag trägt?"
   - "question": "Wie startet die Zusammenarbeit?"
     "answer": "Mit einem Erstgespräch und einer ehrlichen Einordnung, wo Abläufe, Rollen und Prioritäten gerade die meiste\
-      \ Reibung erzeugen."
+      \ Reibung erzeugen. Danach wird klar, ob ein fokussierter Umsetzungssprint, laufendes Sparring oder zunächst eine breitere\
+      \ Diagnose sinnvoll ist. Wenn ich merke, dass Prozessoptimierung gerade nicht das richtige Mittel ist, sage ich das\
+      \ auch."
+  - "question": "Passt das auch für kleinere Teams unter zehn Mitarbeitenden?"
+    "answer": "Ja. Gerade bei Teams unter zehn Mitarbeitenden entstehen oft später Problem-Gespräche, weil alles noch funktioniert.\
+      \ Aber wenn jetzt die Weichen falsch gestellt werden, kostet das später mehr. Früh sauber strukturiert ist besser als\
+      \ spät teuer umgebaut."
+  - "question": "Was ist ein realistisches Ergebnis nach vier bis acht Wochen?"
+    "answer": "Typischerweise gibt es in vier bis acht Wochen erste messbare Veränderungen: weniger Eskalationen pro Woche,\
+      \ klarere Übergaben, schnellere Entscheidungen auf mittlerer Führungsebene. Keine vollständige Transformation, aber\
+      \ spürbare operative Entlastung an den zwei bis drei Stellen, die vorher am meisten Energie gekostet haben."
 "endCTA":
-  "heading": "Wenn dein Unternehmen in Regensburg nicht noch mehr Energie verlieren soll"
-  "body": "Dann lass uns anschauen, an welchen Stellen Reibung entsteht und wie du daraus wieder einen Betrieb machst, der\
-    \ sauber läuft, ohne ständig an dir zu hängen."
+  "heading": "Wenn dein Betrieb in Regensburg durch fehlende Prozess-Struktur Energie verliert"
+  "body": "Dann lass uns schauen, wo der eigentliche Engpass sitzt und wie du daraus wieder einen Betrieb machst, der sauber\
+    \ läuft, ohne ständig an dir zu hängen. Das Erstgespräch ist genau dafür da: nicht für ein Methoden-Versprechen, sondern\
+    \ für eine ehrliche Einordnung, wo Prozesse, Übergaben und Entscheidungslogik gerade am meisten kosten. Wenn Prozessoptimierung\
+    \ nicht das Richtige ist, sage ich das klar. Wenn sie es ist, fangen wir mit dem konkreten Engpass an, der gerade am meisten\
+    \ Zeit, Nerven und Marge kostet. In dreizehn Jahren als Geschäftsführer habe ich jede dieser Entscheidungen selbst getroffen.\
+    \ Das macht den Unterschied zu Beratern, die das nur aus Buechern kennen."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"

@@ -3,9 +3,12 @@
   "description": "Unternehmensberatung in Regensburg mit Fokus auf Wachstum, Prozesse und Digitalisierung. Lokal, pragmatisch\
     \ und umsetzungsstark."
   "kicker": "Unternehmensberatung Regensburg"
-  "subtitle": "Regensburg ist kein Problemstandort. Gerade deshalb fallen operative Bremsen oft spät auf. Wenn Entscheidungen\
-    \ wieder bei dir landen, mehr Team nicht mehr Ruhe bringt und Digitalisierung nur zusätzlich Arbeit macht, brauchst du\
-    \ keine Standardberatung. Du brauchst Ordnung im Betrieb."
+  "subtitle": "Regensburg ist kein Problemstandort. Genau deshalb bleiben operative Bremsen hier oft zu lange unsichtbar.\
+    \ Die Region hat Mittelstand, Tech, gute Netzwerke und genug Bewegung, um von außen stabil zu wirken. Innen sieht es in\
+    \ vielen Unternehmen trotzdem anders aus. Entscheidungen landen wieder beim Geschäftsführer. Mehr Team bringt mehr Abstimmung,\
+    \ aber nicht mehr Ruhe. Digitalisierung läuft, entlastet den Betrieb aber nicht. Wenn du das kennst, brauchst du keine\
+    \ Beratung, die dir dein Unternehmen erklärt. Du brauchst eine, die den Engpass freilegt, der dich im Alltag Zeit, Tempo,\
+    \ Nerven und Führungsenergie kostet."
   "heroImage": "/images/geo/regensburg-hero.jpg"
   "heroAlt": "Unternehmer in Regensburg im Strategiegespräch"
   "og_image": "/images/og/geo-landingpage.jpg"
@@ -24,19 +27,23 @@
 - "type": "prose"
   "heading": "Woran du merkst, dass dein Unternehmen in Regensburg an dir hängt"
   "content":
-  - "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Klingt ordentlich.\
-    \ Gleichzeitig stagniert die Wirtschaftslage in der Region weiter. Genau in solchen Phasen kippt das Problem in vielen\
-    \ Betrieben nach innen: nicht fehlende Bewegung im Markt, sondern zu viele Entscheidungen auf zu wenigen Schultern."
+  - "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Das klingt erst einmal\
+    \ solide. Gleichzeitig stagniert die Wirtschaftslage in der Region laut IHK weiter. Genau diese Kombination ist in vielen\
+    \ Betrieben tückisch. Außen wirkt der Standort gesund, innen laufen Rollen, Entscheidungen und Abläufe oft längst auf\
+    \ Verschleiß. Das Problem ist dann nicht fehlende Nachfrage, sondern zu viele Entscheidungen auf zu wenigen Schultern."
   "bullets":
-  - "Zu viele Entscheidungen landen wieder bei dir — Rollen sind formal verteilt, aber in der Praxis wartet das Team trotzdem\
-    \ auf dich. Nicht aus Bequemlichkeit, sondern weil Verantwortung und Eskalationswege nicht sauber genug gebaut sind."
+  - "Zu viele Entscheidungen landen wieder bei dir — Formal sind Verantwortlichkeiten verteilt. In der Praxis wartet das Team\
+    \ trotzdem auf dich. Nicht aus Bequemlichkeit, sondern weil Verantwortung, Eskalationswege und Entscheidungskompetenzen\
+    \ nicht sauber genug gebaut sind. Die Folge ist kein spektakulärer Crash, sondern tägliche operative Reibung."
   - "Mehr Team bringt mehr Abstimmung, aber nicht mehr Entlastung — Wenn jeder neue Mitarbeiter neue Rückfragen produziert,\
-    \ wächst nicht dein Unternehmen. Es wächst nur die Komplexität, die bei dir zusammenläuft."
+    \ wächst nicht dein Unternehmen. Es wächst nur die Komplexität, die bei dir zusammenläuft. Genau hier kippt Wachstum von\
+    \ etwas Gutem in etwas Teures."
   - "Digitalisierung und KI laufen nebenher — In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer\
     \ Plus mit Bewerbungsschluss am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse\
-    \ mitgebaut werden."
+    \ mitgebaut werden. Ohne System dahinter wird Digitalisierung nur ein zusätzlicher Layer auf bestehende Unordnung."
   - "Du arbeitest viel, aber der Betrieb wird nicht robuster — Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik,\
-    \ die Entscheidungen schneller macht, Übergaben stabilisiert und das Tagesgeschäft von deiner Person entkoppelt."
+    \ die Entscheidungen schneller macht, Übergaben stabilisiert und das Tagesgeschäft von deiner Person entkoppelt. Solange\
+    \ diese Logik fehlt, bleibt das Unternehmen abhängig von deiner ständigen Verfügbarkeit."
 - "type": "figure"
   "image": "/images/geo/regensburg-schmuck.jpg"
   "alt": "Arbeitssituation in einem Regensburger Mittelstandsbetrieb"
@@ -44,14 +51,17 @@
 - "type": "prose"
   "heading": "Warum ich das in Regensburg anders angehe"
   "content":
-  - "Ich kenne die Region nicht aus der Außensicht. Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Ausbildung\
-    \ war in Regensburg. Meine Firma habe ich hier gegründet, aufgebaut und später übergeben, heute ist sie Teil der Kraftwerk.\
-    \ Dazu kommen der MBA an der TH Deggendorf und das Silicon-Valley-Programm mit Förderung aus Regensburg. Deshalb interessiert\
-    \ mich weniger, wie Beratung klingt, und mehr, was im Betrieb am Montag anders laufen muss."
+  - "Ich kenne die Region nicht aus der Außensicht. Ich bin seit 27 Jahren Teil dieser Stadt. Meine ersten Jobs hatte ich\
+    \ bei der Mittelbayerischen Zeitung. Meine Ausbildung war von 1999 bis 2002 bei Kreativ Concept in Regensburg. 2009 habe\
+    \ ich hier Eins+Null gegründet und 2022 an die Kraftwerk Holding verkauft. Dazu kommen der MBA an der TH Deggendorf und\
+    \ das Silicon-Valley-Programm mit Förderung aus Regensburg. Das ist keine Hochglanzvita. Es ist ein anderer Blick auf\
+    \ Beratung. Ich kenne Regensburg nicht als Ort, über den man auf Konferenzen spricht, sondern als Ort, an dem man Firmen\
+    \ gründet, Teams aufbaut, Kunden gewinnt, Systeme umbaut und Entscheidungen treffen muss, die am nächsten Morgen tragen.\
+    \ Deshalb interessiert mich weniger, wie Beratung klingt, und mehr, ob sie in deinem Betrieb spürbar etwas verändert."
   "bullets":
-  - "27 Jahre Ostbayern, vom Teenager-Job bis zur Gründung"
-  - "Eigene Firma in Regensburg aufgebaut und übergeben"
-  - "MBA an der TH Deggendorf, kein Einflieger-Berater"
+  - "27 Jahre Regensburg, nicht nur Marktkenntnis von außen und vom Hörensagen"
+  - "Eins+Null 2009 in Regensburg gegründet, 2022 an Kraftwerk verkauft"
+  - "Ausbildung bei Kreativ Concept, MBA an der TH Deggendorf, regional verankert"
 - "type": "faq"
   "heading": "Häufige Fragen zu Unternehmensberatung in Regensburg"
   "items":
@@ -64,16 +74,25 @@
   - "question": "Geht es eher um Strategie oder eher um Umsetzung?"
     "answer": "Beides, aber mit Vorrang für Umsetzung. Die entscheidende Frage ist nicht, wie die Folien aussehen, sondern\
       \ was nächste Woche im Betrieb konkret anders laufen soll."
+  - "question": "Ist das auch für Agenturen und projektgetriebene Teams sinnvoll?"
+    "answer": "Ja. Gerade dort entstehen operative Engpässe oft früh, weil Übergaben, Scope, Führung und Auslastung komplexer\
+      \ werden, als der alte Bauchgefühl-Modus tragen kann."
   - "question": "Wie startet die Zusammenarbeit?"
     "answer": "Mit einem Erstgespräch. Danach wird klar, ob du gerade einen fokussierten Umsetzungssprint, laufendes Sparring\
-      \ oder erstmal keine Beratung brauchst."
+      \ oder erstmal keine Beratung brauchst. Entscheidend ist nicht, möglichst schnell ein großes Beratungsprogramm zu verkaufen,\
+      \ sondern zuerst sauber zu verstehen, wo die operative Last tatsächlich entsteht."
   - "question": "Was unterscheidet das von klassischer Unternehmensberatung in Regensburg?"
     "answer": "Ich arbeite nicht mit Standardpaketen und Leistungslisten. Im Zentrum stehen Führung, Entscheidungen, Prozesse\
-      \ und eine Digitalisierung, die den Betrieb wirklich entlastet."
+      \ und eine Digitalisierung, die den Betrieb wirklich entlastet. Es geht nicht darum, dir dein Unternehmen theoretisch\
+      \ zu erklären, sondern die wenigen Hebel zu finden, die im Alltag spürbar Tempo, Ruhe und Steuerbarkeit zurückbringen."
 "endCTA":
   "heading": "Wenn dein Unternehmen in Regensburg weniger an dir hängen soll"
   "body": "Dann lass uns sortieren, wo dein eigentlicher Engpass sitzt und wie daraus ein führbarer Betrieb wird. Ohne Berater-Show.\
-    \ Ohne erfundene Cases. Mit einem klaren Blick auf das, was in deinem Alltag wirklich bremst."
+    \ Ohne erfundene Cases. Mit einem klaren Blick auf das, was in deinem Alltag wirklich bremst. Das Erstgespräch ist genau\
+    \ dafür da: nicht für eine Hochglanz-Präsentation, sondern für eine ehrliche Einordnung, ob gerade Führung, Prozesse,\
+    \ Entscheidungslogik oder Digitalisierung der eigentliche Flaschenhals sind. Wenn wir sprechen, geht es nicht um perfekte\
+    \ Theorie, sondern darum, was in deinem Betrieb in den nächsten Wochen real anders laufen muss, damit mehr Ruhe, Klarheit\
+    \ und Tempo zurückkommen."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"
