@@ -21,41 +21,35 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Woran du erkennst, dass deine Agentur ein Operations-Problem hat"
-  "body": "Viele Agenturen suchen nach Skalierung, aber stoßen nicht an Vertriebsgrenzen, sondern an operative Grenzen. Wenn\
-    \ jeder neue Auftrag mehr Koordinationsaufwand produziert als Ertrag, liegt das an fehlender Betriebsinfrastruktur."
-  "items":
-  - "pill": "Symptom 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Projekte laufen aus dem Ruder, obwohl du alles siehst."
-    "body": "Übergaben passieren informell, Scope schleicht sich aus, Nacharbeit frisst Marge. Nicht weil das Team schlechter\
-      \ wird, sondern weil Strukturen nicht skalieren."
-  - "pill": "Symptom 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "Du bist gleichzeitig CEO, Projektleiter und Feuerwehr."
-    "body": "Auch wenn du nicht mehr operativ sein willst, landet alles trotzdem bei dir. Das zeigt, dass Verantwortung und\
-      \ Entscheidungskompetenz nicht sauber verteilt sind."
-  - "pill": "Symptom 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Gute Leute bleiben nicht oder performen unter ihrem Potenzial."
-    "body": "Wenn Führung unstrukturiert ist, frustrieren sich die Besten heraus. Klarheit in Rollen, Übergaben und Prioritäten\
-      \ hält gute Mitarbeitende länger als Gehaltserhöhungen."
-  - "pill": "Symptom 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Mit jedem neuen Kunden steigt der Druck, nicht die Entlastung."
-    "body": "Das ist das klarste Signal: Wachstum sollte Kapazität freisetzen, nicht verschieben. Wenn es das nicht tut, fehlt\
-      \ operative Infrastruktur."
-- "type": "credibility"
+  "content":
+  - "Viele Agenturen suchen nach Skalierung, aber stoßen nicht an Vertriebsgrenzen, sondern an operative Grenzen. Wenn jeder\
+    \ neue Auftrag mehr Koordinationsaufwand produziert als Ertrag, liegt das an fehlender Betriebsinfrastruktur."
+  "bullets":
+  - "Projekte laufen aus dem Ruder, obwohl du alles siehst — Übergaben passieren informell, Scope schleicht sich aus, Nacharbeit\
+    \ frisst Marge. Nicht weil das Team schlechter wird, sondern weil Strukturen nicht skalieren."
+  - "Du bist gleichzeitig CEO, Projektleiter und Feuerwehr — Auch wenn du nicht mehr operativ sein willst, landet alles trotzdem\
+    \ bei dir. Das zeigt, dass Verantwortung und Entscheidungskompetenz nicht sauber verteilt sind."
+  - "Gute Leute bleiben nicht oder performen unter ihrem Potenzial — Wenn Führung unstrukturiert ist, frustrieren sich die\
+    \ Besten heraus. Klarheit in Rollen, Übergaben und Prioritäten hält gute Mitarbeitende länger als Gehaltserhöhungen."
+  - "Mit jedem neuen Kunden steigt der Druck, nicht die Entlastung — Das ist das klarste Signal: Wachstum sollte Kapazität\
+    \ freisetzen, nicht verschieben. Wenn es das nicht tut, fehlt operative Infrastruktur."
+- "type": "figure"
+  "image": "/images/geo/ops-agenturen-schmuck.jpg"
+  "alt": "Kreativagentur-Schreibtisch mit Layouts und Laptop"
+  "caption": "Agenturen wachsen oft schneller als ihre Operations nachziehen."
+- "type": "prose"
   "heading": "Für Agenturen, die skalieren wollen, ohne sich dabei zu zerstören"
-  "body": "Ich war selbst Agenturinhaber. Ich kenne den Moment, wo mehr Kunden mehr Chaos bedeuten statt mehr Ertrag. Die\
-    \ Lösung ist fast immer dieselbe: Führungslogik, Projektstruktur und Marge-Tracking sauber aufbauen, bevor der nächste\
-    \ Wachstumsschritt kommt. Ich habe eine Digitalagentur von 0 auf 50 Mitarbeitende aufgebaut, erfolgreich übergeben und\
-    \ dabei alle Phasen operativ selbst durchlebt."
-  "proofs":
-  - "text": "Eigene Agentur von 0 auf 50 Mitarbeitende skaliert"
-  - "text": "7-stelliger Exit nach sauberem Betriebsaufbau"
-  - "text": "Spezialisiert auf dienstleistungsintensive KMU und Agenturen"
+  "content":
+  - "Ich war selbst Agenturinhaber. Ich kenne den Moment, wo mehr Kunden mehr Chaos bedeuten statt mehr Ertrag. Die Lösung\
+    \ ist fast immer dieselbe: Führungslogik, Projektstruktur und Marge-Tracking sauber aufbauen, bevor der nächste Wachstumsschritt\
+    \ kommt. Ich habe eine Digitalagentur von 0 auf 50 Mitarbeitende aufgebaut, erfolgreich übergeben und dabei alle Phasen\
+    \ operativ selbst durchlebt."
+  "bullets":
+  - "Eigene Agentur von 0 auf 50 Mitarbeitende skaliert"
+  - "7-stelliger Exit nach sauberem Betriebsaufbau"
+  - "Spezialisiert auf dienstleistungsintensive KMU und Agenturen"
 - "type": "faq"
   "heading": "Häufige Fragen zur Operations-Beratung für Agenturen"
   "items":

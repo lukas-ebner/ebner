@@ -20,40 +20,35 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Niederbayern"
-  "body": "Niederbayerische KMU sind oft gut im Aufbauen, stoßen aber in der Skalierungsphase an operative Grenzen. Wenn Wachstum\
+  "content":
+  - "Niederbayerische KMU sind oft gut im Aufbauen, stoßen aber in der Skalierungsphase an operative Grenzen. Wenn Wachstum\
     \ plötzlich mehr Last als Entlastung bringt, lohnt sich ein nüchterner Blick auf Betriebslogik, Führungsroutinen und Entscheidungsstrukturen."
-  "items":
-  - "pill": "Engpass 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Alles läuft trotzdem über dich."
-    "body": "Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen, Eskalationen und Sonderfälle\
-      \ trotzdem beim Inhaber."
-  - "pill": "Engpass 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "Mehr Mitarbeiter bringt mehr Koordinationsarbeit."
-    "body": "Wenn Führungslogik, Übergaben und Prioritäten nicht sauber gebaut sind, skaliert man mit jedem neuen Kopf nur\
-      \ die Komplexität."
-  - "pill": "Engpass 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Gute Ideen versanden in der Umsetzung."
-    "body": "Die Richtung ist klar. Aber Verbindlichkeit, Takt und Nachhalten fehlen, und deshalb holt der Alltag die Strategie\
-      \ immer wieder ein."
-  - "pill": "Engpass 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Digitalisierung läuft nebenher statt im System."
-    "body": "Tools werden eingeführt, aber ohne saubere Betriebslogik dahinter entstehen nur neue Abstimmungsschleifen."
-- "type": "credibility"
+  "bullets":
+  - "Alles läuft trotzdem über dich — Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen, Eskalationen\
+    \ und Sonderfälle trotzdem beim Inhaber."
+  - "Mehr Mitarbeiter bringt mehr Koordinationsarbeit — Wenn Führungslogik, Übergaben und Prioritäten nicht sauber gebaut\
+    \ sind, skaliert man mit jedem neuen Kopf nur die Komplexität."
+  - "Gute Ideen versanden in der Umsetzung — Die Richtung ist klar. Aber Verbindlichkeit, Takt und Nachhalten fehlen, und\
+    \ deshalb holt der Alltag die Strategie immer wieder ein."
+  - "Digitalisierung läuft nebenher statt im System — Tools werden eingeführt, aber ohne saubere Betriebslogik dahinter entstehen\
+    \ nur neue Abstimmungsschleifen."
+- "type": "figure"
+  "image": "/images/geo/niederbayern-schmuck.jpg"
+  "alt": "Produktionsumgebung im niederbayerischen Mittelstand"
+  "caption": "Wachstum im niederbayerischen Mittelstand kippt leise. Wir hören hin, bevor es knirscht."
+- "type": "prose"
   "heading": "Kein Einflieger, sondern jemand der die Region kennt"
-  "body": "Ich habe meinen MBA bewusst an der TH Deggendorf gemacht, nicht in München, nicht in Nürnberg. Das Silicon-Valley-Programm\
+  "content":
+  - "Ich habe meinen MBA bewusst an der TH Deggendorf gemacht, nicht in München, nicht in Nürnberg. Das Silicon-Valley-Programm\
     \ wurde von der Stadt Regensburg gefördert. Ich berate nicht von außen, sondern aus einer Region, die ich über Jahrzehnte\
     \ selbst als Unternehmer kenne. Deshalb interessiert mich weniger, wie Beratung aussieht, und mehr, was im Betrieb am\
     \ Montag konkret anders laufen muss."
-  "proofs":
-  - "text": "27 Jahre in Ostbayern und Niederbayern verwurzelt"
-  - "text": "MBA an der TH Deggendorf, bewusste regionale Entscheidung"
-  - "text": "Eigene Firma aufgebaut und übergeben, kein Theoretiker"
+  "bullets":
+  - "27 Jahre in Ostbayern und Niederbayern verwurzelt"
+  - "MBA an der TH Deggendorf, bewusste regionale Entscheidung"
+  - "Eigene Firma aufgebaut und übergeben, kein Theoretiker"
 - "type": "faq"
   "heading": "Häufige Fragen zur Unternehmensberatung in Niederbayern"
   "items":

@@ -238,33 +238,20 @@ export function ThemenPageLayout({ page }: Props) {
                     {section.body ? (
                       <p className="mb-10 max-w-3xl text-lg leading-relaxed text-[#253043]">{section.body}</p>
                     ) : null}
-                    <div className="grid gap-6 md:grid-cols-2">
+                    <div className="grid gap-5 md:grid-cols-2">
                       {section.items.map((item, idx) => (
-                        <article
+                        <div
                           key={idx}
-                          className="overflow-hidden rounded-2xl border border-[#E0E6ED] bg-white"
+                          className="rounded-xl border-l-2 border-brand bg-[#FAFBFC] p-6"
                         >
-                          {item.image ? (
-                            <div className="relative aspect-[16/9] w-full bg-[#E8EEF4]">
-                              <Image
-                                src={item.image}
-                                alt={item.headline}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 448px"
-                              />
-                            </div>
+                          {item.pill ? (
+                            <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.14em] text-brand">
+                              {item.pill}
+                            </p>
                           ) : null}
-                          <div className="p-6">
-                            {item.pill ? (
-                              <p className="mb-3 inline-block rounded-full bg-brand/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-brand">
-                                {item.pill}
-                              </p>
-                            ) : null}
-                            <h3 className="font-display text-xl leading-tight text-[#111830]">{item.headline}</h3>
-                            <p className="mt-3 text-base leading-relaxed text-[#253043]">{item.body}</p>
-                          </div>
-                        </article>
+                          <h3 className="font-display text-xl leading-tight text-[#111830]">{item.headline}</h3>
+                          <p className="mt-2 text-base leading-relaxed text-[#253043]">{item.body}</p>
+                        </div>
                       ))}
                     </div>
                   </section>

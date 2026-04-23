@@ -19,39 +19,35 @@
     "href": "/erstgespraech"
     "variant": "primary"
 "sections":
-- "type": "symptoms"
+- "type": "prose"
   "heading": "Woran du merkst, dass du Digitalisierungsberatung brauchst, nicht noch ein Tool"
-  "body": "In Regensburg ist das Thema spürbar präsent. Förderprogramme, KI-Initiativen, Digitalbonus Bayern, KI-Transfer\
-    \ Plus mit Bewerbungsschluss Ende April 2026. Genau deshalb entsteht in vielen Betrieben der Druck, etwas zu machen. Die\
-    \ eigentliche Schwierigkeit liegt fast nie im Kaufen eines Tools, sondern in Priorisierung, Verantwortlichkeit und Umsetzung."
-  "items":
-  - "pill": "Symptom 1"
-    "image": "/images/geo/symptom-1.jpg"
-    "headline": "Ihr habt Tools, aber keinen sauberen Stack."
-    "body": "Neue Systeme kommen dazu, alte bleiben bestehen. Eine klare Betriebslogik dahinter fehlt oft."
-  - "pill": "Symptom 2"
-    "image": "/images/geo/symptom-2.jpg"
-    "headline": "KI wird getestet, aber nicht geführt."
-    "body": "Einzelne Pilotprojekte laufen, aber eine belastbare Linie für Nutzen, Risiken und Verantwortlichkeiten fehlt."
-  - "pill": "Symptom 3"
-    "image": "/images/geo/symptom-3.jpg"
-    "headline": "Digitalisierung frisst Aufmerksamkeit statt zu entlasten."
-    "body": "Statt Reibung zu reduzieren entsteht neuer Abstimmungsaufwand, weil parallel zu viel angefangen und zu wenig\
-      \ sauber abgeschlossen wird."
-  - "pill": "Symptom 4"
-    "image": "/images/geo/symptom-4.jpg"
-    "headline": "Use Cases klingen gut, kommen aber nicht im Betrieb an."
-    "body": "Dann fehlt meistens keine Idee, sondern eine Umsetzungsarchitektur mit klarer Priorisierung und einem realistischen\
-      \ Einstieg."
-- "type": "credibility"
+  "content":
+  - "In Regensburg ist das Thema spürbar präsent. Förderprogramme, KI-Initiativen, Digitalbonus Bayern, KI-Transfer Plus mit\
+    \ Bewerbungsschluss Ende April 2026. Genau deshalb entsteht in vielen Betrieben der Druck, etwas zu machen. Die eigentliche\
+    \ Schwierigkeit liegt fast nie im Kaufen eines Tools, sondern in Priorisierung, Verantwortlichkeit und Umsetzung."
+  "bullets":
+  - "Ihr habt Tools, aber keinen sauberen Stack — Neue Systeme kommen dazu, alte bleiben bestehen. Eine klare Betriebslogik\
+    \ dahinter fehlt oft."
+  - "KI wird getestet, aber nicht geführt — Einzelne Pilotprojekte laufen, aber eine belastbare Linie für Nutzen, Risiken\
+    \ und Verantwortlichkeiten fehlt."
+  - "Digitalisierung frisst Aufmerksamkeit statt zu entlasten — Statt Reibung zu reduzieren entsteht neuer Abstimmungsaufwand,\
+    \ weil parallel zu viel angefangen und zu wenig sauber abgeschlossen wird."
+  - "Use Cases klingen gut, kommen aber nicht im Betrieb an — Dann fehlt meistens keine Idee, sondern eine Umsetzungsarchitektur\
+    \ mit klarer Priorisierung und einem realistischen Einstieg."
+- "type": "figure"
+  "image": "/images/geo/digital-regensburg-schmuck.jpg"
+  "alt": "Zwei Monitore mit Dashboards in einem Mittelstandsbüro"
+  "caption": "Digitalisierung heißt nicht mehr Tools. Sie heißt: eine Infrastruktur, die mitdenkt."
+- "type": "prose"
   "heading": "Digitalisierung ohne Berater-Hype"
-  "body": "Ich verbinde Strategie, Prozesse und Alltag. Das heißt: erst verstehen, wo der Betrieb heute Reibung erzeugt. Dann\
-    \ entscheiden, welche Systeme, Automatisierungen oder KI-Use-Cases wirklich sinnvoll sind. Nicht andersrum. Ich habe in\
-    \ meinen eigenen Unternehmen seit Jahren Systeme gebaut, die im Tagesgeschäft tragen, nicht nur im Pitch."
-  "proofs":
-  - "text": "15 Jahre operative Geschäftsführung mit Systemaufbau"
-  - "text": "Eigene KI-Implementierung und Automatisierung seit 2022"
-  - "text": "Co-Founder Fracto, AI-Anwendungen in MedTech"
+  "content":
+  - "Ich verbinde Strategie, Prozesse und Alltag. Das heißt: erst verstehen, wo der Betrieb heute Reibung erzeugt. Dann entscheiden,\
+    \ welche Systeme, Automatisierungen oder KI-Use-Cases wirklich sinnvoll sind. Nicht andersrum. Ich habe in meinen eigenen\
+    \ Unternehmen seit Jahren Systeme gebaut, die im Tagesgeschäft tragen, nicht nur im Pitch."
+  "bullets":
+  - "15 Jahre operative Geschäftsführung mit Systemaufbau"
+  - "Eigene KI-Implementierung und Automatisierung seit 2022"
+  - "Co-Founder Fracto, AI-Anwendungen in MedTech"
 - "type": "faq"
   "heading": "Häufige Fragen zu Digitalisierungsberatung in Regensburg"
   "items":
