@@ -1,0 +1,80 @@
+meta:
+  title: "BAFA-Förderung Unternehmensberatung | Zuschuss sichern"
+  description: "So nutzt du die BAFA-Förderung für Unternehmensberatung. Voraussetzungen, Ablauf und nächste Schritte kompakt erklärt."
+  kicker: "BAFA-Förderung Unternehmensberatung"
+  subtitle: "Wirksame Beratung muss nicht am Budget scheitern. Die BAFA-Förderung macht qualifizierte Unternehmensberatung für KMU finanzierbar."
+  heroImage: "/images/bafa/bafa-hero.png"
+  heroAlt: "Lukas Ebner erklärt den Ablauf der BAFA-Förderung am Whiteboard"
+  og_image: "/images/og/bafa.jpg"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Themen"
+      href: "/themen"
+    - label: "BAFA"
+      href: "/themen/bafa"
+  ctas:
+    - label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+      variant: "primary"
+
+sections:
+  - type: "prose"
+    heading: "Wann BAFA für dich ein echter Hebel ist"
+    content:
+      - "Viele Geschäftsführer schieben notwendige Veränderungen auf, nicht aus Faulheit, sondern weil Zeit, Budget und Klarheit fehlen. Genau dort kann BAFA-geförderte Beratung helfen."
+    bullets:
+      - "Du bist KMU mit bis zu 250 Mitarbeitenden und bis zu 50 Mio € Jahresumsatz."
+      - "Es gibt einen konkreten Engpass in Strategie, Prozessen, Führung oder Digitalisierung."
+      - "Du willst Ergebnisse umsetzen, nicht nur Präsentationen konsumieren."
+
+  - type: "compare"
+    heading: "Was BAFA-geförderte Beratung konkret unterscheidet"
+    leftTitle: "Ohne Förderhebel"
+    rightTitle: "Mit BAFA-Förderung"
+    rows:
+      - label: "Einstieg"
+        left: "Höhere Investitionshürde, Entscheidungen werden vertagt."
+        right: "Niedrigere Einstiegshürde bei gleicher Beratungsqualität."
+      - label: "Budget"
+        left: "Volle Kosten selbst tragen, meistens in kleinen Schritten."
+        right: "Bis zu 80 % Zuschuss auf förderfähige Kosten möglich."
+      - label: "Tempo"
+        left: "Engpass bleibt oft länger bestehen."
+        right: "Beratung kann früher starten und schneller wirken."
+
+  - type: "crossref"
+    heading: "Ablauf in vier Schritten"
+    body: "Erstgespräch, Schwerpunkt definieren, Antrag stellen und Umsetzung starten, Ergebnisse dokumentieren. Ohne Fördermittel-Theater, mit klaren Zuständigkeiten."
+    link:
+      label: "Hintergrund im Blog lesen"
+      href: "/blog/bafa-foerderung-unternehmensberatung"
+
+  - type: "bafa-calculator"
+    heading: "Rechne den BAFA-Effekt auf deinen Fall"
+    body: "Vergleiche Zuschuss und Eigenanteil direkt auf Basis deiner Beratungskosten."
+    cta:
+      label: "BAFA-Check vereinbaren"
+      href: "/erstgespraech?topic=bafa"
+
+  - type: "faq"
+    heading: "Häufige Fragen zur BAFA-Förderung"
+    items:
+      - question: "Wie hoch ist die Förderung konkret?"
+        answer: "Je nach Region und Unternehmenssituation bis zu 80 % auf den förderfähigen Anteil der Beratungskosten. Alte Bundesländer und neue Bundesländer unterscheiden sich im Fördersatz."
+      - question: "Ist der Antrag kompliziert?"
+        answer: "Er ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind. Genau dabei unterstütze ich, strukturiert und ohne Bürokratie-Theater."
+      - question: "Was passiert, wenn BAFA nicht passt?"
+        answer: "Dann sage ich das klar. Ziel ist eine wirtschaftlich sinnvolle Entscheidung, nicht ein Antrag um jeden Preis."
+      - question: "Für welche Beratungsthemen ist BAFA förderfähig?"
+        answer: "Für allgemeine Unternehmensberatung zu Strategie, Führung, Prozessen und Digitalisierung. Steuerberatung und reine IT-Dienstleistungen sind ausgeschlossen."
+
+endCTA:
+  heading: "Wenn BAFA passt, spart ihr nicht nur Kosten, sondern Zeit bis zur Umsetzung"
+  body: "Im Erstgespräch klären wir in kurzer Zeit, ob Förderlogik, Beratungsziel und eure Situation sauber zusammenpassen."
+  primary:
+    label: "BAFA-Check starten"
+    href: "/erstgespraech?topic=bafa"
+  secondary:
+    label: "Zur Übersicht Themen"
+    href: "/themen"

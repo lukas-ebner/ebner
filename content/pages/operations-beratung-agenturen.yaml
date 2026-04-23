@@ -1,0 +1,82 @@
+meta:
+  title: "Operations Beratung Agenturen | Prozesse skalieren"
+  description: "Operations-Beratung für Agenturen: Auslastung verbessern, Delivery stabilisieren und profitables Wachstum ermöglichen."
+  og_image: "/images/og/geo-landingpage.jpg"
+  accent: "#F44900"
+
+variables:
+  GEO_CITY: ""
+  MAIN_KEYWORD: "Operations-Beratung Agenturen"
+  LSI_KEYWORDS:
+    - "Operations-Beratung Agenturen"
+    - "Agentur skalieren"
+    - "Prozessoptimierung Agentur"
+    - "Agentur Profitabilität verbessern"
+    - "Agentur Wachstumsfokus"
+
+slides:
+  - template: hero-split
+    pill: "Operations-Beratung Agenturen"
+    headline: "Operations-Beratung für Agenturen mit Wachstumsfokus"
+    subtext: "Wenn deine Agentur wächst, aber Marge, Nerven und Steuerbarkeit gleichzeitig schlechter werden, ist das kein Vertriebsproblem. Es ist ein Operations-Problem. Mehr Kunden helfen nicht, wenn Delivery, Führung und Übergaben nicht tragen."
+    cta:
+      text: "Erstgespräch buchen"
+      url: "/erstgespraech"
+    image:
+      src: "/images/geo/operations-beratung-agenturen-hero.jpg"
+      alt: "Agenturinhaber im Strategie-Workshop"
+
+  - template: symptoms-grid
+    imageStyle: panorama
+    headline: "Woran du erkennst, dass deine Agentur ein Operations-Problem hat"
+    body: "Viele Agenturen suchen nach Skalierung, aber stoßen nicht an Vertriebsgrenzen, sondern an operative Grenzen. Wenn jeder neue Auftrag mehr Koordinationsaufwand produziert als Ertrag, liegt das an fehlender Betriebsinfrastruktur."
+    symptoms:
+      - pill: "Symptom 1"
+        image: "/images/geo/symptom-1.jpg"
+        headline: "Projekte laufen aus dem Ruder, obwohl du alles siehst."
+        body: "Übergaben passieren informell, Scope schleicht sich aus, Nacharbeit frisst Marge. Nicht weil das Team schlechter wird, sondern weil Strukturen nicht skalieren."
+      - pill: "Symptom 2"
+        image: "/images/geo/symptom-2.jpg"
+        headline: "Du bist gleichzeitig CEO, Projektleiter und Feuerwehr."
+        body: "Auch wenn du nicht mehr operativ sein willst, landet alles trotzdem bei dir. Das zeigt, dass Verantwortung und Entscheidungskompetenz nicht sauber verteilt sind."
+      - pill: "Symptom 3"
+        image: "/images/geo/symptom-3.jpg"
+        headline: "Gute Leute bleiben nicht oder performen unter ihrem Potenzial."
+        body: "Wenn Führung unstrukturiert ist, frustrieren sich die Besten heraus. Klarheit in Rollen, Übergaben und Prioritäten hält gute Mitarbeitende länger als Gehaltserhöhungen."
+      - pill: "Symptom 4"
+        image: "/images/geo/symptom-4.jpg"
+        headline: "Mit jedem neuen Kunden steigt der Druck, nicht die Entlastung."
+        body: "Das ist das klarste Signal: Wachstum sollte Kapazität freisetzen, nicht verschieben. Wenn es das nicht tut, fehlt operative Infrastruktur."
+
+  - template: credibility
+    headline: "Für Agenturen, die skalieren wollen, ohne sich dabei zu zerstören"
+    body: "Ich war selbst Agenturinhaber. Ich kenne den Moment, wo mehr Kunden mehr Chaos bedeuten statt mehr Ertrag. Die Lösung ist fast immer dieselbe: Führungslogik, Projektstruktur und Marge-Tracking sauber aufbauen, bevor der nächste Wachstumsschritt kommt. Ich habe eine Digitalagentur von 0 auf 50 Mitarbeitende aufgebaut, erfolgreich übergeben und dabei alle Phasen operativ selbst durchlebt."
+    proofs:
+      - text: "Eigene Agentur von 0 auf 50 Mitarbeitende skaliert"
+      - text: "7-stelliger Exit nach sauberem Betriebsaufbau"
+      - text: "Spezialisiert auf dienstleistungsintensive KMU und Agenturen"
+    cta:
+      label: "Gespräch vereinbaren"
+      href: "/erstgespraech"
+
+  - template: faq
+    id: geo-faq
+    headline: "Häufige Fragen zur Operations-Beratung für Agenturen"
+    variant: light
+    bg: "#E6EEEF"
+    items:
+      - question: "Ab welcher Größe macht Operations-Beratung für Agenturen Sinn?"
+        answer: "Meistens ab fünf bis acht Mitarbeitenden oder sobald du merkst, dass Wachstum mehr Probleme erzeugt als löst. Auch kleinere Agenturen profitieren, wenn Projektstruktur und Führungslogik früh aufgebaut werden."
+      - question: "Was ist der typische Einstieg?"
+        answer: "Wir schauen uns drei bis fünf konkrete Engpässe an: Projektsteuerung, Übergaben, Führungslogik, Marge-Tracking, Kapazitätsplanung. Dann priorisieren wir, wo zuerst angesetzt wird."
+      - question: "Wie unterscheidet sich das von klassischer Unternehmensberatung?"
+        answer: "Ich arbeite nicht mit Theoriemodellen, sondern mit deinem echten Betriebsalltag. Das bedeutet konkrete Maßnahmen, klare Verantwortlichkeiten und Ergebnisse, die du in vier bis acht Wochen spürst."
+      - question: "Gilt das auch für remote oder hybride Agenturen?"
+        answer: "Ja, gerade dort. Remote-Agenturen kämpfen oft mehr mit unklaren Übergaben, Silo-Kommunikation und fehlender Führungsstruktur als klassische Vor-Ort-Teams."
+
+  - template: cta
+    headline: "Wenn deine Agentur mehr Struktur braucht, nicht mehr Kunden"
+    body: "Dann lass uns anschauen, wo deine Agentur gerade Marge, Zeit und Energie verliert, und welche drei Hebel das ändern. Dreißig Minuten reichen für eine ehrliche Einschätzung."
+    primary:
+      label: "Erstgespräch buchen"
+      href: "/erstgespraech"
