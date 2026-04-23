@@ -2,8 +2,11 @@
   "title": "Digitalisierungsberatung Regensburg | Prozesse modernisieren"
   "description": "Digitalisierungsberatung in Regensburg für bessere Abläufe, weniger Reibung und mehr Skalierbarkeit im Tagesgeschäft."
   "kicker": "Digitalisierungsberatung Regensburg"
-  "subtitle": "Du brauchst keine weitere Demo und kein neues Buzzword. Du brauchst eine klare Logik dafür, welche Prozesse\
-    \ digitalisiert werden sollten, welche nicht, und wie KI oder Automatisierung im Alltag wirklich etwas verändert."
+  "subtitle": "Zehn Jahre lang habe ich bei eins+null jede PM-Software ausprobiert. Asana, Monday, Notion, diverse ERP-Systeme.\
+    \ Irgendwann habe ich aufgehört zu suchen und selbst gebaut, was fehlte. Leadtime ist das Ergebnis. Ich erwähne das nicht,\
+    \ um Leadtime zu verkaufen. Ich erwähne es, weil es zeigt, wie ich über Digitalisierung denke: nicht als Feature-Frage,\
+    \ sondern als Betriebslogikfrage. Für Unternehmen in Regensburg bedeutet das: erst wird geklärt, welche Prozesse stabil\
+    \ und sauber genug für Digitalisierung sind und welche noch nicht. Dann kommen Tool-Empfehlungen. Nicht andersrum."
   "heroImage": "/images/geo/regensburg-digitalisierung-hero.jpg"
   "heroAlt": "Geschäftsführer in Regensburg im Gespräch über Digitalisierung"
   "og_image": "/images/og/geo-landingpage.jpg"
@@ -20,51 +23,75 @@
 - "type": "prose"
   "heading": "Woran du merkst, dass du Digitalisierungsberatung brauchst, nicht noch ein Tool"
   "content":
-  - "In Regensburg ist das Thema spürbar präsent. Förderprogramme, KI-Initiativen, Digitalbonus Bayern, KI-Transfer Plus mit\
-    \ Bewerbungsschluss Ende April 2026. Genau deshalb entsteht in vielen Betrieben der Druck, etwas zu machen. Die eigentliche\
-    \ Schwierigkeit liegt fast nie im Kaufen eines Tools, sondern in Priorisierung, Verantwortlichkeit und Umsetzung."
+  - "Bertram Brossardt, Hauptgeschäftsführer der vbw, verwies am 22. April 2026 auf nur noch 0,5 Prozent Wachstumsprognose\
+    \ für 2026. Effizienz gewinnt damit an Gewicht. Digitalisierung ist einer der wenigen Hebel, der ohne großen Kapitalaufwand\
+    \ spürbar etwas verändern kann, wenn der Anwendungsfall stimmt. Das Problem: In vielen Regensburger KMU entsteht mit jedem\
+    \ neuen Tool mehr Koordinationsaufwand statt mehr Entlastung. Nicht weil die Technologie schlecht ist, sondern weil die\
+    \ Betriebslogik darunter noch nicht klar war."
   "bullets":
-  - "Ihr habt Tools, aber keinen sauberen Stack — Neue Systeme kommen dazu, alte bleiben bestehen. Eine klare Betriebslogik\
-    \ dahinter fehlt oft."
+  - "Ihr habt Tools, aber keinen sauberen Stack — Neue Systeme kommen dazu, alte bleiben bestehen. Eine klare Betriebslogik,\
+    \ die alle verbindet, fehlt. Das Ergebnis ist Parallelarbeit und Informationsverlust."
   - "KI wird getestet, aber nicht geführt — Einzelne Pilotprojekte laufen, aber eine belastbare Linie für Nutzen, Risiken\
-    \ und Verantwortlichkeiten fehlt."
-  - "Digitalisierung frisst Aufmerksamkeit statt zu entlasten — Statt Reibung zu reduzieren entsteht neuer Abstimmungsaufwand,\
+    \ und Verantwortlichkeiten fehlt. Niemand weiß, was KI im Betrieb darf und was nicht."
+  - "Digitalisierung frisst mehr Aufmerksamkeit als sie gibt — Statt Reibung zu reduzieren entsteht neuer Abstimmungsaufwand,\
     \ weil parallel zu viel angefangen und zu wenig sauber abgeschlossen wird."
-  - "Use Cases klingen gut, kommen aber nicht im Betrieb an — Dann fehlt meistens keine Idee, sondern eine Umsetzungsarchitektur\
-    \ mit klarer Priorisierung und einem realistischen Einstieg."
+  - "Use Cases klingen gut, kommen aber nicht im Betrieb an — Dann fehlt meistens keine Idee, sondern eine Umsetzungsarchitektur:\
+    \ klare Priorisierung, Verantwortlichkeiten und ein realistischer erster Schritt."
 - "type": "figure"
   "image": "/images/geo/digital-regensburg-schmuck.jpg"
   "alt": "Zwei Monitore mit Dashboards in einem Mittelstandsbüro"
   "caption": "Digitalisierung heißt nicht mehr Tools. Sie heißt: eine Infrastruktur, die mitdenkt."
 - "type": "prose"
-  "heading": "Digitalisierung ohne Berater-Hype"
+  "heading": "Digitalisierungsberatung aus dem Betriebsalltag, nicht aus dem Beratungsbuch"
   "content":
-  - "Ich verbinde Strategie, Prozesse und Alltag. Das heißt: erst verstehen, wo der Betrieb heute Reibung erzeugt. Dann entscheiden,\
-    \ welche Systeme, Automatisierungen oder KI-Use-Cases wirklich sinnvoll sind. Nicht andersrum. Ich habe in meinen eigenen\
-    \ Unternehmen seit Jahren Systeme gebaut, die im Tagesgeschäft tragen, nicht nur im Pitch."
+  - "Ich habe Digitalisierung nicht theoretisch gelernt. Bei eins+null habe ich dreizehn Jahre Unternehmen in der Energiewirtschaft\
+    \ durch alle Digitalisierungsgrade begleitet, von Papierablage bis ERP-Integration. Aus einer Controlling-Seminararbeit\
+    \ am MBA der TH Deggendorf entstand 2013 die erste Idee für ein besseres Steuerungssystem. Was damals CONNEX hieß, wurde\
+    \ Grundlage für Leadtime, das SaaS das ich seit 2023 baue. Leadtime löst PM, Zeiterfassung, CRM und Abrechnung aus einem\
+    \ echten Betriebsproblem heraus, nicht aus einer Demo. Seit 2016 bin ich IT-Sicherheitsbeauftragter (ISO 27001, TÜV NORD\
+    \ zertifiziert). Digitalisierung ohne Sicherheitslogik ist für mich unvollständig."
   "bullets":
-  - "15 Jahre operative Geschäftsführung mit Systemaufbau"
-  - "Eigene KI-Implementierung und Automatisierung seit 2022"
-  - "Co-Founder Fracto, AI-Anwendungen in MedTech"
+  - "eins+null 13 Jahre, 1000+ Projekte, alle Digitalisierungsgrade erlebt"
+  - "Leadtime 2023 selbst gebaut: PM, Zeiterfassung, CRM, Abrechnung"
+  - "CONNEX-Idee 2013 aus MBA-Seminararbeit Controlling TH Deggendorf"
+  - "IT-Sicherheitsbeauftragter ISO 27001 TÜV NORD 2016"
 - "type": "faq"
   "heading": "Häufige Fragen zu Digitalisierungsberatung in Regensburg"
   "items":
   - "question": "Für wen ist Digitalisierungsberatung in Regensburg sinnvoll?"
     "answer": "Für KMU, Dienstleister und wachsende Teams, die bereits Tools nutzen oder KI testen, aber noch keine klare\
       \ Linie für Prozesse, Verantwortlichkeiten und Prioritäten haben."
-  - "question": "Geht es eher um Strategie oder eher um Umsetzung?"
-    "answer": "Beides, aber in der richtigen Reihenfolge. Erst wird der echte Engpass geklärt, dann entsteht eine sinnvolle\
+  - "question": "Geht es bei dir eher um Strategie oder eher um Umsetzung?"
+    "answer": "Beides, aber in der richtigen Reihenfolge. Erst wird der echte Engpass geklärt. Dann entsteht eine sinnvolle\
       \ Reihenfolge für Systeme, Automatisierung und KI-Use-Cases."
   - "question": "Was ist der häufigste Fehler bei Digitalisierung?"
-    "answer": "Zu früh in Tools oder KI springen, ohne vorher Betriebslogik, Entscheidungswege und Prozessverantwortung sauber\
-      \ zu klären. Dann digitalisiert man nur Unordnung."
-  - "question": "Gibt es in Regensburg spezifische Förderprogramme für Digitalisierung?"
-    "answer": "Ja. Digitalbonus Bayern, KI-Transfer Plus und BAFA-geförderte Beratungsleistungen sind für Regensburger KMU\
-      \ zugänglich. Ob das für dich passt, klärt das Erstgespräch."
+    "answer": "Zu früh in Tools oder KI einsteigen, ohne vorher Betriebslogik, Entscheidungswege und Prozessverantwortung\
+      \ sauber zu klären. Dann digitalisiert man nur Unordnung."
+  - "question": "Wie kann der Digitalbonus Bayern helfen?"
+    "answer": "Standard bis 7.500 Euro, Plus bis 30.000 Euro, je 50 Prozent Zuschuss. Die April-Runde ist erschöpft, neue\
+      \ Anträge ab 4. Mai 2026. Ob dein Vorhaben förderfähig ist, klärt das Erstgespräch vor dem Antrag."
+  - "question": "Was unterscheidet deine Beratung von klassischer IT-Beratung?"
+    "answer": "Ich komme aus dem Betrieb, nicht aus der IT-Dienstleistung. Leadtime habe ich selbst gebaut, weil keine PM-Software\
+      \ passte. Ich kenne Tool-Chaos von innen und berate daher mit anderer Substanz als jemand, der Tools von außen empfiehlt."
+  - "question": "Wie startet die Zusammenarbeit?"
+    "answer": "Mit einem Erstgespräch. Kein Pitch, keine Demo. Nur eine ehrliche Einordnung, welche Digitalisierungsmaßnahmen\
+      \ für deinen Betrieb gerade wirklich sinnvoll sind und welcher Hebel zuerst Wirkung bringt."
+  - "question": "Welche Rolle spielt IT-Sicherheit bei Digitalisierungsberatung?"
+    "answer": "Eine wichtige. Als ISO-27001-zertifizierter IT-Sicherheitsbeauftragter (TÜV NORD 2016) denke ich bei Tool-Empfehlungen\
+      \ und Cloud-Integrationen automatisch mit, was bei Ausfällen oder Datenverlust passiert. Sicherheit gehört zum Fundament,\
+      \ nicht zum optionalen Zusatz. Das gilt für jede Digitalisierungsempfehlung."
+  - "question": "Gibt es gute Förderangebote für Digitalisierung in Regensburg?"
+    "answer": "Ja. Digitalbonus Standard bis zu 7.500 Euro, Plus bis zu 30.000 Euro, je 50 Prozent Zuschuss. Die April-Runde\
+      \ ist erschöpft, neue Anträge ab 4. Mai 2026 möglich. KI-Transfer Plus OTH Regensburg läuft ebenfalls. Wichtig: Förderung\
+      \ löst keine Frage, die noch nicht gestellt wurde. Erst den sinnvollen Schritt klären, dann den Antrag stellen."
 "endCTA":
   "heading": "Wenn Digitalisierung in Regensburg endlich Wirkung statt Zusatzlast bringen soll"
   "body": "Dann lass uns klären, was in deinem Unternehmen wirklich sinnvoll ist, was nur nach Fortschritt aussieht und wie\
-    \ daraus ein umsetzbarer Plan wird."
+    \ daraus ein umsetzbarer Plan wird. Das Erstgespräch ist nicht für eine Software-Präsentation da, sondern für die ehrliche\
+    \ Einordnung: Welcher Digitalisierungsschritt lohnt sich für deinen Betrieb gerade am meisten? Wenn klar ist, was zuerst\
+    \ kommt, folgen Förderoptionen, Tool-Empfehlungen und konkrete Umsetzungsschritte. Ich habe nicht gelernt, wie Digitalisierung\
+    \ in Büchern funktioniert. Ich habe gelernt, warum sie im Betrieb scheitert und wie man es dann richtig macht. Genau das\
+    \ ist der Unterschied."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"

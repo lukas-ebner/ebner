@@ -1,13 +1,14 @@
 "meta":
-  "title": "Operations Beratung Agenturen | Prozesse skalieren"
-  "description": "Operations-Beratung für Agenturen: Auslastung verbessern, Delivery stabilisieren und profitables Wachstum\
-    \ ermöglichen."
-  "kicker": "Operations-Beratung Agenturen"
-  "subtitle": "Wenn deine Agentur wächst, aber Marge, Nerven und Steuerbarkeit gleichzeitig schlechter werden, ist das kein\
-    \ Vertriebsproblem. Es ist ein Operations-Problem. Mehr Kunden helfen nicht, wenn Delivery, Führung und Übergaben nicht\
-    \ tragen."
-  "heroImage": "/images/geo/operations-beratung-agenturen-hero.jpg"
-  "heroAlt": "Agenturinhaber im Strategie-Workshop"
+  "title": "Operations Beratung für Agenturen | Effizienz & Marge"
+  "description": "Operations Beratung für Agenturen: bessere Abläufe, höhere Marge, weniger Chaos im Tagesgeschäft."
+  "kicker": "Operations Beratung Agenturen"
+  "subtitle": "Viele Agenturinhaber glauben, sie hätten ein Vertriebsproblem. In Wahrheit haben sie oft ein Operations-Problem.\
+    \ Mehr Projekte lösen das nicht, sondern verstärken es. Wenn Sales, Delivery, Projektmanagement und Zeiterfassung nicht\
+    \ sauber zusammenspielen, verschwindet Wachstum im Alltag. Ich habe eins+null von 2005 bis 2022 selbst geführt, von 2\
+    \ auf 50 Mitarbeitende skaliert, 2021 mit 40 Prozent EBITDA gearbeitet und die Agentur 2022 an die Kraftwerk Holding verkauft.\
+    \ Genau deshalb ist diese Beratung keine Agenturtheorie, sondern Operations aus echter Führungsverantwortung."
+  "heroImage": "/images/geo/operations-agenturen-hero.jpg"
+  "heroAlt": "Agenturgeschäftsführer im Operations-Meeting"
   "og_image": "/images/og/geo-landingpage.jpg"
   "breadcrumbs":
   - "label": "Start"
@@ -20,53 +21,76 @@
     "variant": "primary"
 "sections":
 - "type": "prose"
-  "heading": "Woran du erkennst, dass deine Agentur ein Operations-Problem hat"
+  "heading": "Wann Agentur-Operations zum eigentlichen Engpass werden"
   "content":
-  - "Viele Agenturen suchen nach Skalierung, aber stoßen nicht an Vertriebsgrenzen, sondern an operative Grenzen. Wenn jeder\
-    \ neue Auftrag mehr Koordinationsaufwand produziert als Ertrag, liegt das an fehlender Betriebsinfrastruktur."
+  - "Bertram Brossardt, Hauptgeschäftsführer der vbw, verwies am 22. April 2026 auf nur noch 0,5 Prozent Wachstumsprognose\
+    \ für 2026. In stagnierenden Märkten wird operative Marge wichtiger als schönes Wachstum. Für Agenturen heißt das konkret:\
+    \ Mehr Geschäft hilft nur dann, wenn Delivery, Projektsteuerung und Auslastung sauber funktionieren. Wenn das nicht der\
+    \ Fall ist, macht mehr Vertrieb das Problem oft nur größer. Der Markt bestraft operative Unschärfe dann schneller als\
+    \ früher, weil Margenpolster kleiner werden und Nacharbeit direkter auf die Wirtschaftlichkeit drückt."
   "bullets":
-  - "Projekte laufen aus dem Ruder, obwohl du alles siehst — Übergaben passieren informell, Scope schleicht sich aus, Nacharbeit\
-    \ frisst Marge. Nicht weil das Team schlechter wird, sondern weil Strukturen nicht skalieren."
-  - "Du bist gleichzeitig CEO, Projektleiter und Feuerwehr — Auch wenn du nicht mehr operativ sein willst, landet alles trotzdem\
-    \ bei dir. Das zeigt, dass Verantwortung und Entscheidungskompetenz nicht sauber verteilt sind."
-  - "Gute Leute bleiben nicht oder performen unter ihrem Potenzial — Wenn Führung unstrukturiert ist, frustrieren sich die\
-    \ Besten heraus. Klarheit in Rollen, Übergaben und Prioritäten hält gute Mitarbeitende länger als Gehaltserhöhungen."
-  - "Mit jedem neuen Kunden steigt der Druck, nicht die Entlastung — Das ist das klarste Signal: Wachstum sollte Kapazität\
-    \ freisetzen, nicht verschieben. Wenn es das nicht tut, fehlt operative Infrastruktur."
+  - "Die Marge verschwindet im Alltag — Projekte sehen auf dem Papier gut aus, aber Nacharbeit, Schleifen und operative Sonderfälle\
+    \ fressen den Ertrag."
+  - "Das Team wächst, aber die Ruhe nicht — Mehr Köpfe bringen mehr Koordinationsaufwand statt mehr Entlastung, weil Rollen\
+    \ und Übergaben nicht sauber gebaut sind."
+  - "Sales und Delivery ziehen nicht in dieselbe Richtung — Was verkauft wird, passt nicht immer zu dem, was in der Umsetzung\
+    \ wirtschaftlich und operativ sauber lieferbar ist."
+  - "Der Inhaber bleibt der operative Flaschenhals — Formal ist Verantwortung verteilt. Praktisch gehen Priorisierung, Eskalation\
+    \ und Sonderfälle trotzdem wieder nach oben."
 - "type": "figure"
   "image": "/images/geo/ops-agenturen-schmuck.jpg"
   "alt": "Kreativagentur-Schreibtisch mit Layouts und Laptop"
   "caption": "Agenturen wachsen oft schneller als ihre Operations nachziehen."
 - "type": "prose"
-  "heading": "Für Agenturen, die skalieren wollen, ohne sich dabei zu zerstören"
+  "heading": "Agentur-Operations aus 13 Jahren eigener Geschäftsführung"
   "content":
-  - "Ich war selbst Agenturinhaber. Ich kenne den Moment, wo mehr Kunden mehr Chaos bedeuten statt mehr Ertrag. Die Lösung\
-    \ ist fast immer dieselbe: Führungslogik, Projektstruktur und Marge-Tracking sauber aufbauen, bevor der nächste Wachstumsschritt\
-    \ kommt. Ich habe eine Digitalagentur von 0 auf 50 Mitarbeitende aufgebaut, erfolgreich übergeben und dabei alle Phasen\
-    \ operativ selbst durchlebt."
+  - "Ich habe eins+null von 2005 bis 2022 geführt, von zwei auf fünfzig Mitarbeitende skaliert und 2021 mit 40 Prozent EBITDA\
+    \ gearbeitet. 2022 folgte der Exit an die Kraftwerk Holding. Diese Zahlen sind hier nicht Schmuck, sondern der Grund,\
+    \ warum ich über Agentur-Operations anders sprechen kann als klassische Berater. Ich kenne die Spannung zwischen Vertrieb\
+    \ und Delivery, den Unterschied zwischen Auslastung und Profitabilität und die Frage, wann Reporting wirklich zu einem\
+    \ Führungsinstrument wird. Leadtime, das Produkt das ich seit 2023 baue, kommt direkt aus diesem Problemraum: CRM, Projektmanagement,\
+    \ Zeiterfassung und operative Übersicht aus dem Agenturalltag heraus."
   "bullets":
-  - "Eigene Agentur von 0 auf 50 Mitarbeitende skaliert"
-  - "7-stelliger Exit nach sauberem Betriebsaufbau"
-  - "Spezialisiert auf dienstleistungsintensive KMU und Agenturen"
+  - "eins+null 13 Jahre geführt, von 2 auf 50 Mitarbeitende skaliert"
+  - "40 Prozent EBITDA in 2021 als Profitabilitätsbeweis"
+  - "Exit 2022 an die Kraftwerk Holding"
+  - "Leadtime seit 2023 als Software aus demselben Operations-Problemraum"
 - "type": "faq"
   "heading": "Häufige Fragen zur Operations-Beratung für Agenturen"
   "items":
-  - "question": "Ab welcher Größe macht Operations-Beratung für Agenturen Sinn?"
-    "answer": "Meistens ab fünf bis acht Mitarbeitenden oder sobald du merkst, dass Wachstum mehr Probleme erzeugt als löst.\
-      \ Auch kleinere Agenturen profitieren, wenn Projektstruktur und Führungslogik früh aufgebaut werden."
-  - "question": "Was ist der typische Einstieg?"
-    "answer": "Wir schauen uns drei bis fünf konkrete Engpässe an: Projektsteuerung, Übergaben, Führungslogik, Marge-Tracking,\
-      \ Kapazitätsplanung. Dann priorisieren wir, wo zuerst angesetzt wird."
-  - "question": "Wie unterscheidet sich das von klassischer Unternehmensberatung?"
-    "answer": "Ich arbeite nicht mit Theoriemodellen, sondern mit deinem echten Betriebsalltag. Das bedeutet konkrete Maßnahmen,\
-      \ klare Verantwortlichkeiten und Ergebnisse, die du in vier bis acht Wochen spürst."
-  - "question": "Gilt das auch für remote oder hybride Agenturen?"
-    "answer": "Ja, gerade dort. Remote-Agenturen kämpfen oft mehr mit unklaren Übergaben, Silo-Kommunikation und fehlender\
-      \ Führungsstruktur als klassische Vor-Ort-Teams."
+  - "question": "Für welche Agenturen ist das sinnvoll?"
+    "answer": "Für Agenturen mit 5 bis 50+ Mitarbeitenden, die merken, dass Delivery, Projektlogik, Führung oder Reporting\
+      \ nicht mehr sauber mit dem Wachstum mithalten."
+  - "question": "Brauchen wir eher mehr Vertrieb oder bessere Operations?"
+    "answer": "Das lässt sich im Erstgespräch oft schnell einordnen. Wenn Marge, Delivery und Steuerung bereits wackeln, verstärkt\
+      \ mehr Vertrieb das Problem oft nur."
+  - "question": "Geht es hier um Prozessberatung oder um Agenturführung?"
+    "answer": "Beides, aber aus dem Agenturalltag heraus. Nicht abstrakte Prozesse, sondern die Frage, wie Sales, Delivery,\
+      \ Zeiterfassung und Führung wirtschaftlich zusammenspielen."
+  - "question": "Was verbessert sich konkret?"
+    "answer": "Mehr Steuerbarkeit, klarere Verantwortungen, frühere Eskalation, bessere Margentransparenz, belastbarere Forecasts\
+      \ und weniger operative Last auf der Geschäftsführung. Kurz: weniger Chaos bei gleicher oder höherer Leistung."
+  - "question": "Ist das nicht einfach Leadtime-Vertrieb?"
+    "answer": "Nein. Leadtime ist aus demselben Problemraum entstanden, aber die Beratung verkauft kein Tool. Erst geht es\
+      \ um die Operations-Logik. Ob später Software hilft, ist eine eigene Frage."
+  - "question": "Wie startet die Zusammenarbeit?"
+    "answer": "Mit einem Erstgespräch. Kein Pitch, keine Tool-Demo. Nur eine ehrliche Einordnung, ob das eigentliche Problem\
+      \ gerade bei Operations liegt und welcher Hebel zuerst Wirkung bringt."
+  - "question": "Ist das auch für kleinere Agenturen mit unter zehn Leuten sinnvoll?"
+    "answer": "Ja. Gerade kleinere Agenturen profitieren früh von klareren Zuständigkeiten, saubereren Übergaben und belastbareren\
+      \ Kennzahlen. Wer zu spät strukturiert, bezahlt später teurer für dieselben Probleme."
+  - "question": "Woran sehe ich, dass Operations wirklich mein Hauptengpass sind?"
+    "answer": "Wenn Projekte wirtschaftlich schlechter laufen als erwartet, Eskalationen spät sichtbar werden, Sales und Delivery\
+      \ regelmäßig aneinander vorbeiarbeiten und die Geschäftsführung operative Last nicht loswird, liegt der Engpass meist\
+      \ nicht zuerst im Vertrieb, sondern in der Operations-Logik."
 "endCTA":
-  "heading": "Wenn deine Agentur mehr Struktur braucht, nicht mehr Kunden"
-  "body": "Dann lass uns anschauen, wo deine Agentur gerade Marge, Zeit und Energie verliert, und welche drei Hebel das ändern.\
-    \ Dreißig Minuten reichen für eine ehrliche Einschätzung."
+  "heading": "Wenn deine Agentur wachsen soll, ohne dass das Chaos mitwächst"
+  "body": "Dann lass uns anschauen, wo Marge, Steuerung und Delivery gerade Reibung erzeugen. Direkt, ohne Agentur-Buzzwords\
+    \ und mit Blick auf das, was in deinem Alltag wirtschaftlich wirklich zählt. Das Erstgespräch ist nicht für eine Präsentation\
+    \ da, sondern für die ehrliche Sortierung: Liegt euer Engpass bei Vertrieb, Positionierung oder tatsächlich bei Operations?\
+    \ Wenn danach klar ist, was zuerst gelöst werden muss, hat sich das Gespräch gelohnt. Und wenn klar wird, dass ihr zuerst\
+    \ etwas anderes stabilisieren müsst, ist das genauso wertvoll. Ziel ist nicht, Beratung zu verkaufen. Ziel ist, operative\
+    \ Klarheit zu schaffen."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"
