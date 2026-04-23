@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { signToken } from '@/lib/leadmagnet-token'
+import { signToken, SITE_URL } from '@/lib/leadmagnet-token'
 
 /**
  * POST /api/unverzichtbar/signup
@@ -37,9 +37,7 @@ export async function POST(req: NextRequest) {
       company: company || undefined,
     })
 
-    const host = req.headers.get('host') || 'lukasebner.de'
-    const proto = host.startsWith('localhost') ? 'http' : 'https'
-    const confirmUrl = `${proto}://${host}/api/unverzichtbar/confirm?token=${encodeURIComponent(token)}`
+    const confirmUrl = `${SITE_URL}/api/unverzichtbar/confirm?token=${encodeURIComponent(token)}`
 
     const firstName = name?.trim().split(/\s+/)[0] || ''
     const greeting = firstName ? `Hi ${firstName},` : 'Hi,'

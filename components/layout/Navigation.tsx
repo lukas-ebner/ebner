@@ -78,6 +78,7 @@ const navItemsBeforeThemen = [
 ]
 
 const navItemsAfterThemen = [
+  { href: '/unverzichtbar', label: 'Roman' },
   { href: '/preise', label: 'Preise' },
   { href: '/blog', label: 'Blog' },
 ]

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { verifyToken, signToken } from '@/lib/leadmagnet-token'
+import { verifyToken, signToken, SITE_URL } from '@/lib/leadmagnet-token'
 import { createLead } from '@/lib/leadtime'
 
 /**
@@ -14,12 +14,12 @@ export async function GET(req: NextRequest) {
   const token = url.searchParams.get('token')
 
   if (!token) {
-    return NextResponse.redirect(new URL('/unverzichtbar?error=missing_token', req.url))
+    return NextResponse.redirect(`${SITE_URL}/unverzichtbar?error=missing_token`)
   }
 
   const payload = verifyToken(token, 'confirm')
   if (!payload) {
-    return NextResponse.redirect(new URL('/unverzichtbar?error=invalid_token', req.url))
+    return NextResponse.redirect(`${SITE_URL}/unverzichtbar?error=invalid_token`)
   }
 
   const { email, name, company } = payload
@@ -35,14 +35,10 @@ export async function GET(req: NextRequest) {
   )
 
   // 2. Build signed download tokens (7d validity each)
-  const host = req.headers.get('host') || 'lukasebner.de'
-  const proto = host.startsWith('localhost') ? 'http' : 'https'
-  const origin = `${proto}://${host}`
-
   const files = ['unverzichtbar.epub', 'unverzichtbar.pdf', 'unverzichtbar.m4b']
   const downloadLinks = files.reduce<Record<string, string>>((acc, file) => {
     const dlToken = signToken(email, 'unverzichtbar', 'download', 60 * 60 * 24 * 7, { file })
-    acc[file] = `${origin}/api/unverzichtbar/download/${file}?token=${encodeURIComponent(dlToken)}`
+    acc[file] = `${SITE_URL}/api/unverzichtbar/download/${file}?token=${encodeURIComponent(dlToken)}`
     return acc
   }, {})
 
@@ -130,6 +126,6 @@ export async function GET(req: NextRequest) {
     console.warn('[unverzichtbar/confirm] RESEND_API_KEY not set, skipping download mail')
   }
 
-  // 4. Redirect to thank-you page
-  return NextResponse.redirect(new URL('/unverzichtbar/danke', req.url))
+  // 4. Redirect to thank-you page (absolute URL to avoid Docker container hostname)
+  return NextResponse.redirect(`${SITE_URL}/unverzichtbar/danke`)
 }
