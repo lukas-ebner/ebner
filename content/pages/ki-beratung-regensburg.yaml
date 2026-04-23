@@ -1,6 +1,6 @@
 meta:
-  title: "KI-Beratung Regensburg | Lukas Ebner"
-  description: "KI-Beratung für KMU in Regensburg. Keine KI-Hype-Shows, sondern echte Anwendungsfälle die deinen Betrieb entlasten."
+  title: "KI-Beratung Regensburg | Use Cases mit ROI"
+  description: "KI-Beratung in Regensburg: sinnvolle Use Cases, schnelle Pilotprojekte und klare ROI-Orientierung für mittelständische Teams."
   og_image: "/images/og/geo-landingpage.jpg"
   accent: "#F44900"
 
@@ -9,16 +9,16 @@ variables:
   MAIN_KEYWORD: "KI-Beratung"
   LSI_KEYWORDS:
     - "KI-Beratung Regensburg"
-    - "Künstliche Intelligenz Beratung Regensburg"
+    - "künstliche Intelligenz Beratung Regensburg"
     - "KI im Mittelstand Regensburg"
+    - "KI-Agentur Regensburg"
     - "Automatisierung Regensburg"
-    - "Digitalisierung Regensburg KI"
 
 slides:
   - template: hero-split
     pill: "KI-Beratung Regensburg"
-    headline: "KI-Beratung in Regensburg ohne Hype-Folien."
-    subtext: "KI ist kein Allheilmittel und kein Selbstläufer. Für Regensburger KMU zählt: Welche drei Prozesse kannst du mit KI wirklich entlasten? Genau das schauen wir uns an. Nicht mehr, nicht weniger."
+    headline: "KI-Beratung Regensburg für KMU und Agenturen"
+    subtext: "KI ist kein Projekt, das sich von selbst trägt. Für Regensburger KMU zählt eine konkrete Frage: Welche drei Prozesse kannst du mit KI wirklich entlasten? Die Antwort darauf braucht keine große Roadmap, sondern einen ehrlichen Blick auf den Betriebsalltag."
     cta:
       text: "Erstgespräch buchen"
       url: "/erstgespraech"
@@ -28,43 +28,36 @@ slides:
 
   - template: symptoms-grid
     imageStyle: panorama
-    headline: "Wann KI-Beratung in Regensburg gerade relevant wird"
-    body: "Viele Regensburger Betriebe spüren den Druck: KI-Beratung Regensburg, Automatisierung, Digitalisierung Mittelstand — überall tauchen die Themen auf. Das Problem: Zu viele Anbieter verkaufen Technologie statt Betriebsentlastung. Der Einstieg muss anders sein."
+    headline: "Wann KI-Beratung in Regensburg gerade sinnvoll wird"
+    body: "Die IHK Regensburg hat KI-Transfer Plus gerade neu ausgeschrieben, Bewerbungsschluss war Ende April 2026. Das zeigt: Das Thema ist in der Region real präsent. Wer einen klaren ROI-orientierten Einstieg sucht statt eines 9-Monats-Programms, braucht eine andere Gesprächsgrundlage."
     symptoms:
       - pill: "Symptom 1"
         image: "/images/geo/symptom-1.jpg"
         headline: "Dein Team verliert Zeit in Routinearbeit."
-        body: "Wiederkehrende Aufgaben, Recherchen, Zusammenfassungen, Vorlagen — vieles davon ließe sich mit KI deutlich beschleunigen. Noch passiert es manuell."
+        body: "Recherchen, Zusammenfassungen, Standardkommunikation, Vorlagenpflege. Vieles davon ließe sich mit KI beschleunigen. Noch passiert es manuell."
       - pill: "Symptom 2"
         image: "/images/geo/symptom-2.jpg"
-        headline: "Du siehst KI-Potenzial, weißt aber nicht wo anfangen."
-        body: "Die Tool-Landschaft ist unübersichtlich. Ohne klaren Einstieg bleibt es bei Experimenten, die nichts ändern."
+        headline: "KI-Experimente laufen, aber nichts wird skaliert."
+        body: "ChatGPT wird einzeln genutzt, aber eine Linie für sinnvolle Anwendungsfälle, Verantwortlichkeiten und Qualitätssicherung fehlt."
       - pill: "Symptom 3"
         image: "/images/geo/symptom-3.jpg"
-        headline: "KI-Projekte im Betrieb haben bisher nicht gezündet."
-        body: "Weil Technologie ohne Betriebslogik nichts verbessert. KI muss in echte Abläufe eingebaut werden, nicht daneben stehen."
+        headline: "Du weißt, dass KI hilft, aber nicht wo anfangen."
+        body: "Die Tool-Landschaft ist unübersichtlich. Ohne klaren Einstieg bleiben es Versuche, die nicht in den Betrieb integriert werden."
       - pill: "Symptom 4"
         image: "/images/geo/symptom-4.jpg"
-        headline: "Wettbewerber automatisieren, du hast noch keinen Plan."
-        body: "Der Druck steigt. Wer jetzt keinen pragmatischen KI-Fahrplan hat, verliert Schritt für Schritt operativen Vorsprung."
+        headline: "KI-Projekte haben bisher nicht gezündet."
+        body: "Weil Technologie ohne klare Betriebslogik dahinter selten etwas verändert. KI muss in echte Abläufe eingebaut werden, nicht danebenstehen."
 
   - template: credibility
-    headline: "KI-Beratung die im Betrieb ankommt, nicht im Boardroom."
-    body: "Ich schaue mit dir auf die drei bis fünf Stellen wo KI in deinem Betrieb wirklich etwas entlasten kann. Kein Pitch für neue Software. Keine abstrakten Roadmaps. Sondern konkrete Anwendungsfälle, die du morgen starten kannst."
+    headline: "KI-Beratung die im Betrieb ankommt"
+    body: "Ich schaue mit dir auf die konkreten Stellen, wo KI in deinem Betrieb wirklich etwas entlasten kann. Kein Hype-Pitch, keine Technologie-Begeisterung als Selbstzweck. Ich habe KI in meinen eigenen Unternehmen seit 2022 eingesetzt und kenne die Differenz zwischen dem, was in Demos gut klingt, und dem, was im Alltag trägt."
     proofs:
-      - text: "15 Jahre Geschäftsführer-Praxis"
-      - text: "KI-Einsatz im eigenen Unternehmen seit 2022"
-      - text: "Fokus auf echte Betriebsentlastung, nicht KI-Theater"
+      - text: "Eigene KI-Implementierung seit 2022 in laufenden Betrieben"
+      - text: "Fokus auf Use Cases mit echtem ROI, nicht auf Technologie-Faszination"
+      - text: "Co-Founder Fracto, AI-Anwendung in MedTech"
     cta:
       label: "Gespräch vereinbaren"
       href: "/erstgespraech"
-
-  - template: bafa-calculator
-    headline: "KI-Förderung in Bayern: Was für Regensburger Betriebe möglich ist."
-    body: "Der Digitalbonus Bayern und weitere Förderprogramme unterstützen KI-Einführungen im Mittelstand. Ob und was für deinen Betrieb passt, klären wir im Erstgespräch. Die eigentliche Frage bleibt: Welche KI-Anwendungsfälle erzeugen bei dir echten Hebel?"
-    cta:
-      label: "KI-Potenzial einschätzen"
-      href: "/erstgespraech?topic=ki"
 
   - template: faq
     id: geo-faq
@@ -73,20 +66,17 @@ slides:
     bg: "#E6EEEF"
     items:
       - question: "Für welche Betriebe in Regensburg ist KI-Beratung sinnvoll?"
-        answer: "Vor allem für KMU, Dienstleister und Agenturen, bei denen Routinearbeit, Recherchen, Kommunikation oder Dokumentation viel Zeit fressen. Produktionsbetriebe mit Qualitätsprüfung oder Logistik profitieren oft ähnlich."
-      - question: "Welche KI-Tools empfiehlst du konkret?"
-        answer: "Das hängt vom Anwendungsfall ab. Ich empfehle erst dann Tools, wenn klar ist, welchen Prozess wir entlasten wollen. Tool-First funktioniert fast nie."
+        answer: "Vor allem für KMU, Dienstleister und Agenturen, bei denen Routinearbeit, Recherchen, Dokumentation oder Kommunikation viel Zeit fressen und eine sinnvolle Automatisierung möglich wäre."
+      - question: "Welche Tools empfiehlst du konkret?"
+        answer: "Das hängt vom Anwendungsfall ab. Erst wird geklärt, welchen Prozess wir entlasten wollen, dann kommen die passenden Tools. Tool-First funktioniert fast nie."
       - question: "Was kostet KI-Einführung in einem kleinen Betrieb?"
-        answer: "Einstiegsanwendungen kosten oft wenig: Ein paar hundert Euro Toolkosten und 10-20 Stunden Implementierungszeit. Der ROI zeigt sich schnell, wenn der Anwendungsfall stimmt."
-      - question: "Warum ist das in Regensburg gerade relevant?"
-        answer: "Weil der regionale Wettbewerb auch unter Regensburger KMU spürbar zunimmt. Wer Routinearbeit schneller und günstiger erledigt, hat mehr Ressourcen für Kundenpflege, Vertrieb und echte Führungsarbeit."
+        answer: "Einstiegsanwendungen kosten oft wenig. Einige hundert Euro Tool-Kosten, zehn bis zwanzig Stunden Implementierungsarbeit. Der ROI zeigt sich schnell, wenn der Anwendungsfall stimmt."
+      - question: "Warum ist das Thema in Regensburg gerade besonders relevant?"
+        answer: "Weil Programme wie KI-Transfer Plus zeigen, dass die Region den Mittelstand bei KI-Einführungen gezielt unterstützen will. Wer einen fokussierteren Einstieg sucht, findet ihn außerhalb solcher Förderprogramme."
 
   - template: cta
-    headline: "Wenn du in Regensburg wirklich verstehen willst, was KI für deinen Betrieb bringt"
-    body: "Dann lass uns 30 Minuten reden. Kein Pitch, keine Demo. Nur ein ehrlicher Blick auf deine Prozesse und drei konkrete KI-Ansätze, die bei deinem Betrieb wirklich Sinn machen."
+    headline: "Wenn du in Regensburg wissen willst, was KI für deinen Betrieb wirklich bringt"
+    body: "Dann lass uns dreißig Minuten reden. Kein Pitch, keine Demo. Nur ein ehrlicher Blick auf deine Abläufe und konkrete Use Cases, die in deinem Betrieb realistisch sind."
     primary:
       label: "Erstgespräch buchen"
       href: "/erstgespraech"
-    secondary:
-      label: "Leistungen ansehen"
-      href: "/leistungen"
