@@ -3,8 +3,13 @@
   "description": "Unternehmensberatung in Ostbayern für Wachstum, Prozesse und Digitalisierung. Regional verankert, datengetrieben,\
     \ umsetzbar."
   "kicker": "Unternehmensberatung Ostbayern"
-  "subtitle": "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: regionaler Mittelstand, Automobilzulieferer,\
-    \ Handwerk, wachsende Tech-Unternehmen. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel zu lange an einer Person."
+  "subtitle": "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: Oberpfalz-Industrie, regionaler Mittelstand,\
+    \ Handwerk, wachsende Techunternehmen in Regensburg und Amberg. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel\
+    \ zu lange an einer Person. Entscheidungen, die eigentlich das Team treffen sollte, landen wieder oben. Neue Mitarbeitende\
+    \ bringen mehr Abstimmung als Entlastung. Digitalisierung läuft nebenher, ohne spürbaren Entlastungseffekt. Ich habe meine\
+    \ ersten Berufsjahre bei der Mittelbayerischen gemacht und meine Firma in Regensburg aufgebaut, skaliert und 2022 an die\
+    \ Kraftwerk Holding verkauft. 27 Jahre in Ostbayern sind kein Vertrauensversprechen, sondern eine Arbeitserfahrung. Genau\
+    \ deshalb ist diese Beratung keine Folienstrategie von außen, sondern ein operativer Blick aus dem Inneren der Region."
   "heroImage": "/images/geo/ostbayern-hero.jpg"
   "heroAlt": "Unternehmer aus Ostbayern im Strategiegespräch"
   "og_image": "/images/og/geo-landingpage.jpg"
@@ -23,51 +28,79 @@
 - "type": "prose"
   "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Ostbayern"
   "content":
-  - "Ob in Cham, Amberg, Weiden oder Schwandorf: Die Engpässe in wachsenden KMU sind regionübergreifend ähnlich. Entscheidungen,\
-    \ die nicht delegiert werden können. Mehr Team, aber nicht mehr Ruhe. Und eine Digitalisierung, die noch nicht wirklich\
-    \ ins System integriert ist."
+  - "Am 22. April 2026 halbierte die Bundesregierung ihre Wachstumsprognose auf nur noch 0,5 Prozent. Bertram Brossardt, Hauptgeschäftsführer\
+    \ der vbw, forderte daraufhin tiefgreifende Reformen ohne weiteren Aufschub. Creditreform meldete im Frühjahr 2026 einen\
+    \ Geschäftsklimaindex von 5,3 Punkten, höchster Stand seit vier Jahren, aber fragil. Patrik-Ludwig Hantzsch, Leiter der\
+    \ Creditreform Wirtschaftsforschung, ordnete ein: Wer nur auf staatliche Impulse setzt, steht unsicher. Für Unternehmen\
+    \ in Ostbayern bedeutet das, dass externe Märkte nicht die Betriebslogik reparieren. Die innere Robustheit muss selbst\
+    \ aufgebaut werden."
   "bullets":
-  - "Der Betrieb läuft zu stark über eine Person — Je größer das Unternehmen wird, desto teurer wird das. Nicht dramatisch,\
-    \ aber dauerhaft."
-  - "Wachstum bringt mehr Koordinationsaufwand — Wenn Führungslogik und Prozesse nicht mitwachsen, erzeugt jeder neue Mitarbeiter\
-    \ oder Auftrag neue Abstimmungsschleifen."
-  - "Entscheidungen dauern länger als sie sollten — Meistens liegt das nicht am Team, sondern daran, dass Eskalationswege,\
-    \ Verantwortlichkeiten und Prioritäten nicht klar geregelt sind."
-  - "Digitalisierung läuft ohne sichtbaren Effekt — Neue Tools werden eingeführt, aber solange Prozesse und Verantwortung\
-    \ unscharf bleiben, entsteht kein echter Betriebsvorteil."
+  - "Der Betrieb läuft zu stark über eine Person — Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen\
+    \ und Eskalationen trotzdem wieder beim Inhaber. Nicht weil das Team nicht will, sondern weil Rollen, Grenzen und Prioritäten\
+    \ nicht sauber genug gebaut sind."
+  - "Wachstum bringt mehr Koordinationsaufwand — Wenn Führungslogik und Prozesse nicht mitwachsen, skaliert nicht die Entlastung,\
+    \ sondern die Komplexität. Mehr Mitarbeitende erzeugen mehr Abstimmungsschleifen statt mehr Ruhe."
+  - "Gute Ideen versanden in der Umsetzung — Die Richtung ist oft bekannt, die Entscheidung gefallen. Trotzdem steht man drei\
+    \ Monate später noch am gleichen Punkt. Nicht aus mangelndem Willen, sondern weil Verbindlichkeit und Rhythmus im Alltag\
+    \ fehlen."
+  - "Digitalisierung läuft nebenher ohne echten Effekt — Neue Tools werden eingeführt, aber niemand kann sauber sagen, welche\
+    \ Reibung dadurch wirklich verschwunden ist. Ohne saubere Betriebslogik entsteht nur eine neue Abstimmungsschicht."
 - "type": "figure"
   "image": "/images/geo/ostbayern-schmuck.jpg"
-  "alt": "Werkstatt in Ostbayern, traditioneller Handwerksbetrieb"
+  "alt": "Unternehmer mit oranger Tasse in Produktionshalle Ostbayern"
   "caption": "Ostbayerischer Mittelstand steht solide. Engpass liegt meist in der Steuerbarkeit, nicht im Markt."
 - "type": "prose"
-  "heading": "27 Jahre in der Region, nicht aus dem Lehrbuch"
+  "heading": "27 Jahre Ostbayern, nicht als Slogan, sondern als Arbeitserfahrung"
   "content":
-  - "Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Firma habe ich in Regensburg gegründet, aufgebaut und übergeben,\
-    \ heute ist sie Teil der Kraftwerk. Ich kenne ostbayerische Unternehmen aus 27 Jahren Alltag, nicht aus der Außenperspektive.\
-    \ Deshalb geht es mir weniger um Beratung die gut klingt, und mehr um das, was am Montag im Betrieb konkret anders laufen\
-    \ muss."
+  - "Ich bin kein Berater, der Ostbayern auf seiner Zielgebietsliste hat. Ich habe hier meine Berufsjahre verbracht, mein\
+    \ Unternehmen aufgebaut, über dreizehn Jahre geführt und meine operative Erfahrung in echten Betriebssituationen gesammelt.\
+    \ Das Silicon Valley Program der TH Deggendorf und das BITZ Oberschneiding in Niederbayern haben meinen Blick für Skalierung\
+    \ und internationale Perspektiven geschärft, ohne die regionale Bodenhaftung zu verlieren. Genau deshalb interessiert\
+    \ mich weniger, wie Beratung aussieht, und mehr, was in deinem Betrieb nächste Woche konkret anders laufen muss. Mein\
+    \ Ziel ist nicht, deinen Alltag mit Konzepten zu komplizieren, sondern ihn mit Klarheit zu entlasten und deinen Betrieb\
+    \ weniger von Einzelpersonen abhängig zu machen."
   "bullets":
-  - "27 Jahre in Ostbayern verwurzelt"
-  - "Eigene Gründung in Regensburg, heute Teil der Kraftwerk"
-  - "MBA an der TH Deggendorf, operativer Fokus"
+  - "27 Jahre in Ostbayern: Mittelbayerische, eigene Gründung, Exit 2022"
+  - "eins+null von 2 auf 50 MA skaliert, 1000+ Projekte, 13 Jahre operative Führung"
+  - "MBA an der TH Deggendorf mit 1,3, parallel zur Geschäftsführung"
+  - "ICO Organisationsberater + Change Manager, zertifiziert 2025, methodisch fundiert"
+  - "Silicon Valley Program TH Deggendorf + BITZ Oberschneiding als regionaler Skalierungsanker"
 - "type": "faq"
   "heading": "Häufige Fragen zu Unternehmensberatung in Ostbayern"
   "items":
   - "question": "Für welche Unternehmen in Ostbayern ist das sinnvoll?"
-    "answer": "Für inhabergeführte KMU, Dienstleister, Handwerksbetriebe und wachsende Teams, bei denen operative Last, Führungsfragen\
-      \ oder Entscheidungsstau das Wachstum ausbremsen."
-  - "question": "Gilt das auch für kleinere Standorte wie Cham oder Weiden?"
-    "answer": "Ja. Der Standort spielt für die Art der Engpässe weniger eine Rolle als Betriebsgröße, Branche und Wachstumsphase.\
-      \ Ich arbeite remote und vor Ort in der Region."
-  - "question": "Geht es um Strategie oder um Umsetzung?"
-    "answer": "Beides, aber mit Vorrang für Umsetzung. Strategie ohne anschlussfähige Betriebslogik bleibt Folienpapier."
-  - "question": "Wie ist der erste Schritt?"
-    "answer": "Ein kurzes Erstgespräch, in dem wir ehrlich einordnen, ob und wo der eigentliche Engpass sitzt, und was sinnvollerweise\
-      \ als erstes angegangen wird."
+    "answer": "Für inhabergeführte KMU, produzierende Betriebe, regionale Dienstleister und wachsende Teams in der Oberpfalz,\
+      \ im Raum Regensburg und in angrenzenden Gebieten, bei denen Führung, Priorisierung oder Umsetzung nicht mehr stabil\
+      \ mit dem Wachstum mithalten."
+  - "question": "Gilt das auch für Standorte wie Cham, Amberg oder Weiden?"
+    "answer": "Ja. Der Standort in Ostbayern spielt für die Art der Engpässe weniger eine Rolle als Betriebsgröße, Branche\
+      \ und Wachstumsphase. Ich arbeite remote und bei Bedarf auch vor Ort in der Region."
+  - "question": "Geht es um Strategie oder Umsetzung?"
+    "answer": "Beides, aber mit Vorrang für Umsetzung. Viele Betriebe brauchen keine neue Strategie, sondern einen klareren\
+      \ Weg, um das, was sie sich vorgenommen haben, wirklich umzusetzen."
+  - "question": "Warum ist der Mittelbayerischen-Bezug auf dieser Seite relevant?"
+    "answer": "Weil er zeigt, dass mein Zugang zu Ostbayern nicht aus einer Marketingentscheidung stammt, sondern aus echten\
+      \ Berufsjahren in der Region. Das Medienhaus ist eng mit dem ostbayerischen Wirtschaftsleben verbunden. Dieser Einstieg\
+      \ hat mein Verständnis für die Region geprägt."
+  - "question": "Wie startet die Zusammenarbeit?"
+    "answer": "Mit einem Erstgespräch. Kein Verkaufsgespräch, sondern eine ehrliche Einordnung, wo der eigentliche Engpass\
+      \ sitzt und ob Beratung gerade der richtige nächste Schritt ist."
+  - "question": "Was unterscheidet das von bundesweiten Beratungshäusern?"
+    "answer": "Kein Franchise-Modell, keine Standardpakete, keine eingeflogenen Berater ohne regionalen Kontext. Im Mittelpunkt\
+      \ stehen die wenigen Hebel, die in deinem Betrieb wirklich Tempo, Klarheit und Entlastung zurückbringen."
+  - "question": "Passt das auch für Familienunternehmen oder Handwerksbetriebe in Ostbayern?"
+    "answer": "Ja. Gerade in Familienbetrieben und Handwerksunternehmen entstehen Führungs- und Prozessfragen oft erst dann\
+      \ sichtbar, wenn sie schon teuer geworden sind. Früh klarere Strukturen aufzubauen ist fast immer günstiger als später\
+      \ aufwändige Reorganisationen zu starten."
 "endCTA":
-  "heading": "Wenn du in Ostbayern ein Unternehmen führen willst, das nicht permanent an dir hängt"
-  "body": "Dann lass uns anschauen, wo der eigentliche Engpass sitzt und wie daraus ein Betrieb wird, der führbarer, robuster\
-    \ und weniger von Einzelpersonen abhängig ist."
+  "heading": "Wenn du in Ostbayern ein Unternehmen führst, das stabiler, klarer und weniger an dir hängen soll"
+  "body": "Dann lass uns anschauen, wo der eigentliche Engpass sitzt. Direkt, ohne Berater-Show und mit Fokus auf das, was\
+    \ in deinem Alltag wirklich zählt. Das Erstgespräch ist nicht für eine große Präsentation da, sondern für die ehrliche\
+    \ Sortierung: Welcher Hebel bringt gerade am meisten und wo fängst du sinnvoll an? Vielleicht ist es Führung. Vielleicht\
+    \ Prozesse. Vielleicht Umsetzung. Vielleicht etwas ganz anderes. Entscheidend ist, dass du weißt, mit was du anfängst\
+    \ und nicht weiter alles gleichzeitig jonglierst. In dreizehn Jahren als Geschäftsführer eines wachsenden Unternehmens\
+    \ in Regensburg habe ich diese Sortierung oft selbst gebraucht. Ich weiß, wie sich das anfühlt, wenn man mitten im Tagesgeschäft\
+    \ und mitten in der Wachstumsarbeit gleichzeitig steckt."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"
