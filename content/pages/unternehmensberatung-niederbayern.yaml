@@ -3,8 +3,13 @@
   "description": "Unternehmensberatung für Unternehmen in Niederbayern. Klarer Fokus auf Umsetzung, Effizienz und nachhaltiges\
     \ Wachstum."
   "kicker": "Unternehmensberatung Niederbayern"
-  "subtitle": "Niederbayern hat starken Mittelstand, viel handwerkliche Substanz und viele Unternehmen, die pragmatisch denken.\
-    \ Genau da passen Konzeptfolien schlecht. Was hilft, ist Klarheit in Führung, Entscheidungen und Prozessen."
+  "subtitle": "Niederbayern hat starken Mittelstand, viel handwerkliche und industrielle Substanz und viele Unternehmer, die\
+    \ pragmatisch denken. Genau deshalb passen Konzeptfolien hier schlecht. Was hilft, ist Klarheit in Führung, Entscheidungen\
+    \ und Prozessen. Viele Unternehmen in Niederbayern wissen ziemlich genau, dass etwas im Betrieb nicht sauber läuft. Entscheidungen\
+    \ hängen zu lange an einer Person. Neue Mitarbeitende bringen mehr Abstimmung als Entlastung. Gute Ideen werden beschlossen\
+    \ und versanden im Alltag. Digitalisierung klingt sinnvoll, erzeugt am Ende aber noch mehr Koordination. Wenn du das kennst,\
+    \ brauchst du keine Beratung, die dir dein Unternehmen theoretisch erklärt. Du brauchst einen klaren Blick auf den Engpass,\
+    \ der dich im Tagesgeschäft Zeit, Tempo und Führungsenergie kostet."
   "heroImage": "/images/geo/unternehmensberatung-niederbayern-hero.jpg"
   "heroAlt": "Unternehmer in Niederbayern im Beratungsgespräch"
   "og_image": "/images/og/geo-landingpage.jpg"
@@ -23,51 +28,75 @@
 - "type": "prose"
   "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Niederbayern"
   "content":
-  - "Niederbayerische KMU sind oft gut im Aufbauen, stoßen aber in der Skalierungsphase an operative Grenzen. Wenn Wachstum\
-    \ plötzlich mehr Last als Entlastung bringt, lohnt sich ein nüchterner Blick auf Betriebslogik, Führungsroutinen und Entscheidungsstrukturen."
+  - "Der wirtschaftliche Kontext macht diese Fragen nicht kleiner. Am 22. April 2026 verwies Bertram Brossardt, Hauptgeschäftsführer\
+    \ der vbw, auf nur noch 0,5 Prozent Wachstumsprognose für dieses Jahr. Creditreform meldete im Frühjahr 2026 zugleich\
+    \ einen Geschäftsklimaindex von 5,3 Punkten, den höchsten Stand seit vier Jahren. Die Botschaft dahinter ist wichtig:\
+    \ Die Stimmung kann sich leicht verbessern, aber innere Reibung verschwindet nicht von selbst. Gerade in Niederbayern,\
+    \ wo viele Betriebe pragmatisch führen und lange aus eigener Kraft funktionieren, bleiben operative Bremsen oft zu lange\
+    \ unsichtbar."
   "bullets":
-  - "Alles läuft trotzdem über dich — Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen, Eskalationen\
-    \ und Sonderfälle trotzdem beim Inhaber."
-  - "Mehr Mitarbeiter bringt mehr Koordinationsarbeit — Wenn Führungslogik, Übergaben und Prioritäten nicht sauber gebaut\
-    \ sind, skaliert man mit jedem neuen Kopf nur die Komplexität."
-  - "Gute Ideen versanden in der Umsetzung — Die Richtung ist klar. Aber Verbindlichkeit, Takt und Nachhalten fehlen, und\
-    \ deshalb holt der Alltag die Strategie immer wieder ein."
-  - "Digitalisierung läuft nebenher statt im System — Tools werden eingeführt, aber ohne saubere Betriebslogik dahinter entstehen\
-    \ nur neue Abstimmungsschleifen."
+  - "Alles läuft am Ende doch über dich — Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen,\
+    \ Eskalationen und Sonderfälle trotzdem wieder beim Inhaber oder Geschäftsführer. Nicht weil das Team nicht will, sondern\
+    \ weil Rollen, Grenzen und Prioritäten nicht sauber genug gebaut sind."
+  - "Mehr Mitarbeitende bringen mehr Koordinationsarbeit statt mehr Ruhe — Wenn Führungslogik, Übergaben und Eskalationswege\
+    \ unscharf sind, skaliert nicht die Entlastung, sondern die Komplexität. Der Betrieb wächst. Die Steuerbarkeit wächst\
+    \ nicht mit."
+  - "Gute Ideen versanden in der Umsetzung — Die Richtung ist oft klar. Trotzdem holt der Alltag jede Entscheidung wieder\
+    \ ein. Nicht aus mangelndem Willen, sondern weil Rhythmus, Verbindlichkeit und operative Übersetzung fehlen."
+  - "Digitalisierung läuft nebenher statt im System — Neue Tools werden eingeführt, aber niemand kann sauber sagen, welche\
+    \ Reibung dadurch wirklich verschwindet. Ohne klare Betriebslogik entsteht nur eine zusätzliche digitale Abstimmungsschicht."
 - "type": "figure"
   "image": "/images/geo/niederbayern-schmuck.jpg"
   "alt": "Produktionsumgebung im niederbayerischen Mittelstand"
   "caption": "Wachstum im niederbayerischen Mittelstand kippt leise. Wir hören hin, bevor es knirscht."
 - "type": "prose"
-  "heading": "Kein Einflieger, sondern jemand der die Region kennt"
+  "heading": "Regionale Nähe plus Unternehmerpraxis statt Beratershow"
   "content":
-  - "Ich habe meinen MBA bewusst an der TH Deggendorf gemacht, nicht in München, nicht in Nürnberg. Das Silicon-Valley-Programm\
-    \ wurde von der Stadt Regensburg gefördert. Ich berate nicht von außen, sondern aus einer Region, die ich über Jahrzehnte\
-    \ selbst als Unternehmer kenne. Deshalb interessiert mich weniger, wie Beratung aussieht, und mehr, was im Betrieb am\
-    \ Montag konkret anders laufen muss."
+  - "Ich bin nicht der Einflieger, der Niederbayern für eine Zielgruppenseite entdeckt hat. Ich kenne die Region über Ostbayern,\
+    \ über die TH Deggendorf, über den Aufbau eigener Unternehmen und über die Praxis, die man nur bekommt, wenn Entscheidungen\
+    \ im echten Betrieb am nächsten Morgen tragen müssen. Genau deshalb interessiert mich weniger, wie Beratung aussieht,\
+    \ und mehr, was bei dir im Unternehmen nächste Woche konkret anders laufen muss. Wenn Beratung hilfreich sein soll, dann\
+    \ muss sie Rückfragen reduzieren, Verantwortung klären, Umsetzung stabilisieren und deinen Betrieb führbarer machen. Nicht\
+    \ theoretisch. Sondern spürbar."
   "bullets":
-  - "27 Jahre in Ostbayern und Niederbayern verwurzelt"
-  - "MBA an der TH Deggendorf, bewusste regionale Entscheidung"
-  - "Eigene Firma aufgebaut und übergeben, kein Theoretiker"
+  - "MBA an der TH Deggendorf mit 1,3, parallel zur aktiven Geschäftsführung"
+  - "Silicon Valley Program und BITZ Oberschneiding als echter Niederbayern-Anker"
+  - "eins+null 13 Jahre geführt, 50 MA skaliert, Exit 2022"
+  - "Leadtime-Idee aus Controlling-Arbeit und eigener Unternehmenspraxis"
 - "type": "faq"
   "heading": "Häufige Fragen zur Unternehmensberatung in Niederbayern"
   "items":
   - "question": "Für welche Unternehmen in Niederbayern ist das sinnvoll?"
-    "answer": "Vor allem für inhabergeführte KMU, Handwerksbetriebe, Dienstleister und Produzenten, die merken, dass Wachstum\
-      \ mehr Reibung als Entlastung bringt."
-  - "question": "Unterscheidet sich Niederbayern von anderen Regionen als Markt?"
-    "answer": "Die Betriebe in Niederbayern sind oft bodenständiger und weniger auf externe Beratung ausgerichtet als in Großstädten.\
-      \ Das ist kein Nachteil, es bedeutet nur, dass Beratung unmittelbar praxistauglich und ohne Overhead sein muss."
-  - "question": "Geht es um Strategie oder um Umsetzung?"
-    "answer": "Beides, aber Umsetzung hat Vorrang. Die entscheidende Frage ist nicht, wie das Organigramm aussieht, sondern\
-      \ was nächste Woche im Betrieb konkret anders laufen soll."
+    "answer": "Vor allem für inhabergeführte KMU, Handwerksbetriebe, Dienstleister und produzierende Unternehmen, die merken,\
+      \ dass Wachstum mehr Reibung als Entlastung bringt und zu viel weiter an der Geschäftsführung hängen bleibt."
+  - "question": "Was ist in Niederbayern oft anders als in anderen Regionen?"
+    "answer": "Viele Betriebe hier sind pragmatisch, substanziell und nicht besonders empfänglich für Berater-Show. Das ist\
+      \ gut, weil Beratung hier nur dann eine Chance hat, wenn sie im Alltag wirklich etwas bringt und schnell verständlich\
+      \ wird."
+  - "question": "Geht es eher um Strategie oder eher um Umsetzung?"
+    "answer": "Beides, aber Umsetzung hat Vorrang. Die entscheidende Frage ist nicht, wie die Folie aussieht, sondern was\
+      \ nächste Woche im Betrieb konkret anders laufen soll, damit Entscheidungen, Führung und Abläufe stabiler werden."
+  - "question": "Warum spielt die TH Deggendorf auf dieser Seite überhaupt eine Rolle?"
+    "answer": "Weil sie für Niederbayern ein echter Referenzpunkt ist und für mich nicht bloß ein Studienort war. Der MBA\
+      \ lief parallel zur Geschäftsführung, die Silicon-Valley-Erfahrung kam über die THD, und genau daraus entstand ein Teil\
+      \ meiner Denkweise über Skalierung, Steuerung und Unternehmerpraxis."
   - "question": "Wie startet die Zusammenarbeit?"
-    "answer": "Mit einem Erstgespräch. Danach wird klar, ob ein kurzer Umsetzungssprint, laufendes Sparring oder gar keine\
-      \ Beratung sinnvoll ist."
+    "answer": "Mit einem Erstgespräch. Danach wird klar, ob du gerade einen fokussierten Umsetzungssprint, laufendes Sparring\
+      \ oder zunächst gar keine Beratung brauchst. Wichtiger als ein großes Paket ist zuerst die saubere Einordnung des Engpasses."
+  - "question": "Passt das auch für kleinere Unternehmen in Straubing, Landshut oder Dingolfing?"
+    "answer": "Ja. Gerade kleinere inhabergeführte Unternehmen profitieren oft am stärksten von klareren Verantwortlichkeiten,\
+      \ saubereren Entscheidungswegen und einer ehrlichen Priorisierung der nächsten Hebel. Unternehmensberatung wird hier\
+      \ nicht größer gedacht, sondern präziser."
+  - "question": "Was unterscheidet das von klassischer Unternehmensberatung?"
+    "answer": "Ich arbeite nicht mit Standardpaketen und Berater-Rhetorik. Im Zentrum stehen die wenigen Hebel, die in deinem\
+      \ Betrieb wirklich Tempo, Klarheit und Entlastung zurückbringen. Das ist näher an Operator-Logik als an Beratungsdeko."
 "endCTA":
-  "heading": "Wenn dein Unternehmen in Niederbayern klarer werden soll"
+  "heading": "Wenn dein Unternehmen in Niederbayern klarer, ruhiger und führbarer werden soll"
   "body": "Dann lass uns anschauen, wo Führung, Abläufe und Entscheidungen bei dir gerade Reibung erzeugen. Direkt, ohne Berater-Show\
-    \ und mit Blick auf das, was in deinem Alltag wirklich zählt."
+    \ und mit Blick auf das, was in deinem Alltag wirklich zählt. Das Erstgespräch ist genau dafür da: nicht für eine Hochglanz-Präsentation,\
+    \ sondern für die ehrliche Sortierung, welcher Hebel gerade zuerst Wirkung bringen würde. Vielleicht ist es Führung. Vielleicht\
+    \ Prozessklarheit. Vielleicht Umsetzung. Vielleicht Digitalisierung. Entscheidend ist nur, dass du nicht weiter alles\
+    \ gleichzeitig anfasst und am Ende überall halbfertig bleibst."
   "primary":
     "label": "Erstgespräch buchen"
     "href": "/erstgespraech"
