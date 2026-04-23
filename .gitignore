@@ -46,6 +46,10 @@ next-env.d.ts
 /public/images/paintings/
 /public/images/teams/
 
+# leadmagnet files (served from Coolify persistent volume ebner-leadmagnet)
+/public/files/leadmagnet/*
+!/public/files/leadmagnet/README.md
+
 # cursor briefings (local only)
 CURSOR-BRIEFING-*.md
 

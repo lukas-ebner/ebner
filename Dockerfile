@@ -19,6 +19,6 @@ COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/content ./content
 COPY --from=builder /app/lib ./lib
-RUN mkdir -p /app/data
+RUN mkdir -p /app/data /app/public/files/leadmagnet
 EXPOSE 3000
 CMD ["node", "server.js"]
