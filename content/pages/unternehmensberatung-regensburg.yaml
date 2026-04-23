@@ -1,84 +1,84 @@
-meta:
-  title: "Unternehmensberatung Regensburg | Für KMU & Agenturen"
-  description: "Unternehmensberatung in Regensburg mit Fokus auf Wachstum, Prozesse und Digitalisierung. Lokal, pragmatisch und umsetzungsstark."
-  og_image: "/images/og/geo-landingpage.jpg"
-  accent: "#F44900"
-
-variables:
-  GEO_CITY: "Regensburg"
-  MAIN_KEYWORD: "Unternehmensberatung"
-  LSI_KEYWORDS:
-    - "Unternehmensberatung Regensburg"
-    - "Unternehmensberater Regensburg"
-    - "Digitalisierung Mittelstand Regensburg"
-    - "Prozessoptimierung Regensburg"
-    - "KI-Beratung Regensburg"
-
-slides:
-  - template: hero-split
-    pill: "Unternehmensberatung Regensburg"
-    headline: "Unternehmensberatung in Regensburg für den Mittelstand"
-    subtext: "Regensburg ist kein Problemstandort. Gerade deshalb fallen operative Bremsen oft spät auf. Wenn Entscheidungen wieder bei dir landen, mehr Team nicht mehr Ruhe bringt und Digitalisierung nur zusätzlich Arbeit macht, brauchst du keine Standardberatung. Du brauchst Ordnung im Betrieb."
-    cta:
-      text: "Erstgespräch buchen"
-      url: "/erstgespraech"
-    image:
-      src: "/images/geo/regensburg-hero.jpg"
-      alt: "Unternehmer in Regensburg im Strategiegespräch"
-
-  - template: symptoms-grid
-    imageStyle: panorama
-    headline: "Woran du merkst, dass dein Unternehmen in Regensburg an dir hängt"
-    body: "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Klingt ordentlich. Gleichzeitig stagniert die Wirtschaftslage in der Region weiter. Genau in solchen Phasen kippt das Problem in vielen Betrieben nach innen: nicht fehlende Bewegung im Markt, sondern zu viele Entscheidungen auf zu wenigen Schultern."
-    symptoms:
-      - pill: "Engpass 1"
-        image: "/images/geo/symptom-1.jpg"
-        headline: "Zu viele Entscheidungen landen wieder bei dir."
-        body: "Rollen sind formal verteilt, aber in der Praxis wartet das Team trotzdem auf dich. Nicht aus Bequemlichkeit, sondern weil Verantwortung und Eskalationswege nicht sauber genug gebaut sind."
-      - pill: "Engpass 2"
-        image: "/images/geo/symptom-2.jpg"
-        headline: "Mehr Team bringt mehr Abstimmung, aber nicht mehr Entlastung."
-        body: "Wenn jeder neue Mitarbeiter neue Rückfragen produziert, wächst nicht dein Unternehmen. Es wächst nur die Komplexität, die bei dir zusammenläuft."
-      - pill: "Engpass 3"
-        image: "/images/geo/symptom-3.jpg"
-        headline: "Digitalisierung und KI laufen nebenher."
-        body: "In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer Plus mit Bewerbungsschluss am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse mitgebaut werden."
-      - pill: "Engpass 4"
-        image: "/images/geo/symptom-4.jpg"
-        headline: "Du arbeitest viel, aber der Betrieb wird nicht robuster."
-        body: "Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik, die Entscheidungen schneller macht, Übergaben stabilisiert und das Tagesgeschäft von deiner Person entkoppelt."
-
-  - template: credibility
-    headline: "Warum ich das in Regensburg anders angehe"
-    body: "Ich kenne die Region nicht aus der Außensicht. Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Ausbildung war in Regensburg. Meine Firma habe ich hier gegründet, aufgebaut und später übergeben, heute ist sie Teil der Kraftwerk. Dazu kommen der MBA an der TH Deggendorf und das Silicon-Valley-Programm mit Förderung aus Regensburg. Deshalb interessiert mich weniger, wie Beratung klingt, und mehr, was im Betrieb am Montag anders laufen muss."
-    proofs:
-      - text: "27 Jahre Ostbayern, vom Teenager-Job bis zur Gründung"
-      - text: "Eigene Firma in Regensburg aufgebaut und übergeben"
-      - text: "MBA an der TH Deggendorf, kein Einflieger-Berater"
-    cta:
-      label: "Gespräch vereinbaren"
-      href: "/erstgespraech"
-
-  - template: faq
-    id: geo-faq
-    headline: "Häufige Fragen zu Unternehmensberatung in Regensburg"
-    variant: light
-    bg: "#E6EEEF"
-    items:
-      - question: "Für welche Unternehmen in Regensburg ist das sinnvoll?"
-        answer: "Vor allem für inhabergeführte KMU, Agenturen, Dienstleister und wachsende Teams, bei denen operative Last, unklare Verantwortung und zu viele Rückfragen das Wachstum ausbremsen."
-      - question: "Was ist in Regensburg gerade der häufigste Engpass?"
-        answer: "Oft nicht der Markt, sondern die innere Betriebslogik. Regensburg hat Mittelstand, Tech und viel Bewegung. Genau deshalb fällt zu spät auf, wenn Entscheidungen, Prioritäten und Umsetzung zu stark am Geschäftsführer hängen."
-      - question: "Geht es eher um Strategie oder eher um Umsetzung?"
-        answer: "Beides, aber mit Vorrang für Umsetzung. Die entscheidende Frage ist nicht, wie die Folien aussehen, sondern was nächste Woche im Betrieb konkret anders laufen soll."
-      - question: "Wie startet die Zusammenarbeit?"
-        answer: "Mit einem Erstgespräch. Danach wird klar, ob du gerade einen fokussierten Umsetzungssprint, laufendes Sparring oder erstmal keine Beratung brauchst."
-      - question: "Was unterscheidet das von klassischer Unternehmensberatung in Regensburg?"
-        answer: "Ich arbeite nicht mit Standardpaketen und Leistungslisten. Im Zentrum stehen Führung, Entscheidungen, Prozesse und eine Digitalisierung, die den Betrieb wirklich entlastet."
-
-  - template: cta
-    headline: "Wenn dein Unternehmen in Regensburg weniger an dir hängen soll"
-    body: "Dann lass uns sortieren, wo dein eigentlicher Engpass sitzt und wie daraus ein führbarer Betrieb wird. Ohne Berater-Show. Ohne erfundene Cases. Mit einem klaren Blick auf das, was in deinem Alltag wirklich bremst."
-    primary:
-      label: "Erstgespräch buchen"
-      href: "/erstgespraech"
+"meta":
+  "title": "Unternehmensberatung Regensburg | Für KMU & Agenturen"
+  "description": "Unternehmensberatung in Regensburg mit Fokus auf Wachstum, Prozesse und Digitalisierung. Lokal, pragmatisch\
+    \ und umsetzungsstark."
+  "kicker": "Unternehmensberatung Regensburg"
+  "subtitle": "Regensburg ist kein Problemstandort. Gerade deshalb fallen operative Bremsen oft spät auf. Wenn Entscheidungen\
+    \ wieder bei dir landen, mehr Team nicht mehr Ruhe bringt und Digitalisierung nur zusätzlich Arbeit macht, brauchst du\
+    \ keine Standardberatung. Du brauchst Ordnung im Betrieb."
+  "heroImage": "/images/geo/regensburg-hero.jpg"
+  "heroAlt": "Unternehmer in Regensburg im Strategiegespräch"
+  "og_image": "/images/og/geo-landingpage.jpg"
+  "breadcrumbs":
+  - "label": "Start"
+    "href": "/"
+  - "label": "Themen"
+    "href": "/themen"
+  - "label": "Regensburg"
+    "href": "/unternehmensberatung-regensburg"
+  "ctas":
+  - "label": "Erstgespräch buchen"
+    "href": "/erstgespraech"
+    "variant": "primary"
+"sections":
+- "type": "symptoms"
+  "heading": "Woran du merkst, dass dein Unternehmen in Regensburg an dir hängt"
+  "body": "Die IHK Regensburg meldete zum Jahresbeginn 2026 einen Konjunkturklimaindikator von 110,4 Punkten. Klingt ordentlich.\
+    \ Gleichzeitig stagniert die Wirtschaftslage in der Region weiter. Genau in solchen Phasen kippt das Problem in vielen\
+    \ Betrieben nach innen: nicht fehlende Bewegung im Markt, sondern zu viele Entscheidungen auf zu wenigen Schultern."
+  "items":
+  - "pill": "Engpass 1"
+    "image": "/images/geo/symptom-1.jpg"
+    "headline": "Zu viele Entscheidungen landen wieder bei dir."
+    "body": "Rollen sind formal verteilt, aber in der Praxis wartet das Team trotzdem auf dich. Nicht aus Bequemlichkeit,\
+      \ sondern weil Verantwortung und Eskalationswege nicht sauber genug gebaut sind."
+  - "pill": "Engpass 2"
+    "image": "/images/geo/symptom-2.jpg"
+    "headline": "Mehr Team bringt mehr Abstimmung, aber nicht mehr Entlastung."
+    "body": "Wenn jeder neue Mitarbeiter neue Rückfragen produziert, wächst nicht dein Unternehmen. Es wächst nur die Komplexität,\
+      \ die bei dir zusammenläuft."
+  - "pill": "Engpass 3"
+    "image": "/images/geo/symptom-3.jpg"
+    "headline": "Digitalisierung und KI laufen nebenher."
+    "body": "In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer Plus mit Bewerbungsschluss\
+      \ am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse mitgebaut werden."
+  - "pill": "Engpass 4"
+    "image": "/images/geo/symptom-4.jpg"
+    "headline": "Du arbeitest viel, aber der Betrieb wird nicht robuster."
+    "body": "Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik, die Entscheidungen schneller macht, Übergaben\
+      \ stabilisiert und das Tagesgeschäft von deiner Person entkoppelt."
+- "type": "credibility"
+  "heading": "Warum ich das in Regensburg anders angehe"
+  "body": "Ich kenne die Region nicht aus der Außensicht. Meine ersten Jobs hatte ich bei der Mittelbayerischen. Meine Ausbildung\
+    \ war in Regensburg. Meine Firma habe ich hier gegründet, aufgebaut und später übergeben, heute ist sie Teil der Kraftwerk.\
+    \ Dazu kommen der MBA an der TH Deggendorf und das Silicon-Valley-Programm mit Förderung aus Regensburg. Deshalb interessiert\
+    \ mich weniger, wie Beratung klingt, und mehr, was im Betrieb am Montag anders laufen muss."
+  "proofs":
+  - "text": "27 Jahre Ostbayern, vom Teenager-Job bis zur Gründung"
+  - "text": "Eigene Firma in Regensburg aufgebaut und übergeben"
+  - "text": "MBA an der TH Deggendorf, kein Einflieger-Berater"
+- "type": "faq"
+  "heading": "Häufige Fragen zu Unternehmensberatung in Regensburg"
+  "items":
+  - "question": "Für welche Unternehmen in Regensburg ist das sinnvoll?"
+    "answer": "Vor allem für inhabergeführte KMU, Agenturen, Dienstleister und wachsende Teams, bei denen operative Last,\
+      \ unklare Verantwortung und zu viele Rückfragen das Wachstum ausbremsen."
+  - "question": "Was ist in Regensburg gerade der häufigste Engpass?"
+    "answer": "Oft nicht der Markt, sondern die innere Betriebslogik. Regensburg hat Mittelstand, Tech und viel Bewegung.\
+      \ Genau deshalb fällt zu spät auf, wenn Entscheidungen, Prioritäten und Umsetzung zu stark am Geschäftsführer hängen."
+  - "question": "Geht es eher um Strategie oder eher um Umsetzung?"
+    "answer": "Beides, aber mit Vorrang für Umsetzung. Die entscheidende Frage ist nicht, wie die Folien aussehen, sondern\
+      \ was nächste Woche im Betrieb konkret anders laufen soll."
+  - "question": "Wie startet die Zusammenarbeit?"
+    "answer": "Mit einem Erstgespräch. Danach wird klar, ob du gerade einen fokussierten Umsetzungssprint, laufendes Sparring\
+      \ oder erstmal keine Beratung brauchst."
+  - "question": "Was unterscheidet das von klassischer Unternehmensberatung in Regensburg?"
+    "answer": "Ich arbeite nicht mit Standardpaketen und Leistungslisten. Im Zentrum stehen Führung, Entscheidungen, Prozesse\
+      \ und eine Digitalisierung, die den Betrieb wirklich entlastet."
+"endCTA":
+  "heading": "Wenn dein Unternehmen in Regensburg weniger an dir hängen soll"
+  "body": "Dann lass uns sortieren, wo dein eigentlicher Engpass sitzt und wie daraus ein führbarer Betrieb wird. Ohne Berater-Show.\
+    \ Ohne erfundene Cases. Mit einem klaren Blick auf das, was in deinem Alltag wirklich bremst."
+  "primary":
+    "label": "Erstgespräch buchen"
+    "href": "/erstgespraech"

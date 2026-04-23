@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { PageBuilder } from '@/components/PageBuilder'
+import { ThemenPageLayout } from '@/components/layouts/ThemenPageLayout'
 import { listPageSlugs, loadPage } from '@/lib/page-builder'
+import { isLandingPageThemenFormat, loadLandingPageAsThemen } from '@/lib/themen'
 
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
@@ -28,6 +30,39 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
   if (slug === 'homepage') return {}
+
+  // Themen-Format pages
+  if (isLandingPageThemenFormat(slug)) {
+    try {
+      const page = loadLandingPageAsThemen(slug)
+      const canonicalUrl = canonicalPathForSlug(slug)
+      const ogImage = page.meta.og_image
+        ? `https://lukasebner.de${page.meta.og_image}`
+        : defaultOgImage
+      return {
+        title: page.meta.title,
+        description: page.meta.description,
+        alternates: { canonical: canonicalUrl },
+        openGraph: {
+          type: 'website',
+          url: canonicalUrl,
+          title: page.meta.title,
+          description: page.meta.description,
+          images: [{ url: ogImage }],
+        },
+        twitter: {
+          card: 'summary_large_image',
+          title: page.meta.title,
+          description: page.meta.description,
+          images: [ogImage],
+        },
+      }
+    } catch {
+      return {}
+    }
+  }
+
+  // Slide-based pages
   try {
     const page = loadPage(slug)
     const canonicalUrl = canonicalPathForSlug(slug)
@@ -65,6 +100,17 @@ export default async function DynamicPage({ params }: PageProps) {
   const { slug } = await params
   if (slug === 'homepage') notFound()
 
+  // Themen-Format landing pages (sections-based)
+  if (isLandingPageThemenFormat(slug)) {
+    try {
+      const themenPage = loadLandingPageAsThemen(slug)
+      return <ThemenPageLayout page={themenPage} />
+    } catch {
+      notFound()
+    }
+  }
+
+  // Slide-based pages (hero-split, symptoms-grid, etc.)
   let page
   try {
     page = loadPage(slug)
