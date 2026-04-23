@@ -1,9 +1,13 @@
 "meta":
-  "title": "Change-Management-Beratung für wirksame Umsetzung"
-  "description": "Change Management Beratung für mittelständische Unternehmen. Strukturierter Ansatz für Akzeptanz, Umsetzung\
-    \ und messbare Ergebnisse."
+  "title": "Change Management Beratung Mittelstand | Umsetzung & Führung"
+  "description": "Change Management Beratung für KMU: strukturierte Umsetzung, Führungsroutinen und messbare Ergebnisse statt\
+    \ Folienprojekte."
   "kicker": "Change Management Beratung"
-  "subtitle": "Veränderung, die im Alltag hält. Nicht nur im Workshop. Für Unternehmen in Regensburg, Oberpfalz und Ostbayern."
+  "subtitle": "Sieben von zehn Change-Projekten scheitern. Das hat der BDU-Fachverband unter Verweis auf eine Porsche Consulting-Studie\
+    \ festgehalten. Der Grund ist fast nie das falsche Konzept. Er ist fast immer die fehlende Umsetzungsarchitektur. Ich\
+    \ berate Change Management nicht aus dem Beratungsbuch, sondern aus dem Exit: 2022 habe ich eins+null nach 13 Jahren an\
+    \ die Kraftwerk Holding verkauft. Ich war dabei Change-Manager und Veränderungsobjekt. Das gibt einen anderen Blick auf\
+    \ das, was wirklich trägt, als jede Zertifizierung."
   "heroImage": "/images/change/change-hero.png"
   "heroAlt": "Workshop zur Change Management Beratung mit Führungsteam"
   "og_image": "/images/og/change-management-beratung.jpg"
@@ -20,65 +24,68 @@
 - "type": "prose"
   "heading": "Typische Change-Situationen im Mittelstand"
   "content":
-  - "Die meisten Veränderungsprojekte scheitern nicht an der Idee, sondern an der Umsetzung unter echtem Tagesdruck. Genau\
-    \ dort setzt diese Beratung an."
+  - "Bertram Brossardt, Hauptgeschäftsführer der vbw, verwies am 22. April 2026 auf nur noch 0,5 Prozent Wachstumsprognose\
+    \ für dieses Jahr. In dieser wirtschaftlichen Lage verliert Beratung, die nicht in konkrete Handlung übersetzt wird, jede\
+    \ Legitimation. Für mittelständische Unternehmen ist Change keine abstrakte Frage, sondern eine operative Antwort auf\
+    \ konkrete Situationen."
   "bullets":
-  - "Wachstum ist da, aber Rollen und Entscheidungen sind nicht nachgezogen."
-  - "Neue Führung oder Generationswechsel erzeugen Reibung statt Klarheit."
-  - "Digitalisierung läuft, aber operativer Nutzen bleibt aus."
-  - "Kick-off war stark, nach wenigen Wochen versandet das Projekt."
-- "type": "crossref"
-  "heading": "Drei Phasen, die im Alltag funktionieren"
-  "body": "Erstens Analyse der echten Engpässe. Zweitens Veränderungsdesign mit klaren 30-60-90-Zielen. Drittens Umsetzungssparring\
-    \ mit sauberen Verantwortlichkeiten."
-  "link":
-    "label": "Operations & Führung ansehen"
-    "href": "/operations"
+  - "Wachstum, aber Entscheidungen kommen zurück nach oben — Die Führungsstruktur wächst nicht mit dem Unternehmen mit. Entscheidungen,\
+    \ die auf mittlerer Ebene getroffen werden sollten, landen wieder bei der Geschäftsführung."
+  - "Führungswechsel erzeugt Reibung statt Klarheit — Neue Führung trifft auf etablierte Kultur. Informelle Erwartungen und\
+    \ explizite Strukturen passen nicht zusammen. Vertrauen wird langsam aufgebaut, aber es braucht einen Rahmen."
+  - "Digitalisierung läuft, aber operativer Nutzen fehlt — Die Technologie ist da, aber die Betriebslogik darunter ist nicht\
+    \ angepasst. Digitalisierung hat nicht entlastet, sondern einen neuen Koordinationsaufwand geschaffen."
+  - "Kick-off stark, nach wenigen Wochen versandet das Projekt — Der Start ist gut. Nach einigen Wochen dominiert das Tagesgeschäft\
+    \ wieder. Die Verbindlichkeit fehlt. Verantwortlichkeiten sind unklar. Nachsteuerung findet nicht statt."
 - "type": "figure"
   "image": "/images/change/change-schmuck.jpg"
-  "alt": "Hand bewegt einen orangen Holzklotz in eine neue Position auf einer Holzfläche"
+  "alt": "Hand bewegt einen orangen Holzklotz in eine neue Position"
   "caption": "Veränderung ist kein Impuls, sondern ein Umsetzungsrhythmus im Alltag."
-- "type": "compare"
-  "heading": "Folien-zentrierter Ansatz vs. operative Umsetzung"
-  "leftTitle": "Klassischer Change-Ansatz"
-  "rightTitle": "Operativer Umsetzungsansatz"
-  "rows":
-  - "label": "Fokus"
-    "left": "Kommunikation und Formate"
-    "right": "Entscheidungen, Verantwortlichkeiten, Takt"
-  - "label": "Steuerung"
-    "left": "Viel Reporting, wenig Durchgriff"
-    "right": "Wenige Kennzahlen, klare Nachsteuerung"
-  - "label": "Ergebnis"
-    "left": "Hohe Aktivität, niedrige Verbindlichkeit"
-    "right": "Messbare Fortschritte im Tagesgeschäft"
-- "type": "crossref"
-  "heading": "Förderung separat betrachten"
-  "body": "Wer BAFA-Förderung prüfen möchte, findet das über die Themenseite zur Förderung. Für Change zählt zuerst, ob Umsetzung\
-    \ und Führungsrhythmus stabil werden."
-  "link":
-    "label": "Zur BAFA-Themenseite"
-    "href": "/themen/bafa"
+- "type": "prose"
+  "heading": "Change Management aus dem eigenen Exit"
+  "content":
+  - "Ich habe den wahrscheinlich größten Change meines Lebens selbst moderiert: den Verkauf von eins+null nach 13 Jahren an\
+    \ die Kraftwerk Holding. Neue Eigentümerstruktur. Veränderte Entscheidungswege. Integrierte Teams. Ich war dabei Change-Manager\
+    \ und Veränderungsobjekt. Das ist keine Berater-Geschichte. Das ist gelebte Erfahrung. Davor habe ich eins+null von zwei\
+    \ auf fünfzig Mitarbeitende skaliert. Jede Wachstumsstufe hatte ihre eigene Change-Dynamik: was bei fünf Leuten noch informell\
+    \ funktioniert, bricht bei zwanzig. Was bei zwanzig trägt, trägt bei fünfzig nicht automatisch mehr. Seit 2025 bin ich\
+    \ zudem zertifizierter ICO Organisationsberater und Change Manager sowie zertifizierter systemischer Coach. Diese Qualifikationen\
+    \ geben dem gelebten Erleben einen methodischen Rahmen."
+  "bullets":
+  - "Exit 2022 an Kraftwerk Holding: Change-Manager und Veränderungsobjekt"
+  - "eins+null von 2 auf 50 MA skaliert, 13 Jahre operative Führung"
+  - "ICO Organisationsberater + Change Manager, zertifiziert 2025"
+  - "Systemisches Coaching, zertifiziert 2025"
 - "type": "faq"
   "heading": "Häufige Fragen zur Change Management Beratung"
   "items":
   - "question": "Für welche Unternehmen ist das gedacht?"
-    "answer": "Für KMU, die Wachstum, Übergabe, Reorganisation oder Digitalisierung sauber umsetzen wollen, ohne dass der\
-      \ Veränderungsprozess an der Geschäftsführung hängt."
-  - "question": "Wie lange dauert eine typische Begleitung?"
-    "answer": "Häufig starten wir mit einem fokussierten acht- bis zwölf-Wochen-Setup und gehen danach in ein Umsetzungssparring."
-  - "question": "Wie wird Erfolg gemessen?"
-    "answer": "Über wenige, klare Kennzahlen wie Entscheidungsdurchlaufzeit, Eskalationen pro Woche oder Nacharbeitsquote."
+    "answer": "Für KMU, die Wachstum, Führungswechsel, Übernahme, Reorganisation oder Digitalisierung sauber umsetzen wollen.\
+      \ Voraussetzung ist, dass Führung bereit ist, am Führungsrhythmus zu arbeiten, und nicht nur das Team."
   - "question": "Was unterscheidet das von klassischer Change-Beratung?"
-    "answer": "Der Schwerpunkt liegt nicht auf Kommunikations- und Workshop-Formaten, sondern auf der Frage: Was muss in Führung,\
+    "answer": "Schwerpunkt liegt auf Umsetzungsarchitektur, nicht auf Kommunikations- und Workshop-Formaten. Was muss in Führung,\
       \ Entscheidungslogik und Tagesrhythmus konkret anders werden, damit Veränderung hält?"
+  - "question": "Wie lange dauert eine typische Begleitung?"
+    "answer": "Häufig starten wir mit einem fokussierten acht- bis zwölf-Wochen-Setup und gehen danach in ein Umsetzungssparring,\
+      \ abhängig von der Situation."
+  - "question": "Wie wird Erfolg gemessen?"
+    "answer": "Über wenige, klare Kennzahlen. Typisch sind Entscheidungsdurchlaufzeit, Eskalationen pro Woche oder Nacharbeitsquote.\
+      \ Was gemessen wird, legen wir zu Beginn fest."
+  - "question": "Was bringt der Exit-Erfahrungswinkel konkret?"
+    "answer": "Wer Change nur von außen begleitet hat, weiß nicht, wie es sich anfühlt, selbst Veränderungsobjekt zu sein.\
+      \ Ich weiß, wie Widerstand entsteht, obwohl alle intellektuell zustimmen. Wie Führung unter Veränderungsdruck klingt.\
+      \ Und warum Umsetzungsarchitektur keine Methode ist, sondern eine Führungsfrage."
+  - "question": "Kann Change Management BAFA-gefördert werden?"
+    "answer": "Ja, für förderfähige Beratungsthemen wie Führung, Prozesse und Organisationsentwicklung ist BAFA-Förderung\
+      \ möglich. Ob und in welchem Umfang das für eure Situation zutrifft, klären wir im Erstgespräch."
 "endCTA":
-  "heading": "Change darf nicht am Projektplan enden"
-  "body": "Wenn ihr Veränderung wirklich im Alltag verankern wollt, braucht ihr klare Führungsroutinen, saubere Entscheidungslogik\
-    \ und Umsetzungsdisziplin."
+  "heading": "Wenn Veränderung in eurem Unternehmen nicht hält, liegt es selten am Willen"
+  "body": "Es liegt fast immer an fehlender Umsetzungsarchitektur. Das Erstgespräch klärt in dreißig Minuten, welche Art von\
+    \ Veränderung gerade ansteht, ob der Kontext für strukturiertes Change Management geeignet ist und welcher erste Hebel\
+    \ Wirkung bringen würde. Kein Workshop-Versprechen. Kein Konzeptverkauf. Nur Klarheit darüber, was als nächstes sinnvoll\
+    \ ist. Manchmal ergibt sich ein fokussiertes Umsetzungs-Setup. Manchmal stellt sich heraus, dass zuerst etwas anderes\
+    \ stabilisiert werden muss. Manchmal reicht das Gespräch selbst als Orientierung. Alle drei Ausgänge sind sinnvoll. Der\
+    \ einzige, der es nicht ist, ist unklares Weiterarbeiten."
   "primary":
     "label": "Erstgespräch für Change starten"
     "href": "/erstgespraech?topic=change-management"
-  "secondary":
-    "label": "Zur Übersicht Themen"
-    "href": "/themen"
