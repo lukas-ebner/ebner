@@ -3,10 +3,14 @@
   "description": "So nutzt du die BAFA-Förderung für Unternehmensberatung. Voraussetzungen, Ablauf und nächste Schritte kompakt\
     \ erklärt."
   "kicker": "BAFA-Förderung Unternehmensberatung"
-  "subtitle": "Wirksame Beratung muss nicht am Budget scheitern. Die BAFA-Förderung macht qualifizierte Unternehmensberatung\
-    \ für KMU finanzierbar."
+  "subtitle": "Gute Beratung scheitert selten an der Idee. Meistens scheitert sie an Budget und Prioritäten. Das Bundesprogramm\
+    \ Förderung von Unternehmensberatungen für KMU macht qualifizierte Beratung für kleine und mittlere Unternehmen finanzierbar:\
+    \ bis zu 1.750 Euro Zuschuss in Bayern, 3.500 Euro Bemessungsgrundlage, 50 Prozent Fördersatz. Die aktuelle Richtlinie\
+    \ läuft bis 31. Dezember 2026. Wer in diesem Jahr noch Beratung plant, sollte jetzt prüfen, ob ein BAFA-Antrag sinnvoll\
+    \ ist. Diese Seite erklärt die Zahlen, den Ablauf und wann BAFA wirklich hilft, und wann ein Antrag gerade nicht der richtige\
+    \ Weg ist."
   "heroImage": "/images/bafa/bafa-hero.png"
-  "heroAlt": "Lukas Ebner erklärt den Ablauf der BAFA-Förderung am Whiteboard"
+  "heroAlt": "Unternehmer beim BAFA-Gespräch mit Lukas Ebner"
   "og_image": "/images/og/bafa.jpg"
   "breadcrumbs":
   - "label": "Start"
@@ -19,65 +23,64 @@
     "variant": "primary"
 "sections":
 - "type": "prose"
-  "heading": "Wann BAFA für dich ein echter Hebel ist"
+  "heading": "BAFA-geförderte Beratung mit ICO-zertifiziertem Berater"
   "content":
-  - "Viele Geschäftsführer schieben notwendige Veränderungen auf, nicht aus Faulheit, sondern weil Zeit, Budget und Klarheit\
-    \ fehlen. Genau dort kann BAFA-geförderte Beratung helfen."
+  - "Ich bin seit 2025 zertifizierter ICO Organisationsberater und Change Manager sowie zertifizierter systemischer Coach.\
+    \ Diese Qualifikationen stehen für die methodischen Voraussetzungen, die BAFA an Berater stellt. Als BAFA-registrierter\
+    \ Berater kann ich Beratungsleistungen direkt mit der Förderlogik verbinden. Das bedeutet: Wenn BAFA passt, stellen wir\
+    \ den Antrag vor Beginn und arbeiten dann strukturiert. Wenn BAFA nicht passt, sage ich das klar. Ich berate nicht so,\
+    \ dass ein Antrag erzwungen wird, sondern so, dass ein Beratungsziel sinnvoll ist, egal ob gefördert oder nicht. Hinter\
+    \ beiden Zertifizierungen steckt echte Lernarbeit, keine Briefkastenzertifikate. Das gibt den Beratungsleistungen, die\
+    \ BAFA fördert, eine methodische Substanz, die den Verwendungsnachweis trägt."
   "bullets":
-  - "Du bist KMU mit bis zu 250 Mitarbeitenden und bis zu 50 Mio € Jahresumsatz."
-  - "Es gibt einen konkreten Engpass in Strategie, Prozessen, Führung oder Digitalisierung."
-  - "Du willst Ergebnisse umsetzen, nicht nur Präsentationen konsumieren."
-- "type": "compare"
-  "heading": "Was BAFA-geförderte Beratung konkret unterscheidet"
-  "leftTitle": "Ohne Förderhebel"
-  "rightTitle": "Mit BAFA-Förderung"
-  "rows":
-  - "label": "Einstieg"
-    "left": "Höhere Investitionshürde, Entscheidungen werden vertagt."
-    "right": "Niedrigere Einstiegshürde bei gleicher Beratungsqualität."
-  - "label": "Budget"
-    "left": "Volle Kosten selbst tragen, meistens in kleinen Schritten."
-    "right": "Bis zu 80 % Zuschuss auf förderfähige Kosten möglich."
-  - "label": "Tempo"
-    "left": "Engpass bleibt oft länger bestehen."
-    "right": "Beratung kann früher starten und schneller wirken."
+  - "ICO Organisationsberater + Change Manager, zertifiziert 2025"
+  - "Systemisches Coaching, zertifiziert 2025"
+  - "BAFA-registrierter Berater, Leitstelle IHK Regensburg"
+  - "Förderrichtlinie gilt bis 31. Dezember 2026"
 - "type": "figure"
   "image": "/images/bafa/bafa-schmuck.jpg"
-  "alt": "BAFA-Antragsformular mit Taschenrechner auf einem Schreibtisch, ruhige Morgenatmosphäre"
+  "alt": "BAFA-Antragsformular mit Taschenrechner auf einem Schreibtisch"
   "caption": "Papierkram mit Wirkung — der Antrag ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind."
-- "type": "crossref"
-  "heading": "Ablauf in vier Schritten"
-  "body": "Erstgespräch, Schwerpunkt definieren, Antrag stellen und Umsetzung starten, Ergebnisse dokumentieren. Ohne Fördermittel-Theater,\
-    \ mit klaren Zuständigkeiten."
-  "link":
-    "label": "Hintergrund im Blog lesen"
-    "href": "/blog/bafa-foerderung-unternehmensberatung"
-- "type": "bafa-calculator"
-  "heading": "Rechne den BAFA-Effekt auf deinen Fall"
-  "body": "Vergleiche Zuschuss und Eigenanteil direkt auf Basis deiner Beratungskosten."
-  "cta":
+- "type": "faq"
+  "heading": "Häufige Fragen zur BAFA-Förderung für Unternehmensberatung"
+  "items":
+  - "question": "Wie hoch ist die BAFA-Förderung konkret?"
+    "answer": "In Bayern und den alten Bundesländern: Bemessungsgrundlage 3.500 Euro, Fördersatz 50 Prozent, maximaler Zuschuss\
+      \ 1.750 Euro. In den neuen Bundesländern und strukturschwachen Gebieten kann der Fördersatz höher sein. Quelle: IHK\
+      \ Nürnberg und BAFA, Abruf 2026-04-23."
+  - "question": "Wie viele BAFA-Beratungen kann ich beanspruchen?"
+    "answer": "Bis zu 5 Beratungen gesamt bis 31. Dezember 2026, jedoch nicht mehr als 2 pro Jahr. Das Jahres-Kontingent gilt\
+      \ für das jeweilige Kalenderjahr."
+  - "question": "Muss der Antrag vor der Beratung gestellt werden?"
+    "answer": "Ja, das ist die wichtigste Regel. Der Antrag muss BAFA-seitig genehmigt sein, bevor die Beratung beginnt. Rückwirkende\
+      \ Anträge werden nicht akzeptiert."
+  - "question": "Für welche Beratungsthemen ist BAFA förderfähig?"
+    "answer": "Strategie, Führung, Prozesse, Digitalisierung, Fachkräftesicherung, Liquidität, Kostenoptimierung, Investitionsplanung.\
+      \ Nicht förderfähig: Steuerberatung, reine IT-Entwicklung, Rechtsberatung, Buchhaltung."
+  - "question": "Was passiert, wenn BAFA nicht für mich passt?"
+    "answer": "Dann sage ich das klar im Erstgespräch. Ziel ist eine wirtschaftlich sinnvolle Entscheidung, nicht ein Förderantrag\
+      \ um jeden Preis."
+  - "question": "Wie läuft das Erstgespräch für BAFA ab?"
+    "answer": "Dreißig Minuten. Kein Pitch, kein Aufwand. Wir klären, ob der Beratungsbedarf förderfähig ist, ob die Voraussetzungen\
+      \ erfüllt sind und ob der Antrag jetzt sinnvoll ist. Danach weißt du, wie du weitermachst."
+  - "question": "Muss ich Vorsteuerabzugsberechtigt sein, um BAFA zu nutzen?"
+    "answer": "Nein. Seit dem 15. November 2025 gilt: Für nicht Vorsteuerabzugsberechtigte wird der Zuschuss auf den Brutto-Rechnungsbetrag\
+      \ berechnet. Das macht die Förderung für diese Gruppe günstiger als vorher."
+  - "question": "Kann ich BAFA und Digitalbonus gleichzeitig nutzen?"
+    "answer": "Grundsätzlich ja, weil BAFA auf Beratungsleistungen zielt und Digitalbonus auf Investitionen in Digitalisierungsmaßnahmen.\
+      \ Sie betreffen unterschiedliche Förderbereiche. Im konkreten Fall prüfen wir, ob De-minimis-Grenzen oder andere Ausschlüsse\
+      \ greifen."
+  - "question": "Gibt es eine Einkommens- oder Umsatzgrenze für BAFA?"
+    "answer": "Ja. Antragsberechtigt sind KMU mit bis zu 250 Mitarbeitenden und einem Jahresumsatz von bis zu 50 Millionen\
+      \ Euro oder einer Bilanzsumme bis 43 Millionen Euro. Außerdem darf das Unternehmen zum Zeitpunkt der Antragstellung\
+      \ nicht als Unternehmen in Schwierigkeiten im EU-Sinne gelten."
+"endCTA":
+  "heading": "Wenn BAFA für dich sinnvoll ist, lohnt es sich jetzt zu starten"
+  "body": "Die Richtlinie läuft Ende 2026 aus. Wer noch Förderung nutzen will, sollte jetzt prüfen ob die Voraussetzungen\
+    \ stimmen. Das Erstgespräch ist genau dafür da: keine Verpflichtung, kein Verkaufsgespräch, nur eine ehrliche Einschätzung,\
+    \ ob BAFA für deinen Beratungsbedarf gerade der richtige Weg ist. Dreißig Minuten. Konkrete Klarheit darüber, ob Förderantrag\
+    \ ja oder nein, und warum. Wenn BAFA nicht das richtige ist, sage ich das. Wenn es passt, starten wir sauber, mit Antrag\
+    \ vor Beratungsbeginn, sauberer Dokumentation und einem Ergebnis, das sich rechnet."
+  "primary":
     "label": "BAFA-Check vereinbaren"
     "href": "/erstgespraech?topic=bafa"
-- "type": "faq"
-  "heading": "Häufige Fragen zur BAFA-Förderung"
-  "items":
-  - "question": "Wie hoch ist die Förderung konkret?"
-    "answer": "Je nach Region und Unternehmenssituation bis zu 80 % auf den förderfähigen Anteil der Beratungskosten. Alte\
-      \ Bundesländer und neue Bundesländer unterscheiden sich im Fördersatz."
-  - "question": "Ist der Antrag kompliziert?"
-    "answer": "Er ist machbar, wenn Unterlagen und Ablauf sauber vorbereitet sind. Genau dabei unterstütze ich, strukturiert\
-      \ und ohne Bürokratie-Theater."
-  - "question": "Was passiert, wenn BAFA nicht passt?"
-    "answer": "Dann sage ich das klar. Ziel ist eine wirtschaftlich sinnvolle Entscheidung, nicht ein Antrag um jeden Preis."
-  - "question": "Für welche Beratungsthemen ist BAFA förderfähig?"
-    "answer": "Für allgemeine Unternehmensberatung zu Strategie, Führung, Prozessen und Digitalisierung. Steuerberatung und\
-      \ reine IT-Dienstleistungen sind ausgeschlossen."
-"endCTA":
-  "heading": "Wenn BAFA passt, spart ihr nicht nur Kosten, sondern Zeit bis zur Umsetzung"
-  "body": "Im Erstgespräch klären wir in kurzer Zeit, ob Förderlogik, Beratungsziel und eure Situation sauber zusammenpassen."
-  "primary":
-    "label": "BAFA-Check starten"
-    "href": "/erstgespraech?topic=bafa"
-  "secondary":
-    "label": "Zur Übersicht Themen"
-    "href": "/themen"
