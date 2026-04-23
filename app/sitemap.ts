@@ -28,12 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }))
 
-  const themenIndex: MetadataRoute.Sitemap = [
+  const leadmagnet: MetadataRoute.Sitemap = [
     {
-      url: `${BASE}/themen`,
+      url: `${BASE}/unverzichtbar`,
       lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
   ]
 
@@ -60,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...homepage, ...pages, ...themenIndex, ...themenPages, ...blogIndex, ...blogPosts]
+  return [...homepage, ...pages, ...leadmagnet, ...themenPages, ...blogIndex, ...blogPosts]
 }
