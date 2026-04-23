@@ -1,7 +1,7 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react'
 
 interface FAQItem {
   question: string
@@ -83,8 +83,6 @@ export function FAQSlide({
   variant = 'dark',
   bg,
 }: FAQSlideProps) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
   const isDark = variant === 'dark'
 
   // Split items into two columns
@@ -100,7 +98,6 @@ export function FAQSlide({
 
   return (
     <div
-      ref={ref}
       className={bgClass}
       style={bg ? { backgroundColor: bg } : undefined}
     >
@@ -110,9 +107,9 @@ export function FAQSlide({
           className={`mb-16 max-w-[700px] font-display text-[2.5rem] font-normal leading-[1.1] md:text-[3.5rem] lg:mb-24 lg:text-[4.25rem] ${
             isDark ? 'text-text-light' : 'text-text-primary'
           }`}
-          initial={{ opacity: 0, y: 32 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
         >
           {headline}
         </motion.h2>
@@ -120,9 +117,9 @@ export function FAQSlide({
         {/* ── Two-column FAQ grid ── */}
         <motion.div
           className="grid grid-cols-1 gap-x-16 lg:grid-cols-2"
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 }}
         >
           <div>
             {leftItems.map((item, i) => (
