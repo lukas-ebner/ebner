@@ -1,85 +1,219 @@
 ---
-title: "Controlling für Agenturen — Warum du deine Projektmargen nicht kennst (und was das kostet)"
+title: "Controlling für Agenturen: Warum Umsatz dich oft in die falsche Richtung beruhigt"
 slug: controlling-fuer-agenturen
-description: "80% der Agenturen kennen ihre echten Projektmargen nicht. Die 5 Kennzahlen die jeder Agenturinhaber wöchentlich prüfen sollte."
+description: ""
 keyword: "controlling für agenturen"
-nebenkeywords: ["projektmanagement dienstleister", "EBIT Agentur"]
+nebenkeywords: []
 category: operations
 status: published
 funnel: MOFU
-kd: "N/A"
-date: "2025-12-17"
+kd: "nicht indexiert"
+date: "2026-04-26"
 heroImage: /images/blog/controlling-fuer-agenturen-hero.jpg
 image: /images/blog/controlling-fuer-agenturen-hero.jpg
 cta:
-  text: "Mehr zu Systemen & Automatisierung"
-  url: "/digitalisierung"
+  text: "Erstgespräch vereinbaren"
+  url: "/erstgespraech"
 ---
 
-## Die bittere Wahrheit: 80% der Agenturen kennen ihre echten Projektmargen nicht
+Viele Agenturen merken erst im Rückblick, dass ein gutes Quartal wirtschaftlich gar nicht so gut war.
+Der Kalender war voll. Die Leute waren beschäftigt. Die Rechnungen gingen raus. Und trotzdem bleibt am Ende zu wenig übrig.
 
-Du weißt was du fakturierst. Aber weißt du auch, was jedes Projekt wirklich kostet?
+Das Problem ist selten, dass zu wenig Arbeit da ist.
+Das Problem ist, dass niemand sauber sieht, wo die Marge unterwegs verschwindet.
 
-Ich treffe ständig Agenturinhaber, die stolz auf ihre Umsatzzahlen sind. 2,5 Millionen im Jahr, sagen sie. Gewinn? Keine Ahnung. Das ist die typische Blindheit in Agenturen. Weil die meisten ihre Kosten nicht richtig erfassen.
+Genau deshalb ist **Controlling für Agenturen** kein Nebenfach für den letzten Freitag im Monat. Es ist die Frage, ob du deinen Laden steuerst oder nur auf Umsatz hoffst.
 
-Die versteckten Kosten sind überall. Der Junior-Developer, der sich verrechnet hat und eine Woche länger am Projekt sitzt — das fällt nicht auf, wenn du keine gute [Zeiterfassung](/blog/zeiterfassung-agentur) hast. Der Account Manager, der dich beim Client anruft und eine halbe Stunde redet — das geht nicht in die Projektzeit ein. Die interne Code Review, die nicht getrackt wird. Die Abstimmungsmeetings, die nicht dokumentiert sind. Am Ende schaut man sich die Stunden an, teilt sie durch die Faktura — und freut sich auf eine 35%-Marge, die in Wirklichkeit 18% ist.
+Die Lage macht das nicht entspannter. Destatis meldete am **8. April 2026**, dass der Dienstleistungsbereich im Januar 2026 real um **1,7 %** zum Vormonat zugelegt hat, die freiberuflichen, wissenschaftlichen und technischen Dienstleistungen aber nur auf **0,7 %** kamen. Mit anderen Worten: Der Markt lebt, aber er schenkt dir keine Ruhe. Wer in so einer Phase seine Zahlen zu spät liest, arbeitet sich leicht in eine schöne Auslastung und eine hässliche Ergebnislage.
 
-Das ist keine Theorie. Das ist das, was ich in den 13 Jahren bei eins+null gesehen habe. Und es ist auch nicht schlecht gemeint — es ist nur schlecht organisiert.
+## Was Controlling für Agenturen wirklich ist
 
-## Umsatz ≠ Gewinn: Warum Stundensätze allein nichts aussagen
+Viele verwechseln Controlling mit Buchhaltung.
+Das ist ungefähr so hilfreich, wie einen Wetterbericht mit einem Regenschirm zu verwechseln.
 
-Ein Projekt mit 150€/h Stundensatz kann Geld verbrennen. Eines mit 90€/h kann hochprofitabel sein.
+Buchhaltung sagt dir, was passiert ist.
+Controlling hilft dir zu sehen, was gerade kippt.
 
-Mach die Rechnung auf. Projekt A: Du fakturierst 100 Stunden à 150€ = 15.000€. Dein durchschnittlicher Stundenkostensatz (Gehalt, Nebenkosten, Overhead verteilt auf Arbeitsstunden) liegt bei 60€. Macht 6.000€ Kostenseite. Super, 9.000€ Gewinn, 60%-Marge.
+Für Agenturen heißt das ganz konkret: Du brauchst einen Blick auf Auslastung, Projektprofitabilität, Plan-Ist-Abweichungen, Overhead, Liquidität und Forecast. Nicht, weil das schick klingt. Sondern weil genau dort die typischen Lücken entstehen.
 
-Aber warte. Die Projektleitung hat zwei extra-Treffen beim Client gemacht — insgesamt vier Stunden, nicht getrackt. Ein Bug ist nach Launch aufgetaucht, dein Senior-Dev hat acht Stunden repariert — das zahlst du aus Kulanz. Code Reviews der anderen Entwickler für die Qualitätssicherung: weitere sechs Stunden. Zusammen 18 Stunden interne Kosten, die nicht fakturiert werden. Das sind weitere 1.080€ weg.
+Wenn du nur Umsatz siehst, übersiehst du schnell alles, was teurer geworden ist, ohne dass du es sauber bemerkst. Interne Abstimmungen. Zusatzschleifen. Zu günstige Angebote. Scope-Drift. Nicht fakturierte Projektleitung. Teams, die beschäftigt sind, aber nicht produktiv in Richtung Ergebnis arbeiten.
 
-Plötzlich sind es nur noch 7.920€ Gewinn, 52%-Marge. Und das ist optimistisch, weil du mit Overhead noch nicht gerechnet hast — Miete, Server, Krankenversicherung, Buchhaltung, alles das kommt obendrauf.
+## Warum volle Auslastung deine Marge nicht automatisch rettet
 
-Projekt B mit 90€/h kann trotzdem besser sein, wenn der Prozess stimmt. 120 Stunden fakturiert, aber nur 110 Stunden intern verbraucht, weil du effizient bist. 10.800€ Umsatz, 6.600€ Kosten, 4.200€ Rohgewinn vor Overhead. Mit Overhead oft besser als Projekt A.
+Eine volle Auslastung beruhigt viele Agenturinhaber mehr, als sie sollte.
+Alle haben zu tun. Niemand sitzt herum. Der Vertrieb liefert neue Arbeit. Das fühlt sich erst mal gesund an.
 
-Das passiert, wenn du deine echten Projektkosten kennst und du dafür sorgst, dass sie auch erfasst werden. Nicht als einzelne Stunden, sondern als Struktur.
+Ist es aber nicht automatisch.
 
-## Die 5 Kennzahlen, die jeder Agenturinhaber wöchentlich prüfen sollte
+Gerade in Phasen hoher Auslastung entstehen Margenverluste oft leise. Genau darauf weist auch der Clockodo-Ratgeber vom **30. Oktober 2025** hin: Unvollständige Zeiterfassung, späte Nachkalkulation und fehlende Transparenz fressen Marge oft unbemerkt, obwohl die Auftragslage gut aussieht.
 
-Nicht monatlich. Nicht quartalsweise. Wöchentlich. Hier sind sie, und sie sind nicht kompliziert:
+Das passt ziemlich gut zu dem, was ich aus Projektgeschäften kenne.
+Nicht jede Stunde, die gearbeitet wird, landet sauber im Projektbild.
+Nicht jede Zusatzrunde wird nachkalkuliert.
+Nicht jeder Projektleiter meldet früh genug, wenn ein Budget kippt.
 
-**1. Utilization Rate**: Wie viel Prozent deiner verfügbaren Stunden werden für zahlende Projekte genutzt? Zielwert: 70-75%. Unter 60% = Engpass. Über 85% = Überlastung. Das berechnest du wöchentlich: (Geplante Projektstunden / Verfügbare Arbeitsstunden) × 100.
+Und dann passiert das, was in Agenturen ständig passiert: Ein Projekt sieht beim Start gut aus, wirkt währenddessen beschäftigt und entpuppt sich erst am Ende als deutlich schlechter als gedacht.
 
-**2. Margin je Projekt**: Nicht Stundensatz, sondern echte Marge. (Fakturierte Stunden × Stundensatz - tatsächliche Kosten) / Faktura. Wenn du hier nicht unter 40% kommst, stimmt etwas nicht. Projekte unter 30%? Rote Flagge.
+## Die Kennzahlen, die dir wirklich helfen
 
-**3. Abweichung Plan-Ist**: Wie sehr unterscheiden sich deine geschätzten Stunden von den tatsächlich geleisteten? Wenn deine Schätzung um mehr als ±20% daneben liegt, kriegst du Margin-Probleme. Das ist ein Indikator für dein Schätzwissen.
+Du brauchst keine 24 Dashboards.
+Du brauchst ein kleines Set von Zahlen, das Konsequenzen auslöst.
 
-**4. Revenue-Run-Rate**: Wie viel Umsatz generierst du diese Woche, hochgerechnet auf das Jahr? Das zeigt dir sofort, ob du on track bist. Mach das jeden Montag als erstes.
+### 1. Auslastung
 
-**5. Unproduktive Zeit**: Weiterbildung, Overhead, Infrastruktur. Das sollte realistisch 20-25% deiner Zeit sein — wenn es mehr ist, überbürokratisierst du dich. Wenn es weniger ist, wirst du langfristig ausbrennen.
+Die Frage ist nicht nur, ob dein Team beschäftigt ist.
+Die Frage ist, wie viel der verfügbaren Zeit sauber in wertschöpfende Projektarbeit geht und wie viel in Umwege, Orga, Warteschleifen und Reibung kippt.
 
-Diese fünf Zahlen nehmen dir fünf Minuten pro Woche. Aber sie zeigen dir genau, ob deine Agentur profitabel läuft oder nur so aussieht.
+Wenn du diese Zahl nicht regelmäßig siehst, kannst du hohe Belastung leicht mit guter Steuerung verwechseln.
 
-## Von Zeiterfassung zu Echtzeit-Controlling: Der Systemaufbau
+### 2. Projektprofitabilität
 
-Zeiterfassung ist der Anfang, nicht das Ziel. Das ist auch ein großer Teil der [digitalen Transformation in Mittelstands-Agenturen](/blog/digitale-transformation-mittelstand). So baust du ein System, das dir in Echtzeit zeigt, wo du stehst.
+Jedes größere Projekt sollte dir früh zeigen, ob Aufwand und Ertrag noch zueinander passen.
+Nicht erst nach Rechnungsstellung. Nicht erst beim Monatsabschluss.
+Sondern während der Laufzeit.
 
-Das System braucht drei Schichten:
+Sobald Projektstunden, Zusatzschleifen und interne Koordination entgleisen, kippt die Profitabilität. Und zwar oft schneller, als Teams das subjektiv wahrnehmen.
 
-**Erste Schicht — Die Datenerfassung**: Jeden Tag müssen deine Mitarbeiter ihre Stunden tracken. Nicht am Wochenende rückwärts. Jeden Tag. Dafür brauchst du ein Tool, das nicht nervt — ob Jira, Toggl, oder direkt in der Rechnung. Es muss Projekte, Tätigkeitsarten und ob bezahlt oder nicht erfasst. Punkt.
+### 3. Plan-Ist-Abweichung
 
-**Zweite Schicht — Die Automatisierung**: Aus diesen Stunden entstehen automatisch Kostenlinien. Eine KI könnte sogar Fehler erkennen — wenn einer vier Stunden Design auf einen Entwickler-Task schreibt, kann das eine Anomalie flaggen. Die Marge wird wöchentlich kalkuliert und in ein einfaches Dashboard geführt.
+Wenn Schätzungen regelmäßig danebenliegen, hast du kein Genauigkeitsproblem. Dann hast du ein Führungs- und Prozessproblem.
 
-**Dritte Schicht — Die Interpretation**: Jeden Montag schaust du rein. Nicht 30 Minuten Excel-Jonglage, sondern klare Ampeln: grün, gelb, rot. Grün = alles auf Budget. Gelb = 10% über Schätzung. Rot = 20%+ über Schätzung. Wenn rot, dann hast du maximal zwei Tage, um zu handeln — entweder die Schätzung korrigieren und den Client informieren oder den Prozess optimieren.
+Vielleicht ist das Briefing zu weich.
+Vielleicht ist der Scope zu offen.
+Vielleicht werden Risiken zu spät angesprochen.
+Vielleicht ist der Vertrieb zu optimistisch.
 
-Bei eins+null haben wir das mit einem einfachen BI-Tool gemacht — Power BI oder auch einfach Google Sheets, die sich automatisch aus der Zeiterfassung speisen. Die Technologie ist nicht das Problem. Das Problem ist, dass die meisten Agenturen dieses System nicht aufbauen.
+Plan-Ist-Abweichungen zeigen dir nicht nur, dass ein Projekt teurer wird. Sie zeigen dir, wo deine Steuerung unsauber ist.
 
-## Wie ich bei eins+null Transparenz geschaffen habe (und was sich verändert hat)
+### 4. Overhead-Quote
 
-Zahlen auf den Tisch. Was passiert, wenn plötzlich jeder weiß, wie profitabel sein Projekt ist.
+Agenturen unterschätzen oft, wie stark interne Koordination, Vertrieb, Recruiting, Orga und Admin die Wirtschaftlichkeit prägen.
+Gerade bei Wachstum passiert das schnell. Die Struktur wird schwerer, die Zahl der Meetings steigt, die Führung hängt in Abstimmungen fest und niemand merkt, dass die Produktivität auf dem Papier besser aussieht als in der Realität.
 
-Das war eine kulturelle Verschiebung, die ich nicht unterschätzen kann. Am Anfang war die Reaktion gemischt. Einige von uns dachten: "Der Chef kontrolliert uns jetzt permanent." Andere: "Endlich sehe ich, ob mein Projekt gut läuft." Aber das Wichtigste war: Plötzlich wurden Schätzungen ernst genommen.
+Besonders tückisch ist daran: Overhead fühlt sich oft wichtig an.
+Und vieles davon ist es auch.
+Nur eben nicht in jeder Menge.
+Wenn Projektteams ständig auf Freigaben warten, wenn Account- und Delivery-Rollen unscharf sind oder wenn jede kleine Entscheidung drei Schleifen dreht, dann steigt der interne Aufwand, ohne dass die Agentur besser steuerbar wird.
 
-Wenn dein Team weiß, dass du wöchentlich schaust und nicht monatlich, wird plötzlich jemand aktiv, wenn die Stunden driften. Der Developer merkt selbst: "Moment, ich bin bei 35 Stunden und habe erst 70% geschafft" — und meldet das proaktiv dem Projektleiter, statt es am Monatsende zu verstecken.
+### 5. Liquiditäts- und Forecast-Blick
 
-Die Projektleiter wurden besser. Sie begannen, enger zu tracken, weil sie die Daten hatten. Und wir als Führungsteam konnten viel schneller intervenieren, wenn etwas schiefging. Nicht nach drei Monaten, sondern nach zwei Wochen.
+Du musst wissen, was in den nächsten Wochen an Arbeit, Faktura und Engpässen sichtbar wird. Nicht perfekt. Aber früh genug, um noch zu reagieren.
 
-Das Gewinnziel wurde realistischer. Nicht: "Wir wollen 40% Marge machen." Sondern: "Wir sehen, dass Projekte mit gutem Briefing und klarem Scope durchschnittlich 45% Marge fahren, solche ohne sind bei 25%. Also investieren wir in bessere Briefings."
+Controlling ohne Forecast ist Rückspiegel-Fahren.
+Und Rückspiegel helfen dir bekanntlich erst dann, wenn du schon vorbeigefahren bist.
 
-Die Agentur wurde vorhersehbarer — und damit auch entspannter für alle Beteiligten. Keine Überraschungen mehr im November, wenn das Jahr vorbei ist.
+## Warum das heute ein Systemthema ist
+
+Das Ganze hängt nicht nur an Disziplin, sondern auch an Systemen.
+Bitkom meldete am **12. März 2025**, dass **53 %** der Unternehmen Probleme mit der Bewältigung der Digitalisierung haben. **82 %** sehen die Wirtschaftskrise auch als Folge zögerlicher Digitalisierung, **73 %** berichten von verlorenen Marktanteilen durch langsame Digitalisierung. Gleichzeitig wollen **29 %** ihre Digital-Investitionen erhöhen. Grundlage waren **603 Unternehmen** ab 20 Beschäftigten.
+
+Das ist für Agenturen deshalb interessant, weil Controlling längst kein isoliertes Zahlenproblem mehr ist. Wenn Systeme, Datenflüsse und Verantwortungen nicht zusammenpassen, hilft dir auch die schönste Excel-Datei wenig.
+
+Zeiterfassung allein löst das nicht.
+Ein BI-Tool allein auch nicht.
+Ein neues Agentur-OS übrigens ebenfalls nicht.
+
+Das System muss drei Dinge sauber verbinden:
+- Zeit und Aufwand
+- Projekt- und Budgetlogik
+- Führungsrhythmus
+
+Erst wenn diese drei Ebenen zusammenspielen, wird aus Reporting echte Steuerung.
+
+## Was ich aus eins+null, Leadtime und Fracto daran wichtig finde
+
+Ich kenne das Thema nicht aus Lehrbüchern.
+Bei **eins+null** war die Frage nach Transparenz und Profitabilität über viele Jahre keine theoretische Diskussion, sondern Betrieb. Genau dort lernst du ziemlich schnell, dass ein Team nicht besser arbeitet, nur weil du mehr Zahlen produzierst.
+
+Es arbeitet besser, wenn die richtigen Zahlen früh genug sichtbar sind.
+
+Seit dem Exit 2022 und heute mit **Leadtime** und **Fracto** ist die Sicht darauf eher noch klarer geworden: Gute Teams brauchen keine Zahlenkulisse. Sie brauchen ein System, das Reibung sichtbar macht, bevor sie teuer wird.
+
+Deshalb halte ich auch wenig von Controlling als Druckinstrument.
+Wenn Zahlen nur dazu dienen, Leute nervös zu machen, bekommst du Ausweichverhalten. Dann wird schöner erfasst, geschickter erklärt und später gemeldet.
+
+Gutes Agentur-Controlling macht das Gegenteil.
+Es schafft frühere Gespräche.
+Frühere Korrekturen.
+Und am Ende deutlich mehr Ruhe.
+
+## Die häufigsten Fehler im Agentur-Controlling
+
+### Fehler 1: Nur auf Umsatz schauen
+
+Umsatz ist wichtig.
+Aber Umsatz ist eine Wohlfühlzahl, wenn du ihn nicht mit Aufwand, Marge und Timing zusammendenkst.
+
+### Fehler 2: Zeiterfassung ohne Konsequenz
+
+Wenn Stunden erfasst werden, aber niemand daraus Entscheidungen ableitet, ist das keine Steuerung. Dann ist es Beschäftigung mit besserem Interface.
+
+### Fehler 3: Zahlen zu spät sehen
+
+Monatsabschluss ist für viele Entscheidungen zu spät.
+Ein Projekt, das in Woche drei kippt, interessiert sich nicht dafür, dass dein Reporting erst Ende des Monats fertig ist.
+
+### Fehler 4: Forecast als Bauchgefühl behandeln
+
+Wenn Vertrieb, Delivery und Führung unterschiedliche Bilder davon haben, was in sechs Wochen realistisch ist, wirst du unruhig planen und hektisch reagieren.
+
+## Wie du anfangen solltest, ohne gleich ein Controlling-Museum zu bauen
+
+Der Anfang darf klein sein.
+Er sollte nur nicht beliebig sein.
+
+Wenn du das Thema sauber aufsetzen willst, fang mit einem wöchentlichen Rhythmus an.
+Nicht mit 20 Kennzahlen. Eher mit einem kleinen Set:
+
+- Auslastung
+- Projektprofitabilität
+- Plan-Ist-Abweichung
+- Overhead-Belastung
+- Cash- und Forecast-Blick
+
+Dann definierst du, wer diese Zahlen sieht, wann ihr draufschaut und was eine gelbe oder rote Abweichung konkret auslöst.
+
+Zum Beispiel:
+Wenn ein Projekt zwei Wochen hintereinander über Plan läuft, wird nicht einfach weiter gehofft, sondern aktiv nachgeschärft.
+Wenn die Auslastung steigt, aber die Profitabilität fällt, schaut ihr nicht nur auf Kapazität, sondern auf Scope, Briefing und Projektführung.
+Wenn der Forecast unsauber wird, diskutiert ihr nicht erst am Monatsende, sondern im nächsten Weekly.
+
+Erst ab da wird es nützlich.
+Vorher ist es Dekoration.
+
+## FAQ zu Controlling für Agenturen
+
+### Reicht eine gute Zeiterfassung?
+Nein. Zeiterfassung ist eine Grundlage. Controlling entsteht erst dann, wenn Zeitdaten mit Projekten, Budgets, Kosten und Führungsentscheidungen verbunden werden.
+
+### Welche Kennzahl sollte ich zuerst sauber bekommen?
+Wenn du bei null startest, beginne mit Projektprofitabilität und Plan-Ist-Abweichung. Dort merkst du am schnellsten, ob Projekte wirtschaftlich aus dem Ruder laufen.
+
+### Wie oft sollte man ins Controlling schauen?
+Für Agenturen ist ein wöchentlicher Rhythmus meistens sinnvoller als reines Monatsreporting. Du willst Probleme sehen, solange du noch eingreifen kannst.
+
+### Wann wird Controlling zu viel?
+Wenn mehr Zeit in Reporting als in Entscheidungen fließt. Controlling soll Führung erleichtern, nicht neue Bürokratie erzeugen.
+
+## Mein Fazit
+
+Controlling für Agenturen ist kein Zahlenspiel für Leute, die gern Tabellen mögen.
+Es ist ein ziemlich direkter Realitätscheck.
+
+Entweder du siehst früh, wo Marge, Auslastung und Forecast kippen.
+Oder du erfährst es später über Nervosität, Liquiditätsdruck und unangenehme Überraschungen.
+
+Wenn du willst, dass dein Unternehmen läuft und nicht an deinem Bauchgefühl hängt, brauchst du ein Steuerungssystem, das früher spricht als dein Jahresabschluss.
+
+Wenn du das für deine Agentur sauber aufsetzen willst, lass uns draufschauen.
+Nicht auf 100 Kennzahlen. Sondern auf die paar, die wirklich etwas verändern.
+
+## Weiterführende Links
+- Mehr zum Systemthema: [/blog/digitale-transformation-mittelstand](/blog/digitale-transformation-mittelstand)
+- Wenn dir die Datengrundlage fehlt: [/blog/zeiterfassung-kleinunternehmen-einfuehren](/blog/zeiterfassung-kleinunternehmen-einfuehren)
+- Mehr zu meinem Hintergrund: [/ueber-mich](/ueber-mich)
+
+## Externe Quellen
+- Destatis: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_119_474.html
+- Bitkom: https://www.bitkom.org/Presse/Presseinformation/Digitalisierung-Wirtschaft-langsam
+- Clockodo: https://www.clockodo.com/de/ratgeber/agenturen/margenverlust/
