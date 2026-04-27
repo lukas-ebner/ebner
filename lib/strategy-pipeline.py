@@ -553,29 +553,56 @@ def send_paper_email(email: str, company_name: str, pdf_path: str, action_code: 
 # ══════════════════════════════════════════════════════════
 
 LEADTIME_BASE = "https://leadtime.app/api/public"
-LEADTIME_TOKEN = os.environ.get("LEADTIME_API_TOKEN", "")
+LEADTIME_TOKEN = os.environ.get("LEADTIME_EBNER_PAT", "") or os.environ.get("LEADTIME_API_TOKEN", "")
 
-LT_CONFIG = {
-    "ticketProjectId": "8b72205b-dedf-48a2-8353-d55253eb10d4",
-    "ticketTypeId": "327b0253-13df-4228-9a7b-bedbf17040b3",
-    "ticketStatusId": "e30a42cf-d211-4212-a62c-7138233dabb4",
-    "emailFieldId": "81531748-6222-4b9b-b805-adbbb85d759d",
-    "categoryId": "c60944bb-4df2-467d-ad0b-9f5987e04601",
-    "projectStatusId": "b6a95701-ba1b-47a6-a5de-4b246b2e0384",
-    "userId": "268573a4-bee0-405c-bfdb-c5b6dec1970f",
-    "taskTypes": [
-        "e4a3c02e-13fe-455d-97fb-98f0c11a5353",
-        "fe079aaf-733b-46d9-a2fd-b66b1b00d0c4",
-        "327b0253-13df-4228-9a7b-bedbf17040b3",
-    ],
-    "activities": [
-        "2280594c-641e-4fe5-b9cf-f887eef79898",
-        "80aaec6a-bb92-40d6-b6c3-7164f96e6bb3",
-        "bd16786a-8a0a-4efe-9f97-056b3916a622",
-        "f5347885-ff76-43b7-9f0f-a276035933ff",
-    ],
-    "guestRoleId": "KQPRXN_guest_",
+# EBNER workspace · SALES project (centralized sales pipeline)
+SALES = {
+    "projectId": "414c2c89-29a4-4a3c-b371-114da2c25dd5",   # SALES-22
+    "typeId": "4d5a972a-8ec6-4090-a11e-e998f0047530",      # Management
+    "statusNeu": "0d79b3dc-c71f-470c-8ea6-ac86bbfcd163",   # Neu
+    "lukasUserId": "8dcc2862-ed49-4830-8fe6-c1404e372921",
 }
+
+SOURCE_TAGS = {
+    "website-erstgespraech": "2002533c-c2b5-43b8-bbdd-8e5383366d37",
+    "website-ebook":         "70ea3b5a-ac0a-46e8-b7c0-126adf58fd8e",
+    "website-freiheitstest": "8b5a0c18-0a4b-424c-80a1-4a66d4b25456",
+    "website-unverzichtbar": "16848b43-b6f5-4923-ae22-5bba127b233c",
+    "website-chatbot":       "a5adc642-477d-4b67-8f18-628dcaf30512",
+    "linkedin-dm":           "18325108-0bf7-4cba-a377-835dbe3c1751",
+    "linkedin-comment":      "89f0829f-4176-41bc-81f5-1f584076e665",
+    "botdog-accepted":       "7c3a49d3-1f1b-40b7-b5e9-61bf92b81484",
+    "manual":                "3d2b09bc-7aef-425e-b105-e69f2ed74f66",
+}
+
+SOURCE_LABELS = {
+    "website-erstgespraech": "Erstgespräch-Anfrage (Website)",
+    "website-ebook":         "Ebook-Download (Cost of Chaos)",
+    "website-freiheitstest": "Freiheitstest-Quiz",
+    "website-unverzichtbar": "(Un)verzichtbar Leadmagnet",
+    "website-chatbot":       "KI-Readiness-Chatbot",
+    "linkedin-dm":           "LinkedIn DM",
+    "linkedin-comment":      "LinkedIn Kommentar",
+    "botdog-accepted":       "Botdog – Connection accepted",
+    "manual":                "Manuell eingetragen",
+}
+
+# Legacy → canonical mapping for spawn callers (contact, ebook, strategy-paper)
+LEGACY_SOURCE_MAP = {
+    "ebook":         "website-ebook",
+    "freiheitstest": "website-freiheitstest",
+    "erstgespraech": "website-erstgespraech",
+    "contact":       "website-erstgespraech",
+    "unverzichtbar": "website-unverzichtbar",
+}
+
+
+def normalize_source(src: str) -> str:
+    if src in SOURCE_TAGS:
+        return src
+    if src in LEGACY_SOURCE_MAP:
+        return LEGACY_SOURCE_MAP[src]
+    return "manual"
 
 
 def lt_get(path):
@@ -707,191 +734,204 @@ def extract_org_fields_from_research(research, paper_data):
     return fields
 
 
-def create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data=None):
-    """Create organization + member + project in Leadtime CRM with enriched data."""
+def _esc(s):
+    if s is None:
+        return ""
+    s = str(s)
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+             .replace('"', "&quot;").replace("'", "&#39;"))
+
+
+def _build_sales_description(email, source, name=None, company=None, position=None,
+                              phone=None, website=None, linkedin_url=None,
+                              message=None, quiz=None, top_pillars=None,
+                              executive_summary=None, profile_lines=None,
+                              org_fields=None, form_data=None):
+    """Build HTML description for a SALES ticket. Mirrors lib/leadtime.ts buildDescription."""
+    label = SOURCE_LABELS.get(source, source)
+    now_str = datetime.now().strftime("%d.%m.%Y, %H:%M")
+    parts = [f"<p>🟢 <strong>{_esc(label)}</strong> · {_esc(now_str)}</p>"]
+
+    contact = []
+    if name:         contact.append(f"<li><strong>Name:</strong> {_esc(name)}</li>")
+    contact.append(f"<li><strong>Email:</strong> <a href=\"mailto:{_esc(email)}\">{_esc(email)}</a></li>")
+    if phone:        contact.append(f"<li><strong>Telefon:</strong> {_esc(phone)}</li>")
+    if position:     contact.append(f"<li><strong>Position:</strong> {_esc(position)}</li>")
+    if company:      contact.append(f"<li><strong>Firma:</strong> {_esc(company)}</li>")
+    if website:      contact.append(f"<li><strong>Website:</strong> <a href=\"{_esc(website)}\" target=\"_blank\">{_esc(website)}</a></li>")
+    if linkedin_url: contact.append(f"<li><strong>LinkedIn:</strong> <a href=\"{_esc(linkedin_url)}\" target=\"_blank\">{_esc(linkedin_url)}</a></li>")
+    if contact:
+        parts.append("<h3>Kontakt</h3>")
+        parts.append(f"<ul>{''.join(contact)}</ul>")
+
+    if message and message.strip():
+        parts.append("<h3>Nachricht</h3>")
+        parts.append(f"<blockquote>{_esc(message).replace(chr(10), '<br>')}</blockquote>")
+
+    if quiz is not None:
+        parts.append("<h3>Freiheitstest</h3>")
+        q = []
+        score = quiz if isinstance(quiz, (int, float)) else quiz.get("score") if isinstance(quiz, dict) else None
+        if score is not None:
+            q.append(f"<li><strong>Score:</strong> {int(score)}%</li>")
+        pillars = top_pillars if top_pillars else (quiz.get("top_pillars") if isinstance(quiz, dict) else None)
+        if pillars:
+            pillar_labels = {"operations": "Operations & Führung", "systeme": "Systeme & Automatisierung", "ki": "KI-Readiness"}
+            labels = [pillar_labels.get(p, p) for p in pillars]
+            q.append(f"<li><strong>Top-Handlungsbedarf:</strong> {_esc(', '.join(labels))}</li>")
+        parts.append(f"<ul>{''.join(q)}</ul>")
+
+    if executive_summary:
+        parts.append("<h3>Analyse</h3>")
+        parts.append(f"<p>{_esc(executive_summary)}</p>")
+
+    if profile_lines:
+        rows = "".join(
+            f"<li><strong>{_esc(p[0])}:</strong> {_esc(p[1])}</li>"
+            for p in profile_lines if len(p) >= 2
+        )
+        if rows:
+            parts.append("<h3>Profil</h3>")
+            parts.append(f"<ul>{rows}</ul>")
+
+    if org_fields:
+        firmen_rows = []
+        if org_fields.get("address_street") or org_fields.get("address_city"):
+            addr = " ".join(filter(None, [
+                org_fields.get("address_street"),
+                org_fields.get("address_zip"),
+                org_fields.get("address_city"),
+                org_fields.get("address_country"),
+            ]))
+            if addr.strip():
+                firmen_rows.append(f"<li><strong>Adresse:</strong> {_esc(addr)}</li>")
+        if org_fields.get("legal_form"):       firmen_rows.append(f"<li><strong>Rechtsform:</strong> {_esc(org_fields['legal_form'])}</li>")
+        if org_fields.get("register_number"):  firmen_rows.append(f"<li><strong>HRB:</strong> {_esc(org_fields['register_number'])}</li>")
+        if org_fields.get("register_court"):   firmen_rows.append(f"<li><strong>Registergericht:</strong> {_esc(org_fields['register_court'])}</li>")
+        if org_fields.get("ceo_name"):         firmen_rows.append(f"<li><strong>{_esc(org_fields.get('ceo_position') or 'Geschäftsführung')}:</strong> {_esc(org_fields['ceo_name'])}</li>")
+        if org_fields.get("employee_count"):   firmen_rows.append(f"<li><strong>Mitarbeiter:</strong> {_esc(org_fields['employee_count'])}</li>")
+        if org_fields.get("founding_year"):    firmen_rows.append(f"<li><strong>Gegründet:</strong> {_esc(org_fields['founding_year'])}</li>")
+        if firmen_rows:
+            parts.append("<h3>Firmendaten (auto-enriched)</h3>")
+            parts.append(f"<ul>{''.join(firmen_rows)}</ul>")
+
+    fd = form_data or {}
+    utm_keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "referrer", "landingPage"]
+    if any(fd.get(k) for k in utm_keys):
+        parts.append("<h3>Tracking</h3>")
+        utm_rows = "".join(
+            f"<li><strong>{_esc(k)}:</strong> {_esc(fd[k])}</li>"
+            for k in utm_keys if fd.get(k)
+        )
+        parts.append(f"<ul>{utm_rows}</ul>")
+
+    if fd.get("actionCode"):
+        parts.append(f"<p><strong>Aktionscode:</strong> {_esc(fd['actionCode'])}</p>")
+
+    return "\n".join(parts)
+
+
+def _build_sales_title(email, source, name=None, company=None):
+    suffix = source
+    if suffix.startswith("website-"):  suffix = suffix[len("website-"):]
+    if suffix.startswith("linkedin-"): suffix = "LI-" + suffix[len("linkedin-"):]
+    if suffix.startswith("botdog-"):   suffix = "BD-" + suffix[len("botdog-"):]
+
+    if name and company:
+        return f"{name}, {company} — {suffix}"
+    if name:
+        return f"{name} — {suffix}"
+    if company:
+        return f"{company} — {suffix}"
+    return f"{email} — {suffix}"
+
+
+def create_sales_ticket(email, source, name=None, company=None, position=None,
+                         phone=None, website=None, linkedin_url=None,
+                         message=None, quiz=None, top_pillars=None,
+                         executive_summary=None, profile_lines=None,
+                         org_fields=None, form_data=None):
+    """Create one ticket in the centralized SALES project (EBNER workspace).
+
+    Replaces the old create_leadtime_lead() org+person+project logic. All lead
+    data lives in the ticket description. Source differentiation via tag.
+    """
     if not LEADTIME_TOKEN:
-        log("  ⚠ LEADTIME_API_TOKEN not set – skipping")
+        log("  ⚠ LEADTIME_EBNER_PAT not set – skipping SALES ticket")
+        return None
+
+    src = normalize_source(source)
+    title = _build_sales_title(email, src, name=name, company=company)
+    description = _build_sales_description(
+        email, src, name=name, company=company, position=position,
+        phone=phone, website=website, linkedin_url=linkedin_url,
+        message=message, quiz=quiz, top_pillars=top_pillars,
+        executive_summary=executive_summary, profile_lines=profile_lines,
+        org_fields=org_fields, form_data=form_data,
+    )
+    priority = "High" if src == "website-erstgespraech" else "Normal"
+
+    payload = {
+        "title": title,
+        "projectId": SALES["projectId"],
+        "typeId": SALES["typeId"],
+        "statusId": SALES["statusNeu"],
+        "priority": priority,
+        "assignedToId": SALES["lukasUserId"],
+        "summary": SOURCE_LABELS.get(src, src),
+        "estimatedTime": 30,
+        "description": description,
+        "tags": [SOURCE_TAGS[src]],
+    }
+
+    try:
+        result = lt_post("/tasks", payload)
+        sn = result.get("shortNumber") if isinstance(result, dict) else None
+        log(f"  → SALES-{sn} created · {email} · {src}")
+        return result
+    except Exception as e:
+        log(f"  ⚠ SALES ticket creation failed: {e}")
+        return None
+
+
+def create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data=None, chat_context=None):
+    """Backward-compat wrapper. Delegates to create_sales_ticket().
+
+    If chat_context is set (KI-Readiness chatbot path), source=website-chatbot.
+    Otherwise the source is website-freiheitstest (regular quiz path).
+    """
+    if not LEADTIME_TOKEN:
+        log("  ⚠ LEADTIME_EBNER_PAT not set – skipping")
         return
 
-    pillar_labels = {"operations": "Operations & Führung", "systeme": "Systeme & Automatisierung", "ki": "KI-Readiness"}
-    now_str = datetime.now().strftime("%d.%m.%Y")
+    # Extract structured fields from research (kept — used inside the description now)
+    org_fields = extract_org_fields_from_research(research, paper_data or {})
+    log(f"  → Extracted org fields: street={org_fields['address_street']}, city={org_fields['address_city']}, phone={org_fields['phone']}, legal={org_fields['legal_form']}, ceo={org_fields['ceo_name']}")
 
-    # Extract structured fields from research
-    org_fields = extract_org_fields_from_research(research, paper_data)
-    log(f"  → Extracted org fields: street={org_fields['address_street']}, city={org_fields['address_city']}, phone={org_fields['phone']}, email={org_fields['email']}, legal={org_fields['legal_form']}, ceo={org_fields['ceo_name']}")
+    contact_name = (paper_data or {}).get("contact_name")
+    src = "website-chatbot" if chat_context else "website-freiheitstest"
 
-    # Build description with all available data
-    desc = [f"<p><strong>Quelle:</strong> Freiheitstest ({now_str})</p>"]
-    desc.append(f"<p><strong>E-Mail:</strong> {email}</p>")
-    contact_name = paper_data.get("contact_name")
-    if contact_name:
-        desc.append(f"<p><strong>Name:</strong> {contact_name}</p>")
-    desc.append(f"<p><strong>Freiheitsgrad:</strong> {quiz['score']}%</p>")
-    top_pillars = quiz.get("top_pillars", [])
-    if top_pillars:
-        labels = [pillar_labels.get(p, p) for p in top_pillars]
-        desc.append(f"<p><strong>Handlungsbedarf:</strong> {', '.join(labels)}</p>")
-    # Add executive summary from analysis
-    summary = paper_data.get("executive_summary", "")
-    if summary:
-        desc.append(f"<p><strong>Analyse:</strong> {summary}</p>")
-    # Add profile lines (enriched data)
-    profile = paper_data.get("profile_lines", [])
-    if profile:
-        profile_html = "".join(f"<li>{p[0]}: {p[1]}</li>" for p in profile if len(p) >= 2)
-        desc.append(f"<p><strong>Profil:</strong></p><ul>{profile_html}</ul>")
-    attr_html = _build_attribution_html(form_data or {})
-    if attr_html:
-        desc.append(attr_html)
+    # If chatbot, include the conversation summary in the message field
+    msg = (form_data or {}).get("message")
+    if chat_context and not msg:
+        msg = f"[Chat-Verlauf]\n{chat_context}"
 
-    has_company = bool(company_name and company_name.strip())
+    create_sales_ticket(
+        email=email,
+        source=src,
+        name=contact_name,
+        company=company_name if company_name and company_name.strip() else None,
+        phone=org_fields.get("phone"),
+        website=f"https://{domain}" if domain else None,
+        message=msg,
+        quiz=quiz,
+        executive_summary=(paper_data or {}).get("executive_summary"),
+        profile_lines=(paper_data or {}).get("profile_lines"),
+        org_fields=org_fields,
+        form_data=form_data,
+    )
+    return
 
-    if not has_company and domain:
-        # Use domain as company name fallback
-        company_name = domain.split(".")[0]
-        has_company = True
-
-    if has_company:
-        # ── Full lead: Org + Member + Project ──
-        # 1. Find or create organization
-        orgs_data = lt_get("/organizations?pageSize=100&page=1")
-        items = orgs_data.get("items", orgs_data.get("data", orgs_data if isinstance(orgs_data, list) else []))
-        comp_lower = company_name.lower()
-        existing = next((o for o in items if comp_lower in o["name"].lower() or o["name"].lower() in comp_lower), None)
-
-        # Build full address
-        addr_street = org_fields["address_street"]
-        addr_zip = org_fields["address_zip"]
-        addr_city = org_fields["address_city"]
-
-        if existing:
-            org_id = existing["id"]
-            log(f"  → Org exists: {existing['name']} ({org_id})")
-            # Patch with enriched data if fields were empty
-            patch_data = {}
-            if addr_street:
-                patch_data["addressStreet"] = addr_street
-            if addr_zip:
-                patch_data["addressZip"] = addr_zip
-            if addr_city:
-                patch_data["addressCity"] = addr_city
-            if org_fields["phone"]:
-                patch_data["phone"] = org_fields["phone"]
-            if org_fields["email"]:
-                patch_data["email"] = org_fields["email"]
-            if org_fields["legal_form"]:
-                patch_data["legalForm"] = org_fields["legal_form"]
-            if org_fields["register_number"]:
-                patch_data["registrationNumber"] = org_fields["register_number"]
-            if org_fields["register_court"]:
-                patch_data["registrationCourt"] = org_fields["register_court"]
-            if patch_data:
-                try:
-                    lt_patch(f"/organizations/{org_id}", patch_data)
-                    log(f"  → Org enriched with: {', '.join(patch_data.keys())}")
-                except Exception as e:
-                    log(f"  → Org patch failed (non-blocking): {e}")
-        else:
-            website = f"https://{domain}" if domain else ""
-            org_payload = {
-                "name": company_name,
-                "type": "Prospect",
-                "color": "#F44900",
-                "website": website,
-                "addressCountry": org_fields["address_country"],
-            }
-            if addr_street:
-                org_payload["addressStreet"] = addr_street
-            if addr_zip:
-                org_payload["addressZip"] = addr_zip
-            if addr_city:
-                org_payload["addressCity"] = addr_city
-            if org_fields["phone"]:
-                org_payload["phone"] = org_fields["phone"]
-            if org_fields["email"]:
-                org_payload["email"] = org_fields["email"]
-            if org_fields["legal_form"]:
-                org_payload["legalForm"] = org_fields["legal_form"]
-            if org_fields["register_number"]:
-                org_payload["registrationNumber"] = org_fields["register_number"]
-            if org_fields["register_court"]:
-                org_payload["registrationCourt"] = org_fields["register_court"]
-
-            org = lt_post("/organizations", org_payload)
-            org_id = org["id"]
-            log(f"  → Org created: {company_name} ({org_id})")
-
-        # 2. Create member – use contact_name + enrich with CEO data from research
-        first_name = "-"
-        last_name = "-"
-        position = ""
-        ceo_parts = org_fields["ceo_name"].strip().split() if org_fields["ceo_name"] else []
-
-        if contact_name:
-            parts = contact_name.strip().split()
-            first_name = parts[0]
-            if len(parts) > 1:
-                last_name = parts[-1]
-            elif ceo_parts and len(ceo_parts) >= 2 and ceo_parts[0].lower() == first_name.lower():
-                # contact_name is just "Lukas", CEO is "Lukas Ebner" → use Ebner
-                last_name = ceo_parts[-1]
-                position = org_fields["ceo_position"] or "Geschäftsführer"
-            else:
-                last_name = "-"
-        elif ceo_parts:
-            first_name = ceo_parts[0]
-            last_name = ceo_parts[-1] if len(ceo_parts) > 1 else "-"
-            position = org_fields["ceo_position"] or "Geschäftsführer"
-
-        try:
-            lt_post("/organizations/members", {
-                "organizationId": org_id,
-                "firstName": first_name,
-                "lastName": last_name,
-                "email": email,
-                "position": position,
-                "phone": org_fields["phone"],
-                "roleId": LT_CONFIG["guestRoleId"],
-                "isActive": True,
-                "canLogin": False,
-            })
-            log(f"  → Member created: {first_name} {last_name}")
-        except Exception:
-            log(f"  → Member exists or creation skipped")
-
-        # 3. Create project (sales opportunity)
-        proj = lt_post("/projects", {
-            "name": f"{company_name} – Freiheitstest",
-            "type": "Support",
-            "valueGroup": "DirectValue",
-            "categoryId": LT_CONFIG["categoryId"],
-            "statusId": LT_CONFIG["projectStatusId"],
-            "phaseId": None,
-            "organizationId": org_id,
-            "description": "\n".join(desc),
-            "guestAccess": False,
-            "users": [LT_CONFIG["userId"]],
-            "teams": [],
-            "taskTypes": LT_CONFIG["taskTypes"],
-            "activities": LT_CONFIG["activities"],
-            "customFields": {},
-        })
-        log(f"  → Project created: {proj.get('shortName', '?')} – {proj.get('name', '?')}")
-
-    else:
-        # ── Freemail fallback: just a ticket ──
-        lt_post("/tasks", {
-            "title": f"Freiheitstest: {email}",
-            "projectId": LT_CONFIG["ticketProjectId"],
-            "typeId": LT_CONFIG["ticketTypeId"],
-            "statusId": LT_CONFIG["ticketStatusId"],
-            "priority": "Normal",
-            "summary": f"Freiheitstest von {email}",
-            "estimatedTime": 1,
-            "description": "\n".join(desc),
-            "customFields": [{"fieldId": LT_CONFIG["emailFieldId"], "value": email}],
-        })
-        log(f"  → Ticket created in INT-1")
 
 
 # ══════════════════════════════════════════════════════════
@@ -938,7 +978,7 @@ def run_pipeline(email: str, quiz: dict, send_email: bool = True, chat_context: 
     # ── Step 2b: Leadtime CRM ──
     log("── STEP 2b: Leadtime CRM ──")
     try:
-        create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data)
+        create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data, chat_context=chat_context)
         log(f"  ✓ Lead created in Leadtime\n")
     except Exception as e:
         log(f"  ⚠ Leadtime failed (non-blocking): {e}\n")
@@ -1025,43 +1065,15 @@ def run_enrich(email: str, source: str = "ebook", form_data: dict = None) -> dic
     domain = extract_domain(email)
 
     if not domain:
-        log("── Freemail → creating ticket only ──")
-        # Create a simple ticket for freemail addresses
-        try:
-            source_label = {"ebook": "Ebook-Download", "erstgespraech": "Erstgespräch", "contact": "Kontaktanfrage"}.get(source, source)
-            now_str = datetime.now().strftime("%d.%m.%Y")
-            desc = [
-                f"<p><strong>Quelle:</strong> {source_label} ({now_str})</p>",
-                f"<p><strong>E-Mail:</strong> {email}</p>",
-            ]
-            if form_data.get("name"):
-                desc.append(f"<p><strong>Name:</strong> {form_data['name']}</p>")
-            if form_data.get("company"):
-                desc.append(f"<p><strong>Unternehmen:</strong> {form_data['company']}</p>")
-            if form_data.get("message"):
-                msg_html = form_data["message"].replace("\n", "<br/>")
-                desc.append(f"<p><strong>Formulardaten:</strong><br/>{msg_html}</p>")
-            if form_data.get("actionCode"):
-                desc.append(f"<p><strong>Aktionscode:</strong> {form_data['actionCode']}</p>")
-            attr_html = _build_attribution_html(form_data)
-            if attr_html:
-                desc.append(attr_html)
-            if LEADTIME_TOKEN:
-                lt_post("/tasks", {
-                    "title": f"{source_label}: {email}",
-                    "projectId": LT_CONFIG["ticketProjectId"],
-                    "typeId": LT_CONFIG["ticketTypeId"],
-                    "statusId": LT_CONFIG["ticketStatusId"],
-                    "priority": "Normal",
-                    "summary": f"{source_label} von {email}",
-                    "estimatedTime": 1,
-                    "description": "\n".join(desc),
-                    "customFields": [{"fieldId": LT_CONFIG["emailFieldId"], "value": email}],
-                })
-                log(f"  → Ticket created in INT-1")
-        except Exception as e:
-            log(f"  ⚠ Ticket creation failed: {e}")
-
+        log("── Freemail → SALES ticket without enrichment ──")
+        create_sales_ticket(
+            email=email,
+            source=source,
+            name=form_data.get("name"),
+            company=form_data.get("company"),
+            message=form_data.get("message"),
+            form_data=form_data,
+        )
         elapsed = (datetime.now() - started).total_seconds()
         return {"email": email, "source": source, "domain": None, "elapsed_seconds": elapsed}
 
@@ -1087,135 +1099,20 @@ def run_enrich(email: str, source: str = "ebook", form_data: dict = None) -> dic
     org_fields = extract_org_fields_from_research(research, {})
     log(f"  → Fields: street={org_fields['address_street']}, city={org_fields['address_city']}, phone={org_fields['phone']}, legal={org_fields['legal_form']}")
 
-    # ── Step 4: Create Leadtime lead ──
-    log("── STEP 2: Leadtime CRM ──")
-    source_label = {"ebook": "Ebook-Download", "erstgespraech": "Erstgespräch", "contact": "Kontaktanfrage"}.get(source, source)
-    now_str = datetime.now().strftime("%d.%m.%Y")
-
-    if LEADTIME_TOKEN:
-        try:
-            # Build description with all form data
-            desc = [
-                f"<p><strong>Quelle:</strong> {source_label} ({now_str})</p>",
-                f"<p><strong>E-Mail:</strong> {email}</p>",
-            ]
-            if form_data.get("name"):
-                desc.append(f"<p><strong>Name:</strong> {form_data['name']}</p>")
-            if form_data.get("company"):
-                desc.append(f"<p><strong>Unternehmen:</strong> {form_data['company']}</p>")
-            if form_data.get("message"):
-                msg_html = form_data["message"].replace("\n", "<br/>")
-                desc.append(f"<p><strong>Formulardaten:</strong><br/>{msg_html}</p>")
-            if form_data.get("actionCode"):
-                desc.append(f"<p><strong>Aktionscode:</strong> {form_data['actionCode']}</p>")
-            attr_html = _build_attribution_html(form_data)
-            if attr_html:
-                desc.append(attr_html)
-
-            # Find or create org
-            orgs_data = lt_get("/organizations?pageSize=100&page=1")
-            items = orgs_data.get("items", orgs_data.get("data", orgs_data if isinstance(orgs_data, list) else []))
-            comp_lower = company_name.lower()
-            existing = next((o for o in items if comp_lower in o["name"].lower() or o["name"].lower() in comp_lower), None)
-
-            org_payload_fields = {}
-            if org_fields["address_street"]:
-                org_payload_fields["addressStreet"] = org_fields["address_street"]
-            if org_fields["address_zip"]:
-                org_payload_fields["addressZip"] = org_fields["address_zip"]
-            if org_fields["address_city"]:
-                org_payload_fields["addressCity"] = org_fields["address_city"]
-            if org_fields["phone"]:
-                org_payload_fields["phone"] = org_fields["phone"]
-            if org_fields["email"]:
-                org_payload_fields["email"] = org_fields["email"]
-            if org_fields["legal_form"]:
-                org_payload_fields["legalForm"] = org_fields["legal_form"]
-            if org_fields["register_number"]:
-                org_payload_fields["registrationNumber"] = org_fields["register_number"]
-            if org_fields["register_court"]:
-                org_payload_fields["registrationCourt"] = org_fields["register_court"]
-
-            if existing:
-                org_id = existing["id"]
-                log(f"  → Org exists: {existing['name']} ({org_id})")
-                if org_payload_fields:
-                    try:
-                        lt_patch(f"/organizations/{org_id}", org_payload_fields)
-                        log(f"  → Org enriched with: {', '.join(org_payload_fields.keys())}")
-                    except Exception as e:
-                        log(f"  → Org patch failed: {e}")
-            else:
-                org = lt_post("/organizations", {
-                    "name": company_name,
-                    "type": "Prospect",
-                    "color": "#F44900",
-                    "website": f"https://{domain}",
-                    "addressCountry": "Deutschland",
-                    **org_payload_fields,
-                })
-                org_id = org["id"]
-                log(f"  → Org created: {company_name} ({org_id})")
-
-            # Create member — prefer form name over email-guessed name
-            contact_name = form_data.get("name") or resolve_contact_name(email, research)
-            first_name = "-"
-            last_name = "-"
-            position = ""
-            ceo_parts = org_fields["ceo_name"].strip().split() if org_fields["ceo_name"] else []
-
-            if contact_name:
-                parts = contact_name.strip().split()
-                first_name = parts[0]
-                if len(parts) > 1:
-                    last_name = parts[-1]
-                elif ceo_parts and len(ceo_parts) >= 2 and ceo_parts[0].lower() == first_name.lower():
-                    last_name = ceo_parts[-1]
-                    position = org_fields["ceo_position"] or "Geschäftsführer"
-            elif ceo_parts:
-                first_name = ceo_parts[0]
-                last_name = ceo_parts[-1] if len(ceo_parts) > 1 else "-"
-                position = org_fields["ceo_position"] or "Geschäftsführer"
-
-            try:
-                lt_post("/organizations/members", {
-                    "organizationId": org_id,
-                    "firstName": first_name,
-                    "lastName": last_name,
-                    "email": email,
-                    "position": position,
-                    "phone": org_fields.get("phone", ""),
-                    "roleId": LT_CONFIG["guestRoleId"],
-                    "isActive": True,
-                    "canLogin": False,
-                })
-                log(f"  → Member created: {first_name} {last_name}")
-            except Exception:
-                log(f"  → Member exists or creation skipped")
-
-            # Create project
-            proj = lt_post("/projects", {
-                "name": f"{company_name} – {source_label}",
-                "type": "Support",
-                "valueGroup": "DirectValue",
-                "categoryId": LT_CONFIG["categoryId"],
-                "statusId": LT_CONFIG["projectStatusId"],
-                "phaseId": None,
-                "organizationId": org_id,
-                "description": "\n".join(desc),
-                "guestAccess": False,
-                "users": [LT_CONFIG["userId"]],
-                "teams": [],
-                "taskTypes": LT_CONFIG["taskTypes"],
-                "activities": LT_CONFIG["activities"],
-                "customFields": {},
-            })
-            log(f"  → Project created: {proj.get('shortName', '?')} – {proj.get('name', '?')}")
-
-        except Exception as e:
-            log(f"  ⚠ Leadtime failed: {e}")
-    else:
-        log("  ⚠ LEADTIME_API_TOKEN not set – skipping")
+    # ── Step 4: Create SALES ticket ──
+    log("── STEP 2: SALES ticket ──")
+    contact_name = form_data.get("name") or resolve_contact_name(email, research)
+    create_sales_ticket(
+        email=email,
+        source=source,
+        name=contact_name,
+        company=company_name,
+        phone=org_fields.get("phone"),
+        website=f"https://{domain}" if domain else None,
+        message=form_data.get("message"),
+        org_fields=org_fields,
+        form_data=form_data,
+    )
 
     elapsed = (datetime.now() - started).total_seconds()
     log(f"\n{'='*60}")

@@ -20,7 +20,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'email and source are required' }, { status: 400 })
     }
 
-    const validSources: LeadSource[] = ['ebook', 'freiheitstest', 'erstgespraech']
+    const validSources: (LeadSource | string)[] = [
+      // Legacy values (still accepted, mapped internally)
+      'ebook', 'freiheitstest', 'erstgespraech', 'unverzichtbar',
+      // New canonical values
+      'website-erstgespraech', 'website-ebook', 'website-freiheitstest',
+      'website-unverzichtbar', 'website-chatbot',
+      'linkedin-dm', 'linkedin-comment', 'botdog-accepted', 'manual',
+    ]
     if (!validSources.includes(source)) {
       return NextResponse.json({ error: 'Invalid source' }, { status: 400 })
     }
@@ -28,12 +35,16 @@ export async function POST(req: NextRequest) {
     // Fire-and-forget: don't block the response on CRM creation
     createLead({
       email, name, company, position, source, message, quizScore, quizTopPillars,
-      utm_source: utm?.utm_source,
-      utm_medium: utm?.utm_medium,
-      utm_campaign: utm?.utm_campaign,
-      utm_content: utm?.utm_content,
-      utm_term: utm?.utm_term,
-      gclid: utm?.gclid,
+      utm: utm ? {
+        utm_source: utm.utm_source,
+        utm_medium: utm.utm_medium,
+        utm_campaign: utm.utm_campaign,
+        utm_content: utm.utm_content,
+        utm_term: utm.utm_term,
+        gclid: utm.gclid,
+        referrer: utm.referrer,
+        landingPage: utm.landingPage,
+      } : undefined,
     }).catch((err) =>
       console.error('[lead] Background lead creation failed:', err)
     )
