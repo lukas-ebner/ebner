@@ -1,77 +1,119 @@
 /**
- * Leadtime CRM Integration
+ * Leadtime CRM — centralized sales pipeline.
  *
- * Centralized module for creating leads in Leadtime from:
- * - Ebook downloads (email only)
- * - Freiheitstest / Strategy Paper (email + quiz data, sometimes company)
- * - Erstgespräch form (name + company + email + message)
+ * Every inbound lead (website form, lead magnet, LinkedIn DM, manual entry)
+ * becomes ONE ticket in the SALES project (EBNER workspace, SALES-22).
  *
- * Logic:
- *   If company is known → create Organization + Person + Project (sales opportunity)
- *   If only email (freemail, no company) → create Ticket in "Laufende Anfragen"
+ * No organization, no person, no per-lead project. All contact info lives
+ * inside the ticket description. When a lead becomes substantive (booked
+ * meeting, signed proposal), the org/person gets created manually.
+ *
+ * Workspace: EBNER · Project: SALES (414c2c89-…) · Status: Neu (0d79b3dc-…)
+ * Differentiation: source-tag (src:website-ebook, src:linkedin-dm, …)
  */
 
-// ── Config ──────────────────────────────────────────────────────────────
-
 const LEADTIME_BASE = 'https://leadtime.app/api/public'
-const LEADTIME_TOKEN = process.env.LEADTIME_API_TOKEN || ''
 
-// Leadtime IDs (lukasebner.de workspace)
-const CONFIG = {
-  // Project for anonymous tickets (no company known)
-  ticketProjectId: '8b72205b-dedf-48a2-8353-d55253eb10d4',
-  // Task type "Anfrage"
-  ticketTypeId: '327b0253-13df-4228-9a7b-bedbf17040b3',
-  // Task status "New"
-  ticketStatusId: 'e30a42cf-d211-4212-a62c-7138233dabb4',
-  // Custom field "Anfrager E-Mail"
-  emailFieldId: '81531748-6222-4b9b-b805-adbbb85d759d',
-  // Project config (copied to new sales opportunities)
-  categoryId: 'c60944bb-4df2-467d-ad0b-9f5987e04601',
-  projectStatusId: 'b6a95701-ba1b-47a6-a5de-4b246b2e0384', // "Vertrieb"
-  userId: '268573a4-bee0-405c-bfdb-c5b6dec1970f', // Lukas
-  taskTypes: [
-    'e4a3c02e-13fe-455d-97fb-98f0c11a5353',
-    'fe079aaf-733b-46d9-a2fd-b66b1b00d0c4',
-    '327b0253-13df-4228-9a7b-bedbf17040b3',
-  ],
-  activities: [
-    '2280594c-641e-4fe5-b9cf-f887eef79898',
-    '80aaec6a-bb92-40d6-b6c3-7164f96e6bb3',
-    'bd16786a-8a0a-4efe-9f97-056b3916a622',
-    'f5347885-ff76-43b7-9f0f-a276035933ff',
-  ],
-  guestRoleId: 'KQPRXN_guest_',
+function getToken(): string {
+  return process.env.LEADTIME_EBNER_PAT || process.env.LEADTIME_API_TOKEN || ''
 }
 
-const FREEMAIL_DOMAINS = [
-  'gmail.com', 'googlemail.com', 'yahoo.com', 'yahoo.de',
-  'hotmail.com', 'hotmail.de', 'outlook.com', 'outlook.de',
-  'web.de', 'gmx.de', 'gmx.net', 'gmx.at', 'gmx.ch',
-  't-online.de', 'icloud.com', 'me.com', 'mac.com',
-  'live.com', 'live.de', 'aol.com', 'protonmail.com',
-  'proton.me', 'mail.de', 'posteo.de', 'mailbox.org',
-]
+// ── EBNER workspace UUIDs ───────────────────────────────────────────────
+
+const SALES = {
+  projectId: '414c2c89-29a4-4a3c-b371-114da2c25dd5',     // SALES-22
+  typeId: '4d5a972a-8ec6-4090-a11e-e998f0047530',        // Management
+  statusNeu: '0d79b3dc-c71f-470c-8ea6-ac86bbfcd163',     // Neu
+  lukasUserId: '8dcc2862-ed49-4830-8fe6-c1404e372921',
+} as const
+
+// Source tag UUIDs (created 2026-04-27 via API)
+const SOURCE_TAGS: Record<LeadSource, string> = {
+  'website-erstgespraech': '2002533c-c2b5-43b8-bbdd-8e5383366d37',
+  'website-ebook':         '70ea3b5a-ac0a-46e8-b7c0-126adf58fd8e',
+  'website-freiheitstest': '8b5a0c18-0a4b-424c-80a1-4a66d4b25456',
+  'website-unverzichtbar': '16848b43-b6f5-4923-ae22-5bba127b233c',
+  'website-chatbot':       'a5adc642-477d-4b67-8f18-628dcaf30512',
+  'linkedin-dm':           '18325108-0bf7-4cba-a377-835dbe3c1751',
+  'linkedin-comment':      '89f0829f-4176-41bc-81f5-1f584076e665',
+  'botdog-accepted':       '7c3a49d3-1f1b-40b7-b5e9-61bf92b81484',
+  'manual':                '3d2b09bc-7aef-425e-b105-e69f2ed74f66',
+}
+
+const SOURCE_LABELS: Record<LeadSource, string> = {
+  'website-erstgespraech': 'Erstgespräch-Anfrage (Website)',
+  'website-ebook':         'Ebook-Download (Cost of Chaos)',
+  'website-freiheitstest': 'Freiheitstest-Quiz',
+  'website-unverzichtbar': '(Un)verzichtbar Leadmagnet',
+  'website-chatbot':       'KI-Readiness-Chatbot',
+  'linkedin-dm':           'LinkedIn DM',
+  'linkedin-comment':      'LinkedIn Kommentar',
+  'botdog-accepted':       'Botdog – Connection accepted',
+  'manual':                'Manuell eingetragen',
+}
+
+// Backward-compat: old LeadSource strings used by existing callers
+const LEGACY_SOURCE_MAP: Record<string, LeadSource> = {
+  'ebook':         'website-ebook',
+  'freiheitstest': 'website-freiheitstest',
+  'erstgespraech': 'website-erstgespraech',
+  'unverzichtbar': 'website-unverzichtbar',
+}
+
+// ── Public types ────────────────────────────────────────────────────────
+
+export type LeadSource =
+  | 'website-erstgespraech'
+  | 'website-ebook'
+  | 'website-freiheitstest'
+  | 'website-unverzichtbar'
+  | 'website-chatbot'
+  | 'linkedin-dm'
+  | 'linkedin-comment'
+  | 'botdog-accepted'
+  | 'manual'
+
+export interface LeadData {
+  email: string
+  source: LeadSource | string  // string accepted for legacy values
+  // Identity
+  name?: string
+  firstName?: string
+  lastName?: string
+  company?: string
+  position?: string
+  phone?: string
+  linkedinUrl?: string
+  website?: string
+  // Lead content
+  message?: string
+  // Quiz / scoring
+  quizScore?: number
+  quizTopPillars?: string[]
+  // Attribution
+  utm?: {
+    utm_source?: string
+    utm_medium?: string
+    utm_campaign?: string
+    utm_term?: string
+    utm_content?: string
+    gclid?: string
+    referrer?: string
+    landingPage?: string
+  }
+  // Free-form extras (rendered as additional rows)
+  extras?: Record<string, string | number | undefined>
+}
 
 // ── HTTP helpers ────────────────────────────────────────────────────────
 
-function headers() {
-  return {
-    Authorization: `Bearer ${LEADTIME_TOKEN}`,
-    'Content-Type': 'application/json',
-  }
-}
-
-async function ltGet(path: string) {
-  const res = await fetch(`${LEADTIME_BASE}${path}`, { headers: headers() })
-  if (!res.ok) throw new Error(`Leadtime GET ${path}: ${res.status}`)
-  return res.json()
-}
-
-async function ltPost(path: string, body: Record<string, unknown>) {
+async function ltPost(path: string, body: Record<string, unknown>): Promise<Record<string, unknown>> {
   const res = await fetch(`${LEADTIME_BASE}${path}`, {
     method: 'POST',
-    headers: headers(),
+    headers: {
+      Authorization: `Bearer ${getToken()}`,
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(body),
   })
   if (!res.ok) {
@@ -81,311 +123,142 @@ async function ltPost(path: string, body: Record<string, unknown>) {
   return res.json()
 }
 
-async function ltPatch(path: string, body: Record<string, unknown>) {
-  const res = await fetch(`${LEADTIME_BASE}${path}`, {
-    method: 'PATCH',
-    headers: headers(),
-    body: JSON.stringify(body),
+// ── Builders ────────────────────────────────────────────────────────────
+
+function normalizeSource(src: LeadSource | string): LeadSource {
+  if (src in SOURCE_TAGS) return src as LeadSource
+  if (src in LEGACY_SOURCE_MAP) return LEGACY_SOURCE_MAP[src]
+  return 'manual'
+}
+
+function escapeHtml(s: string | undefined | null): string {
+  if (!s) return ''
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+function buildTitle(data: LeadData, source: LeadSource): string {
+  const sourceTag = source.replace(/^website-/, '').replace(/^linkedin-/, 'LI-').replace(/^botdog-/, 'BD-')
+  const name = (data.name || [data.firstName, data.lastName].filter(Boolean).join(' ')).trim()
+  const company = data.company?.trim()
+
+  if (name && company) return `${name}, ${company} — ${sourceTag}`
+  if (name)            return `${name} — ${sourceTag}`
+  if (company)         return `${company} — ${sourceTag}`
+  return `${data.email} — ${sourceTag}`
+}
+
+function buildDescription(data: LeadData, source: LeadSource): string {
+  const label = SOURCE_LABELS[source]
+  const date = new Date().toLocaleString('de-DE', {
+    day: '2-digit', month: '2-digit', year: 'numeric',
+    hour: '2-digit', minute: '2-digit',
   })
-  if (!res.ok) {
-    const text = await res.text()
-    throw new Error(`Leadtime PATCH ${path}: ${res.status} – ${text}`)
-  }
-  return res.json()
-}
 
-// ── Company enrichment via Serper ───────────────────────────────────────
+  const lines: string[] = []
+  lines.push(`<p>🟢 <strong>${escapeHtml(label)}</strong> · ${escapeHtml(date)}</p>`)
 
-interface CompanyData {
-  website?: string
-  street?: string
-  zip?: string
-  city?: string
-  country?: string
-}
-
-async function enrichCompany(company: string, email: string): Promise<CompanyData> {
-  const result: CompanyData = {}
-
-  // Fallback: email domain as website
-  const domain = email.split('@')[1]
-  if (domain && !FREEMAIL_DOMAINS.includes(domain)) {
-    result.website = `https://${domain}`
+  // Contact block
+  const contact: string[] = []
+  const fullName = data.name || [data.firstName, data.lastName].filter(Boolean).join(' ')
+  if (fullName) contact.push(`<li><strong>Name:</strong> ${escapeHtml(fullName)}</li>`)
+  contact.push(`<li><strong>Email:</strong> <a href="mailto:${escapeHtml(data.email)}">${escapeHtml(data.email)}</a></li>`)
+  if (data.phone)       contact.push(`<li><strong>Telefon:</strong> ${escapeHtml(data.phone)}</li>`)
+  if (data.position)    contact.push(`<li><strong>Position:</strong> ${escapeHtml(data.position)}</li>`)
+  if (data.company)     contact.push(`<li><strong>Firma:</strong> ${escapeHtml(data.company)}</li>`)
+  if (data.website)     contact.push(`<li><strong>Website:</strong> <a href="${escapeHtml(data.website)}" target="_blank">${escapeHtml(data.website)}</a></li>`)
+  if (data.linkedinUrl) contact.push(`<li><strong>LinkedIn:</strong> <a href="${escapeHtml(data.linkedinUrl)}" target="_blank">${escapeHtml(data.linkedinUrl)}</a></li>`)
+  if (contact.length) {
+    lines.push('<h3>Kontakt</h3>')
+    lines.push(`<ul>${contact.join('')}</ul>`)
   }
 
-  const serperKey = process.env.SERPER_API_KEY
-  if (!serperKey) return result
+  // Message
+  if (data.message?.trim()) {
+    lines.push('<h3>Nachricht</h3>')
+    lines.push(`<blockquote>${escapeHtml(data.message).replace(/\n/g, '<br>')}</blockquote>`)
+  }
 
-  try {
-    const res = await fetch('https://google.serper.dev/search', {
-      method: 'POST',
-      headers: { 'X-API-KEY': serperKey, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ q: `"${company}" Adresse Impressum`, gl: 'de', hl: 'de', num: 5 }),
-    })
-    if (!res.ok) return result
-    const data = await res.json()
-
-    if (data.knowledgeGraph) {
-      const kg = data.knowledgeGraph
-      if (kg.website) result.website = kg.website
-      if (kg.address) {
-        const match = kg.address.match(/^(.+?),\s*(\d{4,5})\s+(.+?)(?:,\s*(.+))?$/)
-        if (match) {
-          result.street = match[1]
-          result.zip = match[2]
-          result.city = match[3]
-          result.country = match[4] || 'Deutschland'
-        }
-      }
+  // Quiz
+  if (typeof data.quizScore === 'number') {
+    lines.push('<h3>Freiheitstest</h3>')
+    const quiz: string[] = []
+    quiz.push(`<li><strong>Score:</strong> ${data.quizScore}%</li>`)
+    if (data.quizTopPillars?.length) {
+      quiz.push(`<li><strong>Top-Handlungsbedarf:</strong> ${escapeHtml(data.quizTopPillars.join(', '))}</li>`)
     }
-  } catch {
-    // Enrichment is best-effort
+    lines.push(`<ul>${quiz.join('')}</ul>`)
   }
 
-  return result
-}
-
-// ── Fetch all organizations (paginated) ─────────────────────────────────
-
-async function fetchAllOrgs(): Promise<Array<{ id: string; name: string }>> {
-  const all: Array<{ id: string; name: string }> = []
-  let page = 1
-  let hasMore = true
-
-  while (hasMore) {
-    const data = await ltGet(`/organizations?pageSize=100&page=${page}`)
-    const items = data.items || data.data || data
-    if (Array.isArray(items) && items.length > 0) {
-      all.push(...items)
-      hasMore = items.length === 100
-    } else {
-      hasMore = false
+  // Attribution / UTM
+  const utm = data.utm
+  if (utm && Object.values(utm).some(Boolean)) {
+    const utmLines: string[] = []
+    if (utm.utm_source)   utmLines.push(`<li><strong>Source:</strong> ${escapeHtml(utm.utm_source)}</li>`)
+    if (utm.utm_medium)   utmLines.push(`<li><strong>Medium:</strong> ${escapeHtml(utm.utm_medium)}</li>`)
+    if (utm.utm_campaign) utmLines.push(`<li><strong>Campaign:</strong> ${escapeHtml(utm.utm_campaign)}</li>`)
+    if (utm.utm_term)     utmLines.push(`<li><strong>Term:</strong> ${escapeHtml(utm.utm_term)}</li>`)
+    if (utm.utm_content)  utmLines.push(`<li><strong>Content:</strong> ${escapeHtml(utm.utm_content)}</li>`)
+    if (utm.gclid)        utmLines.push(`<li><strong>gclid:</strong> ${escapeHtml(utm.gclid)}</li>`)
+    if (utm.referrer)     utmLines.push(`<li><strong>Referrer:</strong> ${escapeHtml(utm.referrer)}</li>`)
+    if (utm.landingPage)  utmLines.push(`<li><strong>Landing Page:</strong> ${escapeHtml(utm.landingPage)}</li>`)
+    if (utmLines.length) {
+      lines.push('<h3>Tracking</h3>')
+      lines.push(`<ul>${utmLines.join('')}</ul>`)
     }
-    page++
   }
-  return all
-}
 
-// ── Find or create organization tag ─────────────────────────────────────
+  // Extras
+  if (data.extras && Object.keys(data.extras).length) {
+    lines.push('<h3>Extras</h3>')
+    const extraLines = Object.entries(data.extras)
+      .filter(([, v]) => v !== undefined && v !== null && v !== '')
+      .map(([k, v]) => `<li><strong>${escapeHtml(k)}:</strong> ${escapeHtml(String(v))}</li>`)
+    lines.push(`<ul>${extraLines.join('')}</ul>`)
+  }
 
-async function ensureTag(tagName: string): Promise<string> {
-  const tags = await ltGet('/tags/organization/list')
-  const tagList = Array.isArray(tags) ? tags : tags.data || tags.items || []
-  const existing = tagList.find((t: { name: string }) => t.name.toLowerCase() === tagName.toLowerCase())
-  if (existing) return existing.id
-
-  const created = await ltPost('/tags/organization/create', { name: tagName })
-  return created.id
+  return lines.join('\n')
 }
 
 // ── Public API ──────────────────────────────────────────────────────────
 
-export type LeadSource = 'ebook' | 'freiheitstest' | 'erstgespraech' | 'unverzichtbar'
-
-export interface LeadData {
-  email: string
-  name?: string
-  company?: string
-  position?: string
-  source: LeadSource
-  message?: string
-  quizScore?: number
-  quizTopPillars?: string[]
-  // Attribution (from sessionStorage via lib/utm.ts → form-submit body)
-  utm_source?: string
-  utm_medium?: string
-  utm_campaign?: string
-  utm_content?: string
-  utm_term?: string
-  gclid?: string
-}
-
-/** Build attribution-HTML block for ticket/project descriptions. */
-function buildAttributionBlock(data: LeadData): string {
-  const hasAny = data.utm_source || data.utm_medium || data.utm_campaign || data.gclid
-  if (!hasAny) return ''
-  const parts: string[] = []
-  if (data.utm_source) parts.push(`Source: ${data.utm_source}`)
-  if (data.utm_medium) parts.push(`Medium: ${data.utm_medium}`)
-  if (data.utm_campaign) parts.push(`Campaign: ${data.utm_campaign}`)
-  if (data.utm_content) parts.push(`Content: ${data.utm_content}`)
-  if (data.utm_term) parts.push(`Term: ${data.utm_term}`)
-  if (data.gclid) parts.push(`gclid: ${data.gclid}`)
-  return `<p><strong>Attribution:</strong> ${parts.join(' · ')}</p>`
-}
-
-const SOURCE_LABELS: Record<LeadSource, string> = {
-  ebook: 'Ebook-Download',
-  freiheitstest: 'Freiheitstest',
-  erstgespraech: 'Erstgespräch-Anfrage',
-  unverzichtbar: '(Un)verzichtbar – Leadmagnet',
-}
-
 /**
- * Creates a lead in Leadtime CRM.
- *
- * - With company: Organization + Person + Project (sales opportunity)
- * - Without company: Ticket in "Laufende Anfragen" project
- *
- * This function is fire-and-forget safe – all errors are caught and logged.
+ * Creates a lead-ticket in the centralized SALES project.
+ * Fire-and-forget safe — errors are caught and logged, never thrown to caller.
  */
 export async function createLead(data: LeadData): Promise<void> {
-  // Re-read token at call time (in case server was started before .env.local had it)
-  const token = process.env.LEADTIME_API_TOKEN || LEADTIME_TOKEN
+  const token = getToken()
   if (!token) {
-    console.warn('[leadtime] LEADTIME_API_TOKEN not set – skipping lead creation')
+    console.warn('[leadtime] LEADTIME_EBNER_PAT not set – skipping lead creation')
     return
   }
 
   try {
-    const hasCompany = !!data.company?.trim()
-    const isFreemail = FREEMAIL_DOMAINS.includes(data.email.split('@')[1] || '')
-    const sourceLabel = SOURCE_LABELS[data.source]
-    const now = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
+    const source = normalizeSource(data.source)
+    const priority = source === 'website-erstgespraech' ? 'High' : 'Normal'
 
-    console.log(`[leadtime] Processing lead: email=${data.email}, source=${data.source}, hasCompany=${hasCompany}, isFreemail=${isFreemail}`)
-
-    if (hasCompany) {
-      await createFullLead(data, sourceLabel, now)
-    } else if (!isFreemail) {
-      // Try to use email domain as company name
-      const domain = data.email.split('@')[1]
-      const domainCompany = domain.replace(/\.(de|com|net|org|io|at|ch|eu)$/i, '')
-      console.log(`[leadtime] Deriving company from domain: ${domainCompany}`)
-      await createFullLead({ ...data, company: domainCompany }, sourceLabel, now)
-    } else {
-      // Only email, no company derivable → ticket
-      await createTicket(data, sourceLabel, now)
+    const payload = {
+      title: buildTitle(data, source),
+      projectId: SALES.projectId,
+      typeId: SALES.typeId,
+      statusId: SALES.statusNeu,
+      priority,
+      assignedToId: SALES.lukasUserId,
+      summary: SOURCE_LABELS[source],
+      estimatedTime: 30,
+      description: buildDescription(data, source),
+      tags: [SOURCE_TAGS[source]],
     }
 
-    console.log(`[leadtime] Lead created for ${data.email} (source: ${data.source})`)
-  } catch (error) {
-    console.error('[leadtime] Lead creation failed:', error)
-    throw error // Re-throw so caller can see it
+    const result = await ltPost('/tasks', payload)
+    const sn = (result as { shortNumber?: number }).shortNumber
+    console.log(`[leadtime] SALES ticket created: SALES-${sn} · ${data.email} · ${source}`)
+  } catch (err) {
+    console.error('[leadtime] Lead creation failed:', err)
+    // Do not re-throw — leads must never break the user-facing form response
   }
-}
-
-// ── Full lead: Organization + Person + Project ──────────────────────────
-
-async function createFullLead(data: LeadData, sourceLabel: string, date: string) {
-  const company = data.company!.trim()
-
-  // 1. Find or create organization
-  const orgs = await fetchAllOrgs()
-  const companyLower = company.toLowerCase()
-  const existingOrg = orgs.find(
-    (o) => o.name.toLowerCase().includes(companyLower) || companyLower.includes(o.name.toLowerCase())
-  )
-
-  let orgId: string
-  if (existingOrg) {
-    orgId = existingOrg.id
-  } else {
-    const enriched = await enrichCompany(company, data.email)
-    const newOrg = await ltPost('/organizations', {
-      name: company,
-      type: 'Prospect',
-      color: '#F44900',
-      website: enriched.website || '',
-      addressStreet: enriched.street || '',
-      addressZip: enriched.zip || '',
-      addressCity: enriched.city || '',
-      addressCountry: enriched.country || 'Deutschland',
-    })
-    orgId = newOrg.id
-
-    // Tag
-    try {
-      const tagId = await ensureTag('website')
-      await ltPatch(`/organizations/${orgId}`, { tagIds: [tagId] })
-    } catch {
-      // Tagging is best-effort
-    }
-  }
-
-  // 2. Create contact/member
-  try {
-    let firstName = '-'
-    let lastName = '-'
-    if (data.name?.trim()) {
-      const nameParts = data.name.trim().split(/\s+/)
-      firstName = nameParts[0]
-      lastName = nameParts.slice(1).join(' ') || '-'
-    }
-
-    await ltPost('/organizations/members', {
-      organizationId: orgId,
-      firstName,
-      lastName,
-      email: data.email,
-      position: data.position || '',
-      phone: '',
-      roleId: CONFIG.guestRoleId,
-      isActive: true,
-      canLogin: false,
-    })
-  } catch (e) {
-    // Member might already exist
-    console.warn('[leadtime] Member creation skipped (might already exist):', e)
-  }
-
-  // 3. Create project (sales opportunity)
-  const descParts = [`<p><strong>Quelle:</strong> ${sourceLabel} (${date})</p>`]
-  if (data.email) descParts.push(`<p><strong>E-Mail:</strong> ${data.email}</p>`)
-  if (data.name) descParts.push(`<p><strong>Name:</strong> ${data.name}</p>`)
-  if (data.message) descParts.push(`<p><strong>Nachricht:</strong> ${data.message}</p>`)
-  if (data.quizScore !== undefined) {
-    descParts.push(`<p><strong>Freiheitsgrad:</strong> ${data.quizScore}%</p>`)
-    if (data.quizTopPillars?.length) {
-      descParts.push(`<p><strong>Handlungsbedarf:</strong> ${data.quizTopPillars.join(', ')}</p>`)
-    }
-  }
-  const attribution = buildAttributionBlock(data)
-  if (attribution) descParts.push(attribution)
-
-  await ltPost('/projects', {
-    name: `${company} – ${sourceLabel}`,
-    type: 'Support',
-    valueGroup: 'DirectValue',
-    categoryId: CONFIG.categoryId,
-    statusId: CONFIG.projectStatusId,
-    phaseId: null,
-    organizationId: orgId,
-    description: descParts.join('\n'),
-    guestAccess: false,
-    users: [CONFIG.userId],
-    teams: [],
-    taskTypes: CONFIG.taskTypes,
-    activities: CONFIG.activities,
-    customFields: {},
-  })
-}
-
-// ── Ticket fallback: just a task in "Laufende Anfragen" ─────────────────
-
-async function createTicket(data: LeadData, sourceLabel: string, date: string) {
-  const descParts = [`<p><strong>Quelle:</strong> ${sourceLabel} (${date})</p>`]
-  descParts.push(`<p><strong>E-Mail:</strong> ${data.email}</p>`)
-  if (data.name) descParts.push(`<p><strong>Name:</strong> ${data.name}</p>`)
-  if (data.message) descParts.push(`<p><strong>Nachricht:</strong> ${data.message}</p>`)
-  if (data.quizScore !== undefined) {
-    descParts.push(`<p><strong>Freiheitsgrad:</strong> ${data.quizScore}%</p>`)
-    if (data.quizTopPillars?.length) {
-      descParts.push(`<p><strong>Handlungsbedarf:</strong> ${data.quizTopPillars.join(', ')}</p>`)
-    }
-  }
-  const attribution = buildAttributionBlock(data)
-  if (attribution) descParts.push(attribution)
-
-  await ltPost('/tasks', {
-    title: `${sourceLabel}: ${data.email}`,
-    projectId: CONFIG.ticketProjectId,
-    typeId: CONFIG.ticketTypeId,
-    statusId: CONFIG.ticketStatusId,
-    priority: 'Normal',
-    summary: `${sourceLabel} von ${data.email}`,
-    estimatedTime: 1,
-    description: descParts.join('\n'),
-    customFields: [{ fieldId: CONFIG.emailFieldId, value: data.email }],
-  })
 }

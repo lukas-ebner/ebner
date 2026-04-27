@@ -31,13 +31,15 @@ export async function GET(req: NextRequest) {
     email,
     name,
     company,
-    source: 'unverzichtbar',
-    utm_source: payload.utm_source,
-    utm_medium: payload.utm_medium,
-    utm_campaign: payload.utm_campaign,
-    utm_content: payload.utm_content,
-    utm_term: payload.utm_term,
-    gclid: payload.gclid,
+    source: 'website-unverzichtbar',
+    utm: {
+      utm_source: payload.utm_source,
+      utm_medium: payload.utm_medium,
+      utm_campaign: payload.utm_campaign,
+      utm_content: payload.utm_content,
+      utm_term: payload.utm_term,
+      gclid: payload.gclid,
+    },
   }).catch((err) =>
     console.error('[unverzichtbar/confirm] CRM lead creation failed:', err)
   )
