@@ -9,12 +9,22 @@ import path from 'path'
  * Sends the "Cost of Chaos" ebook PDF to the given email address via Resend.
  * Then spawns the enrichment pipeline in the background (Research → Leadtime CRM).
  *
- * Body: { email: string }
+ * Body: { email: string, utm?: { utm_source?, utm_medium?, utm_campaign?, utm_content?, utm_term?, gclid? } }
  */
 
 export async function POST(req: NextRequest) {
   try {
-    const { email } = (await req.json()) as { email?: string }
+    const { email, utm } = (await req.json()) as {
+      email?: string
+      utm?: {
+        utm_source?: string
+        utm_medium?: string
+        utm_campaign?: string
+        utm_content?: string
+        utm_term?: string
+        gclid?: string
+      }
+    }
 
     if (!email || !email.includes('@') || !email.includes('.')) {
       return NextResponse.json(
@@ -98,7 +108,7 @@ export async function POST(req: NextRequest) {
     console.log(`[ebook] Email sent to ${email} (Resend ID: ${result.id})`)
 
     // Spawn enrichment pipeline in background (Research → Leadtime CRM)
-    spawnEnrichPipeline(email, 'ebook')
+    spawnEnrichPipeline(email, 'ebook', utm)
 
     return NextResponse.json({
       status: 'sent',
@@ -117,11 +127,25 @@ export async function POST(req: NextRequest) {
  * Fire-and-forget: Spawns the Python enrichment pipeline as a background process.
  * Crawls the company website, enriches data, creates Leadtime CRM lead.
  */
-function spawnEnrichPipeline(email: string, source: string) {
+function spawnEnrichPipeline(
+  email: string,
+  source: string,
+  utm?: {
+    utm_source?: string
+    utm_medium?: string
+    utm_campaign?: string
+    utm_content?: string
+    utm_term?: string
+    gclid?: string
+  }
+) {
   const pipelineScript = path.join(process.cwd(), 'lib', 'strategy-pipeline.py')
   const dataDir = path.join(process.cwd(), 'data')
   const logFile = path.join(dataDir, `enrich-${Date.now()}.log`)
-  const inputJson = JSON.stringify({ email, source })
+  const formData = utm
+    ? Object.fromEntries(Object.entries(utm).filter(([, v]) => v))
+    : undefined
+  const inputJson = JSON.stringify({ email, source, ...(formData ? { formData } : {}) })
 
   console.log(`[ebook] Spawning enrich pipeline for ${email} (log: ${logFile})`)
 

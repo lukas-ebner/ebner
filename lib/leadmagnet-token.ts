@@ -39,6 +39,13 @@ interface TokenPayload {
   file?: string // only for download tokens
   name?: string // optional, only for confirm tokens
   company?: string // optional, only for confirm tokens
+  // Attribution carried through DOI flow
+  utm_source?: string
+  utm_medium?: string
+  utm_campaign?: string
+  utm_content?: string
+  utm_term?: string
+  gclid?: string
 }
 
 function base64url(input: Buffer | string): string {
@@ -57,7 +64,17 @@ export function signToken(
   source: string,
   kind: TokenKind,
   ttlSeconds: number,
-  extra?: { file?: string; name?: string; company?: string }
+  extra?: {
+    file?: string
+    name?: string
+    company?: string
+    utm_source?: string
+    utm_medium?: string
+    utm_campaign?: string
+    utm_content?: string
+    utm_term?: string
+    gclid?: string
+  }
 ): string {
   if (!SECRET) throw new Error('LEADMAGNET_SECRET not set')
 
@@ -69,6 +86,12 @@ export function signToken(
     ...(extra?.file ? { file: extra.file } : {}),
     ...(extra?.name ? { name: extra.name } : {}),
     ...(extra?.company ? { company: extra.company } : {}),
+    ...(extra?.utm_source ? { utm_source: extra.utm_source } : {}),
+    ...(extra?.utm_medium ? { utm_medium: extra.utm_medium } : {}),
+    ...(extra?.utm_campaign ? { utm_campaign: extra.utm_campaign } : {}),
+    ...(extra?.utm_content ? { utm_content: extra.utm_content } : {}),
+    ...(extra?.utm_term ? { utm_term: extra.utm_term } : {}),
+    ...(extra?.gclid ? { gclid: extra.gclid } : {}),
   }
 
   const body = base64url(JSON.stringify(payload))

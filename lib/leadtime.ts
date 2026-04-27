@@ -191,6 +191,27 @@ export interface LeadData {
   message?: string
   quizScore?: number
   quizTopPillars?: string[]
+  // Attribution (from sessionStorage via lib/utm.ts → form-submit body)
+  utm_source?: string
+  utm_medium?: string
+  utm_campaign?: string
+  utm_content?: string
+  utm_term?: string
+  gclid?: string
+}
+
+/** Build attribution-HTML block for ticket/project descriptions. */
+function buildAttributionBlock(data: LeadData): string {
+  const hasAny = data.utm_source || data.utm_medium || data.utm_campaign || data.gclid
+  if (!hasAny) return ''
+  const parts: string[] = []
+  if (data.utm_source) parts.push(`Source: ${data.utm_source}`)
+  if (data.utm_medium) parts.push(`Medium: ${data.utm_medium}`)
+  if (data.utm_campaign) parts.push(`Campaign: ${data.utm_campaign}`)
+  if (data.utm_content) parts.push(`Content: ${data.utm_content}`)
+  if (data.utm_term) parts.push(`Term: ${data.utm_term}`)
+  if (data.gclid) parts.push(`gclid: ${data.gclid}`)
+  return `<p><strong>Attribution:</strong> ${parts.join(' · ')}</p>`
 }
 
 const SOURCE_LABELS: Record<LeadSource, string> = {
@@ -319,6 +340,8 @@ async function createFullLead(data: LeadData, sourceLabel: string, date: string)
       descParts.push(`<p><strong>Handlungsbedarf:</strong> ${data.quizTopPillars.join(', ')}</p>`)
     }
   }
+  const attribution = buildAttributionBlock(data)
+  if (attribution) descParts.push(attribution)
 
   await ltPost('/projects', {
     name: `${company} – ${sourceLabel}`,
@@ -351,6 +374,8 @@ async function createTicket(data: LeadData, sourceLabel: string, date: string) {
       descParts.push(`<p><strong>Handlungsbedarf:</strong> ${data.quizTopPillars.join(', ')}</p>`)
     }
   }
+  const attribution = buildAttributionBlock(data)
+  if (attribution) descParts.push(attribution)
 
   await ltPost('/tasks', {
     title: `${sourceLabel}: ${data.email}`,

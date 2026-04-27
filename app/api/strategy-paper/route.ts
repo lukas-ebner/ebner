@@ -35,16 +35,26 @@ interface QuizData {
   top_pillars: string[]
 }
 
+interface UtmParams {
+  utm_source?: string
+  utm_medium?: string
+  utm_campaign?: string
+  utm_content?: string
+  utm_term?: string
+  gclid?: string
+}
+
 interface RequestBody {
   email: string
   quiz: QuizData
   chat_context?: string
+  utm?: UtmParams
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body: RequestBody = await req.json()
-    const { email, quiz, chat_context } = body
+    const { email, quiz, chat_context, utm } = body
 
     if (!email || !quiz || quiz.score === undefined || !quiz.pillar_scores) {
       return NextResponse.json(
@@ -62,7 +72,13 @@ export async function POST(req: NextRequest) {
     }
 
     // Write input to temp file (avoids CLI arg escaping issues)
-    const inputJson = JSON.stringify({ email, quiz, ...(chat_context ? { chat_context } : {}) })
+    const formData = utm ? Object.fromEntries(Object.entries(utm).filter(([, v]) => v)) : undefined
+    const inputJson = JSON.stringify({
+      email,
+      quiz,
+      ...(chat_context ? { chat_context } : {}),
+      ...(formData && Object.keys(formData).length ? { formData } : {}),
+    })
     const dataDir = path.join(process.cwd(), 'data')
     const tmpFile = path.join(dataDir, `pipeline-input-${Date.now()}.json`)
     await writeFile(tmpFile, inputJson, 'utf-8')

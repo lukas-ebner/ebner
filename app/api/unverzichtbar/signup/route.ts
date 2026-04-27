@@ -8,14 +8,23 @@ import { signToken, SITE_URL } from '@/lib/leadmagnet-token'
  * Sends a confirmation email with a signed token link.
  * No CRM creation yet — that happens after confirm.
  *
- * Body: { email: string, name?: string, company?: string }
+ * Body: { email: string, name?: string, company?: string, utm?: {...} }
+ *   utm: { utm_source, utm_medium, utm_campaign, utm_content, utm_term, gclid } — alle optional
  */
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, company } = (await req.json()) as {
+    const { email, name, company, utm } = (await req.json()) as {
       email?: string
       name?: string
       company?: string
+      utm?: {
+        utm_source?: string
+        utm_medium?: string
+        utm_campaign?: string
+        utm_content?: string
+        utm_term?: string
+        gclid?: string
+      }
     }
 
     if (!email || !email.includes('@') || !email.includes('.')) {
@@ -31,10 +40,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'E-Mail-Versand nicht verfügbar.' }, { status: 500 })
     }
 
-    // Build confirm token (48h validity)
+    // Build confirm token (48h validity) — carry UTM/gclid through the DOI flow
     const token = signToken(email, 'unverzichtbar', 'confirm', 60 * 60 * 48, {
       name: name || undefined,
       company: company || undefined,
+      utm_source: utm?.utm_source,
+      utm_medium: utm?.utm_medium,
+      utm_campaign: utm?.utm_campaign,
+      utm_content: utm?.utm_content,
+      utm_term: utm?.utm_term,
+      gclid: utm?.gclid,
     })
 
     const confirmUrl = `${SITE_URL}/api/unverzichtbar/confirm?token=${encodeURIComponent(token)}`

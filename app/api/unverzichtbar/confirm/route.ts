@@ -25,11 +25,19 @@ export async function GET(req: NextRequest) {
   const { email, name, company } = payload
 
   // 1. Fire-and-forget CRM lead creation (Organization + Project, or ticket fallback)
+  //    UTM/gclid wurden beim signup in den Token persistiert und kommen
+  //    hier wieder raus — Attribution durchgehend bis ins CRM.
   createLead({
     email,
     name,
     company,
     source: 'unverzichtbar',
+    utm_source: payload.utm_source,
+    utm_medium: payload.utm_medium,
+    utm_campaign: payload.utm_campaign,
+    utm_content: payload.utm_content,
+    utm_term: payload.utm_term,
+    gclid: payload.gclid,
   }).catch((err) =>
     console.error('[unverzichtbar/confirm] CRM lead creation failed:', err)
   )

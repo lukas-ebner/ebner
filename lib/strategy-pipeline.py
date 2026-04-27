@@ -85,6 +85,25 @@ def extract_domain(email: str):
     return None if domain in FREE_PROVIDERS else domain
 
 
+def _build_attribution_html(form_data: dict) -> str:
+    """Build HTML attribution block from utm/gclid fields in form_data."""
+    if not form_data:
+        return ""
+    keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid"]
+    labels = {
+        "utm_source": "Source",
+        "utm_medium": "Medium",
+        "utm_campaign": "Campaign",
+        "utm_content": "Content",
+        "utm_term": "Term",
+        "gclid": "gclid",
+    }
+    parts = [f"{labels[k]}: {form_data[k]}" for k in keys if form_data.get(k)]
+    if not parts:
+        return ""
+    return f"<p><strong>Attribution:</strong> {' · '.join(parts)}</p>"
+
+
 # ══════════════════════════════════════════════════════════
 #  STEP 1: RESEARCH
 # ══════════════════════════════════════════════════════════
@@ -688,7 +707,7 @@ def extract_org_fields_from_research(research, paper_data):
     return fields
 
 
-def create_leadtime_lead(email, company_name, quiz, domain, research, paper_data):
+def create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data=None):
     """Create organization + member + project in Leadtime CRM with enriched data."""
     if not LEADTIME_TOKEN:
         log("  ⚠ LEADTIME_API_TOKEN not set – skipping")
@@ -721,6 +740,9 @@ def create_leadtime_lead(email, company_name, quiz, domain, research, paper_data
     if profile:
         profile_html = "".join(f"<li>{p[0]}: {p[1]}</li>" for p in profile if len(p) >= 2)
         desc.append(f"<p><strong>Profil:</strong></p><ul>{profile_html}</ul>")
+    attr_html = _build_attribution_html(form_data or {})
+    if attr_html:
+        desc.append(attr_html)
 
     has_company = bool(company_name and company_name.strip())
 
@@ -880,7 +902,7 @@ def log(msg: str):
     print(msg, flush=True)
 
 
-def run_pipeline(email: str, quiz: dict, send_email: bool = True, chat_context: str = None) -> dict:
+def run_pipeline(email: str, quiz: dict, send_email: bool = True, chat_context: str = None, form_data: dict = None) -> dict:
     """
     Full pipeline: Research → Analysis → PDF → Code → Email
 
@@ -916,7 +938,7 @@ def run_pipeline(email: str, quiz: dict, send_email: bool = True, chat_context: 
     # ── Step 2b: Leadtime CRM ──
     log("── STEP 2b: Leadtime CRM ──")
     try:
-        create_leadtime_lead(email, company_name, quiz, domain, research, paper_data)
+        create_leadtime_lead(email, company_name, quiz, domain, research, paper_data, form_data)
         log(f"  ✓ Lead created in Leadtime\n")
     except Exception as e:
         log(f"  ⚠ Leadtime failed (non-blocking): {e}\n")
@@ -1021,6 +1043,9 @@ def run_enrich(email: str, source: str = "ebook", form_data: dict = None) -> dic
                 desc.append(f"<p><strong>Formulardaten:</strong><br/>{msg_html}</p>")
             if form_data.get("actionCode"):
                 desc.append(f"<p><strong>Aktionscode:</strong> {form_data['actionCode']}</p>")
+            attr_html = _build_attribution_html(form_data)
+            if attr_html:
+                desc.append(attr_html)
             if LEADTIME_TOKEN:
                 lt_post("/tasks", {
                     "title": f"{source_label}: {email}",
@@ -1083,6 +1108,9 @@ def run_enrich(email: str, source: str = "ebook", form_data: dict = None) -> dic
                 desc.append(f"<p><strong>Formulardaten:</strong><br/>{msg_html}</p>")
             if form_data.get("actionCode"):
                 desc.append(f"<p><strong>Aktionscode:</strong> {form_data['actionCode']}</p>")
+            attr_html = _build_attribution_html(form_data)
+            if attr_html:
+                desc.append(attr_html)
 
             # Find or create org
             orgs_data = lt_get("/organizations?pageSize=100&page=1")
@@ -1240,7 +1268,8 @@ if __name__ == "__main__":
         result = run_pipeline(
             input_data["email"],
             input_data["quiz"],
-            chat_context=input_data.get("chat_context")
+            chat_context=input_data.get("chat_context"),
+            form_data=input_data.get("formData"),
         )
         print(json.dumps(result, indent=2))
 
