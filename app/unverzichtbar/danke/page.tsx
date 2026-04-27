@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { DoiConversionPing } from './DoiConversionPing'
 
 export const metadata: Metadata = {
   title: 'Danke – dein Buch ist unterwegs | Lukas Ebner',
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 export default function DankePage() {
   return (
     <main className="bg-surface-dark text-white">
+      <DoiConversionPing />
       <section className="relative min-h-[70vh] pt-28 lg:pt-32">
         <div className="mx-auto flex max-w-3xl flex-col items-start justify-center px-6 py-20 lg:px-8 lg:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.14em] text-brand">

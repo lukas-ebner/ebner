@@ -3,6 +3,8 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState, useCallback } from 'react'
 import Image from 'next/image'
+import { getUtmParams } from '@/lib/utm'
+import { trackEvent } from '@/lib/track'
 
 interface EbookLeadmagnetSlideProps {
   headline?: string
@@ -57,10 +59,14 @@ export function EbookLeadmagnetSlide({
 
       setPhase('sending')
       try {
+        const utmData = getUtmParams()
         const res = await fetch('/api/ebook', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email }),
+          body: JSON.stringify({
+            email,
+            utm: Object.keys(utmData).length > 0 ? utmData : undefined,
+          }),
         })
 
         if (!res.ok) {
@@ -68,6 +74,7 @@ export function EbookLeadmagnetSlide({
           throw new Error(data.error || 'Etwas ist schiefgegangen.')
         }
 
+        trackEvent('form_submit_ebook', { form_name: 'cost_of_chaos_ebook' })
         setPhase('success')
       } catch (err) {
         setErrorMsg(err instanceof Error ? err.message : 'Etwas ist schiefgegangen.')

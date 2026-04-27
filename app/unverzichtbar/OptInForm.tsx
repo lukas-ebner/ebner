@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { getUtmParams } from '@/lib/utm'
+import { trackEvent } from '@/lib/track'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -29,10 +31,16 @@ export function OptInForm({ variant = 'dark' }: { variant?: 'dark' | 'light' }) 
     setMessage('')
 
     try {
+      const utmData = getUtmParams()
       const res = await fetch('/api/unverzichtbar/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name: name || undefined, company: company || undefined }),
+        body: JSON.stringify({
+          email,
+          name: name || undefined,
+          company: company || undefined,
+          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
+        }),
       })
       const data = await res.json()
       if (!res.ok) {
@@ -40,6 +48,7 @@ export function OptInForm({ variant = 'dark' }: { variant?: 'dark' | 'light' }) 
         setMessage(data.error || 'Irgendwas ist schiefgegangen.')
         return
       }
+      trackEvent('form_submit_unverzichtbar', { form_name: 'unverzichtbar_signup' })
       setStatus('success')
       setMessage(data.message || 'Check deine Mails.')
     } catch {
