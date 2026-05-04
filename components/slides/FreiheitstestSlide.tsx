@@ -254,6 +254,8 @@ export function FreiheitstestSlide({
   const [result, setResult] = useState<ReturnType<typeof getResults> | null>(null)
   const [email, setEmail] = useState('')
   const [emailSent, setEmailSent] = useState(false)
+  const [website, setWebsite] = useState('')
+  const [formStartedAt] = useState(() => Date.now())
 
   const question = QUESTIONS[currentQ]
   const currentAnswer = answers[question?.id] ?? null
@@ -326,6 +328,8 @@ export function FreiheitstestSlide({
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             email,
+            website,
+            formStartedAt,
             quiz: {
               score: result?.score ?? 0,
               answers: mappedAnswers,
@@ -345,7 +349,7 @@ export function FreiheitstestSlide({
       setEmailSent(true)
       setEmailLoading(false)
     },
-    [email, emailLoading, answers, result],
+    [email, emailLoading, answers, result, formStartedAt, website],
   )
 
   const slideVariants = {
@@ -630,6 +634,15 @@ export function FreiheitstestSlide({
                         Wir analysieren dein Profil, schauen uns deine Website an und erstellen eine konkrete Empfehlung mit den wichtigsten Hebeln für dein Unternehmen.
                       </p>
                       <form onSubmit={handleEmailSubmit} className="flex gap-2">
+                        <input
+                          type="text"
+                          tabIndex={-1}
+                          autoComplete="off"
+                          aria-hidden="true"
+                          value={website}
+                          onChange={(e) => setWebsite(e.target.value)}
+                          className="hidden"
+                        />
                         <input
                           type="email"
                           value={email}

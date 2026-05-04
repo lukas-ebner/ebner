@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createLead, type LeadSource } from '@/lib/leadtime'
+import { isSuspiciousText, validateFormProtection } from '@/lib/form-protection'
 
 /**
  * POST /api/lead
@@ -14,7 +15,18 @@ import { createLead, type LeadSource } from '@/lib/leadtime'
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
-    const { email, name, company, position, source, message, quizScore, quizTopPillars, utm } = body
+    const { email, name, company, position, source, message, quizScore, quizTopPillars, utm, website, formStartedAt } = body
+
+    const protection = validateFormProtection(req, {
+      honeypot: website,
+      formStartedAt,
+    })
+    if (!protection.ok) {
+      return NextResponse.json(
+        protection.status === 200 ? { status: 'ok' } : { error: protection.message },
+        { status: protection.status }
+      )
+    }
 
     if (!email || !source) {
       return NextResponse.json({ error: 'email and source are required' }, { status: 400 })
@@ -30,6 +42,14 @@ export async function POST(req: NextRequest) {
     ]
     if (!validSources.includes(source)) {
       return NextResponse.json({ error: 'Invalid source' }, { status: 400 })
+    }
+
+    if (
+      (typeof name === 'string' && isSuspiciousText(name)) ||
+      (typeof company === 'string' && isSuspiciousText(company)) ||
+      (typeof position === 'string' && isSuspiciousText(position))
+    ) {
+      return NextResponse.json({ error: 'Invalid input' }, { status: 400 })
     }
 
     // Fire-and-forget: don't block the response on CRM creation

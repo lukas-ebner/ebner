@@ -47,6 +47,8 @@ export function EbookLeadmagnetSlide({
   const [email, setEmail] = useState('')
   const [phase, setPhase] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const [website, setWebsite] = useState('')
+  const [formStartedAt] = useState(() => Date.now())
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -65,6 +67,8 @@ export function EbookLeadmagnetSlide({
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             email,
+            website,
+            formStartedAt,
             utm: Object.keys(utmData).length > 0 ? utmData : undefined,
           }),
         })
@@ -81,7 +85,7 @@ export function EbookLeadmagnetSlide({
         setPhase('error')
       }
     },
-    [email]
+    [email, formStartedAt, website]
   )
 
   const txt = light ? 'text-text-primary' : 'text-white'
@@ -209,6 +213,15 @@ export function EbookLeadmagnetSlide({
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="max-w-[520px]">
+                  <input
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                    className="hidden"
+                  />
                   <div className="flex flex-col gap-3 sm:flex-row">
                     <input
                       type="email"

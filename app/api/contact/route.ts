@@ -2,10 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { spawn } from 'child_process'
 import { writeFile } from 'fs/promises'
 import path from 'path'
-
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000
-const RATE_LIMIT_MAX = 5
-const submissionsByIp = new Map<string, number[]>()
+import { escapeHtml, isSuspiciousText, validateFormProtection } from '@/lib/form-protection'
 
 /**
  * POST /api/contact
@@ -22,24 +19,14 @@ export async function POST(req: NextRequest) {
     const body = await req.json()
     const { name, email, company, message, actionCode, utm, website, formStartedAt } = body
 
-    if (typeof website === 'string' && website.trim()) {
-      return NextResponse.json({ success: true })
-    }
-
-    const startedAt = Number(formStartedAt)
-    const elapsedMs = Number.isFinite(startedAt) ? Date.now() - startedAt : NaN
-    if (!Number.isFinite(elapsedMs) || elapsedMs < 2500 || elapsedMs > 2 * 60 * 60 * 1000) {
+    const protection = validateFormProtection(req, {
+      honeypot: website,
+      formStartedAt,
+    })
+    if (!protection.ok) {
       return NextResponse.json(
-        { error: 'Anfrage konnte nicht verifiziert werden. Bitte Formular erneut absenden.' },
-        { status: 400 }
-      )
-    }
-
-    const ip = getClientIp(req)
-    if (!isAllowedByRateLimit(ip)) {
-      return NextResponse.json(
-        { error: 'Zu viele Anfragen in kurzer Zeit. Bitte versuche es in ein paar Minuten erneut.' },
-        { status: 429 }
+        protection.status === 200 ? { success: true } : { error: protection.message },
+        { status: protection.status }
       )
     }
 
@@ -159,33 +146,3 @@ function spawnEnrichPipeline(email: string, source: string, formData?: Record<st
     })
 }
 
-function getClientIp(req: NextRequest) {
-  const forwarded = req.headers.get('x-forwarded-for')
-  if (forwarded) return forwarded.split(',')[0].trim()
-  return req.headers.get('x-real-ip') || 'unknown'
-}
-
-function isAllowedByRateLimit(ip: string) {
-  const now = Date.now()
-  const recent = (submissionsByIp.get(ip) || []).filter((ts) => now - ts < RATE_LIMIT_WINDOW_MS)
-  if (recent.length >= RATE_LIMIT_MAX) {
-    submissionsByIp.set(ip, recent)
-    return false
-  }
-  recent.push(now)
-  submissionsByIp.set(ip, recent)
-  return true
-}
-
-function isSuspiciousText(value: string) {
-  return /https?:\/\/|www\.|<[^>]+>/.test(value)
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;')
-}

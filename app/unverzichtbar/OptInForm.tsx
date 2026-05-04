@@ -13,6 +13,8 @@ export function OptInForm({ variant = 'dark' }: { variant?: 'dark' | 'light' }) 
   const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<Status>('idle')
   const [message, setMessage] = useState<string>('')
+  const [website, setWebsite] = useState('')
+  const [formStartedAt] = useState(() => Date.now())
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -39,6 +41,8 @@ export function OptInForm({ variant = 'dark' }: { variant?: 'dark' | 'light' }) 
           email,
           name: name || undefined,
           company: company || undefined,
+          website,
+          formStartedAt,
           utm: Object.keys(utmData).length > 0 ? utmData : undefined,
         }),
       })
@@ -111,6 +115,17 @@ export function OptInForm({ variant = 'dark' }: { variant?: 'dark' | 'light' }) 
           />
         </div>
       </div>
+
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        value={website}
+        onChange={(e) => setWebsite(e.target.value)}
+        className="hidden"
+        disabled={status === 'submitting'}
+      />
 
       <div>
         <label className={`mb-2 block font-mono text-[11px] uppercase tracking-wide ${labelColor}`}>

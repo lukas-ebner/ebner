@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { spawn } from 'child_process'
 import { writeFile } from 'fs/promises'
 import path from 'path'
+import { validateFormProtection } from '@/lib/form-protection'
 
 /**
  * POST /api/strategy-paper
@@ -49,12 +50,27 @@ interface RequestBody {
   quiz: QuizData
   chat_context?: string
   utm?: UtmParams
+  website?: string
+  formStartedAt?: number | string
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body: RequestBody = await req.json()
-    const { email, quiz, chat_context, utm } = body
+    const { email, quiz, chat_context, utm, website, formStartedAt } = body
+
+    const protection = validateFormProtection(req, {
+      honeypot: website,
+      formStartedAt,
+    })
+    if (!protection.ok) {
+      return NextResponse.json(
+        protection.status === 200
+          ? { status: 'processing', message: 'Dein Strategiepapier wird erstellt. Du erhältst es in wenigen Minuten per E-Mail.' }
+          : { error: protection.message },
+        { status: protection.status }
+      )
+    }
 
     if (!email || !quiz || quiz.score === undefined || !quiz.pillar_scores) {
       return NextResponse.json(

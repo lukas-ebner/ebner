@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { spawn } from 'child_process'
 import { writeFile } from 'fs/promises'
 import path from 'path'
+import { validateFormProtection } from '@/lib/form-protection'
 
 /**
  * POST /api/ebook
@@ -14,8 +15,10 @@ import path from 'path'
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, utm } = (await req.json()) as {
+    const { email, utm, website, formStartedAt } = (await req.json()) as {
       email?: string
+      website?: string
+      formStartedAt?: number | string
       utm?: {
         utm_source?: string
         utm_medium?: string
@@ -24,6 +27,17 @@ export async function POST(req: NextRequest) {
         utm_term?: string
         gclid?: string
       }
+    }
+
+    const protection = validateFormProtection(req, {
+      honeypot: website,
+      formStartedAt,
+    })
+    if (!protection.ok) {
+      return NextResponse.json(
+        protection.status === 200 ? { status: 'sent', message: 'Der Report ist auf dem Weg zu deinem Postfach.' } : { error: protection.message },
+        { status: protection.status }
+      )
     }
 
     if (!email || !email.includes('@') || !email.includes('.')) {

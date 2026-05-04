@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { signToken, SITE_URL } from '@/lib/leadmagnet-token'
+import { validateFormProtection } from '@/lib/form-protection'
 
 /**
  * POST /api/unverzichtbar/signup
@@ -13,10 +14,12 @@ import { signToken, SITE_URL } from '@/lib/leadmagnet-token'
  */
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, company, utm } = (await req.json()) as {
+    const { email, name, company, utm, website, formStartedAt } = (await req.json()) as {
       email?: string
       name?: string
       company?: string
+      website?: string
+      formStartedAt?: number | string
       utm?: {
         utm_source?: string
         utm_medium?: string
@@ -25,6 +28,19 @@ export async function POST(req: NextRequest) {
         utm_term?: string
         gclid?: string
       }
+    }
+
+    const protection = validateFormProtection(req, {
+      honeypot: website,
+      formStartedAt,
+    })
+    if (!protection.ok) {
+      return NextResponse.json(
+        protection.status === 200
+          ? { status: 'confirm_sent', message: 'Check deine Mails. Klick auf den Bestätigungslink und du bekommst sofort das Buch.' }
+          : { error: protection.message },
+        { status: protection.status }
+      )
     }
 
     if (!email || !email.includes('@') || !email.includes('.')) {
