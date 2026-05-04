@@ -60,6 +60,7 @@ export function ApplicationFormSlide({
   const isInView = useInView(ref, { once: true, margin: '-80px' })
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
+  const [formStartedAt] = useState(() => Date.now())
   const [actionCode, setActionCode] = useState('')
   const [codeState, setCodeState] = useState<ActionCodeState>({ status: 'idle' })
   const codeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -137,6 +138,8 @@ export function ApplicationFormSlide({
     const name = (formData.get('name') as string) || ''
     const email = (formData.get('email') as string) || ''
     const company = (formData.get('company') as string) || ''
+    const website = (formData.get('website') as string) || ''
+    const formStartedAtValue = (formData.get('formStartedAt') as string) || ''
 
     // Collect all other fields into a structured message
     const extraParts: string[] = []
@@ -182,6 +185,8 @@ export function ApplicationFormSlide({
           email,
           company,
           message,
+          website,
+          formStartedAt: formStartedAtValue,
           actionCode: trimmedCode || undefined,
           utm: Object.keys(utmData).length > 0 ? utmData : undefined,
         }),
@@ -192,16 +197,22 @@ export function ApplicationFormSlide({
         throw new Error(data.error || 'Fehler beim Senden')
       }
 
-      // Push conversion event to dataLayer for GTM
+      // Push conversion events to dataLayer for GTM / GA4 / Ads
       if (typeof window !== 'undefined') {
         const w = window as unknown as { dataLayer?: unknown[] }
         w.dataLayer = w.dataLayer || []
-        w.dataLayer.push({
-          event: 'erstgespraech_anfrage',
+
+        const commonPayload = {
           form_name: 'erstgespraech',
           lead_source: (formData.get('source') as string) || 'direct',
+          ...(utmData.utm_source ? { utm_source: utmData.utm_source } : {}),
+          ...(utmData.utm_medium ? { utm_medium: utmData.utm_medium } : {}),
           ...(utmData.utm_campaign ? { utm_campaign: utmData.utm_campaign } : {}),
-        })
+          ...(utmData.gclid ? { gclid: utmData.gclid } : {}),
+        }
+
+        w.dataLayer.push({ event: 'erstgespraech_anfrage', ...commonPayload })
+        w.dataLayer.push({ event: 'erstgespraech_complete', ...commonPayload })
       }
 
       trackLeadtimeEvent(
@@ -328,6 +339,15 @@ export function ApplicationFormSlide({
             </div>
           ) : (
             <form onSubmit={handleSubmit} onFocusCapture={trackSignupStartedOnce} className="space-y-8">
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+                aria-hidden="true"
+              />
+              <input type="hidden" name="formStartedAt" value={String(formStartedAt)} readOnly />
               {fields.map((field, i) => (
                 <div key={i}>
                   <label
