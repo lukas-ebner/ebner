@@ -561,6 +561,19 @@ SALES = {
     "typeId": "4d5a972a-8ec6-4090-a11e-e998f0047530",      # Management
     "statusNeu": "0d79b3dc-c71f-470c-8ea6-ac86bbfcd163",   # Neu
     "lukasUserId": "8dcc2862-ed49-4830-8fe6-c1404e372921",
+    "lauraUserId": "721d30a1-b034-4379-a9dc-9331d5f0ca0f",
+}
+
+# Laura triagiert diese Sources vor (sie analysiert, scort, schlaegt Naechsten
+# Schritt vor); Erstgespraech-Anfragen gehen direkt zu Lukas (high intent).
+LAURA_TRIAGED_SOURCES = {
+    "botdog-accepted",
+    "linkedin-dm",
+    "linkedin-comment",
+    "website-ebook",
+    "website-freiheitstest",
+    "website-unverzichtbar",
+    "website-chatbot",
 }
 
 SOURCE_TAGS = {
@@ -870,6 +883,7 @@ def create_sales_ticket(email, source, name=None, company=None, position=None,
         org_fields=org_fields, form_data=form_data,
     )
     priority = "High" if src == "website-erstgespraech" else "Normal"
+    assigned_to = SALES["lauraUserId"] if src in LAURA_TRIAGED_SOURCES else SALES["lukasUserId"]
 
     payload = {
         "title": title,
@@ -877,7 +891,7 @@ def create_sales_ticket(email, source, name=None, company=None, position=None,
         "typeId": SALES["typeId"],
         "statusId": SALES["statusNeu"],
         "priority": priority,
-        "assignedToId": SALES["lukasUserId"],
+        "assignedToId": assigned_to,
         "summary": SOURCE_LABELS.get(src, src),
         "estimatedTime": 30,
         "description": description,

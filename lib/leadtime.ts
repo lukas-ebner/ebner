@@ -25,7 +25,20 @@ const SALES = {
   typeId: '4d5a972a-8ec6-4090-a11e-e998f0047530',        // Management
   statusNeu: '0d79b3dc-c71f-470c-8ea6-ac86bbfcd163',     // Neu
   lukasUserId: '8dcc2862-ed49-4830-8fe6-c1404e372921',
+  lauraUserId: '721d30a1-b034-4379-a9dc-9331d5f0ca0f',
 } as const
+
+// Welche Sources gehen direkt zu Laura (sie qualifiziert + analysiert vor),
+// welche bleiben bei Lukas (high-intent → er muss eh ran).
+const LAURA_TRIAGED_SOURCES: ReadonlySet<string> = new Set([
+  'botdog-accepted',
+  'linkedin-dm',
+  'linkedin-comment',
+  'website-ebook',
+  'website-freiheitstest',
+  'website-unverzichtbar',
+  'website-chatbot',
+])
 
 // Source tag UUIDs (created 2026-04-27 via API)
 const SOURCE_TAGS: Record<LeadSource, string> = {
@@ -240,6 +253,11 @@ export async function createLead(data: LeadData): Promise<void> {
   try {
     const source = normalizeSource(data.source)
     const priority = source === 'website-erstgespraech' ? 'High' : 'Normal'
+    // Laura triagiert LinkedIn-/Botdog-/Lead-Magnet-Leads vor;
+    // Erstgespraech-Anfragen gehen direkt zu Lukas (high intent).
+    const assignedToId = LAURA_TRIAGED_SOURCES.has(source)
+      ? SALES.lauraUserId
+      : SALES.lukasUserId
 
     const payload = {
       title: buildTitle(data, source),
@@ -247,7 +265,7 @@ export async function createLead(data: LeadData): Promise<void> {
       typeId: SALES.typeId,
       statusId: SALES.statusNeu,
       priority,
-      assignedToId: SALES.lukasUserId,
+      assignedToId,
       summary: SOURCE_LABELS[source],
       estimatedTime: 30,
       description: buildDescription(data, source),
