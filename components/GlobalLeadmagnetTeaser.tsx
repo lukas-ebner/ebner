@@ -14,6 +14,7 @@ const HIDDEN_PATHS_EXACT = new Set<string>([
   '/erstgespraech',
   '/datenschutz',
   '/impressum',
+  '/kurzprofil',
 ])
 
 const HIDDEN_PATH_PREFIXES = [
