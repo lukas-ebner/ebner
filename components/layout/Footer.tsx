@@ -40,7 +40,7 @@ export function Footer() {
           </p>
           <div className="mt-6 flex gap-4">
             <a
-              href="https://www.linkedin.com/in/lukasebner"
+              href="https://www.linkedin.com/in/lukas-ebner/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted transition-colors hover:text-brand"
