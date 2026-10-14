@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Image, { getImageProps } from 'next/image'
-import Link from 'next/link'
+import { GraduationCap, Linkedin } from 'lucide-react'
 import { NoSnap } from '@/components/NoSnap'
 
 /**
@@ -33,7 +33,7 @@ const timeline = [
   {
     period: '2023 – heute',
     role: 'Gründer & Geschäftsführer, Leadtime',
-    line: 'Aus unserem internen Tool CONNEX wurde ein eigenständiges SaaS. Bootstrapped und profitabel.',
+    line: 'Projektmanagement, Zeiterfassung, Abrechnung und CRM in einem System. Bootstrapped und profitabel.',
   },
   {
     period: '2023 – heute',
@@ -43,7 +43,7 @@ const timeline = [
   {
     period: '2012 – 2014',
     role: 'MBA, TH Deggendorf',
-    line: 'Neben der Geschäftsführung. In einer Seminararbeit entstand die Idee für CONNEX.',
+    line: 'Berufsbegleitend, parallel zur Geschäftsführung bei eins+null.',
   },
   {
     period: '2009 – 2022',
@@ -67,7 +67,7 @@ const timeline = [
   },
   {
     period: '1999 – 2002',
-    role: 'Ausbildung zum Mediengestalter',
+    role: 'Ausbildung zum Mediengestalter für Digital- und Printmedien',
     line: 'Creativ Concept Werbeagentur, Regensburg. Grafik, Typografie, Print.',
   },
   {
@@ -80,6 +80,7 @@ const timeline = [
 const companies = [
   {
     name: 'Fracto',
+    logo: '/images/projects/fracto/fracto-logo.svg',
     year: 'seit 2026',
     role: 'Co-Founder & CTO',
     what: 'KI-gestützte Schulungsplattform für die MedTech-Industrie – inklusive AI Voice Bot, der am Gerät per QR-Code Fragen beantwortet.',
@@ -87,6 +88,7 @@ const companies = [
   },
   {
     name: 'Leadtime',
+    logo: '/images/projects/leadtime/leadtime-logo.svg',
     year: 'seit 2023',
     role: 'Gründer & CEO',
     what: 'Projektmanagement, Zeiterfassung, Abrechnung und CRM in einem System – für IT-Dienstleister und Agenturen.',
@@ -94,6 +96,7 @@ const companies = [
   },
   {
     name: 'Wachstumscoach GmbH',
+    icon: '/images/logo/ebner-square-icon-orange.svg',
     year: 'seit 2023',
     role: 'Geschäftsführer',
     what: 'Meine Beratung für Geschäftsführer: Operations, Systeme und KI.',
@@ -101,6 +104,8 @@ const companies = [
   },
   {
     name: 'Kraftwerk',
+    logo: '/images/projects/kraftwerk/kraftwerk_logo.svg',
+    darkenLogo: true,
     year: 'seit 2022',
     role: 'Gesellschafter & Beirat',
     what: 'Plattform für die Versorgungswirtschaft, die sechs Technologieunternehmen vereint – darunter eins+null.',
@@ -108,6 +113,7 @@ const companies = [
   },
   {
     name: 'eins+null',
+    logo: '/images/projects/einsnull/eun-logo.svg',
     year: '2009 – 2022',
     role: 'Gründer & Geschäftsführer',
     what: 'Vertriebsplattform JOULES für Stadtwerke und Energieversorger. 2022 an die Kraftwerk Holding verkauft.',
@@ -115,21 +121,24 @@ const companies = [
   },
 ]
 
-const education = [
-  { year: '2025', title: 'Silicon Valley Entrepreneurship Program', org: 'TH Deggendorf' },
-  { year: '2025', title: 'Organisationsberater & Change Manager', org: 'ICO Institut für Coaching & Organisationsberatung' },
-  { year: '2025', title: 'Systemisches Coaching kompakt', org: 'ICO Institut für Coaching & Organisationsberatung' },
-  { year: '2017', title: 'Human Skills & Leadership', org: 'TH Deggendorf' },
-  { year: '2016', title: 'IT-Sicherheitsbeauftragter ISO 27001', org: 'TÜV NORD GROUP' },
-  { year: '2014', title: 'MBA Unternehmensgründung und -führung', org: 'TH Deggendorf · Note 1,3' },
+const education: { year: string; title: string; org: string; logo?: string }[] = [
+  { year: '2025', title: 'Silicon Valley Entrepreneurship Program', org: 'TH Deggendorf', logo: '/images/zertifikate/silicon-valley.svg' },
+  { year: '2025', title: 'Organisationsberater & Change Manager', org: 'ICO Institut für Coaching & Organisationsberatung', logo: '/images/zertifikate/ico-small.png' },
+  { year: '2025', title: 'Systemisches Coaching kompakt', org: 'ICO Institut für Coaching & Organisationsberatung', logo: '/images/zertifikate/ico-small.png' },
+  { year: '2017', title: 'Human Skills & Leadership', org: 'TH Deggendorf', logo: '/images/zertifikate/thdeggendorf.svg' },
+  { year: '2016', title: 'IT-Sicherheitsbeauftragter ISO 27001', org: 'TÜV NORD GROUP', logo: '/images/zertifikate/tuvlogo.svg' },
+  { year: '2014', title: 'MBA Unternehmensgründung und -führung', org: 'TH Deggendorf · Note 1,3', logo: '/images/zertifikate/thdeggendorf.svg' },
   { year: '2010', title: 'Multimedia & Kommunikation', org: 'Hochschule Ansbach · Note 1,7' },
+  { year: '1999', title: 'Mediengestalter für Digital- und Printmedien', org: 'Ausbildung · Creativ Concept Werbeagentur, Regensburg' },
 ]
 
 const privatePhotos = [
-  { src: '/images/privat/L1001208.jpg', alt: 'Steinerne Brücke in Regensburg' },
-  { src: '/images/privat/DSCF0404.jpg', alt: 'Spaziergang im Abendlicht' },
-  { src: '/images/privat/DSCF1207.jpg', alt: 'Terrasse am Meer' },
+  { src: '/images/privat/DSCF3093.jpg', alt: 'Lukas Ebner mit Kamera', pos: '50% 30%' },
+  { src: '/images/privat/DSCF2948.jpg', alt: 'Lukas Ebner mit seiner Frau Lucretia', pos: '38% 40%' },
+  { src: '/images/privat/IMG_7265.jpg', alt: 'Lukas Ebner unterwegs', pos: '40% 30%' },
 ]
+
+const LINKEDIN_URL = 'https://www.linkedin.com/in/lukas-ebner'
 
 function SectionHead({ label, title }: { label: string; title: string }) {
   return (
@@ -231,10 +240,26 @@ export default function KurzprofilPage() {
                 key={c.name}
                 className="rounded-card bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_1px_3px_rgba(0,0,0,0.06)] md:p-6"
               >
-                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                  <h3 className="font-display text-[26px] leading-[1.15]">
-                    <a href={c.url} className="hover:opacity-80" target="_blank" rel="noopener">
-                      {c.name}
+                <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+                  <h3 className="font-display text-[24px] leading-[1.15]">
+                    <a href={c.url} className="flex items-center gap-3 hover:opacity-80" target="_blank" rel="noopener">
+                      {c.logo ? (
+                        <>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={c.logo}
+                            alt={c.name}
+                            loading="lazy"
+                            className={`h-7 w-auto max-w-[170px] ${c.darkenLogo ? 'brightness-0' : ''}`}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={c.icon} alt="" loading="lazy" className="h-8 w-8 rounded-[6px]" />
+                          <span>{c.name}</span>
+                        </>
+                      )}
                     </a>
                   </h3>
                   <span className="font-mono text-[13px] uppercase tracking-[0.08em] text-text-muted">
@@ -249,16 +274,26 @@ export default function KurzprofilPage() {
         </div>
       </section>
 
-      {/* ── 4. FORTBILDUNGEN ────────────────────────── */}
+      {/* ── 4. AUSBILDUNG ────────────────────────── */}
       <section className="bg-white px-6 py-16 md:py-24">
         <div className="mx-auto max-w-2xl">
-          <SectionHead label="Fortbildungen" title="Studium, MBA, Zertifikate." />
+          <SectionHead label="Ausbildung" title="Ausbildung, Studium, Zertifikate." />
           <ul className="divide-y divide-border border-y border-border">
             {education.map((e) => (
-              <li key={e.title} className="grid grid-cols-[3.5rem_1fr] gap-3 py-4">
-                <span className="pt-[3px] font-mono text-[14px] text-brand">{e.year}</span>
+              <li key={e.title} className="py-5">
+                <div className="mb-3 flex h-8 items-center">
+                  {e.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={e.logo} alt="" loading="lazy" className="h-full w-auto max-w-[200px] object-contain object-left" />
+                  ) : (
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-surface-light">
+                      <GraduationCap className="h-5 w-5 text-text-muted" strokeWidth={1.5} aria-hidden />
+                    </span>
+                  )}
+                </div>
                 <div>
-                  <p className="text-[18px] leading-[1.4] text-text-primary">{e.title}</p>
+                  <p className="font-mono text-[13px] tracking-[0.08em] text-brand">{e.year}</p>
+                  <p className="mt-0.5 text-[18px] leading-[1.4] text-text-primary">{e.title}</p>
                   <p className="mt-0.5 text-[16px] leading-[1.45] text-text-muted">{e.org}</p>
                 </div>
               </li>
@@ -281,15 +316,19 @@ export default function KurzprofilPage() {
               langsamer zu machen und genauer hinzuschauen.
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-3 gap-2 md:gap-3">
-            {privatePhotos.map((p) => (
-              <div key={p.src} className="relative aspect-[3/4] overflow-hidden rounded-card bg-white/60">
+          <div className="mt-8 grid grid-cols-2 gap-2 md:gap-3">
+            {privatePhotos.map((p, i) => (
+              <div
+                key={p.src}
+                className={`relative overflow-hidden rounded-card bg-white/60 ${i === 0 ? 'col-span-2 aspect-[3/2]' : 'aspect-[4/5]'}`}
+              >
                 <Image
                   src={p.src}
                   alt={p.alt}
                   fill
-                  sizes="(min-width: 768px) 220px, 33vw"
+                  sizes={i === 0 ? '(min-width: 768px) 672px, 100vw' : '(min-width: 768px) 336px, 50vw'}
                   className="object-cover"
+                  style={{ objectPosition: p.pos }}
                   loading="lazy"
                 />
               </div>
@@ -298,16 +337,20 @@ export default function KurzprofilPage() {
         </div>
       </section>
 
-      {/* ── 6. ZUR HAUPTSEITE ───────────────────────── */}
+      {/* ── 6. LINKEDIN ────────────────────────────── */}
       <section className="bg-surface-dark px-6 py-16 text-center text-text-light md:py-20">
         <div className="mx-auto max-w-xl">
-          <p className="font-display text-[28px] leading-[1.2]">Mehr über meine Arbeit.</p>
-          <Link
-            href="/"
-            className="mt-8 inline-flex w-full max-w-xs items-center justify-center rounded-md bg-brand px-6 py-4 font-display text-[18px] tracking-wide text-white transition-colors hover:bg-brand/90"
+          <p className="font-display text-[28px] leading-[1.2]">Lass uns in Kontakt bleiben.</p>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener"
+            className="mt-8 inline-flex w-full max-w-xs items-center justify-center gap-3 rounded-md bg-brand px-6 py-4 font-display text-[18px] tracking-wide text-white transition-colors hover:bg-brand/90"
           >
-            Zur Hauptseite
-          </Link>
+            <Linkedin className="h-5 w-5" strokeWidth={1.5} aria-hidden />
+            Vernetz dich mit mir
+          </a>
+          <p className="mt-4 font-mono text-[12px] uppercase tracking-[0.12em] text-text-light/50">LinkedIn</p>
         </div>
       </section>
     </main>
