@@ -131,6 +131,7 @@ export function Navigation() {
     '/themen/change-management-beratung',
     '/unverzichtbar',
     '/unverzichtbar/danke',
+    '/kurzprofil',
   ]
   const hasDarkHero = darkHeroPages.includes(pathname)
   const onDarkSurface = hasDarkHero && !scrolled
