@@ -16,8 +16,6 @@ cta:
   url: "/erstgespraech"
 ---
 
-**Slug:** /blog/wie-prozesse-dokumentieren-kleines-unternehmen
-
 ## Kurzfassung
 Wenn du wissen willst, **wie du Prozesse im kleinen Unternehmen dokumentieren** solltest, ist die wichtigste Antwort überraschend unspektakulär: nicht maximal vollständig, sondern maximal benutzbar. Gute Prozessdokumentation reduziert Rückfragen, beschleunigt Einarbeitung und macht dein Unternehmen weniger abhängig von einzelnen Köpfen.
 
@@ -163,6 +161,15 @@ Das Ergebnis ist selten glamourös. Aber genau richtig.
 
 Denn gute Prozessdokumentation fühlt sich nicht nach Bürokratie an. Sie fühlt sich nach weniger Sucherei an.
 
+## Fazit
+Wenn du dich fragst, **wie Prozesse dokumentieren im kleinen Unternehmen** sinnvoll geht, dann fang nicht mit Perfektion an.
+
+Fang mit Benutzbarkeit an.
+
+Nicht das größte Handbuch gewinnt. Sondern die Dokumentation, die morgen jemand öffnen kann und danach klarer arbeitet als vorher.
+
+Wenn dein Unternehmen gerade an Zuruf, Rückfragen und Personenabhängigkeit hängt, lass uns im [Erstgespräch](/erstgespraech) anschauen, welche drei Prozesse zuerst sauber dokumentiert werden sollten, damit daraus echte Entlastung entsteht.
+
 ## FAQ
 
 ### Wie dokumentiere ich Prozesse im kleinen Unternehmen?
@@ -177,6 +184,15 @@ Die mit den meisten Rückfragen, Wartezeiten, Einarbeitungsproblemen oder person
 ### Brauche ich dafür Software?
 Nicht zwingend. Für den Start reichen oft saubere Einseiter, Checklisten oder ein schlankes Wiki. Das Tool ist zweitrangig. Erst muss die Logik stimmen.
 
+## Passend dazu
+
+- [Prozessoptimierung in Regensburg und Ostbayern](/prozessoptimierung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Inhouse-Seminar Prozesse: Wann ein Seminar reicht und wann du tiefer ranmusst](/blog/inhouse-seminar-prozesse)
+
 ## Quellen
 - Bitkom, Digitalisierung der Wirtschaft 2025, 24.03.2025: https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft
 - Bitkom, Kleine Unternehmen oft planlos in der Digitalisierung, 16.03.2026: https://www.bitkom.org/Presse/Presseinformation/Kleine-Unternehmen-oft-planlos-in-Digitalisierung
@@ -185,18 +201,4 @@ Nicht zwingend. Für den Start reichen oft saubere Einseiter, Checklisten oder e
 - ifo Institut, ifo Geschäftsklimaindex gesunken (April 2026), 25.04.2026: https://www.ifo.de/fakten/2026-04-25/ifo-geschaeftsklimaindex-gesunken-april-2026
 
 ## Autor
-Lukas Ebner begleitet Unternehmer, die aus operativem Chaos wieder ein führbares Unternehmen machen wollen. Er hat mit eins+null über 13 Jahre ein SaaS-Unternehmen im Energiesektor aufgebaut, 2022 den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Prozessdokumentation ist deshalb nicht theoretisch: Wenn Wissen nur im Kopf einzelner Leute existiert, hängt der Betrieb an Personen statt an klaren Abläufen.
-
-## Hero-Bild-Briefing
-- **Slug:** `wie-prozesse-dokumentieren-kleines-unternehmen`
-- **1-Satz-Topic:** Gute Prozessdokumentation im kleinen Unternehmen ist kein Bürokratieprojekt, sondern eine schlanke Hilfe für Einarbeitung, Übergaben und weniger Chef-Abhängigkeit.
-- **Akzent-Modus:** B, Orange-Linie oder Orange-Balken als strukturierender Akzent
-
-## Fazit
-Wenn du dich fragst, **wie Prozesse dokumentieren im kleinen Unternehmen** sinnvoll geht, dann fang nicht mit Perfektion an.
-
-Fang mit Benutzbarkeit an.
-
-Nicht das größte Handbuch gewinnt. Sondern die Dokumentation, die morgen jemand öffnen kann und danach klarer arbeitet als vorher.
-
-Wenn dein Unternehmen gerade an Zuruf, Rückfragen und Personenabhängigkeit hängt, lass uns im [Erstgespräch](https://lukasebner.de/#contact) anschauen, welche drei Prozesse zuerst sauber dokumentiert werden sollten, damit daraus echte Entlastung entsteht.
+Lukas Ebner begleitet Unternehmer, die aus operativem Chaos wieder ein führbares Unternehmen machen wollen. Er hat 2009 die Digitalagentur eins+null mitgegründet, sie über 13 Jahre auf 50 Mitarbeitende und rund 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute führt er die Wachstumscoach GmbH in Regensburg und entwickelt mit Leadtime eine Software für Agenturen und IT-Dienstleister. Sein Blick auf Prozessdokumentation ist deshalb nicht theoretisch: Wenn Wissen nur im Kopf einzelner Leute existiert, hängt der Betrieb an Personen statt an klaren Abläufen.

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image, { getImageProps } from 'next/image'
 import { GraduationCap, Linkedin } from 'lucide-react'
 import { NoSnap } from '@/components/NoSnap'
+import { JsonLd, contentPageSchema } from '@/lib/schema'
 
 /**
  * Kurzprofil – kompakte, mobil optimierte Profilseite.
@@ -164,6 +165,14 @@ export default function KurzprofilPage() {
   return (
     <main className="overflow-x-hidden font-body text-[18px] leading-[1.6] text-text-primary">
       <NoSnap />
+      <JsonLd
+        data={contentPageSchema({
+          slug: 'kurzprofil',
+          path: '/kurzprofil',
+          title: 'Kurzprofil – Lukas Ebner',
+          description: String(metadata.description ?? ''),
+        })}
+      />
 
       {/* ── 1. HERO ─────────────────────────────────── */}
       <section className="relative overflow-hidden bg-surface-dark text-text-light">

@@ -6,6 +6,7 @@ import { ScrollRestoration } from '@/components/ScrollRestoration'
 import { Analytics, GtmNoScript } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
 import { GlobalLeadmagnetTeaser } from '@/components/GlobalLeadmagnetTeaser'
+import { JsonLd, globalGraph } from '@/lib/schema'
 
 const faviconSvg = '/images/favicon.svg'
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
@@ -16,22 +17,27 @@ export const metadata: Metadata = {
     canonical: 'https://lukasebner.de',
   },
   title: 'Lukas Ebner',
-  description: 'Unternehmensberatung für KMU',
+  authors: [{ name: 'Lukas Ebner', url: 'https://lukasebner.de/ueber-mich' }],
+  creator: 'Lukas Ebner',
+  publisher: 'Wachstumscoach GmbH',
+  description: 'Lukas Ebner, Unternehmensberater in Regensburg (Wachstumscoach GmbH): Operations, Prozesse, Führung und KI für Geschäftsführer im Mittelstand.',
   icons: {
     icon: [{ url: faviconSvg, type: 'image/svg+xml' }],
     apple: faviconSvg,
   },
   openGraph: {
     type: 'website',
+    locale: 'de_DE',
+    siteName: 'Lukas Ebner',
     url: 'https://lukasebner.de',
     title: 'Lukas Ebner',
-    description: 'Unternehmensberatung für KMU',
+    description: 'Lukas Ebner, Unternehmensberater in Regensburg (Wachstumscoach GmbH): Operations, Prozesse, Führung und KI für Geschäftsführer im Mittelstand.',
     images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lukas Ebner',
-    description: 'Unternehmensberatung für KMU',
+    description: 'Lukas Ebner, Unternehmensberater in Regensburg (Wachstumscoach GmbH): Operations, Prozesse, Führung und KI für Geschäftsführer im Mittelstand.',
     images: [defaultOgImage],
   },
 }
@@ -45,6 +51,7 @@ export default function RootLayout({
     <html lang="de" className="h-full">
       <head>
         <Analytics />
+        <JsonLd data={globalGraph()} />
       </head>
       <body className="flex min-h-full flex-col">
         <GtmNoScript />

@@ -16,8 +16,6 @@ cta:
   url: "/erstgespraech"
 ---
 
-**Slug:** /blog/zeiterfassung-kleinunternehmen-einfuehren
-
 ## Kurzfassung
 **Zeiterfassung im Kleinunternehmen einführen** heißt nicht zuerst, ein Tool zu kaufen. Es heißt zuerst, Zweck, Regeln und Kommunikation sauber zu klären. Sonst hast du nach zwei Wochen zwar Logins verteilt, aber noch immer keine brauchbaren Daten.
 
@@ -170,6 +168,15 @@ Die Geschäftsführung sah schneller, wo Lastspitzen entstehen. Teilzeitkräfte 
 
 Genau so sollte Zeiterfassung wirken. Nicht als Kontrolle. Sondern als weniger Nebel im Betrieb.
 
+## Fazit
+Wenn du **Zeiterfassung im Kleinunternehmen einführen** willst, fang nicht mit dem Tool an.
+
+Fang mit dem Zweck an. Dann mit den Regeln. Dann mit einem Pilot. Erst danach mit dem Rollout.
+
+So wird aus einer lästigen Pflicht kein Misstrauensprojekt, sondern ein System, das dein Unternehmen sauberer führt.
+
+Wenn du genau an diesem Punkt hängst, also zwischen Pflicht, Teamakzeptanz und pragmischer Umsetzung, lass uns im [Erstgespräch](/erstgespraech) anschauen, wie du daraus kein Verwaltungsmonster machst, sondern ein System, das dir wirklich hilft.
+
 ## FAQ
 
 ### Ist Zeiterfassung für kleine Unternehmen Pflicht?
@@ -184,6 +191,15 @@ Ja, aber nicht im Sinne von gar keiner Erfassung. Vertrauensarbeitszeit bedeutet
 ### Welches Zeiterfassungstool ist für den Mittelstand sinnvoll?
 Das Tool sollte simpel, teamtauglich, auswertbar und anschlussfähig sein. Die beste Software ist nicht die mit den meisten Funktionen, sondern die, die in deinem Alltag sauber genutzt wird.
 
+## Passend dazu
+
+- [Systeme & Automatisierung: Tool-Audit, Systemarchitektur, Automatisierung](/digitalisierung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt](/blog/ki-im-mittelstand-einfuehren)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+
 ## Quellen
 - BMAS, Fragen und Antworten zur Arbeitszeiterfassung, abgerufen am 26.04.2026: https://www.bmas.de/DE/Arbeit/Arbeitsrecht/Arbeitnehmerrechte/Regelungen-zur-Arbeitszeit/Fragen-und-Antworten/faq-arbeitszeiterfassung.html
 - Destatis, Pressemitteilung Nr. N033 vom 17.06.2025: https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/06/PD25_N033_13.html
@@ -192,18 +208,4 @@ Das Tool sollte simpel, teamtauglich, auswertbar und anschlussfähig sein. Die b
 - Haufe, Keine Arbeitszeiterfassung bei Vertrauensarbeitszeit, 16.04.2025: https://www.haufe.de/arbeitsschutz/recht-politik/keine-arbeitszeiterfassung-bei-vertrauensarbeitszeit_92_646590.html
 
 ## Autor
-Lukas Ebner begleitet Unternehmer, die aus improvisiertem Operativmodus wieder ein führbares Unternehmen machen wollen. Er hat mit eins+null über 13 Jahre ein SaaS-Unternehmen im Energiesektor aufgebaut, 2022 den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Zeiterfassung ist deshalb nicht bürokratisch, sondern praktisch: Wo schafft ein System Klarheit, Entlastung und bessere Entscheidungen?
-
-## Hero-Bild-Briefing
-- **Slug:** `zeiterfassung-kleinunternehmen-einfuehren`
-- **1-Satz-Topic:** Ein kleines Unternehmen führt Zeiterfassung nicht als Kontrollinstrument, sondern als klares System für Fairness, Planung und Entlastung ein.
-- **Akzent-Modus:** B, Orange-Linie oder Orange-Balken als strukturierender Akzent
-
-## Fazit
-Wenn du **Zeiterfassung im Kleinunternehmen einführen** willst, fang nicht mit dem Tool an.
-
-Fang mit dem Zweck an. Dann mit den Regeln. Dann mit einem Pilot. Erst danach mit dem Rollout.
-
-So wird aus einer lästigen Pflicht kein Misstrauensprojekt, sondern ein System, das dein Unternehmen sauberer führt.
-
-Wenn du genau an diesem Punkt hängst, also zwischen Pflicht, Teamakzeptanz und pragmischer Umsetzung, lass uns im [Erstgespräch](https://lukasebner.de/#contact) anschauen, wie du daraus kein Verwaltungsmonster machst, sondern ein System, das dir wirklich hilft.
+Lukas Ebner begleitet Unternehmer, die aus improvisiertem Operativmodus wieder ein führbares Unternehmen machen wollen. Er hat 2009 die Digitalagentur eins+null mitgegründet, sie über 13 Jahre auf 50 Mitarbeitende und rund 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute führt er die Wachstumscoach GmbH in Regensburg und entwickelt mit Leadtime eine Software für Agenturen und IT-Dienstleister. Sein Blick auf Zeiterfassung ist deshalb nicht bürokratisch, sondern praktisch: Wo schafft ein System Klarheit, Entlastung und bessere Entscheidungen?

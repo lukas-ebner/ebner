@@ -1,9 +1,9 @@
 ---
 title: "Vibe Coding: Was es ist, wo es brutal stark ist und wo du es stoppen musst"
 slug: vibe-coding
-description: ""
+description: "Vibe Coding ist schnell, nützlich und oft missverstanden. Was es wirklich ist, wo es funktioniert und warum Prototyp nicht Production heißt."
 keyword: "vibe coding"
-nebenkeywords: []
+nebenkeywords: ["rapid prototyping software", "mvp entwicklung", "ki automatisierung"]
 category: ki
 status: published
 funnel: TOFU
@@ -16,23 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Vibe Coding: Was es ist, wo es brutal stark ist und wo du es stoppen musst"
-slug: vibe-coding
-description: "Vibe Coding ist schnell, nützlich und oft missverstanden. Was es wirklich ist, wo es funktioniert und warum Prototyp nicht Production heißt."
-keyword: "vibe coding"
-nebenkeywords: ["rapid prototyping software", "mvp entwicklung", "ki automatisierung"]
-category: ki
-status: published
-funnel: TOFU
-date: "2026-04-27"
-image: "/images/blog/vibe-coding-hero-v2.jpg"
-cta:
-  text: "Mehr zu KI & Rapid Prototyping"
-  url: "/ki-readiness"
----
+## Kurzfassung
 
-# Vibe Coding: Was es ist, wo es brutal stark ist und wo du es stoppen musst
+**Vibe Coding** ist ein Programmierstil, bei dem du der KI in natürlicher Sprache sagst, was du willst, und dich über Ergebnis und Iteration steuerst statt über jede Codezeile. Andrej Karpathy hat den Begriff im Februar 2025 geprägt. Stark ist Vibe Coding bei MVPs, klickbaren Prototypen, internen Tools und Frontends. Für produktive Software mit Anforderungen an Security, Wartbarkeit und Skalierung braucht es danach Senior Review, Tests und saubere Architektur.
 
 Vibe Coding ist gerade eines dieser Themen, bei denen zwei Sorten Leute nerven.
 
@@ -201,6 +187,28 @@ Dann wird aus dem Thema ein echter Hebel.
 Nicht nur ein weiterer KI-Hype.
 
 Wenn du gerade überlegst, wie du mit KI schneller Prototypen, interne Tools oder neue Angebotslogiken bauen kannst, ohne dir später technischen Müll einzukaufen, dann passt das ziemlich gut zu meiner Arbeit. Auf der [KI-Readiness-Seite](/ki-readiness) findest du mehr dazu.
+
+## FAQ
+
+### Was ist der Unterschied zwischen Vibe Coding und AI-assisted Coding?
+Beim AI-assisted Coding prüfst, testest und verstehst du jede Zeile, die die KI schreibt. Beim Vibe Coding gibst du bewusst mehr Verantwortung an das Modell ab und achtest vor allem darauf, ob das Ergebnis funktioniert.
+
+### Wofür eignet sich Vibe Coding?
+Für alles, was du schnell sichtbar, testbar oder lernfähig machen willst: MVPs, klickbare Prototypen, interne Tools, Dashboards, Websites und Frontends. Eine Idee lässt sich so in Stunden oder wenigen Tagen klickbar machen.
+
+### Ist Vibe Coding für produktive Software geeignet?
+Nicht ohne Weiteres. Wenn du den Code nicht beurteilen kannst, bleiben Schwachstellen, schlechte Wartbarkeit und Skalierungsprobleme oft unentdeckt. Ein Prototyp sollte vor dem produktiven Einsatz Senior Review, Security-Prüfung, Tests und eine saubere Architektur bekommen.
+
+### Ersetzt Vibe Coding Entwickler?
+Nein. Vibe Coding ist ein vorgelagerter Beschleuniger. Der Denkaufwand verschiebt sich weg von Syntax hin zu Anforderungen, Produktlogik, Review und Verantwortung.
+
+## Passend dazu
+
+- [KI-Beratung in Regensburg](/ki-beratung-regensburg)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [KI-Beratung im Mittelstand: Wo sie sich lohnt und wo du nur Geld verbrennst](/blog/ki-beratung-mittelstand)
+- [KI für Agenturen: 5 Hebel, die Marge retten](/blog/ki-fuer-agenturen)
 
 ## Quellen
 - Stack Overflow, *Developer Survey 2025 – AI*, veröffentlicht am 25.03.2026: https://survey.stackoverflow.co/2025/ai

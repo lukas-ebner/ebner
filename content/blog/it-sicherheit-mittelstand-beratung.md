@@ -1,7 +1,7 @@
 ---
 title: "IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen"
 slug: it-sicherheit-mittelstand-beratung
-description: ""
+description: "IT-Sicherheit im Mittelstand ist Chefsache: die 10 wichtigsten Management-Entscheidungen zu Notfallplan, Zugängen, Backups und Verantwortung."
 keyword: "it sicherheit mittelstand beratung"
 nebenkeywords: ["iso 27001 einfuehrung kmu"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+IT-Sicherheit im Mittelstand ist zuerst eine Management-Aufgabe und keine Frage weiterer Tools. Die Geschäftsführung muss entscheiden, wer verantwortlich ist, welche Geschäftsprozesse zuerst geschützt werden, ob alle Beschäftigten geschult werden und wie Notfallplan, Backups und Wiederanlauf aussehen. Gute **IT-Sicherheit Mittelstand Beratung** hilft, aus einzelnen Maßnahmen eine belastbare Reihenfolge zu machen. ISO 27001 lohnt sich erst, wenn diese Grundlagen im Alltag tragen.
 
 Die falsche Frage lautet meistens: Welche Security-Tools brauchen wir noch?
 
@@ -177,3 +181,12 @@ Genau deshalb ist gute IT-Sicherheit im Mittelstand zuerst eine Management-Leist
 Lukas Ebner arbeitet seit rund **15 Jahren** an der Schnittstelle aus Führung, Prozessen, IT und operativer Umsetzung. Er hat mit **eins+null** selbst ein Unternehmen aufgebaut, skaliert und **2022 verkauft**. Heute begleitet er Geschäftsführer dabei, Systeme, Rollen und Verantwortungen so aufzustellen, dass der Betrieb nicht an Einzelpersonen oder stillen Provisorien hängt.
 
 Wenn du herausfinden willst, welche Sicherheitsentscheidungen bei euch gerade offen sind, kannst du ein **Erstgespräch buchen**. Ohne Panikfolie. Mit einem ehrlichen Blick auf Betriebsrisiko, Zuständigkeit und Umsetzungsreihenfolge.
+
+## Passend dazu
+
+- [Systeme & Automatisierung: Tool-Audit, Systemarchitektur, Automatisierung](/digitalisierung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Change Management im Mittelstand: Warum Projekte trotz Zustimmung scheitern](/blog/change-management-mittelstand)
+- [KI-Beratung in Bayern: So erkennst du, ob ein Angebot Substanz hat](/blog/ki-beratung-bayern)

@@ -1,12 +1,16 @@
 import type { MetadataRoute } from 'next'
 import { listPageSlugs } from '@/lib/page-builder'
-import { listBlogSlugs } from '@/lib/blog'
+import { listPublishedPosts } from '@/lib/blog'
 import { listThemenSlugs } from '@/lib/themen'
 
 const BASE = 'https://lukasebner.de'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString()
+  // Kein künstliches "jetzt" als lastModified: Suchmaschinen ignorieren das Signal sonst.
+  // Blog nutzt echte Daten aus dem Frontmatter, Startseite/Blog-Index das jüngste Artikeldatum.
+  const posts = listPublishedPosts()
+  const latestPost = posts[0]?.updated ?? posts[0]?.date
+  const now = latestPost ? new Date(latestPost).toISOString() : undefined
 
   const homepage: MetadataRoute.Sitemap = [
     {
@@ -19,19 +23,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const migratedToThemen = new Set(['bafa', 'change-management-beratung'])
 
-  const pages: MetadataRoute.Sitemap = listPageSlugs()
-    .filter((slug) => slug !== 'homepage' && !migratedToThemen.has(slug))
-    .map((slug) => ({
-      url: `${BASE}/${slug}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }))
+  const lowPriority = new Set(['impressum', 'datenschutz'])
+  const pages: MetadataRoute.Sitemap = [
+    ...listPageSlugs().filter((slug) => slug !== 'homepage' && !migratedToThemen.has(slug)),
+    'kurzprofil',
+    'literatur',
+  ].map((slug) => ({
+    url: `${BASE}/${slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: lowPriority.has(slug) ? 0.2 : slug === 'ueber-mich' ? 0.9 : 0.8,
+  }))
 
   const leadmagnet: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/unverzichtbar`,
-      lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
@@ -39,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const themenPages: MetadataRoute.Sitemap = listThemenSlugs().map((slug) => ({
     url: `${BASE}/themen/${slug}`,
-    lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -53,9 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  const blogPosts: MetadataRoute.Sitemap = listBlogSlugs().map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: now,
+  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: new Date(post.updated ?? post.date).toISOString(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))

@@ -1,7 +1,7 @@
 ---
 title: "Scrum Master Coaching für KMU: Wann es hilft und wann nicht"
 slug: scrum-master-coaching
-description: ""
+description: "Scrum Master Coaching für KMU: Wann es Teams wirklich hilft, wann es Methoden-Theater bleibt und was Führung dazu beitragen muss."
 keyword: "scrum master coaching"
 nebenkeywords: ["scrum berater regensburg"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+**Scrum Master Coaching** hilft einem Team, Arbeit sichtbar zu machen, Prioritäten sauberer zu ziehen, Blocker früher zu eskalieren und aus Retrospektiven echte Veränderung zu machen. Im KMU wirkt es vor allem, wenn es ein spürbares Teamproblem gibt und die Geschäftsführung dem Coach ein Mandat gibt. Es ersetzt aber keine Führung: Wenn unklar ist, wer priorisiert, und Entscheidungen ständig nach oben wandern, liegt das Problem nicht im Team. Teste Coaching deshalb mit einem Team, einem klaren Engpass und vorher festgelegten Messpunkten über 30 bis 60 Tage.
 
 Scrum Master Coaching klingt für viele Mittelständler erstmal nach Methoden-Theater.
 
@@ -218,3 +222,26 @@ Dann prüfe, ob ihr bereit seid, die dazugehörigen Führungsfragen mit anzufass
 Erst wenn beides zusammenkommt, lohnt sich Coaching wirklich.
 
 Wenn du magst, schauen wir gemeinsam drauf. Ohne Methodenromantik. Sondern so, dass am Ende klar ist, ob du wirklich Coaching brauchst oder eigentlich eine Führungsentscheidung nachholen musst.
+
+## FAQ
+
+### Was macht ein Scrum Master Coach?
+Er hilft dem Team, Arbeit sichtbar zu machen, Prioritäten sauber zu ziehen und Blocker früher zu eskalieren. Gute Coaches sorgen dafür, dass Zusagen realistischer werden und Retrospektiven in Entscheidungen münden statt in Gesprächskultur.
+
+### Wann lohnt sich Scrum Master Coaching für ein KMU?
+Wenn ein Team ständig später liefert als geplant, Retrospektiven folgenlos bleiben oder Prioritäten schneller wechseln, als das Team sie abarbeiten kann. Wenn nur „mehr Agilität“ gewünscht ist oder das Management kein Mandat gibt, verbrennt Coaching eher Zeit.
+
+### Wie messe ich, ob Scrum Master Coaching wirkt?
+Leg vor dem Start Kennzahlen fest, etwa Durchlaufzeit, offene Blocker pro Sprint, Prioritätswechsel mitten im Arbeitszyklus und das Verhältnis von Zusage zu Lieferung. Nach sechs bis acht Wochen prüfst du, ob sich diese Werte verändert haben.
+
+### Woran erkenne ich einen guten Scrum Master Coach?
+Er fragt nach Entscheidungsrechten, Priorisierung und Eskalationen, bevor er über Rituale spricht. Er kann konkret benennen, welche Teams er stabiler gemacht hat und woran die Wirkung gemessen wurde. Zertifizierung und kurze Anfahrt sind zweitrangig.
+
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)

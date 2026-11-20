@@ -1,9 +1,9 @@
 ---
 title: "Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor"
 slug: unternehmensnachfolge
-description: ""
+description: "Unternehmensnachfolge ist kein Notartermin, sondern ein 2- bis 3-jähriger Umbau. Zahlen, Modelle, Fehler und ein ehrlicher Fahrplan aus der Praxis."
 keyword: "unternehmensnachfolge"
-nebenkeywords: []
+nebenkeywords: ["unternehmen verkaufen", "firma verkaufsbereit machen", "nachfolger finden"]
 category: exit
 status: published
 funnel: TOFU
@@ -16,24 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor"
-slug: unternehmensnachfolge
-description: "Unternehmensnachfolge ist kein Notartermin, sondern ein 2- bis 3-jähriger Umbau. Zahlen, Modelle, Fehler und ein ehrlicher Fahrplan aus der Praxis."
-keyword: "unternehmensnachfolge"
-nebenkeywords: ["unternehmen verkaufen", "firma verkaufsbereit machen", "nachfolger finden"]
-category: exit
-status: published
-funnel: TOFU
-date: "2026-04-27"
-heroImage: /images/blog/unternehmensnachfolge-hero.jpg
-image: "/images/blog/unternehmensnachfolge-hero.jpg"
-cta:
-  text: "Beratung zur Nachfolge"
-  url: "/kontakt"
----
+## Kurzfassung
 
-# Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor
+Die **Unternehmensnachfolge** beginnt 24 bis 36 Monate vor dem Notartermin, nicht erst mit der Käufersuche. Zuerst muss der Betrieb unabhängig von dir laufen, Zahlen und Verantwortungen müssen transparent sein und das passende Modell muss feststehen: externer Verkauf, MBO oder MBI, Familiennachfolge oder geordnete Stilllegung. Käufer, Nachfolger und Banken achten vor allem darauf, ob das Unternehmen ohne den Inhaber berechenbar und führbar ist.
 
 Viele Unternehmer denken bei Unternehmensnachfolge an den letzten Termin beim Notar. Das ist zu spät.
 
@@ -226,6 +211,33 @@ Wenn dein Betrieb heute schon ohne dich führen kann, steigen deine Optionen mas
 Genau deshalb lohnt es sich, früh anzufangen. Nicht erst dann, wenn du verkaufen musst. Sondern dann, wenn du noch gestalten kannst.
 
 Wenn du wissen willst, wie übergabefähig dein Unternehmen heute wirklich ist, dann [melde dich hier](/kontakt). Ich schaue mit dir nicht auf die schöne Story, sondern auf die Stellen, an denen Nachfolge später scheitert.
+
+## FAQ
+
+### Wann sollte ich mit der Unternehmensnachfolge anfangen?
+
+Die eigentliche Arbeit beginnt 24 bis 36 Monate vor der Übergabe. Wer erst anfängt, wenn verkauft werden muss, verhandelt meist aus Schwäche.
+
+### Welche Modelle der Unternehmensnachfolge gibt es?
+
+Externer Verkauf, Management-Buy-out oder Management-Buy-in, Familiennachfolge und geordnete Stilllegung. Welches Modell passt, hängt unter anderem davon ab, wie stark der Betrieb an dir hängt und ob eine tragfähige zweite Reihe da ist.
+
+### Woran scheitert eine Unternehmensnachfolge am häufigsten?
+
+Oft daran, dass der Inhaber das Betriebssystem ist und Kunden, Entscheidungen und Wissen an ihm hängen. Dazu kommen unsaubere Zahlen, eine fehlende zweite Führungsebene und Kundenbeziehungen, die an einer Person statt am Unternehmen hängen.
+
+### Was wollen Käufer und Banken bei einer Nachfolge sehen?
+
+Ein berechenbares Unternehmen statt einer Heldengeschichte. Sie prüfen Umsatzqualität, Führbarkeit, Dokumentation, Entscheidungslogik und ob das Unternehmen einen glaubwürdigen nächsten Schritt hat.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt](/blog/bafa-foerderung-unternehmensberatung)
+- [Exit-Strategie: Warum Verkaufsfähigkeit Jahre vor dem Verkauf beginnt](/blog/exit-strategie)
 
 ## Quellen
 - KfW Research, *Nachfolge-Monitoring Mittelstand*, 09.01.2026: https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-526-Januar-2026-Nachfolge-Monitoring.pdf

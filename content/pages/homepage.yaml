@@ -139,6 +139,14 @@ slides:
       text: "Mehr zu KI-Readiness"
       url: "/ki-readiness"
 
+  # ── 8b. ENTITÄT: Wer steckt dahinter (zitierbar für Suche & KI) ──
+  - template: text-block
+    variant: light
+    align: left
+    pill: "Kurz gesagt"
+    headline: "Wer ist Lukas Ebner?"
+    body: "Lukas Ebner ist Unternehmensberater in Regensburg und Geschäftsführer der **Wachstumscoach GmbH**. Er berät Geschäftsführer und Inhaber von Unternehmen mit 5 bis 100 Mitarbeitenden – vor allem Dienstleister, Agenturen und IT-Firmen in Ostbayern – zu Operations, Prozessen, Führung, Digitalisierung und KI.\n\nSeine Erfahrung kommt aus der eigenen Praxis: 2009 hat er die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende, 4 Mio. € Umsatz und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Seit 2023 entwickelt er mit der Leadtime Labs GmbH die Software [Leadtime](https://leadtime.de) für Agenturen und IT-Dienstleister.\n\nEr hat einen MBA der TH Deggendorf, ist zertifizierter Organisationsberater und systemischer Coach (ICO) und schreibt über Unternehmensführung im Mittelstand – zuletzt den Unternehmer-Roman [(Un)verzichtbar](/unverzichtbar). Beratungen der Wachstumscoach GmbH sind über das BAFA-Programm für Unternehmensberatung förderfähig ([bis zu 1.750 € Zuschuss in Bayern](/themen/bafa))."
+
   # ── 9. FAQ ─────────────────────────────────────────
   - template: faq
     headline: "Häufige Fragen"
@@ -158,7 +166,7 @@ slides:
       - question: "Was kostet mich das?"
         answer: "Paket-Modell: zwischen 4.750 und 9.500 Euro für drei Monate, je nachdem ob es intensiv wird. Mit BAFA-Förderung zahlt sich das fast selbst – schau auf die Preise-Seite."
       - question: "BAFA-Förderung – wie läuft das?"
-        answer: "Ja, bis zu 50–80 %. Ich bin zugelassen, mache die Anträge nicht kompliziert. Infos auf der Preise-Seite."
+        answer: "In Bayern übernimmt das BAFA 50 % der Beratungskosten bis 3.500 €, also bis zu 1.750 € je Beratung (80 % gibt es nur in den neuen Bundesländern). Das Programm läuft bis Ende 2028. Die Wachstumscoach GmbH ist als Beratungsunternehmen registriert, ich begleite den Antrag. Alles Weitere auf der Seite zur BAFA-Förderung (/themen/bafa)."
       - question: "Du sprichst viel von KI – was heißt das konkret?"
         answer: "Nicht die Standard-ChatGPT-Spielerei. Wo bringt KI euch wirklich was? Angebote schneller schreiben? Support 3x schneller machen? Reporting automatisieren? Das bauen wir dann als Prototyp – in Tagen, nicht Monaten. Keine Junior-Leute, ich mache das selbst oder mit meinem Developer."
       - question: "Was ist Leadtime – brauche ich das?"

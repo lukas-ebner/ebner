@@ -1,9 +1,9 @@
 ---
 title: "Zeiterfassung in der Agentur: Warum sie nicht nerven muss, wenn du sie endlich richtig nutzt"
 slug: zeiterfassung-agentur
-description: ""
+description: "Zeiterfassung in Agenturen ist längst mehr als Pflicht. Wie du aus Stunden echte Steuerung für Projekte, Auslastung und Rechnung machst."
 keyword: "zeiterfassung agentur"
-nebenkeywords: []
+nebenkeywords: ["controlling für agenturen", "projektmanagement software agentur"]
 category: systeme
 status: published
 funnel: MOFU
@@ -16,24 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Zeiterfassung in der Agentur: Warum sie nicht nerven muss, wenn du sie endlich richtig nutzt"
-slug: zeiterfassung-agentur
-description: "Zeiterfassung in Agenturen ist längst mehr als Pflicht. Wie du aus Stunden echte Steuerung für Projekte, Auslastung und Rechnung machst."
-keyword: "zeiterfassung agentur"
-nebenkeywords: ["controlling für agenturen", "projektmanagement software agentur"]
-category: systeme
-status: published
-funnel: MOFU
-date: "2026-04-27"
-heroImage: /images/blog/zeiterfassung-agentur-hero.jpg
-image: /images/blog/zeiterfassung-agentur-hero.jpg
-cta:
-  text: "Leadtime kennenlernen"
-  url: "/digitalisierung"
----
+## Kurzfassung
 
-# Zeiterfassung in der Agentur: Warum sie nicht nerven muss, wenn du sie endlich richtig nutzt
+**Zeiterfassung in der Agentur** ist vor allem ein Profitabilitätsthema, kein HR-Thema. Saubere Zeitdaten zeigen dir, welche Projekte Geld verdienen, wo Kalkulationen danebenliegen und welche Teams überlastet sind. Wirklich nützlich wird sie erst, wenn Zeiten täglich im Projektkontext erfasst werden und in Auslastung, Controlling und Rechnung weiterfließen.
 
 Zeiterfassung nervt fast jede Agentur. Das Problem ist nur: Ohne sie wird es meistens noch teurer.
 
@@ -213,6 +198,32 @@ Wenn sie Planung, Budget und Rechnung steuert, wird sie wertvoll.
 Genau dort willst du hin.
 
 Wenn du deine Agentur-Systeme so aufsetzen willst, dass Zeiterfassung nicht isoliert bleibt, sondern mit Projektsteuerung, Controlling und Rechnung zusammenspielt, dann schau dir [Leadtime](/digitalisierung) an.
+
+## FAQ
+
+### Warum brauchen Agenturen eine Zeiterfassung?
+
+Ohne Zeitdaten weißt du nicht, welche Projekte profitabel sind, wo Angebote zu knapp kalkuliert sind und welche Kunden zu viel Aufwand erzeugen. In Agenturen geht es dabei weniger um Anwesenheit als um Projektmargen, Auslastung, Nachkalkulation und Rechnung.
+
+### Reicht Excel für die Zeiterfassung in der Agentur?
+
+Formal ist das eine Form der Erfassung, für Agenturen aber meist zu langsam und zu fehleranfällig. Zeiten werden nachgetragen, Budgetwarnungen kommen zu spät und Rechnungen müssen manuell geradegezogen werden.
+
+### Worauf sollte ich bei einem Zeiterfassungstool für Agenturen achten?
+
+Es muss wenig Reibung erzeugen, im Kontext von Projekt, Aufgabe und Budget funktionieren und die Daten weiterverarbeiten. Wenn Zeiten nicht in Auslastung, Controlling und Rechnung fließen, endet alles in manueller Nacharbeit.
+
+### Wie bringe ich mein Team dazu, Zeiten sauber zu erfassen?
+
+Lass täglich erfassen statt am Freitag gesammelt, und zwar dort, wo gearbeitet wird. Projektverantwortliche sollten Budgetabweichungen früh sehen, nicht erst am Monatsende.
+
+## Passend dazu
+
+- [Operations-Beratung für Agenturen](/operations-beratung-agenturen)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Digitale Transformation im Mittelstand: Warum die meisten Projekte nicht an Software scheitern](/blog/digitale-transformation-mittelstand)
+- [ERP für Agenturen: Warum klassische Systeme oft das falsche Problem lösen](/blog/erp-fuer-agenturen)
 
 ## Quellen
 - Bitkom, *Arbeitszeiterfassung in drei Viertel der Unternehmen*, 06.06.2025: https://www.bitkom.org/Presse/Presseinformation/Arbeitszeiterfassung-Unternehmen

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { listBlogPosts, CATEGORY_LABELS, CATEGORY_COLORS } from '@/lib/blog'
 import { NoSnap } from '@/components/NoSnap'
+import { IDS, JsonLd, SITE_URL, jsonLdGraph } from '@/lib/schema'
 
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
@@ -30,10 +31,33 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   const posts = listBlogPosts()
   const categories = ['all', 'operations', 'systeme', 'ki', 'exit'] as const
+  const schema = jsonLdGraph([
+    {
+      '@type': 'Blog',
+      '@id': `${SITE_URL}/blog#blog`,
+      url: `${SITE_URL}/blog`,
+      name: 'Blog von Lukas Ebner',
+      description: 'Artikel zu Führung, Skalierung, Prozessen, KI und Exit für Geschäftsführer im Mittelstand.',
+      inLanguage: 'de-DE',
+      author: { '@id': IDS.person },
+      publisher: { '@id': IDS.org },
+      isPartOf: { '@id': IDS.website },
+      blogPost: posts
+        .filter((p) => p.status === 'published')
+        .map((p) => ({
+          '@type': 'BlogPosting',
+          '@id': `${SITE_URL}/blog/${p.slug}#article`,
+          headline: p.title,
+          url: `${SITE_URL}/blog/${p.slug}`,
+          datePublished: p.date,
+        })),
+    },
+  ])
 
   return (
     <div className="min-h-screen bg-surface-light">
       <NoSnap />
+      <JsonLd data={schema} />
       {/* Hero */}
       <div className="bg-surface-dark py-24 lg:py-32">
         <div className="mx-auto max-w-5xl px-6">

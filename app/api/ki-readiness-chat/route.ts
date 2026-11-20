@@ -77,9 +77,10 @@ Lukas Ebner — Unternehmensberater Regensburg. 15 Jahre SaaS, Exit 2022. Spezia
 
 BAFA-FAKTEN:
 - Programm: "Förderung von Unternehmensberatungen für KMU"
-- Zuschuss: bis zu 80% (regional unterschiedlich)
-- Maximal förderfähig: 2.800 EUR Beratungskosten pro Antrag → max 2.240 EUR Zuschuss
-- Bis zu 5 Anträge pro KMU bis 31.12.2026, max 2/Jahr
+- Bemessungsgrundlage: max. 3.500 EUR Beratungskosten je Beratung
+- Zuschuss Bayern/alte Bundesländer: 50 % → max. 1.750 EUR; neue Bundesländer (ohne Berlin, Region Leipzig) sowie Regionen Lüneburg und Trier: 80 % → max. 2.800 EUR
+- Bis zu 5 Beratungen pro KMU während der Laufzeit, max. 2/Jahr; Richtlinie verlängert bis 31.12.2028
+- Ab 01.01.2027 Antrag nur digital mit ELSTER-Konto oder BundID
 - Gilt nur für KMU (bis 250 MA + 50 Mio EUR Umsatz)
 - Antrag vor Beratung stellen (nicht rückwirkend)
 

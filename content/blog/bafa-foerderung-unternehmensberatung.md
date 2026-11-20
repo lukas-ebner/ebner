@@ -1,7 +1,7 @@
 ---
 title: "BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt"
 slug: bafa-foerderung-unternehmensberatung
-description: ""
+description: "BAFA-Förderung für Unternehmensberatung: bis zu 1.750 € Zuschuss in Bayern, Antrag vor Beratungsbeginn, Programm bis Ende 2028. Wann sie sich lohnt und wann nicht."
 keyword: "BAFA Förderung Unternehmensberatung"
 nebenkeywords: []
 category: exit
@@ -9,12 +9,17 @@ status: published
 funnel: BOFU
 kd: "nicht indexiert"
 date: "2026-04-26"
+updated: "2026-11-20"
 heroImage: /images/blog/bafa-foerderung-unternehmensberatung-hero.jpg
 image: /images/blog/bafa-foerderung-unternehmensberatung-hero.jpg
 cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Die **BAFA-Förderung für Unternehmensberatung** bezuschusst externe Beratung für kleine und mittlere Unternehmen zu wirtschaftlichen, finanziellen, personellen und organisatorischen Fragen der Unternehmensführung. In Bayern bekommst du 50 Prozent von maximal 3.500 Euro, also höchstens 1.750 Euro pro Beratung, bei maximal fünf Beratungen insgesamt und höchstens zwei pro Jahr. Den Antrag stellst du vor Beratungsbeginn, ab dem 1. Januar 2027 nur noch digital über ELSTER oder BundID. Das Programm läuft bis zum 31. Dezember 2028 und lohnt sich nur, wenn die Beratung einen klar benannten Engpass löst.
 
 Wenn du gerade nach **BAFA Förderung Unternehmensberatung** suchst, ist meistens schon etwas im Busch.
 Ein Angebot liegt auf dem Tisch. Ein Problem ist zu lange liegen geblieben. Oder du willst endlich externe Hilfe holen, ohne direkt das volle Honorar allein zu tragen.
@@ -30,8 +35,9 @@ Denn die BAFA-Förderung kann sinnvoll sein. Gerade jetzt. Am **22. April 2026**
 
 Das BAFA-Programm „Förderung von Unternehmensberatungen für KMU“ bezuschusst externe Unternehmensberatung für kleine und mittlere Unternehmen. Es geht dabei nicht um Softwarekauf, nicht um Umsetzung und nicht um hübsch verpackte Fördermittelakrobatik. Es geht um Beratung zu wirtschaftlichen, finanziellen, personellen und organisatorischen Fragen der Unternehmensführung.
 
-Die aktuelle Richtlinie gilt laut BAFA bis **31. Dezember 2026**.
-Innerhalb dieser Laufzeit kann ein förderberechtigtes Unternehmen maximal **5** abgeschlossene Beratungen fördern lassen, aber nicht mehr als **2 pro Jahr**. Für Unternehmen in Bayern ist die Sache recht greifbar: Die IHK Nürnberg nennt eine Bemessungsgrundlage von **3.500 Euro**, einen Zuschuss von **50 Prozent** und damit maximal **1.750 Euro** pro Beratung.
+**Update November 2026:** Das Programm wurde im Oktober 2026 bis zum **31. Dezember 2028** verlängert (amtlich veröffentlicht am 28. Oktober 2026). Ab dem **1. Januar 2027** stellst du den Antrag nur noch digital mit einem ELSTER-Unternehmenskonto oder der BundID. An Fördersatz und Höhe ändert sich nichts.
+
+Innerhalb der Laufzeit kann ein förderberechtigtes Unternehmen maximal **5** abgeschlossene Beratungen fördern lassen, aber nicht mehr als **2 pro Jahr**. Für Unternehmen in Bayern ist die Sache recht greifbar: Die IHK Nürnberg nennt eine Bemessungsgrundlage von **3.500 Euro**, einen Zuschuss von **50 Prozent** und damit maximal **1.750 Euro** pro Beratung.
 
 Das ist nicht nichts.
 Aber es ist auch kein Freifahrtschein.
@@ -83,7 +89,7 @@ Die BAFA prüft nicht nur dein Unternehmen, sondern auch die Beratereigenschaft 
 
 ### 3. Du stellst den Antrag online
 
-Der Antrag läuft über die BAFA-Antragsplattform.
+Der Antrag läuft über die BAFA-Antragsplattform. Für Anträge ab dem 1. Januar 2027 brauchst du dafür ein ELSTER-Unternehmenskonto oder die BundID. Kümmere dich rechtzeitig darum, die Freischaltung von ELSTER dauert per Post ein paar Tage.
 Wichtig ist der Satz, an dem die meisten Fehler hängen: **Du darfst mit der Beratung erst nach dem Informationsschreiben beginnen.** Laut BAFA gilt sogar bereits der Abschluss eines Beratungsvertrags als Beginn. Wer erst unterschreibt und dann Förderlogik prüft, hat sich oft schon selbst aus dem Programm geschossen.
 
 ### 4. Die Beratung läuft
@@ -185,7 +191,10 @@ Ja. Laut BAFA darfst du mit der Beratung erst nach dem Informationsschreiben beg
 Nach IHK Nürnberg liegt die Bemessungsgrundlage in Bayern bei **3.500 Euro**, der Zuschuss bei **50 Prozent**, also maximal **1.750 Euro**.
 
 ### Wie oft kann ich die Förderung nutzen?
-Die aktuelle Richtlinie erlaubt maximal **5** abgeschlossene Beratungen bis **31. Dezember 2026**, davon höchstens **2 pro Jahr**.
+Die Richtlinie erlaubt maximal **5** abgeschlossene Beratungen während ihrer Laufzeit, jetzt bis **31. Dezember 2028**, davon höchstens **2 pro Jahr**.
+
+### Bis wann gibt es die BAFA-Förderung für Unternehmensberatung?
+Die Richtlinie wurde im Oktober 2026 bis zum **31. Dezember 2028** verlängert. Bis dahin müssen die Verwendungsnachweise eingereicht sein. Ab 2027 läuft der Antrag nur noch digital über ELSTER oder BundID.
 
 ### Zahlt die BAFA vorab?
 Nein, in der Praxis läuft es über Antrag, Durchführung, Verwendungsnachweis und dann den Zuschuss. Du solltest also nicht so planen, als käme das Geld am ersten Tag zurück.
@@ -204,7 +213,16 @@ Wenn nicht, ist sie nur ein Etikett auf einem unscharfen Projekt.
 Wenn du das für dein Unternehmen prüfen willst, dann lass uns das im Erstgespräch nüchtern durchgehen.
 Nicht mit Fördermittel-Kitsch. Sondern mit Blick auf deinen Engpass, dein Timing und die Frage, ob BAFA hier wirklich passt.
 
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor](/blog/unternehmensnachfolge)
+- [Unternehmenswert steigern: Die Hebel, die Käufer wirklich interessieren](/blog/unternehmenswert-steigern)
+
 ## Weiterführende Links
+- Alle Zahlen, Ablauf und BAFA-Check im Überblick: [BAFA-Förderung für Unternehmensberatung in Regensburg](/themen/bafa)
+- Was die Beratung kostet und was davon gefördert wird: [Preise](/preise)
 - Mehr zum Thema Organisations- und Veränderungsarbeit: [/blog/digitale-transformation-mittelstand](/blog/digitale-transformation-mittelstand)
 - Wenn dein Thema eher Richtung Übergabe und Unternehmenswert geht: [/blog/exit-strategie](/blog/exit-strategie)
 - Mehr zu meinem Hintergrund: [/ueber-mich](/ueber-mich)
@@ -212,4 +230,6 @@ Nicht mit Fördermittel-Kitsch. Sondern mit Blick auf deinen Engpass, dein Timin
 ## Externe Quellen
 - BAFA: https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html
 - IHK Nürnberg: https://www.ihk-nuernberg.de/ihr-unternehmen/gruendung/coaching-beratungsfoerderung/bafa-programm
+- IHK Heilbronn-Franken, Beratungsförderung für KMU bis Ende 2028 verlängert, 02.11.2026: https://www.ihk.de/heilbronn-franken/produktmarken/gruendung-foerderung/aktuelles/beratungsfoerderung-fuer-kmu-bis-ende-2028-verlaengert-7219214
+- IHK Regensburg, Beratungsförderung für den Mittelstand: https://www.ihk.de/regensburg/fachthemen/finanzierung-und-krisenmanagement/finanzierung/beratungsfoerderung-fuer-den-mittelstand-3496712
 - vbw, Pressestatement vom 22. April 2026: https://www.vbw-bayern.de/vbw/PresseCenter/Pressestatement-zur-Fruehjahrsprognose-2026-der-Bundesregierung.jsp

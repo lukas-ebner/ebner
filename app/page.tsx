@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageBuilder } from '@/components/PageBuilder'
 import { loadPage } from '@/lib/page-builder'
 import { listPublishedPosts, CATEGORY_LABELS } from '@/lib/blog'
+import { IDS, JsonLd, collectFaqs, faqPage, jsonLdGraph, webPage } from '@/lib/schema'
 
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
@@ -54,5 +55,21 @@ export default function HomePage() {
     })
   }
 
-  return <PageBuilder slides={page.slides} accent={page.meta.accent} />
+  const faqs = collectFaqs(page.slides)
+  const schema = jsonLdGraph([
+    webPage({
+      path: '/',
+      name: page.meta.title,
+      description: page.meta.description,
+      about: IDS.org,
+    }),
+    faqs.length > 0 ? faqPage(faqs, '/') : null,
+  ])
+
+  return (
+    <>
+      <JsonLd data={schema} />
+      <PageBuilder slides={page.slides} accent={page.meta.accent} />
+    </>
+  )
 }

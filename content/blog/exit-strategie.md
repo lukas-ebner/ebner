@@ -1,7 +1,7 @@
 ---
 title: "Exit-Strategie: Warum Verkaufsfähigkeit Jahre vor dem Verkauf beginnt"
 slug: exit-strategie
-description: ""
+description: "Exit-Strategie für Unternehmer: Verkaufsfähigkeit beginnt Jahre vor dem Verkauf. Was Käufer prüfen und wie du dein Unternehmen unabhängig von dir machst."
 keyword: "exit strategie"
 nebenkeywords: []
 category: exit
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Eine **Exit-Strategie** beginnt Jahre vor dem Verkauf, nicht erst mit dem ersten Käufergespräch. Sie macht dein Unternehmen unabhängig von dir, sorgt für saubere Zahlen und Unterlagen und senkt Risiken wie Kundenkonzentration oder eine fehlende zweite Führungsebene. Praxisquellen aus dem IHK-Umfeld nennen drei bis fünf, teils bis zu zehn Jahre Vorlauf. Verkaufsfähigkeit lohnt sich auch ohne Verkaufsabsicht, weil ein solches Unternehmen meist besser geführt ist.
 
 Die meisten Unternehmer denken bei einer Exit-Strategie an den Moment, in dem ein Käufer am Tisch sitzt.
 Das ist zu spät.
@@ -223,6 +227,15 @@ Sondern weil Schwäche in Exit-Prozessen teuer wird.
 
 Wenn du herausfinden willst, wie verkaufsfähig dein Unternehmen heute wirklich ist, lass uns draufschauen.
 Nicht auf Wunschpreise. Sondern auf das, was einem Käufer am Ende wirklich wichtig ist.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt](/blog/bafa-foerderung-unternehmensberatung)
+- [Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor](/blog/unternehmensnachfolge)
 
 ## Weiterführende Links
 - Mehr zu Verkaufsfähigkeit: [/blog/firma-verkaufsfertig-machen](/blog/firma-verkaufsfertig-machen)

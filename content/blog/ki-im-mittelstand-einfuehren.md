@@ -1,7 +1,7 @@
 ---
 title: "KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt"
 slug: ki-im-mittelstand-einfuehren
-description: ""
+description: "So führst du KI im Mittelstand ein, ohne Theater, ohne Tool-Chaos und mit einem ersten Anwendungsfall, der im Alltag wirklich etwas bringt."
 keyword: "ki im mittelstand einfuehren"
 nebenkeywords: ["welche ki tools fuer unternehmen"]
 category: operations
@@ -16,21 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt"
-slug: "ki-im-mittelstand-einfuehren"
-description: "So führst du KI im Mittelstand ein, ohne Theater, ohne Tool-Chaos und mit einem ersten Anwendungsfall, der im Alltag wirklich etwas bringt."
-primary_keyword: "ki im mittelstand einfuehren"
-secondary_keywords:
-  - "welche ki tools fuer unternehmen"
-  - "ki einfuehren kleines unternehmen"
-  - "ki strategie mittelstand"
-word_count_target: "1500-2500"
-accent_mode: "orange"
-hero_topic: "Geschäftsführer startet nicht mit Tool-Hype, sondern mit einem konkreten Betriebsengpass und baut daraus einen skalierbaren KI-Workflow."
----
+## Kurzfassung
 
-# KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt
+Wenn du **KI im Mittelstand einführen** willst, starte mit einem Engpass, nicht mit einem Tool. Ein guter erster Anwendungsfall kommt häufig vor, kostet heute spürbar Zeit oder Qualität, hat eine verantwortliche Person und eine messbare Zielgröße. Teste ihn an 5 bis 10 echten Fällen und bau erst danach einen Standard, bevor weitere Teams dazukommen.
 
 Wenn du KI im Mittelstand einführen willst, fang nicht mit dem Tool an. Fang mit dem Engpass an.
 
@@ -270,6 +258,15 @@ Wenn du willst, schauen wir gemeinsam drauf, **welcher erste KI-Anwendungsfall i
 [Erstgespräch vereinbaren](/erstgespraech)
 
 ---
+
+## Passend dazu
+
+- [KI-Readiness & Prototyping: KI-Beratung und Prototypen für den Mittelstand](/ki-readiness)
+- [KI-Beratung in Regensburg](/ki-beratung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Change Management im Mittelstand: Warum Projekte trotz Zustimmung scheitern](/blog/change-management-mittelstand)
+- [IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen](/blog/it-sicherheit-mittelstand-beratung)
 
 ## Autor
 

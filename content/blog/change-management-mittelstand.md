@@ -16,6 +16,10 @@ cta:
   url: "/erstgespraech"
 ---
 
+## Kurzfassung
+
+Change-Projekte im Mittelstand scheitern selten an offenem Widerstand. Sie scheitern an höflicher Zustimmung, auf die keine Verhaltensänderung folgt, weil der Wandel im Alltag gegen das Tagesgeschäft verliert. Gute **change management beratung** übersetzt das Zielbild deshalb in Führungsmechanik: klare Entscheidungshoheit, feste Wochenroutinen, wenige Zielgrößen und Konsequenz. Ein 90-Tage-Rahmen mit drei Phasen macht den Wandel messbar und führbar.
+
 „Alle sind an Bord.“
 
 Wenn du diesen Satz im Kickoff hörst, solltest du nicht zu früh aufatmen.
@@ -236,7 +240,7 @@ Sie liefert keine Folienreligion, sondern hilft dabei, Ziele in konkrete Führun
 
 ## Über Lukas Ebner
 
-Lukas Ebner hat mit **eins+null** 15 Jahre lang ein SaaS-Unternehmen im Energie-Sektor aufgebaut und 2022 den Exit in die Kraftwerk-Gruppe vollzogen. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
+Lukas Ebner hat 2009 die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
 
 Wenn er über Wandel spricht, meint er nicht das Theater rund um Veränderung. Er meint die Frage, ob ein Unternehmen Entscheidungen auch dann durchbekommt, wenn das Tagesgeschäft drückt, Konflikte auftauchen und niemand Lust auf noch ein Zusatzprojekt hat.
 
@@ -255,6 +259,15 @@ Die bessere Frage lautet: Was läuft nächsten Dienstag konkret anders als letzt
 Wenn du das nicht beantworten kannst, ist dein Projekt wahrscheinlich noch in der PowerPoint-Phase.
 
 Wenn du willst, schauen wir uns einen deiner laufenden Veränderungsfälle gemeinsam an und bauen daraus einen Ablauf, der nicht nur im Kickoff gut klingt, sondern im Alltag trägt.
+
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen](/blog/it-sicherheit-mittelstand-beratung)
+- [KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt](/blog/ki-im-mittelstand-einfuehren)
 
 ## Externe Quellen
 - [Gallup Engagement Index Deutschland 2025](https://www.gallup.com/de/472028/bericht-zum-engagement-index-deutschland.aspx)

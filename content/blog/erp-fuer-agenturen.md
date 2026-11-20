@@ -1,7 +1,7 @@
 ---
 title: "ERP für Agenturen: Warum klassische Systeme oft das falsche Problem lösen"
 slug: erp-fuer-agenturen
-description: ""
+description: "ERP für Agenturen: Warum klassische ERP-Systeme oft das falsche Problem lösen und was Agenturen für Projekte, Zeiten und Abrechnung wirklich brauchen."
 keyword: "erp für agenturen"
 nebenkeywords: []
 category: systeme
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Ein klassisches **ERP für Agenturen** löst oft das falsche Problem, weil es für Lager, Beschaffung und Fertigung gebaut ist. Agenturen steuern dagegen über Zeit, Rollen, Auslastung, Projektbudget, Marge und Rechnungslogik. Viele brauchen deshalb zuerst saubere Prozesse, Zeiterfassung und Controlling oder ein projektbasiertes Betriebssystem statt eines großen ERP. Entscheidend ist nicht die Teamgröße, sondern ob Projektleitung, Finance und Geschäftsführung denselben Zahlen vertrauen.
 
 Viele Agenturen glauben, sie bräuchten ein ERP, um professioneller zu werden.
 Das klingt erst mal vernünftig.
@@ -240,6 +244,15 @@ Wer erst seine Betriebslogik schärft, kauft später deutlich klüger ein.
 
 Wenn du herausfinden willst, ob ihr wirklich ein ERP braucht oder nur endlich eine bessere Betriebslogik, lass uns draufschauen.
 Die teuerste Entscheidung ist oft nicht das fehlende System. Sondern das falsche.
+
+## Passend dazu
+
+- [Systeme & Automatisierung: Tool-Audit, Systemarchitektur, Automatisierung](/digitalisierung)
+- [Operations-Beratung für Agenturen](/operations-beratung-agenturen)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Projektmanagement Software Agentur: Erst System, dann Tool](/blog/projektmanagement-software-agentur)
+- [Tool-Audit im Unternehmen: Erst Wahrheit, dann Software](/blog/tool-audit-unternehmen)
 
 ## Weiterführende Links
 - Mehr zur Zahlenlogik: [/blog/controlling-fuer-agenturen](/blog/controlling-fuer-agenturen)

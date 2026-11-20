@@ -1,7 +1,7 @@
 ---
 title: "Inhouse-Seminar Prozesse: Wann ein Seminar reicht und wann du tiefer ranmusst"
 slug: inhouse-seminar-prozesse
-description: ""
+description: "Inhouse-Seminar zu Prozessen: Wann ein Seminar reicht, wann es verpufft und wann du Prozesse mit Begleitung im Alltag verankern musst."
 keyword: "inhouse seminar prozesse"
 nebenkeywords: ["seminar lean mittelstand"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Ein **Inhouse-Seminar Prozesse** lohnt sich, wenn der Engpass schon klar ist, das Team aber noch nicht einheitlich arbeitet, und wenn ihr euch genau einen Prozess vornehmt. Entscheidend ist der Transfer danach: ein Owner pro Maßnahme, ein Review innerhalb von 30 Tagen und ein bis zwei Kennzahlen. Sind Verantwortlichkeiten unklar, wechseln Prioritäten ständig oder landet jede Abweichung beim Chef, hast du kein Wissens-, sondern ein Strukturproblem. Dann ist ein Seminar bestenfalls der Auftakt.
 
 Wenn ein Team nach einem Prozess-Seminar zwei Wochen motiviert ist und danach wieder im alten Muster landet, lag das Problem meistens nicht am Seminar.
 
@@ -169,3 +173,12 @@ Aber nur dann, wenn du schon weißt, wo der Engpass liegt, wenn du den Fokus eng
 Wenn bei euch Verantwortlichkeiten unklar sind, Prioritäten ständig kippen oder jede Ausnahme wieder an der Geschäftsführung hängen bleibt, dann ist das Seminar nicht die Lösung. Dann ist es bestenfalls der Auftakt.
 
 Wenn du ehrlich herausfinden willst, was euer Team gerade wirklich braucht, ein Seminar, einen Workshop oder tieferes Prozessdesign, dann lass uns sprechen.
+
+## Passend dazu
+
+- [Prozessoptimierung in Regensburg und Ostbayern](/prozessoptimierung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Mitarbeiter halten sich nicht an Prozesse? Oft ist dein System das Problem](/blog/mitarbeiter-halten-sich-nicht-an-prozesse)
+- [Wie Prozesse dokumentieren im kleinen Unternehmen, ohne Bürokratie-Monster](/blog/wie-prozesse-dokumentieren-kleines-unternehmen)

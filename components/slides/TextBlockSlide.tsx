@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { InlineMarkdown } from '@/components/ui/InlineMarkdown'
 
 interface TextBlockSlideProps {
   headline: string
@@ -71,7 +72,7 @@ export function TextBlockSlide({
                 isDark ? 'text-text-light/80' : 'text-text-secondary'
               }`}
             >
-              {p}
+              <InlineMarkdown text={p} />
             </p>
           ))}
         </div>

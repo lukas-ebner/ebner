@@ -54,3 +54,37 @@ export const CATEGORY_COLORS: Record<string, string> = {
   ki: '#1B1564',
   exit: '#191819',
 }
+
+/**
+ * FAQ aus dem Markdown ziehen: Abschnitt "## FAQ…" bzw. "## Häufige Fragen…",
+ * darin "### Frage" gefolgt vom Antworttext bis zur nächsten Überschrift.
+ */
+export function extractBlogFaq(content: string): { question: string; answer: string }[] {
+  const lines = content.split('\n')
+  const out: { question: string; answer: string }[] = []
+  let inFaq = false
+  let current: { question: string; answer: string[] } | null = null
+  const flush = () => {
+    if (current && current.answer.join(' ').trim()) {
+      out.push({ question: current.question, answer: current.answer.join(' ').replace(/\s+/g, ' ').trim() })
+    }
+    current = null
+  }
+  for (const line of lines) {
+    if (/^##\s/.test(line)) {
+      flush()
+      inFaq = /^##\s+(FAQ|Häufige Fragen)/i.test(line)
+      continue
+    }
+    if (!inFaq) continue
+    const q = line.match(/^###\s+(.+)/)
+    if (q) {
+      flush()
+      current = { question: q[1].trim(), answer: [] }
+    } else if (current && line.trim()) {
+      current.answer.push(line.trim())
+    }
+  }
+  flush()
+  return out
+}

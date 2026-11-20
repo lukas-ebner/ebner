@@ -16,6 +16,10 @@ cta:
   url: "/erstgespraech"
 ---
 
+## Kurzfassung
+
+Ein **Mediator im Unternehmen** ist sinnvoll, wenn ein Konflikt nach Führungsentscheidungen wiederkehrt, Leistungsträger nur noch formal zusammenarbeiten und die Geschäftsführung zur Dauer-Schlichtungsstelle wird. Ein Machtwort klärt dann nur die Sachebene, während der Konflikt auf Beziehungs- und Systemebene weiterläuft. Mediation ist ein gesetzlich geregeltes Verfahren aus Auftragsklärung, Einzelgesprächen, gemeinsamer Sitzung und Nachsteuerung. Sie ersetzt aber keine schwache Führung und keine klare Rollenentscheidung.
+
 Es war Dienstag, 08:10 Uhr, als mich ein Geschäftsführer aus der Oberpfalz anrief.
 
 Sein erster Satz war ziemlich eindeutig: „Ich brauche keine Mediation. Ich brauche, dass die zwei endlich funktionieren.“
@@ -259,7 +263,7 @@ Zu glauben, das Gespräch allein hätte das Problem gelöst. Ohne Routinen, Revi
 
 ## Über Lukas Ebner
 
-Lukas Ebner hat mit **eins+null** 15 Jahre lang ein SaaS-Unternehmen im Energie-Sektor aufgebaut und 2022 den Exit in die Kraftwerk-Gruppe vollzogen. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
+Lukas Ebner hat 2009 die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
 
 Wenn er auf Konflikte in Unternehmen schaut, dann nicht als Therapeut von außen, sondern als Operator. Ihn interessiert, ob ein Unternehmen unter Druck sauber arbeitsfähig bleibt oder ob persönliche Reibung irgendwann die komplette Führungsenergie auffrisst.
 
@@ -274,6 +278,15 @@ Du brauchst bessere Klärung und klarere Systemregeln.
 Ein Mediator im Unternehmen ist dann sinnvoll, wenn du Ergebnis vor Ego stellst und keine Lust mehr hast, Konflikte auf Verschleiß zu fahren.
 
 Nicht weil ihr schwach seid. Sondern weil professionelle Führung irgendwann versteht, dass nicht jeder Konflikt durch Lautstärke lösbar ist.
+
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Mediator im Unternehmen: Wann Mediation besser wirkt als ein Machtwort](/blog/mediator-im-unternehmen)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
 
 ## Externe Quellen
 - [BMJ, Mediation](https://www.bmj.de/DE/themen/wege_zum_recht/mediation/mediation_node.html)
