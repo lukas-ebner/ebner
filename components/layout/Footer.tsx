@@ -8,6 +8,8 @@ const leistungen = [
   { href: '/operations', label: 'Operations & Führung' },
   { href: '/digitalisierung', label: 'Systeme & Automatisierung' },
   { href: '/ki-readiness', label: 'KI-Readiness & Prototyping' },
+  { href: '/themen/bafa', label: 'BAFA-Förderung' },
+  { href: '/unternehmensberatung-regensburg', label: 'Unternehmensberatung Regensburg' },
 ]
 
 const mehr = [
@@ -15,6 +17,7 @@ const mehr = [
   { href: '/preise', label: 'Preise' },
   { href: '/blog', label: 'Blog' },
   { href: '/ueber-mich', label: 'Über mich' },
+  { href: '/unverzichtbar', label: 'Buch: (Un)verzichtbar' },
 ]
 
 export function Footer() {
@@ -98,7 +101,7 @@ export function Footer() {
           <p className="mt-1 font-body text-sm text-text-muted">Yorckstraße 22</p>
           <p className="font-body text-sm text-text-muted">93049 Regensburg</p>
           <a
-            href="tel:+499414639098​0"
+            href="tel:+4994146390980"
             className="mt-3 inline-block font-body text-sm text-text-muted transition-colors hover:text-brand"
           >
             +49 941 463 909 80

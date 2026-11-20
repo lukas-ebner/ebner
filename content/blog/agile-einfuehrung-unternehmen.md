@@ -1,7 +1,7 @@
 ---
 title: "Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen"
 slug: agile-einfuehrung-unternehmen
-description: ""
+description: "So führst du agile Arbeitsweisen im Unternehmen ein, ohne Ritual-Kosmetik und mit echter Wirkung auf Zusammenarbeit, Tempo und Entscheidungen."
 keyword: "agile einfuehrung unternehmen"
 nebenkeywords: ["scrum master coaching"]
 category: operations
@@ -16,21 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen"
-slug: "agile-einfuehrung-unternehmen"
-description: "So führst du agile Arbeitsweisen im Unternehmen ein, ohne Ritual-Kosmetik und mit echter Wirkung auf Zusammenarbeit, Tempo und Entscheidungen."
-primary_keyword: "agile einfuehrung unternehmen"
-secondary_keywords:
-  - "scrum master coaching"
-  - "agile coach unternehmen"
-  - "agile transformation mittelstand"
-word_count_target: "1500-2500"
-accent_mode: "orange"
-hero_topic: "Team nutzt agile Rituale, aber echte Wirkung entsteht erst, als Führung Entscheidungswege und Prioritäten verändert."
----
+## Kurzfassung
 
-# Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen
+Eine **agile Einführung im Unternehmen** funktioniert nur, wenn sich Führung, Prioritäten und Entscheidungswege mit ändern. Neue Rituale wie Daily und Retro machen eine Organisation allein nicht anpassungsfähiger. Starte mit einem Team und einem wiederkehrenden Engpass, kläre vorher Entscheidungsraum, Eskalationen und eine Zielmetrik. Nach rund 90 Tagen misst du, ob sich Durchlaufzeiten und Rückfragen verbessert haben, und weitest erst dann aus.
 
 Wenn du agile Arbeitsweisen in deinem Unternehmen einführen willst, dann fang nicht mit dem Daily an.
 
@@ -257,6 +245,15 @@ Wenn du herausfinden willst, **ob agile Arbeitsweisen in deinem Unternehmen gera
 [Erstgespräch vereinbaren](/erstgespraech)
 
 ---
+
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Mediator im Unternehmen: Wann Mediation besser wirkt als ein Machtwort](/blog/mediator-im-unternehmen)
+- [Mediator im Unternehmen: Warum ein Machtwort den Konflikt nur verschiebt](/blog/mediator-unternehmen-case-study)
 
 ## Autor
 

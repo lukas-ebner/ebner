@@ -20,6 +20,14 @@ slides:
     valign: center
     gradient: left
 
+  # ── 1b. KURZBIO (zitierbar für Suche & KI) ──
+  - template: text-block
+    variant: light
+    align: left
+    pill: "Kurz gesagt"
+    headline: "Lukas Ebner in drei Absätzen."
+    body: "Lukas Ebner ist Unternehmensberater in Regensburg und Geschäftsführer der **Wachstumscoach GmbH**. Er berät Geschäftsführer und Inhaber von Unternehmen mit 5 bis 100 Mitarbeitenden – vor allem Dienstleister, Agenturen und IT-Firmen in Ostbayern – zu Operations, Prozessen, Führung, Digitalisierung und KI.\n\nSeine Erfahrung kommt aus der eigenen Praxis: 2009 hat er die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende, 4 Mio. € Umsatz und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Seit 2023 entwickelt er mit der Leadtime Labs GmbH die Software [Leadtime](https://leadtime.de) für Agenturen und IT-Dienstleister.\n\nEr hat einen MBA der TH Deggendorf, ist zertifizierter Organisationsberater und systemischer Coach (ICO) und schreibt über Unternehmensführung im Mittelstand – zuletzt den Unternehmer-Roman [(Un)verzichtbar](/unverzichtbar). Beratungen der Wachstumscoach GmbH sind über das BAFA-Programm für Unternehmensberatung förderfähig ([bis zu 1.750 € Zuschuss in Bayern](/themen/bafa))."
+
   # ── 2. TIMELINE ─────────────────────────────────────
   - template: timeline
     headline: "Mein Weg."
@@ -168,6 +176,12 @@ slides:
 
       - question: "Welche Erfahrung bringt Lukas Ebner als Berater mit?"
         answer: "MBA (Note 1,3), zertifizierter Coach und Organisationsberater, IT-Sicherheitsbeauftragter ISO 27001. Parallel dazu noch zwei aktive Unternehmen, die ich nicht delegieren kann: Leadtime und Fracto. Wenn ich rate, dann weiß ich, wovon ich rede."
+
+      - question: "Was ist die Wachstumscoach GmbH?"
+        answer: "Die Wachstumscoach GmbH ist meine Unternehmensberatung mit Sitz in der Yorckstraße 22 in Regensburg (HRB 19991, Amtsgericht Regensburg, gegründet 2023). Sie berät Geschäftsführer mittelständischer Unternehmen zu Operations & Führung, Systemen & Automatisierung sowie KI-Readiness & Prototyping. Die Beratung ist über das BAFA-Programm förderfähig."
+
+      - question: "Welches Buch hat Lukas Ebner geschrieben?"
+        answer: "Den Unternehmer-Roman „(Un)verzichtbar“: 90 Tage im Leben von Thomas Maier, Geschäftsführer eines Maschinenbauers in Ostbayern, der lernt, nicht mehr der Engpass seines Unternehmens zu sein. Kostenlos als eBook, PDF und Hörbuch unter lukasebner.de/unverzichtbar. Dazu den Ratgeber „Projekte, die sich rechnen“ über Anforderungsmanagement für Software- und IT-Dienstleister (leadtime.de/buch)."
 
       - question: "Was ist Leadtime?"
         answer: "Ein PM-Tool, das ich selbst bräuchte. Entstand über 8 Jahre als internes System bei eins+null, irgendwann wurde aus CONNEX ein eigenständiges Produkt. Projektmanagement, Zeiterfassung, CRM, Abrechnung – alles zusammen, keine Excel-Lösungen. Selbst profitabel, selbst im Einsatz."

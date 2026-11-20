@@ -1,7 +1,7 @@
 ---
 title: "Firma verkaufsfertig machen: Welche Strukturen Kaufinteressenten wirklich prüfen"
 slug: firma-verkaufsfertig-machen
-description: ""
+description: "Firma verkaufsfertig machen: Welche Strukturen Kaufinteressenten prüfen – Inhaberabhängigkeit, Prozesse, Zahlen, Kundenbasis – und wie du sie aufbaust."
 keyword: "firma verkaufsfertig machen"
 nebenkeywords: ["unternehmensuebergabe vorbereiten"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Wer seine **Firma verkaufsfertig machen** will, muss zeigen, dass der Betrieb ohne die dauernde Präsenz des Inhabers plausibel funktioniert. Käufer prüfen Inhaberabhängigkeit, Kennzahlenqualität, Prozesse, die zweite Führungsebene, Verträge und Risiken, nicht die schöne Story. Weil das Zeit braucht, solltest du drei bis zehn Jahre vor der geplanten Übergabe beginnen. Erst baust du Abhängigkeiten ab und stabilisierst die Führung, dann machst du Prozesse und Zahlen belastbar, und zuletzt kommen Verkaufsunterlagen.
 
 Viele Unternehmer reden über den Kaufpreis, obwohl die wichtigere Frage früher beginnt: Würde jemand diese Firma morgen übernehmen wollen, wenn du als Inhaber für sechs Wochen raus wärst?
 
@@ -173,3 +177,12 @@ Genau deshalb ist Verkaufsfähigkeit im Mittelstand vor allem eine Frage von Fü
 Lukas Ebner arbeitet seit rund **15 Jahren** an der Schnittstelle aus Führung, Prozessen, IT und operativer Umsetzung. Er hat mit **eins+null** selbst ein Unternehmen aufgebaut, skaliert und **2022 verkauft**. Heute begleitet er Geschäftsführer dabei, Firmen so aufzustellen, dass sie nicht mehr komplett am Inhaber hängen und Übergaben nicht im letzten Moment an operativen Baustellen scheitern.
 
 Wenn du prüfen willst, wie verkaufsfähig dein Unternehmen heute wirklich ist, kannst du ein **Erstgespräch buchen**. Ohne Exit-Theater. Mit einem ehrlichen Blick auf die Strukturen dahinter.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)

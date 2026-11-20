@@ -1,7 +1,7 @@
 ---
 title: "Geschäftsführer-Coaching im Mittelstand: Woran du Wirkung in 90 Tagen erkennst"
 slug: geschaeftsfuehrer-coach
-description: ""
+description: "Geschäftsführer-Coaching im Mittelstand: Woran du in 90 Tagen erkennst, ob ein Coach wirkt, und was gutes Sparring für Geschäftsführer ausmacht."
 keyword: "geschaeftsfuehrer coach"
 nebenkeywords: ["fuehrungscoaching mittelstand"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Ein **Geschäftsführer-Coach** im Mittelstand ist ein Sparringspartner für Entscheidungen, Führungsarbeit und die Frage, wie dein Unternehmen weniger an dir hängt. Er arbeitet an deiner Rolle und deinen Mustern, nicht primär an Fachwissen. Ob das Coaching wirkt, erkennst du in 30 bis 90 Tagen: Entscheidungen fallen schneller, weniger Aufgaben wandern zu dir zurück und dein Führungsteam bringt Optionen statt Alarm. Sieht nach 90 Tagen alles aus wie vorher, war das Format wahrscheinlich zu nett.
 
 Wenn du als Geschäftsführer sonntagabends noch die Konflikte aus dem Führungsteam sortierst, montags offene Entscheidungen nacharbeitest und dienstags wieder selbst zum Engpass wirst, dann fehlt dir oft nicht Wissen. Dir fehlt Reibung an der richtigen Stelle.
 
@@ -170,3 +174,12 @@ Wenn du dagegen nur schöne Gespräche hattest, war es wahrscheinlich zu teuer f
 Lukas Ebner arbeitet seit rund **15 Jahren** an der Schnittstelle aus Führung, Prozessen, IT und operativer Umsetzung. Er hat mit **eins+null** selbst aufgebaut, skaliert und **2022 verkauft**. Heute begleitet er Geschäftsführer im Mittelstand dabei, aus dem Tagesgeschäft rauszukommen, Führungsstrukturen belastbar zu machen und Wachstum nicht durch noch mehr persönliche Überlastung zu bezahlen.
 
 Wenn du prüfen willst, ob Geschäftsführer-Coaching in deiner Situation wirklich Sinn ergibt, kannst du ein **Erstgespräch buchen**. Ohne Coaching-Romantik. Mit Blick auf den Engpass.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Sparring Partner für Geschäftsführer: Warum Widerspruch Geld wert ist](/blog/sparring-partner-geschaeftsfuehrer)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)

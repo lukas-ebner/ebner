@@ -1,9 +1,9 @@
 ---
 title: "Prozessoptimierung im KMU: Erst Engpässe, dann Tools"
 slug: prozessoptimierung-kmu
-description: ""
+description: "Wie Prozessoptimierung im KMU wirklich funktioniert: erst Engpässe und Entscheidungsregeln klären, dann digitalisieren und automatisieren."
 keyword: "prozessoptimierung kmu"
-nebenkeywords: []
+nebenkeywords: ["geschäftsführer engpass", "selbstständig raus aus dem tagesgeschäft", "unternehmen skalieren"]
 category: operations
 status: published
 funnel: MOFU
@@ -16,17 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Prozessoptimierung im KMU: Erst Engpässe, dann Tools"
-slug: prozessoptimierung-kmu
-description: "Wie Prozessoptimierung im KMU wirklich funktioniert: erst Engpässe und Entscheidungsregeln klären, dann digitalisieren und automatisieren."
-keyword: "prozessoptimierung kmu"
-nebenkeywords: ["geschäftsführer engpass", "selbstständig raus aus dem tagesgeschäft", "unternehmen skalieren"]
-category: operations
-funnel: MOFU
----
+## Kurzfassung
 
-# Prozessoptimierung im KMU: Erst Engpässe, dann Tools
+**Prozessoptimierung im KMU** beginnt mit den Engpässen, nicht mit Software. Kläre zuerst, wer was entscheiden darf, wann eskaliert wird und wie Übergaben laufen. Den größten Hebel haben meist Auftrags- und Finanzfreigaben, Onboarding, Problem-Eskalation und Preislogik. Nimm dir einen dieser Bereiche vor und standardisiere ihn sauber, erst danach lohnt sich die Digitalisierung.
 
 **Prozessoptimierung im KMU** beginnt oft an der falschen Stelle.
 
@@ -165,6 +157,33 @@ Die Zahlen aus **2025 und 2026** machen den Druck klar: **119 Milliarden Euro** 
 Deshalb mein Rat: Klär erst Entscheidungswege, Übergaben und Eskalationen. Danach lohnt sich die Digitalisierung doppelt.
 
 Wenn du willst, schauen wir gemeinsam darauf, **wo dein Unternehmen gerade an dir hängt und welcher Prozess als Erstes entschärft werden sollte**.
+
+## FAQ
+
+### Wo fange ich mit Prozessoptimierung im KMU an?
+
+Dort, wo deine persönliche Beteiligung den größten Stau erzeugt. Typisch sind Kunden- und Auftragsfreigaben, finanzielle Freigaben, Onboarding, Problem-Eskalation und Preisentscheidungen. Nimm genau einen Bereich und standardisiere ihn, nicht zehn auf einmal.
+
+### Sollte ich zuerst eine neue Software einführen?
+
+Nein. Software kann Prozesse beschleunigen, aber keine fehlende Klarheit ersetzen. Wenn Rollen, Grenzen und Übergaben nicht definiert sind, bekommst du nur ein digitaleres Chaos.
+
+### Wie delegiere ich, ohne dass die Qualität leidet?
+
+In vier Stufen: Die andere Person beobachtet, ihr macht es gemeinsam, sie macht es und du schaust mit, dann macht sie es allein und du prüfst stichprobenartig. Die Stichproben halten die Qualität sichtbar, ohne dass du wieder im Tagesgeschäft landest.
+
+### Woran merke ich, dass Prozessoptimierung wirkt?
+
+Nach einigen Wochen hat dein Kalender wieder Luft, es gibt weniger kurze Rückfragen und das Team entscheidet schneller. Auch Wartezeiten bei Kunden und Projekten werden kürzer.
+
+## Passend dazu
+
+- [Prozessoptimierung in Regensburg und Ostbayern](/prozessoptimierung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Führungskräfteentwicklung im KMU: Führung ist kein Zufall](/blog/fuehrungskraefteentwicklung-kmu)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
 
 ## Quellen
 - KfW / ZEW, 23.04.2026: https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_890944.html

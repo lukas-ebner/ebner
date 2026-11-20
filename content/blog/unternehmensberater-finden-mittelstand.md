@@ -1,7 +1,7 @@
 ---
 title: "Unternehmensberater finden im Mittelstand: 9 Fragen vor dem Erstgespräch"
 slug: unternehmensberater-finden-mittelstand
-description: ""
+description: "Unternehmensberater finden im Mittelstand: 9 Fragen, mit denen du vor dem Erstgespräch prüfst, ob eine Beratung zu deinem Unternehmen passt."
 keyword: "unternehmensberater finden mittelstand"
 nebenkeywords: ["coach fuer unternehmer"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Wer einen **Unternehmensberater im Mittelstand finden** will, sollte nicht nach großem Namen, Methode oder Sympathie auswählen. Entscheidend ist, ob die Person deinen konkreten Engpass schnell greift, Wirkung nach 30, 60 oder 90 Tagen benennen kann, Mandat von dir einfordert und dir auch unbequeme Wahrheiten über deine eigene Rolle zurückspielt. Starte klein mit einem klar umrissenen Problem, begrenzter Laufzeit und festen Messpunkten. Liegt die Blockade vor allem bei dir als Geschäftsführer, kann ein Coach für Unternehmer der bessere Hebel sein.
 
 Im Mittelstand wird Beratung oft nicht zu spät eingekauft. Sondern falsch.
 
@@ -221,3 +225,25 @@ Wenn nicht, kaufst du am Ende vor allem Erleichterung auf Zeit.
 Und davon hat der Mittelstand meistens schon genug.
 
 Wenn du magst, schauen wir gemeinsam auf euren Engpass und sortieren, ob du gerade Unternehmensberatung brauchst, einen Coach für Unternehmer oder schlicht eine Entscheidung, die zu lange liegen geblieben ist.
+
+## FAQ
+
+### Wie finde ich einen guten Unternehmensberater für den Mittelstand?
+Stell im Erstgespräch konkrete Fragen: Welches Problem sehen Sie bei uns? Woran merken wir nach 30, 60 oder 90 Tagen, dass Ihre Arbeit wirkt? Wann würden Sie uns abraten? Weicht jemand bei mehreren solchen Fragen aus, sei vorsichtig.
+
+### Woran erkenne ich einen schlechten Berater?
+An vielen Slides und wenigen guten Rückfragen, an Methodik statt Engpass und daran, dass Wirkung nicht benannt werden kann. Auch wer alles gleichzeitig machen will oder nie über Widerstände spricht, ist ein Warnsignal.
+
+### Coach oder Unternehmensberater: Was brauche ich?
+Ein Coach für Unternehmer ist sinnvoller, wenn die Blockade an der Spitze liegt. Etwa wenn du jede wichtige Entscheidung festhältst, Rollen nicht nachziehst oder weißt, was zu tun wäre, es aber nicht durchsetzt. Dann sitzt der Hebel näher an der tatsächlichen Blockade als bei einem weiteren Beratungsprojekt.
+
+### Muss ich gleich ein großes Beratungsprojekt vergeben?
+Nein. Klüger ist ein kleiner Start: ein klar umrissenes Problem, ein begrenzter Zeitraum, zwei oder drei Messpunkte und ein fester Review-Termin. Danach entscheidest du, ob ein größeres Projekt Sinn ergibt.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Change Management im Mittelstand: Warum Projekte trotz Zustimmung scheitern](/blog/change-management-mittelstand)
+- [IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen](/blog/it-sicherheit-mittelstand-beratung)

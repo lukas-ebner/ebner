@@ -4,6 +4,7 @@ import { PageBuilder } from '@/components/PageBuilder'
 import { ThemenPageLayout } from '@/components/layouts/ThemenPageLayout'
 import { listPageSlugs, loadPage } from '@/lib/page-builder'
 import { isLandingPageThemenFormat, loadLandingPageAsThemen } from '@/lib/themen'
+import { JsonLd, contentPageSchema } from '@/lib/schema'
 
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
@@ -102,12 +103,27 @@ export default async function DynamicPage({ params }: PageProps) {
 
   // Themen-Format landing pages (sections-based)
   if (isLandingPageThemenFormat(slug)) {
+    let themenPage
     try {
-      const themenPage = loadLandingPageAsThemen(slug)
-      return <ThemenPageLayout page={themenPage} />
+      themenPage = loadLandingPageAsThemen(slug)
     } catch {
       notFound()
     }
+    const canonical = canonicalPathForSlug(slug).replace('https://lukasebner.de', '')
+    return (
+      <>
+        <JsonLd
+          data={contentPageSchema({
+            slug,
+            path: canonical,
+            title: themenPage.meta.title,
+            description: themenPage.meta.description,
+            blocks: themenPage.sections,
+          })}
+        />
+        <ThemenPageLayout page={themenPage} />
+      </>
+    )
   }
 
   // Slide-based pages (hero-split, symptoms-grid, etc.)
@@ -118,34 +134,18 @@ export default async function DynamicPage({ params }: PageProps) {
     notFound()
   }
 
-  const canonicalUrl = canonicalPathForSlug(slug)
-  const isChangeManagementPage = slug === 'change-management-beratung' || slug === 'change-management-beratung-regensburg'
-
-  const serviceSchema = isChangeManagementPage
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        name: 'Change Management Beratung',
-        serviceType: 'Change Management Beratung für KMU',
-        provider: {
-          '@type': 'Organization',
-          name: 'Lukas Ebner',
-          url: 'https://lukasebner.de',
-        },
-        areaServed: ['Regensburg', 'Oberpfalz', 'Ostbayern'],
-        url: canonicalUrl,
-        description: page.meta.description,
-      }
-    : null
+  const canonicalPath = canonicalPathForSlug(slug).replace('https://lukasebner.de', '')
+  const schema = contentPageSchema({
+    slug,
+    path: canonicalPath,
+    title: page.meta.title,
+    description: page.meta.description,
+    blocks: page.slides,
+  })
 
   return (
     <>
-      {serviceSchema ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-      ) : null}
+      <JsonLd data={schema} />
       <PageBuilder slides={page.slides} accent={page.meta.accent} noSnap={page.meta.noSnap} />
     </>
   )

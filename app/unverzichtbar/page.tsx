@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { IDS, JsonLd, faqPage, jsonLdGraph, webPage } from '@/lib/schema'
 import Image from 'next/image'
 import Link from 'next/link'
 import { OptInForm } from './OptInForm'
@@ -17,25 +18,53 @@ export const metadata: Metadata = {
   },
 }
 
-const bookJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Book',
-  name: '(Un)verzichtbar',
-  alternateName: 'Wie Dein Business in 90 Tagen endlich ohne Dich läuft',
-  author: { '@type': 'Person', name: 'Lukas Ebner' },
-  publisher: { '@type': 'Organization', name: 'Leadtime Publishing' },
-  bookFormat: ['EBook', 'AudiobookFormat'],
-  inLanguage: 'de',
-  description:
-    'Der Unternehmer-Roman über 90 Tage im Mittelstand. Thomas Maier, Maschinenbau-Mittelstand Ostbayern, 32 Mitarbeiter, baut seinen Betrieb so um, dass er am Ende nicht mehr der Engpass ist.',
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'EUR',
-    availability: 'https://schema.org/InStock',
-    url: 'https://lukasebner.de/unverzichtbar',
-  },
+function bookJsonLd() {
+  return jsonLdGraph([
+    {
+      '@type': 'Book',
+      '@id': IDS.book,
+      name: '(Un)verzichtbar',
+      alternateName: ['Unverzichtbar', '(Un)verzichtbar – 90 Tage Mittelstand', 'Wie Dein Business in 90 Tagen endlich ohne Dich läuft'],
+      genre: ['Unternehmer-Roman', 'Business-Roman', 'Wirtschaft'],
+      author: { '@id': IDS.person },
+      publisher: { '@type': 'Organization', name: 'Leadtime Publishing' },
+      inLanguage: 'de',
+      url: 'https://lukasebner.de/unverzichtbar',
+      image: 'https://lukasebner.de/images/leadmagnet/buch_transparent.png',
+      isAccessibleForFree: true,
+      about: [
+        { '@type': 'Thing', name: 'Unternehmensführung im Mittelstand' },
+        { '@type': 'Thing', name: 'Inhaberabhängigkeit' },
+        { '@type': 'Thing', name: 'Delegation und Prozesse' },
+      ],
+      description:
+        '(Un)verzichtbar ist ein Unternehmer-Roman von Lukas Ebner über 90 Tage im Mittelstand: Thomas Maier, Geschäftsführer eines Maschinenbau-Mittelständlers in Ostbayern mit 32 Mitarbeitenden, baut seinen Betrieb so um, dass er am Ende nicht mehr der Engpass ist. Kostenlos als eBook (EPUB), PDF und Hörbuch (4 h 25 min).',
+      workExample: [
+        { '@type': 'Book', bookFormat: 'https://schema.org/EBook', inLanguage: 'de', name: '(Un)verzichtbar (EPUB)' },
+        { '@type': 'Book', bookFormat: 'https://schema.org/EBook', inLanguage: 'de', name: '(Un)verzichtbar (PDF)' },
+        { '@type': 'Audiobook', bookFormat: 'https://schema.org/AudiobookFormat', inLanguage: 'de', name: '(Un)verzichtbar (Hörbuch)', duration: 'PT4H25M' },
+      ],
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'EUR',
+        availability: 'https://schema.org/InStock',
+        url: 'https://lukasebner.de/unverzichtbar',
+      },
+    },
+    webPage({
+      path: '/unverzichtbar',
+      name: '(Un)verzichtbar – Der Unternehmer-Roman von Lukas Ebner',
+      about: IDS.book,
+      mainEntity: IDS.book,
+    }),
+    faqPage(
+      FAQ.map((f) => ({ question: f.q, answer: f.a })),
+      '/unverzichtbar',
+    ),
+  ])
 }
+
 
 // ──────────────────────────────────────────────────────────────────────────
 // COPY PLACEHOLDER — wird durch Emma (CONTENT-OS v3.4) ersetzt
@@ -45,10 +74,7 @@ const bookJsonLd = {
 export default function UnverzichtbarPage() {
   return (
     <main className="bg-white text-[#101323]">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd) }}
-      />
+      <JsonLd data={bookJsonLd()} />
 
       {/* ── HERO ────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-surface-dark pt-28 lg:pt-32">

@@ -1,7 +1,7 @@
 ---
 title: "Controlling für Agenturen: Warum Umsatz dich oft in die falsche Richtung beruhigt"
 slug: controlling-fuer-agenturen
-description: ""
+description: "Controlling für Agenturen: Warum Umsatz und volle Kalender täuschen und welche Kennzahlen (Deckungsbeitrag, Auslastung, Projektmarge) wirklich steuern."
 keyword: "controlling für agenturen"
 nebenkeywords: []
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+**Controlling für Agenturen** heißt, früh zu sehen, wo Marge verloren geht, statt sich auf Umsatz und volle Auslastung zu verlassen. Dafür reicht ein kleines Set an Kennzahlen: Auslastung, Projektprofitabilität, Plan-Ist-Abweichung, Overhead-Quote sowie Liquidität und Forecast. Schau wöchentlich darauf und leg fest, was eine Abweichung konkret auslöst. Zeiterfassung ist die Grundlage, wird aber erst zur Steuerung, wenn sie mit Projekten, Budgets und Entscheidungen verbunden ist.
 
 Viele Agenturen merken erst im Rückblick, dass ein gutes Quartal wirtschaftlich gar nicht so gut war.
 Der Kalender war voll. Die Leute waren beschäftigt. Die Rechnungen gingen raus. Und trotzdem bleibt am Ende zu wenig übrig.
@@ -207,6 +211,15 @@ Wenn du willst, dass dein Unternehmen läuft und nicht an deinem Bauchgefühl h�
 
 Wenn du das für deine Agentur sauber aufsetzen willst, lass uns draufschauen.
 Nicht auf 100 Kennzahlen. Sondern auf die paar, die wirklich etwas verändern.
+
+## Passend dazu
+
+- [Systeme & Automatisierung: Tool-Audit, Systemarchitektur, Automatisierung](/digitalisierung)
+- [Operations-Beratung für Agenturen](/operations-beratung-agenturen)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
 
 ## Weiterführende Links
 - Mehr zum Systemthema: [/blog/digitale-transformation-mittelstand](/blog/digitale-transformation-mittelstand)

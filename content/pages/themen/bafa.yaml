@@ -1,14 +1,14 @@
 "meta":
-  "title": "BAFA-Förderung Unternehmensberatung | Zuschuss sichern"
-  "description": "So nutzt du die BAFA-Förderung für Unternehmensberatung. Voraussetzungen, Ablauf und nächste Schritte kompakt\
-    \ erklärt."
+  "title": "BAFA-Förderung Unternehmensberatung Regensburg | bis 1.750 € Zuschuss"
+  "description": "BAFA-Förderung für Unternehmensberatung in Regensburg und Bayern: 50 % von 3.500 €, also bis 1.750 € Zuschuss\
+    \ je Beratung. Programm bis Ende 2028, ab 2027 Antrag per ELSTER oder BundID."
   "kicker": "BAFA-Förderung Unternehmensberatung"
   "subtitle": "Gute Beratung scheitert selten an der Idee. Meistens scheitert sie an Budget und Prioritäten. Das Bundesprogramm\
-    \ Förderung von Unternehmensberatungen für KMU macht qualifizierte Beratung für kleine und mittlere Unternehmen finanzierbar:\
-    \ bis zu 1.750 Euro Zuschuss in Bayern, 3.500 Euro Bemessungsgrundlage, 50 Prozent Fördersatz. Die aktuelle Richtlinie\
-    \ läuft bis 31. Dezember 2026. Wer in diesem Jahr noch Beratung plant, sollte jetzt prüfen, ob ein BAFA-Antrag sinnvoll\
-    \ ist. Diese Seite erklärt die Zahlen, den Ablauf und wann BAFA wirklich hilft, und wann ein Antrag gerade nicht der richtige\
-    \ Weg ist."
+    \ „Förderung von Unternehmensberatungen für KMU“ macht qualifizierte Beratung für kleine und mittlere Unternehmen finanzierbar:\
+    \ bis zu 1.750 Euro Zuschuss in Bayern, 3.500 Euro Bemessungsgrundlage, 50 Prozent Fördersatz. Das Programm wurde im Oktober\
+    \ 2026 bis zum 31. Dezember 2028 verlängert. Ab 1. Januar 2027 läuft der Antrag nur noch digital über ein ELSTER-Konto\
+    \ oder die BundID. Diese Seite erklärt die Zahlen, den Ablauf und wann BAFA wirklich hilft, und wann ein Antrag gerade\
+    \ nicht der richtige Weg ist."
   "heroImage": "/images/bafa/bafa-hero.png"
   "heroAlt": "Unternehmer beim BAFA-Gespräch mit Lukas Ebner"
   "og_image": "/images/og/bafa.jpg"
@@ -23,6 +23,18 @@
     "variant": "primary"
 "sections":
 - "type": "prose"
+  "heading": "Kurz gesagt: BAFA-Förderung für Unternehmensberatung in Bayern"
+  "content":
+  - "Das BAFA fördert Unternehmensberatung für kleine und mittlere Unternehmen mit einem Zuschuss. In Bayern und den übrigen\
+    \ alten Bundesländern sind das 50 Prozent der förderfähigen Beratungskosten bis 3.500 Euro, also höchstens 1.750 Euro\
+    \ je Beratung. In den neuen Bundesländern (ohne Berlin und Region Leipzig) sowie in den Regionen Lüneburg und Trier sind\
+    \ es 80 Prozent, höchstens 2.800 Euro. Pro Unternehmen sind bis zu zwei Beratungen im Jahr und fünf während der gesamten\
+    \ Laufzeit förderfähig. Die Richtlinie gilt bis zum 31. Dezember 2028 (maßgeblich ist die Einreichung des Verwendungsnachweises).\
+    \ Wichtig: Der Antrag muss gestellt sein, bevor du den Beratungsvertrag schließt. Ab dem 1. Januar 2027 stellst du ihn\
+    \ nur noch digital mit ELSTER-Konto oder BundID."
+  - "Die Wachstumscoach GmbH (Lukas Ebner, Regensburg) ist als Beratungsunternehmen für das Programm registriert. Ich prüfe\
+    \ im Erstgespräch, ob dein Vorhaben förderfähig ist, und begleite Antrag, Beratung und Verwendungsnachweis."
+- "type": "prose"
   "heading": "BAFA-geförderte Beratung mit ICO-zertifiziertem Berater"
   "content":
   - "Ich bin seit 2025 zertifizierter ICO Organisationsberater und Change Manager sowie zertifizierter systemischer Coach.\
@@ -36,7 +48,7 @@
   - "ICO Organisationsberater + Change Manager, zertifiziert 2025"
   - "Systemisches Coaching, zertifiziert 2025"
   - "BAFA-registrierter Berater, Leitstelle IHK Regensburg"
-  - "Förderrichtlinie gilt bis 31. Dezember 2026"
+  - "Förderrichtlinie verlängert bis 31. Dezember 2028"
 - "type": "figure"
   "image": "/images/bafa/bafa-schmuck.jpg"
   "alt": "BAFA-Antragsformular mit Taschenrechner auf einem Schreibtisch"
@@ -46,14 +58,22 @@
   "items":
   - "question": "Wie hoch ist die BAFA-Förderung konkret?"
     "answer": "In Bayern und den alten Bundesländern: Bemessungsgrundlage 3.500 Euro, Fördersatz 50 Prozent, maximaler Zuschuss\
-      \ 1.750 Euro. In den neuen Bundesländern und strukturschwachen Gebieten kann der Fördersatz höher sein. Quelle: IHK\
-      \ Nürnberg und BAFA, Abruf 2026-04-23."
+      \ 1.750 Euro je Beratung. In den neuen Bundesländern (ohne Berlin und Region Leipzig) sowie in den Regionen Lüneburg\
+      \ und Trier: 80 Prozent, maximal 2.800 Euro. An Höhe und Fördersatz ändert die Verlängerung bis 2028 nichts. Quelle:\
+      \ IHK Regensburg, Stand November 2026."
   - "question": "Wie viele BAFA-Beratungen kann ich beanspruchen?"
-    "answer": "Bis zu 5 Beratungen gesamt bis 31. Dezember 2026, jedoch nicht mehr als 2 pro Jahr. Das Jahres-Kontingent gilt\
-      \ für das jeweilige Kalenderjahr."
+    "answer": "Bis zu 5 geförderte Beratungen während der gesamten Laufzeit der Richtlinie (jetzt bis 31. Dezember 2028),\
+      \ höchstens 2 pro Kalenderjahr. Wer erst 2027 einsteigt, kommt bis Ende 2028 also auf höchstens 4 Beratungen."
+  - "question": "Bis wann läuft die BAFA-Förderung für Unternehmensberatung?"
+    "answer": "Die Richtlinie „Förderung von Unternehmensberatungen für KMU“ wurde im Oktober 2026 bis zum 31. Dezember 2028\
+      \ verlängert (amtlich veröffentlicht am 28. Oktober 2026). Bis dahin müssen die Verwendungsnachweise eingereicht sein."
+  - "question": "Was ändert sich am Antrag ab 2027?"
+    "answer": "Ab dem 1. Januar 2027 läuft der Antrag nur noch digital über ein ELSTER-Unternehmenskonto oder die BundID.\
+      \ Als Zahlungsnachweis reicht dann eine Umsatzanzeige aus dem Onlinebanking, und unterschrieben werden nur noch Verwendungsnachweis\
+      \ und Beratungsbericht. Anträge, die bis 31. Dezember 2026 gestellt werden, laufen noch nach dem bisherigen Verfahren."
   - "question": "Muss der Antrag vor der Beratung gestellt werden?"
-    "answer": "Ja, das ist die wichtigste Regel. Der Antrag muss BAFA-seitig genehmigt sein, bevor die Beratung beginnt. Rückwirkende\
-      \ Anträge werden nicht akzeptiert."
+    "answer": "Ja, das ist die wichtigste Regel. Der Antrag muss gestellt sein und das Informationsschreiben der Leitstelle\
+      \ vorliegen, bevor du den Beratungsvertrag unterschreibst. Rückwirkende Anträge werden nicht akzeptiert."
   - "question": "Für welche Beratungsthemen ist BAFA förderfähig?"
     "answer": "Strategie, Führung, Prozesse, Digitalisierung, Fachkräftesicherung, Liquidität, Kostenoptimierung, Investitionsplanung.\
       \ Nicht förderfähig: Steuerberatung, reine IT-Entwicklung, Rechtsberatung, Buchhaltung."
@@ -76,9 +96,9 @@
       \ nicht als Unternehmen in Schwierigkeiten im EU-Sinne gelten."
 "endCTA":
   "heading": "Wenn BAFA für dich sinnvoll ist, lohnt es sich jetzt zu starten"
-  "body": "Die Richtlinie läuft Ende 2026 aus. Wer noch Förderung nutzen will, sollte jetzt prüfen ob die Voraussetzungen\
-    \ stimmen. Das Erstgespräch ist genau dafür da: keine Verpflichtung, kein Verkaufsgespräch, nur eine ehrliche Einschätzung,\
-    \ ob BAFA für deinen Beratungsbedarf gerade der richtige Weg ist. Dreißig Minuten. Konkrete Klarheit darüber, ob Förderantrag\
+  "body": "Das Programm läuft bis Ende 2028, aber jedes Jahr zählt: Pro Kalenderjahr sind nur zwei geförderte Beratungen möglich.\
+    \ Das Erstgespräch ist genau dafür da: keine Verpflichtung, kein Verkaufsgespräch, nur eine ehrliche Einschätzung, ob\
+    \ BAFA für deinen Beratungsbedarf gerade der richtige Weg ist. Dreißig Minuten. Konkrete Klarheit darüber, ob Förderantrag\
     \ ja oder nein, und warum. Wenn BAFA nicht das richtige ist, sage ich das. Wenn es passt, starten wir sauber, mit Antrag\
     \ vor Beratungsbeginn, sauberer Dokumentation und einem Ergebnis, das sich rechnet."
   "primary":

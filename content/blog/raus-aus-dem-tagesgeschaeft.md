@@ -1,9 +1,9 @@
 ---
 title: "Raus aus dem Tagesgeschäft: 7 Schritte für Geschäftsführer"
 slug: raus-aus-dem-tagesgeschaeft
-description: ""
+description: "Wie du dich als Geschäftsführer operativ entlastest, ohne dass dein Unternehmen langsamer wird: 7 Schritte raus aus dem Tagesgeschäft."
 keyword: "selbstständig raus aus dem tagesgeschäft"
-nebenkeywords: []
+nebenkeywords: ["geschäftsführer engpass", "delegation lernen geschäftsführer", "unternehmen ohne chef"]
 category: operations
 status: published
 funnel: TOFU
@@ -16,17 +16,9 @@ cta:
   url: "/erstgespraech"
 ---
 
----
-title: "Raus aus dem Tagesgeschäft: 7 Schritte für Geschäftsführer"
-slug: raus-aus-dem-tagesgeschaeft
-description: "Wie du dich als Geschäftsführer operativ entlastest, ohne dass dein Unternehmen langsamer wird: 7 Schritte raus aus dem Tagesgeschäft."
-keyword: "selbstständig raus aus dem tagesgeschäft"
-nebenkeywords: ["geschäftsführer engpass", "delegation lernen geschäftsführer", "unternehmen ohne chef"]
-category: operations
-funnel: TOFU
----
+## Kurzfassung
 
-# Raus aus dem Tagesgeschäft: 7 Schritte für Geschäftsführer
+Wenn du **selbstständig raus aus dem Tagesgeschäft** willst, brauchst du keine bessere To-do-App, sondern ein Unternehmen, das Entscheidungen ohne dich tragen kann. Der Weg dahin: eine Woche lang protokollieren, was bei dir landet, feste Zeitblöcke schützen, einen Deputy mit echtem Entscheidungsrecht benennen, Rollen statt Personen organisieren, Freigabegrenzen schriftlich festlegen, Entscheidungsprozesse dokumentieren und deine neue Rolle definieren. Ob das trägt, zeigt ein Test mit zwei Wochen echter Abwesenheit.
 
 Wenn du als Geschäftsführer überall gebraucht wirst, ist das kein Zeichen von Wichtigkeit. Es ist ein Zeichen dafür, dass dein Unternehmen an dir hängt.
 
@@ -190,6 +182,29 @@ Die Lage 2025 und 2026 macht das noch dringlicher: **119 Milliarden Euro** Produ
 Mein Rat ist deshalb simpel: Hör auf, dein Unternehmen durch persönlichen Einsatz zusammenzuhalten. Bau Rollen, Regeln und Eskalationen, die auch ohne dich funktionieren.
 
 Wenn du das für dein Unternehmen konkret durchdenken willst, dann [buch dir ein Sparring-Gespräch](/kontakt). Dann schauen wir gemeinsam, **wo dein Geschäft gerade an dir hängt und was du als Erstes umbauen solltest**.
+
+## FAQ
+
+### Woran erkenne ich, dass mein Unternehmen an mir hängt?
+Mitarbeiter warten mit Entscheidungen, bis du Zeit hast, Kunden bekommen nur Tempo, wenn du selbst mit drin bist, und im Urlaub läuft es nur weiter, wenn du aufs Handy schaust. Dann bist du nicht mehr Geschäftsführer, sondern das Nadelöhr.
+
+### Warum hilft mehr Einsatz nicht, um aus dem Tagesgeschäft rauszukommen?
+Weil du dein Team damit darauf trainierst, dass ohne dich nichts sauber entschieden wird. Kurzfristig fühlt sich Einspringen hilfreich an, langfristig verstärkt es die Abhängigkeit.
+
+### Wie delegiere ich, ohne die Kontrolle zu verlieren?
+Delegiere Entscheidungen, nicht nur Aufgaben, und lege für jede Rolle fest, was sie allein entscheiden darf und wann sie eskalieren muss. Mit klaren Grenzen, Stichproben und einem Review-System kontrollierst du nur noch, ob das System trägt.
+
+### Was sollte sich nach drei Monaten verändert haben?
+Du hast mehr freie Kapazität im Kalender, bekommst weniger spontane Rückfragen, und dein Team entscheidet schneller. Deine Zeit geht in Führung statt in Feuerwehreinsätze.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
 
 ## Quellen
 - Gallup, 12.03.2026: https://www.gallup.com/de/472028/bericht-zum-engagement-index-deutschland.aspx

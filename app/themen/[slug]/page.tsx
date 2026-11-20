@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { ThemenPageLayout } from '@/components/layouts/ThemenPageLayout'
 import { listThemenSlugs, loadThemenPage } from '@/lib/themen'
+import { JsonLd, contentPageSchema } from '@/lib/schema'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -52,27 +53,18 @@ export default async function ThemenDetailPage({ params }: PageProps) {
     notFound()
   }
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: page.meta.title,
+  const jsonLd = contentPageSchema({
+    slug,
+    path: `/themen/${slug}`,
+    title: page.meta.title,
     description: page.meta.description,
-    mainEntityOfPage: `https://lukasebner.de/themen/${slug}`,
-    author: {
-      '@type': 'Person',
-      name: 'Lukas Ebner',
-      url: 'https://lukasebner.de/ueber-mich',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Lukas Ebner',
-      url: 'https://lukasebner.de',
-    },
-  }
+    blocks: page.sections,
+    isArticle: true,
+  })
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       <ThemenPageLayout page={page} />
     </>
   )

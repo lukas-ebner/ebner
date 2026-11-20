@@ -16,8 +16,6 @@ cta:
   url: "/erstgespraech"
 ---
 
-**Slug:** /blog/alles-haengt-an-mir-was-tun
-
 ## Kurzfassung
 Wenn du dir denkst: **Alles hängt an mir, was tun?**, dann ist die unangenehme Wahrheit oft diese: Dein Unternehmen hat gelernt, Unsicherheit zuverlässig nach oben zu delegieren. Mehr Einsatz deinerseits löst das nicht. Er stabilisiert es. Was hilft, ist ein kurzer, harter Reset bei Entscheidungen, Standards und Rückdelegationen.
 
@@ -168,6 +166,15 @@ Er kommt, wenn zum ersten Mal sichtbar wird, wie viele Rückdelegationen pro Woc
 
 Genau dort beginnt Entlastung.
 
+## Fazit
+Wenn du dir denkst, **alles hängt an mir, was tun**, dann fang nicht bei dir als Mensch an.
+
+Fang beim System an.
+
+Mehr Einsatz, mehr Verfügbarkeit und mehr Heldentum machen dein Unternehmen nicht stabiler. Sie machen deine Rolle nur noch unverzichtbarer.
+
+Wenn du das aufbrechen willst, lass uns im [Erstgespräch](/erstgespraech) anschauen, wo dein Betrieb gerade Unsicherheit nach oben zieht und wie du in wenigen Schritten wieder mehr Führbarkeit hineinbekommst.
+
 ## FAQ
 
 ### Was tun, wenn alles an mir hängt?
@@ -182,6 +189,15 @@ Oft nicht aus Bequemlichkeit, sondern weil Ziel, Rahmen, Qualitätsmaßstab oder
 ### Wo fange ich an?
 Mit drei Tagen ehrlicher Beobachtung. Sammle jede Rückfrage und Freigabe, die bei dir landet. Erst dann wird sichtbar, welche Muster dich wirklich blockieren.
 
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Mitarbeiter halten sich nicht an Prozesse? Oft ist dein System das Problem](/blog/mitarbeiter-halten-sich-nicht-an-prozesse)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+
 ## Quellen
 - Gallup, Bericht zum Engagement Index Deutschland 2025, März 2026: https://www.gallup.com/de/472028/bericht-zum-engagement-index-deutschland.aspx
 - ifo Institut, ifo Geschäftsklimaindex gesunken (April 2026), 24.04.2026: https://www.ifo.de/pressemitteilung/2026-04-24/ifo-geschaeftsklimaindex-gesunken-april-2026
@@ -190,18 +206,4 @@ Mit drei Tagen ehrlicher Beobachtung. Sammle jede Rückfrage und Freigabe, die b
 - KfW, KfW-Digitalisierungsbericht Mittelstand 2025, 23.04.2026: https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/News-Details_891136.html
 
 ## Autor
-Lukas Ebner begleitet Unternehmer, die aus operativem Dauerfeuer wieder ein führbares Unternehmen machen wollen. Er hat mit eins+null über 13 Jahre ein SaaS-Unternehmen im Energiesektor aufgebaut, 2022 den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Geschäftsführer-Überlastung ist deshalb nicht theoretisch: Wenn im Betrieb alles an einer Person hängt, ist das selten Schicksal. Es ist fast immer ein Signal aus dem System.
-
-## Hero-Bild-Briefing
-- **Slug:** `alles-haengt-an-mir-was-tun`
-- **1-Satz-Topic:** Wenn im Unternehmen alles am Geschäftsführer hängt, hilft kein Mehr an Fleiß, sondern ein klarer Reset bei Rückdelegationen, Entscheidungswegen und Standards.
-- **Akzent-Modus:** B, Orange-Linie oder Orange-Balken als strukturierender Akzent
-
-## Fazit
-Wenn du dir denkst, **alles hängt an mir, was tun**, dann fang nicht bei dir als Mensch an.
-
-Fang beim System an.
-
-Mehr Einsatz, mehr Verfügbarkeit und mehr Heldentum machen dein Unternehmen nicht stabiler. Sie machen deine Rolle nur noch unverzichtbarer.
-
-Wenn du das aufbrechen willst, lass uns im [Erstgespräch](https://lukasebner.de/#contact) anschauen, wo dein Betrieb gerade Unsicherheit nach oben zieht und wie du in wenigen Schritten wieder mehr Führbarkeit hineinbekommst.
+Lukas Ebner begleitet Unternehmer, die aus operativem Dauerfeuer wieder ein führbares Unternehmen machen wollen. Er hat 2009 die Digitalagentur eins+null mitgegründet, sie über 13 Jahre auf 50 Mitarbeitende und rund 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute führt er die Wachstumscoach GmbH in Regensburg und entwickelt mit Leadtime eine Software für Agenturen und IT-Dienstleister. Sein Blick auf Geschäftsführer-Überlastung ist deshalb nicht theoretisch: Wenn im Betrieb alles an einer Person hängt, ist das selten Schicksal. Es ist fast immer ein Signal aus dem System.

@@ -16,8 +16,6 @@ cta:
   url: "/erstgespraech"
 ---
 
-**Slug:** /blog/qualitaetsprobleme-produktion
-
 ## Kurzfassung
 **Qualitätsprobleme in der Produktion** entstehen selten erst am fertigen Teil. Sie entstehen früher, nämlich dort, wo Standards unklar sind, Rückmeldungen zu spät kommen und Nacharbeit zum normalen Betriebsmodus geworden ist. Wenn du Reklamationen senken willst, musst du also nicht nur besser prüfen, sondern früher klarer führen.
 
@@ -171,6 +169,15 @@ Das passt auch zu einem zweiten Befund. Laut Bitkom haben **53 Prozent** der Unt
 
 Wenn dich genau das beschäftigt, ist der nächste sinnvolle Schritt oft nicht noch ein System mehr, sondern zuerst klarere Abläufe. Zum Beispiel über [dokumentierte Prozesse im kleinen Unternehmen](/blog/wie-prozesse-dokumentieren-kleines-unternehmen) oder über eine saubere [Change-Management-Logik im Mittelstand](/blog/change-management-mittelstand).
 
+## Fazit
+**Qualitätsprobleme in der Produktion** sind selten nur ein Qualitätsthema.
+
+Sie sind meist ein Führungs- und Systemthema.
+
+Wenn Nacharbeit zum Alltag gehört, Reklamationen immer wieder auflaufen und dieselben Fehler in anderer Verpackung zurückkommen, dann fehlt nicht zuerst mehr Kontrolle. Dann fehlen Klarheit, Rückkopplung und saubere Standards.
+
+Wenn du genau an diesem Punkt stehst und merkst, dass dein Betrieb zu viel Energie in Symptombehandlung steckt, lass uns im [Erstgespräch](/erstgespraech) anschauen, wo die Ursache wirklich sitzt und wie du sie sauberer aus dem System bekommst.
+
 ## FAQ
 
 ### Wie entstehen Qualitätsprobleme in der Produktion?
@@ -185,6 +192,15 @@ Für viele Betriebe reichen wenige brauchbare Kennzahlen: Nacharbeitsquote, Rekl
 ### Reicht neue Software aus?
 Nein. Software kann gute Prozesse unterstützen. Schlechte Prozesse macht sie nur sichtbarer. Wenn Standards und Übergaben nicht sauber sind, hilft das nächste Tool allein nicht weiter.
 
+## Passend dazu
+
+- [Prozessoptimierung in Regensburg und Ostbayern](/prozessoptimierung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
+
 ## Quellen
 - Destatis, Produktion im Februar 2026: -0,3 % zum Vormonat, 09.04.2026: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_124_421.html
 - ifo Institut, Welche Folgen hat der Rückgang der industriellen Wertschöpfung in Deutschland?, 14.04.2026: https://www.ifo.de/standpunkt/2026-04-14/welche-folgen-hat-der-rueckgang-der-industriellen-wertschoepfung-in-deutschland
@@ -193,18 +209,4 @@ Nein. Software kann gute Prozesse unterstützen. Schlechte Prozesse macht sie nu
 - Bitkom, Industrie 4.0: 42 Prozent der Unternehmen setzen KI in der Produktion ein, 27.03.2025: https://www.bitkom.org/Presse/Presseinformation/Industrie-4.0-Unternehmen-KI-Produktion
 
 ## Autor
-Lukas Ebner begleitet Unternehmer, die aus reaktiver Problemlösung wieder ein führbares System machen wollen. Er hat mit eins+null über 13 Jahre ein SaaS-Unternehmen im Energiesektor aufgebaut, 2022 den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Qualitätsprobleme ist deshalb nicht theoretisch: Wo frisst Nacharbeit still Marge, Geschwindigkeit und Aufmerksamkeit?
-
-## Hero-Bild-Briefing
-- **Slug:** `qualitaetsprobleme-produktion`
-- **1-Satz-Topic:** Qualitätsprobleme in der Produktion entstehen nicht erst am Endprodukt, sondern dort, wo Standards, Übergaben und Rückkopplung im Betrieb unscharf werden.
-- **Akzent-Modus:** B, Orange-Linie oder Orange-Balken als strukturierender Akzent
-
-## Fazit
-**Qualitätsprobleme in der Produktion** sind selten nur ein Qualitätsthema.
-
-Sie sind meist ein Führungs- und Systemthema.
-
-Wenn Nacharbeit zum Alltag gehört, Reklamationen immer wieder auflaufen und dieselben Fehler in anderer Verpackung zurückkommen, dann fehlt nicht zuerst mehr Kontrolle. Dann fehlen Klarheit, Rückkopplung und saubere Standards.
-
-Wenn du genau an diesem Punkt stehst und merkst, dass dein Betrieb zu viel Energie in Symptombehandlung steckt, lass uns im [Erstgespräch](https://lukasebner.de/#contact) anschauen, wo die Ursache wirklich sitzt und wie du sie sauberer aus dem System bekommst.
+Lukas Ebner begleitet Unternehmer, die aus reaktiver Problemlösung wieder ein führbares System machen wollen. Er hat 2009 die Digitalagentur eins+null mitgegründet, sie über 13 Jahre auf 50 Mitarbeitende und rund 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute führt er die Wachstumscoach GmbH in Regensburg und entwickelt mit Leadtime eine Software für Agenturen und IT-Dienstleister. Sein Blick auf Qualitätsprobleme ist deshalb nicht theoretisch: Wo frisst Nacharbeit still Marge, Geschwindigkeit und Aufmerksamkeit?

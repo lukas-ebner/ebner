@@ -1,7 +1,7 @@
 ---
 title: "Unternehmen wächst, Team kommt nicht hinterher: Die 5 häufigsten Brüche"
 slug: unternehmen-waechst-team-kommt-nicht-hinterher
-description: ""
+description: "Dein Unternehmen wächst, aber das Team kommt nicht hinterher? Die 5 häufigsten Brüche zwischen Wachstum, Rollen, Prozessen und Führung – und was hilft."
 keyword: "unternehmen waechst team kommt nicht hinterher"
 nebenkeywords: ["sparringspartner geschaeftsfuehrer"]
 category: operations
@@ -15,6 +15,10 @@ cta:
   text: "Erstgespräch vereinbaren"
   url: "/erstgespraech"
 ---
+
+## Kurzfassung
+
+Wenn dein **Unternehmen wächst, das Team aber nicht hinterherkommt**, liegt das meist nicht an zu wenig Einsatz. Meist ist das Führungs- und Entscheidungssystem noch für zehn oder fünfzehn Leute gebaut. Typische Brüche sind Prioritäten, die schneller wachsen als Entscheidungen, Rollen, die klein bleiben, Prozesse ohne Reserve für mehr Last, Heldentum statt System und ein Geschäftsführer, der noch wie im 10-Personen-Laden führt. Zuerst hilft ein klarer Blick darauf, welche Entscheidungen unnötig oben hängen und welche Rollen nur auf dem Papier Verantwortung tragen.
 
 Am Anfang fühlt sich Wachstum oft gut an. Mehr Kunden. Mehr Projekte. Mehr Umsatz. Und dann kippt etwas.
 
@@ -165,3 +169,12 @@ Dann brauchst du nicht zuerst noch mehr Druck. Du brauchst bessere Entscheidunge
 Lukas Ebner arbeitet seit rund **15 Jahren** an der Schnittstelle aus Führung, Prozessen, IT und operativer Umsetzung. Er hat mit **eins+null** selbst ein Unternehmen aufgebaut, skaliert und **2022 verkauft**. Heute begleitet er Geschäftsführer dabei, Rollen, Systeme und Entscheidungswege so aufzustellen, dass Wachstum nicht im Tagesgeschäft stecken bleibt.
 
 Wenn du das Gefühl hast, dass dein Unternehmen wächst, dein Team aber zunehmend hinterherläuft, kannst du ein **Erstgespräch buchen**. Ohne Kulturfloskeln. Mit einem ehrlichen Blick auf die Brüche dahinter.
+
+## Passend dazu
+
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Mediator im Unternehmen: Wann Mediation besser wirkt als ein Machtwort](/blog/mediator-im-unternehmen)

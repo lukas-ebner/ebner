@@ -16,6 +16,10 @@ cta:
   url: "/erstgespraech"
 ---
 
+## Kurzfassung
+
+Wenn **Mitarbeiter sich nicht an Prozesse halten**, liegt das oft nicht an fehlender Disziplin, sondern am System: unklare Standards, ungeklärte Verantwortung und Führung, die erst eingreift, wenn es schon geknallt hat. Ein typisches Signal ist, dass mehrere Leute denselben Fehler machen. Hilfreich sind eine Verantwortungsmatrix mit genau einer verantwortlichen Person pro Aufgabe, kurze Standards mit klar definierten Sonderfällen und eine feste Führungsroutine. Erst wenn all das klar war und das Verhalten trotzdem wiederholt kippt, hast du ein Mitarbeiterproblem.
+
 Wenn am Montagmorgen derselbe Fehler zum dritten Mal auf deinem Tisch landet, ist der Gedanke ziemlich naheliegend: Warum machen meine Mitarbeitenden nicht einfach, was sie sollen?
 
 Im Lager fehlt die Rückmeldung. Im CRM steht wieder nur die halbe Information. Der Kunde hat die falsche Version bekommen. Und du merkst, wie dein Puls schon steigt, bevor das erste Gespräch überhaupt begonnen hat.
@@ -257,7 +261,7 @@ Nicht aus dem Affekt. Sondern in festen Stufen: Klärung, Korrektur, Verbindlich
 
 ## Über Lukas Ebner
 
-Lukas Ebner hat mit **eins+null** 15 Jahre lang ein SaaS-Unternehmen im Energie-Sektor aufgebaut und 2022 den Exit in die Kraftwerk-Gruppe vollzogen. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
+Lukas Ebner hat 2009 die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute arbeitet er mit **Leadtime** und **Fracto** an der Schnittstelle von Delivery, Führung, Systemen und KI-Einsatz im Mittelstand.
 
 Wenn er über Prozesse spricht, meint er keine Theorie für Handbücher. Sondern die Frage, ob ein Unternehmen auch dann sauber läuft, wenn es hektisch wird, Sonderfälle auftauchen und nicht alles am Geschäftsführer hängen bleiben soll.
 
@@ -274,6 +278,15 @@ Denn ein guter Mitarbeiter kann in einem schlechten System schlecht aussehen. Ei
 Wenn du aus dem Muster raus willst, fang nicht mit einer Standpauke an. Fang mit Klarheit an.
 
 Wenn du willst, schauen wir uns genau einen dieser Fälle gemeinsam an und bauen daraus einen Ablauf, der auch an einem vollen Donnerstag um 16:40 Uhr noch funktioniert.
+
+## Passend dazu
+
+- [Prozessoptimierung in Regensburg und Ostbayern](/prozessoptimierung-regensburg)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [(Un)verzichtbar: der kostenlose Unternehmer-Roman über 90 Tage, in denen ein Geschäftsführer aufhört, der Engpass zu sein](/unverzichtbar)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
+- [Inhouse-Seminar Prozesse: Wann ein Seminar reicht und wann du tiefer ranmusst](/blog/inhouse-seminar-prozesse)
 
 ## Externe Quellen
 - [Gallup Engagement Index Deutschland 2025](https://www.gallup.com/de/472028/bericht-zum-engagement-index-deutschland.aspx)

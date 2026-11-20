@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { loadBlogPost, listBlogSlugs, CATEGORY_COLORS } from '@/lib/blog'
+import { loadBlogPost, listBlogSlugs, CATEGORY_COLORS, CATEGORY_LABELS, extractBlogFaq } from '@/lib/blog'
+import { IDS, JsonLd, SITE_URL, breadcrumb, faqPage, jsonLdGraph } from '@/lib/schema'
 import { NoSnap } from '@/components/NoSnap'
 import { BlogContent } from '@/components/BlogContent'
 
@@ -32,14 +33,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: `https://lukasebner.de/blog/${slug}`,
         title: `${post.meta.title} – Lukas Ebner`,
         description: post.meta.description,
-        images: [{ url: defaultOgImage }],
+        images: [{ url: post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage }],
         publishedTime: post.meta.date,
+        modifiedTime: post.meta.updated ?? post.meta.date,
+        authors: ['https://lukasebner.de/ueber-mich'],
       },
       twitter: {
         card: 'summary_large_image',
         title: `${post.meta.title} – Lukas Ebner`,
         description: post.meta.description,
-        images: [defaultOgImage],
+        images: [post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage],
       },
     }
   } catch {
@@ -58,10 +61,39 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const { meta, content } = post
   const catColor = CATEGORY_COLORS[meta.category]
+  const url = `${SITE_URL}/blog/${slug}`
+  const faqs = extractBlogFaq(content)
+  const schema = jsonLdGraph([
+    {
+      '@type': 'BlogPosting',
+      '@id': `${url}#article`,
+      headline: meta.title,
+      description: meta.description || undefined,
+      url,
+      mainEntityOfPage: url,
+      datePublished: meta.date,
+      dateModified: meta.updated ?? meta.date,
+      inLanguage: 'de-DE',
+      author: { '@id': IDS.person },
+      publisher: { '@id': IDS.org },
+      isPartOf: { '@id': IDS.website },
+      image: meta.image ? `${SITE_URL}${meta.image}` : undefined,
+      keywords: [meta.keyword, ...(meta.nebenkeywords ?? [])].filter(Boolean).join(', '),
+      articleSection: CATEGORY_LABELS[meta.category] ?? meta.category,
+      wordCount: content.split(/\s+/).length,
+    },
+    breadcrumb([
+      { name: 'Startseite', path: '/' },
+      { name: 'Blog', path: '/blog' },
+      { name: meta.title, path: `/blog/${slug}` },
+    ]),
+    faqs.length > 0 ? faqPage(faqs, `/blog/${slug}`) : null,
+  ])
 
   return (
     <article className="min-h-screen bg-surface-light">
       <NoSnap />
+      <JsonLd data={schema} />
 
       {/* Hero with image */}
       <div className="relative overflow-hidden" style={{ backgroundColor: catColor }}>

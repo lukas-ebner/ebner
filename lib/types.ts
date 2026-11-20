@@ -33,6 +33,8 @@ export interface BlogPostMeta {
   funnel: 'TOFU' | 'MOFU' | 'BOFU'
   kd: string
   date: string
+  /** Datum der letzten inhaltlichen Überarbeitung (ISO), optional */
+  updated?: string
   image?: string
   cta?: CtaConfig
 }

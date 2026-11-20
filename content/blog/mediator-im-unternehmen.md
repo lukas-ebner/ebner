@@ -16,8 +16,6 @@ cta:
   url: "/erstgespraech"
 ---
 
-**Slug:** /blog/mediator-im-unternehmen
-
 ## Kurzfassung
 Ein **Mediator im Unternehmen** ist nicht dazu da, Harmonie zu verkaufen. Mediation hilft dann, wenn ein Konflikt festgefahren ist, Interessen kollidieren und jede weitere Führungsschleife die Fronten nur noch härter macht. Dann ist ein neutral moderierter Prozess oft billiger als noch ein Machtwort.
 
@@ -193,6 +191,17 @@ Wenn du einen Mediator im Unternehmen einsetzt, schau nicht zuerst auf glatte Se
 
 Misstrauisch solltest du werden, wenn jemand Mediation als fast magische Lösung für jede Spannung verkauft. Ein guter Mediator verspricht keine Harmonie. Er verspricht einen sauberen Prozess.
 
+## Fazit
+Ein **Mediator im Unternehmen** ist dann sinnvoll, wenn der Konflikt nicht mehr nur an Inhalten hängt, sondern an verhärteten Mustern zwischen Menschen oder Bereichen.
+
+Dann bringt ein weiteres Machtwort oft nur Ruhe auf dem Papier. Mediation kann dagegen helfen, Interessen offenzulegen, Vereinbarungen zu bauen und die Zusammenarbeit wieder arbeitsfähig zu machen.
+
+Wichtig ist nur, dass du sauber unterscheidest: Was ist Führungsfrage, was ist Strukturfrage, was ist wirklich ein Mediationsfall?
+
+Wenn du das klar trennst, wird Mediation nicht weich. Sondern ziemlich wirtschaftlich.
+
+Wenn du gerade so einen Konflikt auf dem Tisch hast, lass uns im [Erstgespräch](/erstgespraech) anschauen, ob dafür eine Führungsentscheidung reicht oder ob ein sauber moderierter Prozess sinnvoller ist.
+
 ## FAQ
 
 ### Wann brauche ich einen Mediator im Unternehmen?
@@ -207,6 +216,15 @@ Nein. Der Mediator entscheidet nicht. Er hilft den Parteien, selbst zu einer tra
 ### Wann ist Mediation ungeeignet?
 Bei klaren Pflichtverletzungen, taktischer Teilnahme, massivem Machtmissbrauch oder wenn eigentlich zuerst die Führungsstruktur geklärt werden müsste.
 
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Mediator im Unternehmen: Warum ein Machtwort den Konflikt nur verschiebt](/blog/mediator-unternehmen-case-study)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+
 ## Quellen
 - Bundesministerium der Justiz, Mediation, abgerufen am 26.04.2026: https://www.bmj.de/DE/themen/wege_zum_recht/mediation/mediation_node.html
 - ifo Institut, Gemeinschaftsdiagnose Frühjahr 2026, 01.04.2026: https://www.ifo.de/fakten/2026-04-01/gemeinschaftsdiagnose-fruehjahr-2026-energiepreisschock-ueberlagert-fiskalimpuls
@@ -216,24 +234,4 @@ Bei klaren Pflichtverletzungen, taktischer Teilnahme, massivem Machtmissbrauch o
 - CIPD, Workplace Mediation Factsheet, abgerufen am 26.04.2026: https://www.cipd.org/en/knowledge/factsheets/mediation-factsheet/
 
 ## Autor
-Lukas Ebner begleitet Unternehmer, die aus operativem Dauerfeuer wieder Führungsfähigkeit machen wollen. Er hat mit eins+null über 13 Jahre ein SaaS-Unternehmen im Energiesektor aufgebaut, 2022 im Kraftwerksumfeld den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Konflikte ist deshalb nicht therapeutisch, sondern operativ: Was macht ein Unternehmen wieder arbeitsfähig?
-
-## Hero-Bild-Briefing für Kai
-- **Slug:** `mediator-im-unternehmen`
-- **Hauptthema in 1 Satz:** Ein festgefahrener Konflikt zwischen zwei Unternehmensbereichen wird nicht durch Harmonie, sondern durch einen neutral strukturierten Klärungsprozess wieder arbeitsfähig.
-- **Szenen-Kandidaten:**
-  1. Zwei Führungskräfte sitzen mit deutlicher Spannung an einem Konferenztisch, dazwischen neutral ein Dritter mit Notizen.
-  2. Schwarz-weißes Meeting-Room-Motiv mit zwei verhärteten Fronten und einem klaren orangen Linien-Akzent auf dem Tisch.
-  3. Geschäftsführungsrunde vor Whiteboard, in der ein Konflikt sichtbar sortiert statt emotional ausgetragen wird.
-- **Empfohlener Akzent-Modus:** B, Orange-Balken oder Orange-Linie als struktureller Akzent
-
-## Fazit
-Ein **Mediator im Unternehmen** ist dann sinnvoll, wenn der Konflikt nicht mehr nur an Inhalten hängt, sondern an verhärteten Mustern zwischen Menschen oder Bereichen.
-
-Dann bringt ein weiteres Machtwort oft nur Ruhe auf dem Papier. Mediation kann dagegen helfen, Interessen offenzulegen, Vereinbarungen zu bauen und die Zusammenarbeit wieder arbeitsfähig zu machen.
-
-Wichtig ist nur, dass du sauber unterscheidest: Was ist Führungsfrage, was ist Strukturfrage, was ist wirklich ein Mediationsfall?
-
-Wenn du das klar trennst, wird Mediation nicht weich. Sondern ziemlich wirtschaftlich.
-
-Wenn du gerade so einen Konflikt auf dem Tisch hast, lass uns im [Erstgespräch](https://lukasebner.de/#contact) anschauen, ob dafür eine Führungsentscheidung reicht oder ob ein sauber moderierter Prozess sinnvoller ist.
+Lukas Ebner begleitet Unternehmer, die aus operativem Dauerfeuer wieder Führungsfähigkeit machen wollen. Er hat die Digitalagentur eins+null über 13 Jahre aufgebaut, 2022 im Kraftwerksumfeld den Exit umgesetzt und arbeitet heute unter anderem an Leadtime und Fracto. Sein Blick auf Konflikte ist deshalb nicht therapeutisch, sondern operativ: Was macht ein Unternehmen wieder arbeitsfähig?

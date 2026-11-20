@@ -16,13 +16,15 @@ cta:
   url: "/erstgespraech"
 ---
 
+## Kurzfassung
+
+**Systemische Organisationsberatung** hilft, wenn Probleme in deinem Unternehmen nicht zufällig auftreten, sondern immer wieder aus denselben Mustern entstehen. Sie sucht nicht nach Schuldigen, sondern nach den Strukturen dahinter: unklare Entscheidungen, überlappende Rollen, Routinen, die Eskalationen erzeugen, und Kennzahlen, die Probleme zu spät zeigen. Im Mittelstand funktioniert oft ein 90-Tage-Rahmen aus Diagnose, Klärung von Rollen und Entscheidungsräumen und anschließender Stabilisierung. Wirkung misst du an weniger Eskalationen, kürzeren Entscheidungswegen und weniger Nacharbeit.
+
 Wenn du Geschäftsführer eines mittelständischen Unternehmens bist, kennst du diesen Moment wahrscheinlich: Es ist später Nachmittag, dein Kalender ist eigentlich durch, und dann kommen noch drei Rückfragen gleichzeitig rein. Der Vertrieb will eine Ausnahme für einen wichtigen Kunden. Die Produktion braucht eine Entscheidung, weil ein Prozess wieder hakt. Und irgendwo zwischen Personalthema, Angebotsfreigabe und Sonderfall landest am Ende wieder du.
 
 Genau an diesem Punkt wird systemische Organisationsberatung relevant. Nicht als weiches Kulturprojekt. Nicht als Beraterfolklore mit Post-its und Purpose-Sprüchen. Sondern als präziser Eingriff in ein Betriebssystem, das sichtbar unter Last gerät.
 
 Denn die meisten Mittelständler haben nicht zu wenig Einsatz. Sie haben zu viele wiederkehrende Reibungen an denselben Stellen. Das Problem ist nicht fehlende Motivation. Das Problem ist ein schlecht gebautes Führungs- und Entscheidungssystem.
-
-> **Kurz gesagt:** Systemische Organisationsberatung hilft dann, wenn Probleme in deinem Unternehmen nicht zufällig auftreten, sondern immer wieder aus denselben Mustern entstehen.
 
 ## Inhaltsverzeichnis
 - [Was systemische Organisationsberatung in der Praxis bedeutet](#was-systemische-organisationsberatung-in-der-praxis-bedeutet)
@@ -210,7 +212,7 @@ Genau deshalb ist systemische Organisationsberatung kein Luxus für Großunterne
 
 ## Über Lukas Ebner
 
-Lukas Ebner kommt nicht aus der Welt der Folien. Er hat mit **eins+null** 15 Jahre lang ein SaaS-Unternehmen im Energie-Sektor aufgebaut und 2022 den Exit in die Kraftwerk-Gruppe vollzogen. Heute ist er Mitgründer von **Leadtime** und **Fracto** und arbeitet an der Schnittstelle von Führung, Delivery, Systemen und KI-Einsatz im Mittelstand.
+Lukas Ebner kommt nicht aus der Welt der Folien. Er hat 2009 die Digitalagentur **eins+null** mitgegründet, sie in 13 Jahren auf 50 Mitarbeitende und über 1.000 Projekte für die Energiewirtschaft aufgebaut und 2022 an die Kraftwerk Holding verkauft. Heute ist er Mitgründer von **Leadtime** und **Fracto** und arbeitet an der Schnittstelle von Führung, Delivery, Systemen und KI-Einsatz im Mittelstand.
 
 Wenn er über Organisationsberatung spricht, dann nicht aus der Distanz eines Beobachters. Sondern aus der Perspektive eines Operators, der weiß, wie sich verspätete Entscheidungen, unscharfe Rollen und operative Dauerlast im echten Unternehmen anfühlen.
 
@@ -225,6 +227,15 @@ Wenn zu viel auf deinem Tisch landet, ist das nicht automatisch ein Zeichen daf�
 Die gute Nachricht daran ist, dass sich Systeme verändern lassen. Nicht über Nacht. Aber deutlich schneller, als viele Geschäftsführer denken, wenn man an den richtigen Stellen ansetzt.
 
 Wenn du herausfinden willst, ob dein Unternehmen genau an dieser Stelle hängt, dann vereinbare ein **Erstgespräch**. Dann schauen wir gemeinsam darauf, wo dein Betrieb gerade Leistung verliert, obwohl genug Einsatz da ist.
+
+## Passend dazu
+
+- [Change-Management-Beratung für den Mittelstand](/themen/change-management-beratung)
+- [Operations & Führung: Beratung, damit dein Unternehmen nicht an dir hängt](/operations)
+- [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
+- [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
+- [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
 
 ## Externe Quellen
 - [Bitkom, Digitalisierung der Wirtschaft 2025](https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft)
