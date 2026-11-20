@@ -19,3 +19,14 @@ jobs:
             -d '{"uuid": "r14lf1fiek8jne0b1yle1b6h", "force": false}')
           echo "$response"
           echo "$response" | grep -q "deployment_uuid" && echo "Deploy queued" || (echo "Deploy failed" && exit 1)
+
+      - name: Checkout (für IndexNow-Skript)
+        uses: actions/checkout@v4
+
+      - name: Geänderte Seiten an IndexNow melden
+        # Coolify baut asynchron. Warten, bis der neue Build live ist, dann melden.
+        # Ein Fehler hier bricht das Deployment nicht ab.
+        continue-on-error: true
+        run: |
+          sleep 240
+          python3 scripts/indexnow.py
