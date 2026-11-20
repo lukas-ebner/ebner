@@ -1,5 +1,6 @@
 ---
 title: "Controlling für Agenturen: Warum Umsatz dich oft in die falsche Richtung beruhigt"
+seoTitle: "Controlling für Agenturen: Kennzahlen, die Marge zeigen"
 slug: controlling-fuer-agenturen
 description: "Controlling für Agenturen: Warum Umsatz und volle Kalender täuschen und welche Kennzahlen (Deckungsbeitrag, Auslastung, Projektmarge) wirklich steuern."
 keyword: "controlling für agenturen"

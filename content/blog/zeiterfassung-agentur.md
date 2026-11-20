@@ -1,5 +1,6 @@
 ---
 title: "Zeiterfassung in der Agentur: Warum sie nicht nerven muss, wenn du sie endlich richtig nutzt"
+seoTitle: "Zeiterfassung in der Agentur: So wird sie zur Steuerung"
 slug: zeiterfassung-agentur
 description: "Zeiterfassung in Agenturen ist längst mehr als Pflicht. Wie du aus Stunden echte Steuerung für Projekte, Auslastung und Rechnung machst."
 keyword: "zeiterfassung agentur"

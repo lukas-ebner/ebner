@@ -1,5 +1,6 @@
 ---
 title: "Führungskräfteentwicklung im KMU: Führung ist kein Zufall"
+seoTitle: "Führungskräfteentwicklung im KMU: So gelingt sie"
 slug: fuehrungskraefteentwicklung-kmu
 description: "Wie KMU aus guten Fachkräften tragfähige Führungskräfte machen: mit klaren Rollen, Entscheidungsspielräumen und echter Begleitung statt Beförderung ins offene Messer."
 keyword: "führungskräfteentwicklung kmu"

@@ -1,5 +1,6 @@
 ---
 title: "Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen"
+seoTitle: "Agile Transformation im Mittelstand: Einführung mit Wirkung"
 slug: agile-einfuehrung-unternehmen
 description: "So führst du agile Arbeitsweisen im Unternehmen ein, ohne Ritual-Kosmetik und mit echter Wirkung auf Zusammenarbeit, Tempo und Entscheidungen."
 keyword: "agile einfuehrung unternehmen"

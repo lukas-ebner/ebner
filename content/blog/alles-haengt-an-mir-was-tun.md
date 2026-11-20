@@ -1,5 +1,6 @@
 ---
 title: "Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer"
+seoTitle: "Alles hängt an mir: 14-Tage-Reset für Geschäftsführer"
 slug: alles-haengt-an-mir-was-tun
 description: "Wenn alles an dir hängt, hilft mehr Fleiß nicht weiter. So durchbrichst du als Geschäftsführer die operative Abhängigkeit in 14 Tagen."
 keyword: "alles haengt an mir was tun"

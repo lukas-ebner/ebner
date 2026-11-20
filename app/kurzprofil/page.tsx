@@ -12,9 +12,9 @@ import { JsonLd, contentPageSchema } from '@/lib/schema'
  */
 
 export const metadata: Metadata = {
-  title: 'Kurzprofil – Lukas Ebner',
+  title: 'Kurzprofil Lukas Ebner: Lebenslauf & Gründungen',
   description:
-    'Serial Founder aus Regensburg. Schwerpunkt Consulting-to-Product: mit zahlendem Erstkunden und Projektgeschäft ein Produkt entwickeln. Lebenslauf, Gründungen, Fortbildungen.',
+    'Lukas Ebner, Serial Founder aus Regensburg: eins+null, Leadtime, Fracto. Schwerpunkt Consulting-to-Product. Lebenslauf, Gründungen, Fortbildungen.',
   alternates: { canonical: 'https://lukasebner.de/kurzprofil' },
   openGraph: {
     type: 'profile',
@@ -293,7 +293,7 @@ export default function KurzprofilPage() {
                 <div className="mb-3 flex h-8 items-center">
                   {e.logo ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={e.logo} alt="" loading="lazy" className="h-full w-auto max-w-[200px] object-contain object-left" />
+                    <img src={e.logo} alt={`Logo ${e.org}`} loading="lazy" className="h-full w-auto max-w-[200px] object-contain object-left" />
                   ) : (
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-surface-light">
                       <GraduationCap className="h-5 w-5 text-text-muted" strokeWidth={1.5} aria-hidden />

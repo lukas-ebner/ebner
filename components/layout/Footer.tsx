@@ -20,6 +20,17 @@ const mehr = [
   { href: '/unverzichtbar', label: 'Buch: (Un)verzichtbar' },
 ]
 
+const region = [
+  { href: '/unternehmensberatung-regensburg', label: 'Regensburg' },
+  { href: '/unternehmensberatung-ostbayern', label: 'Ostbayern' },
+  { href: '/unternehmensberatung-niederbayern', label: 'Niederbayern' },
+  { href: '/ki-beratung-regensburg', label: 'KI-Beratung Regensburg' },
+  { href: '/prozessoptimierung-regensburg', label: 'Prozessoptimierung Regensburg' },
+  { href: '/digitalisierungsberatung-regensburg', label: 'Digitalisierungsberatung Regensburg' },
+  { href: '/themen/change-management-beratung', label: 'Change-Management-Beratung' },
+  { href: '/operations-beratung-agenturen', label: 'Beratung für Agenturen' },
+]
+
 export function Footer() {
   const year = new Date().getFullYear()
 
@@ -116,7 +127,19 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-7xl border-t border-border-dark px-6 pt-6">
+      <nav aria-label="Beratung in der Region" className="mx-auto mt-12 max-w-7xl px-6">
+        <p className="mb-3 font-mono text-pill uppercase tracking-widest text-text-muted">Beratung in der Region</p>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">
+          {region.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} className={footerLinkClass}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div className="mx-auto mt-8 max-w-7xl border-t border-border-dark px-6 pt-6">
         <div className="flex flex-col gap-4 text-sm text-text-dimmed md:flex-row md:items-center md:justify-between">
           <p>
             © {year} Lukas Ebner · Wachstumscoach GmbH

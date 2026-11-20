@@ -1,5 +1,6 @@
 ---
 title: "KI-Beratung in Bayern: So erkennst du, ob ein Angebot Substanz hat"
+seoTitle: "KI-Beratung in Bayern: So prüfst du ein Angebot"
 slug: ki-beratung-bayern
 description: "KI-Beratung in Bayern: Woran du erkennst, ob ein Angebot Substanz hat, welche Fragen du stellen solltest und wie der Digitalbonus Bayern hilft."
 keyword: "ki beratung bayern"

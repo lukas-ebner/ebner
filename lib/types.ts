@@ -24,6 +24,8 @@ export interface CtaConfig {
 /* ── Blog ── */
 export interface BlogPostMeta {
   title: string
+  /** Optionaler kurzer <title> für Suchmaschinen (≤ ~60 Zeichen) */
+  seoTitle?: string
   slug: string
   description: string
   keyword: string

@@ -1,5 +1,6 @@
 ---
 title: "Mitarbeiter halten sich nicht an Prozesse? Oft ist dein System das Problem"
+seoTitle: "Mitarbeiter halten sich nicht an Prozesse? Das hilft"
 slug: mitarbeiter-halten-sich-nicht-an-prozesse
 description: "Wenn Mitarbeiter sich nicht an Prozesse halten, liegt das oft nicht an Disziplin, sondern an Führungsfehlern, unklaren Standards und schlechten Übergaben."
 keyword: "mitarbeiter halten sich nicht an prozesse"

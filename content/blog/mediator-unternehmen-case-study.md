@@ -1,5 +1,6 @@
 ---
 title: "Mediator im Unternehmen: Warum ein Machtwort den Konflikt nur verschiebt"
+seoTitle: "Wirtschaftsmediation im Mittelstand: ein Fallbeispiel"
 slug: mediator-unternehmen-case-study
 description: "Fallstudie aus dem Mittelstand: Wann ein Mediator im Unternehmen besser wirkt als ein Machtwort und wie Konflikte wirklich tragfähig gelöst werden."
 keyword: "mediator unternehmen"

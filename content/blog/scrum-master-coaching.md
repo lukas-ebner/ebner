@@ -1,5 +1,6 @@
 ---
 title: "Scrum Master Coaching für KMU: Wann es hilft und wann nicht"
+seoTitle: "Scrum Master Coaching für KMU: Wann es hilft"
 slug: scrum-master-coaching
 description: "Scrum Master Coaching für KMU: Wann es Teams wirklich hilft, wann es Methoden-Theater bleibt und was Führung dazu beitragen muss."
 keyword: "scrum master coaching"

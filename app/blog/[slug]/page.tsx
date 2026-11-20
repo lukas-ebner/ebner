@@ -21,8 +21,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params
   try {
     const post = loadBlogPost(slug)
+    // Kurzer, keyword-starker Titel für Google (≤ ~60 Zeichen); die lange Überschrift bleibt H1.
+    const seoTitle = post.meta.seoTitle ?? `${post.meta.title} – Lukas Ebner`
     return {
-      title: `${post.meta.title} – Lukas Ebner`,
+      title: seoTitle,
       description: post.meta.description,
       keywords: [post.meta.keyword, ...(post.meta.nebenkeywords ?? [])].join(', '),
       alternates: {
@@ -31,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       openGraph: {
         type: 'article',
         url: `https://lukasebner.de/blog/${slug}`,
-        title: `${post.meta.title} – Lukas Ebner`,
+        title: seoTitle,
         description: post.meta.description,
         images: [{ url: post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage }],
         publishedTime: post.meta.date,
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
       twitter: {
         card: 'summary_large_image',
-        title: `${post.meta.title} – Lukas Ebner`,
+        title: seoTitle,
         description: post.meta.description,
         images: [post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage],
       },

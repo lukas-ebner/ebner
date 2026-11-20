@@ -1,5 +1,6 @@
 ---
 title: "MVP Entwicklung: Erst testen, dann bauen"
+seoTitle: "MVP-Entwicklung mit KI: Erst testen, dann bauen"
 slug: mvp-entwicklung
 description: "Wie MVP Entwicklung wirklich funktioniert: schneller Prototyp, echte Validierung und erst danach größere Investitionen. Mit KI heute deutlich schneller als früher."
 keyword: "mvp entwicklung"

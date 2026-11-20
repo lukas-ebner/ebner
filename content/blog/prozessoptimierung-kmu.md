@@ -1,5 +1,6 @@
 ---
 title: "Prozessoptimierung im KMU: Erst Engpässe, dann Tools"
+seoTitle: "Prozessoptimierung im KMU: Erst Engpässe, dann Tools"
 slug: prozessoptimierung-kmu
 description: "Wie Prozessoptimierung im KMU wirklich funktioniert: erst Engpässe und Entscheidungsregeln klären, dann digitalisieren und automatisieren."
 keyword: "prozessoptimierung kmu"

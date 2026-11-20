@@ -1,5 +1,6 @@
 ---
 title: "Firma verkaufsfertig machen: Welche Strukturen Kaufinteressenten wirklich prüfen"
+seoTitle: "Firma verkaufsfertig machen: Was Käufer wirklich prüfen"
 slug: firma-verkaufsfertig-machen
 description: "Firma verkaufsfertig machen: Welche Strukturen Kaufinteressenten prüfen – Inhaberabhängigkeit, Prozesse, Zahlen, Kundenbasis – und wie du sie aufbaust."
 keyword: "firma verkaufsfertig machen"

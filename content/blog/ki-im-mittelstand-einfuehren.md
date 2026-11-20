@@ -1,5 +1,6 @@
 ---
 title: "KI im Mittelstand einführen: Wo du anfangen solltest, damit es im Alltag wirkt"
+seoTitle: "KI im Mittelstand einführen: Wo du anfangen solltest"
 slug: ki-im-mittelstand-einfuehren
 description: "So führst du KI im Mittelstand ein, ohne Theater, ohne Tool-Chaos und mit einem ersten Anwendungsfall, der im Alltag wirklich etwas bringt."
 keyword: "ki im mittelstand einfuehren"

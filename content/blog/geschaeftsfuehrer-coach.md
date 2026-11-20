@@ -1,5 +1,6 @@
 ---
 title: "Geschäftsführer-Coaching im Mittelstand: Woran du Wirkung in 90 Tagen erkennst"
+seoTitle: "Coaching für Geschäftsführer: Wirkung in 90 Tagen erkennen"
 slug: geschaeftsfuehrer-coach
 description: "Geschäftsführer-Coaching im Mittelstand: Woran du in 90 Tagen erkennst, ob ein Coach wirkt, und was gutes Sparring für Geschäftsführer ausmacht."
 keyword: "geschaeftsfuehrer coach"

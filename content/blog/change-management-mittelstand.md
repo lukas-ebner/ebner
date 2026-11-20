@@ -1,5 +1,6 @@
 ---
 title: "Change Management im Mittelstand: Warum Projekte trotz Zustimmung scheitern"
+seoTitle: "Change Management im Mittelstand: Warum Projekte scheitern"
 slug: change-management-mittelstand
 description: "Warum Change-Projekte im Mittelstand trotz Zustimmung scheitern und wie du Veränderung in 90 Tagen operativ führbar machst."
 keyword: "change management beratung"

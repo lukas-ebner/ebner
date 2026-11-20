@@ -1,5 +1,6 @@
 ---
 title: "Systemische Organisationsberatung im Mittelstand: Wann sie wirkt und wann sie nur Zeit verbrennt"
+seoTitle: "Systemische Organisationsberatung im Mittelstand"
 slug: systemische-organisationsberatung
 description: "Wann systemische Organisationsberatung im Mittelstand wirklich wirkt, woran du den Bedarf erkennst und wie du in 90 Tagen operative Reibung senkst."
 keyword: "systemische organisationsberatung"

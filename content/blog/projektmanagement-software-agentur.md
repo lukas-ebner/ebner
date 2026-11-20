@@ -1,5 +1,6 @@
 ---
 title: "Projektmanagement Software Agentur: Erst System, dann Tool"
+seoTitle: "Projektmanagement-Software für Agenturen: So wählst du"
 slug: projektmanagement-software-agentur
 description: "Welche Projektmanagement-Software Agenturen wirklich brauchen: weniger Tool-Chaos, mehr gemeinsame Datenbasis, bessere Steuerung und klares Controlling."
 keyword: "projektmanagement software agentur"

@@ -1,5 +1,6 @@
 ---
 title: "Zeiterfassung im Kleinunternehmen einführen: Der Praxisplan für 30 Tage"
+seoTitle: "Zeiterfassung im Kleinunternehmen einführen: 30-Tage-Plan"
 slug: zeiterfassung-kleinunternehmen-einfuehren
 description: "Zeiterfassung im Kleinunternehmen einführen, ohne Kontrollchaos: ein klarer 30-Tage-Plan für Toolwahl, Akzeptanz und saubere Umsetzung."
 keyword: "zeiterfassung kleinunternehmen einfuehren"

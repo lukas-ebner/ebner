@@ -1,5 +1,6 @@
 ---
 title: "Exit-Strategie: Warum Verkaufsfähigkeit Jahre vor dem Verkauf beginnt"
+seoTitle: "Exit-Strategie: So machst du dein Unternehmen verkaufsfähig"
 slug: exit-strategie
 description: "Exit-Strategie für Unternehmer: Verkaufsfähigkeit beginnt Jahre vor dem Verkauf. Was Käufer prüfen und wie du dein Unternehmen unabhängig von dir machst."
 keyword: "exit strategie"

@@ -1,5 +1,6 @@
 ---
 title: "Digitale Transformation im Mittelstand: Warum die meisten Projekte nicht an Software scheitern"
+seoTitle: "Digitale Transformation im Mittelstand: Wo sie scheitert"
 slug: digitale-transformation-mittelstand
 description: "Digitale Transformation im Mittelstand scheitert selten an Software, sondern an Prozessen, Rollen und Entscheidungen. Wo du anfangen solltest."
 keyword: "digitale transformation mittelstand"

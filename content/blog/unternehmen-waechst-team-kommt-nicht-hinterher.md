@@ -1,5 +1,6 @@
 ---
 title: "Unternehmen wächst, Team kommt nicht hinterher: Die 5 häufigsten Brüche"
+seoTitle: "Unternehmen wächst, Team nicht: Die 5 häufigsten Brüche"
 slug: unternehmen-waechst-team-kommt-nicht-hinterher
 description: "Dein Unternehmen wächst, aber das Team kommt nicht hinterher? Die 5 häufigsten Brüche zwischen Wachstum, Rollen, Prozessen und Führung – und was hilft."
 keyword: "unternehmen waechst team kommt nicht hinterher"
