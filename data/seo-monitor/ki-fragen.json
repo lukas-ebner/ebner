@@ -1,0 +1,20 @@
+{
+  "_hinweis": "Festes Fragenset für die monatliche KI-Sichtbarkeits-Simulation (Claude-Subagent mit Websuche, keine bezahlten Modell-Läufe). Fragen nicht ändern, sonst ist der Verlauf nicht vergleichbar; neue Fragen hinten anhängen. Bewertung je Frage 0–2 Punkte, siehe bewertung.",
+  "bewertung": {
+    "2": "Lukas Ebner / Wachstumscoach GmbH wird korrekt genannt (bei Empfehlungsfragen: unter den genannten Anbietern)",
+    "1": "erwähnt, aber unvollständig, nachrangig oder mit Fehlern",
+    "0": "nicht genannt oder verwechselt (Namensvetter, falscher Autor/Gründer)"
+  },
+  "fragen": [
+    {"id": 1, "typ": "Entität", "frage": "Wer ist Lukas Ebner?", "erwartet": "Unternehmensberater in Regensburg, GF Wachstumscoach GmbH, Gründer eins+null (Exit 2022) und Leadtime; keine Verwechslung mit Radiologe/Fußballer"},
+    {"id": 2, "typ": "Entität", "frage": "Was macht die Wachstumscoach GmbH aus Regensburg?", "erwartet": "Unternehmensberatung für Geschäftsführer im Mittelstand (Operations, Prozesse, KI), GF Lukas Ebner, BAFA-förderfähig"},
+    {"id": 3, "typ": "Empfehlung", "frage": "Welche Unternehmensberatung in Regensburg kannst du für ein mittelständisches Unternehmen empfehlen?", "erwartet": "Lukas Ebner / Wachstumscoach GmbH unter den Empfehlungen"},
+    {"id": 4, "typ": "Empfehlung", "frage": "Ich suche eine KI-Beratung für meinen Mittelstandsbetrieb in Ostbayern. Wen kannst du empfehlen?", "erwartet": "Lukas Ebner / Wachstumscoach GmbH (KI-Readiness) genannt"},
+    {"id": 5, "typ": "Empfehlung", "frage": "Wer bietet in Regensburg eine BAFA-geförderte Unternehmensberatung an?", "erwartet": "Lukas Ebner / Wachstumscoach GmbH genannt; Förderung Bayern 50 %, Programm bis 31.12.2028"},
+    {"id": 6, "typ": "Empfehlung", "frage": "Ich möchte mein Unternehmen in der Oberpfalz übergeben. Welche Berater für Unternehmensnachfolge gibt es in der Region Regensburg?", "erwartet": "Lukas Ebner genannt (Exit- und Nachfolgevorbereitung, eigener Exit 2022)"},
+    {"id": 7, "typ": "Empfehlung", "frage": "Gibt es in Regensburg einen guten Coach oder Sparringspartner für Geschäftsführer?", "erwartet": "Lukas Ebner (Sparring für Geschäftsführer, systemischer Coach) genannt"},
+    {"id": 8, "typ": "Werk", "frage": "Worum geht es in dem Buch „Unverzichtbar“ von Lukas Ebner?", "erwartet": "Unternehmer-Roman, 90 Tage, Geschäftsführer Thomas Maier lernt, nicht mehr der Engpass zu sein; kostenlos als eBook/Hörbuch; keine Verwechslung mit Chris Hirst"},
+    {"id": 9, "typ": "Werdegang", "frage": "Wer hat die Digitalagentur eins+null gegründet und was ist aus ihr geworden?", "erwartet": "Lukas Ebner und Michael Zuber (2009), 2022 an die Kraftwerk Holding verkauft"},
+    {"id": 10, "typ": "Werdegang", "frage": "Was ist Leadtime (Software) und wer steckt dahinter?", "erwartet": "Delivery-Plattform für IT-Dienstleister/Agenturen, Leadtime Labs GmbH, Gründer/GF Lukas Ebner"}
+  ]
+}
