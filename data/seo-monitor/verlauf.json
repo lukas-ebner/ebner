@@ -1,0 +1,577 @@
+[
+ {
+  "datum": "2026-11-20",
+  "keyword_set": [
+   {
+    "keyword": "ki beratung",
+    "cluster": "KI-Beratung",
+    "ziel": "/ki-readiness"
+   },
+   {
+    "keyword": "ki beratung für unternehmen",
+    "cluster": "KI-Beratung",
+    "ziel": "/ki-readiness"
+   },
+   {
+    "keyword": "ki beratung mittelstand",
+    "cluster": "KI-Beratung",
+    "ziel": "/ki-readiness"
+   },
+   {
+    "keyword": "prozessoptimierung mit ki",
+    "cluster": "KI-Beratung",
+    "ziel": "/ki-readiness"
+   },
+   {
+    "keyword": "ki beratung regensburg",
+    "cluster": "KI-Beratung",
+    "ziel": "/ki-beratung-regensburg",
+    "kpi": true
+   },
+   {
+    "keyword": "bafa beratung",
+    "cluster": "BAFA",
+    "ziel": "/themen/bafa"
+   },
+   {
+    "keyword": "bafa beratung förderung",
+    "cluster": "BAFA",
+    "ziel": "/themen/bafa"
+   },
+   {
+    "keyword": "bafa förderung unternehmensberatung",
+    "cluster": "BAFA",
+    "ziel": "/themen/bafa"
+   },
+   {
+    "keyword": "bafa beratung regensburg",
+    "cluster": "BAFA",
+    "ziel": "/themen/bafa",
+    "kpi": true
+   },
+   {
+    "keyword": "unternehmensnachfolge beratung",
+    "cluster": "Nachfolge/Exit",
+    "ziel": "/unternehmensnachfolge-beratung"
+   },
+   {
+    "keyword": "berater unternehmensnachfolge",
+    "cluster": "Nachfolge/Exit",
+    "ziel": "/unternehmensnachfolge-beratung"
+   },
+   {
+    "keyword": "unternehmensnachfolge beratung regensburg",
+    "cluster": "Nachfolge/Exit",
+    "ziel": "/unternehmensnachfolge-beratung",
+    "kpi": true
+   },
+   {
+    "keyword": "exit strategie",
+    "cluster": "Nachfolge/Exit",
+    "ziel": "Blog"
+   },
+   {
+    "keyword": "unternehmenswert berechnen",
+    "cluster": "Nachfolge/Exit",
+    "ziel": "Blog"
+   },
+   {
+    "keyword": "unternehmer coaching",
+    "cluster": "Coaching",
+    "ziel": "/coaching-geschaeftsfuehrer"
+   },
+   {
+    "keyword": "coaching geschäftsführer",
+    "cluster": "Coaching",
+    "ziel": "/coaching-geschaeftsfuehrer"
+   },
+   {
+    "keyword": "change management beratung",
+    "cluster": "Change/Organisation",
+    "ziel": "/themen/change-management-beratung"
+   },
+   {
+    "keyword": "organisationsberatung",
+    "cluster": "Change/Organisation",
+    "ziel": "Blog"
+   },
+   {
+    "keyword": "digitalisierungsberatung",
+    "cluster": "Digitalisierung/Prozesse",
+    "ziel": "/digitalisierung"
+   },
+   {
+    "keyword": "prozessoptimierung beratung",
+    "cluster": "Digitalisierung/Prozesse",
+    "ziel": "/operations"
+   },
+   {
+    "keyword": "prozessdokumentation",
+    "cluster": "Digitalisierung/Prozesse",
+    "ziel": "Blog"
+   },
+   {
+    "keyword": "agentur software",
+    "cluster": "Digitalisierung/Prozesse",
+    "ziel": "Blog"
+   },
+   {
+    "keyword": "unternehmensberatung regensburg",
+    "cluster": "Regional/Marke",
+    "ziel": "/unternehmensberatung-regensburg",
+    "kpi": true
+   },
+   {
+    "keyword": "unternehmensberater regensburg",
+    "cluster": "Regional/Marke",
+    "ziel": "/unternehmensberatung-regensburg"
+   },
+   {
+    "keyword": "unternehmensberatung mittelstand",
+    "cluster": "Regional/Marke",
+    "ziel": "/"
+   },
+   {
+    "keyword": "unternehmensberatung kosten",
+    "cluster": "Regional/Marke",
+    "ziel": "/preise"
+   },
+   {
+    "keyword": "lukas ebner",
+    "cluster": "Marke",
+    "ziel": "/ueber-mich"
+   },
+   {
+    "keyword": "lukas ebner regensburg",
+    "cluster": "Marke",
+    "ziel": "/ueber-mich"
+   },
+   {
+    "keyword": "wachstumscoach gmbh",
+    "cluster": "Marke",
+    "ziel": "/"
+   },
+   {
+    "keyword": "unverzichtbar lukas ebner",
+    "cluster": "Marke",
+    "ziel": "/unverzichtbar"
+   }
+  ],
+  "serp": {
+   "ki beratung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "ki beratung für unternehmen": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "ki beratung mittelstand": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "prozessoptimierung mit ki": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "ki beratung regensburg": {
+    "position": 21,
+    "url": "/unternehmensberatung-regensburg",
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "bafa beratung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "bafa beratung förderung": {
+    "position": 26,
+    "url": "/blog/bafa-foerderung-unterne...",
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "bafa förderung unternehmensberatung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "bafa beratung regensburg": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensnachfolge beratung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "berater unternehmensnachfolge": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensnachfolge beratung regensburg": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "exit strategie": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmenswert berechnen": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmer coaching": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "coaching geschäftsführer": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "change management beratung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "organisationsberatung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "digitalisierungsberatung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "prozessoptimierung beratung": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "prozessdokumentation": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "agentur software": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensberatung regensburg": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensberater regensburg": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensberatung mittelstand": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unternehmensberatung kosten": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "lukas ebner": {
+    "position": 26,
+    "url": "/erstgespraech",
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "lukas ebner regensburg": {
+    "position": null,
+    "url": null,
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "wachstumscoach gmbh": {
+    "position": 2,
+    "url": "/",
+    "ai_overview": true,
+    "aio_zitiert_uns": false
+   },
+   "unverzichtbar lukas ebner": {
+    "fehler": "40101 Internal SE Server Error."
+   }
+  },
+  "ranked": {
+   "anzahl": 12,
+   "top3": 0,
+   "top10": 1,
+   "top30": 2,
+   "etv": 2.7,
+   "keywords": [
+    {
+     "keyword": "bafa förderung beratung",
+     "volumen": 110,
+     "position": 7,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.95
+    },
+    {
+     "keyword": "unternehmensberatung regensburg",
+     "volumen": 110,
+     "position": 30,
+     "url": "/unternehmensberatung-regensburg",
+     "etv": 0.1
+    },
+    {
+     "keyword": "geschäftsführer coach",
+     "volumen": 110,
+     "position": 32,
+     "url": "/blog/geschaeftsfuehrer-coach",
+     "etv": 0.02
+    },
+    {
+     "keyword": "förderung unternehmensberatung",
+     "volumen": 50,
+     "position": 35,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.01
+    },
+    {
+     "keyword": "regensburg unternehmensberatung",
+     "volumen": 110,
+     "position": 36,
+     "url": "/unternehmensberatung-regensburg",
+     "etv": 0.08
+    },
+    {
+     "keyword": "unternehmensberater regensburg",
+     "volumen": 110,
+     "position": 44,
+     "url": "/unternehmensberatung-regensburg",
+     "etv": 0.07
+    },
+    {
+     "keyword": "bafa beratungsförderung",
+     "volumen": 320,
+     "position": 46,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.13
+    },
+    {
+     "keyword": "bafa unternehmensberatung förderung",
+     "volumen": 110,
+     "position": 47,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.1
+    },
+    {
+     "keyword": "bafa unternehmensberatung",
+     "volumen": 1300,
+     "position": 48,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.94
+    },
+    {
+     "keyword": "bafa förderung unternehmensberatung",
+     "volumen": 260,
+     "position": 49,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.19
+    },
+    {
+     "keyword": "bafa förderung unternehmen",
+     "volumen": 70,
+     "position": 53,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.06
+    },
+    {
+     "keyword": "bafa förderung marketing",
+     "volumen": 70,
+     "position": 84,
+     "url": "/blog/bafa-foerderung-unternehmensberatung",
+     "etv": 0.02
+    }
+   ]
+  },
+  "backlinks": {
+   "rank": 0,
+   "backlinks": 46,
+   "referring_domains": 43,
+   "referring_main_domains": 41,
+   "referring_domains_nofollow": 10,
+   "backlinks_spam_score": 56,
+   "broken_backlinks": 0
+  },
+  "kosten_usd": 0.1825,
+  "abfragen": [
+   {
+    "label": "ranked_keywords",
+    "cost": 0.01344
+   },
+   {
+    "label": "backlinks_summary",
+    "cost": 0.02404
+   },
+   {
+    "label": "serp:ki beratung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:ki beratung für unternehmen",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:ki beratung mittelstand",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:prozessoptimierung mit ki",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:ki beratung regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:bafa beratung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:bafa beratung förderung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:bafa förderung unternehmensberatung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:bafa beratung regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensnachfolge beratung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:berater unternehmensnachfolge",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensnachfolge beratung regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:exit strategie",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmenswert berechnen",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmer coaching",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:coaching geschäftsführer",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:change management beratung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:organisationsberatung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:digitalisierungsberatung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:prozessoptimierung beratung",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:prozessdokumentation",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:agentur software",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensberatung regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensberater regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensberatung mittelstand",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unternehmensberatung kosten",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:lukas ebner",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:lukas ebner regensburg",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:wachstumscoach gmbh",
+    "cost": 0.005
+   },
+   {
+    "label": "serp:unverzichtbar lukas ebner",
+    "cost": 0.0
+   },
+   {
+    "label": "serp (2. Versuch):unverzichtbar lukas ebner",
+    "cost": 0.0
+   }
+  ]
+ }
+]

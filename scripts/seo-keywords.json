@@ -1,0 +1,42 @@
+{
+  "_hinweis": "Keyword-Set für scripts/seo-monitor.py. Quelle: SEO-Konzept 20.11.2026 (Suchvolumen/Schwierigkeit Google DE). ziel = Seite, die für den Begriff ranken soll. kpi = Top-10-Ziel aus dem Konzept.",
+  "keywords": [
+    {"keyword": "ki beratung", "cluster": "KI-Beratung", "ziel": "/ki-readiness"},
+    {"keyword": "ki beratung für unternehmen", "cluster": "KI-Beratung", "ziel": "/ki-readiness"},
+    {"keyword": "ki beratung mittelstand", "cluster": "KI-Beratung", "ziel": "/ki-readiness"},
+    {"keyword": "prozessoptimierung mit ki", "cluster": "KI-Beratung", "ziel": "/ki-readiness"},
+    {"keyword": "ki beratung regensburg", "cluster": "KI-Beratung", "ziel": "/ki-beratung-regensburg", "kpi": true},
+
+    {"keyword": "bafa beratung", "cluster": "BAFA", "ziel": "/themen/bafa"},
+    {"keyword": "bafa beratung förderung", "cluster": "BAFA", "ziel": "/themen/bafa"},
+    {"keyword": "bafa förderung unternehmensberatung", "cluster": "BAFA", "ziel": "/themen/bafa"},
+    {"keyword": "bafa beratung regensburg", "cluster": "BAFA", "ziel": "/themen/bafa", "kpi": true},
+
+    {"keyword": "unternehmensnachfolge beratung", "cluster": "Nachfolge/Exit", "ziel": "/unternehmensnachfolge-beratung"},
+    {"keyword": "berater unternehmensnachfolge", "cluster": "Nachfolge/Exit", "ziel": "/unternehmensnachfolge-beratung"},
+    {"keyword": "unternehmensnachfolge beratung regensburg", "cluster": "Nachfolge/Exit", "ziel": "/unternehmensnachfolge-beratung", "kpi": true},
+    {"keyword": "exit strategie", "cluster": "Nachfolge/Exit", "ziel": "Blog"},
+    {"keyword": "unternehmenswert berechnen", "cluster": "Nachfolge/Exit", "ziel": "Blog"},
+
+    {"keyword": "unternehmer coaching", "cluster": "Coaching", "ziel": "/coaching-geschaeftsfuehrer"},
+    {"keyword": "coaching geschäftsführer", "cluster": "Coaching", "ziel": "/coaching-geschaeftsfuehrer"},
+
+    {"keyword": "change management beratung", "cluster": "Change/Organisation", "ziel": "/themen/change-management-beratung"},
+    {"keyword": "organisationsberatung", "cluster": "Change/Organisation", "ziel": "Blog"},
+
+    {"keyword": "digitalisierungsberatung", "cluster": "Digitalisierung/Prozesse", "ziel": "/digitalisierung"},
+    {"keyword": "prozessoptimierung beratung", "cluster": "Digitalisierung/Prozesse", "ziel": "/operations"},
+    {"keyword": "prozessdokumentation", "cluster": "Digitalisierung/Prozesse", "ziel": "Blog"},
+    {"keyword": "agentur software", "cluster": "Digitalisierung/Prozesse", "ziel": "Blog"},
+
+    {"keyword": "unternehmensberatung regensburg", "cluster": "Regional/Marke", "ziel": "/unternehmensberatung-regensburg", "kpi": true},
+    {"keyword": "unternehmensberater regensburg", "cluster": "Regional/Marke", "ziel": "/unternehmensberatung-regensburg"},
+    {"keyword": "unternehmensberatung mittelstand", "cluster": "Regional/Marke", "ziel": "/"},
+    {"keyword": "unternehmensberatung kosten", "cluster": "Regional/Marke", "ziel": "/preise"},
+
+    {"keyword": "lukas ebner", "cluster": "Marke", "ziel": "/ueber-mich"},
+    {"keyword": "lukas ebner regensburg", "cluster": "Marke", "ziel": "/ueber-mich"},
+    {"keyword": "wachstumscoach gmbh", "cluster": "Marke", "ziel": "/"},
+    {"keyword": "unverzichtbar lukas ebner", "cluster": "Marke", "ziel": "/unverzichtbar"}
+  ]
+}
