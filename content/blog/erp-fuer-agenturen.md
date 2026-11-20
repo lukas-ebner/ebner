@@ -254,6 +254,7 @@ Die teuerste Entscheidung ist oft nicht das fehlende System. Sondern das falsche
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [Projektmanagement Software Agentur: Erst System, dann Tool](/blog/projektmanagement-software-agentur)
 - [Tool-Audit im Unternehmen: Erst Wahrheit, dann Software](/blog/tool-audit-unternehmen)
+- [Agentursoftware auswählen: Checkliste in 7 Schritten](/blog/agentursoftware-auswaehlen)
 
 ## Weiterführende Links
 - Mehr zur Zahlenlogik: [/blog/controlling-fuer-agenturen](/blog/controlling-fuer-agenturen)

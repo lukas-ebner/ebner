@@ -268,6 +268,7 @@ Wenn du willst, schauen wir gemeinsam drauf, **welcher erste KI-Anwendungsfall i
 - [BAFA-Förderung: bis zu 1.750 € Zuschuss für deine Beratung in Bayern](/themen/bafa)
 - [Change Management im Mittelstand: Warum Projekte trotz Zustimmung scheitern](/blog/change-management-mittelstand)
 - [IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen](/blog/it-sicherheit-mittelstand-beratung)
+- [Prozessoptimierung mit KI: 6 Einsatzfelder im KMU](/blog/prozessoptimierung-mit-ki)
 
 ## Autor
 
