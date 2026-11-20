@@ -19,7 +19,7 @@ const services = [
   },
   {
     href: '/ki-readiness',
-    title: 'KI-Readiness & Prototyping',
+    title: 'KI-Beratung & Prototyping',
     desc: 'Von der Idee zum Prototyp. In Tagen, nicht Monaten.',
   },
 ]

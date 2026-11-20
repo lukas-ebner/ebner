@@ -9,7 +9,6 @@ import { GlobalLeadmagnetTeaser } from '@/components/GlobalLeadmagnetTeaser'
 import { JsonLd, globalGraph } from '@/lib/schema'
 
 const faviconSvg = '/images/favicon.svg'
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lukasebner.de'),
@@ -35,13 +34,11 @@ export const metadata: Metadata = {
     url: 'https://lukasebner.de',
     title: 'Lukas Ebner',
     description: 'Lukas Ebner, Unternehmensberater in Regensburg (Wachstumscoach GmbH): Operations, Prozesse, Führung und KI für Geschäftsführer im Mittelstand.',
-    images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lukas Ebner',
     description: 'Lukas Ebner, Unternehmensberater in Regensburg (Wachstumscoach GmbH): Operations, Prozesse, Führung und KI für Geschäftsführer im Mittelstand.',
-    images: [defaultOgImage],
   },
 }
 

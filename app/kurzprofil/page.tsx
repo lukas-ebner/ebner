@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     url: 'https://lukasebner.de/kurzprofil',
     title: 'Kurzprofil – Lukas Ebner',
     description: 'Serial Founder. Schwerpunkt Consulting-to-Product.',
-    images: [{ url: '/images/slides/lukas-hero_landscape.jpg' }],
   },
 }
 

@@ -52,9 +52,10 @@ export function CookieConsent() {
       // localStorage not available
     }
 
-    // No choice yet — show banner after a short delay (avoid layout shift)
-    const timer = setTimeout(() => setVisible(true), 800)
-    return () => clearTimeout(timer)
+    // Noch keine Wahl: Banner sofort zeigen. Er liegt fixed über der Seite (kein Layout-Shift);
+    // eine Verzögerung machte ihn mobil zum spät gemalten LCP-Element.
+    const frame = requestAnimationFrame(() => setVisible(true))
+    return () => cancelAnimationFrame(frame)
   }, [])
 
   function handleChoice(choice: 'all' | 'necessary') {

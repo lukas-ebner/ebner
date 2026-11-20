@@ -56,7 +56,8 @@ export function ThemenPageLayout({ page }: Props) {
                 fill
                 priority
                 className="object-cover"
-                sizes="50vw"
+                // nur ab lg sichtbar: auf dem Handy die kleinste Variante statt eines halben Bildschirms vorladen
+                sizes="(min-width: 1024px) 50vw, 1px"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-surface-dark via-surface-dark/40 to-transparent" />
             </div>

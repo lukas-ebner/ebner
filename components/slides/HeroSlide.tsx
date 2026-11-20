@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import { Button } from '@/components/ui/Button'
@@ -79,12 +79,7 @@ export function HeroSlide({
       >
         {/* Content */}
         <div className={`flex flex-1 items-center pb-0 lg:items-center lg:pb-0 ${isLeft ? 'justify-start' : 'justify-center'}`}>
-          <motion.div
-            className={`max-w-3xl ${isLeft ? 'text-left' : 'mx-auto text-center'}`}
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-          >
+          <div className={`reveal-up max-w-3xl ${isLeft ? 'text-left' : 'mx-auto text-center'}`}>
             <h1 className="font-display text-h1 font-normal text-text-light">{headline}</h1>
             <p
               className={`mt-6 font-body text-lg text-text-light/80 lg:text-xl ${isLeft ? 'max-w-xl' : 'mx-auto max-w-xl'}`}
@@ -96,23 +91,21 @@ export function HeroSlide({
                 {cta.text}
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Stats Bar – am unteren Rand */}
         {stats && stats.length > 0 && (
-          <motion.div
-            className="w-full border-t border-white/10 pb-10 pt-8 lg:pb-12 lg:pt-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
+          <div
+            className="reveal-up w-full border-t border-white/10 pb-10 pt-8 lg:pb-12 lg:pt-10"
+            style={{ animationDelay: '0.4s' }}
           >
             <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 lg:grid-cols-5 lg:gap-8">
               {stats.map((stat) => (
                 <HeroStat key={`${stat.label}-${stat.value}`} {...stat} />
               ))}
             </div>
-          </motion.div>
+          </div>
         )}
       </div>
     </div>

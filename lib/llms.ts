@@ -63,6 +63,9 @@ export function buildLlmsTxt(): string {
     pageLink('operations'),
     pageLink('digitalisierung'),
     pageLink('ki-readiness'),
+    // Neue Leistungsseiten (seo-leistungsseiten); pageLink() lässt sie weg, solange es die Datei noch nicht gibt
+    pageLink('unternehmensnachfolge-beratung'),
+    pageLink('coaching-geschaeftsfuehrer'),
     pageLink('operations-beratung-agenturen'),
     themenLink('bafa'),
     themenLink('change-management-beratung'),
@@ -71,6 +74,7 @@ export function buildLlmsTxt(): string {
     pageLink('unternehmensberatung-regensburg'),
     pageLink('unternehmensberatung-ostbayern'),
     pageLink('unternehmensberatung-niederbayern'),
+    pageLink('unternehmensberatung-oberpfalz'),
     pageLink('digitalisierungsberatung-regensburg'),
     pageLink('ki-beratung-regensburg'),
     pageLink('prozessoptimierung-regensburg'),

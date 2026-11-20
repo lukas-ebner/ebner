@@ -37,6 +37,7 @@ export function ImageOverlaySlide({
   pill,
   slideIndex = 1,
 }: ImageOverlaySlideProps) {
+  const isFirst = slideIndex === 0
   const opacity = image.opacity ?? 0.4
   const isTeal = variant === 'teal'
   const fromBottom = isTeal ? 'from-teal/90 via-teal/50' : 'from-surface-dark/90 via-surface-dark/50'
@@ -79,6 +80,7 @@ export function ImageOverlaySlide({
           fill
           className={`object-cover ${image.position ? `object-[${image.position}]` : 'object-center'}`}
           sizes="100vw"
+          priority={isFirst}
           style={{ opacity }}
           label="Hintergrund"
         />
@@ -92,8 +94,8 @@ export function ImageOverlaySlide({
         <div className={contentMaxW}>
           {pill ? (
             <motion.span
-              className="mb-4 inline-block rounded-full border border-text-light/20 px-3 py-1 font-mono text-xs uppercase tracking-widest text-text-light/60"
-              initial={{ opacity: 0, y: 16 }}
+              className={`${isFirst ? 'reveal-up ' : ''}mb-4 inline-block rounded-full border border-text-light/20 px-3 py-1 font-mono text-xs uppercase tracking-widest text-text-light/60`}
+              initial={isFirst ? false : { opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -103,8 +105,8 @@ export function ImageOverlaySlide({
           ) : null}
           {slideIndex === 0 ? (
             <motion.h1
-              className="font-display text-h1 font-normal text-text-light"
-              initial={{ opacity: 0, y: 24 }}
+              className="reveal-up font-display text-h1 font-normal text-text-light"
+              initial={isFirst ? false : { opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -114,7 +116,7 @@ export function ImageOverlaySlide({
           ) : (
             <motion.h2
               className="font-display text-h1 font-normal text-text-light"
-              initial={{ opacity: 0, y: 24 }}
+              initial={isFirst ? false : { opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -124,8 +126,8 @@ export function ImageOverlaySlide({
           )}
           {paragraphs.length > 0 ? (
             <motion.div
-              className={`mt-6 space-y-4 ${align === 'center' ? 'mx-auto max-w-2xl' : 'max-w-xl'}`}
-              initial={{ opacity: 0, y: 20 }}
+              className={`${isFirst ? 'reveal-up ' : ''}mt-6 space-y-4 ${align === 'center' ? 'mx-auto max-w-2xl' : 'max-w-xl'}`}
+              initial={isFirst ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
@@ -139,8 +141,8 @@ export function ImageOverlaySlide({
           ) : null}
           {cta ? (
             <motion.div
-              className="mt-8"
-              initial={{ opacity: 0, y: 16 }}
+              className={isFirst ? 'reveal-up mt-8' : 'mt-8'}
+              initial={isFirst ? false : { opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}

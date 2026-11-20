@@ -88,3 +88,24 @@ export function extractBlogFaq(content: string): { question: string; answer: str
   flush()
   return out
 }
+
+/** Lesedauer in Minuten (≈ 200 Wörter/Minute, mindestens 1). */
+export function readingTimeMinutes(content: string): number {
+  const words = content.replace(/[#>*_`\[\]()-]/g, ' ').split(/\s+/).filter(Boolean).length
+  return Math.max(1, Math.round(words / 200))
+}
+
+/**
+ * Verwandte Artikel: zuerst gleiche Kategorie (neueste zuerst),
+ * bei zu wenigen Treffern mit den neuesten anderen Artikeln auffüllen.
+ */
+export function relatedPosts(slug: string, category: string, limit = 3): BlogPostMeta[] {
+  const others = listPublishedPosts().filter((p) => p.slug !== slug)
+  const same = others.filter((p) => p.category === category)
+  const rest = others.filter((p) => p.category !== category)
+  return [...same, ...rest].slice(0, limit)
+}
+
+export function formatGermanDate(iso: string): string {
+  return new Date(iso).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
+}

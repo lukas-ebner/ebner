@@ -16,34 +16,30 @@ const nextConfig: NextConfig = {
     // Externe Domains bei Bedarf:
     // remotePatterns: [{ protocol: 'https', hostname: 'example.com', pathname: '/**' }],
   },
-  redirects: async () => [
-    {
-      source: '/:path*',
-      has: [
-        {
-          type: 'host',
-          value: 'www.lukasebner.de',
-        },
-      ],
-      destination: 'https://lukasebner.de/:path*',
-      permanent: true,
-    },
-    {
-      source: '/bafa',
-      destination: '/themen/bafa',
-      permanent: true,
-    },
-    {
-      source: '/change-management-beratung',
-      destination: '/themen/change-management-beratung',
-      permanent: true,
-    },
-    ...listThemenSlugs().map((slug) => ({
-      source: `/${slug}`,
-      destination: `/themen/${slug}`,
-      permanent: true,
-    })),
-  ],
+  redirects: async () => {
+    // Alte Pfade → Ziel. Für www.lukasebner.de zusätzlich direkt aufs Ziel leiten (ein Hop statt www → apex → Ziel).
+    const moved = [
+      { source: '/bafa', destination: '/themen/bafa' },
+      { source: '/change-management-beratung', destination: '/themen/change-management-beratung' },
+      ...listThemenSlugs().map((slug) => ({ source: `/${slug}`, destination: `/themen/${slug}` })),
+    ].filter((r, i, all) => all.findIndex((x) => x.source === r.source) === i)
+
+    return [
+      ...moved.map((r) => ({
+        source: r.source,
+        has: [{ type: 'host' as const, value: 'www.lukasebner.de' }],
+        destination: `https://lukasebner.de${r.destination}`,
+        permanent: true,
+      })),
+      {
+        source: '/:path*',
+        has: [{ type: 'host' as const, value: 'www.lukasebner.de' }],
+        destination: 'https://lukasebner.de/:path*',
+        permanent: true,
+      },
+      ...moved.map((r) => ({ ...r, permanent: true })),
+    ]
+  },
 }
 
 export default nextConfig
