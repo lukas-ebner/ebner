@@ -60,6 +60,13 @@
   - "Leadtime SaaS mit KI-Integration, bootstrapped profitabel seit 2023"
   - "Silicon Valley Program TH Deggendorf 2025, gefördert Stadt Regensburg"
   - "20+ Jahre Code und Systementwicklung in produktiven Betrieben"
+- "type": "crossref"
+  "heading": "KI-Beratung, Prototyping und Umsetzung im Detail"
+  "body": "Wie ich mit Unternehmen von der ersten KI-Analyse bis zum funktionierenden Prototyp arbeite, was das kostet und\
+    \ wie die BAFA-Förderung dazu passt, steht ausführlich auf der Seite zur KI-Beratung für Unternehmen."
+  "link":
+    "label": "KI-Beratung für Unternehmen"
+    "href": "/ki-readiness"
 - "type": "faq"
   "heading": "Häufige Fragen zur KI-Beratung in Regensburg"
   "items":

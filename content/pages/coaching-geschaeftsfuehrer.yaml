@@ -1,0 +1,104 @@
+meta:
+  title: "Coaching für Geschäftsführer & Unternehmer | Lukas Ebner"
+  description: "Geschäftsführer-Coaching und Unternehmer-Coaching von jemandem, der selbst 13 Jahre ein Unternehmen geführt und verkauft hat. Systemischer Coach (ICO), Sparring für Führung, Rolle und Entscheidungen. Regensburg und remote."
+  kicker: "Coaching für Geschäftsführer"
+  subtitle: "Als Geschäftsführer hast du viele Gesprächspartner, aber kaum einen, mit dem du offen über deine eigene Rolle reden kannst. Dein Team erwartet Richtung, dein Partner will Ruhe, deine Bank will Zahlen. Coaching ist der Raum, in dem es um dich geht: um deine Entscheidungen, deine Führung und die Frage, wie du dein Unternehmen führst, ohne dass es dich auffrisst. Ich habe 13 Jahre ein Unternehmen mit bis zu 50 Mitarbeitenden geführt und 2022 verkauft. 2025 habe ich am ICO Institut die Weiterbildungen in systemischem Coaching und Organisationsberatung abgeschlossen. Ich kenne beide Seiten: die Methode und den Stuhl, auf dem du sitzt."
+  heroImage: /images/lukas-meetingraum.jpg
+  heroAlt: "Lukas Ebner, Coach für Geschäftsführer und Unternehmer"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Coaching für Geschäftsführer"
+      href: "/coaching-geschaeftsfuehrer"
+  ctas:
+    - label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+      variant: primary
+
+sections:
+  - type: symptoms
+    heading: "Worum es im Unternehmer-Coaching meistens geht"
+    body: "Selten kommt jemand mit einer klaren Frage. Meistens ist es ein Gefühl, dass etwas nicht mehr stimmt. Diese Themen höre ich am häufigsten."
+    items:
+      - pill: "Rolle"
+        headline: "Du bist der Engpass deines eigenen Unternehmens"
+        body: "Alles läuft über deinen Tisch. Du weißt, dass du loslassen müsstest, aber jedes Mal, wenn du es versuchst, geht etwas schief. Im Coaching schauen wir, was dich festhält: fehlendes Vertrauen, fehlende Strukturen oder das eigene Bild davon, was ein guter Chef ist."
+      - pill: "Führung"
+        headline: "Dein Führungsteam führt nicht"
+        body: "Du hast Führungskräfte ernannt, aber Entscheidungen landen trotzdem bei dir. Wir arbeiten daran, wie du Verantwortung so übergibst, dass sie auch angenommen wird, und wie du mit deinen Führungskräften sprichst, wenn es nicht läuft."
+      - pill: "Entscheidungen"
+        headline: "Eine große Entscheidung liegt seit Monaten auf dem Tisch"
+        body: "Einen Partner trennen, eine Sparte schließen, verkaufen oder weitermachen, einen langjährigen Mitarbeiter entlassen. Solche Entscheidungen trifft dir niemand ab. Ich helfe dir, sie so zu sortieren, dass du sie treffen kannst und dahinterstehst."
+      - pill: "Energie"
+        headline: "Du funktionierst, aber die Freude ist weg"
+        body: "60-Stunden-Wochen, der Urlaub mit Laptop, das Gefühl, dass mehr Arbeit nicht mehr Fortschritt bringt. Wir schauen ehrlich darauf, was sich ändern muss: am Unternehmen, an deiner Rolle oder an deinem Blick darauf."
+
+  - type: prose
+    heading: "Wie ich coache: systemisch, aber mit Unternehmerpraxis"
+    content:
+      - "Systemisches Coaching heißt, dass ich dich nicht isoliert betrachte, sondern mit deinem Umfeld: Team, Gesellschafter, Familie, Kunden. Viele Probleme, die sich persönlich anfühlen, sind eigentlich Muster in der Organisation. Und viele Organisationsprobleme haben mit der Rolle des Chefs zu tun. Beides gehört zusammen."
+      - "Was mich von vielen Coaches unterscheidet: Ich habe selbst geführt, eingestellt, entlassen, Krisen durchgestanden und ein Unternehmen verkauft. Wenn es hilft, sage ich dir auch, wie ich etwas gemacht habe oder was schiefging. Wenn du eher Fragen als Antworten brauchst, halte ich mich zurück. Das entscheiden wir gemeinsam, nicht ich allein."
+      - "Wenn sich im Gespräch zeigt, dass das Problem eher in Prozessen, Rollen oder Systemen liegt als bei dir, sage ich das. Dann ist die [Operations-Beratung](/operations) der bessere Rahmen. Steht ein Verkauf oder eine Übergabe an, geht es weiter mit der [Beratung zur Unternehmensnachfolge](/unternehmensnachfolge-beratung)."
+
+  - type: compare
+    heading: "Coaching, Sparring oder Beratung?"
+    leftTitle: "Coaching"
+    rightTitle: "Sparring und Beratung"
+    rows:
+      - label: "Im Mittelpunkt"
+        left: "Du, deine Rolle, deine Entscheidungen"
+        right: "Dein Unternehmen, seine Strukturen und Abläufe"
+      - label: "Wer hat die Antworten?"
+        left: "Überwiegend du, ich stelle die Fragen"
+        right: "Gemeinsam, ich bringe auch Lösungen und Erfahrung ein"
+      - label: "Typisches Format"
+        left: "Einzelne Sessions, 60 bis 90 Minuten, im Abstand von zwei bis vier Wochen"
+        right: "Setup über zwei Monate, danach laufendes Sparring"
+      - label: "Gut, wenn"
+        left: "du an dir und deiner Führung arbeiten willst"
+        right: "dein Betrieb weniger an dir hängen soll"
+
+  - type: prose
+    heading: "Ablauf und Format"
+    content:
+      - "Wir starten mit einem kostenlosen Erstgespräch. Danach weißt du, ob die Chemie stimmt und ob Coaching gerade das Richtige ist. Die Sessions finden persönlich in Regensburg oder per Video statt, je nachdem, was in deinen Kalender passt. Zwischen den Terminen kannst du mir schreiben, wenn eine Entscheidung ansteht. Abgerechnet wird nach Zeit, die Stundensätze stehen offen auf der [Preise-Seite](/preise)."
+      - "Alles, was du im Coaching erzählst, bleibt zwischen uns. Das gilt auch, wenn ich parallel mit deinem Unternehmen arbeite."
+
+  - type: credibility
+    heading: "Wer dich coacht"
+    body: "Ich bin Lukas Ebner, Geschäftsführer der Wachstumscoach GmbH in Regensburg. Von 2009 bis 2022 habe ich eins+null aufgebaut und geführt, eine Softwareagentur für die Energiewirtschaft mit 50 Mitarbeitenden beim Verkauf an die Kraftwerk Holding. Heute führe ich Leadtime und bin Mitgründer von Fracto. Ich weiß also nicht nur aus Büchern, wie es sich anfühlt, wenn ein Unternehmen an einem hängt."
+    proofs:
+      - text: "Systemisches Coaching kompakt, ICO Institut (2025)"
+      - text: "Organisationsberater & Change Manager, ICO Institut (2025)"
+      - text: "Human Skills & Leadership, TH Deggendorf (2017)"
+      - text: "MBA an der TH Deggendorf (Note 1,3)"
+      - text: "13 Jahre Geschäftsführer, Exit 2022"
+      - text: "Heute Geschäftsführer Leadtime, Mitgründer Fracto"
+
+  - type: faq
+    heading: "Häufige Fragen zum Coaching für Geschäftsführer"
+    items:
+      - question: "Was ist Geschäftsführer-Coaching?"
+        answer: "Ein vertrauliches Einzelgespräch in regelmäßigen Abständen, in dem du an deiner Rolle als Geschäftsführer arbeitest: Führung, Entscheidungen, Umgang mit Druck und Konflikten, die eigene Rolle im Unternehmen. Anders als bei einer Beratung geht es nicht in erster Linie um Lösungen für das Unternehmen, sondern um dich."
+      - question: "Für wen ist das Unternehmer-Coaching gedacht?"
+        answer: "Für Inhaber, Gründer und Geschäftsführer kleiner und mittlerer Unternehmen, meist mit 5 bis 100 Mitarbeitenden. Viele kommen aus Agenturen, IT, Dienstleistung und Handwerk. Entscheidend ist nicht die Branche, sondern dass du bereit bist, ehrlich auf deine eigene Rolle zu schauen."
+      - question: "Was bedeutet systemisches Coaching?"
+        answer: "Systemisch heißt, dass dein Verhalten im Zusammenhang mit deinem Umfeld gesehen wird. Ein Chef, der alles selbst entscheidet, hat oft ein Team, das gelernt hat, ihn zu fragen. Wer nur an einer Seite arbeitet, ändert wenig. Im Coaching schauen wir deshalb auf die Muster, nicht nur auf die einzelne Person."
+      - question: "Wie viele Sessions brauche ich?"
+        answer: "Das ist sehr unterschiedlich. Manche kommen für eine konkrete Entscheidung und brauchen drei oder vier Termine. Andere nutzen das Coaching über ein Jahr als festen Reflexionsraum. Wir legen nichts fest, was du nicht willst."
+      - question: "Geht das Coaching auch online?"
+        answer: "Ja. Viele Sessions laufen per Video, gerade bei Geschäftsführern, die viel unterwegs sind. Zum Start treffen wir uns gern persönlich in Regensburg oder bei dir in der Region."
+      - question: "Wird Coaching über das BAFA gefördert?"
+        answer: "Reines Persönlichkeitscoaching fördert das BAFA nicht. Geht es um Führungsstrukturen, Organisation oder Personalfragen in deinem Unternehmen, kann die Beratung förderfähig sein. Welcher Teil passt, klären wir im Erstgespräch. Details findest du auf der Seite zur BAFA-Förderung."
+      - question: "Was kostet Coaching für Geschäftsführer?"
+        answer: "Ich rechne nach Zeit ab, aktuell 125 Euro pro Stunde netto. Eine typische Session dauert 60 bis 90 Minuten. Es gibt keine Mindestlaufzeit."
+
+endCTA:
+  heading: "Wenn du einen Gesprächspartner suchst, der den Stuhl kennt"
+  body: "Im Erstgespräch lernen wir uns kennen, du erzählst, was dich gerade beschäftigt, und wir schauen, ob Coaching dir weiterhilft. Kostenlos und ohne Verpflichtung."
+  primary:
+    label: "Erstgespräch buchen"
+    href: "/erstgespraech"
+  secondary:
+    label: "Mehr über mich"
+    href: "/ueber-mich"

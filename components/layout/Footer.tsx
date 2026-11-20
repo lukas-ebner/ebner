@@ -7,7 +7,9 @@ const footerLinkClass = 'font-body text-sm text-text-muted transition-colors hov
 const leistungen = [
   { href: '/operations', label: 'Operations & Führung' },
   { href: '/digitalisierung', label: 'Systeme & Automatisierung' },
-  { href: '/ki-readiness', label: 'KI-Readiness & Prototyping' },
+  { href: '/ki-readiness', label: 'KI-Beratung & Prototyping' },
+  { href: '/unternehmensnachfolge-beratung', label: 'Unternehmensnachfolge' },
+  { href: '/coaching-geschaeftsfuehrer', label: 'Coaching für Geschäftsführer' },
   { href: '/themen/bafa', label: 'BAFA-Förderung' },
   { href: '/unternehmensberatung-regensburg', label: 'Unternehmensberatung Regensburg' },
 ]
@@ -22,6 +24,7 @@ const mehr = [
 
 const region = [
   { href: '/unternehmensberatung-regensburg', label: 'Regensburg' },
+  { href: '/unternehmensberatung-oberpfalz', label: 'Oberpfalz' },
   { href: '/unternehmensberatung-ostbayern', label: 'Ostbayern' },
   { href: '/unternehmensberatung-niederbayern', label: 'Niederbayern' },
   { href: '/ki-beratung-regensburg', label: 'KI-Beratung Regensburg' },

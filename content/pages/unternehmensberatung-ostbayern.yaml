@@ -1,7 +1,7 @@
 "meta":
-  "title": "Unternehmensberatung Ostbayern | Praxisnah & messbar"
-  "description": "Unternehmensberatung in Ostbayern für Wachstum, Prozesse und Digitalisierung. Regional verankert, datengetrieben,\
-    \ umsetzbar."
+  "title": "Unternehmensberatung Ostbayern | Oberpfalz & Niederbayern"
+  "description": "Unternehmensberatung in Ostbayern für inhabergeführte KMU in Oberpfalz und Niederbayern: Führung, Prozesse,\
+    \ Nachfolge, Digitalisierung und KI. Aus Regensburg, BAFA-förderfähig."
   "kicker": "Unternehmensberatung Ostbayern"
   "subtitle": "Ostbayern ist wirtschaftlich breiter aufgestellt als es von außen wirkt: Oberpfalz-Industrie, regionaler Mittelstand,\
     \ Handwerk, wachsende Techunternehmen in Regensburg und Amberg. Was alle verbindet: Wenn Wachstum kommt, hängt zu viel\
@@ -43,6 +43,22 @@
     \ fehlen."
   - "Digitalisierung läuft nebenher ohne echten Effekt — Neue Tools werden eingeführt, aber niemand kann sauber sagen, welche\
     \ Reibung dadurch wirklich verschwunden ist. Ohne saubere Betriebslogik entsteht nur eine neue Abstimmungsschicht."
+- "type": "prose"
+  "heading": "Ostbayern ist nicht eine Region, sondern viele"
+  "content":
+  - "Ostbayern umfasst die Oberpfalz und Niederbayern, und die Unterschiede innerhalb der Region sind größer, als es der Name\
+    \ vermuten lässt. Rund um Regensburg prägen Industrie, Halbleiter, IT und Dienstleistung das Bild. In der nördlichen Oberpfalz\
+    \ um Amberg, Weiden und Schwandorf sind es Maschinenbau, Kunststoff, Glas und Elektronik, oft in Familienhand. In Niederbayern\
+    \ hängen viele Betriebe an der Automobilindustrie rund um Dingolfing und Landshut, dazu kommen Handwerk, Bau, Tourismus\
+    \ und Landwirtschaft im Bayerischen Wald und um Passau. Entlang der Grenze zu Tschechien kommen grenzüberschreitende Lieferketten\
+    \ und Arbeitsmärkte dazu."
+  - "Was diese Betriebe trotz aller Unterschiede verbindet: Sie sind überwiegend inhabergeführt, oft seit Jahrzehnten. Das\
+    \ ist eine Stärke, solange der Inhaber alles im Blick hat. Es wird zum Risiko, wenn das Unternehmen wächst, die Fachkräfte\
+    \ knapp werden oder die Übergabe an die nächste Generation ansteht."
+  - "Je nachdem, wo dein Betrieb sitzt, findest du hier mehr zum regionalen Kontext: [Unternehmensberatung Regensburg](/unternehmensberatung-regensburg),\
+    \ [Unternehmensberatung Oberpfalz](/unternehmensberatung-oberpfalz) und [Unternehmensberatung Niederbayern](/unternehmensberatung-niederbayern).\
+    \ Wenn die Nachfolge dein drängendstes Thema ist, lies bei der [Beratung zur Unternehmensnachfolge](/unternehmensnachfolge-beratung)\
+    \ weiter."
 - "type": "figure"
   "image": "/images/geo/ostbayern-schmuck.jpg"
   "alt": "Unternehmer mit oranger Tasse in Produktionshalle Ostbayern"

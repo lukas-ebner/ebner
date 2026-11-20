@@ -1,0 +1,89 @@
+meta:
+  title: "Unternehmensberatung Oberpfalz | Mittelstand & Familienbetriebe"
+  description: "Unternehmensberatung in der Oberpfalz für inhabergeführte Betriebe in Amberg, Weiden, Neumarkt, Schwandorf und Cham: Führung, Prozesse, Nachfolge und Digitalisierung. Aus Regensburg, BAFA-förderfähig."
+  kicker: "Unternehmensberatung Oberpfalz"
+  subtitle: "Die Oberpfalz ist Industrieland. Zwischen Amberg, Weiden, Neumarkt, Schwandorf und Cham stehen Maschinenbauer, Kunststoff- und Glasverarbeiter, Elektronikfertiger, Zulieferer und viele Familienbetriebe, die seit Generationen in Inhaberhand sind. Diese Betriebe haben selten ein Marktproblem. Sie haben eines, das von außen kaum zu sehen ist: Zu viel Wissen und zu viele Entscheidungen liegen bei wenigen Personen, und die nächste Generation oder die Führungsebene ist noch nicht so weit. Ich bin seit 27 Jahren in Regensburg, der Hauptstadt der Oberpfalz, und habe hier mein eigenes Unternehmen aufgebaut und verkauft."
+  heroImage: /images/geo/ostbayern-schmuck.jpg
+  heroAlt: "Unternehmer in einer Produktionshalle in der Oberpfalz"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Ostbayern"
+      href: "/unternehmensberatung-ostbayern"
+    - label: "Oberpfalz"
+      href: "/unternehmensberatung-oberpfalz"
+  ctas:
+    - label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+      variant: primary
+
+sections:
+  - type: prose
+    heading: "Was Betriebe in der Oberpfalz gerade beschäftigt"
+    content:
+      - "Drei Themen höre ich aus Oberpfälzer Unternehmen immer wieder. Erstens die Nachfolge: Viele Inhaber gehören zu der Generation, die ihre Betriebe in den nächsten Jahren übergeben will, und oft ist noch offen, an wen. Zweitens der Fachkräftemangel: Wer in Weiden oder Cham Ingenieure, Meister oder Vertriebsleute sucht, konkurriert mit großen Arbeitgebern in der Region und mit Regensburg und Nürnberg. Drittens der Wandel in der Industrie: Zulieferer für Automobil und Maschinenbau müssen sich neu aufstellen, während der Alltag weiterläuft."
+      - "Alle drei Themen haben denselben Kern. Ein Betrieb, der stark an der Person des Inhabers hängt, lässt sich schwer übergeben, ist für gute Leute weniger attraktiv und reagiert langsam auf Veränderungen. Genau dort setze ich an."
+    bullets:
+      - "Nachfolge vorbereiten: Führungsebene aufbauen, Wissen dokumentieren, den Betrieb übergabefähig machen"
+      - "Führung entlasten: Verantwortung so verteilen, dass sie im Alltag wirklich übernommen wird"
+      - "Prozesse und Zahlen klären: damit Entscheidungen nicht mehr aus dem Bauch kommen müssen"
+      - "Digitalisierung, die entlastet: ein System statt vieler Insellösungen, KI dort, wo sie Routinearbeit spart"
+
+  - type: symptoms
+    heading: "Typische Situationen aus der Region"
+    body: "Keine erfundenen Fallbeispiele, sondern die Muster, die mir in Oberpfälzer Familien- und Industriebetrieben immer wieder begegnen."
+    items:
+      - pill: "Familienbetrieb"
+        headline: "Der Senior entscheidet noch, der Junior soll schon führen"
+        body: "Zwei Generationen im Haus, aber keine klare Grenze, wer was entscheidet. Die Mitarbeitenden fragen beide und machen am Ende, was der Senior sagt. Hier helfen klare Rollen und ein Übergabeplan mit Datum."
+      - pill: "Zulieferer"
+        headline: "Gute Auftragslage, aber alles hängt am Inhaber"
+        body: "Kundenkontakte, Angebote, Kalkulation: Vieles läuft über eine Person. Das funktioniert, bis diese Person ausfällt, verkaufen will oder einfach nicht mehr kann."
+      - pill: "Wachstum"
+        headline: "Aus 20 wurden 60 Mitarbeitende, die Struktur ist dieselbe"
+        body: "Was mit 20 Leuten auf Zuruf funktionierte, erzeugt mit 60 Reibung. Es fehlt eine Ebene dazwischen und Abläufe, die nicht jedes Mal neu verhandelt werden."
+      - pill: "Digitalisierung"
+        headline: "Das ERP ist alt, die Excel-Listen sind viele"
+        body: "Jeder weiß, dass ein Systemwechsel ansteht, aber niemand hat Zeit dafür. Bevor du ein neues Tool kaufst, klären wir, welche Abläufe es tragen soll."
+
+  - type: prose
+    heading: "Warum ich für Oberpfälzer Unternehmen der richtige Gesprächspartner sein kann"
+    content:
+      - "Ich komme aus der Praxis, nicht aus der Großberatung. 1999 habe ich meine Ausbildung bei Creativ Concept in Regensburg begonnen, meine ersten Jobs hatte ich bei der Mittelbayerischen Zeitung. 2009 habe ich in Regensburg eins+null gegründet, eine Softwareagentur für die Energiewirtschaft, und sie 13 Jahre lang auf 50 Mitarbeitende gebracht. 2022 habe ich an die Kraftwerk Holding verkauft. Ich kenne also sowohl den Alltag eines wachsenden Betriebs als auch das, was bei einer Übergabe passiert."
+      - "Für Betriebe aus dem Raum Regensburg gibt es eine eigene Seite zur [Unternehmensberatung in Regensburg](/unternehmensberatung-regensburg). Wenn die Nachfolge dein wichtigstes Thema ist, lies weiter bei der [Beratung zur Unternehmensnachfolge](/unternehmensnachfolge-beratung). Und wenn es dir vor allem um deine eigene Rolle als Chef geht, passt das [Coaching für Geschäftsführer](/coaching-geschaeftsfuehrer)."
+    bullets:
+      - "Seit 27 Jahren in Regensburg, mitten in der Oberpfalz"
+      - "eins+null 13 Jahre geführt, 2022 an die Kraftwerk Holding verkauft"
+      - "MBA an der TH Deggendorf, Organisationsberater & Change Manager (ICO, 2025)"
+      - "BAFA-registrierter Berater, Wachstumscoach GmbH mit Sitz in Regensburg"
+
+  - type: crossref
+    heading: "BAFA-Förderung für Oberpfälzer Unternehmen"
+    body: "Kleine und mittlere Unternehmen in der Oberpfalz bekommen über das BAFA 50 Prozent der Beratungskosten bis 3.500 Euro erstattet, also bis zu 1.750 Euro je Beratung. Das Programm läuft bis Ende 2028, der Antrag muss vor Beratungsbeginn gestellt werden."
+    link:
+      label: "So funktioniert die BAFA-Förderung"
+      href: "/themen/bafa"
+
+  - type: faq
+    heading: "Häufige Fragen zur Unternehmensberatung in der Oberpfalz"
+    items:
+      - question: "Kommst du auch nach Amberg, Weiden, Neumarkt oder Cham?"
+        answer: "Ja. Von Regensburg aus bin ich in einer Stunde in den meisten Orten der Oberpfalz. Für den Einstieg und für Workshops komme ich gern vor Ort in den Betrieb. Die laufende Arbeit geht oft auch per Video."
+      - question: "Für welche Unternehmen in der Oberpfalz ist das sinnvoll?"
+        answer: "Für inhabergeführte Betriebe mit etwa 5 bis 100 Mitarbeitenden: Produktion, Handwerk, Dienstleistung, IT und Agenturen. Gemeinsam ist ihnen meist, dass Wachstum oder eine anstehende Übergabe zeigt, wie stark der Betrieb noch an einzelnen Personen hängt."
+      - question: "Hilfst du auch bei der Suche nach einem Nachfolger?"
+        answer: "Ich vermittle keine Käufer. Für die Suche sind die IHK Regensburg für Oberpfalz / Kelheim, die Handwerkskammer Niederbayern-Oberpfalz und Unternehmensbörsen die richtigen Anlaufstellen. Ich arbeite daran, dass dein Betrieb übergabefähig ist, wenn sich ein Nachfolger findet."
+      - question: "Was unterscheidet dich von großen Beratungshäusern?"
+        answer: "Du sprichst direkt mit mir, nicht mit einem Junior-Team. Ich arbeite ohne Standardpakete und mit Fokus auf das, was im Betrieb nächste Woche anders laufen soll. Und ich habe die Probleme, über die wir reden, selbst als Geschäftsführer erlebt."
+      - question: "Wie startet die Zusammenarbeit?"
+        answer: "Mit einem kostenlosen Erstgespräch. Danach weißt du, ob es einen klaren Hebel gibt und ob Beratung gerade der richtige Schritt ist. Wenn nicht, sage ich dir das."
+
+endCTA:
+  heading: "Wenn dein Betrieb in der Oberpfalz weniger an dir hängen soll"
+  body: "Lass uns in einem Erstgespräch klären, wo der eigentliche Engpass liegt: Führung, Nachfolge, Prozesse oder Systeme. Ehrlich, konkret und ohne Verkaufsdruck."
+  primary:
+    label: "Erstgespräch buchen"
+    href: "/erstgespraech"
+  secondary:
+    label: "Ganz Ostbayern"
+    href: "/unternehmensberatung-ostbayern"
