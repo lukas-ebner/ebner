@@ -163,7 +163,7 @@ export function BlogTeaserSlide({
                 variant="outline"
                 className={useLightText ? '!border-white/30 !text-white hover:!bg-white/10' : ''}
               >
-                Weiterlesen
+                Artikel lesen
               </Button>
             </div>
           </motion.div>

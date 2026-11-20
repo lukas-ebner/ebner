@@ -113,6 +113,7 @@ export function EbookLeadmagnetSlide({
             alt={ebookTitle}
             width={715}
             height={894}
+            sizes="(min-width: 1024px) 480px, 65vw"
             className="w-full h-auto"
             style={{
               filter: light
@@ -139,9 +140,9 @@ export function EbookLeadmagnetSlide({
               alt={ebookTitle}
               width={715}
               height={894}
+              sizes="320px"
               className="w-full h-auto"
               style={{ filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.12))' }}
-              priority
             />
           </motion.div>
 

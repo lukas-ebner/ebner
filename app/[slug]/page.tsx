@@ -6,7 +6,6 @@ import { listPageSlugs, loadPage } from '@/lib/page-builder'
 import { isLandingPageThemenFormat, loadLandingPageAsThemen } from '@/lib/themen'
 import { JsonLd, contentPageSchema } from '@/lib/schema'
 
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 const canonicalSlugMap: Record<string, string> = {
   'change-management-beratung': 'change-management-beratung',
@@ -37,9 +36,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     try {
       const page = loadLandingPageAsThemen(slug)
       const canonicalUrl = canonicalPathForSlug(slug)
-      const ogImage = page.meta.og_image
-        ? `https://lukasebner.de${page.meta.og_image}`
-        : defaultOgImage
       return {
         title: page.meta.title,
         description: page.meta.description,
@@ -49,13 +45,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: canonicalUrl,
           title: page.meta.title,
           description: page.meta.description,
-          images: [{ url: ogImage }],
         },
         twitter: {
           card: 'summary_large_image',
           title: page.meta.title,
           description: page.meta.description,
-          images: [ogImage],
         },
       }
     } catch {
@@ -67,10 +61,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   try {
     const page = loadPage(slug)
     const canonicalUrl = canonicalPathForSlug(slug)
-    const ogImage =
-      slug === 'change-management-beratung' && page.meta.og_image
-        ? `https://lukasebner.de${page.meta.og_image}`
-        : defaultOgImage
 
     return {
       title: page.meta.title,
@@ -83,13 +73,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: canonicalUrl,
         title: page.meta.title,
         description: page.meta.description,
-        images: [{ url: ogImage }],
       },
       twitter: {
         card: 'summary_large_image',
         title: page.meta.title,
         description: page.meta.description,
-        images: [ogImage],
       },
     }
   } catch {

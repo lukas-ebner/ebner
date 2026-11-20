@@ -18,7 +18,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   try {
     const page = loadThemenPage(slug)
     const canonical = `https://lukasebner.de/themen/${slug}`
-    const ogImage = page.meta.og_image ? `https://lukasebner.de${page.meta.og_image}` : undefined
 
     return {
       title: page.meta.title,
@@ -29,13 +28,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: canonical,
         title: page.meta.title,
         description: page.meta.description,
-        images: ogImage ? [{ url: ogImage }] : undefined,
       },
       twitter: {
         card: 'summary_large_image',
         title: page.meta.title,
         description: page.meta.description,
-        images: ogImage ? [ogImage] : undefined,
       },
     }
   } catch {

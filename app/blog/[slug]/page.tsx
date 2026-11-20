@@ -2,12 +2,22 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { loadBlogPost, listBlogSlugs, CATEGORY_COLORS, CATEGORY_LABELS, extractBlogFaq } from '@/lib/blog'
+import {
+  loadBlogPost,
+  listBlogSlugs,
+  CATEGORY_COLORS,
+  CATEGORY_LABELS,
+  extractBlogFaq,
+  formatGermanDate,
+  readingTimeMinutes,
+  relatedPosts,
+} from '@/lib/blog'
 import { IDS, JsonLd, SITE_URL, breadcrumb, faqPage, jsonLdGraph } from '@/lib/schema'
 import { NoSnap } from '@/components/NoSnap'
 import { BlogContent } from '@/components/BlogContent'
-
-const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
+import { Breadcrumb } from '@/components/ui/Breadcrumb'
+import { AuthorBox } from '@/components/blog/AuthorBox'
+import { RelatedPosts } from '@/components/blog/RelatedPosts'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -35,7 +45,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         url: `https://lukasebner.de/blog/${slug}`,
         title: seoTitle,
         description: post.meta.description,
-        images: [{ url: post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage }],
         publishedTime: post.meta.date,
         modifiedTime: post.meta.updated ?? post.meta.date,
         authors: ['https://lukasebner.de/ueber-mich'],
@@ -44,7 +53,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         card: 'summary_large_image',
         title: seoTitle,
         description: post.meta.description,
-        images: [post.meta.image ? `https://lukasebner.de${post.meta.image}` : defaultOgImage],
       },
     }
   } catch {
@@ -65,6 +73,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   const catColor = CATEGORY_COLORS[meta.category]
   const url = `${SITE_URL}/blog/${slug}`
   const faqs = extractBlogFaq(content)
+  const minutes = readingTimeMinutes(content)
+  const related = relatedPosts(slug, meta.category)
+  const updated = meta.updated && meta.updated !== meta.date ? meta.updated : undefined
   const schema = jsonLdGraph([
     {
       '@type': 'BlogPosting',
@@ -83,6 +94,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       keywords: [meta.keyword, ...(meta.nebenkeywords ?? [])].filter(Boolean).join(', '),
       articleSection: CATEGORY_LABELS[meta.category] ?? meta.category,
       wordCount: content.split(/\s+/).length,
+      timeRequired: `PT${minutes}M`,
     },
     breadcrumb([
       { name: 'Startseite', path: '/' },
@@ -103,29 +115,50 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="absolute inset-0">
             <Image
               src={meta.image}
-              alt={meta.title}
+              alt=""
               fill
+              sizes="100vw"
               className="object-cover opacity-60"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
           </div>
         )}
-        <div className="relative mx-auto max-w-3xl px-6 pb-16 pt-32 lg:pb-20 lg:pt-40">
-          <h1 className="font-display text-[2rem] font-normal leading-[1.1] text-white md:text-[2.6rem] lg:text-[3rem]">
+        <div className="relative mx-auto max-w-3xl px-6 pb-16 pt-28 lg:pb-20 lg:pt-36">
+          <Breadcrumb
+            items={[
+              { name: 'Startseite', href: '/' },
+              { name: 'Blog', href: '/blog' },
+              { name: meta.title },
+            ]}
+          />
+          <h1 className="mt-6 font-display text-[2rem] font-normal leading-[1.1] text-white md:text-[2.6rem] lg:text-[3rem]">
             {meta.title}
           </h1>
           <p className="mt-4 max-w-[600px] font-body text-lg leading-relaxed text-white/70">
             {meta.description}
           </p>
-          <div className="mt-6 flex items-center gap-3">
-            <span className="font-mono text-xs text-white/50">
-              {new Date(meta.date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })}
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-xs text-white/60">
+            <span>
+              Von{' '}
+              <Link href="/ueber-mich" className="text-white/85 hover:text-white">
+                Lukas Ebner
+              </Link>
             </span>
-            <span className="h-1 w-1 rounded-full bg-white/30" />
-            <span className="font-mono text-xs uppercase tracking-widest text-white/50">
-              {meta.keyword}
-            </span>
+            <span aria-hidden className="h-1 w-1 rounded-full bg-white/30" />
+            <time dateTime={meta.date}>{formatGermanDate(meta.date)}</time>
+            {updated && (
+              <>
+                <span aria-hidden className="h-1 w-1 rounded-full bg-white/30" />
+                <span>
+                  Aktualisiert am <time dateTime={updated}>{formatGermanDate(updated)}</time>
+                </span>
+              </>
+            )}
+            <span aria-hidden className="h-1 w-1 rounded-full bg-white/30" />
+            <span>{minutes} Min. Lesezeit</span>
+            <span aria-hidden className="h-1 w-1 rounded-full bg-white/30" />
+            <span className="uppercase tracking-widest">{CATEGORY_LABELS[meta.category] ?? meta.category}</span>
           </div>
 
           {meta.status === 'draft' && (
@@ -154,6 +187,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             </Link>
           </div>
         )}
+
+        <AuthorBox />
+
+        <RelatedPosts posts={related} />
 
         {/* Back */}
         <div className="mt-12 border-t border-black/5 pt-8">

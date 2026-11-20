@@ -425,6 +425,7 @@ export function FreiheitstestSlide({
                 alt="Lukas Ebner"
                 width={500}
                 height={600}
+                sizes="(min-width: 1536px) 480px, (min-width: 1280px) 420px, (min-width: 1024px) 400px, 360px"
                 className="w-[340px] object-contain md:w-[360px] lg:w-[400px] xl:w-[420px] 2xl:w-[480px]"
                 priority={false}
               />
