@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { PageBuilder } from '@/components/PageBuilder'
 import { ThemenPageLayout } from '@/components/layouts/ThemenPageLayout'
-import { listPageSlugs, loadPage } from '@/lib/page-builder'
+import { NOINDEX_PAGE_SLUGS, listPageSlugs, loadPage } from '@/lib/page-builder'
 import { isLandingPageThemenFormat, loadLandingPageAsThemen } from '@/lib/themen'
 import { JsonLd, contentPageSchema } from '@/lib/schema'
 
@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     return {
       title: page.meta.title,
+      ...(NOINDEX_PAGE_SLUGS.has(slug) ? { robots: { index: false, follow: true } } : {}),
       description: page.meta.description,
       alternates: {
         canonical: canonicalUrl,

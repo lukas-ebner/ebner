@@ -17,3 +17,9 @@ export function listPageSlugs(): string[] {
     .filter((f) => f.endsWith('.yaml'))
     .map((f) => f.replace(/\.yaml$/, ''))
 }
+
+/**
+ * Seiten, die erreichbar bleiben, aber nicht in Suchmaschinen sollen (noindex, nicht in der Sitemap).
+ * gpt-audit: Kampagnen-Landingpage mit Leadtime-Branding, nirgends verlinkt (Entscheidung Lukas, 20.11.2026).
+ */
+export const NOINDEX_PAGE_SLUGS = new Set(['gpt-audit'])

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { listPageSlugs } from '@/lib/page-builder'
+import { NOINDEX_PAGE_SLUGS, listPageSlugs } from '@/lib/page-builder'
 import { listPublishedPosts } from '@/lib/blog'
 import { listThemenSlugs } from '@/lib/themen'
 
@@ -25,7 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const lowPriority = new Set(['impressum', 'datenschutz'])
   const pages: MetadataRoute.Sitemap = [
-    ...listPageSlugs().filter((slug) => slug !== 'homepage' && !migratedToThemen.has(slug)),
+    ...listPageSlugs().filter(
+      (slug) => slug !== 'homepage' && !migratedToThemen.has(slug) && !NOINDEX_PAGE_SLUGS.has(slug),
+    ),
     'kurzprofil',
     'literatur',
   ].map((slug) => ({
