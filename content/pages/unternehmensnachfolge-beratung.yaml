@@ -1,0 +1,111 @@
+meta:
+  title: "Unternehmensnachfolge Beratung | Exit-Strategie für KMU"
+  description: "Beratung zur Unternehmensnachfolge und Exit-Strategie für inhabergeführte KMU: Unternehmen übergabefähig machen, bevor verhandelt wird. Aus Regensburg, mit eigenem Exit 2022, BAFA-förderfähig."
+  kicker: "Unternehmensnachfolge-Beratung"
+  subtitle: "Ich habe mein eigenes Unternehmen verkauft. eins+null, 2009 in Regensburg gegründet, 13 Jahre geführt, 2022 mit 50 Mitarbeitenden an die Kraftwerk Holding übergeben. Seitdem sitze ich dort als Gesellschafter und im Beirat und sehe Übernahmen auch von der Käuferseite. Die wichtigste Lektion aus beiden Perspektiven: Über den Erfolg einer Nachfolge entscheidet selten der Vertrag. Es entscheidet, ob dein Unternehmen ohne dich läuft. Genau daran arbeite ich mit dir, bevor ein Käufer, ein Familienmitglied oder dein Führungsteam übernimmt."
+  heroImage: /images/operations/lukas-meeting-bw.jpg
+  heroAlt: "Lukas Ebner im Besprechungsraum bei einem Nachfolge-Gespräch"
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Unternehmensnachfolge-Beratung"
+      href: "/unternehmensnachfolge-beratung"
+  ctas:
+    - label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+      variant: primary
+    - label: "Förderung prüfen"
+      href: "/themen/bafa"
+      variant: secondary
+
+sections:
+  - type: prose
+    heading: "Warum Nachfolge-Beratung früher anfängt, als die meisten denken"
+    content:
+      - "Die meisten Inhaber beschäftigen sich mit der Nachfolge, wenn ein Anlass da ist: ein Kaufinteressent ruft an, das Alter drückt, die Gesundheit meldet sich, die Kinder sagen ab. Dann wird über Kaufpreis, Vertrag und Steuern gesprochen. Das ist wichtig. Aber zu diesem Zeitpunkt lässt sich am eigentlichen Wert kaum noch etwas ändern."
+      - "Denn was ein Käufer oder Nachfolger bezahlt, ist am Ende die Erwartung, dass das Unternehmen weiter Geld verdient, wenn du nicht mehr da bist. Hängen Kundenbeziehungen, Angebote, Kalkulation und jede zweite Entscheidung an dir, dann kauft jemand ein Risiko. Das drückt den Preis, verlängert Übergangsphasen oder lässt die Nachfolge ganz scheitern."
+      - "Eine gute Exit-Strategie beginnt deshalb zwei bis fünf Jahre vor dem Verkauf. Nicht mit einer Unternehmensbewertung, sondern mit der Frage: Was müsste sich ändern, damit dein Unternehmen ohne dich genauso gut läuft wie mit dir? Mehr dazu im Blog: [Exit-Strategie für Unternehmer](/blog/exit-strategie) und [Unternehmenswert steigern](/blog/unternehmenswert-steigern)."
+    bullets:
+      - "Inhaberabhängigkeit senken: Kunden, Wissen und Entscheidungen von deiner Person lösen"
+      - "Führungsebene aufbauen, die den Betrieb nach der Übergabe trägt"
+      - "Zahlen so aufbereiten, dass ein Außenstehender Marge, Auftragslage und Risiken versteht"
+      - "Prozesse dokumentieren, damit Wissen nicht mit dir das Haus verlässt"
+
+  - type: symptoms
+    heading: "Drei Wege der Nachfolge, drei verschiedene Aufgaben"
+    body: "Ob du an die Familie übergibst, an dein Team oder extern verkaufst, verändert, worauf es ankommt. Die Vorarbeit im Betrieb ist in allen drei Fällen ähnlich."
+    items:
+      - pill: "Familie"
+        headline: "Familieninterne Nachfolge"
+        body: "Die Frage ist selten nur, ob die nächste Generation will, sondern ob sie das Unternehmen so führen kann, wie es heute gebaut ist. Oft muss erst eine Struktur entstehen, die nicht auf deine Art der Führung zugeschnitten ist. Und es braucht klare Rollen für die Übergangszeit, damit zwei Chefs nicht gleichzeitig entscheiden."
+      - pill: "Management"
+        headline: "Übergabe an Führungskräfte (MBO)"
+        body: "Deine besten Leute kennen den Betrieb, haben aber oft weder Erfahrung mit Gesamtverantwortung noch das Kapital für den Kaufpreis. Wir bereiten sie auf die Rolle vor und schaffen Transparenz, damit Finanzierer und Käufer dieselben Zahlen sehen wie du."
+      - pill: "Extern"
+        headline: "Verkauf an Investor oder Wettbewerber"
+        body: "Hier zählt, was ein Käufer in der Prüfung findet. Ich weiß aus dem eigenen Verkauf, welche Fragen kommen und wo es unangenehm wird. Je weniger das Unternehmen an dir hängt, desto stärker ist deine Verhandlungsposition und desto kürzer die Zeit, die du nach dem Verkauf noch gebunden bist."
+      - pill: "Noch offen"
+        headline: "Du weißt noch nicht, welcher Weg passt"
+        body: "Das ist der häufigste Fall und ein guter Zeitpunkt. Die Arbeit am Betrieb lohnt sich für jeden Weg. Ein Unternehmen, das ohne dich läuft, ist mehr wert, egal wer es übernimmt. Und es gibt dir die Freiheit, auch gar nicht zu verkaufen."
+
+  - type: prose
+    heading: "So läuft die Beratung zur Unternehmensnachfolge ab"
+    content:
+      - "Ich arbeite in drei Phasen. Wie lange jede dauert, hängt davon ab, wie viel Zeit bis zur Übergabe bleibt und wo dein Unternehmen heute steht. Die Arbeit am Betrieb in Phase 2 ist dieselbe wie in meiner [Operations-Beratung](/operations), nur mit festem Ziel und Datum. Wenn es dabei vor allem um deine eigene Rolle geht, passt eher das [Coaching für Geschäftsführer](/coaching-geschaeftsfuehrer)."
+    bullets:
+      - "1. Bestandsaufnahme: Wo hängt das Unternehmen an dir? Welche Kunden, Entscheidungen und Kenntnisse laufen nur über deine Person? Wie sauber sind Zahlen, Verträge und Prozesse dokumentiert? Am Ende steht eine ehrliche Liste der Punkte, die einen Käufer oder Nachfolger heute abschrecken würden."
+      - "2. Übergabefähig machen: Wir bauen Führungsebene, Prozesse und Kennzahlen so um, dass der Betrieb ohne dich trägt."
+      - "3. Übergabe begleiten: Sparring für die Gespräche mit Käufer, Familie oder Team, Vorbereitung der Unterlagen für die Prüfung und ein Plan für die Übergangszeit, damit dein Rückzug schrittweise und geordnet passiert."
+  - type: prose
+    heading: "Was ich nicht mache und wer dazugehört"
+    content:
+      - "Eine Nachfolge braucht mehrere Fachleute. Kaufvertrag, Steuern, Erbschaft und Finanzierung gehören zu Rechtsanwalt, Steuerberater, Notar und Bank. Eine formale Unternehmensbewertung erstellt ein Gutachter oder dein Steuerberater. Ich bin der, der mit dir am Betrieb arbeitet: an Struktur, Führung und Zahlen, damit die anderen am Ende etwas Gutes zu verhandeln und zu bewerten haben. Wenn du schon Berater an Bord hast, stimme ich mich mit ihnen ab."
+      - "Wenn du dich zuerst einlesen willst: Die IHK Regensburg für Oberpfalz / Kelheim und die IHK Niederbayern bieten Nachfolgeberatung und Unternehmensbörsen an, die Handwerkskammer Niederbayern-Oberpfalz ebenso. Das ist ein guter Startpunkt für die Suche nach Nachfolgern. Die Arbeit im Unternehmen ersetzt es nicht."
+
+  - type: credibility
+    heading: "Warum ich über Nachfolge aus eigener Erfahrung spreche"
+    body: "Ich habe eins+null 2009 mit Michael Zuber im Wohnzimmer gegründet und auf 50 Mitarbeitende und rund 4 Millionen Euro Umsatz gebracht. 2022 haben wir an die Kraftwerk Holding verkauft. Den Verkauf habe ich von innen erlebt: die Vorbereitung, die Prüfung, die Verhandlung und die Zeit danach. Heute bin ich Gesellschafter der Kraftwerk Holding und sitze in ihrem Beirat. Dort sehe ich, worauf ein Käufer bei Übernahmen und Integration achtet. Als Geschäftsführer der Wachstumscoach GmbH bin ich beim BAFA als Berater registriert."
+    proofs:
+      - text: "eins+null 2009 in Regensburg gegründet, 13 Jahre geführt"
+      - text: "Verkauf 2022 an die Kraftwerk Holding, 7-stelliger Exit"
+      - text: "Gesellschafter und Beirat der Kraftwerk Holding"
+      - text: "MBA an der TH Deggendorf (Note 1,3)"
+      - text: "Organisationsberater & Change Manager (ICO, 2025)"
+      - text: "BAFA-registrierter Berater, Wachstumscoach GmbH"
+
+  - type: crossref
+    heading: "Förderung: Nachfolge-Beratung mit BAFA-Zuschuss"
+    body: "Beratung zu wirtschaftlichen und organisatorischen Fragen der Nachfolge kann über das BAFA-Programm für KMU gefördert werden. In Bayern sind das 50 Prozent von bis zu 3.500 Euro Beratungskosten, also bis zu 1.750 Euro Zuschuss. Das Programm läuft bis Ende 2028. Rechts- und Steuerberatung ist nicht förderfähig, und der Antrag muss vor Beratungsbeginn gestellt werden."
+    link:
+      label: "Alles zur BAFA-Förderung"
+      href: "/themen/bafa"
+
+  - type: faq
+    heading: "Häufige Fragen zur Unternehmensnachfolge-Beratung"
+    items:
+      - question: "Wann sollte ich mit der Nachfolgeplanung anfangen?"
+        answer: "Idealerweise zwei bis fünf Jahre vor der geplanten Übergabe. So bleibt genug Zeit, das Unternehmen unabhängiger von dir zu machen, eine Führungsebene aufzubauen und mehrere Wege offen zu halten. Wenn der Termin näher liegt, konzentrieren wir uns auf die Punkte mit der größten Wirkung auf Preis und Übergang."
+      - question: "Was macht ein Berater für Unternehmensnachfolge konkret?"
+        answer: "Das hängt vom Berater ab. Manche vermitteln Käufer, manche bewerten, manche kümmern sich um Recht und Steuern. Ich arbeite am Unternehmen selbst: Inhaberabhängigkeit senken, Führungsebene aufbauen, Zahlen und Prozesse transparent machen und die Übergabe begleiten. Für Vertrag, Steuern und Bewertung arbeite ich mit deinen Fachleuten zusammen."
+      - question: "Was ist eine Exit-Strategie und brauche ich eine?"
+        answer: "Eine Exit-Strategie beantwortet drei Fragen: Wann willst du aussteigen, an wen soll das Unternehmen gehen und was muss bis dahin passieren? Auch wenn du gar nicht verkaufen willst, lohnt sich die Arbeit daran. Ein Unternehmen, das ohne dich laufen kann, gibt dir Freiheit, egal ob du es verkaufst, übergibst oder behältst."
+      - question: "Wie erhöhe ich den Wert meines Unternehmens vor dem Verkauf?"
+        answer: "Der größte Hebel bei kleineren Unternehmen ist meist die Abhängigkeit vom Inhaber. Dazu kommen nachvollziehbare Zahlen, wiederkehrende Umsätze, eine breite Kundenbasis und dokumentierte Abläufe. Eine belastbare Bewertung erstellt ein Gutachter oder Steuerberater."
+      - question: "Bist du Fachberater für Unternehmensnachfolge?"
+        answer: "Nein. Fachberater für Unternehmensnachfolge ist eine eigene Qualifikation, die vor allem Steuerberater und Rechtsanwälte erwerben. Ich bin Unternehmensberater und habe mein eigenes Unternehmen verkauft. Meine Rolle ist die betriebliche Vorbereitung, die rechtliche und steuerliche Seite gehört zu den Fachberatern."
+      - question: "Ist die Nachfolge-Beratung förderfähig?"
+        answer: "Ja, die betriebswirtschaftliche und organisatorische Beratung kann über das BAFA-Programm gefördert werden. In Bayern übernimmt das BAFA 50 Prozent von bis zu 3.500 Euro, also bis zu 1.750 Euro. Den Antrag stellst du vor Beratungsbeginn. Rechts- und Steuerberatung sind ausgeschlossen."
+      - question: "Arbeitest du nur in Regensburg?"
+        answer: "Mein Büro ist in Regensburg, ich arbeite vor allem mit Unternehmen in der Oberpfalz, in Niederbayern und im übrigen Bayern. Gespräche zur Nachfolge führe ich gern persönlich vor Ort, die laufende Arbeit geht auch remote."
+      - question: "Was kostet die Beratung?"
+        answer: "Ich rechne mit 125 Euro pro Stunde netto oder in festen Paketen ab, je nach Unternehmensgröße. Wie viel Arbeit nötig ist, hängt davon ab, wie stark das Unternehmen heute an dir hängt. Das klären wir im Erstgespräch. Die Preise stehen offen auf der Preise-Seite."
+
+endCTA:
+  heading: "Wenn du deine Nachfolge in der Hand behalten willst"
+  body: "Lass uns in einem Erstgespräch klären, wo dein Unternehmen heute an dir hängt und wie viel Zeit du realistisch brauchst, um es übergabefähig zu machen. Egal ob der Verkauf in einem Jahr oder in fünf Jahren ansteht: Je früher du anfängst, desto mehr Möglichkeiten hast du."
+  primary:
+    label: "Erstgespräch buchen"
+    href: "/erstgespraech"
+  secondary:
+    label: "Preise ansehen"
+    href: "/preise"

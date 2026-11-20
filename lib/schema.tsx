@@ -298,6 +298,9 @@ const SERVICE_PAGES: Record<string, { name: string; area?: string[] }> = {
   'prozessoptimierung-regensburg': { name: 'Prozessoptimierung Regensburg', area: ['Regensburg', 'Oberpfalz'] },
   'change-management-beratung': { name: 'Change-Management-Beratung', area: ['Regensburg', 'Oberpfalz', 'Ostbayern'] },
   bafa: { name: 'BAFA-geförderte Unternehmensberatung', area: ['Regensburg', 'Oberpfalz', 'Niederbayern', 'Bayern'] },
+  'unternehmensberatung-oberpfalz': { name: 'Unternehmensberatung Oberpfalz', area: ['Oberpfalz', 'Amberg', 'Weiden in der Oberpfalz', 'Neumarkt in der Oberpfalz', 'Schwandorf', 'Cham'] },
+  'unternehmensnachfolge-beratung': { name: 'Beratung zur Unternehmensnachfolge', area: ['Regensburg', 'Oberpfalz', 'Niederbayern', 'Bayern'] },
+  'coaching-geschaeftsfuehrer': { name: 'Coaching für Geschäftsführer und Unternehmer', area: ['Regensburg', 'Ostbayern', 'Bayern', 'Deutschland'] },
 }
 
 const PAGE_NAMES: Record<string, string> = {

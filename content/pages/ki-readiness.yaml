@@ -1,15 +1,15 @@
 meta:
-  title: "KI-Beratung für den Mittelstand | Lukas Ebner"
-  description: "KI-Beratung für Unternehmen im Mittelstand: KI-Strategie, Use Cases mit echtem Hebel und Prototypen in Tagen statt Monaten. Aus Regensburg, BAFA-förderfähig."
+  title: "KI-Beratung für Unternehmen & Mittelstand | Lukas Ebner"
+  description: "KI-Beratung für Unternehmen im Mittelstand: KI-Strategie, Use Cases mit echtem Hebel, Prozessoptimierung mit KI und Prototypen in Tagen statt Monaten. Aus Regensburg, BAFA-förderfähig."
   og_image: /images/og/ki-readiness.jpg
   accent: "#1B1464"
 
 slides:
   # ── 1. HERO-SPLIT ──────────────────────────────────────
   - template: hero-split
-    pill: "KI-Readiness & Prototyping"
+    pill: "KI-Beratung für Unternehmen"
     headline: "Von der Idee zum Prototyp. In Tagen, nicht Monaten."
-    subtext: "KI Beratung und KI Strategie mit Rapid Prototyping, MVP Entwicklung für Unternehmen – besonders KI für Agenturen – die aufhören wollen zu warten."
+    subtext: "KI-Beratung für Unternehmen im Mittelstand: Wir finden die Prozesse, in denen KI wirklich Zeit spart, und bauen den ersten funktionierenden Prototyp gleich mit. Strategie und Umsetzung aus einer Hand."
     cta:
       text: "Gespräch vereinbaren"
       url: "/erstgespraech"
@@ -76,7 +76,7 @@ slides:
       - headline: "Woran wir arbeiten."
         body: "Drei Leistungsbereiche – wir fangen da an, wo der größte Impact liegt. Kein Standardprogramm."
       - headline: "KI-Beratung & KI-Readiness."
-        body: "Wir analysieren deine Wertschöpfungskette, identifizieren die Stellen mit dem größten KI-Hebel und entwickeln einen konkreten Fahrplan. Von der Tool-Auswahl über Governance bis zum Kulturwandel – damit dein Team künstliche Intelligenz selbstständig und sicher einsetzt.\n\nAbrechnung auf Stundenbasis. Typisches Engagement: 3-Monats-Setup mit laufendem Sparring. Mehr Hintergrund: [KI-Beratung für den Mittelstand](/blog/ki-beratung-mittelstand)."
+        body: "Wir analysieren deine Wertschöpfungskette, identifizieren die Stellen mit dem größten KI-Hebel und entwickeln einen konkreten Fahrplan. Von der Tool-Auswahl über Governance bis zum Kulturwandel – damit dein Team künstliche Intelligenz selbstständig und sicher einsetzt.\n\nAbrechnung auf Stundenbasis. Typisches Engagement: 3-Monats-Setup mit laufendem Sparring. Mehr Hintergrund: [KI-Beratung für den Mittelstand](/blog/ki-beratung-mittelstand). Für Unternehmen aus der Region: [KI-Beratung in Regensburg](/ki-beratung-regensburg)."
       - headline: "Rapid Prototyping & Co-Building."
         body: "Du hast eine Produktidee, ein internes Tool oder ein Feature im Kopf? Wir bauen einen funktionierenden Prototyp – in Tagen, nicht Monaten. Webseiten, Web-Apps, MVPs, Automatisierungen.\n\nIch baue den ersten Wurf, Stas macht ihn produktionsreif. Tagessatz-basiert, transparent kalkulierbar. Genau das Thema von [MVP-Entwicklung](/blog/mvp-entwicklung) – schnell testen, schnell lernen, schnell skalieren."
       - headline: "Refactoring & Hardening."
@@ -99,6 +99,12 @@ slides:
       - question: "Was ist KI-Beratung für Unternehmen – und was bringt sie konkret?"
         answer: "KI-Beratung trennt Signal von Hype. Es geht nicht um die tollste Technologie, sondern um: Wo lohnt sich KI für dein Business wirklich? Wir schauen auf deine Vertriebsprozesse, deine Support-Tickets, deine Reportings – und dann bauen wir konkret. Nicht PowerPoint-Strategien, sondern funktionierende Workflows, die dein Team sofort nutzen kann. Der Unterschied zu ChatGPT-Tutorials: Wir denken in deinen Geschäftsprozessen, nicht in Use-Case-Listen."
 
+      - question: "Was ist das Besondere an KI-Beratung für den Mittelstand?"
+        answer: "Mittelständische Unternehmen haben selten eine eigene KI-Abteilung und keine Zeit für monatelange Strategieprojekte. Deshalb fangen wir bei den Prozessen an, die heute am meisten Handarbeit kosten: Angebote, Support, Dokumentation, Reporting, interne Abstimmung. Dort bauen wir die ersten Lösungen und machen dein Team fit, sie selbst weiterzuentwickeln. Das Ziel ist kein KI-Projekt, sondern ein Betrieb, der mit KI schneller und ruhiger arbeitet."
+
+      - question: "Was bedeutet Prozessoptimierung mit KI?"
+        answer: "Zuerst wird der Prozess sauber: Wer macht was, welche Informationen fehlen, wo wird doppelt gearbeitet? Erst dann setzen wir KI ein, etwa zum Zusammenfassen, Klassifizieren, Formulieren oder Prüfen. Wer KI auf einen unklaren Prozess setzt, automatisiert nur das Durcheinander. Deshalb gehören Prozessoptimierung und KI-Beratung bei mir zusammen."
+
       - question: "Was passiert im kostenlosen Erstgespräch zur KI-Beratung?"
         answer: "30 Minuten, kein Verkaufsgespräch. Ich stelle Fragen, du erzählst, wo der Schuh drückt. Dann gebe ich dir ehrlich eine Einschätzung: Bringt KI dir etwas oder nicht? Manche Geschäftsführer erkennen im Gespräch, dass sie erst ihre Prozesse aufräumen müssen, bevor KI Sinn macht. Das ist auch ein wichtiges Ergebnis. Danach weißt du, ob es weitergehen sollte oder nicht."
 
@@ -112,19 +118,19 @@ slides:
         answer: "Agenturen haben 50 Leute, du redest mit einem Junior-Berater, der dein Projekt an fünf andere Agenturen weiterleitet. Bei mir sprichst du mit mir – und ich baue selbst Code, wenn es nötig ist. Mit Stas dahinter, der architektonisch denkt und Production-Standards setzt. Wir sind kein Dienstleister, der nach Stunden abrechnet – wir sind Unternehmer, denen dein Erfolg nützt. Wenn dein KI-System nicht läuft, schlafen wir schlechter als du."
 
       - question: "Welche KI-Modelle und Technologien nutzt ihr?"
-        answer: "Wir sind agnostisch. GPT-4 wenn nötig, Claude für nuancierte Aufgaben, Mistral wenn es low-latency sein muss, Open-Source-Modelle auf deinen Servern wenn Datenschutz kritisch ist. Kein Vendor-Lock-in, keine Ideologie. Für jeden Use Case die beste technische Entscheidung – nicht die beste für unser Geschäft."
+        answer: "Wir sind agnostisch. Modelle von OpenAI, Anthropic oder Mistral je nach Aufgabe, Open-Source-Modelle auf deinen Servern wenn Datenschutz kritisch ist. Kein Vendor-Lock-in, keine Ideologie. Für jeden Use Case die beste technische Entscheidung – nicht die beste für unser Geschäft."
 
       - question: "Was kostet KI-Beratung für KMU?"
-        answer: "125 € Stundensatz netto. Ein typisches KI-Audit läuft auf 2.000 bis 4.000 € hinaus. Dann variiert es je nach Komplexität und Umfang der Prototypen. Details auf der Preise-Seite, und ja – BAFA-Förderung bis 50 % ist möglich."
+        answer: "125 € Stundensatz netto. Ein typisches KI-Audit läuft auf 2.000 bis 4.000 € hinaus. Dann variiert es je nach Komplexität und Umfang der Prototypen. Details auf der Preise-Seite, und ja – BAFA-Förderung ist möglich: in Bayern 50 % von bis zu 3.500 €, also bis zu 1.750 € Zuschuss."
 
       - question: "Gibt es eine BAFA-Förderung für KI-Beratung?"
-        answer: "Ja, bis zu 50%. Details auf der Preise-Seite."
+        answer: "Ja. Die KI-Beratung läuft über die Wachstumscoach GmbH, die beim BAFA als Beratungsunternehmen registriert ist. In Bayern übernimmt das BAFA 50 % der Beratungskosten bis 3.500 €, also bis zu 1.750 €. Das Programm läuft bis Ende 2028, der Antrag muss vor Beratungsbeginn gestellt werden. Die Entwicklung von Prototypen selbst ist keine Beratung und wird nicht gefördert."
 
       - question: "Ist KI-Readiness auch für kleine Unternehmen relevant?"
         answer: "Besonders für kleine. Mit 5 bis 15 Leuten kannst du schneller experimentieren und Änderungen durchsetzen als ein Konzern mit Governance-Bürokratie. Wenn dein Team durch KI-Automatisierung 20 % produktiver wird, ist das wie zwei neue Mitarbeiter – ohne Gehalt, ohne Onboarding. Die Falle: Nicht das erste Shiny-Tool nehmen, sondern die echten Bottlenecks lösen."
 
       - question: "Arbeitet ihr nur in Regensburg oder auch deutschlandweit?"
-        answer: "Remote funktioniert blendend für KI-Beratung. Video-Calls, Screen-Sharing, wir schauen dir über die Schulter – macht keinen Unterschied, ob du in München oder Hamburg sitzt. Zum initialen Deep-Dive komme ich gerne vorbei, unabhängig von der Region. Danach asynchron übers Netz."
+        answer: "Remote funktioniert blendend für KI-Beratung. Video-Calls, Screen-Sharing, wir schauen dir über die Schulter – macht keinen Unterschied, ob du in München oder Hamburg sitzt. Zum initialen Deep-Dive komme ich gerne vorbei, unabhängig von der Region. Danach asynchron übers Netz. Für Unternehmen in der Region gibt es eine eigene Seite zur KI-Beratung in Regensburg."
 
       - question: "Wie starte ich am besten mit KI in meinem Unternehmen?"
         answer: "Erstgespräch mit mir, dann ein 2-3 Wochen KI-Audit. Keine langen Strategieprojekte, sondern schnell zu echten Workflows, die dein Team übermorgen einsetzt. Viele unterschätzen, wie schnell sich was bewegt, wenn man nicht auf IT-Abteilungen warten muss und die Entscheider selbst am Tisch sitzen."

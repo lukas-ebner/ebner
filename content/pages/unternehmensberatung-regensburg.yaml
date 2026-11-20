@@ -37,8 +37,8 @@
     \ wächst nicht dein Unternehmen. Es wächst nur die Komplexität, die bei dir zusammenläuft. Genau hier kippt Wachstum von\
     \ etwas Gutem in etwas Teures."
   - "Digitalisierung und KI laufen nebenher — In Regensburg ist das Thema sichtbar, nicht zuletzt durch Programme wie KI-Transfer\
-    \ Plus mit Bewerbungsschluss am 30. April 2026. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse\
-    \ mitgebaut werden. Ohne System dahinter wird Digitalisierung nur ein zusätzlicher Layer auf bestehende Unordnung."
+    \ Plus von IHK und OTH Regensburg. Tools helfen trotzdem nur dann, wenn Führung, Prioritäten und Prozesse mitgebaut werden.\
+    \ Ohne System dahinter wird Digitalisierung nur ein zusätzlicher Layer auf bestehende Unordnung."
   - "Du arbeitest viel, aber der Betrieb wird nicht robuster — Dann fehlt meistens keine Energie. Es fehlt eine Betriebslogik,\
     \ die Entscheidungen schneller macht, Übergaben stabilisiert und das Tagesgeschäft von deiner Person entkoppelt. Solange\
     \ diese Logik fehlt, bleibt das Unternehmen abhängig von deiner ständigen Verfügbarkeit."
@@ -46,6 +46,22 @@
   "image": "/images/geo/regensburg-schmuck.jpg"
   "alt": "Arbeitssituation in einem Regensburger Mittelstandsbetrieb"
   "caption": "Arbeit am eigentlichen Engpass, nicht am nächsten Tool."
+- "type": "prose"
+  "heading": "Regensburg zwischen Großindustrie und inhabergeführtem Mittelstand"
+  "content":
+  - "Regensburg hat eine besondere Mischung. Große Arbeitgeber wie BMW, Krones in Neutraubling, Infineon und Continental prägen\
+    \ den Arbeitsmarkt, dazu kommen Universität, OTH und eine lebendige Gründerszene. Daneben gibt es Hunderte inhabergeführte\
+    \ Betriebe mit 5 bis 100 Mitarbeitenden: Agenturen, IT-Dienstleister, Ingenieurbüros, Handwerk, Handel und Zulieferer.\
+    \ Für sie heißt das vor allem: Gute Leute sind schwer zu bekommen und schwer zu halten, weil die Großen in Gehalt und\
+    \ Karrierewegen mithalten können."
+  - "Kleinere Betriebe gewinnen diesen Wettbewerb nicht über das Gehalt, sondern über Verantwortung, kurze Wege und eine Führung,\
+    \ die nicht alles selbst entscheidet. Genau das ist der Kern meiner Arbeit in Regensburg. Je nach Schwerpunkt findest\
+    \ du hier mehr: [KI-Beratung in Regensburg](/ki-beratung-regensburg), [Prozessoptimierung in Regensburg](/prozessoptimierung-regensburg),\
+    \ [Digitalisierungsberatung in Regensburg](/digitalisierungsberatung-regensburg) und [BAFA-geförderte Beratung](/themen/bafa)."
+  - "Wenn du deinen Betrieb in den nächsten Jahren übergeben oder verkaufen willst, lies weiter bei der [Beratung zur Unternehmensnachfolge](/unternehmensnachfolge-beratung).\
+    \ Wenn es um deine eigene Rolle als Chef geht, ist das [Coaching für Geschäftsführer](/coaching-geschaeftsfuehrer) der\
+    \ passende Rahmen. Und für Betriebe außerhalb der Stadt gibt es eigene Seiten zur [Oberpfalz](/unternehmensberatung-oberpfalz)\
+    \ und zu [Niederbayern](/unternehmensberatung-niederbayern)."
 - "type": "prose"
   "heading": "Warum ich das in Regensburg anders angehe"
   "content":
@@ -79,6 +95,10 @@
     "answer": "Mit einem Erstgespräch. Danach wird klar, ob du gerade einen fokussierten Umsetzungssprint, laufendes Sparring\
       \ oder erstmal keine Beratung brauchst. Entscheidend ist nicht, möglichst schnell ein großes Beratungsprogramm zu verkaufen,\
       \ sondern zuerst sauber zu verstehen, wo die operative Last tatsächlich entsteht."
+  - "question": "Ist die Unternehmensberatung in Regensburg förderfähig?"
+    "answer": "Ja. Als BAFA-registrierter Berater kann ich geförderte Beratungen durchführen. In Bayern übernimmt das BAFA\
+      \ 50 Prozent der Beratungskosten bis 3.500 Euro, also bis zu 1.750 Euro. Die regionale Leitstelle ist die IHK Regensburg\
+      \ für Oberpfalz / Kelheim. Der Antrag muss vor Beratungsbeginn gestellt werden."
   - "question": "Was unterscheidet das von klassischer Unternehmensberatung in Regensburg?"
     "answer": "Ich arbeite nicht mit Standardpaketen und Leistungslisten. Im Zentrum stehen Führung, Entscheidungen, Prozesse\
       \ und eine Digitalisierung, die den Betrieb wirklich entlastet. Es geht nicht darum, dir dein Unternehmen theoretisch\

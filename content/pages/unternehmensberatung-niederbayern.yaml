@@ -1,7 +1,7 @@
 "meta":
-  "title": "Unternehmensberatung Niederbayern | Regionaler Partner"
-  "description": "Unternehmensberatung für Unternehmen in Niederbayern. Klarer Fokus auf Umsetzung, Effizienz und nachhaltiges\
-    \ Wachstum."
+  "title": "Unternehmensberatung Niederbayern | Landshut, Passau, Deggendorf"
+  "description": "Unternehmensberatung für inhabergeführte Betriebe in Niederbayern: Zulieferer, Handwerk, Dienstleister.\
+    \ Führung, Prozesse, Nachfolge und Digitalisierung, praxisnah und BAFA-förderfähig."
   "kicker": "Unternehmensberatung Niederbayern"
   "subtitle": "Niederbayern hat starken Mittelstand, viel handwerkliche und industrielle Substanz und viele Unternehmer, die\
     \ pragmatisch denken. Genau deshalb passen Konzeptfolien hier schlecht. Was hilft, ist Klarheit in Führung, Entscheidungen\
@@ -24,25 +24,28 @@
     "variant": "primary"
 "sections":
 - "type": "prose"
-  "heading": "Typische Engpässe bei inhabergeführten Unternehmen in Niederbayern"
+  "heading": "Was Unternehmen in Niederbayern gerade bewegt"
   "content":
-  - "Der wirtschaftliche Kontext macht diese Fragen nicht kleiner. Am 22. April 2026 verwies Bertram Brossardt, Hauptgeschäftsführer\
-    \ der vbw, auf nur noch 0,5 Prozent Wachstumsprognose für dieses Jahr. Creditreform meldete im Frühjahr 2026 zugleich\
-    \ einen Geschäftsklimaindex von 5,3 Punkten, den höchsten Stand seit vier Jahren. Die Botschaft dahinter ist wichtig:\
-    \ Die Stimmung kann sich leicht verbessern, aber innere Reibung verschwindet nicht von selbst. Gerade in Niederbayern,\
-    \ wo viele Betriebe pragmatisch führen und lange aus eigener Kraft funktionieren, bleiben operative Bremsen oft zu lange\
-    \ unsichtbar."
+  - "Niederbayern ist stark von der Automobilindustrie geprägt. Rund um das BMW-Werk Dingolfing und um Landshut arbeiten viele\
+    \ Zulieferer, Werkzeug- und Maschinenbauer, Logistiker und Dienstleister, die direkt oder indirekt von dieser Branche\
+    \ leben. Der Umbau zur Elektromobilität und der Kostendruck der Hersteller kommen in diesen Betrieben unmittelbar an.\
+    \ Gleichzeitig hat die Region einen breiten Mittelstand aus Handwerk, Bau, Lebensmittel, Tourismus und Handel, von Straubing\
+    \ über Deggendorf bis nach Passau und in den Bayerischen Wald."
+  - "Daraus ergeben sich drei Fragen, die mir in Gesprächen mit niederbayerischen Unternehmern am häufigsten begegnen: Wie\
+    \ mache ich mich unabhängiger von einem Großkunden oder einer Branche? Wie halte ich gute Leute, wenn große Arbeitgeber\
+    \ in der Nähe mehr zahlen? Und wer führt den Betrieb weiter, wenn ich aufhöre? Alle drei Fragen lassen sich nur beantworten,\
+    \ wenn das Unternehmen nicht an einer einzigen Person hängt."
+  - "Wenn die Übergabe für dich ansteht, findest du mehr bei der [Beratung zur Unternehmensnachfolge](/unternehmensnachfolge-beratung).\
+    \ Für den Blick auf ganz Ostbayern gibt es die Seite zur [Unternehmensberatung Ostbayern](/unternehmensberatung-ostbayern)."
   "bullets":
-  - "Alles läuft am Ende doch über dich — Formal sind Verantwortlichkeiten verteilt. In der Praxis landen Entscheidungen,\
-    \ Eskalationen und Sonderfälle trotzdem wieder beim Inhaber oder Geschäftsführer. Nicht weil das Team nicht will, sondern\
-    \ weil Rollen, Grenzen und Prioritäten nicht sauber genug gebaut sind."
-  - "Mehr Mitarbeitende bringen mehr Koordinationsarbeit statt mehr Ruhe — Wenn Führungslogik, Übergaben und Eskalationswege\
-    \ unscharf sind, skaliert nicht die Entlastung, sondern die Komplexität. Der Betrieb wächst. Die Steuerbarkeit wächst\
-    \ nicht mit."
-  - "Gute Ideen versanden in der Umsetzung — Die Richtung ist oft klar. Trotzdem holt der Alltag jede Entscheidung wieder\
-    \ ein. Nicht aus mangelndem Willen, sondern weil Rhythmus, Verbindlichkeit und operative Übersetzung fehlen."
-  - "Digitalisierung läuft nebenher statt im System — Neue Tools werden eingeführt, aber niemand kann sauber sagen, welche\
-    \ Reibung dadurch wirklich verschwindet. Ohne klare Betriebslogik entsteht nur eine zusätzliche digitale Abstimmungsschicht."
+  - "Abhängigkeit von Großkunden und Branchen senken — Wer zu einem großen Teil von einem Abnehmer lebt, braucht eine klare\
+    \ Sicht auf Margen, Kundenstruktur und neue Standbeine. Ohne verlässliche Zahlen bleibt das ein Bauchgefühl."
+  - "Fachkräfte halten, nicht nur suchen — Gute Leute bleiben, wenn sie Verantwortung bekommen und nicht für jede Entscheidung\
+    \ beim Chef anklopfen müssen. Klare Rollen sind oft wirksamer als das nächste Gehaltsangebot."
+  - "Nachfolge rechtzeitig angehen — Viele Familienbetriebe in Niederbayern stehen in den nächsten Jahren vor der Übergabe.\
+    \ Wer früh eine Führungsebene aufbaut, hat mehr Optionen als der, der erst sucht, wenn es eilt."
+  - "Digitalisierung mit Nutzen statt nebenher — Ein neues Tool hilft nur, wenn klar ist, welchen Ablauf es entlastet. Erst\
+    \ der Prozess, dann das System."
 - "type": "figure"
   "image": "/images/geo/niederbayern-schmuck.jpg"
   "alt": "Produktionsumgebung im niederbayerischen Mittelstand"
@@ -71,6 +74,11 @@
     "answer": "Viele Betriebe hier sind pragmatisch, substanziell und nicht besonders empfänglich für Berater-Show. Das ist\
       \ gut, weil Beratung hier nur dann eine Chance hat, wenn sie im Alltag wirklich etwas bringt und schnell verständlich\
       \ wird."
+  - "question": "Wo finde ich in Niederbayern Unterstützung bei Förderung und Nachfolge?"
+    "answer": "Erste Anlaufstellen sind die IHK Niederbayern in Passau und die Handwerkskammer Niederbayern-Oberpfalz, die\
+      \ beide Nachfolge- und Förderberatung anbieten. Für eine geförderte Unternehmensberatung gibt es das BAFA-Programm:\
+      \ In Bayern werden 50 Prozent von bis zu 3.500 Euro Beratungskosten übernommen, also bis zu 1.750 Euro. Ich bin als\
+      \ Berater beim BAFA registriert."
   - "question": "Geht es eher um Strategie oder eher um Umsetzung?"
     "answer": "Beides, aber Umsetzung hat Vorrang. Die entscheidende Frage ist nicht, wie die Folie aussieht, sondern was\
       \ nächste Woche im Betrieb konkret anders laufen soll, damit Entscheidungen, Führung und Abläufe stabiler werden."
