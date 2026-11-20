@@ -1,5 +1,6 @@
 ---
 title: "Raus aus dem Tagesgeschäft: 7 Schritte für Geschäftsführer"
+seoTitle: "Raus aus dem Tagesgeschäft: 7 Schritte für Geschäftsführer"
 slug: raus-aus-dem-tagesgeschaeft
 description: "Wie du dich als Geschäftsführer operativ entlastest, ohne dass dein Unternehmen langsamer wird: 7 Schritte raus aus dem Tagesgeschäft."
 keyword: "selbstständig raus aus dem tagesgeschäft"

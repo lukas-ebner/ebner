@@ -1,5 +1,6 @@
 ---
 title: "KI für Agenturen: 5 Hebel, die Marge retten"
+seoTitle: "KI für Agenturen: 5 Hebel, die Marge retten"
 slug: ki-fuer-agenturen
 description: "Wo KI für Agenturen heute wirklich hilft: Angebote, Reporting, Content und QA schneller machen, ohne die Qualität an die Wand zu fahren."
 keyword: "ki für agenturen"

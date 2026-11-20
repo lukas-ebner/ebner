@@ -1,5 +1,6 @@
 ---
 title: "Tool-Audit im Unternehmen: Erst Wahrheit, dann Software"
+seoTitle: "Tool-Audit im Unternehmen: Weniger Tools, klarere Prozesse"
 slug: tool-audit-unternehmen
 description: "Wie ein Tool-Audit im Unternehmen wirklich wirkt: weniger doppelte Systeme, klarere Prozesse und eine saubere digitale Arbeitsbasis."
 keyword: "tool audit unternehmen"

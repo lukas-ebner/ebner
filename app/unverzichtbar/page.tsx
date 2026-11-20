@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { OptInForm } from './OptInForm'
 
 export const metadata: Metadata = {
-  title: '(Un)verzichtbar – Der Unternehmer-Roman von Lukas Ebner | Kostenlos lesen',
+  title: '(Un)verzichtbar – Unternehmer-Roman von Lukas Ebner',
   description:
-    '90 Tage Mittelstand. Ein Geschäftsführer, der lernt, nicht mehr der Engpass zu sein. Als eBook, PDF und Audiobook kostenlos. Nur E-Mail-Adresse – kein Newsletter-Zwang.',
+    '90 Tage Mittelstand: Ein Geschäftsführer lernt, nicht mehr der Engpass zu sein. Kostenlos als eBook, PDF und Hörbuch – nur gegen E-Mail-Adresse.',
   alternates: { canonical: 'https://lukasebner.de/unverzichtbar' },
   openGraph: {
     title: '(Un)verzichtbar – Der Unternehmer-Roman',

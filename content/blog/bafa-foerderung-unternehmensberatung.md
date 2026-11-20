@@ -1,5 +1,6 @@
 ---
 title: "BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt"
+seoTitle: "BAFA-Förderung Unternehmensberatung: Ablauf & Tipps 2027"
 slug: bafa-foerderung-unternehmensberatung
 description: "BAFA-Förderung für Unternehmensberatung: bis zu 1.750 € Zuschuss in Bayern, Antrag vor Beratungsbeginn, Programm bis Ende 2028. Wann sie sich lohnt und wann nicht."
 keyword: "BAFA Förderung Unternehmensberatung"

@@ -1,5 +1,6 @@
 ---
 title: "IT-Sicherheit im Mittelstand: Die 10 wichtigsten Management-Entscheidungen"
+seoTitle: "IT-Sicherheit im Mittelstand: 10 Chef-Entscheidungen"
 slug: it-sicherheit-mittelstand-beratung
 description: "IT-Sicherheit im Mittelstand ist Chefsache: die 10 wichtigsten Management-Entscheidungen zu Notfallplan, Zugängen, Backups und Verantwortung."
 keyword: "it sicherheit mittelstand beratung"

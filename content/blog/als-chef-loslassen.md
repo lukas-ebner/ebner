@@ -1,5 +1,6 @@
 ---
 title: "Als Chef loslassen: Delegation ohne Kontrollverlust"
+seoTitle: "Als Chef loslassen: Delegieren ohne Kontrollverlust"
 slug: als-chef-loslassen
 description: "Als Chef loslassen heißt nicht blind vertrauen. So delegierst du als Geschäftsführer sauber, ohne dass alles an dir hängen bleibt."
 keyword: "als chef loslassen"

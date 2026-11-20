@@ -1,5 +1,6 @@
 ---
 title: "Qualitätsprobleme in der Produktion: Warum Nacharbeit teurer ist als klare Standards"
+seoTitle: "Qualitätsprobleme in der Produktion: Standards statt Nacharbeit"
 slug: qualitaetsprobleme-produktion
 description: "Qualitätsprobleme in der Produktion kosten Marge, Zeit und Nerven. So reduzierst du Nacharbeit und Reklamationen mit klaren Standards."
 keyword: "qualitaetsprobleme produktion"

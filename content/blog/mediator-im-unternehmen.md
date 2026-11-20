@@ -1,5 +1,6 @@
 ---
 title: "Mediator im Unternehmen: Wann Mediation besser wirkt als ein Machtwort"
+seoTitle: "Mediation im Unternehmen: Wann ein Mediator hilft"
 slug: mediator-im-unternehmen
 description: "Mediator im Unternehmen: Wann hilft Mediation wirklich, wie läuft sie ab und wo liegen ihre Grenzen? Eine klare Einordnung für Geschäftsführer."
 keyword: "mediator im unternehmen"

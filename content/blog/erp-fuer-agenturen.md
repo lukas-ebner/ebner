@@ -1,5 +1,6 @@
 ---
 title: "ERP für Agenturen: Warum klassische Systeme oft das falsche Problem lösen"
+seoTitle: "ERP für Agenturen: Was Agentur-Software wirklich können muss"
 slug: erp-fuer-agenturen
 description: "ERP für Agenturen: Warum klassische ERP-Systeme oft das falsche Problem lösen und was Agenturen für Projekte, Zeiten und Abrechnung wirklich brauchen."
 keyword: "erp für agenturen"

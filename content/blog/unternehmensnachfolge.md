@@ -1,5 +1,6 @@
 ---
 title: "Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor"
+seoTitle: "Unternehmensnachfolge planen: Ablauf, Modelle, Fehler"
 slug: unternehmensnachfolge
 description: "Unternehmensnachfolge ist kein Notartermin, sondern ein 2- bis 3-jähriger Umbau. Zahlen, Modelle, Fehler und ein ehrlicher Fahrplan aus der Praxis."
 keyword: "unternehmensnachfolge"

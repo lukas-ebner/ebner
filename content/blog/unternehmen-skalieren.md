@@ -1,5 +1,6 @@
 ---
 title: "Unternehmen skalieren: Warum mehr Mitarbeiter oft nur mehr Chaos bedeuten"
+seoTitle: "Unternehmen skalieren ohne Chaos: Was wirklich hilft"
 slug: unternehmen-skalieren
 description: "Unternehmen skalieren heißt nicht einfach wachsen. Wie du Gründerabhängigkeit, Führungsengpässe und operatives Chaos wirklich reduzierst."
 keyword: "unternehmen skalieren"

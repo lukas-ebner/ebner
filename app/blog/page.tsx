@@ -7,7 +7,7 @@ import { IDS, JsonLd, SITE_URL, jsonLdGraph } from '@/lib/schema'
 const defaultOgImage = 'https://cloud.fracto.live/s/a4CyLxG27RgGjRJ/preview'
 
 export const metadata: Metadata = {
-  title: 'Blog – Lukas Ebner',
+  title: 'Blog: Führung, Prozesse, KI & Exit | Lukas Ebner',
   description:
     'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
   alternates: {
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://lukasebner.de/blog',
-    title: 'Blog – Lukas Ebner',
+    title: 'Blog: Führung, Prozesse, KI & Exit | Lukas Ebner',
     description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
     images: [{ url: defaultOgImage }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog – Lukas Ebner',
+    title: 'Blog: Führung, Prozesse, KI & Exit | Lukas Ebner',
     description: 'Artikel zu Führung, Skalierung, Systeme, KI und Exit. Praxiswissen aus 15 Jahren als Geschäftsführer – kein Bullshit, keine Buzzwords.',
     images: [defaultOgImage],
   },

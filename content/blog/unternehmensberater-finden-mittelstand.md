@@ -1,5 +1,6 @@
 ---
 title: "Unternehmensberater finden im Mittelstand: 9 Fragen vor dem Erstgespräch"
+seoTitle: "Unternehmensberater finden: 9 Fragen fürs Erstgespräch"
 slug: unternehmensberater-finden-mittelstand
 description: "Unternehmensberater finden im Mittelstand: 9 Fragen, mit denen du vor dem Erstgespräch prüfst, ob eine Beratung zu deinem Unternehmen passt."
 keyword: "unternehmensberater finden mittelstand"

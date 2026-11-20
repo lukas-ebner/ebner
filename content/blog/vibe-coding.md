@@ -1,5 +1,6 @@
 ---
 title: "Vibe Coding: Was es ist, wo es brutal stark ist und wo du es stoppen musst"
+seoTitle: "Vibe Coding: Was es ist und wo es an Grenzen stößt"
 slug: vibe-coding
 description: "Vibe Coding ist schnell, nützlich und oft missverstanden. Was es wirklich ist, wo es funktioniert und warum Prototyp nicht Production heißt."
 keyword: "vibe coding"

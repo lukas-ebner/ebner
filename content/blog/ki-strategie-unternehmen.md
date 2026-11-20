@@ -1,5 +1,6 @@
 ---
 title: "KI-Strategie für Unternehmen: Der Fahrplan ohne Buzzword-Bingo"
+seoTitle: "KI-Strategie für Unternehmen: Fahrplan ohne Buzzwords"
 slug: ki-strategie-unternehmen
 description: "Wie Unternehmen ihre KI-Strategie sinnvoll aufbauen: mit Engpass, Pilot und Skalierung statt PowerPoint und Aktionismus."
 keyword: "ki strategie unternehmen"

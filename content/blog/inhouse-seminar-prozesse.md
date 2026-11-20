@@ -1,5 +1,6 @@
 ---
 title: "Inhouse-Seminar Prozesse: Wann ein Seminar reicht und wann du tiefer ranmusst"
+seoTitle: "Inhouse-Seminar Prozesse: Wann es reicht und wann nicht"
 slug: inhouse-seminar-prozesse
 description: "Inhouse-Seminar zu Prozessen: Wann ein Seminar reicht, wann es verpufft und wann du Prozesse mit Begleitung im Alltag verankern musst."
 keyword: "inhouse seminar prozesse"

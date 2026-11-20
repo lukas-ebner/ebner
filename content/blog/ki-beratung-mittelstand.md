@@ -1,5 +1,6 @@
 ---
 title: "KI-Beratung im Mittelstand: Wo sie sich lohnt und wo du nur Geld verbrennst"
+seoTitle: "KI-Beratung im Mittelstand: Wann sie sich lohnt"
 slug: ki-beratung-mittelstand
 description: "Was gute KI-Beratung im Mittelstand heute leisten muss, welche Use Cases echten ROI bringen und woran du PowerPoint-Beratung erkennst."
 keyword: "ki beratung mittelstand"

@@ -1,5 +1,6 @@
 ---
 title: "Sparring Partner für Geschäftsführer: Warum Widerspruch Geld wert ist"
+seoTitle: "Sparringspartner für Geschäftsführer: Was gutes Sparring ist"
 slug: sparring-partner-geschaeftsfuehrer
 description: "Warum Geschäftsführer einen Sparring Partner brauchen, der widerspricht statt bestätigt, und woran du ein gutes Sparring erkennst."
 keyword: "sparring partner geschäftsführer"

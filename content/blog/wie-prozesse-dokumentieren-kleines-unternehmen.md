@@ -1,5 +1,6 @@
 ---
 title: "Wie Prozesse dokumentieren im kleinen Unternehmen, ohne Bürokratie-Monster"
+seoTitle: "Prozesse dokumentieren im kleinen Unternehmen: So geht’s"
 slug: wie-prozesse-dokumentieren-kleines-unternehmen
 description: "So dokumentierst du Prozesse im kleinen Unternehmen, ohne Bürokratie-Monster. Praktisch, schlank und sofort nutzbar für Team und Einarbeitung."
 keyword: "wie prozesse dokumentieren kleines unternehmen"

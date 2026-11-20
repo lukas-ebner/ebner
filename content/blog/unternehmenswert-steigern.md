@@ -1,5 +1,6 @@
 ---
 title: "Unternehmenswert steigern: Die Hebel, die Käufer wirklich interessieren"
+seoTitle: "Unternehmenswert steigern: Hebel, die Käufer interessieren"
 slug: unternehmenswert-steigern
 description: "Was den Unternehmenswert wirklich erhöht: planbare Umsätze, weniger Personenrisiko, saubere Führung und operative Reife statt kosmetischer Maßnahmen."
 keyword: "unternehmenswert steigern"
