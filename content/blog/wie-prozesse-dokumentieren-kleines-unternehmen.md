@@ -193,6 +193,7 @@ Nicht zwingend. Für den Start reichen oft saubere Einseiter, Checklisten oder e
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
 - [Inhouse-Seminar Prozesse: Wann ein Seminar reicht und wann du tiefer ranmusst](/blog/inhouse-seminar-prozesse)
+- [Prozessdokumentation: Formen, Inhalte, Beispiele](/blog/prozessdokumentation)
 
 ## Quellen
 - Bitkom, Digitalisierung der Wirtschaft 2025, 24.03.2025: https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft

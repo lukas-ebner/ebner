@@ -220,6 +220,7 @@ Nicht mit Fördermittel-Kitsch. Sondern mit Blick auf deinen Engpass, dein Timin
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [Unternehmensnachfolge: So bereitest du deinen Betrieb auf Übergabe oder Verkauf vor](/blog/unternehmensnachfolge)
 - [Unternehmenswert steigern: Die Hebel, die Käufer wirklich interessieren](/blog/unternehmenswert-steigern)
+- [Was kostet eine Unternehmensberatung? Preise & Förderung](/blog/unternehmensberatung-kosten)
 
 ## Weiterführende Links
 - Alle Zahlen, Ablauf und BAFA-Check im Überblick: [BAFA-Förderung für Unternehmensberatung in Regensburg](/themen/bafa)

@@ -237,6 +237,7 @@ Wenn du herausfinden willst, ob dein Unternehmen genau an dieser Stelle hängt, 
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
 - [Alles hängt an mir, was tun? Der 14-Tage-Reset für Geschäftsführer](/blog/alles-haengt-an-mir-was-tun)
+- [Organisationsberatung: Was sie ist und wann sie hilft](/blog/organisationsberatung)
 
 ## Externe Quellen
 - [Bitkom, Digitalisierung der Wirtschaft 2025](https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft)

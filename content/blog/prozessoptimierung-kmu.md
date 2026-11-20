@@ -185,6 +185,7 @@ Nach einigen Wochen hat dein Kalender wieder Luft, es gibt weniger kurze Rückfr
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [Führungskräfteentwicklung im KMU: Führung ist kein Zufall](/blog/fuehrungskraefteentwicklung-kmu)
 - [Agile Einführung im Unternehmen: Warum Methoden ohne Führungsarbeit verpuffen](/blog/agile-einfuehrung-unternehmen)
+- [Prozessoptimierung: 8 Methoden im Überblick](/blog/prozessoptimierung-methoden)
 
 ## Quellen
 - KfW / ZEW, 23.04.2026: https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_890944.html

@@ -239,6 +239,7 @@ Ein berechenbares Unternehmen statt einer Heldengeschichte. Sie prüfen Umsatzqu
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt](/blog/bafa-foerderung-unternehmensberatung)
 - [Exit-Strategie: Warum Verkaufsfähigkeit Jahre vor dem Verkauf beginnt](/blog/exit-strategie)
+- [Nachfolger finden: 6 Wege und der Ablauf der Übergabe](/blog/nachfolger-finden)
 
 ## Quellen
 - KfW Research, *Nachfolge-Monitoring Mittelstand*, 09.01.2026: https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-526-Januar-2026-Nachfolge-Monitoring.pdf

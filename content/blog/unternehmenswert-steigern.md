@@ -191,3 +191,4 @@ Realistisch ist ein Plan über 12 bis 24 Monate. In den ersten 90 Tagen legst du
 - [Unternehmensberatung in Regensburg für KMU und Agenturen](/unternehmensberatung-regensburg)
 - [BAFA-Förderung für Unternehmensberatung: Wann sie dir wirklich etwas bringt](/blog/bafa-foerderung-unternehmensberatung)
 - [Exit-Strategie: Warum Verkaufsfähigkeit Jahre vor dem Verkauf beginnt](/blog/exit-strategie)
+- [Unternehmenswert berechnen: 4 Verfahren mit Beispiel](/blog/unternehmenswert-berechnen)
