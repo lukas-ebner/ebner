@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { listBlogPosts, CATEGORY_LABELS, CATEGORY_COLORS } from '@/lib/blog'
 import { NoSnap } from '@/components/NoSnap'
@@ -95,7 +96,7 @@ export default function BlogIndexPage() {
           </p>
         ) : (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
+            {posts.map((post, index) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
@@ -107,11 +108,13 @@ export default function BlogIndexPage() {
                   style={{ backgroundColor: CATEGORY_COLORS[post.category] + '15' }}
                 >
                   {post.image && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
+                    <Image
                       src={post.image}
-                      alt={post.title}
-                      className="h-full w-full object-cover"
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                      priority={index < 2}
                     />
                   )}
                   {/* Category badge */}
