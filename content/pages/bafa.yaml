@@ -12,7 +12,7 @@ slides:
       text: "BAFA-Check vereinbaren"
       url: "/erstgespraech?topic=bafa"
     image:
-      src: /images/bafa/bafa-hero.png
+      src: /images/bafa/bafa-whiteboard.png
       alt: "Lukas Ebner erklärt den Ablauf der BAFA-Förderung für Unternehmensberatung am Whiteboard"
   - template: symptoms-grid
     imageStyle: panorama
