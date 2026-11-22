@@ -20,6 +20,8 @@
 
     {"keyword": "unternehmer coaching", "cluster": "Coaching", "ziel": "/coaching-geschaeftsfuehrer"},
     {"keyword": "coaching geschäftsführer", "cluster": "Coaching", "ziel": "/coaching-geschaeftsfuehrer"},
+    {"keyword": "coaching regensburg", "cluster": "Coaching", "ziel": "/business-coaching-regensburg", "kpi": true},
+    {"keyword": "business coaching regensburg", "cluster": "Coaching", "ziel": "/business-coaching-regensburg"},
 
     {"keyword": "change management beratung", "cluster": "Change/Organisation", "ziel": "/themen/change-management-beratung"},
     {"keyword": "organisationsberatung", "cluster": "Change/Organisation", "ziel": "Blog"},

@@ -300,6 +300,7 @@ const SERVICE_PAGES: Record<string, { name: string; area?: string[] }> = {
   bafa: { name: 'BAFA-geförderte Unternehmensberatung', area: ['Regensburg', 'Oberpfalz', 'Niederbayern', 'Bayern'] },
   'unternehmensberatung-oberpfalz': { name: 'Unternehmensberatung Oberpfalz', area: ['Oberpfalz', 'Amberg', 'Weiden in der Oberpfalz', 'Neumarkt in der Oberpfalz', 'Schwandorf', 'Cham'] },
   'unternehmensnachfolge-beratung': { name: 'Beratung zur Unternehmensnachfolge', area: ['Regensburg', 'Oberpfalz', 'Niederbayern', 'Bayern'] },
+  'business-coaching-regensburg': { name: 'Business-Coaching Regensburg', area: ['Regensburg', 'Landkreis Regensburg', 'Oberpfalz', 'Niederbayern', 'Ostbayern'] },
   'coaching-geschaeftsfuehrer': { name: 'Coaching für Geschäftsführer und Unternehmer', area: ['Regensburg', 'Ostbayern', 'Bayern', 'Deutschland'] },
 }
 
