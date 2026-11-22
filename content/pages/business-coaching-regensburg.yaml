@@ -1,0 +1,98 @@
+meta:
+  title: "Business-Coaching Regensburg | Coach für Unternehmer"
+  description: "Business-Coaching in Regensburg für Unternehmer, Geschäftsführer und Inhaber von KMU in Ostbayern. Systemischer Coach (ICO) mit 13 Jahren eigener Geschäftsführung. Vor Ort in der Yorckstraße oder per Video."
+  kicker: "Business-Coaching Regensburg"
+  subtitle: "Wer in Regensburg nach einem Coach sucht, findet viel Lebensberatung und wenig Unternehmerpraxis. Ich coache Unternehmer, Geschäftsführer und Inhaber aus Regensburg und Ostbayern, die ihr Unternehmen führen wollen, ohne dass es an ihnen hängt. Ich bin systemischer Coach (ICO) und habe 13 Jahre selbst ein Unternehmen mit bis zu 50 Mitarbeitenden geführt und verkauft. Die Sessions finden in meinem Büro in der Yorckstraße 22 statt oder per Video."
+  heroImage: /images/lukas-meetingraum.jpg
+  heroAlt: "Lukas Ebner, Business Coach in Regensburg, im Besprechungsraum"
+  og_image: /images/og/geo-landingpage.jpg
+  breadcrumbs:
+    - label: "Start"
+      href: "/"
+    - label: "Business-Coaching Regensburg"
+      href: "/business-coaching-regensburg"
+  ctas:
+    - label: "Erstgespräch buchen"
+      href: "/erstgespraech"
+      variant: primary
+
+sections:
+  - type: prose
+    heading: "Für wen das Business-Coaching in Regensburg gedacht ist"
+    content:
+      - "Für Inhaber, Gründer und Geschäftsführer von Unternehmen mit etwa 5 bis 100 Mitarbeitenden. Die meisten kommen aus Agenturen, IT, Dienstleistung, Handwerk und Handel in Regensburg, im Landkreis und in Ostbayern. Gemeinsam ist ihnen eine Lage: Das Unternehmen läuft, aber es läuft über sie."
+      - "Nicht gedacht ist das Coaching für private Lebensfragen, Paarthemen oder als Ersatz für eine Therapie. Dafür gibt es in Regensburg gute Leute, und ich nenne dir gern eine Anlaufstelle, wenn sich das im Erstgespräch zeigt."
+    bullets:
+      - "Du bist der Engpass im eigenen Unternehmen. Entscheidungen, Freigaben und Kundenfragen landen bei dir, auch wenn du sie längst abgeben wolltest."
+      - "Du hast Führungskräfte, aber keine Führungsebene. Die zweite Reihe wartet auf dich, statt selbst zu entscheiden."
+      - "Eine große Entscheidung liegt seit Monaten auf dem Tisch: ein Partner, eine Sparte, ein Verkauf, ein langjähriger Mitarbeiter."
+      - "Du arbeitest mehr als je zuvor, und es fühlt sich trotzdem nicht nach Fortschritt an."
+
+  - type: compare
+    heading: "Business-Coaching, Life-Coaching oder Unternehmensberatung?"
+    leftTitle: "Business-Coaching bei mir"
+    rightTitle: "Life-Coaching und klassische Beratung"
+    rows:
+      - label: "Im Mittelpunkt"
+        left: "Du in deiner Rolle als Unternehmer und Führungskraft"
+        right: "Life-Coaching: dein Privatleben. Beratung: dein Unternehmen ohne dich"
+      - label: "Wer bringt die Antworten?"
+        left: "Überwiegend du. Wenn es hilft, erzähle ich, wie ich es selbst gemacht habe"
+        right: "Life-Coaching: du. Beratung: der Berater"
+      - label: "Hintergrund des Coaches"
+        left: "Systemischer Coach (ICO) und 13 Jahre Geschäftsführer mit Exit"
+        right: "sehr unterschiedlich, oft ohne eigene Führungserfahrung"
+      - label: "Wenn das Problem in Strukturen liegt"
+        left: "sage ich es, und wir wechseln in die Operations-Beratung"
+        right: "bleibt es oft beim falschen Format"
+
+  - type: prose
+    heading: "Wie ich coache: systemisch und aus der Praxis"
+    content:
+      - "Systemisch heißt: Ich schaue nicht nur auf dich, sondern auf das Umfeld, in dem du führst. Ein Chef, der alles selbst entscheidet, hat meistens ein Team, das gelernt hat, ihn zu fragen. Wer nur an einer Seite arbeitet, ändert wenig. Deshalb arbeiten wir an den Mustern zwischen dir, deinem Team, deinen Gesellschaftern und deinen Kunden."
+      - "Die Methode habe ich 2025 am ICO Institut für Coaching und Organisationsberatung gelernt. Die Praxis habe ich davor 13 Jahre lang bei eins+null gesammelt, meiner Agentur für die Energiewirtschaft, die ich 2009 mitgegründet und 2022 verkauft habe. Ich weiß, wie es sich anfühlt, wenn ein Unternehmen an einem hängt, und was es braucht, damit das aufhört. Den Weg dahin habe ich auch in meinem Unternehmer-Roman [(Un)verzichtbar](/unverzichtbar) beschrieben."
+      - "Mehr zur Methode, zum Unterschied zwischen Coaching und Sparring und zu den typischen Themen steht auf der Seite [Coaching für Geschäftsführer](/coaching-geschaeftsfuehrer)."
+
+  - type: prose
+    heading: "Ablauf, Ort und Kosten"
+    content:
+      - "Wir starten mit einem kostenlosen Erstgespräch von 30 Minuten. Danach weißt du, ob die Zusammenarbeit passt und ob Coaching gerade das richtige Format ist. Eine Session dauert 60 bis 90 Minuten, meist im Abstand von zwei bis vier Wochen. Es gibt keine Mindestlaufzeit."
+      - "Die Sessions finden in meinem Büro in der Yorckstraße 22 in Regensburg statt, per Video oder zum Start bei dir im Betrieb, etwa in Straubing, Landshut, Amberg oder Cham. Ich rechne nach Zeit ab, aktuell 125 Euro pro Stunde netto. Alle Preise stehen offen auf der [Preise-Seite](/preise)."
+      - "Reines Persönlichkeitscoaching fördert das BAFA nicht. Geht es um Führungsstrukturen, Organisation oder Personalfragen in deinem Unternehmen, kann die Beratung förderfähig sein, in Bayern mit bis zu 1.750 Euro Zuschuss. Was davon passt, klären wir im Erstgespräch. Details stehen auf der Seite zur [BAFA-Förderung](/themen/bafa)."
+
+  - type: credibility
+    heading: "Wer dich coacht"
+    body: "Ich bin Lukas Ebner, Geschäftsführer der Wachstumscoach GmbH in Regensburg. Von 2009 bis 2022 habe ich eins+null aufgebaut und geführt, beim Verkauf an die Kraftwerk Holding mit 50 Mitarbeitenden. Heute führe ich Leadtime und bin Mitgründer von Fracto. Von Regensburg aus berate und coache ich Unternehmen in ganz Ostbayern."
+    proofs:
+      - text: "Systemisches Coaching kompakt, ICO Institut (2025)"
+      - text: "Organisationsberater & Change Manager, ICO Institut (2025)"
+      - text: "Human Skills & Leadership, TH Deggendorf (2017)"
+      - text: "MBA an der TH Deggendorf (Note 1,3)"
+      - text: "13 Jahre Geschäftsführer, Exit 2022"
+      - text: "Büro in der Yorckstraße 22, Regensburg"
+
+  - type: faq
+    heading: "Häufige Fragen zum Business-Coaching in Regensburg"
+    items:
+      - question: "Was ist Business-Coaching?"
+        answer: "Business-Coaching ist ein vertrauliches Einzelgespräch in regelmäßigen Abständen, in dem du an deiner beruflichen Rolle arbeitest: Führung, Entscheidungen, Umgang mit Druck und Konflikten und die Frage, wie dein Unternehmen weniger von dir abhängt. Anders als bei einer Unternehmensberatung geht es zuerst um dich, nicht um das Unternehmen."
+      - question: "Wo findet das Coaching in Regensburg statt?"
+        answer: "In meinem Büro der Wachstumscoach GmbH in der Yorckstraße 22 in Regensburg. Viele Sessions laufen auch per Video. Für das erste Treffen komme ich gern zu dir in den Betrieb, in Regensburg und in der Region."
+      - question: "Was kostet ein Business-Coach in Regensburg?"
+        answer: "Bei mir kostet eine Stunde aktuell 125 Euro netto, eine Session dauert 60 bis 90 Minuten. Das Erstgespräch ist kostenlos. Es gibt keine Pakete mit Mindestlaufzeit."
+      - question: "Bist du ein zertifizierter Coach?"
+        answer: "Ja. Ich habe 2025 am ICO Institut für Coaching und Organisationsberatung die Weiterbildungen in systemischem Coaching und als Organisationsberater und Change Manager abgeschlossen. Dazu kommen ein MBA der TH Deggendorf und 13 Jahre als Geschäftsführer."
+      - question: "Coachst du auch Führungskräfte aus meinem Team?"
+        answer: "Mein Schwerpunkt sind Geschäftsführer und Inhaber. Wenn du deine zweite Führungsebene aufbauen willst, sprechen wir im Erstgespräch darüber, ob Coaching für einzelne Führungskräfte oder eine Beratung zu Rollen und Verantwortung der bessere Weg ist."
+      - question: "Coachst du nur in Regensburg?"
+        answer: "Nein. Vor Ort bin ich vor allem in Regensburg, der Oberpfalz und Niederbayern, per Video coache ich deutschlandweit. Zum Start komme ich gern zu dir in den Betrieb."
+
+endCTA:
+  heading: "Ein Coach aus Regensburg, der den Stuhl kennt, auf dem du sitzt"
+  body: "Im Erstgespräch erzählst du, was dich gerade beschäftigt, und wir schauen, ob Coaching dir weiterhilft. 30 Minuten, kostenlos und ohne Verpflichtung."
+  primary:
+    label: "Erstgespräch buchen"
+    href: "/erstgespraech"
+  secondary:
+    label: "Coaching für Geschäftsführer"
+    href: "/coaching-geschaeftsfuehrer"

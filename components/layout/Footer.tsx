@@ -27,6 +27,7 @@ const region = [
   { href: '/unternehmensberatung-oberpfalz', label: 'Oberpfalz' },
   { href: '/unternehmensberatung-ostbayern', label: 'Ostbayern' },
   { href: '/unternehmensberatung-niederbayern', label: 'Niederbayern' },
+  { href: '/business-coaching-regensburg', label: 'Business-Coaching Regensburg' },
   { href: '/ki-beratung-regensburg', label: 'KI-Beratung Regensburg' },
   { href: '/prozessoptimierung-regensburg', label: 'Prozessoptimierung Regensburg' },
   { href: '/digitalisierungsberatung-regensburg', label: 'Digitalisierungsberatung Regensburg' },

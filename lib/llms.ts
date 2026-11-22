@@ -76,6 +76,7 @@ export function buildLlmsTxt(): string {
     pageLink('unternehmensberatung-niederbayern'),
     pageLink('unternehmensberatung-oberpfalz'),
     pageLink('digitalisierungsberatung-regensburg'),
+    pageLink('business-coaching-regensburg'),
     pageLink('ki-beratung-regensburg'),
     pageLink('prozessoptimierung-regensburg'),
   ]

@@ -41,6 +41,11 @@ const themen = [
     desc: 'Ordnung im Betrieb für KMU und Agenturen in Regensburg.',
   },
   {
+    href: '/business-coaching-regensburg',
+    title: 'Business-Coaching Regensburg',
+    desc: 'Coaching für Unternehmer, vor Ort oder per Video.',
+  },
+  {
     href: '/unternehmensberatung-niederbayern',
     title: 'Unternehmensberatung Niederbayern',
     desc: 'Pragmatische Beratung für inhabergeführten Mittelstand.',
