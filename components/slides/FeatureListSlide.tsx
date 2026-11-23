@@ -1,7 +1,7 @@
 'use client'
 
 import { createElement } from 'react'
-import { motion } from 'framer-motion'
+import { m as motion } from 'framer-motion'
 import { getIcon } from '@/lib/icons'
 
 interface FeatureItem {

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { m as motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import { Button } from '@/components/ui/Button'
@@ -339,7 +339,7 @@ export function PillarDetailSlide({
                       }}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={tool.src} alt="" className="h-full w-full drop-shadow-lg" />
+                      <img src={tool.src} alt="" loading="lazy" decoding="async" className="h-full w-full drop-shadow-lg" />
                     </motion.div>
                   )
                 })}

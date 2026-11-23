@@ -7,6 +7,7 @@ import { Analytics, GtmNoScript } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
 import { GlobalLeadmagnetTeaser } from '@/components/GlobalLeadmagnetTeaser'
 import { JsonLd, globalGraph } from '@/lib/schema'
+import { MotionProvider } from '@/components/MotionProvider'
 
 const faviconSvg = '/images/favicon.svg'
 
@@ -50,6 +51,9 @@ export default function RootLayout({
   return (
     <html lang="de" className="h-full">
       <head>
+        {/* Fonts of the first screen, so the headline does not wait for the stylesheet. */}
+        <link rel="preload" href="/fonts/DegularDisplay-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <Analytics />
         <JsonLd data={globalGraph()} />
       </head>
@@ -57,7 +61,9 @@ export default function RootLayout({
         <GtmNoScript />
         <ScrollRestoration />
         <Navigation />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1">
+          <MotionProvider>{children}</MotionProvider>
+        </div>
         <GlobalLeadmagnetTeaser />
         <Footer />
         <CookieConsent />

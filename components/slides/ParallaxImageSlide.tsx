@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { m as motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import type { ImageConfig } from '@/lib/types'

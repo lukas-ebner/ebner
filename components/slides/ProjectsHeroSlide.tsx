@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { m as motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import type { ImageConfig } from '@/lib/types'

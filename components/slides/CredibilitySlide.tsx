@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { m as motion, useInView } from 'framer-motion'
 import { useRef, useState, useEffect, useCallback } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import { ExternalLink, Send } from 'lucide-react'

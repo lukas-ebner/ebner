@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { m as motion, useInView } from 'framer-motion'
 import { useRef, useState, useCallback } from 'react'
 import Image from 'next/image'
 import { getUtmParams } from '@/lib/utm'
@@ -120,7 +120,6 @@ export function EbookLeadmagnetSlide({
                 ? 'drop-shadow(0 20px 50px rgba(0,0,0,0.15))'
                 : 'drop-shadow(0 24px 64px rgba(0,0,0,0.6))',
             }}
-            priority
           />
         </div>
       </motion.div>

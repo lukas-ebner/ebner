@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { m as motion, useInView } from 'framer-motion'
 import { createElement, useRef } from 'react'
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback'
 import { useCountUp } from '@/lib/hooks/useCountUp'

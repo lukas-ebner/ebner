@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { m as motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
