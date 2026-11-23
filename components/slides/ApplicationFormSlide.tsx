@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { m as motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { getUtmParams } from '@/lib/utm'
 import { type LeadtimePathVariant, trackLeadtimeEvent } from '@/lib/leadtime-tracking'

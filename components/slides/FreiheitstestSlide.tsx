@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, AnimatePresence, useInView } from 'framer-motion'
+import { m as motion, AnimatePresence, useInView } from 'framer-motion'
 import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { ChevronRight, ArrowRight, Check, Mail } from 'lucide-react'

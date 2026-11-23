@@ -1,58 +1,59 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
-import { usePathname } from 'next/navigation'
+import dynamic from 'next/dynamic'
 import type { SlideConfig } from '@/lib/types'
-import { HeroSlide } from '@/components/slides/HeroSlide'
-import { StatementSlide } from '@/components/slides/StatementSlide'
-import { StatsSlide } from '@/components/slides/StatsSlide'
-import { SplitSlide } from '@/components/slides/SplitSlide'
-import { CTASlide } from '@/components/slides/CTASlide'
-import { FullImageSlide } from '@/components/slides/FullImageSlide'
-import { CardsGridSlide } from '@/components/slides/CardsGridSlide'
-import { HeroSplitSlide } from '@/components/slides/HeroSplitSlide'
-import { StepsSlide } from '@/components/slides/StepsSlide'
-import { ImageOverlaySlide } from '@/components/slides/ImageOverlaySlide'
-import { QuoteSlide } from '@/components/slides/QuoteSlide'
-import { FeatureListSlide } from '@/components/slides/FeatureListSlide'
-import { ParallaxImageSlide } from '@/components/slides/ParallaxImageSlide'
-import { StatsOverlaySlide } from '@/components/slides/StatsOverlaySlide'
-import { TimelineSlide } from '@/components/slides/TimelineSlide'
-import { PhotoGallerySlide } from '@/components/slides/PhotoGallerySlide'
-import { ContactFormSlide } from '@/components/slides/ContactFormSlide'
-import { TextBlockSlide } from '@/components/slides/TextBlockSlide'
-import { ProblemSlide } from '@/components/slides/ProblemSlide'
-import { CredibilitySlide } from '@/components/slides/CredibilitySlide'
-import { IconCirclesSlide } from '@/components/slides/IconCirclesSlide'
-import { NumberedFeaturesSlide } from '@/components/slides/NumberedFeaturesSlide'
-import { PricingTableSlide } from '@/components/slides/PricingTableSlide'
-import { PricingTeaserSlide } from '@/components/slides/PricingTeaserSlide'
-import { FAQSlide } from '@/components/slides/FAQSlide'
-import { QualificationSlide } from '@/components/slides/QualificationSlide'
-import { ApplicationFormSlide } from '@/components/slides/ApplicationFormSlide'
-import { LegalSlide } from '@/components/slides/LegalSlide'
-import { TextImageSlide } from '@/components/slides/TextImageSlide'
-import { ToolCloudSlide } from '@/components/slides/ToolCloudSlide'
-import { SymptomsGridSlide } from '@/components/slides/SymptomsGridSlide'
-import { KiReadinessChatSlide } from '@/components/slides/KiReadinessChatSlide'
-import { PricingCalculatorSlide } from '@/components/slides/PricingCalculatorSlide'
-import { BafaCalculatorSlide } from '@/components/slides/BafaCalculatorSlide'
-import { ProjectNavSlide } from '@/components/slides/ProjectNavSlide'
-import { ProjectSectionSlide } from '@/components/slides/ProjectSectionSlide'
-import { ProjectsHeroSlide } from '@/components/slides/ProjectsHeroSlide'
-import { ProjectDetailSlide } from '@/components/slides/ProjectDetailSlide'
-import { ParallaxStorySlide } from '@/components/slides/ParallaxStorySlide'
-import { CertificatesSlide } from '@/components/slides/CertificatesSlide'
-import { BlogTeaserSlide } from '@/components/slides/BlogTeaserSlide'
-import { ProfileSummarySlide } from '@/components/slides/ProfileSummarySlide'
-import { FreiheitstestSlide } from '@/components/slides/FreiheitstestSlide'
-import { ThreePillarsSlide } from '@/components/slides/ThreePillarsSlide'
-import { PillarDetailSlide } from '@/components/slides/PillarDetailSlide'
-import { EbookLeadmagnetSlide } from '@/components/slides/EbookLeadmagnetSlide'
 import { SlideContainer } from '@/components/layout/SlideContainer'
 import { QuizProvider } from '@/components/QuizContext'
 import { NoSnap } from '@/components/NoSnap'
-import { trackLeadtimeEvent } from '@/lib/leadtime-tracking'
+import { PaywallTracker } from '@/components/PaywallTracker'
+
+// Each slide type is its own chunk, so a page only loads the slide code it renders.
+const HeroSlide = dynamic(() => import('@/components/slides/HeroSlide').then((mod) => mod.HeroSlide))
+const StatementSlide = dynamic(() => import('@/components/slides/StatementSlide').then((mod) => mod.StatementSlide))
+const StatsSlide = dynamic(() => import('@/components/slides/StatsSlide').then((mod) => mod.StatsSlide))
+const SplitSlide = dynamic(() => import('@/components/slides/SplitSlide').then((mod) => mod.SplitSlide))
+const CTASlide = dynamic(() => import('@/components/slides/CTASlide').then((mod) => mod.CTASlide))
+const FullImageSlide = dynamic(() => import('@/components/slides/FullImageSlide').then((mod) => mod.FullImageSlide))
+const CardsGridSlide = dynamic(() => import('@/components/slides/CardsGridSlide').then((mod) => mod.CardsGridSlide))
+const HeroSplitSlide = dynamic(() => import('@/components/slides/HeroSplitSlide').then((mod) => mod.HeroSplitSlide))
+const StepsSlide = dynamic(() => import('@/components/slides/StepsSlide').then((mod) => mod.StepsSlide))
+const ImageOverlaySlide = dynamic(() => import('@/components/slides/ImageOverlaySlide').then((mod) => mod.ImageOverlaySlide))
+const QuoteSlide = dynamic(() => import('@/components/slides/QuoteSlide').then((mod) => mod.QuoteSlide))
+const FeatureListSlide = dynamic(() => import('@/components/slides/FeatureListSlide').then((mod) => mod.FeatureListSlide))
+const ParallaxImageSlide = dynamic(() => import('@/components/slides/ParallaxImageSlide').then((mod) => mod.ParallaxImageSlide))
+const StatsOverlaySlide = dynamic(() => import('@/components/slides/StatsOverlaySlide').then((mod) => mod.StatsOverlaySlide))
+const TimelineSlide = dynamic(() => import('@/components/slides/TimelineSlide').then((mod) => mod.TimelineSlide))
+const PhotoGallerySlide = dynamic(() => import('@/components/slides/PhotoGallerySlide').then((mod) => mod.PhotoGallerySlide))
+const ContactFormSlide = dynamic(() => import('@/components/slides/ContactFormSlide').then((mod) => mod.ContactFormSlide))
+const TextBlockSlide = dynamic(() => import('@/components/slides/TextBlockSlide').then((mod) => mod.TextBlockSlide))
+const ProblemSlide = dynamic(() => import('@/components/slides/ProblemSlide').then((mod) => mod.ProblemSlide))
+const CredibilitySlide = dynamic(() => import('@/components/slides/CredibilitySlide').then((mod) => mod.CredibilitySlide))
+const IconCirclesSlide = dynamic(() => import('@/components/slides/IconCirclesSlide').then((mod) => mod.IconCirclesSlide))
+const NumberedFeaturesSlide = dynamic(() => import('@/components/slides/NumberedFeaturesSlide').then((mod) => mod.NumberedFeaturesSlide))
+const PricingTableSlide = dynamic(() => import('@/components/slides/PricingTableSlide').then((mod) => mod.PricingTableSlide))
+const PricingTeaserSlide = dynamic(() => import('@/components/slides/PricingTeaserSlide').then((mod) => mod.PricingTeaserSlide))
+const FAQSlide = dynamic(() => import('@/components/slides/FAQSlide').then((mod) => mod.FAQSlide))
+const QualificationSlide = dynamic(() => import('@/components/slides/QualificationSlide').then((mod) => mod.QualificationSlide))
+const ApplicationFormSlide = dynamic(() => import('@/components/slides/ApplicationFormSlide').then((mod) => mod.ApplicationFormSlide))
+const LegalSlide = dynamic(() => import('@/components/slides/LegalSlide').then((mod) => mod.LegalSlide))
+const TextImageSlide = dynamic(() => import('@/components/slides/TextImageSlide').then((mod) => mod.TextImageSlide))
+const ToolCloudSlide = dynamic(() => import('@/components/slides/ToolCloudSlide').then((mod) => mod.ToolCloudSlide))
+const SymptomsGridSlide = dynamic(() => import('@/components/slides/SymptomsGridSlide').then((mod) => mod.SymptomsGridSlide))
+const KiReadinessChatSlide = dynamic(() => import('@/components/slides/KiReadinessChatSlide').then((mod) => mod.KiReadinessChatSlide))
+const PricingCalculatorSlide = dynamic(() => import('@/components/slides/PricingCalculatorSlide').then((mod) => mod.PricingCalculatorSlide))
+const BafaCalculatorSlide = dynamic(() => import('@/components/slides/BafaCalculatorSlide').then((mod) => mod.BafaCalculatorSlide))
+const ProjectNavSlide = dynamic(() => import('@/components/slides/ProjectNavSlide').then((mod) => mod.ProjectNavSlide))
+const ProjectSectionSlide = dynamic(() => import('@/components/slides/ProjectSectionSlide').then((mod) => mod.ProjectSectionSlide))
+const ProjectsHeroSlide = dynamic(() => import('@/components/slides/ProjectsHeroSlide').then((mod) => mod.ProjectsHeroSlide))
+const ProjectDetailSlide = dynamic(() => import('@/components/slides/ProjectDetailSlide').then((mod) => mod.ProjectDetailSlide))
+const ParallaxStorySlide = dynamic(() => import('@/components/slides/ParallaxStorySlide').then((mod) => mod.ParallaxStorySlide))
+const CertificatesSlide = dynamic(() => import('@/components/slides/CertificatesSlide').then((mod) => mod.CertificatesSlide))
+const BlogTeaserSlide = dynamic(() => import('@/components/slides/BlogTeaserSlide').then((mod) => mod.BlogTeaserSlide))
+const ProfileSummarySlide = dynamic(() => import('@/components/slides/ProfileSummarySlide').then((mod) => mod.ProfileSummarySlide))
+const FreiheitstestSlide = dynamic(() => import('@/components/slides/FreiheitstestSlide').then((mod) => mod.FreiheitstestSlide))
+const ThreePillarsSlide = dynamic(() => import('@/components/slides/ThreePillarsSlide').then((mod) => mod.ThreePillarsSlide))
+const PillarDetailSlide = dynamic(() => import('@/components/slides/PillarDetailSlide').then((mod) => mod.PillarDetailSlide))
+const EbookLeadmagnetSlide = dynamic(() => import('@/components/slides/EbookLeadmagnetSlide').then((mod) => mod.EbookLeadmagnetSlide))
 
 const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>>> = {
   'hero-dark': HeroSlide as unknown as React.ComponentType<Record<string, unknown>>,
@@ -105,21 +106,9 @@ const SLIDE_REGISTRY: Record<string, React.ComponentType<Record<string, unknown>
 }
 
 export function PageBuilder({ slides, accent, noSnap }: { slides: SlideConfig[]; accent?: string; noSnap?: boolean }) {
-  const pathname = usePathname()
-  const paywallTrackedRef = useRef(false)
-
-  useEffect(() => {
-    if (pathname !== '/preise' || paywallTrackedRef.current) return
-    paywallTrackedRef.current = true
-    trackLeadtimeEvent(
-      'lt_paywall_impression',
-      { paywall_surface: 'preise_page' },
-      { pathVariant: 'self_serve' }
-    )
-  }, [pathname])
-
   return (
     <QuizProvider>
+      <PaywallTracker />
       <main style={accent ? { '--accent': accent } as React.CSSProperties : undefined}>
         {noSnap && <NoSnap />}
         {slides.map((slide, i) => {

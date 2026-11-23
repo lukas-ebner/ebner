@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { m as motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { useQuiz } from '@/components/QuizContext'
 

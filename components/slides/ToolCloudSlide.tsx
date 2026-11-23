@@ -1,7 +1,7 @@
 'use client'
 
 /* eslint-disable @next/next/no-img-element */
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { m as motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState, useEffect, useCallback } from 'react'
 
 interface Person {
@@ -193,7 +193,7 @@ export function ToolCloudSlide({
                   },
                 }}
               >
-                <img src={tool.src} alt={tool.alt || `Tool icon`} className="h-full w-full" />
+                <img src={tool.src} alt={tool.alt || `Tool icon`} loading="lazy" decoding="async" className="h-full w-full" />
               </motion.div>
             )
           })}
@@ -342,7 +342,7 @@ export function ToolCloudSlide({
                     },
                   }}
                 >
-                  <img src={tool.src} alt={tool.alt || `Tool icon`} className="h-full w-full" />
+                  <img src={tool.src} alt={tool.alt || `Tool icon`} loading="lazy" decoding="async" className="h-full w-full" />
                 </motion.div>
               )
             })}
